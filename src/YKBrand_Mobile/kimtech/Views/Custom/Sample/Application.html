@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+<meta name="title" content="유한킴벌리" />
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리" />
+<title>킴테크</title>
+<link rel="icon" href="http://m.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../../../Common/css/common.css">
+<link rel="stylesheet" href="http://m.ykbrand.co.kr/Common/css/main.css"> <!-- main css -->
+<link rel="stylesheet" href="http://m.ykbrand.co.kr/Common/css/swiper.css">
+<link rel="stylesheet" href="http://m.ykbrand.co.kr/Content/common.css">
+<script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Common/js/swiper.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/jquery.waitforimages.min.js"></script>
+<!-- <script type="text/javascript" src="http://m.ykbrand.co.kr/Scripts/common.js"></script> -->
+<script type="text/javascript" src="http://m.ykbrand.co.kr/Common/js/jquery.bpopup.min.js"></script>
+
+<!-- 레이아웃 이벤트 헤더 -->
+<!-- //레이아웃 이벤트 헤더 -->
+<!--OG:META-->
+<!--//OG:META-->
+<!-- 레이아웃 이벤트 헤더 -->
+<!-- //레이아웃 이벤트 헤더 -->
+</head>
+<body>
+<!-- skip_nav -->
+<a href="#contents" class="skip">본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap" class="kimtech">
+	<div id="layerMask">
+	</div>
+	<div id="contents">
+		<!-- header -->
+		<header>
+		<h1>샘플신청</h1>
+		<a href="javascript:history.back();" class="backBtn" onfocus="this.blur();"><img src="http://m.ykbrand.co.kr/Common/images/btn/btn_back.png" alt="뒤로가기"></a>
+		</header>
+		<hr/>
+		<form action="/depend/Custom/Sample/Complete" method="post">
+
+			<!-- container -->
+			<div id="container">
+				<div class="samplekit_apply ktech">
+					<div class="divider recomm">
+						<div class="sampleInfo">
+							<p class="title">추천샘플</p>
+							<p class="stitle">샘플선택</p>
+							<ul>
+								<li>
+									<div class="selectBox">
+										<label for="samplesel01">킴테크퓨어 G3 멸균 나이트릴 글러브 6.5 1</label>
+										<select id="samplesel01">
+											<option>킴테크퓨어 G3 멸균 나이트릴 글러브 6.5 1</option>
+											<option>킴테크퓨어 G3 멸균 나이트릴 글러브 6.5 2</option>
+											<option>킴테크퓨어 G3 멸균 나이트릴 글러브 6.5 3</option>
+										</select>
+									</div>
+									<div class="selectBox">
+										<label for="samplesel02">사이즈를 선택해주세요.</label>
+										<select id="samplesel02">
+											<option>사이즈를 선택해주세요.</option>
+											<option>사이즈1</option>
+											<option>사이즈2</option>
+										</select>
+									</div>
+									<p class="st">※ 무균실에 적합한 멸균글러브로 믿을 수 있는 성능과 편안한 착용감을 제공합니다.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="btnArea">
+							<a href="#" class="btnType1 colr">설문 다시 하기</a>
+						</div>
+					</div>
+
+					<div class="divider userinfo">
+						<div class="sampleInfo">
+							<p class="ptit">받는 분 정보 입력</p> <!-- 20190730 수정 //-->
+							<dl class="inT flexdl">
+								<dt>성명<span>*</span></dt> <!-- 20190730 수정 //-->
+								<dd>
+									<input class="text-box single-line" id="w1" name="SAMPLE_NAME" onkeypress="onlyKoreanEnglish()" placeholder="성명을 입력해 주세요." title="성명 입력" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_NAME" data-valmsg-replace="true"></span>
+								</dd>
+							</dl>
+							<dl class="inT flexdl intCol3">
+								<dt>연락처<span>*</span></dt>
+								<dd>
+									<span class="selectBox">
+										<label for="tel1" id="tel1_for"></label>
+										<select id="tel1">
+											<option value="02">02</option>
+											<option value="031">031</option>
+											<option value="032">032</option>
+											<option value="033">033</option>
+											<option value="041">041</option>
+											<option value="042">042</option>
+											<option value="043">043</option>
+											<option value="044">044</option>
+											<option value="051">051</option>
+											<option value="052">052</option>
+											<option value="053">053</option>
+											<option value="054">054</option>
+											<option value="055">055</option>
+											<option value="061">061</option>
+											<option value="062">062</option>
+											<option value="063">063</option>
+											<option value="064">064</option>
+											<option value="010">010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="017">017</option>
+											<option value="018">018</option>
+											<option value="019">019</option>
+										</select>
+									</span>
+									<span><label for="tel2"><input type="text" maxlength="4" class="onlynum" onkeypress="onlyNumber()" id="tel2"></label></span>
+									<span><label for="tel3"><input type="text" maxlength="4" class="onlynum" onkeypress="onlyNumber()" id="tel3"></label></span>
+									<input htmlattributes="{ class=form-control }" id="SAMPLE_TEL" name="SAMPLE_TEL" type="hidden" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_TEL" data-valmsg-replace="true"></span>
+								</dd>
+							</dl>
+							<!-- 20190816 추가 -->
+							<dl class="inT flexdl">
+								<dt>이메일<span>*</span></dt>
+								<dd>
+									<input class="text-box single-line" id="w2" name="SAMPLE_EMAIL" onkeypress="onlyKoreanEnglish()" placeholder="이메일을 입력해 주세요." title="이메일주소" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_EMAIL" data-valmsg-replace="true"></span>
+								</dd>
+							</dl>
+							<!--// 20190816 추가 -->
+							<dl class="inT flexdl">
+								<dt>회사명<span>*</span></dt>
+								<dd>
+									<input class="text-box single-line" id="w2" name="SAMPLE_COMPANY" onkeypress="onlyKoreanEnglish()" placeholder="회사명을 입력해 주세요." title="회사명" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_COMPANY" data-valmsg-replace="true"></span>
+								</dd>
+							</dl>
+							<dl class="inT intAdrs">
+								<dt>주소<span>*</span></dt>
+								<dd>
+									<span>
+									<input class="text-box single-line" id="SAMPLE_ZIPCODE" name="SAMPLE_ZIPCODE" placeholder="" readonly="readonly" title="검색된 주소 우편번호 노출 영역" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_ZIPCODE" data-valmsg-replace="true"></span>
+									</span>
+									<span><a href="javascript:openFindAddress()">우편번호</a></span>
+								</dd>
+								<dd class="pT0 mt10">
+									<input class="text-box single-line" id="SAMPLE_ADDRESS1" name="SAMPLE_ADDRESS1" placeholder="" readonly="readonly" title="검색된 주소 노출 영역" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_ADDRESS1" data-valmsg-replace="true"></span>
+								</dd>
+								<dd class="pT0 mt10">
+									<input class="text-box single-line" id="SAMPLE_ADDRESS2" name="SAMPLE_ADDRESS2" placeholder="나머지 주소를 입력해 주세요" title="나머지 주소 입력" type="text" value=""/>
+									<span class="field-validation-valid text-danger" data-valmsg-for="SAMPLE_ADDRESS2" data-valmsg-replace="true"></span>
+								</dd>
+							</dl>
+
+							<!-- 20190730 수정 -->
+							<div class="agrees">
+								<dl class="inT">
+									<dt>(필수) 샘플 신청을 위한 개인정보 수집.이용 동의서</dt>
+									<dd><a class="lnk" href="TermsPop.html" target="_blank">자세히보기</a></dd>
+									<dd>
+										<span class="radioF">
+										<input type="radio" id="de31" name="agree1" value="동의안함" checked="checked">
+										<label for="de31">동의 안함</label>
+										</span>
+										<span class="radioF">
+										<input type="radio" id="de32" name="agree1" value="동의">
+										<label for="de32">동의</label>
+										</span>
+									</dd>
+								</dl>
+								<!-- 20190822 수정 -->
+								<dl class="inT">
+									<dt>(선택) 마케팅 활용 목적을 위한 이용 동의서</dt>
+									<dd><a class="lnk" href="TermsPop2.html" target="_blank">자세히보기</a></dd>
+									<dd>
+										<span class="radioF">
+										<input type="checkbox" id="de41" name="agree2" value="이메일" checked="checked">
+										<label for="de41">이메일</label>
+										</span>
+										<span class="radioF">
+										<input type="checkbox" id="de42" name="agree2" value="SMS">
+										<label for="de42">SMS</label>
+										</span>
+									</dd>
+								</dl>
+								<!--// 20190822 수정 -->
+								<!-- 20190822 추가 -->
+								<div class="sampleInfo">
+									<h1>회사는 샘플 신청에 대한 모니터링을 실시하고 있으며, 아래 행위가 의심되는 경우 샘플 배송 중지 등의 조치를 취할 수 있습니다.</h1>
+									<span>타인의 정보나 명의를 도용하거나 허위 내용을 등록하시면 안됩니다.</span>
+									<span>받으신 샘플을 영리를 목적으로 서비스를 이용하셔서는 안됩니다.</span>
+								</div>
+								<!--// 20190822 추가 -->
+
+								<!-- 20190816 수정추가 -->
+								<p>
+									<span>※ 샘플은 1인당  3회까지만 신청이 가능하며 국내로만 배송됩니다.</span><br><br>
+									<span>※ 샘플은 전주 월요일~전주 금요일까지 취합하여 매주 월요일에 일괄 우편발송 됩니다. (신청후 우편배송까지 최대 2~3주 소요.)</span><br><br>
+									<span>※ 동일 주소지 당 3개의 샘플만 발송되며, 주소지 오류로 인한 반송 시 재발송 되지 않으므로 정확한 주소를 꼭 확인해주세요.</span><br>
+								</p>
+								<!--// 20190816 수정추가 -->
+							</div>
+							<!--// 20190730 수정 -->
+
+							<div class="btnArea foo">
+								<span><a href="/kimtech" class="btnType1">취소</a></span>
+								<span><a href="javascript:goSubmit();" class="btnType1 colr">샘플신청 하기</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+	<hr/>
+	<!-- footer -->
+	<footer>
+	<p class="flogo">
+		<img src="http://m.ykbrand.co.kr/Common/images/common/flogo.png" alt="유한킴벌리"/>
+		<a href="/Terms/TermsPop?type=yk3" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+		<a href="/Terms/TermsPop?type=yk8" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+	</p>
+	<address>주소 : 서울시 강남구 테헤란로 504 (우) 06178</address>
+	<ul class="info">
+		<li>대표자 : 최규복</li>
+		<li>사업자번호 : 120-81-11436</li>
+		<li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
+	</ul>
+	<a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+	<p class="copy">
+		Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.
+	</p>
+	<img style="margin-top:16px; width:150px;" src="http://m.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크"/>
+	</footer>
+	<!-- sns공유하기 팝업 -->
+	<div id="selSns" class="popup hide">
+		<h3>공유하기</h3>
+		<div class="popCont ac">
+			<a href="#none"><img src="http://m.ykbrand.co.kr/Common/images/common/img_popFacebook.gif" alt="Facebook"></a>
+			<a href="#none"><img src="http://m.ykbrand.co.kr/Common/images/common/img_popKakao.gif" alt="Kakaostory"></a>
+		</div>
+		<a href="#none" class="popClose"><img src="http://m.ykbrand.co.kr/Common/images/btn/btn_close.png" alt="팝업닫기"></a>
+	</div>
+	<!-- //sns공유하기 팝업 -->
+	<div id="dim">
+	</div>
+	<a id="moveTop" href="javascript:window.scrollTo(0,0);">문서 상단으로 이동</a>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

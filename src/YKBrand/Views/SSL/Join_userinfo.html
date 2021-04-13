@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>회원가입 | 유한킴벌리</title>
+
+	<!-- Google Tag Manager -->
+	<script>
+		// (function(w, d, s, l, i) {
+		// 	w[l] = w[l] || [];
+		// 	w[l].push({
+		// 		'gtm.start': new Date().getTime(),
+		// 		event: 'gtm.js'
+		// 	});
+		// 	var f = d.getElementsByTagName(s)[0],
+		// 		j = d.createElement(s),
+		// 		dl = l != 'dataLayer' ? '&l=' + l : '';
+		// 	j.async = true;
+		// 	j.src =
+		// 		'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		// 	f.parentNode.insertBefore(j, f);
+		// })(window, document, 'script', 'dataLayer', 'GTM-W86233');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="icon" href="http://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="../../Common/css/common.css">
+	<link rel="stylesheet" href="http://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+	<script>
+		var userId = "";
+		var ImageServerUrl = "http://www.ykbrand.co.kr";
+		var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+	</script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+	<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js?ver=201801191308"></script>
+	<script src="http://www.ykbrand.co.kr//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.form.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$("#mobilePhone2").keyup(function(e) {
+				if (jsCheckStringLength($("#mobilePhone3").val(), " ", "") == 0) {
+					if (jsCheckStringLength($(this).val(), " ", "") == 4) {
+						$("#mobilePhone3").focus();
+					}
+				}
+			});
+
+			$('#mobilePhone2, #mobilePhone3').keyup(function() {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		$(function() {
+
+		});
+	</script>
+
+	<script type="text/javascript" charset="utf-8">
+		function jsPhoneNumberFormat(checkNumber) {
+			return checkNumber.replace(/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/, "$1-$2-$3");
+		}
+
+
+		function jsJoinCheck(obj) {
+
+			if (jsCheckStringLength(obj.name.value, " ", "") == 0) {
+				alert("고객님의 성명을 정확하게 입력하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (jsCheckStringLength(obj.mobilePhone2.value, " ", "") < 3 || jsCheckStringLength(obj.mobilePhone2.value, " ", "") > 4) {
+				alert("휴대폰 번흐를 정확하게 입력하여 주시기 바랍니다.");
+				obj.mobilePhone2.focus();
+				return false;
+			}
+
+			if (jsCheckStringLength(obj.mobilePhone3.value, " ", "") != 4) {
+				alert("휴대폰 번흐를 정확하게 입력하여 주시기 바랍니다.");
+				obj.mobilePhone3.focus();
+				return false;
+			}
+
+			if (!isMobileNumber($("#mobilePhone1 option:selected").val(), obj.mobilePhone2.value, obj.mobilePhone3.value)) {
+				alert("휴대폰 번호를 정확하게 입력하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (jsCheckStringLength(obj.email.value, " ", "") == 0) {
+				alert("이메일 주소를 정확하게 입력하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (!$(':radio[name="marketingReceiveState"]:checked').val()) {
+				alert("개인정보 마케팅 활용 동의를 체크하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (!$(':radio[name="emailReceiveState"]:checked').val()) {
+				alert("메일 수신여부를 체크하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (!$(':radio[name="smsReceiveState"]:checked').val()) {
+				alert("SMS 수신여부를 체크하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (!$(':radio[name="userBabyState"]:checked').val()) {
+				alert("아이정보를 체크하여 주시기 바랍니다.");
+				return false;
+			}
+
+			return true;
+		}
+
+		function jsJoin() {
+			var frm = document.joinFrm;
+
+			if (jsJoinCheck(frm)) {
+				var name = $("#name").val();
+				var check = /^[가-힣|a-z|A-Z ]+$/;
+				if (!check.test(name)) {
+					alert("이름에는 특수기호나 숫자를 입력 할 수 없습니다.");
+					$("#name").focus();
+					return false
+				}
+				var phone = $("#mobilePhone1 option:selected").val() + $('#mobilePhone2').val() + $('#mobilePhone3').val();
+
+				$("#phone").val(phone);
+
+				$("#yk_lodings").show();
+
+				var options = {
+					url: "/SSL/SNS_Join_SetUserInformation",
+					dataType: "json",
+					async: false,
+					success: function(response) {
+						//  console.log("DATA : " + JSON.stringify(response));
+
+						if (response.resultCode == "0000") {
+							var babyState = $(':radio[name="userBabyState"]:checked').val();
+
+							if (babyState == "Y") {
+								var frm = document.dFrm;
+								frm.action = "/SSL/SNS_Join_BabyInformation";
+								frm.submit();
+							} else {
+								location.replace("/SSL/SNS_Join_Completion?siteCode=" + response.siteCode + "&returnUrl=" + response.returnUrl);
+							}
+
+						} else {
+							if (response.resultCode == "0001") {
+								alert("이미 가입되어 있는 SNS 계정입니다.");
+							} else if (response.resultCode == "0002") {
+								alert("이미 다른 계정으로 본인 인증한 계정입니다.");
+							} else {
+								alert("회원 가입중 오류가 발생하였습니다.");
+							}
+						}
+
+						$("#yk_lodings").hide();
+					},
+					error: function(request, status, error) {
+						alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+						$("#yk_lodings").hide();
+					}
+				};
+
+				$("#joinFrm").ajaxForm(options);
+				$("#joinFrm").submit();
+			}
+		}
+	</script>
+
+</head>
+
+<body class="sso">
+	<div id="yk_lodings" class="maskWhite" style="display:none;">
+		<div class="lodings"></div>
+	</div>
+
+	<!-- Google Tag Manager (noscript) -->
+	<!-- <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript> -->
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header>
+			<!-- headerCont -->
+			<div class="headerCont">
+				<h1>
+          <a href="/"><img src="../../Common/images/common/yk_simple_logo.png" alt="유한킴벌리 통합회원" /></a>
+          <a style="float:right;" href="http://www.momq.co.kr/main/initMain.action" target="blank">
+              <img style="text-align:right;" src="../../Common/images/common/sso_momq.jpg" alt="momQ 로고" />
+          </a>
+        </h1>
+			</div>
+			<!-- //headerCont -->
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+
+
+			<form name="joinFrm" id="joinFrm" method="post">
+				<input type="hidden" name="siteCode" id="siteCode" value="MOMQ" />
+				<input type="hidden" name="returnUrl" id="returnUrl" value="http://www.momq.co.kr/main/initMain.action" />
+				<input type="hidden" name="snsType" id="snsType" value="NV" />
+				<input type="hidden" name="nickName" id="nickName" value="키노" />
+				<input type="hidden" name="snsIndexKey" id="snsIndexKey" value="40688509" />
+				<!-- sso 컨텐츠 -->
+				<div class="ssoContent">
+					<!-- 타이틀 영역 -->
+					<div class="titArea st">
+						<h2>간편가입</h2>
+						<p class="pageInfo">
+							유한킴벌리 간편가입을 환영합니다.
+						</p>
+					</div>
+					<!-- //타이틀 영역 -->
+					<!-- 로그인 영역 -->
+					<div class="simple_join_tab2">
+						<ul class="clearfix">
+							<li class="on">01.정보입력</li>
+							<li>02.가입완료</li>
+						</ul>
+					</div>
+					<div class="simple_info">
+						<table>
+							<colgroup>
+								<col style="width:280px;" />
+								<col />
+							</colgroup>
+							<tr>
+								<th>이름 <span>*</span></th>
+								<td>
+									<input type="text" name="name" id="name" class="input_name" value="김희정" />
+								</td>
+							</tr>
+							<tr>
+								<th>이메일 <span>*</span></th>
+								<td>
+									<input type="hidden" name="email" id="email" value="crazybrain@naver.com" />crazybrain@naver.com </td>
+							</tr>
+
+							<tr>
+								<th class="height_60">
+									휴대폰 번호 <span>*</span>
+								</th>
+								<td>
+									<select name="mobilePhone1" id="mobilePhone1">
+	                    <option value="010">010</option>
+	                    <option value="011">011</option>
+	                    <option value="016">016</option>
+	                    <option value="017">017</option>
+	                    <option value="018">018</option>
+	                    <option value="019">019</option>
+	                </select> -
+									<input class="phone_num" type="text" name="mobilePhone2" id="mobilePhone2" maxlength="4"> -
+									<input class="phone_num" type="text" name="mobilePhone3" id="mobilePhone3" maxlength="4">
+
+									<p class="mgt10">* 정확한 번호를 입력해 주시면 고객센터 문의 시 빠르게 확인 가능합니다.</p>
+									<!-- 20180302 -->
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									개인정보 마케팅 활용 동의<span>*</span>
+								</th>
+								<td class="height_60">
+									<span class="ui_radio">
+                      <input type="radio" id="marketing_n" name="marketingReceiveState" value="N">
+                      <label for="marketing_n" style="margin-right:30px;">동의 안함</label>
+                  </span>
+									<span class="ui_radio">
+	                    <input type="radio" id="marketing_y" name="marketingReceiveState" value="Y">
+	                    <label for="marketing_y">동의</label>
+	                </span>
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									메일 수신여부 <span>*</span>
+								</th>
+								<td class="height_60">
+									<span class="ui_radio">
+                      <input type="radio" id="emailReceiveState_N" name="emailReceiveState" value="N">
+                      <label for="emailReceiveState_N" style="margin-right:30px;">동의 안함</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="radio" id="emailReceiveState_Y" name="emailReceiveState" value="Y">
+                      <label for="emailReceiveState_Y">동의</label>
+                  </span>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									SMS 수신여부 <span>*</span>
+								</th>
+								<td>
+									<span class="ui_radio">
+                      <input type="radio" id="smsReceiveState_N" name="smsReceiveState" value="N">
+                      <label for="smsReceiveState_N" style="margin-right:30px;">동의 안함</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="radio" id="smsReceiveState_Y" name="smsReceiveState" value="Y">
+                      <label for="smsReceiveState_Y">동의</label>
+                  </span><br />
+									<p>
+										* 수신 동의에 체크하시면 할인 혜택 및 상품정보, 이벤트 등 다양한 정보를 안내 받으실 수 있습니다.
+									</p>
+									<p>
+										* 단, 약관안내 및 서비스 내용, 주문/배송, 회사의 주요정책 관련 변경에 따른 메일/SMS은 정보수신 거부와 상관없이 발송될 수 있습니다.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									아이정보 <span>*</span>
+								</th>
+								<td>
+									<span class="ui_radio">
+                      <input type="radio" id="userBabyState_N" name="userBabyState" value="N">
+                      <label for="userBabyState_N" style="margin-right:30px;">아이 없음</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="radio" id="userBabyState_Y" name="userBabyState" value="Y">
+                      <label for="userBabyState_Y">아이 있음(임산부 포함)</label>
+                  </span><br />
+
+									<!-- 20180327 수정 s -->
+									<p style="font-size:13px;">
+										* <span class="blue" style="font-size:13px;">아이정보를 입력하면 유한킴벌리 직영몰 맘큐에서 하기스, 더블하트 상시 5% 추가할인 및 맞춤쿠폰 혜택을<br />드립니다.</span>
+									</p>
+									<p style="font-size:13px;">
+										* [아이있음]을 체크한 경우 회원가입 완료 후 아이 정보를 입력하는 페이지로 이동합니다.
+									</p>
+									<!--// 20180327 수정 e -->
+
+								</td>
+							</tr>
+						</table>
+						<table class="simple_info_terms">
+							<colgroup>
+								<col style="50%;" />
+								<col />
+							</colgroup>
+							<tr>
+								<th>
+									유한킴벌리 SSO회원 이용약관
+								</th>
+								<td>
+									<a href="javascript:mainTerms('YKMEMBER_Required1', 960, 520);">[내용보기]</a>
+								</td>
+								<th>맘큐 사이트 이용약관</th>
+								<td><a href="javascript:mainTerms('MOMQ_Required1', 960, 520);">[내용보기]</a></td>
+							</tr>
+							<tr>
+								<th>
+									유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용
+								</th>
+								<td>
+									<a href="javascript:mainTerms('YKMEMBER_Required2', 960, 520);">[내용보기]</a>
+								</td>
+								<th>맘큐 사이트 개인정보 취급방침</th>
+								<td><a href="javascript:mainTerms('MOMQ_Required2', 960, 520);">[내용보기]</a></td>
+							</tr>
+						</table>
+						<!-- 2018-08-30 수정 -->
+						<p style="color:rgb(51,51,51); padding-top:20px">※ 만 14세 미만 아동은 회원 가입이 불가합니다. </p>
+						<div class="btn_area">
+							<a href="javascript:;" onclick="jsJoin();">약관 동의하고 회원 가입 (만 14세 이상)</a>
+						</div>
+						<!-- //2018-08-30 -->
+					</div>
+					<!-- //회원가입 안내 -->
+				</div>
+				<!-- //sso 컨텐츠 -->
+			</form>
+
+			<form name="dFrm" id="dFrm" method="post">
+				<input type="hidden" name="siteCode" id="siteCode" value="MOMQ" />
+				<input type="hidden" name="returnUrl" id="returnUrl" value="http://www.momq.co.kr/main/initMain.action" />
+			</form>
+			<!-- //container -->
+
+
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer>
+			<!-- footerCont -->
+			<div class="footerCont">
+				<!-- footsec -->
+				<div class="footsec">
+					<!-- logo -->
+					<p class="footlogo"><img src="../../Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+
+					<!-- footMenu -->
+					<ul class="footMenu">
+						<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+						<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+					</ul>
+					<img style="float:right; margin-top:30px;" src="../../Common/images/common/Web_img.png" alt="웹접근성 마크" />
+					<!-- //footMenu -->
+					<!-- corpInfo -->
+					<div class="corpInfo">
+						주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br /> 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+					</div>
+
+					<!-- copy-->
+					<p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+
+					<!-- btnTop -->
+					<a href="#" class="btnTop"><img src="../../Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+				</div>
+
+				<script>
+					function mainTerms(type, width, height) {
+						window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+					}
+				</script>
+				<!-- //footsec -->
+			</div>
+			<!-- //footerCont -->
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+	<input type="hidden" name="adb_login_id" id="adb_login_id" value="" />
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-70997736-1', 'auto');
+		ga('send', 'pageview');
+
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = decodeURIComponent(window.location.href).replace(/[?&]+([^=&]+)=([^&]*)/gi,
+
+				function(m, key, value) {
+					vars[key] = value;
+				});
+
+			return vars;
+		} // cid 파라미터 수집
+
+		var cid = getUrlVars()["cid"];
+
+		if (cid != undefined)
+			ga('create', 'UA-77909035-3', 'auto', 'Momq', {
+				'clientId': cid + ""
+			});
+		else
+			ga('create', 'UA-77909035-3', 'auto', 'Momq');
+
+		ga('Momq.send', 'pageview');
+
+		var checkNowPage = location.pathname;
+		if (checkNowPage.toUpperCase() == "/SSL/SNS_Join_Completion".toUpperCase() || checkNowPage.toUpperCase() == "/SSL/Join4_Complete".toUpperCase()) {
+			var nowUrl = location.href;
+
+			ga('send', 'event', '회원가입완료', '페이지뷰', '페이지URL');
+			ga('Momq.send', 'event', '회원가입완료', '페이지뷰', '페이지URL');
+		}
+	</script>
+
+	<script type="text/javascript">
+		_satellite.pageBottom();
+	</script>
+</body>
+
+</html>

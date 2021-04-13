@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="title" content="유한킴벌리 통합브랜드"/>
+<meta name="description" content="유한킴벌리 통합브랜드"/>
+<meta name="keywords" content="유한킴벌리 통합브랜드"/>
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653"/>
+<title>약관동의 | 회원가입 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="https://m.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/main.css">
+<!-- main css -->
+<link rel="stylesheet" href="../../Common/css/swiper.css">
+<link rel="stylesheet" href="https://m.ykbrand.co.kr/Content/common.css">
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/swiper.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.waitforimages.min.js"></script>
+<script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/common.js"></script>
+<script>
+	jQuery.validator.setDefaults({
+			ignore: "",
+			onkeyup: false,
+			onclick: false,
+			onfocusout: false,
+			showErrors: function (errorMap, errorList) {
+					if (this.numberOfInvalids()) {
+							if (errorList.length > 0) {
+									if (errorList[0].message)
+											alert(errorList[0].message);
+									$(errorList[0].element).focus();
+							}
+					}
+			}
+	});
+</script>
+<script>
+	$(function () {
+					// 중복 아이디 체크
+					var isDuple = false;
+					$.ajax({
+							type: "POST",
+							url: "/SSL/MomqDuplicateCheck",
+							async: false,
+							success: function (data) {
+									// 중복 아이디인 경우 아이디 변경 페이지로 이동
+									if (data.rt_code == "0001") {
+											isDuple = true;
+											if (confirm("회원님께서 사용중인 ID는 중복 ID입니다.\nID 변경 후 momQ 이용약관에 동의해주세요.")) {
+													location.href = "/SSL/Terms_IdChange?siteCode=MOMQ&returnUrl=http%3A%2F%2Fm.momq.co.kr%2Fmain%2FinitMain.action%23curationGoods";
+											} else {
+													Cancel(confirm("로그아웃 하시겠습니까?"));
+											}
+									}
+							}
+					});
+					if (isDuple) return;
+					// 맘큐 회원 재가입 가능 여부 체크
+					var isPossible = false;
+					$.ajax({
+							type: "POST",
+							url: "/SSL/MomqReJoinCheck",
+							data: { type: "MYPAGE" },
+							async: false,
+							success: function (data) {
+									if (data.rt_code != "0000") {
+											if (data.rt_code == "0001") {
+													alert("momQ 약관 동의는 회원 탈퇴 일로부터 90일 이후에 가능합니다.");
+											} else if (data.rt_code == "9999") {
+													alert("인증이 만료되었습니다. 다시 시도해 주세요.");
+											} else {
+													alert("momQ 약관 동의 가능 여부 조회를 실패하였습니다.(code=" + data.rt_code + ")");
+											}
+									} else {
+											isPossible = true;
+									}
+							},
+							error: function (e) {
+									alert("통신이 원활하지 않아 momQ 약관에 동의 되지 않았습니다. 잠시 후 다시 시도해 주세요.");
+							}
+					});
+					if (!isPossible) {
+							Cancel(true);
+					}
+			// 필수 사이트 선택해제 불가
+			$(".chkRequired").change(function () {
+					$(this).prop("checked", true);
+			});
+			// 맘큐 사이트 선택
+			$("#siteMomq").change(function () {
+					if ($(this).is(":checked")) {
+							// 중복 아이디 체크
+							var duplicateChk = false;
+							$.ajax({
+									type: "POST",
+									url: "/SSL/MomqDuplicateCheck",
+									async: false,
+									success: function (data) {
+											// 중복 아이디인 경우 아이디 변경 페이지로 이동
+											if (data.rt_code == "0001") {
+													if (confirm("회원님께서 사용중인 ID는 중복 ID입니다.\nID 변경 후 momQ 이용약관에 동의해주세요.")) {
+															location.href = "/SSL/TermsPop_IdChange?siteCode=MOMQ&returnUrl=http%3A%2F%2Fm.momq.co.kr%2Fmain%2FinitMain.action%23curationGoods";
+													}
+											} else {
+													duplicateChk = true;
+											}
+									}
+							});
+							if (!duplicateChk) {
+									$(".MOMQ_RequiredArea").hide().find("input").prop("disabled", true);
+									$(".MOMQ_OptionalArea").hide().find("input").prop("disabled", true);
+									$(this).prop("checked", false);
+									return;
+							}
+							// 맘큐 회원 재가입 가능 여부 체크
+							var isPossible = false;
+							$.ajax({
+									type: "POST",
+									url: "/SSL/MomqReJoinCheck",
+									data: { type: "MYPAGE" },
+									async: false,
+									success: function (data) {
+											if (data.rt_code == "0000") {
+													isPossible = true;
+											} else if (data.rt_code == "0001") {
+													alert("momQ 약관 동의는 회원 탈퇴 일로부터 90일 이후에 가능합니다.");
+													isPossible = false;
+											} else if (data.rt_code == "9999") {
+													alert("인증이 만료되었습니다. 다시 시도해 주세요.");
+													location.reload();
+											} else {
+													alert("momQ 약관 동의 가능 여부 조회를 실패하였습니다.(code=" + data.rt_code + ")");
+													isPossible = false;
+											}
+									},
+									error: function (e) {
+											alert("통신이 원활하지 않아 momQ 약관에 동의 되지 않았습니다. 잠시 후 다시 시도해 주세요.");
+											isPossible = false;
+									}
+							});
+							if (isPossible) {
+									$(".MOMQ_RequiredArea").show().find("input").prop("disabled", false);
+									$(".MOMQ_OptionalArea").show().find("input").prop("disabled", false);
+							} else {
+									$(".MOMQ_RequiredArea").hide().find("input").prop("disabled", true);
+									$(".MOMQ_OptionalArea").hide().find("input").prop("disabled", true);
+									$(this).prop("checked", false);
+							}
+					} else {
+							$(".MOMQ_RequiredArea").hide().find("input").prop("disabled", true);
+							$(".MOMQ_OptionalArea").hide().find("input").prop("disabled", true);
+					}
+					checkedRadio();
+			});
+			// 모든 약관 전체 동의
+			$("#chkAll").change(function () {
+					if ($(this).is(":checked")) {
+							$("#requiredTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+							$("#optionalTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+					}
+					else {
+							$("#requiredTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+							$("#optionalTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+					}
+					checkedRadio();
+			});
+			// 필수 약관 전체 동의
+			$("#chkAllRequired").change(function () {
+					if ($(this).is(":checked")) {
+							$("#requiredTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+					} else {
+							$("#requiredTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+					}
+					checkedRadio();
+			});
+			// 선택 약관 전체 동의
+			$("#chkAllOptional").change(function () {
+					if ($(this).is(":checked")) {
+							$("#optionalTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+					} else {
+							$("#optionalTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+					}
+					checkedRadio();
+			});
+			$("#requiredTermsArea input[type=radio]").change(function () {
+					checkedRadio();
+			});
+			$("#optionalTermsArea input[type=radio]").change(function () {
+					checkedRadio();
+			});
+			$("#btnCancel").click(function () {
+					Cancel(confirm("약관에 동의 하지 않으실 경우 통합회원 로그아웃 됩니다."));
+			});
+			$(".btnSubmit").click(function () {
+					if ($("#requiredTermsArea input[type=radio][value=N]:enabled:checked").length > 0) {
+							alert("필수 약관에 동의해 주십시오.");
+							return;
+					}
+					if ($("#user_pwd").val() == "") {
+							alert("비밀번호를 입력해 주세요.");
+							$("#user_pwd").focus();
+							return;
+					}
+					$("form").submit();
+			});
+	});
+	function Cancel(ask) {
+			if (ask == true) {
+					$.ajax({
+							url: "/ssl/logout",
+							async: false
+					});
+					var returnUrl = unescape("http://m.momq.co.kr/main/initMain.action#curationGoods");
+					if ( $.trim(returnUrl) == '') {
+							location.href = '/';
+					} else {
+							location.href = returnUrl;
+					}
+			} else {
+					location.reload();
+			}
+	}
+	function checkedRadio() {
+			var requiredNCnt = $("#requiredTermsArea input[type=radio][value=N]:checked:enabled").length;
+			var optionalNCnt = $("#optionalTermsArea input[type=radio][value=N]:checked:enabled").length;
+			if (requiredNCnt > 0) {
+					$("#chkAllRequired").prop("checked", false);
+			}
+			else {
+					$("#chkAllRequired").prop("checked", true);
+			}
+			if (optionalNCnt > 0) {
+					$("#chkAllOptional").prop("checked", false);
+			}
+			else {
+					$("#chkAllOptional").prop("checked", true);
+			}
+			if (requiredNCnt > 0 || optionalNCnt > 0) {
+					$("#chkAll").prop("checked", false);
+			} else {
+					$("#chkAll").prop("checked", true);
+			}
+	}
+	function termsPop(popName, width, height) {
+			window.open("/Terms/TermsPop?type=" + popName, "terms", "width=" + width + ", height=" + height + ", menubar =no, status=no, toolbar=no, scrollbars=yes");
+	}
+</script>
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap" class="sso">
+	<div id="contents">
+		<form method="post">
+			<!-- header -->
+			<header>
+			<h1>momQ 이용 약관 동의</h1>
+			<a href="javascript:;" class="backBtn"><img src="../../Common/images/btn/btn_back.png" alt="뒤로가기"/></a>
+			</header>
+			<!-- //header -->
+			<hr/>
+			<!-- container -->
+			<div id="container">
+				<div class="divider">
+					<div class="cnt">
+						<p class="com ts14">
+							사이트 이용을 위해 아래 절차를 확인해 주십시오.
+						</p>
+						<p class="mt10">
+							고객님께서는 간편가입으로 '통합회원약관'에 동의하셨습니다.<br/>momQ 이용 약관에 동의하시면 간편 로그인으로 momQ의 모든 서비스를 이용 하실 수 있습니다.
+						</p>
+						<div class="cnt_tbl">
+							<table>
+							<colgroup>
+							<col style="width:20%;">
+							<col>
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>
+									선택
+								</th>
+								<th>
+									가입채널
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="radioF" style="float:none; display:inline-block;">
+									<input type="checkbox" id="siteMomq" name="siteMomq" value="Y" checked="checked" class="chkRequired">
+									<label for="siteMomq">&nbsp;</label>
+									</span>
+								</td>
+								<td class="ft_16">
+									<span class="ft_blue ft_bold">[필수]</span><span class="ft_bold">momQ</span>
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="ft_16" colspan="2">
+									<span class="radioF" style="float:left;width:33px;display:inline-block;">
+											<input type="checkbox" id="siteMonit" name="siteMonit" value="Y" checked="checked" class="chkRequired">
+											<label for="siteMonit">&nbsp;</label>
+									</span>
+									<div style="float:left;">
+											<span class="ft_blue ft_bold">[선택]</span><span class="ft_bold">모닛</span>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+							</table>
+							<p class="ft_bold" style="font-size:18px; line-height:20px; margin-top:30px;">
+								약관을 읽어 보시고 동의해 주십시오
+							</p>
+							<p class="checkF mt20">
+								<input type="checkbox" id="chkAll">
+								<label for="chkAll" style="margin-top:5px;">(필수/선택) 약관 모두 동의</label>
+								<button type="button" class="chk_all_button btnSubmit">다음</button>
+							</p>
+						</div>
+					</div>
+					<div class="termT">
+						<p class="checkF">
+							<input type="checkbox" id="chkAllRequired">
+							<label for="chkAllRequired">모두 동의</label><span class="ft_bold" style="float:right; font-size:14px;margin-top:2px;">[필수약관]</span>
+						</p>
+					</div>
+					<div id="requiredTermsArea">
+						<dl class="inT termF MOMQ_RequiredArea">
+							<dt>momQ 이용약관</dt>
+							<dd>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Required1_N" name="MOMQ_Required1" value="N" checked>
+							<label for="MOMQ_Required1_N">동의안함</label>
+							</span>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Required1_y" name="MOMQ_Required1" value="Y">
+							<label for="MOMQ_Required1_y">동의</label>
+							<button type="button" class="content_btn" onclick="location.href='/Terms/TermsPop?type=MOMQ_Required1'">내용보기</button>
+							</span>
+							</dd>
+						</dl>
+						<dl class="inT termF MOMQ_RequiredArea">
+							<dt>momQ 필수항목 개인정보 수집 및 이용</dt>
+							<dd>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Required2_N" name="MOMQ_Required2" value="N" checked>
+							<label for="MOMQ_Required2_N">동의안함</label>
+							</span>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Required2_y" name="MOMQ_Required2" value="Y">
+							<label for="MOMQ_Required2_y">동의</label>
+							<button type="button" class="content_btn" onclick="location.href='/Terms/TermsPop?type=MOMQ_Required2'">내용보기</button>
+							</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="termT">
+						<p class="checkF">
+							<input type="checkbox" id="chkAllOptional">
+							<label for="chkAllOptional">모두 동의</label><span class="ft_bold" style="float:right; font-size:14px;margin-top:2px;">[선택약관]</span><br/>선택약관 미동의시 서비스이용에 제한이 있을 수 있습니다.
+						</p>
+					</div>
+					<div id="optionalTermsArea">
+						<dl class="inT termF MOMQ_OptionalArea">
+							<dt>momQ 선택항목 개인정보 수집 및 이용</dt>
+							<dd>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional1_N" name="MOMQ_Optional1" value="N" checked>
+							<label for="MOMQ_Optional1_N">동의 안함</label>
+							</span>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional1_Y" name="MOMQ_Optional1" value="Y">
+							<label for="MOMQ_Optional1_Y">동의</label>
+							<button type="button" class="content_btn" onclick="location.href='/Terms/TermsPop?type=MOMQ_Optional1'">내용보기</button>
+							</span>
+							</dd>
+						</dl>
+						<dl class="inT termF MOMQ_OptionalArea">
+							<dt>momQ 마케팅 목적 이용</dt>
+							<dd>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional2_N" name="MOMQ_Optional2" value="N" checked>
+							<label for="MOMQ_Optional2_N">동의 안함</label>
+							</span>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional2_Y" name="MOMQ_Optional2" value="Y">
+							<label for="MOMQ_Optional2_Y">동의</label>
+							<button type="button" class="content_btn" onclick="location.href='/Terms/TermsPop?type=MOMQ_Optional2'">내용보기</button>
+							</span>
+							</dd>
+						</dl>
+						<dl class="inT termF MOMQ_OptionalArea">
+							<dt>momQ 개인정보 처리위탁</dt>
+							<dd>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional3_N" name="MOMQ_Optional3" value="N" checked>
+							<label for="MOMQ_Optional3_N">동의 안함</label>
+							</span>
+							<span class="radioF">
+							<input type="radio" id="MOMQ_Optional3_Y" name="MOMQ_Optional3" value="Y">
+							<label for="MOMQ_Optional3_Y">동의</label>
+							<button type="button" class="content_btn" onclick="location.href='/Terms/TermsPop?type=MOMQ_Optional3'">내용보기</button>
+							</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="loginInb divider">
+					<dl class="inT">
+						<dt class="hide">비밀번호</dt>
+						<dd style="margin-bottom:10px;"># 이용약관 동의를 변경 하실 경우 비밀번호를 한번 더 입력해주세요.</dd>
+						<dd>
+						<label style="font-size:14px;">비밀번호 : <input style="width:70%; margin-top:-5px; float:right; vertical-align:middle; padding:5px;" type="password" id="user_pwd" name="user_pwd" placeholder="비밀번호를 입력하여 주십시오." title="비밀번호 입력"></label>
+						</dd>
+					</dl>
+				</div>
+				<div class="btnWrap">
+					<span><a href="javascript://" id="btnCancel">취소</a></span>
+					<span><a href="javascript://" class="btnSubmit">확인</a></span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<hr/>
+	<!-- footer -->
+	<footer>
+	<p class="flogo">
+		<img src="https://m.ykbrand.co.kr/Common/images/common/flogo.png" alt="유한킴벌리"/>
+		<a href="/Terms/TermsPop?type=yk3" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+		<a href="/Terms/TermsPop?type=yk8" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+	</p>
+	<address>주소 : 서울시 강남구 테헤란로 504 (우) 06178</address>
+	<ul class="info">
+		<li>대표자 : 최규복</li>
+		<li>사업자번호 : 120-81-11436</li>
+		<li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
+	</ul>
+	<a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+	<p class="copy">
+		Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.
+	</p>
+	<img style="margin-top:16px; width:150px;" src="https://m.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크"/>
+	</footer>
+	<!-- sns공유하기 팝업 -->
+	<div id="selSns" class="popup hide">
+		<h3>공유하기</h3>
+		<div class="popCont ac">
+			<a href="#none"><img src="/Common/images/common/img_popFacebook.gif" alt="Facebook"></a>
+			<a href="#none"><img src="/Common/images/common/img_popKakao.gif" alt="Kakaostory"></a>
+		</div>
+		<a href="#none" class="popClose"><img src="/Common/images/btn/btn_close.png" alt="팝업닫기"></a>
+	</div>
+	<!-- //sns공유하기 팝업 -->
+	<div id="dim">
+	</div>
+	<a id="moveTop" href="javascript:window.scrollTo(0,0);">문서 상단으로 이동</a>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>선물대잔치</title>
+<link href="https://www.happybabyshop.co.kr/Content/css/jquery-ui.css" rel="stylesheet"/>
+<link href="https://www.happybabyshop.co.kr/Content/css/jquery-ui.structure.css" rel="stylesheet"/>
+<link href="https://www.happybabyshop.co.kr/Content/css/jquery-ui.theme.css" rel="stylesheet"/>
+<link href="https://www.happybabyshop.co.kr/Content/css/common.css" rel="stylesheet"/>
+<link href="https://www.happybabyshop.co.kr/Content/css/selectordie.css" rel="stylesheet"/>
+<link href="https://www.happybabyshop.co.kr/Content/css/additional.css" rel="stylesheet"/>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.min.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery-ui.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/datepicker-ko.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.number.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.cookie.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.form.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.easing.1.3.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.event.drag-1.5.min.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.touchSlider.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.validate-vsdoc.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.validate.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.highlight.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/common/yk.core.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/selectordie.min.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/base/common.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/common/yk.common.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.unobtrusive-ajax.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/jquery.validate.unobtrusive.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/modernizr-2.6.2.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/plugins/respond.js"></script>
+<script src="https://www.happybabyshop.co.kr/Content/js/current/Info_PlateInfo.js"></script>
+<link rel="stylesheet" href="https://www.happybabyshop.co.kr/Content/css/feast.css"/>
+<link rel="stylesheet" href="https://www.happybabyshop.co.kr/Content/css/main.css" media="print"/>
+<link rel="stylesheet" href="https://www.happybabyshop.co.kr/Content/css/feast.css" media="print"/>
+<style>
+		@media print {
+			.btn-cont01 { display: none; }
+            #noPane { display: none; }
+			#scorePane .in-cont { padding-bottom: 0; }
+			.layerpop-wrap { padding-bottom: 0; }
+			#scorePane { height: 700px; }
+		}
+</style>
+</head>
+<body>
+<div id="wrap" style="min-width:700px;">
+	<!-- layerpopup -->
+	<div id="scorePane">
+		<div class="layerpop-wrap" style="padding-bottom: 0px;">
+			<!-- 2015-09-23 width값 수정 -->
+			<img src="https://www.happybabyshop.co.kr/Content/images/event/bg_score_top.gif" alt="점수판"/>
+			<img src="https://www.happybabyshop.co.kr/Content/images/event/bg_score_mid.gif" alt="점수판"/>
+			<img src="https://www.happybabyshop.co.kr/Content/images/event/bg_score_mid2.gif" alt="점수판" id="noPane"/>
+			<img src="https://www.happybabyshop.co.kr/Content/images/event/bg_score_btm.gif" alt="점수판"/>
+		</div>
+		<!-- 201801 간편가입경우 s //-->
+		<div style="position:absolute; width:100px; top:690px; left:135px; text-align:center; font-size: 14px; font-weight: 400;">
+			 간편회원
+		</div>
+		<div style="position:absolute; width:100px; top:690px; left:315px; text-align:center; font-size: 14px; font-weight: 400;">
+			 홍길동
+		</div>
+		<div style="position:absolute; width:100px; top:690px; left:500px; text-align:center; font-size: 14px; font-weight: 400;">
+			 010-1234-5678
+		</div>
+		<div style="position:absolute; width:500px; top:728px; left:156px; font-size: 14px; font-weight: 400;">
+		</div>
+		<!-- 201801 간편가입경우 e //-->
+		<!-- <div style="position:absolute; width:100px; top:690px; left:135px; text-align:center; font-size: 14px; font-weight: 400;">
+			 idididid
+		</div>
+		<div style="position:absolute; width:100px; top:690px; left:315px; text-align:center; font-size: 14px; font-weight: 400;">
+			 홍길동
+		</div>
+		<div style="position:absolute; width:100px; top:690px; left:500px; text-align:center; font-size: 14px; font-weight: 400;">
+			 010-1234-5678
+		</div>
+		<div style="position:absolute; width:500px; top:728px; left:156px; font-size: 14px; font-weight: 400;">
+		</div> -->
+	</div>
+	<div class="btn-cont01" style="position:absolute; top:955px; left:255px; text-align:center;">
+		<a id="print" href="#" class="btn-type02" onclick="$(this).preventDefault();">인쇄</a>
+	</div>
+</div>
+</body>
+</html>

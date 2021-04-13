@@ -1,0 +1,6965 @@
+@charset "utf-8";
+/* ---------- 하기스(hu) ---------- */
+.hu {}
+/* 제품라인업 */
+.hu .lineUp {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .lineUp .lineupCont {
+  padding: 30px 30px 60px 30px;
+  background: #fff;
+}
+.hu .lineUp .lineupCont table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.hu .lineUp .lineupCont table thead th {
+  height: 67px;
+  padding-top: 15px;
+  border-right: 1px solid #ac1c22;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background: #e01a22;
+  vertical-align: top;
+}
+.hu .lineUp .lineupCont table thead th:first-child {
+  height: 82px;
+  padding-top: 0;
+  background: #342223;
+  vertical-align: middle;
+}
+.hu .lineUp .lineupCont table thead th span {
+  display: block;
+  padding-top: 15px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 14px;
+  color: #ffff00;
+  letter-spacing: -1px;
+}
+.hu .lineUp .lineupCont table thead th .ps {
+  padding-top: 5px;
+}
+.hu .lineUp .lineupCont table tbody th {
+  border-bottom: 1px solid #dedede;
+  background: #f2f2f2;
+}
+.hu .lineUp .lineupCont table tbody th a {
+  display: inline-block;
+  width: 88px;
+  height: 23px;
+  padding-top: 5px;
+  border: 1px solid #757575;
+  font-size: 14px;
+  font-weight: normal;
+}
+.hu .lineUp .lineupCont table tbody td {
+  height: 115px;
+  padding-top: 15px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  font-size: 14px;
+  color: #e01a22;
+  text-align: center;
+}
+.hu .lineUp .lineupCont table tbody td span {
+  display: block;
+  color: #202020;
+  text-align: center;
+}
+.hu .lineUp .lineupCont table tbody td .box2 {
+  display: inline-block;
+  width: 72px;
+  height: 20px;
+  padding-top: 3px;
+  border: 1px solid #757575;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* 자세히 보기 추가 20170713*/
+.hu .lineUp .lineupCont table thead td {
+  height: 50px;
+  padding-top: 15px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #efbcc1;
+  font-size: 14px;
+  color: #605b58;
+  text-align: center;
+  background-color: #feecec;
+}
+/* 타이틀바에 td 추가 20180104*/
+.hu .lineUp .lineupCont table thead tr.evenRow1 td {
+  padding-top: 5px;
+  background-color: #feecec;
+  height: 40px;
+  font-size: 11px;
+}
+.hu .lineUp .lineupCont table thead tr.evenRow2 td {
+  padding-top: 5px;
+  background-color: #ffdfe0;
+  height: 40px;
+  font-size: 11px;
+}
+/* 타이틀바에 td 추가 20180104*/
+/* tfoot 추가 20180110*/
+.hu .lineUp .lineupCont table tfoot th {
+  height: 67px;
+  padding-top: 15px;
+  border-right: 1px solid #ac1c22;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background: #e01a22;
+  vertical-align: top;
+}
+.hu .lineUp .lineupCont table tfoot tr:first-child th {
+  height: 82px;
+  padding-top: 0;
+  background: #342223;
+  vertical-align: middle;
+}
+.hu .lineUp .lineupCont table tfoot th span {
+  display: block;
+  padding-top: 15px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 14px;
+  color: #ffff00;
+  letter-spacing: -1px;
+}
+.hu .lineUp .lineupCont table tfoot th .ps {
+  padding-top: 5px;
+}
+.hu .lineUp .lineupCont table tfoot tr.evenRow1 td {
+  padding-top: 5px;
+  background-color: #feecec;
+  height: 40px;
+  font-size: 11px;
+}
+.hu .lineUp .lineupCont table tfoot td {
+  height: 50px;
+  padding-top: 15px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #efbcc1;
+  font-size: 14px;
+  color: #605b58;
+  text-align: center;
+  background-color: #feecec;
+}
+.hu .lineUp .lineupCont table tfoot tr.evenRow2 td {
+  padding-top: 5px;
+  background-color: #ffdfe0;
+  height: 40px;
+  font-size: 11px;
+}
+/* tfoot 추가 20180110*/
+/* 리플토크 */
+.hu .replyTalk {}
+.hu .replyTalk .talkCont {
+  margin-bottom: 40px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .replyTalk .talkCont .talkSubject {
+  padding: 60px 30px 30px 30px;
+  background: #fff;
+}
+.hu .replyTalk .talkCont .talkSubject .subject {}
+.hu .replyTalk .talkCont .talkSubject .subject .t1 {
+  height: 90px;
+  font-size: 38px;
+  line-height: 38px;
+  color: #e01a22;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.hu .replyTalk .talkCont .talkSubject .subject .t2 {
+  line-height: 24px;
+  text-align: center;
+}
+.hu .replyTalk .talkCont .talkSubject .periodNum {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+.hu .replyTalk .talkCont .talkSubject .periodNum span {
+  color: #202020;
+}
+.hu .replyTalk .talkCont .talkSubject .periodNum span span {
+  color: #e4444a;
+}
+.hu .replyTalk .talkCont .talkSubject .periodNum .period {
+  margin-right: 6px;
+  padding-right: 12px;
+  background: url('../images/common/bar3.gif') no-repeat right 3px;
+}
+.hu .replyTalk .talkCont .benefit {
+  padding: 0 30px 50px 30px;
+  background: #fff;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont {
+  padding: 29px 0 15px 29px;
+  border: 1px solid #dedede;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont .t1 {
+  height: 34px;
+  font-size: 24px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont .t2 {
+  padding-bottom: 20px;
+  color: #202020;
+  line-height: 24px;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont .t2 span {
+  color: #e01a22;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont dl {}
+.hu .replyTalk .talkCont .benefit .benefitCont dl:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont dl dt {
+  float: left;
+  padding-bottom: 8px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 24px;
+  color: #202020;
+  clear: both;
+  letter-spacing: -1px;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont dl dd {
+  float: left;
+  padding: 0 0 8px 7px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .replyTalk .talkCont .benefit .benefitCont dl dd span {
+  color: #e01a22;
+}
+.hu .replyTalk .replyCont {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .replyTalk .replyCont .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+.hu .replyTalk .replyCont .writeList {
+  background: #fff;
+}
+.hu .replyTalk .replyCont .writeList .write {
+  padding: 30px 30px 60px 30px;
+  border-bottom: 1px solid #dedede;
+}
+.hu .replyTalk .replyCont .writeList .write:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.hu .replyTalk .replyCont .writeList .write .sec1 {
+  float: left;
+  width: 750px;
+  position: relative;
+}
+.hu .replyTalk .replyCont .writeList .write .sec1 textarea {
+  width: 733px;
+  height: 83px;
+  padding: 15px 0 0 15px;
+  border: 1px solid #dfdfdf;
+  font-size: 18px;
+  color: #757575;
+  background: #f2f2f2;
+}
+.hu .replyTalk .replyCont .writeList .write .sec1 .info1 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.hu .replyTalk .replyCont .writeList .write .sec1 .info2 {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.hu .replyTalk .replyCont .writeList .write .sec2 {
+  float: right;
+  width: 110px;
+}
+.hu .replyTalk .replyCont .writeList .write .sec2 a {
+  display: inline-block;
+  width: 110px;
+  height: 60px;
+  padding-top: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #e01a22;
+}
+.hu .replyTalk .replyCont .writeList .listArea {}
+.hu .replyTalk .replyCont .writeList .listArea ul li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt1 {
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt1 p {
+  float: left;
+  padding: 5px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt1 .num {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  margin-right: 0;
+  background: none;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt1 .name {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  background: none;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt2 {
+  line-height: 24px;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li .btnDel {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.hu .replyTalk .replyCont .writeList .listArea ul li.nolist {
+  padding: 40px 0 36px;
+  text-align: center;
+}
+.hu .replyTalk .replyCont .writeList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .replyTalk .replyCont .writeList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.hu .replyTalk .replytalkList {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .replyTalk .replytalkList ul {
+  background: #fff;
+}
+.hu .replyTalk .replytalkList ul li {
+  height: 91px;
+  padding: 30px 100px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.hu .replyTalk .replytalkList ul li .txt1 {
+  height: 42px;
+}
+.hu .replyTalk .replytalkList ul li .txt1 a {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hu .replyTalk .replytalkList ul li .txt2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+.hu .replyTalk .replytalkList ul li .txt2 * {
+  vertical-align: middle;
+}
+.hu .replyTalk .replytalkList ul li .txt2 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.hu .replyTalk .replytalkList ul li .txt2 p:first-child {
+  background: none;
+  padding-left: 0;
+}
+.hu .replyTalk .replytalkList ul li .txt2 p span {
+  color: #202020;
+}
+.hu .replyTalk .replytalkList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .replyTalk .replytalkList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 맘스아이디어 */
+.hu .momsIdea {}
+.hu .momsIdea .infoArea {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .momsIdea .infoArea .sec1 {
+  height: 346px;
+  padding: 60px 0 0 60px;
+  background: url('../images/hu/bg_ideainfo1.jpg') no-repeat #fff;
+}
+.hu .momsIdea .infoArea .sec1 .txt1 {
+  height: 110px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .infoArea .sec1 .txt1 span {
+  color: #e01a22;
+}
+.hu .momsIdea .infoArea .sec1 .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .infoArea .sec1 .txt2 span {
+  color: #e01a22;
+}
+.hu .momsIdea .infoArea .sec2 {
+  padding: 0 30px 50px 30px;
+  background: #fff;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont {
+  height: 212px;
+  padding: 30px 0 0 30px;
+  border: 1px solid #dedede;
+  background: url('../images/hu/bg_ideainfo2.jpg') no-repeat right top;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt1 {
+  height: 33px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #e01a22;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt2 {
+  padding-bottom: 24px;
+  color: #202020;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt2 span {
+  color: #e01a22;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt3 {
+  padding-bottom: 7px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt4 {
+  letter-spacing: -1px;
+}
+.hu .momsIdea .infoArea .sec2 .sec2cont .txt4 span {
+  color: #202020;
+}
+.hu .momsIdea .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .momsIdea .listArea .searchArea {
+  height: 55px;
+  position: relative;
+}
+.hu .momsIdea .listArea .searchArea .sorting {}
+.hu .momsIdea .listArea .searchArea .sorting li {
+  float: left;
+}
+.hu .momsIdea .listArea .searchArea .sorting li a {
+  display: inline-block;
+  padding: 8px 24px 0 0;
+  margin-right: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  background: url('../images/hu/ico_sorting_off.gif') no-repeat right 13px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .listArea .searchArea .sorting li a.on {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+  background-image: url('../images/hu/ico_sorting_on.gif');
+}
+.hu .momsIdea .listArea .searchArea .search {
+  position: absolute;
+  top: 0;
+  right: 160px;
+}
+.hu .momsIdea .listArea .searchArea .search input {
+  display: inline-block;
+  float: left;
+  width: 179px;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid #c5c5c5;
+  border-right: 0;
+  font-size: 16px;
+  color: #757575;
+}
+.hu .momsIdea .listArea .searchArea .search a {
+  display: inline-block;
+  float: left;
+}
+.hu .momsIdea .listArea .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+.hu .momsIdea .listArea .list {
+  background: #fff;
+}
+.hu .momsIdea .listArea .list ul {}
+.hu .momsIdea .listArea .list ul li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.hu .momsIdea .listArea .list ul li .txt1 {
+  height: 40px;
+}
+.hu .momsIdea .listArea .list ul li .txt1 * {
+  vertical-align: middle;
+}
+.hu .momsIdea .listArea .list ul li .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.hu .momsIdea .listArea .list ul li .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.hu .momsIdea .listArea .list ul li .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.hu .momsIdea .listArea .list ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hu .momsIdea .listArea .list ul li .txt2 a {
+  color: #202020;
+}
+.hu .momsIdea .listArea .list ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+.hu .momsIdea .listArea .list ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.hu .momsIdea .listArea .list ul li .txt3 * {
+  vertical-align: middle;
+}
+.hu .momsIdea .listArea .list ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.hu .momsIdea .listArea .list ul li .txt3 p:first-child {
+  background: none;
+  padding-left: 0;
+}
+.hu .momsIdea .listArea .list ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.hu .momsIdea .listArea .list ul li.nolist {
+  padding: 40px 0 36px;
+  text-align: center;
+  background: none;
+}
+.hu .momsIdea .listArea .list .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .momsIdea .listArea .list .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.hu .momsIdea .momsIdeaView {
+  margin-bottom: 40px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .momsIdea .replyCont {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .momsIdea .replyCont .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+.hu .momsIdea .replyCont .writeList {
+  background: #fff;
+}
+.hu .momsIdea .replyCont .writeList .write {
+  padding: 30px 30px 60px 30px;
+  border-bottom: 1px solid #dedede;
+}
+.hu .momsIdea .replyCont .writeList .write:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.hu .momsIdea .replyCont .writeList .write .sec1 {
+  float: left;
+  width: 750px;
+  position: relative;
+}
+.hu .momsIdea .replyCont .writeList .write .sec1 textarea {
+  width: 733px;
+  height: 83px;
+  padding: 15px 0 0 15px;
+  border: 1px solid #dfdfdf;
+  font-size: 18px;
+  color: #757575;
+  background: #f2f2f2;
+}
+.hu .momsIdea .replyCont .writeList .write .sec1 .info1 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .replyCont .writeList .write .sec1 .info2 {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.hu .momsIdea .replyCont .writeList .write .sec2 {
+  float: right;
+  width: 110px;
+}
+.hu .momsIdea .replyCont .writeList .write .sec2 a {
+  display: inline-block;
+  width: 110px;
+  height: 60px;
+  padding-top: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #e01a22;
+}
+.hu .momsIdea .replyCont .writeList .listArea {
+  padding: 0;
+  background: none;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt1 {
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt1 p {
+  float: left;
+  padding: 5px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt1 .num {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  margin-right: 0;
+  background: none;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt1 .name {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  background: none;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt2 {
+  line-height: 24px;
+  word-break: break-all;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li .btnDel {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.hu .momsIdea .replyCont .writeList .listArea ul li.nolist {
+  padding: 40px 0 36px;
+  text-align: center;
+}
+.hu .momsIdea .replyCont .writeList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .momsIdea .replyCont .writeList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 육아컨텐츠 */
+.hu .infaneCare {}
+.hu .infaneCare .intro {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .infaneCare .intro .introCont {
+  height: 222px;
+  padding: 60px 0 0 60px;
+  background: url('../images/hu/bg_infaneCare.jpg') no-repeat right top #fff;
+}
+.hu .infaneCare .intro .introCont .txt1 {
+  padding-bottom: 20px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.hu .infaneCare .intro .introCont .txt1 span {
+  color: #e01a22;
+}
+.hu .infaneCare .intro .introCont .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .infaneCare .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .infaneCare .listArea .title {
+  height: 55px;
+  position: relative;
+}
+.hu .infaneCare .listArea .title .tit {
+  padding-top: 11px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+.hu .infaneCare .listArea .title .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hu .infaneCare .listArea .title .search input {
+  display: inline-block;
+  float: left;
+  width: 179px;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid #c5c5c5;
+  border-right: 0;
+  font-size: 16px;
+  color: #757575;
+}
+.hu .infaneCare .listArea .title .search a {
+  display: inline-block;
+  float: left;
+}
+.hu .infaneCare .listArea ul {
+  overflow: hidden;
+}
+.hu .infaneCare .listArea ul li {
+  float: left;
+  width: 194px;
+  height: 333px;
+  padding: 20px 20px 0 20px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
+}
+.hu .infaneCare .listArea ul li:nth-child(4n) {
+  width: 195px;
+  border-right: 0;
+}
+.hu .infaneCare .listArea ul li .img {
+  display: block;
+  margin-bottom: 20px;
+}
+.hu .infaneCare .listArea ul li .txt1 {
+  height: 36px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.hu .infaneCare .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.hu .infaneCare .listArea ul li .txt1 p {
+  float: left;
+  color: #202020;
+}
+.hu .infaneCare .listArea ul li .txt2 {
+  height: 100px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hu .infaneCare .listArea ul li .txt2 a {
+  color: #202020;
+}
+.hu .infaneCare .listArea ul li .txt3 {
+  font-size: 16px;
+}
+.hu .infaneCare .listArea ul li.nolist {
+  text-indent: -9999px;
+  background: url('../images/hu/nolist.gif') no-repeat center center #fff;
+}
+.hu .infaneCare .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .infaneCare .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.hu .infaneCare .infaneCareView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 육아포럼 */
+.hu .infaneForum {}
+.hu .infaneForum .intro1 {
+  margin-bottom: 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .infaneForum .intro1 .introCont {
+  height: 560px;
+  padding: 60px 0 0 60px;
+  background: url('../images/hu/bg_infaneForum1.jpg') no-repeat right top #fff;
+}
+.hu .infaneForum .intro1 .introCont .txt1 {
+  padding-bottom: 20px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.hu .infaneForum .intro1 .introCont .txt1 span {
+  color: #e01a22;
+}
+.hu .infaneForum .intro1 .introCont .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .infaneForum .intro2 {
+  margin-bottom: 40px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .infaneForum .intro2 .introCont {
+  height: 934px;
+  padding: 60px 30px 0 30px;
+  background: url('../images/hu/bg_infaneForum2.jpg') no-repeat right top #fff;
+}
+.hu .infaneForum .intro2 .introCont .txt1 {
+  padding: 0 0 20px 30px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.hu .infaneForum .intro2 .introCont .txt1 span {
+  color: #e01a22;
+}
+.hu .infaneForum .intro2 .introCont .txt2 {
+  padding-left: 30px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .infaneForum .intro2 .introCont .education {
+  margin-top: 40px;
+  height: 326px;
+  padding: 30px 0 0 30px;
+  border: 1px solid #dedede;
+  background: url('../images/hu/bg_infaneForum3.jpg') no-repeat right top;
+}
+.hu .infaneForum .intro2 .introCont .education .t1 {
+  height: 32px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #e01a22;
+}
+.hu .infaneForum .intro2 .introCont .education .t2 {
+  height: 45px;
+  color: #202020;
+}
+.hu .infaneForum .intro2 .introCont .education .t2 span {
+  color: #e01a22;
+}
+.hu .infaneForum .intro2 .introCont .education dl {
+  overflow: hidden;
+}
+.hu .infaneForum .intro2 .introCont .education dl dt {
+  float: left;
+  height: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  line-height: 24px;
+  clear: both;
+}
+.hu .infaneForum .intro2 .introCont .education dl dd {
+  float: left;
+  height: 30px;
+  padding-left: 5px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .infaneForum .intro2 .introCont .education dl dd span {
+  color: #e01a22;
+}
+.hu .infaneForum .intro2 .introCont .education .btn {
+  margin-top: 25px;
+  text-align: center;
+}
+.hu .infaneForum .intro2 .introCont .education .btn a {
+  display: inline-block;
+  width: 170px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+.hu .infaneForum .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .infaneForum .listArea .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+.hu .infaneForum .listArea ul {
+  overflow: hidden;
+}
+.hu .infaneForum .listArea ul li {
+  float: left;
+  width: 194px;
+  height: 333px;
+  padding: 20px 20px 0 20px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
+}
+.hu .infaneForum .listArea ul li:nth-child(4n) {
+  width: 195px;
+  border-right: 0;
+}
+.hu .infaneForum .listArea ul li .img {
+  display: block;
+  margin-bottom: 20px;
+}
+.hu .infaneForum .listArea ul li .txt1 {
+  height: 127px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hu .infaneForum .listArea ul li .txt1 a {
+  color: #202020;
+}
+.hu .infaneForum .listArea ul li .txt2 {
+  font-size: 16px;
+}
+.hu .infaneForum .listArea ul li .txt2 span {
+  padding-right: 5px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.hu .infaneForum .listArea ul li.nolist {
+  text-indent: -9999px;
+  background: url('../images/hu/nolist.gif') no-repeat center center #fff;
+}
+.hu .infaneForum .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .infaneForum .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 이른둥이 희망찾기 */
+.hu .hope {}
+.hu .hope .banner {
+  width: 940px;
+  margin: 0 auto 80px auto;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .hope .banner .bx-wrapper .bx-viewport ul li img {
+  width: 940px;
+  height: 376px;
+  border-bottom: 4px solid #202020;
+}
+.hu .hope .banner .bx-wrapper .bx-controls {
+  position: absolute;
+  top: 395px;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+}
+.hu .hope .banner .bx-wrapper .bx-controls * {
+  vertical-align: middle;
+}
+.hu .hope .banner .bx-wrapper .bx-pager {
+  display: inline;
+  position: static;
+}
+.hu .hope .banner .bx-wrapper .bx-controls-auto {
+  display: inline;
+  position: static;
+  padding-left: 7px;
+  background: url('../images/common/bar3.gif') no-repeat 0 4px;
+}
+.hu .hope .banner .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 15px;
+  background: url('../images/btn/btn_play.gif') no-repeat;
+}
+.hu .hope .banner .bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 15px;
+  background: url('../images/btn/btn_pause.gif')no-repeat;
+}
+.hu .hope .banner .bx-wrapper .bx-controls-direction {
+  display: none;
+}
+.hu .hope .hopeList {
+  margin-bottom: 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .hope .hopeList .info {
+  height: 163px;
+  padding-left: 240px;
+  background: url('../images/hu/bg_hope1.jpg') no-repeat;
+}
+.hu .hope .hopeList .info .txt1 {
+  height: 38px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+.hu .hope .hopeList .info .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .hope .hopeList .sel {
+  height: 55px;
+  text-align: right;
+}
+.hu .hope .hopeList .sel * {
+  vertical-align: middle;
+}
+.hu .hope .hopeList .sel select {
+  background: #fff;
+}
+.hu .hope .hopeList .sel a {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  background: #585858;
+}
+.hu .hope .hopeList .listArea {}
+.hu .hope .hopeList .listArea ul {
+  overflow: hidden;
+}
+.hu .hope .hopeList .listArea ul li {
+  float: left;
+  width: 194px;
+  height: 333px;
+  padding: 20px 20px 0 20px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
+}
+.hu .hope .hopeList .listArea ul li:nth-child(4n) {
+  width: 195px;
+  border-right: 0;
+}
+.hu .hope .hopeList .listArea ul .img {
+  display: block;
+  margin-bottom: 20px;
+}
+.hu .hope .hopeList .listArea ul .txt1 {
+  height: 127px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hu .hope .hopeList .listArea ul .txt1 a {
+  color: #202020;
+}
+.hu .hope .hopeList .listArea ul .txt2 {
+  font-size: 16px;
+}
+.hu .hope .hopeList .listArea ul .txt2 span {
+  padding-right: 5px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.hu .hope .hopeList .listArea ul li.nolist {
+  text-indent: -9999px;
+  background: url('../images/hu/nolist.gif') no-repeat center center #fff;
+}
+.hu .hope .hopeList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.hu .hope .hopeList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.hu .hope .infoArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .hope .infoArea .infoCont {
+  height: 568px;
+  padding: 50px 30px 0 30px;
+  background: url('../images/hu/bg_hope2.gif') no-repeat #fff;
+}
+.hu .hope .infoArea .infoCont .txt1 {
+  height: 143px;
+  font-size: 38px;
+  line-height: 48px;
+  color: #202020;
+  text-align: center;
+  letter-spacing: -3px;
+}
+.hu .hope .infoArea .infoCont .txt1 span {
+  color: #e01a22;
+}
+.hu .hope .infoArea .infoCont .img {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.hu .hope .infoArea .infoCont .txt2 {
+  height: 104px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.hu .hope .infoArea .infoCont .txt2 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.hu .hope .infoArea .infoCont .mailSend {
+  height: 102px;
+  padding: 30px 0 0 30px;
+  border: 1px solid #dedede;
+  position: relative;
+}
+.hu .hope .infoArea .infoCont .mailSend dl {}
+.hu .hope .infoArea .infoCont .mailSend dl dt {
+  height: 32px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22
+}
+.hu .hope .infoArea .infoCont .mailSend dl dd {
+  height: 24px;
+  color: #202020;
+}
+.hu .hope .infoArea .infoCont .mailSend a {
+  display: block;
+  position: absolute;
+  top: 63px;
+  right: 30px;
+  width: 170px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+/* 이용후기 */
+.epilogue {
+  margin-top: 15px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.epilogue .searchArea {
+  height: 55px;
+  position: relative;
+}
+.epilogue .searchArea .sorting {}
+.epilogue .searchArea .sorting li {
+  float: left;
+}
+.epilogue .searchArea .sorting li a {
+  display: inline-block;
+  padding: 8px 24px 0 0;
+  margin-right: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  background: url('../images/hu/ico_sorting_off.gif') no-repeat right 13px;
+  letter-spacing: -1px;
+}
+.epilogue .searchArea .sorting li a.on {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+  background-image: url('../images/hu/ico_sorting_on.gif');
+}
+.epilogue .searchArea .search {
+  position: absolute;
+  top: 0;
+  right: 160px;
+}
+.epilogue .searchArea .search select {
+  float: left;
+  margin-right: 10px;
+  background: #fff;
+}
+.epilogue .searchArea .search input {
+  display: inline-block;
+  float: left;
+  width: 179px;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid #c5c5c5;
+  border-right: 0;
+  font-size: 16px;
+  color: #757575;
+}
+.epilogue .searchArea .search a {
+  display: inline-block;
+  float: left;
+}
+.epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+.hu .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+/* 하기스 */
+.wt .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+/* 물티슈 */
+.go .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #3a50a6;
+}
+/* 굿나이트 */
+.wh .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #0058c5;
+}
+/* 화이트 */
+.gf .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #df1c60;
+}
+/* 좋은느낌 */
+.ge .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #358634;
+}
+/* 그린핑거 */
+.tn .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #715430;
+}
+/* 티엔 */
+.sc .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #087aca;
+}
+/* 스카트 */
+.de .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #008256;
+}
+/* 디펜드 */
+.kl .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #364ea2;
+}
+/* 크리넥스 */
+.my .epilogue .searchArea .btnWrite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #005cbb;
+}
+/* 마이비데 */
+.epilogue .listArea {
+  background: #fff;
+}
+.epilogue .listArea .list {}
+.epilogue .listArea .list li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.epilogue .listArea .list .txt1 {
+  height: 40px;
+}
+.epilogue .listArea .list .txt1 * {
+  vertical-align: middle;
+}
+.epilogue .listArea .list .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.epilogue .listArea .list .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.epilogue .listArea .list .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.epilogue .listArea .list .txt1 .group {
+  padding: 2px 0 0 10px;
+  margin-left: 8px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+  background: url('../images/common/bar1.gif') no-repeat left 2px;
+}
+.epilogue .listArea .list .nolist {
+  padding: 34px 0 30px;
+  text-align: center;
+}
+.epilogue .listArea .list .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.epilogue .listArea .list .txt2 a {
+  color: #202020;
+}
+.epilogue .listArea .list .txt3 {
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+.epilogue .listArea .list .txt4 {
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.epilogue .listArea .list .txt4 * {
+  vertical-align: middle;
+}
+.epilogue .listArea .list .txt4 p {
+  float: left;
+  padding: 5px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.epilogue .listArea .list .txt4 p:first-child {
+  background: none;
+  padding-left: 0;
+}
+.epilogue .listArea .list .txt4 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.epilogue .listArea .list .mark {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.epilogue .listArea .list .imgType {
+  padding: 30px 300px 30px 30px;
+}
+.epilogue .listArea .list .imgType .img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.epilogue .listArea .list .imgType .img img {
+  width: 195px;
+  height: 130px;
+}
+.epilogue .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.epilogue .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.epilogue .infoArea {
+  margin-bottom: 30px;
+}
+/* 체험프로젝트 */
+.hu .sampleRequest {}
+.hu .sampleRequest .intro {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .sampleRequest .intro .introCont {
+  padding: 0 30px 60px;
+  background: #fff;
+}
+.hu .sampleRequest .intro .intro1 {
+  height: 298px;
+  padding: 60px 0 0 30px;
+  background: url('../images/hu/bg_sampleRequest1.jpg') no-repeat right top;
+}
+.hu .sampleRequest .intro .intro1 .txt1 {
+  padding-bottom: 20px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.hu .sampleRequest .intro .intro1 .txt1 span {
+  color: #e01a22;
+}
+.hu .sampleRequest .intro .intro1 .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .sampleRequest .intro .intro1 .txt2 span {
+  color: #e01a22;
+}
+.hu .sampleRequest .intro .intro2 {
+  height: 300px;
+  padding: 30px 0 0 29px;
+  border: 1px solid #dedede;
+  background: url('../images/hu/bg_sampleRequest2.jpg') no-repeat right top;
+}
+.hu .sampleRequest .intro .intro2 .txt1 {
+  height: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #e01a22;
+}
+.hu .sampleRequest .intro .intro2 .txt2 {
+  padding-bottom: 20px;
+  line-height: 24px;
+  color: #202020;
+  letter-spacing: -1px;
+}
+.hu .sampleRequest .intro .intro2 .txt2 span {
+  color: #e01a22;
+}
+.hu .sampleRequest .intro .intro2 .txt3 {
+  padding-bottom: 10px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.hu .sampleRequest .intro .intro2 dl {
+  overflow: hidden;
+}
+.hu .sampleRequest .intro .intro2 dl dt {
+  float: left;
+  height: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  clear: both;
+}
+.hu .sampleRequest .intro .intro2 dl dd {
+  float: left;
+  height: 30px;
+  padding-left: 5px;
+  letter-spacing: -1px;
+}
+.hu .sampleRequest .btnRequest {
+  text-align: center;
+}
+.hu .sampleRequest .request {
+  margin-top: 35px;
+}
+.hu .sampleRequest .request .stit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+/* 우리 아기에게 맞는 하기스는? */
+.hu .survey {}
+.hu .survey .surveyArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.hu .survey .surveyArea .surveyCont {
+  background: #fff;
+}
+.hu .survey .surveyArea .info {
+  height: 74px;
+  padding-top: 25px;
+  margin-bottom: 50px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.hu .survey .surveyArea .info span {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e01a22;
+}
+.hu .survey .surveyArea .itemArea {
+  padding: 0 30px 70px 30px;
+}
+.hu .survey .surveyArea .item {
+  margin-top: 60px;
+}
+.hu .survey .surveyArea .item .que {
+  height: 50px;
+  padding-left: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/hu/ico_q.gif') no-repeat;
+}
+.hu .survey .surveyArea .item .ans {
+  padding-left: 40px;
+}
+.hu .survey .surveyArea .item .ans:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.hu .survey .surveyArea .item .ans select {
+  color: #757575;
+}
+.hu .survey .surveyArea .item .ans li {
+  float: left;
+  width: 200px;
+}
+.hu .survey .surveyArea .item .ans .gender1 {
+  padding-top: 90px;
+  background: url('../images/hu/gender1.gif') no-repeat;
+}
+.hu .survey .surveyArea .item .ans .gender2 {
+  padding-top: 90px;
+  background: url('../images/hu/gender2.gif') no-repeat 19px 0;
+}
+.hu .survey .surveyArea .item .ans .gender3 {
+  padding-top: 90px;
+  background: url('../images/hu/gender3.gif') no-repeat 19px 0;
+}
+.hu .survey .surveyArea .item .ans li:nth-child(5),
+.hu .survey .surveyArea .item .ans li:nth-child(6) {
+  margin-top: 10px;
+}
+.hu .survey .result {
+  margin-top: 35px;
+}
+.hu .survey .result .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+.hu .survey .result .productList {
+  margin-top: 0;
+}
+/* ---------- 하기스 물티슈(wt) ---------- */
+.wt {}
+/* 제품리뷰 리스트 */
+.wt .reviewList {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .reviewList .btnWrite {
+  height: 55px;
+  padding-top: 15px;
+  text-align: right;
+}
+.wt .reviewList .btnWrite a {
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+.wt .reviewList .listArea {
+  background: #fff;
+}
+.wt .reviewList .listArea ul li {
+  padding: 30px 300px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.wt .reviewList .listArea ul li .txt1 {
+  height: 40px;
+}
+.wt .reviewList .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.wt .reviewList .listArea ul li .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.wt .reviewList .listArea ul li .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .reviewList .listArea ul li .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .reviewList .listArea ul li .nolist {
+  padding: 34px 0 30px;
+  text-align: center;
+}
+.wt .reviewList .listArea ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wt .reviewList .listArea ul li .txt2 a {
+  color: #202020;
+}
+.wt .reviewList .listArea ul li .txt3 {
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+.wt .reviewList .listArea ul li .img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.wt .reviewList .listArea ul li .img img {
+  width: 195px;
+  height: 130px;
+}
+.wt .reviewList .listArea ul li .txt4 {
+  font-size: 16px;
+  line-height: 22px;
+}
+.wt .reviewList .listArea ul li .txt4:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.wt .reviewList .listArea ul li .txt4 * {
+  vertical-align: middle;
+}
+.wt .reviewList .listArea ul li .txt4 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.wt .reviewList .listArea ul li .txt4 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.wt .reviewList .listArea ul li .txt4 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.wt .reviewList .listArea ul li.nolist {
+  padding: 34px 0 30px;
+  text-align: center;
+}
+.wt .reviewList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.wt .reviewList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 제품리뷰 상세 */
+.wt .reviewView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 제품리뷰 등록 */
+.wt .reviewWrite {}
+.wt .reviewWrite .writeInfo {
+  height: 130px;
+  padding: 30px 0 0 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c5c5c5;
+  line-height: 24px;
+  background: url('../images/common/ico_notice.png') no-repeat 30px 30px;
+  letter-spacing: -1px;
+}
+.wt .reviewWrite .writeInfo strong {
+  display: block;
+  height: 32px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  letter-spacing: 0;
+}
+/* 공장견학단 */
+.wt .tour {}
+.wt .tour .tabtype1 {
+  margin-top: 30px;
+}
+.wt .tour .recruitInfo {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .recruitInfo .recruitCont {
+  height: 1017px;
+  padding: 60px 60px 0 60px;
+  background: #fff;
+}
+.wt .tour .recruitInfo .recruitCont .txt1 {
+  height: 110px;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+}
+.wt .tour .recruitInfo .recruitCont .txt1 span {
+  display: block;
+  color: #e01a22;
+}
+.wt .tour .recruitInfo .recruitCont .txt2 {
+  height: 120px;
+  line-height: 24px;
+  text-align: center;
+}
+.wt .tour .recruitInfo .recruitCont .txt3 {
+  margin-bottom: 50px;
+}
+.wt .tour .recruitInfo .recruitCont .txt3 dt {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.wt .tour .recruitInfo .recruitCont .txt3 dd {
+  padding-left: 12px;
+  line-height: 24px;
+  background: url('../images/common/bul1.gif') no-repeat 3px 10px;
+  letter-spacing: -1px;
+}
+.wt .tour .recruitInfo .recruitCont .txt3 dd span {
+  color: #e01a22;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 dt {
+  height: 50px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 dd {
+  float: left;
+  width: 230px;
+  padding-top: 240px;
+  margin-left: 65px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  line-height: 22px;
+  text-align: center;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 .bg1 {
+  margin-left: 0;
+  background: url('../images/wt/img_tourinfo1.gif') no-repeat;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 .bg2 {
+  background: url('../images/wt/img_tourinfo2.gif') no-repeat;
+}
+.wt .tour .recruitInfo .recruitCont .txt4 .bg3 {
+  background: url('../images/wt/img_tourinfo3.gif') no-repeat;
+}
+.wt .tour .recruitInfo .recruitCont .txt5 {}
+.wt .tour .recruitInfo .recruitCont .txt5 dt {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.wt .tour .recruitInfo .recruitCont .txt5 dd {
+  padding-left: 12px;
+  line-height: 24px;
+  background: url('../images/common/bul1.gif') no-repeat 3px 10px;
+  letter-spacing: -1px;
+}
+.wt .tour .resolution {
+  padding-bottom: 22px;
+  margin-top: 50px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .resolution .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.wt .tour .resolution .listArea {
+  background: #fff;
+}
+.wt .tour .resolution .listArea ul {}
+.wt .tour .resolution .listArea ul li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.wt .tour .resolution .listArea ul li .txt1 {
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.wt .tour .resolution .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.wt .tour .resolution .listArea ul li .txt1 p {
+  float: left;
+  padding: 5px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.wt .tour .resolution .listArea ul li .txt1 .num {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  margin-right: 0;
+  background: none;
+}
+.wt .tour .resolution .listArea ul li .txt1 .name {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  padding-left: 0;
+  background: none;
+}
+.wt .tour .resolution .listArea ul li .txt2 {
+  line-height: 24px;
+}
+.wt .tour .resolution .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.wt .tour .resolution .listArea ul li.nolist {
+  padding: 40px 0 36px;
+  text-align: center;
+}
+.wt .tour .request1 {
+  margin-bottom: 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .request1 .requestCont {
+  padding: 50px 30px;
+  background: #fff;
+}
+.wt .tour .request1 .requestCont .item {
+  margin-top: 60px;
+}
+.wt .tour .request1 .requestCont .item .que {
+  height: 50px;
+  padding-left: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/hu/ico_q.gif') no-repeat;
+}
+.wt .tour .request1 .requestCont .item .ans {
+  padding-left: 40px;
+}
+.wt .tour .request1 .requestCont .item .ans:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.wt .tour .request1 .requestCont .item .ans select {
+  color: #757575;
+}
+.wt .tour .request1 .requestCont .item .ans li {
+  float: left;
+  width: 200px;
+}
+.wt .tour .request1 .requestCont .item .ans .gender1 {
+  padding-top: 90px;
+  background: url('../images/wt/gender1.gif') no-repeat 19px 0;
+}
+.wt .tour .request1 .requestCont .item .ans .gender2 {
+  padding-top: 90px;
+  background: url('../images/wt/gender2.gif') no-repeat 19px 0;
+}
+.wt .tour .request1 .requestCont .item .ans textarea {
+  width: 783px;
+  height: 83px;
+  padding: 15px 0 0 15px;
+  border: 1px solid #dfdfdf;
+  background: #f2f2f2;
+}
+.wt .tour .request1 .requestCont .item .ans .limit {
+  display: block;
+  padding: 10px 40px 0 0;
+  font-size: 16px;
+  text-align: right;
+}
+.wt .tour .request2 {}
+.wt .tour .request2 .writeTable .tableCont .info1 {
+  height: 30px;
+  padding: 30px 0 0 34px;
+  border-top: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .tour .certify {}
+.wt .tour .certify .info {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .certify .info .infoCont {
+  height: 206px;
+  padding-top: 170px;
+  text-align: center;
+  background: url('../images/wt/bg_tourcertify.gif') no-repeat center 70px #fff;
+}
+.wt .tour .certify .info .infoCont .txt1 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #202020;
+}
+.wt .tour .certify .info .infoCont .txt2 {
+  padding-top: 18px;
+  line-height: 24px;
+}
+.wt .tour .certify .inputArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .certify .inputArea .tit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+.wt .tour .certify .inputArea .cont {
+  background: #fff;
+}
+.wt .tour .certify .inputArea .cont .sec1 {
+  height: 110px;
+  padding: 30px 0 0 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.wt .tour .certify .inputArea .cont .sec1 .txt1 {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .tour .certify .inputArea .cont .sec1 .txt2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.wt .tour .certify .inputArea .cont .sec1 .detail {
+  display: block;
+  position: absolute;
+  top: 32px;
+  left: 187px;
+  padding-right: 15px;
+  font-size: 16px;
+  text-decoration: underline;
+  background: url('../images/common/ico_arrow.gif') no-repeat right 4px;
+  letter-spacing: -1px;
+}
+.wt .tour .certify .inputArea .cont .sec1 .agree {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+.wt .tour .certify .inputArea .cont .sec1 .agree li {
+  float: left;
+  margin-left: 40px;
+}
+.wt .tour .certify .inputArea .cont .sec2 {
+  height: 266px;
+  padding-top: 40px;
+}
+.wt .tour .certify .inputArea .cont .sec2 .txt1 {
+  height: 30px;
+  padding-left: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+}
+.wt .tour .certify .inputArea .cont .sec2 .writeTable {
+  padding: 0;
+  background: none;
+}
+.wt .tour .certify .inputArea .cont .sec2 .writeTable .tableCont {
+  padding: 0;
+}
+.wt .tour .reviewinfo {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .reviewinfo .cont {
+  height: 215px;
+  padding-top: 60px;
+  text-align: center;
+  background: #fff;
+}
+.wt .tour .reviewinfo .cont .txt1 {
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.wt .tour .reviewinfo .cont .txt1 span {
+  display: block;
+  color: #e01a22;
+}
+.wt .tour .reviewinfo .cont .txt2 {
+  padding-top: 18px;
+  line-height: 24px;
+}
+.wt .tour .reviewList {}
+.wt .tour .reviewList .tit {
+  height: 45px;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+  position: relative;
+}
+.wt .tour .reviewList .tit a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+.wt .tour .reviewList .list {
+  background: #fff;
+}
+.wt .tour .reviewList .list li {
+  padding: 30px 80px 30px 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.wt .tour .reviewList .list .txt1 {
+  height: 40px;
+}
+.wt .tour .reviewList .list .txt1 * {
+  vertical-align: middle;
+}
+.wt .tour .reviewList .list .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.wt .tour .reviewList .list .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .tour .reviewList .list .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wt .tour .reviewList .list .nolist {
+  padding: 34px 0 30px;
+  text-align: center;
+}
+.wt .tour .reviewList .list .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wt .tour .reviewList .list .txt2 a {
+  color: #202020;
+}
+.wt .tour .reviewList .list .txt3 {
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+.wt .tour .reviewList .list .txt4 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.wt .tour .reviewList .list .imgType {
+  padding: 30px 300px 30px 30px;
+}
+.wt .tour .reviewList .list .imgType .img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.wt .tour .reviewList .list .imgType .img img {
+  width: 195px;
+  height: 130px;
+}
+.wt .tour .reviewList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.wt .tour .reviewList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.wt .tour .reviewView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .passList {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wt .tour .passList .tit {
+  height: 45px;
+  padding-top: 5px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+  position: relative;
+}
+.wt .tour .passList .tit .sel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wt .tour .passList .tit .sel * {
+  vertical-align: middle;
+}
+.wt .tour .passList .tit .sel select {
+  background: #fff;
+}
+.wt .tour .passList .tit .sel a {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background: #585858;
+}
+.wt .tour .passList .listArea {
+  background: #fff;
+}
+.wt .tour .passList .listArea:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.wt .tour .passList .listArea li {
+  float: left;
+  width: 234px;
+  height: 333px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  background: #fff;
+  position: relative;
+}
+.wt .tour .passList .listArea li:nth-child(4n) {
+  width: 235px;
+  border-right: 0;
+}
+.wt .tour .passList .listArea .img {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.wt .tour .passList .listArea .img img {
+  width: 195px;
+  height: 135px;
+}
+.wt .tour .passList .listArea .txt1 {
+  padding: 0 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #202020;
+}
+.wt .tour .passList .listArea .txt1 a {
+  color: #202020;
+}
+.wt .tour .passList .listArea .nolist {
+  text-indent: -9999px;
+  background: url('../images/wt/nolist.gif') no-repeat center center #fff;
+}
+.wt .tour .passList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.wt .tour .passList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 공장견학단 일정보기 팝업 */
+.schedulePopup {
+  width: 580px;
+  background: #fff;
+}
+.schedulePopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.schedulePopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.schedulePopup .popCont {
+  padding: 0 30px 30px 30px;
+}
+.schedulePopup .popCont .info {
+  height: 40px;
+  padding-top: 30px;
+  border-bottom: 2px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #e01a22;
+}
+.schedulePopup .popCont ul {}
+.schedulePopup .popCont ul li {
+  padding: 30px 0 20px 20px;
+  border-bottom: 1px solid #dedede;
+}
+.schedulePopup .popCont ul li p {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.schedulePopup .popCont ul li dl {}
+.schedulePopup .popCont ul li dl:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.schedulePopup .popCont ul li dl dt {
+  float: left;
+  color: #202020;
+  line-height: 26px;
+  clear: both;
+}
+.schedulePopup .popCont ul li dl dd {
+  float: left;
+  margin-left: 10px;
+  line-height: 26px;
+}
+.schedulePopup .popCont ul li.nolist {
+  height: 59px;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+/* 지난 공장견학당 상세 팝업 */
+.wt .passViewPopup {
+  width: 940px;
+  background: #fff;
+}
+.wt .passViewPopup img {
+  width: 940px;
+  height: 626px;
+}
+/* ---------- 굿나이트(go) ---------- */
+.go {}
+.go .writeTable .vital {
+  display: inline-block;
+  width: 8px;
+  margin-left: 3px;
+  text-indent: -9999px;
+  background: url('../images/go/ico_vital.png') no-repeat 0 0;
+}
+/* 전문가 칼럼 리스트 */
+.go .columnList {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .columnList ul {
+  background: #fff;
+}
+.go .columnList ul li {
+  height: 62px;
+  padding: 38px 60px 0 30px;
+  border-bottom: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.go .columnList ul li a {
+  color: #202020;
+}
+.go .columnList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.go .columnList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 전문가 칼럼 상세 */
+.columnView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.columnView .viewContent .viewHead .tit {
+  padding-bottom: 0;
+}
+/* 전문가 상담 리스트 */
+.counselList {}
+.counselList .counselInfo {
+  height: 302px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c5c5c5;
+}
+.counselList .counselInfo .pic {
+  float: left;
+  width: 240px;
+}
+.counselList .counselInfo .text {
+  float: left;
+  width: 700px;
+  padding-top: 40px;
+}
+.counselList .counselInfo .text .txt1 {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.counselList .counselInfo .text .txt1 a {
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+  padding-top: 8px;
+  margin: -2px 0 0 8px;
+  border: 1px solid #3a50a6;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3a50a6;
+  text-align: center;
+  vertical-align: middle;
+}
+.counselList .counselInfo .text .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.counselList .counselInfo .text .txt3 {}
+.counselList .counselInfo .text .txt3 dt {
+  height: 24px;
+  margin-top: 25px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.counselList .counselInfo .text .txt3 dd {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.counselList .counselInfo .text .txt3 dd strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #3a50a6;
+}
+.counselList .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.counselList .listArea .tit {
+  height: 55px;
+  position: relative;
+}
+.counselList .listArea .tit h4 {
+  padding-top: 8px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #3a50a6;
+}
+.hu .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+/* 하기스 */
+.wt .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #e01a22;
+}
+/* 물티슈 */
+.go .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #3a50a6;
+}
+/* 굿나이트 */
+.wh .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #0058c5;
+}
+/* 화이트 */
+.gf .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #df1c60;
+}
+/* 좋은느낌 */
+.ge .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #358634;
+}
+/* 그린핑거 */
+.tn .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #715430;
+}
+/* 티엔 */
+.sc .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #087aca;
+}
+/* 스카트 */
+.de .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #008256;
+}
+/* 디펜드 */
+.kl .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #364ea2;
+}
+/* 크리넥스 */
+.my .counselList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #005cbb;
+}
+/* 마이비데 */
+.counselList .listArea ul {
+  background: #fff;
+}
+.counselList .listArea ul li {
+  height: 132px;
+  padding: 30px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.counselList .listArea ul li .txt1 {
+  height: 40px;
+}
+.counselList .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.counselList .listArea ul li .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.counselList .listArea ul li .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.counselList .listArea ul li .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.counselList .listArea ul li .txt1 .ans {
+  width: 48px;
+  height: 15px;
+  padding-top: 3px;
+  margin-left: 5px;
+  border: 1px solid #3a50a6;
+  font-size: 11px;
+  line-height: 11px;
+  color: #3a50a6;
+  text-align: center;
+}
+.counselList .listArea ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.counselList .listArea ul li .txt2 a {
+  color: #202020;
+}
+.counselList .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.counselList .listArea ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.counselList .listArea ul li .txt3 * {
+  vertical-align: middle;
+}
+.counselList .listArea ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.counselList .listArea ul li .txt3 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.counselList .listArea ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.counselList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.counselList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+.counselList .infoArea {
+  margin-bottom: 30px;
+}
+/* 전문가 약력보기 */
+.go .expertProfilePopup {
+  width: 580px;
+  height: 515px;
+  background: #fff;
+}
+.go .expertProfilePopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.go .expertProfilePopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.go .expertProfilePopup .popCont {
+  padding: 25px 30px 30px 30px;
+}
+.go .expertProfilePopup .popCont .t1 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #3a50a6;
+}
+.go .expertProfilePopup .popCont .t2 {
+  line-height: 26px;
+}
+.go .expertProfilePopup .popCont .t3 {
+  padding-top: 25px;
+  line-height: 26px;
+}
+.go .expertProfilePopup .popCont .t3 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+/* 전문가 상담 상세 */
+.go .counselView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 전문가 상담 등록 */
+.go .counselWrite {}
+/* 체험후기 나눔터 리스트 */
+.go .epilogueList {}
+.go .epilogueList .epilogueInfo {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .epilogueList .epilogueInfo .cont {
+  height: 458px;
+  position: relative;
+}
+.go .epilogueList .epilogueInfo .cont .irTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+}
+.go .epilogueList .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .epilogueList .listArea .tit {
+  height: 55px;
+  position: relative;
+}
+.go .epilogueList .listArea .tit h4 {
+  padding-top: 8px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.go .epilogueList .listArea .tit a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: inline-block;
+  width: 130px;
+  height: 29px;
+  padding: 11px 10px 0 0;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #3a50a6;
+}
+.go .epilogueList .listArea ul {
+  background: #fff;
+}
+.go .epilogueList .listArea ul li {
+  height: 132px;
+  padding: 30px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.go .epilogueList .listArea ul li .txt1 {
+  height: 40px;
+}
+.go .epilogueList .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.go .epilogueList .listArea ul li .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.go .epilogueList .listArea ul li .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.go .epilogueList .listArea ul li .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.go .epilogueList .listArea ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.go .epilogueList .listArea ul li .txt2 a {
+  color: #202020;
+}
+.go .epilogueList .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.go .epilogueList .listArea ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.go .epilogueList .listArea ul li .txt3 * {
+  vertical-align: middle;
+}
+.go .epilogueList .listArea ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.go .epilogueList .listArea ul li .txt3 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.go .epilogueList .listArea ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.go .epilogueList .listArea ul li.imgType {
+  padding: 30px 250px 0 30px;
+  position: relative;
+}
+.go .epilogueList .listArea ul li.imgType .img {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  width: 195px;
+}
+.go .epilogueList .listArea ul li.imgType .img img {
+  width: 195px;
+  height: 130px;
+}
+.go .epilogueList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.go .epilogueList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 체험후기 나눔터 상세 */
+.go .epilogueView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 베스트 체험기 리스트 */
+.go .bestList {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .bestList ul {
+  background: #fff;
+}
+.go .bestList ul li {
+  height: 91px;
+  padding: 30px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.go .bestList ul li .txt1 {
+  height: 42px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.go .bestList ul li .txt1 a {
+  color: #202020;
+}
+.go .bestList ul li .txt2 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.go .bestList ul li .txt2:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.go .bestList ul li .txt2 * {
+  vertical-align: middle;
+}
+.go .bestList ul li .txt2 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.go .bestList ul li .txt2 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.go .bestList ul li .txt2 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.go .bestList ul li .txt2 .share {
+  display: block;
+  float: left;
+  padding-left: 10px;
+  margin: 2px 10px 0 0;
+  background: url('../images/common/bar1.gif') no-repeat left 7px;
+}
+.go .bestList .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.go .bestList .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 베스트 체험기 상세 */
+.go .bestView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 야뇨증 진단 테스트 */
+.go .diagnose {}
+/* 야뇨증 진단 테스트 시작 */
+.go .diagnose .intro {}
+.go .diagnose .intro .info {
+  height: 142px;
+  padding: 40px 0 0 240px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #c5c5c5;
+  background: url('../images/go/bg_diagnose.gif') no-repeat;
+}
+.go .diagnose .intro .info .txt1 {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.go .diagnose .intro .info .txt2 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.go .diagnose .intro .childInfoInput {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .diagnose .intro .childInfoInput h4 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.go .diagnose .intro .childInfoInput .inputArea {
+  background: #fff;
+}
+.go .diagnose .intro .childInfoInput .inputArea ul {
+  overflow: hidden;
+}
+.go .diagnose .intro .childInfoInput .inputArea ul li {
+  float: left;
+  width: 140px;
+}
+.go .diagnose .intro .childInfoInput .inputArea .unit {
+  color: #202020;
+  padding: 0 25px 0 10px;
+}
+.go .diagnose .intro .childInfoInput .inputArea .writeTable {
+  padding-bottom: 0;
+  background: none;
+}
+.go .diagnose .intro .childInfoInput .inputArea .inputInfo {}
+.go .diagnose .intro .childInfoInput .inputArea .inputInfo .sec1 {
+  padding: 0 0 20px 30px;
+  border-bottom: 1px solid #dedede;
+  line-height: 24px;
+}
+.go .diagnose .intro .childInfoInput .inputArea .inputInfo .sec2 {
+  height: 62px;
+  padding-top: 38px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: #3a50a6;
+}
+/* 야뇨증 진단 테스트 설문 */
+.go .diagnose .survey {}
+.go .diagnose .survey .surveyArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .diagnose .survey .surveyArea .surveyCont {
+  padding: 50px 0;
+  background: #fff;
+}
+.go .diagnose .survey .surveyArea .info {
+  height: 74px;
+  padding-top: 25px;
+  margin-bottom: 50px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.go .diagnose .survey .surveyArea .info span {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e01a22;
+}
+.go .diagnose .survey .surveyArea .itemArea {
+  padding: 0 30px;
+}
+.go .diagnose .survey .surveyArea .item {
+  margin-top: 60px;
+}
+.go .diagnose .survey .surveyArea .item .que {
+  height: 55px;
+  padding-left: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/go/ico_q.gif') no-repeat;
+}
+.go .diagnose .survey .surveyArea .item .que.st {
+  height: 85px;
+}
+.go .diagnose .survey .surveyArea .item .que.st span {
+  display: block;
+  padding-top: 14px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 18px;
+  line-height: 18px;
+  color: #585858;
+}
+.go .diagnose .survey .surveyArea .item .ans {
+  padding-left: 40px;
+}
+.go .diagnose .survey .surveyArea .item .ans:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.go .diagnose .survey .surveyArea .item .ans select {
+  color: #757575;
+}
+.go .diagnose .survey .surveyArea .item .ans li {
+  margin-top: 10px;
+}
+.go .diagnose .survey .surveyArea .item .ans li:first-child {
+  margin-top: 0;
+}
+.go .ui_check input[type=checkbox] {
+  position: absolute;
+  z-index: -10000em;
+  left: -10000em;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.go .ui_check input[type=checkbox]+label {
+  padding-left: 40px;
+  padding-top: 4px;
+  height: 26px;
+  display: inline-block;
+  line-height: 18px;
+  background: url('../images/go/bg_input_check_off.png') no-repeat 0 0;
+  background-size: 30px auto;
+  font-size: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.go .ui_check input[type=checkbox]:checked+label {
+  background: url('../images/go/bg_input_check_on.png') no-repeat 0 0;
+  background-size: 30px auto;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #3a50a6;
+}
+.go .ui_check input[type=checkbox]:focus+label {
+  text-decoration: underline;
+}
+/* 야뇨증 진단 테스트 결과 */
+.go .diagnose .result {}
+.go .diagnose .result .result1 {
+  margin-bottom: 45px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .diagnose .result .result1 .cont {
+  padding: 190px 0 80px;
+  text-align: center;
+  background: url('../images/go/bg_diagnose2.gif') no-repeat center 70px #fff;
+}
+.go .diagnose .result .result1 .cont .txt1 {
+  font-size: 28px;
+  line-height: 46px;
+  color: #3a50a6;
+}
+.go .diagnose .result .result1 .cont .txt2 {
+  padding-top: 10px;
+  line-height: 24px;
+}
+.go .diagnose .result .result2 {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.go .diagnose .result .result2 h4 {
+  height: 42px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.go .diagnose .result .result2 .cont {
+  padding: 50px 30px;
+  background: #fff;
+}
+.go .diagnose .result .result2 .cont .txt1 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.go .diagnose .result .result2 .cont .txt1 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #3a50a6;
+}
+.go .diagnose .result .result2 .cont dl {}
+.go .diagnose .result .result2 .cont dl dt {
+  margin-top: 25px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 24px;
+  color: #3a50a6;
+}
+.go .diagnose .result .result2 .cont dl dd {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.go .diagnose .result .result2 .cont ul {
+  margin-top: 45px;
+  overflow: hidden;
+}
+.go .diagnose .result .result2 .cont ul li {
+  float: left;
+  height: 138px;
+  border: 1px solid #dedede;
+}
+.go .diagnose .result .result2 .cont ul li:first-child {
+  border-right: 0;
+}
+.go .diagnose .result .result2 .cont ul li .t1 {
+  display: block;
+  height: 33px;
+  padding: 29px 0 0 29px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+  letter-spacing: -2px;
+}
+.go .diagnose .result .result2 .cont ul li .t2 {
+  display: block;
+  padding-left: 29px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.go .diagnose .result .result2 .cont ul li .bg1 {
+  display: block;
+  width: 438px;
+  background: url('../images/go/bg_diagnose3.gif') no-repeat right top;
+}
+.go .diagnose .result .result2 .cont ul li .bg2 {
+  display: block;
+  width: 439px;
+  background: url('../images/go/bg_diagnose4.gif') no-repeat right top;
+}
+/* ---------- 화이트(wh) ---------- */
+.wh {}
+/* 웹툰 */
+.wh .webtoon {}
+.wh .webtoon .visual {
+  margin: 20px 0 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wh .webtoon .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.wh .webtoon .listArea ul {
+  background: #fff;
+}
+.wh .webtoon .listArea ul li {
+  height: 129px;
+  padding: 33px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.wh .webtoon .listArea ul li .txt1 {
+  height: 38px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #0058c5;
+}
+.wh .webtoon .listArea ul li .txt2 {
+  height: 42px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wh .webtoon .listArea ul li .txt2 a {
+  color: #202020;
+}
+.wh .webtoon .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.wh .webtoon .listArea ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.wh .webtoon .listArea ul li .txt3 * {
+  vertical-align: middle;
+}
+.wh .webtoon .listArea ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.wh .webtoon .listArea ul li .txt3 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.wh .webtoon .listArea ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.wh .webtoon .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.wh .webtoon .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* ---------- 좋은느낌(gf) ---------- */
+.gf {}
+/* 웹툰 */
+.gf .webtoon {}
+.gf .webtoon .visual {
+  margin: 20px 0 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.gf .webtoon .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.gf .webtoon .listArea ul {
+  background: #fff;
+}
+.gf .webtoon .listArea ul li {
+  height: 129px;
+  padding: 33px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.gf .webtoon .listArea ul li .txt1 {
+  height: 38px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #0058c5;
+}
+.gf .webtoon .listArea ul li .txt2 {
+  height: 42px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.gf .webtoon .listArea ul li .txt2 a {
+  color: #202020;
+}
+.gf .webtoon .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.gf .webtoon .listArea ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.gf .webtoon .listArea ul li .txt3 * {
+  vertical-align: middle;
+}
+.gf .webtoon .listArea ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.gf .webtoon .listArea ul li .txt3 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.gf .webtoon .listArea ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.gf .webtoon .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.gf .webtoon .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* ---------- 그린핑거(ge) ---------- */
+.ge {}
+/* Product Map */
+.ge .productMap {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.ge .productMap .cont {
+  padding: 30px 30px 50px 30px;
+  background: #fff;
+}
+.ge .productMap .cont .product1 {
+  height: 180px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product1 dt {
+  float: left;
+  width: 96px;
+  height: 128px;
+  padding-top: 52px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #c4e643;
+}
+.ge .productMap .cont .product1 dt span {
+  display: block;
+  padding-top: 43px;
+  background: url('../images/ge/bg_map1.gif') no-repeat center top;
+}
+.ge .productMap .cont .product1 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product1 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product1 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product1 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product1 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product2 {
+  height: 319px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product2 dt {
+  float: left;
+  width: 96px;
+  height: 179px;
+  padding-top: 140px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #5c9e42;
+}
+.ge .productMap .cont .product2 dt span {
+  display: block;
+  padding-top: 51px;
+  background: url('../images/ge/bg_map5.gif') no-repeat center top;
+}
+.ge .productMap .cont .product2 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product2 dd.line {
+  float: left;
+  width: 783px;
+  height: 138px;
+  border: 1px solid #dedede;
+  border-left: 0;
+  border-top: 0;
+}
+.ge .productMap .cont .product2 dd.bdn {
+  border-bottom: 0;
+}
+.ge .productMap .cont .product2 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product2 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product2 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product2 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product2 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+.ge .productMap .cont .product3 {
+  height: 319px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product3 dt {
+  float: left;
+  width: 96px;
+  height: 179px;
+  padding-top: 140px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #f48200;
+}
+.ge .productMap .cont .product3 dt span {
+  display: block;
+  padding-top: 59px;
+  background: url('../images/ge/bg_map3.gif') no-repeat center top;
+}
+.ge .productMap .cont .product3 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product3 dd.line {
+  float: left;
+  width: 783px;
+  height: 138px;
+  border: 1px solid #dedede;
+  border-left: 0;
+  border-top: 0;
+}
+.ge .productMap .cont .product3 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product3 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product3 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product3 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product3 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+.ge .productMap .cont .product4 {
+  height: 180px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product4 dt {
+  float: left;
+  width: 96px;
+  height: 127px;
+  padding-top: 53px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #267417;
+}
+.ge .productMap .cont .product4 dt span {
+  display: block;
+  padding-top: 52px;
+  background: url('../images/ge/bg_map4.gif') no-repeat center top;
+}
+.ge .productMap .cont .product4 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product4 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product4 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product4 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product4 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product4 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+.ge .productMap .cont .product5 {
+  height: 459px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product5 dt {
+  float: left;
+  width: 96px;
+  height: 308px;
+  padding-top: 150px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #feda00;
+}
+.ge .productMap .cont .product5 dt span {
+  display: block;
+  padding-top: 51px;
+  background: url('../images/ge/bg_map2.gif') no-repeat center top;
+}
+.ge .productMap .cont .product5 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product5 dd.line {
+  float: left;
+  width: 783px;
+  height: 138px;
+  border: 1px solid #dedede;
+  border-left: 0;
+  border-top: 0;
+}
+.ge .productMap .cont .product5 dd.bdn {
+  border-bottom: 0;
+}
+.ge .productMap .cont .product5 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product5 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product5 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product5 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product5 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+.ge .productMap .cont .product6 {
+  height: 359px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product6 dt {
+  float: left;
+  width: 96px;
+  height: 209px;
+  padding-top: 150px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #368b35;
+}
+.ge .productMap .cont .product6 dt span {
+  display: block;
+  padding-top: 51px;
+  background: url('../images/ge/bg_map6.gif') no-repeat center top;
+}
+.ge .productMap .cont .product6 dd {
+  float: left;
+  width: 391px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product6 dd.bdn {
+  border-bottom: 0;
+}
+.ge .productMap .cont .product6 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product6 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product6 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product6 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product6 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+.ge .productMap .cont .product7 {
+  height: 180px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product7 dt {
+  float: left;
+  width: 96px;
+  height: 128px;
+  padding-top: 52px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #6fca95;
+}
+.ge .productMap .cont .product7 dt span {
+  display: block;
+  padding-top: 53px;
+  background: url('../images/ge/bg_map7.gif') no-repeat center top;
+}
+.ge .productMap .cont .product7 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product7 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product7 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product7 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product7 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product8 {
+  height: 180px;
+  margin-bottom: 20px;
+}
+.ge .productMap .cont .product8 dt {
+  float: left;
+  width: 96px;
+  height: 123px;
+  padding-top: 57px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #368b35;
+}
+.ge .productMap .cont .product8 dt span {
+  display: block;
+  padding-top: 51px;
+  background: url('../images/ge/bg_map8.gif') no-repeat center top;
+}
+.ge .productMap .cont .product8 dd {
+  float: left;
+  width: 783px;
+  height: 178px;
+  border: 1px solid #dedede;
+  border-left: 0;
+}
+.ge .productMap .cont .product8 dd .t1 {
+  height: 33px;
+  padding: 15px 0 0 20px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #202020;
+  border-bottom: 1px solid #dedede;
+}
+.ge .productMap .cont .product8 dd ul {
+  overflow: hidden;
+}
+.ge .productMap .cont .product8 dd ul li {
+  float: left;
+  width: 104px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ge .productMap .cont .product8 dd ul li span {
+  display: block;
+  height: 34px;
+  padding-top: 14px;
+}
+.ge .productMap .cont .product8 dd ul li span.pds {
+  height: 24px;
+  padding-top: 24px;
+}
+/* ---------- 티엔(tn) ---------- */
+.tn {}
+/* 매장검색 */
+.tn .store {}
+.tn .store .search {
+  margin-bottom: 50px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.tn .store .search .cont {
+  height: 80px;
+  padding-top: 30px;
+  text-align: center;
+  background: #fff;
+}
+.tn .store .search .cont * {
+  vertical-align: middle;
+}
+.tn .store .search .cont label {
+  margin-right: 15px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.tn .store .search .cont input {
+  width: 380px;
+  height: 50px;
+  padding: 3px 0 0 15px;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  line-height: 20px;
+  color: #202020;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.tn .store .search .cont input:-ms-input-placeholder {
+  color: #757575;
+}
+/* MS */
+.tn .store .search .cont input::-webkit-input-placeholder {
+  color: #757575;
+}
+/* webkit */
+.tn .store .search .cont input::-moz-placeholder {
+  color: #757575;
+}
+/* firefox */
+.tn .store .search .cont a {
+  display: inline-block;
+  width: 138px;
+  height: 33px;
+  padding-top: 15px;
+  margin-left: 15px;
+  border: 1px solid #715430;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #715430;
+  text-align: center;
+}
+.tn .store .selRegion {
+  margin-bottom: 30px;
+}
+.tn .store .selRegion .tit {
+  height: 42px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.tn .store .selRegion ul {
+  border-top: 1px solid #c5c5c5;
+  border-left: 1px solid #c5c5c5;
+}
+.tn .store .selRegion ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.tn .store .selRegion ul li {
+  float: left;
+  width: 12.5%;
+  border-right: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.tn .store .selRegion ul li a {
+  display: block;
+  height: 33px;
+  padding-top: 15px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  text-align: center;
+}
+.tn .store .selRegion ul li a:hover,
+.tn .store .selRegion ul li a.on {
+  color: #fff;
+  background: #715430;
+}
+.tn .store .listArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.tn .store .listArea ul {
+  background: #fff;
+}
+.tn .store .listArea ul li {
+  height: 74px;
+  padding: 25px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/tn/ico_loca.gif') no-repeat 881px center
+}
+.tn .store .listArea ul li .txt1 {
+  height: 34px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.tn .store .listArea ul li .txt1 a {
+  color: #202020;
+}
+.tn .store .listArea ul li .txt2 {}
+.tn .store .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.tn .store .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 매장위치 팝업 */
+.tn .storeMapPopup {
+  width: 940px;
+  height: 628px;
+  background: #fff;
+}
+.tn .storeMapPopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.tn .storeMapPopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.tn .storeMapPopup .popCont {
+  padding: 25px 30px 30px 30px;
+}
+.tn .storeMapPopup .popCont .txt1 {
+  height: 32px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+}
+.tn .storeMapPopup .popCont .txt2 {
+  height: 42px;
+}
+/* ---------- 스카트(sc) ---------- */
+.sc {}
+/* 스카트 체험단이란? */
+.sc .experience {}
+/* VIP 쿠킹클래스 */
+.sc .culture {}
+/* ---------- 디펜드(de) ---------- */
+.de {}
+/* 물어보세요 */
+.de .councel {}
+.de .councel .councelInfo {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .councel .councelInfo .cont {
+  padding: 60px 30px 50px;
+  background: #fff;
+}
+.de .councel .councelInfo .cont .txt1 {
+  height: 50px;
+  font-size: 38px;
+  line-height: 38px;
+  color: #202020;
+  text-align: center;
+}
+.de .councel .councelInfo .cont .txt1 span {
+  color: #008256;
+}
+.de .councel .councelInfo .cont .txt2 {
+  text-align: center;
+}
+.de .councel .councelInfo .cont .infoArea {
+  padding: 0 30px;
+  margin: 60px 0 70px;
+  overflow: hidden;
+}
+.de .councel .councelInfo .cont .info {
+  float: left;
+  width: 200px;
+  height: 124px;
+  padding: 36px 0 0 180px;
+}
+.de .councel .councelInfo .cont .info .t1 {
+  height: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020
+}
+.de .councel .councelInfo .cont .info .t2 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.de .councel .councelInfo .cont .info:nth-child(2n) {
+  margin-left: 60px;
+}
+.de .councel .councelInfo .cont .info:nth-child(1),
+.de .councel .councelInfo .cont .info:nth-child(2) {
+  margin-bottom: 30px;
+}
+.de .councel .councelInfo .cont .info.bg1 {
+  background: url('../images/de/bg_councel1.gif') no-repeat;
+}
+.de .councel .councelInfo .cont .info.bg2 {
+  background: url('../images/de/bg_councel2.gif') no-repeat;
+}
+.de .councel .councelInfo .cont .info.bg3 {
+  background: url('../images/de/bg_councel3.gif') no-repeat;
+}
+.de .councel .councelInfo .cont .info.bg4 {
+  background: url('../images/de/bg_councel4.gif') no-repeat;
+}
+.de .councel .councelInfo .cont ul {
+  margin-top: 45px;
+  overflow: hidden;
+}
+.de .councel .councelInfo .cont ul li {
+  float: left;
+  height: 138px;
+  border: 1px solid #dedede;
+}
+.de .councel .councelInfo .cont ul li:first-child {
+  border-right: 0;
+}
+.de .councel .councelInfo .cont ul li .t1 {
+  display: block;
+  height: 33px;
+  padding: 29px 0 0 29px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+  letter-spacing: -2px;
+}
+.de .councel .councelInfo .cont ul li .t2 {
+  display: block;
+  padding-left: 29px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .councel .councelInfo .cont ul li .bg1 {
+  display: block;
+  width: 438px;
+  background: url('../images/de/bg_councel5.gif') no-repeat right top;
+}
+.de .councel .councelInfo .cont ul li .bg2 {
+  display: block;
+  width: 439px;
+  background: url('../images/de/bg_councel6.gif') no-repeat right top;
+}
+.de .councel .request {}
+.de .councel .request h4 {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.de .councel .request .writeTable .tableCont {
+  padding-bottom: 0;
+}
+.de .councel .request .subject {}
+.de .councel .request .subject li {
+  float: left;
+  width: 140px;
+}
+.de .councel .request .subject li:nth-child(6) {
+  width: 100%;
+  margin-top: 20px;
+}
+.de .councel .request .agree {
+  height: 80px;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: relative;
+}
+.de .councel .request .agree p {
+  padding: 32px 0 0 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.de .councel .request .agree p a {
+  display: inline-block;
+  padding-right: 15px;
+  margin-left: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #585858;
+  text-decoration: underline;
+  background: url('../images/common/ico_arrow.gif') no-repeat right 3px;
+}
+.de .councel .request .agree ul {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+.de .councel .request .agree ul li {
+  float: left;
+  margin-left: 40px;
+}
+.de .councel .request .agree ul li label {
+  padding-top: 6px !important;
+}
+/* 건강노트백석 리스트 */
+.de .healthNoteList {}
+.de .healthNoteList .listArea {
+  margin-top: 30px;
+  background: #fff;
+}
+.de .healthNoteList .listArea ul {}
+.de .healthNoteList .listArea ul li {
+  height: 132px;
+  padding: 30px 80px 0 30px;
+  border-bottom: 1px solid #dedede;
+  background: url('../images/common/ico_arrow2.gif') no-repeat 897px center;
+}
+.de .healthNoteList .listArea ul li .txt1 {
+  height: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #008256;
+}
+.de .healthNoteList .listArea ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.de .healthNoteList .listArea ul li .txt2 a {
+  color: #202020;
+}
+.de .healthNoteList .listArea ul li .txt3 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.de .healthNoteList .listArea ul li .txt3:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.de .healthNoteList .listArea ul li .txt3 * {
+  vertical-align: middle;
+}
+.de .healthNoteList .listArea ul li .txt3 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.de .healthNoteList .listArea ul li .txt3 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.de .healthNoteList .listArea ul li .txt3 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.de .healthNoteList .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.de .healthNoteList .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 건강노트백석 상세 */
+.de .healthNoteView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 샘플신청 */
+.de .sample {}
+/* 이미지 경로 변경
+.de .sample .requestInfo {margin-bottom:30px;padding-bottom:22px;background:url('../images/common/bg_bottom.png') no-repeat left bottom;}
+.de .sample .requestInfo .cont {height:316px;padding:60px 0 0 60px;background:url('../images/de/bg_sample.jpg') no-repeat right top #fff;}
+*/
+.de .sample h4 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.de .sample .requestInfo {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('/Common/images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .sample .requestInfo .cont {
+  height: 316px;
+  padding: 60px 0 0 60px;
+  background: url('/Common/images/de/bg_sample.jpg') no-repeat right top #fff;
+}
+.de .sample .requestInfo .cont .txt1 {
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.de .sample .requestInfo .cont .txt1 span {
+  color: #008256;
+}
+.de .sample .requestInfo .cont .txt2 {
+  padding-top: 20px;
+  line-height: 24px;
+}
+.de .sample .requestInfo .cont .txt2 span {
+  color: #008256;
+}
+.de .sample .requestInfo .cont .txt2 span strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .sample .writeTable .tableCont {
+  padding-bottom: 0;
+}
+.de .sample .recipient li {
+  float: left;
+  width: 140px;
+}
+.de .sample .recipient li.st {
+  width: 455px;
+}
+.de .sample .recipient li * {
+  vertical-align: top;
+}
+.de .sample .recipient li .ui_radio {
+  display: inline-block;
+  padding-top: 5px;
+}
+.de .sample .gender li {
+  float: left;
+  width: 140px;
+}
+.de .sample .agree {
+  height: 80px;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: relative;
+}
+.de .sample .agree p {
+  padding: 32px 0 0 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.de .sample .agree p a {
+  display: inline-block;
+  padding-right: 15px;
+  margin-left: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #585858;
+  text-decoration: underline;
+  background: url('../images/common/ico_arrow.gif') no-repeat right 3px;
+}
+.de .sample .agree ul {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+.de .sample .agree ul li {
+  float: left;
+  margin-left: 40px;
+}
+.de .sample .agree ul li label {
+  padding-top: 6px !important;
+}
+.de .sample .complete {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .sample .complete .cont {
+  height: 185px;
+  padding-top: 190px;
+  text-align: center;
+  background: url('/Common/images/de/bg_sample2.gif') no-repeat center 70px #fff;
+}
+.de .sample .complete .cont .txt1 {
+  height: 55px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+}
+.de .sample .complete .cont .txt2 {
+  line-height: 24px;
+}
+.de .sample .complete .cont .txt2 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.de .sample .requestInfo .goReview {
+  padding: 0 30px 40px;
+  background: #fff;
+}
+.de .sample .requestInfo .goReview .shortcut {
+  padding: 28px 0 28px 28px;
+  border: 1px solid #dedede;
+  position: relative;
+}
+.de .sample .requestInfo .goReview .shortcut strong {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #008256;
+}
+.de .sample .requestInfo .goReview .shortcut .btnGo {
+  display: block;
+  position: absolute;
+  top: 39px;
+  right: 29px;
+  width: 140px;
+  height: 40px;
+  padding-top: 10px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: #008256;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.de .sample .requestInfo .goReview .shortcut .btnGo span {
+  padding-right: 20px;
+  background: url('/Common/images/btn/bg2.png') no-repeat right 6px;
+}
+.de .sample .sampleInfo {}
+.de .sample .sampleInfo .infoCont {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('/Common/images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .sample .sampleInfo .infoCont .inCont {
+  padding: 50px 80px 40px;
+  background: #fff;
+}
+.de .sample .sampleInfo .infoCont .inCont ul {
+  overflow: hidden;
+}
+.de .sample .sampleInfo .infoCont .inCont ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+.de .sample .sampleInfo .infoCont .inCont ul li .img {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.de .sample .sampleInfo .infoCont .inCont ul li strong {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.de .sample .sampleInfo .infoCont .inCont .btn {
+  margin-top: 45px;
+  text-align: center;
+}
+.de .sample .sampleInfo .infoCont .inCont .btn a {
+  display: inline-block;
+  width: 270px;
+  height: 40px;
+  padding-top: 10px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: #008256;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.de .sample .sampleInfo .infoCont .inCont .btn a span {
+  padding-right: 20px;
+  background: url('/Common/images/btn/bg2.png') no-repeat right 6px;
+}
+/* 샘플신청 개인정보 동의 */
+.de .sampleTermPopup {
+  width: 580px;
+  height: 625px;
+  background: #fff;
+}
+.de .sampleTermPopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.de .sampleTermPopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.de .sampleTermPopup .popCont {
+  padding: 30px 30px 0 30px;
+}
+.de .sampleTermPopup .popCont dt {
+  margin-top: 30px;
+  padding-bottom: 4px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 22px;
+  color: #202020;
+}
+.de .sampleTermPopup .popCont dt:first-child {
+  margin-top: 0;
+}
+.de .sampleTermPopup .popCont dd {
+  line-height: 24px;
+}
+/* 정기배송 */
+.de .delivery {}
+.de .delivery .sec1 {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .delivery .sec1 .cont {
+  padding: 60px 30px 30px 30px;
+  background: url('../images/de/bg_delivery.gif') no-repeat right top #fff;
+}
+.de .delivery .sec1 .cont .txt1 {
+  padding-left: 30px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.de .delivery .sec1 .cont .txt1 span {
+  color: #008256;
+}
+.de .delivery .sec1 .cont .txt2 {
+  padding: 15px 0 0 30px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .delivery .sec1 .cont .txt2 span {
+  color: #008256;
+}
+.de .delivery .sec1 .cont .txt2 span strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .delivery .sec1 .cont table {
+  width: 100%;
+  margin-top: 60px;
+}
+.de .delivery .sec1 .cont table th {
+  padding-left: 28px;
+  border: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+.de .delivery .sec1 .cont table td {
+  padding: 24px 0 22px 20px;
+  border: 1px solid #dedede;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .delivery .sec1 .cont table td span {
+  color: #008256;
+}
+.de .delivery .sec1 .cont .vtop {
+  padding-top: 24px;
+  vertical-align: top;
+}
+.de .delivery .sec1 .cont .benefit {}
+.de .delivery .sec1 .cont .benefit dt {
+  height: 25px;
+  margin-top: 20px;
+  color: #008256;
+}
+.de .delivery .sec1 .cont .benefit dt:first-child {
+  margin-top: 0;
+}
+.de .delivery .sec1 .cont .benefit dd {
+  padding-top: 5px;
+  line-height: 24px;
+}
+.de .delivery .sec2 {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .delivery .sec2 h4 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.de .delivery .sec2 ul {
+  background: #fff;
+}
+.de .delivery .sec2 ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.de .delivery .sec2 li {
+  float: left;
+  width: 234px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+.de .delivery .sec2 li:nth-child(4n) {
+  width: 235px;
+  border-right: 0;
+}
+.de .delivery .sec2 li .img {
+  margin-bottom: 20px;
+}
+.de .delivery .sec2 li .img img {
+  width: 195px;
+  height: 195px;
+}
+.de .delivery .sec2 li .txt1 {
+  height: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #008256;
+}
+.de .delivery .sec2 li .txt2 {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 24px;
+  color: #202020;
+  letter-spacing: -1px;
+}
+.de .delivery .sec3 {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .delivery .sec3 h4 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.de .delivery .sec3 ul {
+  background: #fff;
+}
+.de .delivery .sec3 ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.de .delivery .sec3 li {
+  float: left;
+  width: 469px;
+  padding: 20px 0 40px;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+.de .delivery .sec3 li:nth-child(2) {
+  width: 470px;
+  border-right: 0;
+}
+.de .delivery .sec3 li:nth-child(3) {
+  border-bottom: 0;
+}
+.de .delivery .sec3 li .img {
+  margin-bottom: 20px;
+}
+.de .delivery .sec3 li .img img {
+  width: 430px;
+  height: 195px;
+}
+.de .delivery .sec3 li .txt1 {
+  height: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #008256;
+}
+.de .delivery .sec3 li .txt2 {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 24px;
+  color: #202020;
+  letter-spacing: -1px;
+}
+/* 20160719 추가 */
+.de .delivery .sec3 .cont {
+  padding: 30px 30px 30px 30px;
+  background-color: #fff;
+}
+.de .delivery .sec3 table {
+  width: 100%;
+}
+.de .delivery .sec3 table th {
+  padding: 22px 0px 20px 0px;
+  border: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .delivery .sec3 table td {
+  padding: 12px 0 10px 0px;
+  text-align: center;
+  border: 1px solid #dedede;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .delivery .sec3 table td.al {
+  text-align: left;
+  padding: 24px 0 22px 20px;
+}
+.de .delivery .sec4 {
+  margin-top: 70px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .delivery .sec4 .contact {
+  height: 60px;
+  padding-top: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #008256;
+  text-align: center;
+  background: #fff;
+}
+.de .delivery .sec4 .note {
+  padding: 40px 0 30px 30px;
+  background: #dedede;
+}
+.de .delivery .sec4 .note dt {
+  height: 35px;
+  padding: 2px 0 0 30px;
+  margin-top: 25px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  background: url('../images/de/bul1.png') no-repeat 0 0;
+}
+.de .delivery .sec4 .note dd {
+  padding: 0 0 5px 40px;
+  line-height: 24px;
+  background: url('../images/de/bul2.gif') no-repeat 30px 10px;
+  letter-spacing: -1px;
+}
+.de .delivery .sec4 .note dd strong {
+  color: #202020;
+}
+.de .delivery .btnArea a {
+  width: 300px;
+  margin-left: 14px;
+}
+/* 나에게 맞는 디펜드 스타일 찾기 */
+.de .survey .surveyArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .survey .surveyArea .surveyCont {
+  padding: 50px 0;
+  background: #fff;
+}
+.de .survey .surveyArea .info {
+  height: 74px;
+  padding-top: 25px;
+  margin-bottom: 50px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.de .survey .surveyArea .info span {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e01a22;
+}
+.de .survey .surveyArea .itemArea {
+  padding: 0 30px;
+}
+.de .survey .surveyArea .item {
+  margin-top: 60px;
+}
+.de .survey .surveyArea .item .que {
+  height: 85px;
+  padding-left: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/de/ico_q.gif') no-repeat;
+}
+.de .survey .surveyArea .item .que span {
+  display: block;
+  padding-top: 12px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 18px;
+  line-height: 18px;
+  color: #585858;
+}
+.de .survey .surveyArea .item .ans {
+  padding-left: 40px;
+}
+.de .survey .surveyArea .item .ans:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.de .survey .surveyArea .item .ans select {
+  color: #757575;
+}
+.de .survey .surveyArea .item .ans li {
+  margin-top: 10px;
+}
+.de .survey .surveyArea .item .ans li:first-child {
+  margin-top: 0;
+}
+.de .survey .surveyArea .item .que.st {
+  height: 55px;
+}
+.de .survey .surveyArea .item .que.st2 {
+  height: 112px;
+  line-height: 28px;
+  background-position: 0 3px;
+}
+.de .survey .surveyArea .item .ans.gender {
+  overflow: hidden;
+}
+.de .survey .surveyArea .item .ans.gender li {
+  float: left;
+  width: 200px;
+  margin-top: 0;
+}
+.de .survey .surveyArea .item .ans.gender .gender1 {
+  padding-top: 90px;
+  background: url('../images/de/gender1.gif') no-repeat 19px 0;
+}
+.de .survey .surveyArea .item .ans.gender .gender2 {
+  padding-top: 90px;
+  background: url('../images/de/gender2.gif') no-repeat 19px 0;
+}
+.de .survey .resultArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.de .survey .resultArea .cont {
+  height: 376px;
+  background: #fff;
+}
+.de .survey .resultArea .cont .sec1 {
+  float: left;
+  width: 411px;
+  padding: 59px 0 0 59px;
+}
+.de .survey .resultArea .cont .sec1 .txt1 {
+  font-size: 38px;
+  line-height: 46px;
+  color: #202020;
+}
+.de .survey .resultArea .cont .sec1 .txt1 span {
+  color: #008256;
+}
+.de .survey .resultArea .cont .sec1 .txt2 {
+  padding-top: 15px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.de .survey .resultArea .cont .sec2 {
+  float: right;
+  width: 470px;
+}
+.de .survey .resultArea .cont .sec2 img {
+  width: 470px;
+  height: 376px;
+}
+/* 전화상담 구매 문의 */
+.de .buyInquirePopup {
+  width: 580px;
+  height: 755px;
+  background: #fff;
+}
+.de .buyInquirePopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.de .buyInquirePopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.de .buyInquirePopup .popCont {
+  padding: 30px 30px 0 30px;
+}
+.de .buyInquirePopup .popCont .txt1 {
+  height: 63px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dedede;
+  line-height: 26px;
+}
+.de .buyInquirePopup .popCont .txt1 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #008256;
+}
+.de .buyInquirePopup .popCont .market {
+  overflow: hidden;
+}
+.de .buyInquirePopup .popCont .market li {
+  float: left;
+  margin: 0 14px 14px 0;
+}
+.de .buyInquirePopup .popCont .market li:nth-child(3n) {
+  margin-right: 0;
+}
+.de .buyInquirePopup .popCont .txt2 {
+  height: 19px;
+  padding: 2px 0 0 30px;
+  margin-top: 5px;
+  background: url('../images/de/bul1.png') no-repeat 0 0px;
+}
+/* ---------- 크리넥스(kl) ---------- */
+.kl {}
+/* 베스트 크리넥스 리스트 */
+.kl .bestList {
+  margin-top: 30px;
+}
+.kl .bestList .sec1 {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.kl .bestList .sec1 .tit {
+  height: 50px;
+  position: relative;
+}
+.kl .bestList .sec1 .tit h4 {
+  padding-top: 6px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.kl .bestList .sec1 .tit .sel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.kl .bestList .sec1 .tit .sel * {
+  vertical-align: middle;
+}
+.kl .bestList .sec1 .tit .sel select {
+  width: 165px;
+  background: #fff;
+}
+.kl .bestList .sec1 .tit .sel a {
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  padding-top: 12px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background: #585858;
+}
+.kl .bestList .sec1 .contArea {
+  background: #fff;
+}
+.kl .bestList .sec1 .contArea .cont1 {
+  padding: 30px 30px 60px 30px;
+}
+.kl .bestList .sec1 .contArea .cont1 .img {
+  margin-bottom: 40px;
+}
+.kl .bestList .sec1 .contArea .cont1 .img img {
+  width: 880px;
+  height: 588px;
+}
+.kl .bestList .sec1 .contArea .cont1 .txt1 {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 46px;
+  color: #202020;
+}
+.kl .bestList .sec1 .contArea .cont1 .txt2 {
+  padding-top: 10px;
+  line-height: 24px;
+}
+.kl .bestList .sec1 .contArea .cont1 .txt3 {
+  padding-top: 25px;
+}
+.kl .bestList .sec1 .contArea .cont2 {
+  border-top: 1px solid #dedede;
+}
+.kl .bestList .sec1 .contArea .cont2:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.kl .bestList .sec1 .contArea .cont2 .txtArea {
+  float: left;
+  width: 550px;
+  padding: 38px 0 0 30px;
+}
+.kl .bestList .sec1 .contArea .cont2 .txtArea .txt1 {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #364ea2;
+}
+.kl .bestList .sec1 .contArea .cont2 .txtArea .txt2 {
+  padding-top: 15px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.kl .bestList .sec1 .contArea .cont2 .imgArea {
+  float: right;
+  width: 360px;
+}
+.kl .bestList .sec1 .contArea .cont2 .imgArea img {
+  width: 360px;
+}
+.kl .bestList .sec2 {
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.kl .bestList .sec2 .contArea {
+  padding: 50px 0 70px 30px;
+  background: url('../images/kl/event.jpg') no-repeat right top #fff;
+}
+.kl .bestList .sec2 .contArea h4 {
+  height: 60px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: #202020;
+}
+.kl .bestList .sec2 .contArea .txt1 {
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+.kl .bestList .sec2 .contArea .txt1 span {
+  color: #364ea2;
+}
+.kl .bestList .sec2 .contArea .txt2 {
+  padding: 70px 0 0 30px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.kl .bestList .sec3 {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.kl .bestList .sec3 .tit {
+  height: 55px;
+  position: relative;
+}
+.kl .bestList .sec3 .tit h4 {
+  padding-top: 6px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.kl .bestList .sec3 .tit .sch {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.kl .bestList .sec3 .tit .sch input {
+  display: inline-block;
+  float: left;
+  width: 179px;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid #c5c5c5;
+  border-right: 0;
+  font-size: 16px;
+  color: #757575;
+}
+.kl .bestList .sec3 .tit .sch .btnSch {
+  display: inline-block;
+  float: left;
+}
+.kl .bestList .sec3 .tit .sch .btnWrite {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 29px;
+  padding: 11px 20px 0 0;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  background: url('../images/btn/bg1.png') no-repeat right top #364ea2;
+}
+.kl .bestList .sec3 .listArea {
+  background: #fff;
+}
+.kl .bestList .sec3 .listArea ul {}
+.kl .bestList .sec3 .listArea ul li {
+  height: 198px;
+  padding: 30px 300px 0 30px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.kl .bestList .sec3 .listArea ul li .txt1 {
+  height: 40px;
+}
+.kl .bestList .sec3 .listArea ul li .txt1 * {
+  vertical-align: middle;
+}
+.kl .bestList .sec3 .listArea ul li .txt1 span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+}
+.kl .bestList .sec3 .listArea ul li .txt1 .num {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.kl .bestList .sec3 .listArea ul li .txt1 .id {
+  padding-top: 2px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.kl .bestList .sec3 .listArea ul li .txt2 {
+  height: 42px;
+  width: 100%;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #202020;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.kl .bestList .sec3 .listArea ul li .txt2 a {
+  color: #202020;
+}
+.kl .bestList .sec3 .listArea ul li .txt3 {
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+.kl .bestList .sec3 .listArea ul li .txt4 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+.kl .bestList .sec3 .listArea ul li .txt4:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.kl .bestList .sec3 .listArea ul li .txt4 * {
+  vertical-align: middle;
+}
+.kl .bestList .sec3 .listArea ul li .txt4 p {
+  float: left;
+  padding: 4px 0 0 10px;
+  margin-right: 8px;
+  background: url('../images/common/bar1.gif') no-repeat left 9px;
+}
+.kl .bestList .sec3 .listArea ul li .txt4 p:first-child {
+  padding-left: 0;
+  background: none;
+}
+.kl .bestList .sec3 .listArea ul li .txt4 p span {
+  color: #202020;
+  padding-right: 5px;
+}
+.kl .bestList .sec3 .listArea ul li .img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.kl .bestList .sec3 .listArea ul li .img img {
+  width: 195px;
+  height: 130px;
+}
+.kl .bestList .sec3 .listArea ul li .nolist {
+  padding: 34px 0 30px;
+  text-align: center;
+}
+.kl .bestList .sec3 .listArea .more {
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  background: #fff;
+}
+.kl .bestList .sec3 .listArea .more span {
+  display: inline-block;
+  height: 24px;
+  padding: 6px 40px 0 0;
+  color: #202020;
+  background: url('../images/common/ico_more.gif') no-repeat right 0px;
+}
+/* 베스트 크리넥스 상세 */
+.kl .bestView {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 베스트 크리넥스 등록 */
+.kl .bestWrite {}
+.kl .bestWrite .sec1 {
+  margin-bottom: 40px;
+}
+.kl .bestWrite .sec2 .stit {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+.kl .bestWrite .sec2 .stit span {
+  padding-left: 20px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #585858;
+}
+.kl .bestWrite .sec2 .writeTable .tableCont {
+  padding-bottom: 0;
+}
+.kl .bestWrite .sec2 .agree {
+  height: 80px;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: relative;
+}
+.kl .bestWrite .sec2 .agree p {
+  padding: 32px 0 0 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.kl .bestWrite .sec2 .agree p a {
+  display: inline-block;
+  padding-right: 15px;
+  margin-left: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #585858;
+  text-decoration: underline;
+  background: url('../images/common/ico_arrow.gif') no-repeat right 3px;
+}
+.kl .bestWrite .sec2 .agree ul {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+.kl .bestWrite .sec2 .agree ul li {
+  float: left;
+  margin-left: 40px;
+}
+.kl .bestWrite .sec2 .agree ul li label {
+  padding-top: 6px !important;
+}
+.kl .bestWrite .writeTable .vital {
+  display: inline-block;
+  width: 8px;
+  margin-left: 3px;
+  text-indent: -9999px;
+  background: url('../images/kl/ico_vital.png') no-repeat 0 0;
+}
+/* ---------- 마이비데(my) ---------- */
+.my {}
+/* 마이비데 보고서 */
+.my .myReport {}
+/* 마이비데 보고서 시작 */
+.my .myReport .intro {}
+.my .myReport .intro .info {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+/* 마이비데 보고서 설문 */
+.my .myReport .survey {}
+.my .myReport .survey .surveyArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.my .myReport .survey .surveyArea .surveyCont {
+  height: 1450px;
+  padding-top: 50px;
+  background: #fff;
+}
+.my .myReport .survey .surveyArea .info {
+  height: 74px;
+  padding-top: 25px;
+  margin-bottom: 50px;
+  border: 1px solid #dedede;
+  text-align: center;
+}
+.my .myReport .survey .surveyArea .info span {
+  display: block;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e01a22;
+}
+.my .myReport .survey .surveyArea .itemArea {
+  padding: 0 30px;
+}
+.my .myReport .survey .surveyArea .item {
+  margin-top: 60px;
+}
+.my .myReport .survey .surveyArea .item .que {
+  height: 55px;
+  padding-left: 40px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/my/ico_q.gif') no-repeat;
+}
+.my .myReport .survey .surveyArea .item .ans {
+  padding-left: 40px;
+}
+.my .myReport .survey .surveyArea .item .ans:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.my .myReport .survey .surveyArea .item .ans select {
+  color: #757575;
+}
+.my .myReport .survey .surveyArea .item .ans li {
+  margin-top: 10px;
+}
+.my .myReport .survey .surveyArea .item .ans li:first-child {
+  margin-top: 0;
+}
+.my .myReport .survey .surveyArea .item .ans li ul {
+  margin-top: 10px;
+}
+.my .myReport .survey .surveyArea .item .ans li ul.st {
+  width: 760px;
+  height: 40px;
+  padding: 10px 0 0 40px;
+  background: #f2f2f2;
+}
+.my .myReport .survey .surveyArea .item .ans li ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.my .myReport .survey .surveyArea .item .ans li ul li {
+  float: left;
+  width: 140px;
+  margin-top: 0;
+}
+.my .myReport .survey .surveyArea .item .ans li ul li.st {
+  width: 100%;
+}
+/* 마이비데 보고서 결과 */
+.my .myReport .result {}
+.my .myReport .result .resultArea {
+  padding-bottom: 22px;
+  background: url('../images/common/bg_bottom.png') no-repeat left bottom;
+}
+.my .myReport .result .resultArea .resultCont {
+  background: #fff;
+}
+.my .myReport .result .resultArea .resultCont .total {
+  height: 61px;
+  padding-top: 38px;
+  border-bottom: 1px solid #dedede;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  text-align: center;
+}
+.my .myReport .result .resultArea .resultCont .total span {
+  color: #005cbb;
+}
+.my .myReport .result .resultArea .resultCont dl {
+  padding: 0 30px 50px 30px;
+}
+.my .myReport .result .resultArea .resultCont dl dt {
+  height: 50px;
+  padding-left: 40px;
+  margin-top: 50px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #202020;
+  background: url('../images/my/ico_q.gif') no-repeat;
+  letter-spacing: -1px;
+}
+.my .myReport .result .resultArea .resultCont dl dd {
+  height: 40px;
+  padding-left: 40px;
+  position: relative;
+}
+.my .myReport .result .resultArea .resultCont dl dd .graph {
+  position: absolute;
+  top: 0;
+  left: 440px;
+  width: 300px;
+  height: 11px;
+}
+.my .myReport .result .resultArea .resultCont dl dd .graph .num {
+  position: absolute;
+  top: -4px;
+  left: -100px;
+  width: 90px;
+  font-size: 16px;
+  letter-spacing: -1px;
+  text-align: right;
+}
+.my .myReport .result .resultArea .resultCont dl dd .graph .bar {
+  display: block;
+  height: 11px;
+  background: #005cbb;
+  position: relative;
+}
+.my .myReport .result .resultArea .resultCont dl dd .graph .bar span {
+  position: absolute;
+  top: -8px;
+  right: -60px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #005cbb;
+  letter-spacing: -2px;
+}
+.my .myReport .result .resultArea .resultCont dl dd.hs {
+  height: 80px;
+}
+.my .myReport .result .resultArea .resultCont dl dd.hs ul {
+  position: absolute;
+  top: 35px;
+  left: 440px;
+}
+.my .myReport .result .resultArea .resultCont dl dd.hs ul li {
+  float: left;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #202020;
+  letter-spacing: -1px;
+}
+.my .myReport .result .resultArea .resultCont dl dd.hs ul li:first-child {
+  margin-left: 0;
+}
+.my .myReport .result .resultArea .resultCont dl dd.hs ul li span {
+  padding-left: 5px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #005cbb;
+}
+/* 마이비데 보고서 참여 */
+.my .reportPopup {
+  width: 580px;
+  height: 1009px;
+  background: #fff;
+}
+.my .reportPopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.my .reportPopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.my .reportPopup .popCont {
+  padding: 30px 30px 0 30px;
+}
+/* 물어보세요 개인정보 취급방침 */
+.de .councelTermPopup {
+  width: 940px;
+  background: #fff;
+}
+.de .councelTermPopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.de .councelTermPopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.de .councelTermPopup .popCont {
+  padding: 30px 30px 0 30px;
+  line-height: 30px;
+}
+.de .councelTermPopup .popCont table {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+}
+.de .councelTermPopup .popCont table thead th {
+  height: 49px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+  background: #e5e5e5;
+}
+.de .councelTermPopup .popCont table thead th:first-child {
+  border-right: 1px solid #ffffff;
+}
+.de .councelTermPopup .popCont table tbody th {
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .councelTermPopup .popCont table tbody td {
+  padding: 10px 10px 8px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  color: #202020;
+}
+/* white SampleKit */
+.wh .sample h4 {
+  height: 45px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.wh .sample .gender li {
+  float: left;
+  width: 140px;
+}
+.wh .sample .agree {
+  height: 80px;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: relative;
+}
+.wh .sample .agree p {
+  padding: 32px 0 0 30px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.wh .sample .agree p a {
+  display: inline-block;
+  padding-right: 15px;
+  margin-left: 30px;
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #585858;
+  text-decoration: underline;
+  background: url(../images/common/ico_arrow.gif) no-repeat right 3px;
+}
+.wh .sample .agree ul {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+.wh .sample .agree ul li {
+  float: left;
+  margin-left: 40px;
+}
+.wh .sampleTermPopup {
+  width: 580px;
+  height: 625px;
+  background: #fff;
+}
+.wh .sample .writeTable .tableCont {
+  padding-bottom: 0;
+}
+.wh .sampleTermPopup .popHead {
+  height: 98px;
+  border-bottom: 2px solid #202020;
+}
+.wh .sampleTermPopup .popCont {
+  padding: 30px 30px 0 30px;
+}
+.wh .sampleTermPopup .popHead h3 {
+  padding-top: 35px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
+}
+.wh .sampleTermPopup .popCont dt:first-child {
+  margin-top: 0;
+}
+.wh .sampleTermPopup .popCont dt {
+  margin-top: 30px;
+  padding-bottom: 4px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 22px;
+  color: #202020;
+}
+.wh .sampleTermPopup .popCont dd {
+  line-height: 24px;
+}
+.white_main {
+  padding: 20px 0;
+}
+.white_main p {
+  text-align: center;
+  line-height: 25px;
+}
+.white_main .ft_bold {
+  color: #202020;
+}
+.white_box {
+  background-color: #fff;
+  padding: 30px;
+}
+.white_box p {
+  line-height: 25px;
+}
+.white_box .ft_bold {
+  color: #202020;
+}
+.white_box .question_list1 li {
+  float: left;
+}
+.white_box .question_list1 label {
+  padding: 10px 30px;
+}
+.white_box .question_list2 label {
+  padding: 10px 0;
+}
+.white_complete {
+  text-align: center;
+  padding: 70px;
+  background-color: #fff;
+}
+.white_complete .title {
+  font-size: 26px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  margin-top: 60px;
+  color: #000000;
+}
+.white_complete .content {
+  font-size: 18px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.ft_pink {
+  color: #EF5EA4;
+}
+.white_review {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #fff;
+}
+.white_review .box {
+  background-color: #fff;
+  color: #000000;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  line-height: 25px;
+  border: 2px solid #DEDEDE;
+}
+.white_review .box p {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.btnType6 {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  padding-top: 15px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #E95193;
+  color: #fff;
+}
+.white_main .btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.white_main .btn .type_wh {
+  background-color: #F390BC;
+}
+.white_main .btn .type_nm {
+  background-color: #E95193;
+}
+.white_main .btn a {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 17px 0 0;
+  width: 200px;
+  height: 33px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1em;
+  letter-spacing: -1px;
+}
+/* 디펜드 샘플 신청 add-201801 */
+.de .sample {
+  position: relative;
+  margin-top: -2px;
+}
+.de .sample .requestInfo {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.de .sample .requestInfo .cont {
+  height: 376px;
+  padding: 0 0 0 60px;
+  background: url(../images/de_new/bg_de_sample2018.jpg) no-repeat right top #fff;
+}
+.de .sample .requestInfo .cont p.txt1 {
+  padding-top: 50px;
+  font-size: 23px;
+}
+.de .sample .requestInfo .cont p.txt1 strong {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #038259;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .sample .requestInfo .cont p.txt1 strong>span {
+  color: #004426;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .sample .requestInfo .cont .deImg {
+  display: block;
+  margin-bottom: 30px;
+}
+.de .sample .requestInfo .cont p.txt2 {
+  line-height: 30px;
+}
+.de .sample .requestInfo .cont p.txt2 strong {
+  color: #de1951;
+  font-weight: bold;
+}
+.de .sample h4.anchor {
+  display: block;
+  padding: 35px 0 40px;
+  background-color: #185b45;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+.de .sample h4.anchor>span {
+  display: block;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.de .sample .depend_survey .ft_green.txt {
+  font-size: 18px;
+  color: #038259;
+}
+.de .sample .depend_survey .survey_tilte {
+  font-size: 24px;
+}
+.de .sample .writeTable .tableCont {
+  padding-bottom: 50px;
+}
+.de .sample .btnType1.round, .de .sample .btnType2.round {
+  width: auto;
+  min-width: 140px;
+  height: 55px;
+  line-height: 55px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 0;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  border-radius: 55px;
+  font-size: 22px;
+}
+.de .sample .btnType1.round {
+  background-color: #bbc1c0;
+}
+.de .sample .btnType2.round {
+  background-color: #185b45;
+}
+.de .sample .sampleInfo.recommSample {
+  height: 500px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  background: url(../images/de_new/bg_de_recomm_sample.jpg) no-repeat center top;
+}
+.de .sample .sampleInfo.recommSample .info {
+  clear: both;
+  width: 100%;
+  padding-top: 30px;
+  text-align: right;
+}
+.de .sample .sampleInfo.recommSample .infoCont {
+  min-height: 420px;
+}
+.de .sample .sampleInfo.recommSample .infoCont, .de .sample .sampleInfo.recommSample .infoCont .inCont {
+  background: none;
+  padding: 0;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont ul {
+  overflow: inherit;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont ul:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .left {
+  position: relative;
+}
+/*.de .sample .sampleInfo.recommSample .infoCont .inCont .left:before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 0;
+                        margin-left: 30px;
+                        margin-top: -5px;
+                        width: 70px;
+                        height: 74px;
+                        background: url(../images/de_new/de_tag_recomm.png) no-repeat 0 0;
+                    }*/
+.de .sample .sampleInfo.recommSample .infoCont .inCont .left .img {
+  margin-top: 105px;
+  margin-bottom: 35px;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .left .img img {
+  width: 55%;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .left>p {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .left>p>span {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 26px;
+  background-color: #038259;
+  color: #fff;
+}
+.de .sample .sampleInfo .infoCont .inCont .right .img {
+  margin-bottom: 50px;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .right {
+  padding-top: 70px;
+  color: #fff;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .right>p {
+  display: block;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: bold;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .right>p>span {
+  display: block;
+  font-size: 18px;
+}
+.de .sample .sampleInfo.recommSample .infoCont .inCont .right .p1:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 20px auto 0;
+}
+.de .sample .writeTable.notbtm {
+  background: none;
+  margin-bottom: 0;
+}
+.de .sample .writeTable .tableCont.userInfo {
+  padding: 50px 40px 55px;
+}
+.de .sample .writeTable .tableCont.userInfo .pad_l30 {
+  padding: 0;
+  border-bottom: 1px solid #000;
+}
+.de .sample .writeTable .tableCont.userInfo table th {
+  padding-left: 0;
+}
+.de .sample .writeTable .tableCont.userInfo .recipient li {
+  width: auto;
+  margin-right: 50px;
+}
+.de .sample .tableCont.userInfo .agree p {
+  padding-left: 0;
+  font-size: 24px;
+}
+.de .sample .tableCont.userInfo .agree p a {
+  display: block;
+  width: 105px;
+  margin-top: 15px;
+  margin-left: 0;
+  text-decoration: none;
+  font-size: 18px;
+  background: url(../images/de_new/de_sample_ico2.png) no-repeat right center;
+}
+.de .sample .tableCont.userInfo .agree {
+  padding-bottom: 15px;
+}
+.de .sample .ui_radio input[type=radio]+label {
+  padding-left: 30px;
+  background: url(../images/de_new/bg_input_radio_off.png) no-repeat 0 center;
+}
+.de .sample .ui_radio input[type=radio]:checked+label {
+  background: url(../images/de_new/bg_input_radio_on.png) no-repeat 0 center;
+}
+.de .sample .sampleInfo.afterCom {
+  background: none;
+  background-color: #73c2cd;
+  margin-top: -22px;
+  color: #fff;
+}
+.de .sample .sampleInfo.afterCom .infoCont,
+.de .sample .sampleInfo.afterCom .infoCont .requestInfo,
+.de .sample .sampleInfo.afterCom .infoCont .requestInfo .goReview {
+  background: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.de .sample .sampleInfo.afterCom .infoCont .requestInfo .goReview .shortcut {
+  border: 0px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.de .sample .sampleInfo.afterCom .requestInfo .goReview .shortcut strong {
+  color: #fff;
+}
+.de .sample .sampleInfo.afterCom .requestInfo .goReview .shortcut .btnGo {
+  top: 50px;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  padding-top: 0;
+  background: transparent;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  border-radius: 55px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.de .sample .sampleInfo.afterCom .requestInfo .goReview .shortcut .btnGo>span {
+  padding-right: 0;
+}
+.de .sample .complete.renew .cont {
+  padding-bottom: 70px;
+  background: url(../images/de_new/bg_sample_result.png) no-repeat center 90px #fff;
+}
+.de .sample .complete.renew .cont .txt1 {
+  font-size: 36px;
+  height: auto;
+  padding-bottom: 20px;
+  line-height: inherit;
+}
+.de .sample .complete.renew .cont .txt1>strong {
+  font-weight: bold;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .sample .complete.renew .cont .txt2 {
+  color: #000;
+  font-weight: bold;
+}
+.de .sample .complete.renew .cont .txt3 {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  color: #585858;
+}
+.de .sample .complete.renew .cont .txt3>strong {
+  color: #c00b3e;
+  font-weight: bold;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+}
+.de .sample .complete.renew .btnType2.round {
+  width: 165px;
+  background-color: #038259;
+}
+/* 201903 디펜드샘플신청 */
+.de .sample.sample19 {
+  background: #e8e8ea
+}
+.de .sample.sample19 .writeTable.notbtm {
+  margin: 0 40px;
+}
+.de .sample.sample19 .requestInfo {
+  padding-bottom: 55px;
+}
+.de .sample.sample19 .requestInfo .cont {
+  background: url(../images/de_new/img_de_sample2019-2.jpg) no-repeat right top #fff;
+  font-family: 'Spoqa Han Sans';
+}
+.de .sample.sample19 .requestInfo .cont * {
+  font-fam: ;
+  ily: 'Spoqa Han Sans';
+}
+.de .sample.sample19 .requestInfo .cont p.txt1 {
+  font-size: 20px;
+  color: #444;
+}
+.de .sample.sample19 .requestInfo .cont p.txt1:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 20px 0 8px;
+  background: #000;
+}
+.de .sample.sample19 .requestInfo .cont p.txt1 strong,
+.de .sample.sample19 .requestInfo .cont p.txt1 strong>span {
+  color: #222;
+  font-size: 50px;
+}
+.de .sample.sample19 .requestInfo .cont p.txt1 strong>span {
+  font-weight: normal;
+}
+.de .sample.sample19 .requestInfo .cont p.txt2 {
+  font-size: 20px;
+}
+.de .sample.sample19 .requestInfo .cont p.txt2 strong {
+  color: #222;
+}
+.de .sample.sample19 h4.anchor {
+  margin: 0 40px;
+  height: auto;
+  padding-top: 0;
+  background: #fff;
+  color: #222;
+}
+.de .sample.sample19 h4.anchor:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #222;
+  margin: 0 auto 20px;
+}
+.de .sample.sample19 h4.anchor>span {
+  padding-top: 15px;
+  color: #444;
+}
+.de .sample.sample19 .depend_survey .survey_tilte {
+  font-size: 18px;
+  font-weight: 400;
+}
+.de .sample.sample19 .ft_green {
+  padding: 3px 5px 3px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background: #b59680;
+  color: #fff !important;
+  font-size: 13px;
+  font-family: 'Arial';
+}
+.de .sample.sample19 .ui_radio input[type=radio]:checked+label {
+  color: #222;
+  background: url(../images/de_new/bg2_input_radio_on.gif) no-repeat 0 center
+}
+.de .sample.sample19 .btnType1.round,
+.de .sample.sample19 .btnType2.round,
+.de .sample .complete.renew .btnType2.round {
+  border-radius: 0;
+  font-size: 18px;
+  height: 50px;
+  line-height: 49px;
+  min-width: 200px;
+  font-weight: normal;
+}
+.de .sample.sample19 .btnType1.round {
+  background: #888;
+}
+.de .sample.sample19 .sampleInfo.recommSample {
+  height: auto;
+  background: url(../images/de_new/bg2_de_recomm_sample.gif) no-repeat center top;
+}
+.de .sample.sample19 .sampleInfo.recommSample .title {
+  font-size: 32px;
+  text-align: center;
+  color: #222;
+}
+.de .sample.sample19 .sampleInfo.recommSample .title:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #000;
+  margin: 0 auto 20px;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont ul {
+  margin-top: 10px;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .left .img {
+  position: relative;
+  width: 370px;
+  height: 300px;
+  margin: 50px auto 0;
+  background: #fff;
+  text-align: center;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .left .img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right {
+  padding-top: 60px;
+  text-align: left;
+  color: #444;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right>p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .p0 {
+  font-size: 26px;
+  color: #085632;
+  font-weight: 700;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .p0 span {
+  font-size: 26px;
+  display: inline-block !important;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .p1:after {
+  background: #000;
+  height: 1px;
+  margin: 25px 0 15px;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .spec {
+  color: #222;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .spec:before {
+  display: block;
+  content: '구성';
+  font-size: 14px;
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  line-height: 29px;
+  background: #93b196;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.de .sample.sample19 .sampleInfo.recommSample .infoCont {
+  min-height: 520px;
+  margin-bottom: 15px;
+}
+.de .sample.sample19 .sampleInfo.recommSample .info {
+  padding-top: 0;
+  text-align: left;
+}
+.de .sample.sample19 .writeTable .tableCont.userInfo {
+  padding-top: 0;
+}
+.de .sample.sample19 .writeTable .tableCont.userInfo .pad_l30 {
+  height: auto;
+  border-bottom: 0px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+}
+.de .sample.sample19 .writeTable .tableCont.userInfo .pad_l30:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #000;
+  margin: 0 auto 20px;
+}
+.de .sample .input1, .de .sample select {
+  background: #fff;
+}
+.de .sample .writeTable .zipCode {
+  background: #888;
+  color: #fff;
+}
+.de .sample.sample19 .tableCont.userInfo .agree p {
+  padding-top: 13px;
+  font-size: 18px;
+}
+.de .sample.sample19 .tableCont.userInfo .agree p a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #999999;
+  text-align: center;
+  width: 70px;
+  padding: 1px 5px 2px;
+  margin-left: 8px;
+}
+.de .sample.sample19 .sampleInfo.afterCom {
+  background: none;
+}
+.de .sample.sample19 .requestInfo .goReview {
+  padding: 40px 0 !important;
+  text-align: center;
+}
+.de .sample .complete.renew .cont {
+  height: auto;
+  padding-bottom: 90px;
+}
+.de .sample .complete.renew .cont .txt1 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.de .sample .complete.renew .cont .txt1>strong,
+.de .sample .complete.renew .cont .txt2 {
+  font-weight: normal;
+}
+.de .sample .complete.renew .cont .txt2 {
+  font-size: 20px;
+  color: #252525;
+}
+.de .sample .complete.renew .cont .txt3 {
+  padding: 10px 0;
+}
+.de .sample .complete.renew .cont .txt3>strong {
+  color: #16815c
+}
+.de .sample .complete.renew .btnType2.round {
+  background: #085632
+}
+/* 201903 디펜드샘플신청 */
+/* 201904 디펜드샘플신청 회원체크팝업 */
+.memcheck_pop {
+  display: none;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  text-align: center;
+  z-index: 102;
+}
+.memcheck_pop .info {
+  padding-top: 60px;
+}
+.memcheck_pop .p1 {
+  padding-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
+  color: #222;
+}
+.memcheck_pop .p2 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #444;
+}
+.memcheck_pop .btnArea {
+  margin-top: 40px;
+}
+.memcheck_pop .btnArea .btnType1 {
+  background: #888888;
+}
+.memcheck_pop .btnArea .btnType2 {
+  background: #085632;
+}
+/* 201904 디펜드샘플신청 회원체크팝업 */
+
+/* 201906 kimtech and 201907kimtech s */
+.kimtech .brandSub {padding-bottom:100px;}
+.kimtech .ui_radio input+label {vertical-align: middle;}
+.kimtech .ui_radio input[type=radio]{
+  position: absolute; z-index: -10000; left: -10000em;
+  overflow: hidden; height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+.kimtech .ui_radio input[type=radio]+label {
+	display: inline-block;min-width:50px;padding:3px 0 3px 30px;margin-right:20px;font-size: 16px;
+  background: url(../images/common/inputbg_radio_off.png) no-repeat 0 center;cursor:pointer;
+}
+.kimtech .ui_radio input[type=radio]:checked+label {
+  font-weight: 700; color: #000;
+  background: url(../images/common/inputbg_radio_on.png) no-repeat 0 center;
+}
+.kimtech .ui_radio input[type=radio]:focus+label {text-decoration: none;}
+.kimtech .ui_radio input[type=radio]:disabled+label {
+  background: url(../images/common/inputbg_radio_dis.png) no-repeat 0 center !important;
+}
+.kimtech .ui_radio input[type=checkbox]{width:20px;height:20px;vertical-align: middle;}
+.samplekit_apply.ktech {
+  background: #e8e8ea url(../images/ktech/sample_head_bg.jpg) no-repeat center top;
+  background-size: 100%;
+}
+.kimtech .btnArea .btnType1.colr,
+.sample_login .btnArea .btnType1.colr,
+.samplekit_apply .btnArea .btnType1.colr {
+  background-color: #5f258a;color: #fff;border: 1px solid #5f258a;
+}
+.samplekit_apply .anchor {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 60px 60px 20px;
+  font-size: 32px;
+  color: #5f258a;
+  background-color: #fff;
+}
+.samplekit_apply .userInfo>h4 {color: #5f258a;}
+.samplekit_apply .userInfo table label:after {color: #a56dc2;}
+.kimtech .memcheck_pop .btnArea .btnType2 {background: #5f258a;}
+.kimtech .councel .councelInfo {
+  background:#fff;
+  padding:40px 60px 30px;
+  border-bottom:1px solid #ddd7dd;
+}
+.kimtech .councel .councelInfo .txt1{padding-bottom:10px;}
+.kimtech .councel .councelInfo .txt1 strong{font-weight: 700;}
+.kimtech .councel .request .writeTable {background:none;background:#fff;}
+.kimtech .councel .request .writeTable .tableCont {padding:20px 30px;}
+.kimtech .councel .request .input1, .kimtech .councel .request select{background:#fff;}
+.kimtech .councel .request .st {padding-top:10px;font-size:14px;color:#444444;}
+.kimtech .councel .request .subject li {float: left;width: 140px;}
+.kimtech .councel .request .subject li:nth-child(5) {width: 100%;margin-top: 20px;}
+.kimtech .councel .request .agree {
+  margin:20px 0 20px;
+  padding-top:10px;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: relative;
+}
+.kimtech .councel .request .agree p {
+  padding: 20px 0 0 0;
+  font-family: 'Spoqa Han Sans';
+  color: #202020;
+}
+.kimtech .councel .request .agree p > span{display: inline-block;width:45%;}
+.kimtech .councel .request .agree p a {
+  display: inline-block;
+  padding:6px 11px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #585858;
+  border:1px solid #999999;
+  text-align: center;
+}
+.kimtech .councel .request .agree > ul >li {position:relative;}
+.kimtech .councel .request .agree > ul ul {position: absolute;top: 21px;right: 30px;}
+.kimtech .councel .request .agree > ul ul li {float: left;margin-left: 40px;}
+.kimtech .councel .request .agree > ul ul li label {padding-top: 6px !important;}
+.kimtech .councel .btnArea {background:#fff;margin-top:0;padding:30px 0 100px;}
+.kimtech .councel .complete {position: relative;background:#fff;}
+.kimtech .councel .complete .cont {
+  padding-top: 185px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url(../images/ktech/ico_counsel.jpg) no-repeat center 75px #fff;
+  background-size:60px;
+}
+.kimtech .councel .complete .cont .txt1 {
+  padding-bottom:20px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #202020;
+}
+.kimtech .councel .complete .cont .txt2 {line-height: 24px;}
+.kimtech .councel .complete .cont .txt2 strong {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  color: #202020;
+}
+.kimtech .btnType1 {
+  background:#afb0b4;
+  font-weight: normal;
+  width:auto;height:auto;
+  min-width:15px;
+  padding:16px 8%;
+}
+/* 201906 kimtech */
+/* 20190822 */
+.ui_radio input[type=checkbox] {
+    position: absolute;z-index: -10000;left: -10000em;overflow: hidden;
+    height: 1px;width: 1px;margin: -1px;padding: 0;border: 0;
+}
+.ui_radio input[type=checkbox]+label {
+	display: inline-block;min-width:50px;padding:3px 0 3px 30px;margin-right:20px;font-size: 16px;cursor:pointer;
+  background: url(../images/common/inputbg_check_off.png) no-repeat 0 center;
+}
+.ui_radio input[type=checkbox]:checked+label {
+  font-weight: 700; color: #000;
+  background: url(../images/common/inputbg_check_on.png) no-repeat 0 center;
+}
+.samplekit_apply .userInfo .agree > ul + .sampleInfo {position: relative;margin-top:-21px;margin-bottom:30px;}
+.samplekit_apply .userInfo .agree .sampleInfo {
+  padding:25px 25px 20px;background:#f3f3f4;
+}
+.samplekit_apply .userInfo .agree .sampleInfo > p {padding:0 0 20px 40px;font-size: 16px;background: url(../images/common/ico_info.png) no-repeat 0 5px;line-height: 1.6;}
+.samplekit_apply .userInfo .agree .sampleInfo span {display: block;padding:0 0 10px 40px;font-size: 14px;}
+/* 20190822 */
+
+/* 좋은느낌CN footer 201908 */
+
+.foocn, .foocn .footerCont {height:200px;}
+.foocn .footerCont .footsec {height:120px;}
+.foocn .footerCont .footsec .corpInfo{top:34px;}
+.foocn .footerCont .footsec .corpInfo a.femail {padding-left: 24px;display: block;background:url(../images/common/ico_femail.png) no-repeat left top 6px;text-decoration: none;}
+.foocn .footerCont .footsec .copy {top:58px;font-weight: 300;color:#999999;}
+/* 좋은느낌CN footer 201908 */

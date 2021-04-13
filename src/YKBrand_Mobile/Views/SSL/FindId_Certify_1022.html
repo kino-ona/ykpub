@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="유한킴벌리 통합브랜드" />
+    <meta name="description" content="유한킴벌리 통합브랜드" />
+    <meta name="keywords" content="유한킴벌리 통합브랜드" />
+    <meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+    <title>아이디 찾기 | 유한킴벌리 통합브랜드</title>
+
+    
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W86233');</script>
+
+<script>
+
+    var dataLayer2 = [{
+        'CD1': 'N', 		// 로그인 여부 Y or N
+        'CD2': '',	// CID
+        'CD3': '', 	// UID
+        'CD4': 'Mobile_YKBRAND', 	// Device_type
+        'CD5': 'YKBRAND',		//brand_name
+    }];
+
+   
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer2', 'GTM-WN2V9CH');</script>
+
+
+
+<!-- End Google Tag Manager -->
+
+    <link rel="icon" href="https://mykbrand.stiscloudbonds.com/Common/images/favicon/favicon_default.png" type="image/x-icon">
+    <!--link rel="stylesheet" href="https://mykbrand.stiscloudbonds.com/Common/css/common.css"-->
+	<link rel="stylesheet" href="../../Common/css/common.css">
+    <link rel="stylesheet" href="https://mykbrand.stiscloudbonds.com/Common/css/main.css?ver=201806141105"> <!-- main css -->
+    <link rel="stylesheet" href="https://mykbrand.stiscloudbonds.com/Common/css/swiper.css">
+    <link rel="stylesheet" href="https://mykbrand.stiscloudbonds.com/Common/css/reset.css">
+    <link rel="stylesheet" href="https://mykbrand.stiscloudbonds.com/Content/common.css?ver=201806141105">
+    <script>
+        var userId = "";
+        
+    </script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Common/js/swiper.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Common/js/front.ui.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/jquery.waitforimages.min.js"></script>
+    <script type="text/javascript" src="https://mykbrand.stiscloudbonds.com/Scripts/common.js?ver=201806141105"></script>
+    <script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+    <script>
+        jQuery.validator.setDefaults({
+            ignore: "",
+            onkeyup: false,
+            onclick: false,
+            onfocusout: false,
+            showErrors: function (errorMap, errorList) {
+                if (this.numberOfInvalids()) {
+                    if (errorList.length > 0) {
+                        if (errorList[0].message)
+                            alert(errorList[0].message);
+                        $(errorList[0].element).focus();
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script>
+
+
+        $(function () {
+            $("#findTab").tabs(); // 회원가입정보/휴대폰인증찾기 탭
+
+            Module_KCP_setURL('/SSL/FindId_Complete?returnUrl=%2F');
+            var snsTime = true; // 3분 내에 입력 했는지 체크 하는 변수
+            var timer; // 3분 timer 변수
+            $("#sns_ad").click(function (e) {
+                $("#snsrequiredArea").show();
+
+                //e.preventDefault();
+            });
+            //인증번호 확인
+            $("#btnSns_sumit").click(function (e) {
+                var userSns = $("#userSns").val();
+                var callSnsNumber = $("#snsNumberCall").val();
+                var user_id = $("#snsIDCall").val();
+
+                if (snsTime == true) { // 3분 내에 입력 했을 경우
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/SSL/snsNocheck",
+                        data: { InputNo: userSns, SerNo: callSnsNumber },
+                        datatype: "json",
+                        async: false,
+                        success: function (data) {
+                            if (data.rt_code == "OK") {
+                                location.href = "/SSL/FindId_Complete_Call?user_id=ID&amp;returnUrl=%2F".replace("ID", user_id).replace("&amp;", "&").replace("&amp;", "&").replace("&amp;", "&").replace("&amp;", "&");
+                                //location.href = '/SSL/FindId_Complete_Call?returnUrl=%2F';
+                                //clearInterval(timer);
+                                //$("#noSnsNumber").hide();
+                                //$("#snsrequiredArea").hide();
+                                //$("#snsrequiredAreaCall").show();
+                                //$("#inputDiv").hide();
+                                //$("#inputDiv2").hide();
+                                //$("#UserIdCall").text("ID " + $("#snsIDCall").val().toString());
+                            }
+                            else {
+                                alert("인증번호 오류");
+                                $("#noSnsNumber").show();
+                            }
+                        },
+                        error: function (request, status, error) {
+                            if (request.readyState == 0 || request.status == 0)
+                                return;
+                            else
+                                alert('에러가 발생하였습니다.');
+                        }
+                    });
+
+
+
+                }
+
+            });
+                //noSnsNumber
+
+        // 휴대폰 번호 입력시 입력 카운트 다운 시작
+            $("#btnSns").click(function (e) {
+                var userPhone = $("#userPhone").val();
+                var result = true;
+                if ($.trim($("#userPhone").val()) == "") {
+                    alert("휴대폰 번호를 입력해 주세요");
+                    $("#userPhone").focus();
+                    result = false;
+                }
+                if (result == true) {
+
+                    $.ajax({
+                        type: "POST",
+                        //url: "/SSL/snsPhonecheck",
+                        url: "/SSL/snsPhonecheck",
+                        data: { user_Id:"",user_Phone: userPhone },
+
+                        datatype: "json",
+                        async: false,
+                        success: function (data) {
+
+                            if (data.rt_code == "OK") {
+                                $("#snsrequiredArea").show();
+                                //alert("!");
+                                $("#SnsTimerOver").hide();
+
+                                $("#noNumber").hide();
+                                $("#okNumber").show(); //입력하신 번호로 인증번호를 발송 하엿습니다
+                                $("#sns").show(); //인증 번호 입력 창
+                                $("#btnSns_sumit").show();
+                                $("#btnSns").hide();
+                                $("#snsNumberCall").val( data.rt_msg);
+                                $("#snsIDCall").val(data.rt_id);
+                                alert(data.rt_no);//실제 배포시 수석 필요
+                                countDownTimer();
+
+                            }
+                            else if (data.rt_code == "NULL")
+                            {
+                                alert("일시적 오류입니다. 인증번호를 다시 호출해 주세요");
+                                $("#noNumber").show();
+                            }
+                            else {
+                                $("#noNumber").show();
+
+                            }
+                        },
+                        error: function (request, status, error) {
+                            if (request.readyState == 0 || request.status == 0)
+                                return;
+                            else
+                                alert('에러가 발생하였습니다.');
+                        }
+                    });
+
+                    //e.preventDefault();
+                }
+                //e.preventDefault();
+            });
+            // 3분 내 입력 확인
+            function countDownTimer() {
+                snsTime = true;
+                var end = 60 * 3+1; //3분
+                //var end = 11; //3분
+
+                var num = 1;
+                var count = 1;
+                function showRemaining() {
+
+                    var now = num * count;
+
+                    var distance = end - now;
+                    if (distance < 0) {
+
+                        clearInterval(timer);
+
+                        snsTime = false;
+                        $("#okNumber").hide(); //입력하신 번호로 인증번호를 발송 하엿습니다
+                        $("#sns").hide(); // 입력 화면 보여줌
+                        $("#SnsTimerOver").show();
+                        $("#snsrequiredArea").show();
+                        $("#btnSns_sumit").hide();
+                        $("#btnSns").show();
+                        $("#noSnsNumber").hide();
+                        $("#userSns").attr("placeholder", "인증번호를 다시 요청해 주세요").attr("class","timer");
+                        //$("#okNumber").hide();
+                        return;
+                    }
+                    var minutes = Math.floor(distance / 60);
+                    if (minutes.toString().length == 1) {
+                        minutes = "0" + minutes.toString();
+                    }
+                    var seconds = Math.floor(distance %60);
+                    if (seconds.toString().length == 1) {
+                        seconds = "0" + seconds.toString();
+                    }
+                    $("#userSns").attr("placeholder", minutes + " : " + seconds).addClass("timer");
+                    count++;
+
+                }
+
+                timer = setInterval(showRemaining, 1000);
+            }
+
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="yk_lodings" class="maskWhite" style="display:none;">
+        <div class="lodings"></div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN2V9CH"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- skip_nav -->
+    <a href="https://mykbrand.stiscloudbonds.com#contents" class="skip">본문 바로가기</a>
+
+    <!-- wrap -->
+    <div id="wrap" class="sso">
+        <div id="contents">
+            
+
+<!-- header -->
+<header>
+    <h1>아이디 찾기</h1>
+    <a href="https://mykbrand.stiscloudbonds.comjavascript:history.back();" class="backBtn"><img src="https://mykbrand.stiscloudbonds.com/Common/images/btn/btn_back.png" alt="뒤로가기" /></a>
+</header><!-- //header -->
+<hr />
+
+<!-- container -->
+<div id="container">
+<form action="/SSL/FindId_Certify?returnUrl=%2F" id="form" method="post">        <div class="divider">
+            <p class="sso_brand_img clearfix">
+                <a href="https://mykbrand.stiscloudbonds.comhttp://m.ykbrand.co.kr/"><img style="padding:10px 0px 10px 10px; width:120px;" src="https://mykbrand.stiscloudbonds.com/Common/images/common/simple_yk_logo.png" alt="유한킴벌리 통합회원" /></a>
+            </p>
+
+            <div class="divider_cont sso_findacc">
+                <div id="findTab" class="normaltab">
+                    <ul class="tabs">
+                        <li><a href="https://mykbrand.stiscloudbonds.com#findTab01">회원가입 정보로 찾기</a></li>
+                        <li><a href="https://mykbrand.stiscloudbonds.com#findTab02">휴대폰 인증으로 찾기</a></li>
+                    </ul>
+                    <!-- 회원가입 정보로 찾기 -->
+                    <div id="findTab01" class="tabcon">
+                        <div class="inT">
+                            <div id="inputDiv">
+                                <p class="ti"><label for="phoneNum">회원 가입시 등록한 정보를 입력해 주세요.</label></p>
+                                <p class="inpu">
+                                    <label for="phoneNum"><input id="userPhone" name="userPhone" placeholder="휴대폰 번호 입력" title="휴대폰 번호 입력" type="text" value="" /></label>
+
+                                </p>
+                                <p class="err" id="noNumber" style="display:none;">* 등록된 휴대폰 번호가 없습니다. 번호를 확인해주세요.</p>
+                                <p class="ok" id="okNumber" style="display:none;">* 입력하신 번호로 인증번호를 발송하였습니다.</p>
+                                <p class="err" id="SnsTimerOver" style="display:none;">* 입력시간이 초과 하였습니다. 인증번호를 다시 요청 해 주세요.</p>
+                                <div class="btnWrap">
+                                    <a href="https://mykbrand.stiscloudbonds.com#" id="btnSns">인증번호 전송</a>
+                                </div>
+                                <div id="snsrequiredArea" class="push">
+                                    <p class="inpu">
+                                        <label for="userId" id="sns" style="display:none;"><input id="userSns" name="userSns" type="text" value="" /></label>
+                                    </p>
+                                    <p class="err" id="noSnsNumber" style="display:none;">* 인증번호가 일치하지 않습니다. 다시 확인해주세요. </p>
+                                    <div class="btnWrap">
+                                        <a href="https://mykbrand.stiscloudbonds.com#" id="btnSns_sumit">인증번호 확인</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 휴대폰 인증으로 찾기 -->
+                    <div id="findTab02" class="tabcon">
+                        <div class="inT">
+                            <div id="inputDiv2">
+                                <p class="ti">본인 명의의 휴대폰 번호로 인증합니다.</p>
+                                <div class="btnWrap">
+                                    <a href="https://mykbrand.stiscloudbonds.comjavascript:Module_KCP_Open();">휴대폰 인증</a>
+                                </div>
+                                <!-- 안내문구 -->
+                                <div class="infomati">
+                                    <p>입력하신 정보는 본인확인 용도 이외 사용되거나 저장되지 않습니다.</p>
+                                    <ul class="dash">
+                                        <li>휴대폰 인증에 문제가 발생하면 아래 고객센터로 문의해 주시기 바랍니다.</li>
+                                        <li>휴대폰 인증 (한국사이버 결제) : <a href="https://mykbrand.stiscloudbonds.comtel:1666-6410">1666-6410</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div id="snsrequiredAreaCall" class="tabcon" style="display:none;">
+
+
+                          <div class="inT">
+                              <p class="ico ico01"><img src="../../Common/images/common/ico_finding01.png" alt="" /></p>
+                              <p class="ti">입력하신 정보로 등록된 아이디는 아래와 같습니다. </p>
+                              <p class="resul" id="UserIdCall"></p>
+                              <div class="btnWrap">
+                                  <span> <a href="https://mykbrand.stiscloudbonds.com/SSL/Login?returnUrl=%2FSSL%2FFindId_Certify%3FreturnUrl%3D%252F">로그인</a></span>
+                                  <span><a href="https://mykbrand.stiscloudbonds.com/SSL/FindPwd_Certify?returnUrl=%2F">비밀번호 찾기</a></span>
+                              </div>
+                          </div>
+
+                      </div> -->
+
+                </div>
+            </div>
+            <div class="combineInfo">
+                <p class="com ts16">유한킴벌리 통합회원에 가입하셨나요? </p>
+                <ul class="dot mt7">
+                    <li>브랜드 사이트, momQ, 선물대잔치에 공토 적용되는 통합 ID 입니다.</li>
+                    <li>(하기스, 굿나이트, 화이트, 좋은느낌, 크리넥스, 스카트, 마이비데, 디펜드, 티엔, 그린핑거, 우리나눔TV, 골든프렌즈)브랜드 사이트와 momQ, 선물대잔치의 기존 회원님께서는 아래 통합회원 가입을 통해서 통합회원 전환을 진행해 주세요.</li>
+                    
+                </ul>
+
+                <div class="btnLine">
+                    <a href="https://mykbrand.stiscloudbonds.com/SSL/Join?returnUrl=%2F">통합회원 가입</a>
+                </div>
+            </div>
+
+        </div>
+        <input type="hidden" id="snsNumberCall" name="snsNumberCall" />
+        <input type="hidden" id="snsIDCall" name="snsIDCall" />
+</form></div>
+<script type="text/javascript">
+    var NextURI = "";
+    $(function () {
+        $startSlide = 0;
+        var today = new Date();
+        var month = today.getMonth() + 1;
+        if (parseInt(month) < 10) { month = "0" + month; }
+        $("#ordr_idxx").val(today.getFullYear() + "" + month + "" + today.getDate() + "" + today.getTime());   
+    });
+    function Module_KCP_Open() {
+        $("#param_opt_1").val(NextURI);
+        form_auth.method = "post";       
+        form_auth.action = "/SSL/Module_KCP_Send";
+        form_auth.submit();
+    }
+   
+    function Module_KCP_setURL(URL) {
+        NextURI = URL;
+    }
+    function Module_KCP_setValue(Name, Value) {
+        var empty_opt = "0";
+        if ($("#param_opt_2").val().indexOf(Name + "|") == 0) { $("#param_opt_2").val(''); }
+        if ($("#param_opt_3").val().indexOf(Name + "|") == 0) { $("#param_opt_3").val(''); }
+        if ($("#param_opt_3").val() == "") { empty_opt = "3"; }
+        if ($("#param_opt_2").val() == "") { empty_opt = "2";}
+
+        if (empty_opt == "0") {
+            alert("추가 정보는 최대 2개입니다.");
+        } else {
+            $("#param_opt_" + empty_opt).val(Name + "|" + Value);
+        }
+    }
+</script>
+<form name="form_auth">
+    <input type="hidden" name="ordr_idxx" id="ordr_idxx" value="" placeholder="(필수)주문번호" />
+    <input type="hidden" name="req_tx" value="cert" placeholder="요청종류" />
+    <input type="hidden" name="cert_method" value="01" placeholder="요청구분" />
+    <input type="hidden" name="web_siteid" value="J15092200961" placeholder="웹사이트 아이디" />
+    <input type="hidden" name="fix_commid" value="" placeholder="노출 통신사(SKT:SKT, KT:KTF, LGU+:LGT)" />
+    <input type="hidden" name="site_cd" value="V6672" placeholder="사이트 코드(test:S6186)" />
+    <input type="hidden" name="Ret_URL" id="Ret_URL" value="https://mykbrand.stiscloudbonds.com/SSL/Module_KCP_Recive" placeholder="인증결과 리턴 페이지 (가맹점 URL)" />
+    <input type="hidden" name="cert_otp_use" value="Y" placeholder="(Y:실명 확인+OTP 점유확인, N:실명 확인Only)" />
+    <input type="hidden" name="cert_enc_use" value="Y" placeholder="고정값" />
+    <input type="hidden" name="cert_able_yn" value="Y" placeholder="본인확인 input 비활성화" />
+    <input type="hidden" name="web_siteid_hashYN" value="" placeholder="website ID 검증" />
+    <input type="hidden" name="res_cd" value="" placeholder="" />
+    <input type="hidden" name="res_msg" value="" placeholder="" />
+    <input type="hidden" name="veri_up_hash" value="" placeholder="up_hash 검증을 위한 필드" />
+    <input type="hidden" name="param_opt_1" id="param_opt_1" value="" placeholder="(옵션)인증완료시 리턴 (최종결과 전송페이지 URL 으로 사용)" />
+    <input type="hidden" name="param_opt_2" id="param_opt_2" value="/SSL/FindId_Certify?returnUrl=%2F" placeholder="(옵션)인증완료시 리턴 (취소 버튼 클릭시 이동할 URL로 사용)" />
+    <input type="hidden" name="param_opt_3" id="param_opt_3" value="" placeholder="(옵션)인증완료시 리턴" />
+    <input type="hidden" name="user_name_url_yn" value="Y" />
+</form>
+<form name="form_auth_result" id="form_auth_result"></form>
+
+
+        </div>
+        <hr />
+        <!-- footer -->
+        <footer>
+    <p class="flogo">
+        <img src="https://mykbrand.stiscloudbonds.com/Common/images/common/flogo.png" alt="유한킴벌리" />
+        <a href="https://mykbrand.stiscloudbonds.com/Terms/TermsPop?type=yk3" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+        <a href="https://mykbrand.stiscloudbonds.com/Terms/TermsPop?type=yk8" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+    </p>
+    <address>주소 : 서울시 강남구 테헤란로 504 (우) 06178</address>
+    <ul class="info">
+        <li>대표자 : 최규복</li>
+        <li>사업자번호 : 120-81-11436</li>
+        <li>고객지원센터 : <a href="https://mykbrand.stiscloudbonds.comtel:080-022-7007">080-022-7007</a></li>
+    </ul>
+    <a href="https://mykbrand.stiscloudbonds.comhttps://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+    <p class="copy">Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.</p>
+    <img style="margin-top:16px; width:150px;" src="https://mykbrand.stiscloudbonds.com/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+</footer>
+
+<!-- sns공유하기 팝업 -->
+<div id="selSns" class="popup hide">
+    <h3>공유하기</h3>
+    <div class="popCont ac">
+        <a href="https://mykbrand.stiscloudbonds.com#none"><img src="https://mykbrand.stiscloudbonds.com/Common/images/common/img_popFacebook.gif" alt="Facebook"></a>
+        <a href="https://mykbrand.stiscloudbonds.com#none"><img src="https://mykbrand.stiscloudbonds.com/Common/images/common/img_popKakao.gif" alt="Kakaostory"></a>
+    </div>
+    <a href="https://mykbrand.stiscloudbonds.com#none" class="popClose"><img src="https://mykbrand.stiscloudbonds.com/Common/images/btn/btn_close.png" alt="팝업닫기"></a>
+</div><!-- //sns공유하기 팝업 -->
+
+<div id="dim"></div>
+
+<a id="moveTop" href="https://mykbrand.stiscloudbonds.comjavascript:window.scrollTo(0,0);">문서 상단으로 이동</a>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+    <input type="hidden" name="adb_login_id" id="adb_login_id" value=" " />
+
+    
+<script>
+
+
+</script>
+
+
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>

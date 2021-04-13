@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang ="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="description" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리" />
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>간편 가입 안내 | 유한킴벌리</title>
+
+	<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="../../Common/css/common.css">
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+
+	<!-- <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'> -->
+	<style>
+	@font-face {
+	 font-family: 'NanumBarunGothic';
+	 font-style: normal;
+	 font-weight: 400;
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+	}
+
+	@font-face {
+	 font-family: 'NanumBarunGothic';
+	 font-style: normal;
+	 font-weight: 700;
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+	}
+
+	@font-face {
+	 font-family: 'NanumBarunGothic';
+	 font-style: normal;
+	 font-weight: 300;
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+	 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+	}
+	.ssog_guidecont {width:100%;min-width:940px;background-color: #f9f5ee; font-family: 'NanumBarunGothic', 'NanumGothic', 'Dotum', sans-serif ,'Arial';color:#000;overflow: hidden}
+	.ssog_guidecont:after{clear: both;content: '';display: block}
+	.ssog_inner {width:940px;margin:0 auto;text-align: center;}
+	.ssog_inner > h1{display: block;padding-top:70px;padding-bottom:40px}
+	.ssog_inner .ssog_p1{padding-bottom:24px;font-size:60px;;line-height: 120%;font-weight: 300;}
+	.ssog_inner .ssog_p1 >span{display: block;color:#a82439;font-weight: 700}
+	.ssog_inner .ssog_sp1{margin-bottom:35px;font-size:18px;line-height: 28px;}
+	.ssog_inner .ssog_p2{padding-bottom:50px;font-size:26px;}
+	.ssog_inner .ssog_p2>span{font-weight: 700}
+	.ssog_inner .ssog_p2:before{content: '"';color:#a82439}
+	.ssog_inner .ssog_p2:after{content: '"';color:#a82439}
+	.ssog_inner .ssog_icograp{width:100%;}
+	.ssog_inner .ssog_icograp:after{clear:both;content: '';display:block}
+	.ssog_inner .ssog_icograp>li{float:left;width:33.3%;margin-bottom:80px;padding-top:220px;background-repeat: no-repeat;background-position: center 0;background-size: 183px;line-height:26px }
+	.ssog_inner .ssog_icograp>li>strong{display:block;font-weight: 700}
+	.ssog_inner .ssog_icograp .ssog_grap01{background-image:url(../../Common/images/Simple/ssoguide_ico01.gif)}
+	.ssog_inner .ssog_icograp .ssog_grap02{background-image:url(../../Common/images/Simple/ssoguide_ico02.gif)}
+	.ssog_inner .ssog_icograp .ssog_grap03{background-image:url(../../Common/images/Simple/ssoguide_ico03.gif)}
+	.ssog_wide {position: relative;background-color: #77a2d9}
+	.ssog_guidecont h2{display: block;padding:10px 0 35px;font-size: 36px;font-weight: 700;text-align: left}
+	.ssog_tab{width:940px;margin:0 auto;}
+	.ssog_tab:after{clear:both;content: '';display:block;}
+	.ssog_tab>li{float:left;width:50%;height:60px;line-height: 60px;background-color:#fff;text-align: center}
+	.ssog_tab>li>a{display:block;width:100%;}
+	.ssog_tab .on{background-color: #77a2d9}
+	.ssog_tab .on a{color:#fff}
+	.ssog_tabw{display:none;padding-bottom:45px;margin-bottom:65px;background-color: #77a2d9}
+	.ssog_tabw .ssog_inner .ssog_tx{padding:45px 0 60px;font-size:20px;line-height:30px;color:#fff;font-weight: 300;}
+	.ssog_tabw.step1 .ssog_inner .ssog_tx{padding-bottom:94px;}
+	.ssog_tabw .ssog_inner .ssog_tx>strong{display: block;font-weight: normal;font-weight: 400;}
+	.ssog_faq{padding:20px 0;border-bottom: 1px dotted #cdcdcd;text-align: left;font-size:16px;color:#000}
+	.ssog_faq.non{border-bottom:0}
+	.ssog_faq>dt{position: relative;padding-left:20px;padding-bottom:10px;font-weight: 700}
+	.ssog_faq>dt:before{position: absolute;left:0;display:block;content: 'Q.';}
+	.ssog_faq>dd{position: relative;padding-left:20px;line-height: 140%;font-weight: 400}
+	.ssog_faq>dd:before{position: absolute;left:0;display:block;content: 'A.';}
+	.ssog_inner .btn_ssog_join{display:block;width:520px;height:100px;line-height: 100px;margin:0 auto 20px;background-color: #00aff5;font-size:30px;color:#fff;
+		-webkit-border-radius: 80px;-moz-border-radius: 80px;border-radius: 80px;
+	}
+	.ssog_inner .btn_area{margin:30px 0 80px;}
+	</style>
+</head>
+<body class="sso">
+	<div>
+		<!-- container -->
+		<div id="container" class="ssog_guidecont">
+			<div class="ssog_inner">
+				<h1><img src="../../Common/images/Simple/ssoguide_img01.gif" alt="유한킴벌리 SSO회원 간편가입서비스 런칭" /></h1>
+				<p class="ssog_p1">사용하시던 SNS 계정으로 <span>간편하게 이용하세요!</span></p>
+				<p class="ssog_sp1">SNS 간편 가입 서비스는  사이트마다 아이디와 비밀번호를 복잡하게 설정 하실 필요 없이<br />고객님의 사용하시던 SNS 아이디로 간편하게 로그인 할 수 있는 서비스 입니다.</p>
+				<p class="ssog_p2">이제 복잡하고 번거로운 회원 가입 절차 없이 <span>유한킴벌리 모든 서비스를 이용하세요!</span></p>
+				<ul class="ssog_icograp">
+					<li class="ssog_grap01">번거로운 회원가입 단계와<strong>본인인증이 필요 없어요!</strong></li>
+					<li class="ssog_grap02">SNS 인증으로 회원가입과 동시에<strong>1초만에 로그인 할 수 있어요!</strong></li>
+					<li class="ssog_grap03"><strong>ID/PW를 분실 할</strong>염려가 없어요!</li>
+				</ul>
+				<h2>간편 가입 안내</h2>
+			</div>
+			<ul class="ssog_tab">
+				<li class="on"><a href="#none" data-target="step1">STEP01</a></li>
+				<li><a href="#none" data-target="step2">STEP02</a></li>
+			</ul>
+			<div class="ssog_tabw step1" style="display:block">
+				<div class="ssog_inner">
+					<p class="ssog_tx">회원가입(또는 로그인) 페이지에서 사용 하실 SNS를 선택 하신 후 로그인 해주세요.<strong>최초 1회에 한해 SNS 인증을 진행합니다.</strong></p>
+					<p><img src="../../Common/images/Simple/ssoguide_img02.gif" alt="" />
+				</div>
+			</div>
+			<div class="ssog_tabw step2">
+				<div class="ssog_inner">
+					<p class="ssog_tx"><strong>필수 회원 정보 입력 및 사이트 이용약관을 동의 하신 후 가입 버튼을 클릭하시면 회원가입이 완료됩니다.</strong>단, 아이정보(선택사항)가 있는 경우 가입 완료 후 아이정보 입력 화면으로 이동합니다.</p>
+					<p><img src="../../Common/images/Simple/ssoguide_img03.gif" alt="" />
+				</div>
+			</div>
+			<div class="ssog_inner">
+				<h2>FAQ</h2>
+				<dl class="ssog_faq">
+					<dt>간편회원으로 가입하면, 서비스 이용에 제한이 있나요?</dt>
+					<dd>통합회원과 간편회원은 모든 서비스를 동일하게 이용 하실 수 있습니다. </dd>
+				</dl>
+				<dl class="ssog_faq">
+					<dt>간편가입 계정은 몇 개 만들 수 있나요?</dt>
+					<dd>네이버, 페이스북, 카카오톡 SNS 계정으로 각각 만드실 수 있으며, 하나의 계정은 모두 독립적으로 사용 하셔야 합니다.<br />(계정간 momQ 포인트 및 선물대잔치 점수 이관 불가)</dd>
+				</dl>
+				<dl class="ssog_faq">
+					<dt>SNS 계정으로 회원가입을 했는데, 해당 SNS를 탈퇴를 했어요. 어떻게 해야 하나요?</dt>
+					<dd>해당 SNS 계정으로 로그인이 불가하며, 고객센터로 연락 주시면 도움 드리겠습니다. </dd>
+				</dl>
+				<!-- 20180327 -->
+				<dl class="ssog_faq non">
+					<dt>통합회원과 간편회원의 계정간 통합이 가능 한가요?</dt>
+					<dd>통합회원과 간편회원(네이버, 페이스북, 카카오톡) 중 선택 해서 만드실 수 있으며, 이미 가입된 이력이 있으신 경우<br />계정간 momQ 포인트 및 선물대잔치 점수 이관 불가합니다.</dd>
+				</dl>
+				<!--// 20180327 -->
+
+				<div class="btn_area">
+					<a href="#" class="btn_ssog_join">유한킴벌리 SSO회원 가입</a>
+					<p>회원가입 시 아이정보를 입력해주시면 momQ 쿠폰과 적립금을 드립니다.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<!-- footerCont -->
+			<div class="footerCont" style="position: relative; top: auto; left: auto;">
+				<!-- footsec -->
+				<div class="footsec">
+					<!-- logo -->
+					<p class="footlogo"><img src="https://www.ykbrand.co.kr/Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+
+					<!-- footMenu -->
+					<ul class="footMenu">
+						<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+						<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+					</ul>
+					<img style="float:right; margin-top:30px;" src="https://www.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+					<!-- //footMenu -->
+					<!-- corpInfo -->
+					<div class="corpInfo">
+						주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br /> 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+					</div>
+
+					<!-- copy-->
+					<p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+
+					<!-- btnTop -->
+					<a href="#" class="btnTop"><img src="https://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+				</div>
+
+				<script>
+					function mainTerms(type, width, height) {
+						window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+					}
+				</script>
+				<!-- //footsec -->
+			</div>
+			<!-- //footerCont -->
+		</footer>
+		<!-- //footer -->
+	</div>
+</body>
+<script>
+$(document).ready(function(){
+  $(".ssog_tab > li > a").click(function(e){
+     e.preventDefault();
+    var showIt =  $(this).attr('data-target');
+    $(".ssog_tabw").hide();
+    $("."+showIt).show();
+	 	$(".ssog_tab > li").removeClass('on');
+		$(this).parent().addClass('on');
+  })
+});
+</script>
+</html>

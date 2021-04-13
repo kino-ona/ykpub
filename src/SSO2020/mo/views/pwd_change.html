@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link rel="stylesheet" href="../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="mem_wrap">
+					<h2 class="tit"><span>비밀번호를</span> 변경해주세요.</h1>
+					<p class="desc">회원님의 개인정보보호를 위해 3개월 이상 비밀번호를 변경하지 않은 <span class="br"></span>경우 비밀번호 변경을 안내하고 있습니다.</p>
+
+					<div class="findfrm result">
+						<ul class="write">
+							<li>
+								<p class="ti">현재 비밀번호</p>
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" placeholder="비밀번호를 입력해주세요." >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+							</li>
+							<li>
+								<p class="ti">신규 비밀번호</p>
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+							</li>
+							<li>
+								<p class="ti">비밀번호 확인</p>
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" placeholder="비밀번호를 다시 입력해주세요." >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+							</li>
+						</ul>
+					</div>
+
+					<div class="btnwrap half">
+						<a href="#" class="btnDefault btnline">다음에 변경</a>
+						<a href="#" class="btnDefault">비밀번호 변경</a>
+					</div>
+
+					<div class="help_desc">
+						<p>유의사항</p>
+						<ul>
+							<li>비밀번호는 8~20자의 영문/숫자/특수문자 조합으로 생성해주세요.</li>
+							<li>아이디와 3자리 이상 동일한 값과 4자리 이상의 연속되는 숫자는 비밀번호로 사용이 불가능합니다.</li>
+							<li>생년월일, 전화번호, 주민등록번호 등 개인정보와 관련된 숫자, 문자는 사용을 자제해주세요.</li>
+							<li>동일한 문자나 숫자의 반복, 연속되는 문자열 등은 사용을 자제해주세요.</li>
+							<li>다른 사이트와 동일한 아이디와 비밀번호를 사용하고 있다면, 타 사이트 정보유출 시 2차 피해 위험이 있으니 비밀번호를 변경하세요.</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+</script>
+</html>

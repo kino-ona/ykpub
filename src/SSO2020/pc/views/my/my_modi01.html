@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="../../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../../Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link rel="stylesheet" href="../../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span><span class="txt">개인정보관리</span></a></h1>
+				<p class="childlogo"><a href="#"><span class="a11y_sr-only">momQ</span></a></p>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="my_wrap">
+					<div class="tabwrap">
+						<ul class="tablist">
+							<li class="seleted"><a href="my_modi01.html">회원정보 수정</a>
+							<li><a href="my_modi02.html">약관 관리</a>
+						</ul>
+					</div>
+
+					<h2 class="h2_ti">기본정보</h2>
+					<ul class="input_frm">
+						<li>
+							<p class="ti">이름</p>
+							<p class="put">
+								<input type="text" value="홍길동">
+								<a href="#" class="btn btn_small">변경</a>
+							</p>
+						</li>
+						<li>
+							<p class="ti">아이디</p>
+							<p class="put put_id">
+								<input type="text" value="아이디아이디" readonly>
+							</p>
+						</li>
+						<li>
+							<p class="ti">비밀번호</p>
+							<p class="put">
+								<input type="password" value="" readonly>
+								<a href="#" onclick="layerOpen('pwdChangeLayer');return false;" class="btn btn_small">비밀번호 변경</a>
+							</p>
+						</li>
+						<li>
+							<p class="ti">생년월일</p>
+							<p class="put">
+								<input type="text" value="1991년 9월 9일" readonly>
+							</p>
+						</li>
+						<li>
+							<p class="ti">휴대폰 번호</p>
+							<p class="put">
+								<input type="text" value="000-0000-0000" readonly>
+								<a href="#" class="btn btn_small">변경</a>
+							</p>
+						</li>
+						<li>
+							<p class="ti">이메일</p>
+							<p class="put email">
+								<input type="text" value=""> @
+								<input type="text" value="">
+								<select>
+									<option>직접입력</option>
+									<option>naver.com</option>
+								</select>
+							</p>
+							<span class="errtx">이메일 형식이 잘못되었습니다.</span>
+						</li>
+					</ul>
+					<div class="help_desc">
+						<p class="help">아이정보는 맘큐 > 마이페이지 > 아이정보에서 추가 / 수정 하실 수 있습니다.</p>
+						<a href="#" class="btn btn_small">바로가기</a>
+					</div>
+					
+					<div>
+						<h2 class="h2_ti">회원탈퇴</h2>
+						<p class="desc">더 이상 이용을 원치 않으시면 회원탈퇴를 진행해주세요.
+							<a href="#" class="btn btn_small">회원탈퇴</a>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- 추천인 ID 검색 레이어  -->
+	<div class="layerbody" id="pwdChangeLayer">
+		<div class="layerwrap pwdchangelayer">
+			<a class="btn_close" onclick="layerClose('pwdChangeLayer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>비밀번호 변경</p>
+			</div>
+			<div class="layconts">
+				<div>
+					<ul class="input_frm">
+						<li>
+							<p class="ti">현재 비밀번호</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value="" placeholder="현재 비밀번호를 입력해주세요." >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">현재 비밀번호가 일치하지 않습니다.</span>
+						</li>
+						<li>
+							<p class="ti">신규 비밀번호</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value=""  placeholder="8~20자, 영문/숫자/특수문자 조합" >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">8~20자의 영문/숫자/특수문자 조합으로 입력해주세요.</span>
+						</li>
+						<li>
+							<p class="ti">비밀번호 확인</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value="" placeholder="비밀번호를 다시 입력해주세요." >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">비밀번호와 비밀번호 확인이 일치하지 않습니다.</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btnwrap">
+					<a href="#" class="btn btn_blue btnfull">변경</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--// 추천인 ID 검색 레이어  -->
+</body>
+<script>
+// 레이어팝업 열기
+function layerOpen(set) {
+  $('#' + set).addClass('show');
+  $('body, html').addClass('noscroll');
+}
+// 레이어팝업 닫기
+function layerClose(set) {
+  $('#' + set).removeClass('show');
+  $('body, html').removeClass('noscroll');
+}
+</script>
+<script>
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+</script>
+</html>

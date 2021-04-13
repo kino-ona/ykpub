@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="유한킴벌리">
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리">
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+<title>회원정보수정 | 마이페이지 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="../Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css">
+<link rel="stylesheet" href="../../Common/css/mypage.css">
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js"></script>
+<body class="sso">
+<form action="/SSL/Mypage_BasicInfo_End" id="frm" method="post" name="frm" novalidate="novalidate">
+	<input name="__RequestVerificationToken" type="hidden" value="zQ-rLV8XoR1yXa2gWJxZ-O1adkBGyBe6A1UX8TvTz7neSc8sSBLuLl9Hw-lzWUoZL5Z1skhUeXVgd3WZAJ9b4lrOhuM1">
+	<!-- 마이페이지 (940 * 626) -->
+	<div id="mypage">
+		<header>
+		<h1><img src="http://www.ykbrand.co.kr/Common/images/mypage/logo.gif" alt="유한킴벌리 통합회원 마이페이지"></h1>
+		</header>
+		<!-- mypageTab -->
+		<div class="simple_join_tab4">
+			<ul class="clearfix">
+				<li class="on">회원정보수정</li>
+				<li>아이정보 추가/수정</li>
+				<li>약관관리</li>
+				<li>회원탈퇴</li>
+			</ul>
+		</div>
+		<!-- //mypageTab -->
+		<!-- 회원정보 수정 -->
+		<div class="infoChange">
+			<!-- 기본정보 -->
+			<div class="sec1">
+				<div class="tit">
+					<h2>기본정보</h2>
+					<p>
+						<span class="vital">필수</span>표시는 필수 입력내용입니다.
+					</p>
+				</div>
+				<div class="simple_info">
+					<table>
+					<colgroup>
+					<col style="width:280px;"/>
+					<col/>
+					</colgroup>
+					<tr>
+						<th>
+							이름 <span>*</span>
+						</th>
+						<td>
+							유한킴벌리
+						</td>
+					</tr>
+					<tr>
+						<th>
+							이메일 <span>*</span>
+						</th>
+						<td>
+							abc@naver.com
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							휴대폰 번호 <span>*</span>
+						</th>
+						<td class="height_60">
+							 010-1234-5678 <input type="button" class="phone_btn mar_l20" value="변경">
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							휴대폰 번호 <span>*</span>
+						</th>
+						<!-- 201801 간편가입 s //-->
+						<td>
+							<select>
+								<option>010</option>
+							</select>
+							 - <input class="phone_num" type="text">
+							- <input class="phone_num" type="text">
+							<input type="button" class="phone_btn" value="휴대폰 인증" />
+
+							<p>* HUGGIES 점수 적립을 원하시는 회원님께서는 휴대폰 인증을 해주십시오.<br />휴대폰 인증 한 ID만 점수 적립이 가능합니다.</p>
+							<p>* 휴대폰 인증은 1개의 SNS 계정만 가능합니다.</p>
+						</td>
+						<!-- 201801 간편가입 e //-->
+					</tr>
+					<tr>
+						<th class="height_60">
+							생년월일<span>*</span>
+						</th>
+						<td class="height_60">
+							<select>
+								<option>년도</option>
+							</select>
+							<select>
+								<option>월</option>
+							</select>
+							<select>
+								<option>일</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							개인정보 마케팅 활용 동의<span>*</span>
+						</th>
+						<td class="height_60">
+							<span class="ui_radio">
+							<input type="radio" id="marketing_n" name="marketing_yn" value="N">
+							<label for="marketing_n">동의 안함</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="marketing_y" name="marketing_yn" value="Y" checked="">
+							<label for="marketing_y">동의</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							메일 수신여부<span>*</span>
+						</th>
+						<td class="height_60">
+							<span class="ui_radio">
+							<input type="radio" id="email_n" name="email_yn" value="N">
+							<label for="email_n">동의 안함</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="email_y" name="email_yn" value="Y" checked="">
+							<label for="email_y">동의</label>
+							</span>
+							<span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="email_brand_yn" id="email_brand_yn" value="Y">
+								<label for="email_brand_yn">통합브랜드</label>
+								</span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="email_momq_yn" id="email_momq_yn" value="Y">
+								<label for="email_momq_yn">momQ</label>
+								</span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="email_present_yn" id="email_present_yn" value="Y">
+								<label for="email_present_yn">선물대잔치</label>
+								</span>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							SMS 수신여부<span>*</span>
+						</th>
+						<td class="height_60">
+							<span class="ui_radio">
+							<input type="radio" id="sms_n" name="sms_yn" value="N">
+							<label for="sms_n">동의 안함</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="sms_y" name="sms_yn" value="Y" checked="">
+							<label for="sms_y">동의</label>
+							</span>
+							<span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="sms_brand_yn" id="sms_brand_yn" value="Y">
+								<label for="sms_brand_yn">통합브랜드</label>
+								</span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="sms_momq_yn" id="sms_momq_yn" value="Y">
+								<label for="sms_momq_yn">momQ</label>
+								</span>
+								<span class="ui_radio ui_check">
+								<input type="checkbox" name="sms_present_yn" id="sms_present_yn" value="Y">
+								<label for="sms_present_yn">선물대잔치</label>
+								</span>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+						</th>
+						<td>
+							<p>
+								* 수신 동의에 체크하시면 할인 혜택 및 상품정보, 이벤트 등 다양한 정보를 안내 받으실 수 있습니다.
+							</p>
+							<p>
+								* 단, 약관안내 및 서비스 내용, 주문/배송, 회사의 주요정책 관련 변경에 따른 메일/SMS은 정보수신 거부와 상관없이 발송될 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<!-- //기본정보 -->
+			<!-- 부가정보 -->
+			<div class="sec2">
+				<div class="tit">
+					<h2>부가정보</h2>
+				</div>
+				<!-- writeTable -->
+				<div class="simple_info">
+					<table>
+					<colgroup>
+					<col style="width:280px;"/>
+					<col/>
+					</colgroup>
+					<tr>
+						<th>
+							주소
+						</th>
+						<td class="clearfix">
+							<input class="phone_num mar_b5" type="text"><input type="button" class="phone_btn mar_l5" value="우편번호"><br>
+							<input class="phone_num place" type="text"><input class="phone_num place mar_l5" type="text">
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							결혼여부
+						</th>
+						<td class="height_60">
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N">
+							<label for="YKMEMBER_Required1_N" style="margin-right:30px;">미혼</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_Y" name="YKMEMBER_Required1" value="Y" checked="">
+							<label for="YKMEMBER_Required1_Y">기혼</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							임신여부
+						</th>
+						<td class="height_60">
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N">
+							<label for="YKMEMBER_Required1_N" style="margin-right:30px;">아니오</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_Y" name="YKMEMBER_Required1" value="Y" checked="">
+							<label for="YKMEMBER_Required1_Y">예</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="height_60">
+							SNS URL
+						</th>
+						<td class="height_60">
+							<input class="sns_url" type="text" placeholder="SNS URL을 입력해 주세요.">
+						</td>
+					</tr>
+					</table>
+				</div>
+				<!-- //writeTable -->
+			</div>
+			<!-- //부가정보 -->
+			<!-- 버튼영역 -->
+			<div class="btn_area mar_t40">
+				<a class="next" href="javascript:window.open('', '_self').close();">취소</a>
+				<a class="certify" href="#none">수정</a>
+			</div>
+			<!-- //버튼영역 -->
+		</div>
+		<!-- //회원정보 수정 -->
+	</div>
+	<!-- //마이페이지 -->
+</form>
+<script>
+$(function () {
+    $("#email_y").click(function () {
+        $(".email_yn").show().find("input[type=checkbox]").prop("checked", true);
+    });
+    $("#email_n").click(function () {
+        $(".email_yn").hide().find("input[type=checkbox]").prop("checked", false);
+    });
+    $(".email_yn input[type=checkbox]").change(function () {
+        if ($(".email_yn input[type=checkbox]:checked").length <= 0) {
+            alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+            $(this).prop("checked", true);
+        }
+    });
+    $("#sms_y").click(function () {
+        $(".sms_yn").show().find("input[type=checkbox]").prop("checked", true);
+    });
+    $("#sms_n").click(function () {
+        $(".sms_yn").hide().find("input[type=checkbox]").prop("checked", false);
+    });
+    $(".sms_yn input[type=checkbox]").change(function () {
+        if ($(".sms_yn input[type=checkbox]:checked").length <= 0) {
+            alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+            $(this).prop("checked", true);
+        }
+    });
+    $("#email_domain_list").change(function () {
+        if ($(this).val() != "") {
+            $("#email_domain").val($(this).val());
+        } else {
+            $("#email_domain").val('');
+        }
+    });
+    $("#btnSubmit").click(function (e) {
+        e.preventDefault();
+        $('#email').val($("#email_id").val() +'@@'+ $("#email_domain").val());
+        if ($('#frm').valid()) $('#frm').submit();
+    });
+});
+$(function () {
+    popupResize(940);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link rel="stylesheet" href="../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<p class="childlogo mygflogo">
+					<!-- 20201208 맘큐 로고를 달다방 로고로 교체
+						<a href="#"><span class="a11y_sr-only">momQ</span></a> 
+					// 20201208 맘큐 로고를 달다방 로고로 교체 -->
+					<a href="#"><span class="a11y_sr-only">mygoodfeel</span></a>
+				</p>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="login_wrap">
+					<h2 class="title">로그인</h2>
+
+					<div class="login_frm">
+						<div class="line">
+							<p class="ti">아이디</p>
+							<p class="frm"><input type="text" maxlength="" placeholder="아이디를 입력해주세요." ></p>
+						</div>
+						<div class="line">
+							<p class="ti">비밀번호</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="frm masking">
+								<input type="password" maxlength="" placeholder="비밀번호를 입력해주세요." >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+						</div>
+						<div class="chk">
+							<input type="checkbox" id="idsave"><label for="idsave">아이디 저장</label>
+							<input type="checkbox" id="autochk"><label for="autochk">자동로그인</label>
+						</div>
+					</div>
+
+					<div class="btnwrap">
+						<a href="#" class="btn btn_blue">로그인</a>
+						<p class="help">간편회원 가입은 불가하며, 기존 간편회원의 로그인만 가능합니다.</p> <!-- 20200401 추가 //-->
+					</div>
+
+					<!-- 20200401 수정 -->
+					<div class="sns_login">
+						<p>
+							<a href="#" class="bt_naver"><i></i>네이버</a>
+						</p>
+						<p>
+							<a href="#" class="bt_facebook"><i></i>페이스북</a>
+						</p>
+						<p>
+							<a href="#" class="bt_kakao"><i></i>카카오</a>
+						</p>
+					</div>
+					<!--// 20200401 수정 -->
+
+					<div class="util">
+						<a href="#">아이디 찾기</a>
+						<a href="#">비밀번호 찾기</a>
+						<a href="#">회원가입</a>
+					</div>
+
+				</div>
+
+				<!-- 20200909 -->
+				<div class="banner">
+					<a href="#"><img src="../common/images/benefit_banner.jpg" alt="아이 정보를 등록하시면 유한킴벌리 유아용품 쇼핑지원금 1,000원을 드립니다."></a>
+
+					<div class="helpwrap">
+						<!-- 20201005 -->
+						<ul>
+							<li>맘큐&gt;마이페이지&gt;<strong>아이(태아) 정보 추가/수정</strong>에서 등록 하실 수 있습니다.</li>
+							<li>쇼핑지원금은 아이정보 등록 또는 수정 시 최초 1회에 한해 즉시 지급되며,<br>마이페이지&gt;쿠폰/쇼핑지원금에서 확인 하실 수 있습니다.</li>
+						</ul>
+						<!--// 20201005 -->
+					</div>
+				</div>
+				<!--// 20200909 -->
+
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+</script>
+</html>

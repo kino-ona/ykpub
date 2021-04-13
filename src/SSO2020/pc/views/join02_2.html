@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link rel="stylesheet" href="../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="join_wrap ">
+					<h1><span>회원정보 입력 및 이용약관에</span>동의해주세요.</h1>
+<!-- 필수 정보 입력 -->
+					<div class="join_form">
+						<h2 class="h2_ti">필수 정보 입력</h2>
+						<p class="desc">모든 항목이 필수 입력 사항입니다.</p>
+						<ul class="input_frm">
+							<li>
+								<p class="ti">이름</p>
+								<p class="put">
+									<input type="text" value="홍길동" readonly>
+								</p>
+							</li>
+							<li>
+								<p class="ti">아이디</p>
+								<p class="put put_id">
+									<input type="text" value="" maxlength="" placeholder="4~12자, 영문 및 숫자">
+									<a href="#" class="btn btn_small btn_idchk">중복확인</a>
+								</p>
+								<span class="errtx">아이디 중복확인을 해주세요.</span>
+							</li>
+							<li>
+								<p class="ti">비밀번호</p>
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" maxlength="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+								<span class="errtx">비밀번호는 8~20자의 영문/숫자/특수문자 조합으로 입력해주세요.</span>
+							</li>
+							<li>
+								<p class="ti">비밀번호 확인</p>
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" maxlength="" placeholder="비밀번호를 다시 입력해주세요." >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+								<span class="errtx">비밀번호와 비밀번호 확인이 일치하지 않습니다.</span>
+							</li>
+							<li>
+								<p class="ti">생년월일</p>
+								<p class="put col3">
+									<span>1991</span>
+									<span>년</span>
+								</p>
+								<p class="put col3">
+									<span>12</span>
+									<span>월</span>
+								</p>
+								<p class="put col3">
+									<span>31</span>
+									<span>일</span>
+								</p>
+							</li>
+							<li>
+								<p class="ti">휴대폰 번호</p>
+								<p class="put">
+									<input type="text" value="000-0000-0000" readonly>
+								</p>
+							</li>
+							<li>
+								<p class="ti">이메일</p>
+								<p class="put email">
+									<input type="text" value=""> @
+									<input type="text" value="">
+									<select>
+										<option>직접입력</option>
+										<option>naver.com</option>
+									</select>
+								</p>
+								<span class="errtx">이메일 형식이 잘못되었습니다.</span>
+							</li>
+						</ul>
+<!-- 약관 동의 -->
+						<h2 class="h2_ti">약관 동의</h2>
+						<p class="desc">이용약관 및 정보활용 안내를 읽고 동의해주세요. </p>
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk">모두 동의합니다.</label></p>
+								<p class="txt">전체동의는 필수 뿐 아니라 선택항목도 포함됩니다. 선택항목 미동의 시 회원가입은 가능하나 서비스 이용에 제한이 있을 수 있습니다.</p>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 이용약관</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer02');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk03"><label for="chk03"><span class="esse">(필수)</span> 통합브랜드 이용약관</label></p>
+								<a href="#" onclick="layerOpen('termslayer03');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="esse">(필수)</span> 통합브랜드 필수항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer04');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- 20200330 -->
+							<li>
+								<p><input type="checkbox" id="chk10"><label for="chk10"><span class="esse">(필수)</span> 모닛, 개인정보 제3자 제공 동의</label></p>
+								<a href="#" onclick="layerOpen('termslayer09');return false;" class="btn_vw">보기</a>
+							</li>
+							<!--// 20200330 -->
+							<li>
+								<p><input type="checkbox" id="chk05"><label for="chk05"><span class="sel">(선택)</span> 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer05');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- 20200831 삭제 <li>
+								<p><input type="checkbox" id="chk06"><label for="chk06"><span class="sel">(선택)</span> 통합브랜드 선택항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer06');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<li>
+								<p><input type="checkbox" id="chk07"><label for="chk07"><span class="sel">(선택)</span> 통합브랜드 마케팅 목적 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer07');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- 20200831 삭제 <li>
+								<p><input type="checkbox" id="chk08"><label for="chk08"><span class="sel">(선택)</span> 통합브랜드 개인정보 처리위탁</label></p>
+								<a href="#" onclick="layerOpen('termslayer08');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<li>
+								<p><input type="checkbox" id="chk09"><label for="chk09"><span class="sel">(선택)</span> <strong>광고성 정보 수신 동의</strong></label></p> <!-- 20200904 //-->
+								<a href="#" class="btn_vw">보기</a>
+								<div class="select_chk">
+									<p class="rchk">
+										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
+									</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk02" name=""><label for="rchk02">SMS 수신</label>
+									</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
+									</p>
+									<span>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="btnwrap btn_foo">
+						<a href="#" class="btn btn_next">다음</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- 추천인 ID 검색 레이어  -->
+	<div class="layerbody" id="recommidLayer">
+		<div class="layerwrap recommidlay">
+			<a class="btn_close" onclick="layerClose('recommidLayer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>추천인 ID 검색</p>
+			</div>
+			<div class="layconts">
+				<div class="select_chk">
+					<p class="rchk"><input type="radio" id="sch01" name="type" checked><label for="sch01">아이디로 검색</label></p>
+					<p class="rchk"><input type="radio" id="sch02" name="type"><label for="sch02">회원 정보로 검색</label></p>
+				</div>
+				<ul class="putfrm idsch">
+					<li>
+						<p class="name"><span class="esse">*</span>아이디</p>
+						<p class="put"><input type="text" placeholder="추천인 아이디를 입력해주세요."></p>
+					</li>
+				</ul>
+				<ul class="putfrm usersch hid">
+					<li>
+						<p class="name"><span class="esse">*</span>이름</p>
+						<p class="put"><input type="text" placeholder="추천인 이름을 입력해주세요."></p>
+					</li>
+					<li>
+						<p class="name"><span class="esse">*</span>휴대폰 번호</p>
+						<p class="put"><input type="text" placeholder="-를 제외한 숫자만 입력해주세요."></p>
+					</li>
+				</ul>
+				<p class="inf">휴면 계정은 추천인 ID로 등록하실 수 없습니다.</p>
+				<div class="btnwrap">
+					<a href="#" class="btn btnfull">검색</a>
+				</div>
+				<div class="result">
+					<ul class="putfrm">
+						<li>
+							<p class="name">아이디</p>
+							<p class="put">
+								yuhan
+								<span><a href="#" class="btn btnsmal">선택</a></span>
+							</p>
+						</li>
+						<li>
+							<p class="name">아이디</p>
+							<p class="put">일치하는 정보가 없습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 추천인 ID 검색 레이어  -->
+
+	<!-- 약관 레이어  -->
+	<div class="layerbody" id="termslayer01">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer01')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 이용약관[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer01.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용[필수] -->
+	<div class="layerbody" id="termslayer02">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer02')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer02.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 통합브랜드 이용약관[필수] -->
+	<div class="layerbody" id="termslayer03">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer03')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>통합브랜드 이용약관[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer03.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 통합브랜드 필수항목 개인정보 수집 및 이용[필수] -->
+	<div class="layerbody" id="termslayer04">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer04')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>통합브랜드 필수항목 개인정보 수집 및 이용[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer04.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택] -->
+	<div class="layerbody" id="termslayer05">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer05')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer05.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택] -->
+	<div class="layerbody" id="termslayer06">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer06')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>통합브랜드 선택항목 개인정보 수집 및 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer06.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 통합브랜드 마케팅 목적 이용[선택] -->
+	<div class="layerbody" id="termslayer07">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer07')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>통합브랜드 마케팅 목적 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer07.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 통합브랜드 개인정보 처리위탁[선택] -->
+	<div class="layerbody" id="termslayer08">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer08')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>통합브랜드 개인정보 처리위탁[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer08.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+
+	<!-- 20200330 -->
+	<!-- 약관 레이어 : 모닛, 개인정보 제3자 제공 동의[필수] -->
+	<div class="layerbody" id="termslayer09">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer09')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>모닛, 개인정보 제3자 제공 동의[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer09.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!--// 20200330 -->
+
+</body>
+
+<script>
+// 레이어팝업 열기
+function layerOpen(set) {
+  $('#' + set).addClass('show');
+  $('body, html').addClass('noscroll');
+}
+// 레이어팝업 닫기
+function layerClose(set) {
+  $('#' + set).removeClass('show');
+  $('body, html').removeClass('noscroll');
+}
+$(document).ready(function() {
+	if($('.recommidlay').length > 0) {
+		$('.recommidlay').find('#sch02').click(function() {
+      if($(this).is(":checked")) {
+				$('.recommidlay').find('.idsch').addClass('hid');
+				$('.recommidlay').find('.usersch').removeClass('hid');
+			}
+		});
+		$('.recommidlay').find('#sch01').click(function() {
+			if($(this).is(":checked")) {
+				$('.recommidlay').find('.idsch').removeClass('hid');
+				$('.recommidlay').find('.usersch').addClass('hid');
+			}
+		});
+	}
+});
+
+// 아이영역추가
+function selOpen(set){
+	$(set).next('.addlist').show();
+}
+function childAddSel(set){
+	var selval = $(set).text();
+	$('.addbtnwrap .btn_areadd').find('span').html(selval);
+	$(set).parents('.addlist').hide();
+}
+function childElDel(set){
+	$(set).parents('.childadd').remove();
+}
+</script>
+<script>
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+</script>
+</html>

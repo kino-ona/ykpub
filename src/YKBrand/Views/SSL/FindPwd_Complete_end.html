@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>비밀번호 재설정 | 아이디/비밀번호 찾기 | 유한킴벌리 통합브랜드</title>
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+	<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="../../Common/css/common.css">
+	<link rel="stylesheet" href="https://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+	<!--[if lte IE 9]><script src="https://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+
+
+	<link rel="icon" href="../../Common/images/favicon/favicon_default.png" type="image/x-icon" />
+	<link rel="stylesheet" href="../../Common/css/common.css?ver=201805281043" />
+	<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css" />
+	<script>
+		var userId = "";
+		var ImageServerUrl = "http://www.ykbrand.co.kr";
+		var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+	</script>
+
+</head>
+<body class="sso">
+	<div id="yk_lodings" class="maskWhite" style="display:none;">
+		<div class="lodings"></div>
+	</div>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+	<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKC6QW3"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header>
+			<!-- headerCont -->
+			<div class="headerCont">
+				<h1>
+					<a href="/"><img src="../../Common/images/common/yk_simple_logo.png" alt="유한킴벌리 통합회원" /></a>
+				</h1>
+			</div>
+			<!-- //headerCont -->
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+
+			<form action="/SSL/FindPwd_Complete_End?returnUrl=%2F" method="post">
+				<!-- container -->
+				<input name="__RequestVerificationToken" type="hidden" value="" />
+				<input type="hidden" name="user_ci" />
+				<input type="hidden" name="user_di" />
+
+				<!-- 201810 modi s-->
+				<div class="ssoContent idpwd_find"> <!-- 201810 클래스 추가 //-->
+					<!-- 타이틀 영역 -->
+					<div class="titArea">
+						<h2>비밀번호 재설정</h2>
+						<p class="pageInfo">아이디나 비밀번호가 생각나지 않으세요?<br />회원님의 개인정보를 안전하게 되찾으실 수 있도록 도와드리겠습니다.</p>
+					</div>
+					<!-- //타이틀 영역 -->
+					<!-- 비밀번호 재설정 -->
+					<div class="pwReset">
+						<p class="txt1"><img src="../../Common/images/common/ico_finding03.png" alt="이미지" /></p>
+						<p class="txt1">비밀번호가 변경되었습니다.<br />다시 <span class="bluetx">로그인</span> 해주세요.</p>
+
+						<!-- 버튼영역 -->
+						<div class="btnArea">
+							<a href="javascript:sendIt();" class="btnType2">로그인</a>
+						</div>
+						<!-- //버튼영역 -->
+						<!-- <dl>
+							<dt class="mgt0">아이디</dt>
+							<dd class="mgt0">crazykino</dd>
+							<dt><label for="user_pwd1">신규 비밀번호</label></dt>
+							<dd><input class="input1" id="user_pwd1" name="user_pwd1" placeholder="신규 비밀번호를 입력해 주십시오." title="신규 비밀번호를 입력해주세요" type="password" value="" /></dd>
+							<dt><label for="user_pwd2">신규 비밀번호 확인</label></dt>
+							<dd><input class="input1" id="user_pwd2" name="user_pwd2" placeholder="신규 비밀번호를 입력해 주십시오." title="신규 비밀번호를 입력해주세요" type="password" value="" /></dd>
+						</dl> -->
+					</div>
+					<!-- //비밀번호 재설정 -->
+				</div>
+				<!--// 201810 modi s-->
+
+				<!-- //sso 컨텐츠 -->
+			</form>
+
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer>
+			<!-- footerCont -->
+			<div class="footerCont">
+				<!-- footsec -->
+				<div class="footsec">
+					<!-- logo -->
+					<p class="footlogo"><img src="https://www.ykbrand.co.kr/Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+
+					<!-- footMenu -->
+					<ul class="footMenu">
+						<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+						<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+					</ul>
+					<img style="float:right; margin-top:30px;" src="https://www.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+					<!-- //footMenu -->
+					<!-- corpInfo -->
+					<div class="corpInfo">
+						주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br /> 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+					</div>
+
+					<!-- copy-->
+					<p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+
+					<!-- btnTop -->
+					<a href="#" class="btnTop"><img src="https://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+				</div>
+
+				<script>
+					function mainTerms(type, width, height) {
+						window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+					}
+				</script>
+				<!-- //footsec -->
+			</div>
+			<!-- //footerCont -->
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+</body>
+
+</html>

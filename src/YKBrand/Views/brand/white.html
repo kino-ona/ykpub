@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="title" content="유한킴벌리" />
+        <meta name="keywords" content="유한킴벌리">
+        <meta name="description" content="유한킴벌리" />
+
+    <meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />    
+    <title>브랜드 스토리 리스트 | 화이트</title>
+
+    
+
+<!-- Google Tag Manager -->
+<script>
+    
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W86233');</script>
+
+<script>
+
+    var dataLayer2 = [{
+        'CD1': 'N', 		// 로그인 여부 Y or N
+        'CD2': '',	// CID
+        'CD3': '', 	// UID
+        'CD4': 'PC_YKBRAND', 	// Device_type
+        'CD5': 'white',		//brand_name
+    }];
+
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer2', 'GTM-NKC6QW3');
+</script>
+<!-- End Google Tag Manager -->
+
+    <link rel="icon" href="http://www.ykbrand.co.kr/Common/images/favicon/favicon_wh.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Common/css_back1016_v2/common.css?ver=201805281043">
+    <link rel="stylesheet" href="http://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+    <script>
+        var userId = "";
+        var ImageServerUrl = "http://ykbrand.stiscloudbonds.com";
+        var ImageUploadUrl = "http://ykbrand.stiscloudbonds.com/data/Real/";
+    </script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/clipboard.js"></script>
+    <!--[if lte IE 9]><script src="/Common/js/Placeholders.min.js"></script><![endif]-->
+    <!--[if lte IE 9]><script src="/Common/js/jquery.Placeholders.monkey.patch.js"></script><![endif]-->
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script> 
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js?ver=201805281043"></script>
+    <script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+    <script>
+        function checkRedirectBrandSite() {
+            var redirectHost = 'http://www.momq.co.kr/brand/initMain.action?brand_id=';
+
+
+            if ('' != '') {
+                location.href = redirectHost + '';
+            }
+        }
+
+        checkRedirectBrandSite();
+
+        $(function () {
+            // 약관 동의 여부 체크
+            $.post("/Home/BrandTermsCheck", function (data) {
+                if (data.returnCode == 0) {
+                    location.href = "/SSL/TermsPop?returnUrl=%2Fwhite%2FFeed%2FFeedList%3Fmenu%3D284";
+                }
+            });
+        })
+        function mypage() {
+            window.open('/SSL/Mypage', 'mypage', 'width=940, height=626, toolbar=no, scrollbars=yes, menubar=no');
+        }
+    </script>
+
+    <!-- 레이아웃 이벤트 헤더 -->
+    
+    <!-- //레이아웃 이벤트 헤더 -->
+
+    <!--OG:META-->
+    <!--//OG:META-->
+    
+    <script>
+    var currentPage = 0;
+    var moreSize = "8";
+    var skipNo = "8";
+    $(function () {
+        getList(currentPage, skipNo, skipNo);
+
+        $("#btnFeedMore").click(function (e) {
+            e.preventDefault();
+
+            currentPage++;
+            getList(currentPage, moreSize, skipNo);
+        });
+    });
+
+    function getList(pageNo, pageSize, skipNo) {
+        var listType = "1";
+        var brandCode = "white";
+        var brandName = "화이트";
+        $.ajax({
+            type: "GET",
+            url: "/white/Feed/FeedJsonList",
+            data: { "menu": "284", "category": "", "category2": "", "pageNo": pageNo, "pageSize": pageSize, "skipNo": skipNo },
+            datatype: "json",
+            async: false,
+            success: function (data) {
+                if (data.length > 0) {
+                    $("#btnFeedMore").show();
+                    $("#empty").hide();
+                    $.each(data, function (i, item) {
+                        var listTmpl = $("#listTemplate").children().clone();
+                        // 상세페이지 URL 세팅
+                        listTmpl.find(".link").attr("href", "/" + item.brand_cd + "/Feed/FeedDetail/" + item.idx + "?menu=" + item.menu_idx + "&category=&category2=");
+                        // 썸네일 이미지 또는 유튜브 동영상 이미지 세팅 없을 경우 삭제
+                        var isImageType = false;
+                        if (item.thumb_yn == "Y" && item.thumb_rnm != null) {
+                            listTmpl.find(".img>a").html("<img src='http://ykbrand.stiscloudbonds.com/data/Real/" + item.thumb_rnm + "' alt='" + item.thumb_alt + "' />");
+                            listTmpl.addClass("imgType");
+                            isImageType = true;
+                        } else if (item.video_url != null && getThumbnail(item.video_url)) {
+                            listTmpl.find(".img>a").html("<img src='" + getThumbnail(item.video_url) + "' alt='유튜브 동영상 미리보기 이미지' />");
+                            listTmpl.addClass("imgType");
+                            isImageType = true;
+                        } else {
+                            listTmpl.find(".img").remove();
+                        }
+                        // 카테고리 세팅
+                        if (item.cate2_nm != "" && item.cate2_nm != null) {
+                            listTmpl.find(".txt1").text(item.cate2_nm);
+                        } else {
+                            listTmpl.find(".txt1").text(item.cate1_nm);
+                        }
+                        // 타이틀 세팅
+                        if (listType == "2") {
+                            listTmpl.find(".txt2>a").text(item.title);
+                        } else {
+                            if (isImageType) {
+                                listTmpl.find(".txt2>a").text(cutString(item.title, 45));
+                            } else {
+                                listTmpl.find(".txt2>a").text(cutString(item.title, 30));
+                            }
+                        }
+                        // 컨텐츠 세팅
+                        if (listType == "2") {
+                            if (isImageType) {
+                                listTmpl.find(".txt3").html(cutString($.trim(removeTag(item.contents)), 150));
+                            } else {
+                                listTmpl.find(".txt3").html(cutString($.trim(removeTag(item.contents)), 200));
+                            }
+                        } else if (listType == "1") {
+                            if (isImageType) {
+                                listTmpl.find(".txt3").remove();
+                            } else {
+                                listTmpl.find(".txt3").html(cutString($.trim(removeTag(item.contents)), 145));
+                            }
+                        }
+                        // 공지 여부 세팅
+                        //listTmpl.find(".noti")
+                        // 순번 세팅
+                        listTmpl.find(".num").text(item.Num + ". ");
+                        // 작성자 세팅
+                        listTmpl.find(".name").text(brandName);
+                        // 반영일 세팅
+                        if (item.view_dt != "" && item.view_dt != undefined)
+                            listTmpl.find(".date").text(item.viewDt);
+                        // 조회수 세팅
+                        listTmpl.find(".count").html("<span>조회</span> " + setComma(item.hits));
+                        // SNS 아이콘 세팅
+                        if (!item.sns_facebook) {
+                            listTmpl.find(".sns").remove();
+                        }
+                        $("#list").append(listTmpl);
+                        if (item.Num == 1) $("#btnFeedMore").hide();
+                    });
+                    if (data.length < pageSize) {
+                        if (listType == "1") {
+                            if (data.length % 4 == 1) {
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                            } else if (data.length % 4 == 2) {
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                            } else if (data.length % 4 == 3) {
+                                $("#list").append("<li class='nolist'>리스트 없음</li>");
+                            }
+                        }
+                        $("#btnFeedMore").hide();
+                    }
+                } else {
+                    $("#btnFeedMore").hide();
+                    if (currentPage == 0) $("#empty").show();
+                }
+            },
+            error: function (request, status, error) {
+                if (request.readyState == 0 || request.status == 0)
+                    return
+                else
+                    alert('에러가 발생하였습니다.');
+            }
+        });
+    }
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+<script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+</head>
+<body class="wh">
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKC6QW3"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- End Google Tag Manager (noscript) -->
+    
+
+
+
+    <!-- wrap -->
+    <div id="wrap">
+        <div id="layerMask"></div>
+        <!-- skipMenu -->
+        <nav class="skip">
+            <a href="#container">컨텐츠로 바로가기</a>
+        </nav>
+        <!-- //skipMenu -->
+        <!-- header -->
+        <header>
+            <!-- headerCont -->
+            
+
+<div class="headerCont">
+    <h1><a href="/white"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021910_419f8415c1d94062843ac75f041f4bc8.png" alt="화이트 브랜드 로고" /></a></h1>
+    <a href="#none" class="allBrand"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_allbrand.png" alt="전체 브랜드 레이어 보기" /></a>
+    <a href="#none" class="allMenu"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_allmenu.png" alt="전체 메뉴 레이어 보기" /></a>
+    <ul id="gnb" class="st2">
+                <li>
+                        <a href="/white/Feed/FeedList?menu=284"   class="on"  >브랜드 스토리</a>
+                            <ul class="depth">     
+                                                       
+                                            <li><a href="/white/Feed/FeedList?menu=284&amp;category=420">화이트 이야기</a></li>
+                                            <li><a href="/white/Feed/FeedList?menu=284&amp;category=539">화이트 광고</a></li>
+                                            <li><a href="/white/Feed/FeedList?menu=284&amp;category=592">화이트 뉴스</a></li>
+                            </ul>
+                   
+                </li>
+                <li>
+                        <a href="/white/Product/ProductList?menu=285" >제품소개</a>
+                            <ul class="depth">     
+                                                       
+                                            <li><a href="/white/Product/ProductList?menu=285&amp;category=434">패드</a></li>
+                                            <li><a href="/white/Product/ProductList?menu=285&amp;category=435">팬티라이너</a></li>
+                                            <li><a href="/white/Product/ProductList?menu=285&amp;category=436">탐폰</a></li>
+                            </ul>
+                   
+                </li>
+                <li>
+                        <a href="/white/Event/EventList?menu=286" >이벤트</a>
+                            <ul class="depth">     
+                                                       
+                                    <li><a href="/white/Event/EventList?menu=286">진행중인 이벤트</a></li>
+                                    <li><a href="/white/Event/EndEventList?menu=286">지난 이벤트</a></li>
+                                    <li><a href="/white/Event/ResultList?menu=286">당첨자 확인</a></li>
+                            </ul>
+                   
+                </li>
+                <li>
+                        <a href="/white/Board/BoardList?menu=290" >커뮤니티</a>
+                            <ul class="depth">     
+                                                       
+                                            <li><a href="/white/Board/BoardList?menu=290&amp;category=512">웹툰</a></li>
+                            </ul>
+                   
+                </li>
+                <li>
+                        <a href="/white/Feed/FeedList?menu=1990" >화이트 뉴스</a>
+                            <ul class="depth">     
+                                                       
+                                            <li><a href="/white/Feed/FeedList?menu=1990&amp;category=1991">뉴스</a></li>
+                            </ul>
+                   
+                </li>
+    </ul>
+</div>
+
+<!-- mask -->
+<div class="mask"></div>
+            <!-- //headerCont -->
+            <!-- 전체 브랜드 레이어 -->
+            <div id="allBrandlayer">
+    <!-- layerCont -->
+    <div class="layerCont">
+        <div class="info">
+            <h3>유한킴벌리<br />브랜드</h3>
+            <p>더 나은 생활을 향한<br />믿음을 바탕으로 고객에게<br />가치있는 기업이 되고자<br />노력합니다.</p>
+        </div>
+
+        <!-- brandList -->
+        <ul class="brandList">
+                    <li><a href="/huggies"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180516030453_44a87a0fc78d4094ae1c0d3c3f0d4888.png" alt="하기스 브랜드 로고" /></a></li>
+                    <li><a href="/goodnite"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021531_63b3d7802f05437fbd665049bf5bd521.gif" alt="굿나이트 브랜드 로고" /></a></li>
+                    <li><a href="/white"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021913_472d382704874de48a27eb892b141312.gif" alt="화이트 브랜드 로고" /></a></li>
+                    <li><a href="/goodfeel"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20161101044408_178f1e9acddc4fca8fc48191e8460442.png" alt="좋은느낌 브랜드 로고" /></a></li>
+                    <li><a href="/kleenex"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022258_9aceda3d6b2e400dab90f9d9621c971d.gif" alt="크리넥스 브랜드 로고" /></a></li>
+                    <li><a href="/scott"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022349_94017528f81b466abdb6ee47a22886d2.gif" alt="스카트 브랜드 로고" /></a></li>
+                    <li><a href="/mybidet"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022451_5f3f337aeee54e81b9050fa91c211134.gif" alt="마이비데 브랜드 로고" /></a></li>
+                    <li><a href="/depend"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022539_737f819bd2064f3f9c73ef67a23b0c16.gif" alt="디펜드 브랜드 로고" /></a></li>
+                    <li><a href="/tn"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022705_4c7969888761411286145aa88e57f838.gif" alt="티엔 브랜드 이미지" /></a></li>
+                    <li><a href="/greenfinger"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022834_5e019fd4f54f4305a56aa16b111a235d.gif" alt="그린핑거 브랜드 로고" /></a></li>
+                    <li><a href="/lanature"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180705111859_250638a538254b1fad831a15ad136e51.png" alt="lanature" /></a></li>
+                    <li><a href="/test_brand"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180809051914_491ec9ccddb74807aab90b3210b73649.jpg" alt="test" /></a></li>
+            <li><a href="/"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd13.gif" alt="유한킴벌리 브랜드" /></a></li>
+        </ul>
+        <ul class="brandList2">
+            <li><a href="http://www.yuhan-kimberly.co.kr/" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd16.gif" alt="유한킴벌리"></a></li>
+            <li><a href="http://www.momq.co.kr/main/initMain.action" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd14.gif" alt="맘큐" /></a></li>
+            <li><a href="http://www.happybabyshop.co.kr/" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd15.gif" alt="하기스 선물대잔치" /></a></li>
+            <li><a href="http://www.doubleheart.co.kr" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd12.gif" alt="더블하트" /></a></li>
+        </ul>
+        <!-- //brandList -->
+        <!-- 레이어닫기 -->
+        <a href="#none" class="close"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_layerClose.gif" alt="전체 브랜드 레이어 닫기" /></a>
+    </div>
+    <!-- //layerCont -->
+</div> 
+            <!-- //전체 브랜드 레이어 -->
+            <!-- 전체 메뉴 레이어 -->
+            <!--Donut#85BABB4A381C81C63EEA37105FEB79B32780062BA3605FFE84C844FCED96FAC6C22F9518CC04B61A9C8C43964016026E0174B3CC73B3E4FF0EBA6AC9C1F8F68581D2F3E6C2023F1406ADD20B56CD9095EA081E687CE5E560C45A85EEE70D4083952DD2E580019FCABCEB82639CE60ACC10016F50B6B8A4A58C1A328B109B88DA2B17FAD949A10EA1056C6C6E80586F33A28F87DF2EF1F9CFAE83EC10C20C78D92DEDA3B4BD544EFC6F16161D6B9F67B5662D4F04DBD483BD33CDF7C205AB991C90C747CA1EBAB5920FED7A89649862A7AE3FF2231E4A4A6944E96D1B39BC6F23CA3691E9BEFDDFE42C62F466207939B8298911B06D93DEA47B12169B4E6595877CB6167E203A5428793A6403E99C1CE0E0DDD8F94EF5212C02FA8EA6EB184F1F1BE2381276287AE1DC7BFF8DB1FCFA81D461258FD5610A88FD409F09AA991264BF750E7F2EDE9E3DE12750F66C70016B73D8E21085E926554A134125AA93AC01DB2EE3BF695E23F30F8A4EE9431FE860B492C648752A105B53F376C208E5C3101CC4F124#-->
+<div id="allmenu_layer">
+    <!-- layerCont -->
+    <div class="layerCont">
+        <!-- layerHead -->
+        <div class="layerHead">
+            <!-- 로고 -->
+            <h2><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021910_419f8415c1d94062843ac75f041f4bc8.png" alt="화이트 브랜드 로고" /></h2>
+
+            <!-- funcBtn -->
+            <div class="funcBtn">
+                    <!-- 로그인전 노출 -->
+                    <div>
+                        <a href="/SSL/Login?returnUrl=%2Fwhite%2FFeed%2FFeedList%3Fmenu%3D284">로그인</a>
+                        <a href="/SSL/Join?returnUrl=%2Fwhite%2FFeed%2FFeedList%3Fmenu%3D284">회원가입</a>
+                    </div>
+            </div>
+            <!-- //funcBtn -->
+            <!-- userInfo -->
+            <div class="userInfo" style="display:none">
+                <span class="name">님,</span> 
+                <span class="lately1" style="display:none">최근방문한 브랜드가 없습니다.</span> <!-- 최근방문 브랜드 없을때 노출 -->
+                <span class="lately2"><span>최근방문</span><img src="http://www.ykbrand.co.kr/Common/images/common/barnd1.gif" alt="하기스" /></span> <!-- 최근방문 브랜드 있을때 노출 -->
+            </div>
+            <!-- //userInfo -->
+        </div>
+        <!-- //layerHead -->
+
+        <!-- menuList -->
+        <ul class="menuList">
+                    <li>
+                        <span>브랜드 스토리</span>
+                            <ul>    
+                                
+                                                <li><a href="/white/Feed/FeedList?menu=284&amp;category=420">화이트 이야기</a></li>
+                                                <li><a href="/white/Feed/FeedList?menu=284&amp;category=539">화이트 광고</a></li>
+                                                <li><a href="/white/Feed/FeedList?menu=284&amp;category=592">화이트 뉴스</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <span>제품소개</span>
+                            <ul>    
+                                
+                                                <li><a href="/white/Product/ProductList?menu=285&amp;category=434">패드</a></li>
+                                                <li><a href="/white/Product/ProductList?menu=285&amp;category=435">팬티라이너</a></li>
+                                                <li><a href="/white/Product/ProductList?menu=285&amp;category=436">탐폰</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <span>이벤트</span>
+                            <ul>    
+                                
+                                    <li><a href="/white/Event/EventList?menu=286">진행중인 이벤트</a></li>
+                                    <li><a href="/white/Event/EndEventList?menu=286">지난 이벤트</a></li>
+                                    <li><a href="/white/Event/ResultList?menu=286">당첨자 확인</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <span>커뮤니티</span>
+                            <ul>    
+                                
+                                                <li><a href="/white/Board/BoardList?menu=290&amp;category=512">웹툰</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <span>화이트 뉴스</span>
+                            <ul>    
+                                
+                                                <li><a href="/white/Feed/FeedList?menu=1990&amp;category=1991">뉴스</a></li>
+                            </ul>
+                    </li>
+        </ul>
+        <!-- //menuList -->
+        <!-- 레이어닫기 -->
+        <a href="#none" class="close"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_layerClose.gif" alt="전체 메뉴 레이어 닫기" /></a>
+    </div>
+    <!-- //layerCont -->
+</div><!--EndDonut-->
+            <!-- //전체 메뉴 레이어 -->
+        </header>
+        <!-- //header -->
+        <!-- container -->
+        <div id="container">
+              
+
+<!-- brandSub -->
+<div class="brandSub">
+    <!-- titArea -->
+    <div class="titArea">
+        <!-- location -->
+        
+
+    <h3 class="siteTitle">브랜드 스토리</h3>
+
+<div class="location">
+    <a href="/white">Home</a> &gt;
+            <strong>브랜드 스토리</strong> 
+</div>
+
+
+        <!-- //location -->
+    </div>
+    <!-- //titArea -->
+    <!-- 2 or 3depth menu -->
+    
+
+    <ul class="depthMenu">
+        <!-- 선택시 해당 a 태그 class="on" 추가 -->
+
+        
+               <li><a href="/white/Feed/FeedList?menu=284" class="on" >전체보기</a></li>
+
+
+
+                <li><a href="/white/Feed/FeedList?menu=284&amp;category=420" >화이트 이야기</a></li>
+                <li><a href="/white/Feed/FeedList?menu=284&amp;category=539" >화이트 광고</a></li>
+                <li><a href="/white/Feed/FeedList?menu=284&amp;category=592" >화이트 뉴스</a></li>
+    </ul>
+
+    <!-- //2 or 3depth menu -->
+    <!-- 브랜드 스토리 리스트 -->
+<div class="brandStoryList" style="margin-top:50px;">
+        <!-- listArea -->
+        <div class="listArea">
+<ul class="type2" id="list"><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/174?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151102103613_cc4112b60ec54696a2028a5c9d2ecaca.png" alt="화이트 이야기"></a></p>
+        <p class="txt1">화이트 이야기</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/174?menu=284&amp;category=&amp;category2=" class="link tit">화이트와 함께, 새로운 기회를 향해 주저말고 나...</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.12.07</p>
+            
+        </div>
+    </li><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/275?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151018053040_aa447507c3d94de581938ae184bac154.png" alt="&quot;보여줘, 너의 #화이트 스타일 - 화이트 패드 편&quot;"></a></p>
+        <p class="txt1">화이트 광고</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/275?menu=284&amp;category=&amp;category2=" class="link tit">"보여줘, 너의 #화이트 스타일 - 화이트 패드 편...</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.11.03</p>
+            
+        </div>
+    </li><li>
+        
+        <p class="txt1">화이트 뉴스</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/387?menu=284&amp;category=&amp;category2=" class="link tit">보여줘! &#8234;#&lrm;화이트스타일</a></p>
+        <p class="txt3">크리스탈 X 키썸의 #화이트스타일 뮤직비디오 대공개!
+
+당당한 자신감을 응원하는 #화이트스타일 뮤비를 확인하고,
+나의 자신감 넘치는 모습이나 아이템...</p>
+        <div class="txt4">
+            <p class="date">2015.11.03</p>
+            
+        </div>
+    </li><li>
+        
+        <p class="txt1">화이트 뉴스</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/385?menu=284&amp;category=&amp;category2=" class="link tit">2015년 화이트 좋은느낌 웰빙인...</a></p>
+        <p class="txt3">[한국경제TV WOWStar 2015. 03. 31] [news1 2015. 03. 31]
+
+'화이트 애니데이 팬티라이너'와 ‘좋은느낌 생리대 및 팬티라이너’가 각...</p>
+        <div class="txt4">
+            <p class="date">2015.11.03</p>
+            
+        </div>
+    </li><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/274?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151018052823_71415e3fbf924af29d33f206ac9cd600.png" alt="&quot;보여줘, 너의 #화이트 스타일 - 화이트 탐폰 편&quot;"></a></p>
+        <p class="txt1">화이트 광고</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/274?menu=284&amp;category=&amp;category2=" class="link tit">"보여줘, 너의 #화이트 스타일 - 화이트 탐폰 편...</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.10.30</p>
+            
+        </div>
+    </li><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/272?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151018052226_15996163f8de4265baeaaf5050e247aa.png" alt="&quot;화이트 - 오목한 흡수과학편&quot;"></a></p>
+        <p class="txt1">화이트 광고</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/272?menu=284&amp;category=&amp;category2=" class="link tit">"화이트 - 오목한 흡수과학편"</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.10.30</p>
+            
+        </div>
+    </li><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/271?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151018052023_180c1edaa1e74fe19b4b4899d124e790.png" alt="&quot;화이트-그날이 그날일지라도... 소개팅편&quot;"></a></p>
+        <p class="txt1">화이트 광고</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/271?menu=284&amp;category=&amp;category2=" class="link tit">"화이트-그날이 그날일지라도... 소개팅편"</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.10.30</p>
+            
+        </div>
+    </li><li class="imgType">
+        <p class="img"><a href="/white/Feed/FeedDetail/270?menu=284&amp;category=&amp;category2=" class="link"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151018051658_51d4f29bf71f49e79a91eb0d01f21c71.png" alt="&quot;화이트-그날이 그날일지라도.. 다이어트 편&quot;"></a></p>
+        <p class="txt1">화이트 광고</p>
+        <p class="txt2"><a href="/white/Feed/FeedDetail/270?menu=284&amp;category=&amp;category2=" class="link tit">"화이트-그날이 그날일지라도.. 다이어트 편"</a></p>
+        
+        <div class="txt4">
+            <p class="date">2015.10.30</p>
+            
+        </div>
+    </li></ul>
+
+<div style="display:none;" id="listTemplate">
+    <li>
+        <p class="img"><a href="#none" class="link"><img src="" alt=""></a></p>
+        <p class="txt1"></p>
+        <p class="txt2"><a href="#none" class="link tit"></a></p>
+        <p class="txt3"></p>
+        <div class="txt4">
+            <p class="date"></p>
+            
+        </div>
+    </li>
+</div>
+            <p id="empty" style="display:none;">등록된 게시물이 없습니다.</p>
+        </div>
+        <!-- //listArea -->
+        <!-- 더보기 -->
+        <a href="#none" class="more" id="btnFeedMore"><span>더보기</span></a>
+    </div>
+    <!-- //브랜드 스토리 리스트 -->
+</div>
+<!-- //brandSub -->
+
+
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer>
+            <!-- footerCont -->
+            <div class="footerCont">
+                <!-- shortcut -->
+                <div class="shortcut">
+    <ul>
+                <li><a href="/huggies"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180516030453_44a87a0fc78d4094ae1c0d3c3f0d4888.png" alt="하기스 브랜드 로고" /></a></li>
+                <li><a href="/goodnite"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021531_63b3d7802f05437fbd665049bf5bd521.gif" alt="굿나이트 브랜드 로고" /></a></li>
+                <li><a href="/white"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016021913_472d382704874de48a27eb892b141312.gif" alt="화이트 브랜드 로고" /></a></li>
+                <li><a href="/goodfeel"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20161101044408_178f1e9acddc4fca8fc48191e8460442.png" alt="좋은느낌 브랜드 로고" /></a></li>
+                <li><a href="/kleenex"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022258_9aceda3d6b2e400dab90f9d9621c971d.gif" alt="크리넥스 브랜드 로고" /></a></li>
+                <li><a href="/scott"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022349_94017528f81b466abdb6ee47a22886d2.gif" alt="스카트 브랜드 로고" /></a></li>
+                <li><a href="/mybidet"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022451_5f3f337aeee54e81b9050fa91c211134.gif" alt="마이비데 브랜드 로고" /></a></li>
+                <li><a href="/depend"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022539_737f819bd2064f3f9c73ef67a23b0c16.gif" alt="디펜드 브랜드 로고" /></a></li>
+                <li><a href="/tn"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022705_4c7969888761411286145aa88e57f838.gif" alt="티엔 브랜드 이미지" /></a></li>
+                <li><a href="/greenfinger"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20151016022834_5e019fd4f54f4305a56aa16b111a235d.gif" alt="그린핑거 브랜드 로고" /></a></li>
+                <li><a href="/lanature"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180705111859_250638a538254b1fad831a15ad136e51.png" alt="lanature" /></a></li>
+                <li><a href="/test_brand"><img src="http://ykbrand.stiscloudbonds.com/data/Real/20180809051914_491ec9ccddb74807aab90b3210b73649.jpg" alt="test" /></a></li>
+        <li><a href="/"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd13.gif" alt="유한킴벌리 브랜드" /></a></li>
+        <li><a href="http://www.yuhan-kimberly.co.kr/" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd16.gif" alt="유한킴벌리"></a></li>
+        <li><a href="http://www.momq.co.kr/main/initMain.action" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd14.gif" alt="맘큐" /></a></li>
+        <li><a href="http://www.happybabyshop.co.kr/" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd15.gif" alt="하기스 선물대잔치" /></a></li>
+        <li><a href="http://www.doubleheart.co.kr" target="_blank"><img src="http://www.ykbrand.co.kr/Common/images/common/barnd12.gif" alt="더블하트" /></a></li>
+    </ul>
+</div> 
+                <!-- //shortcut -->
+                <!-- footsec -->
+                <div class="footsec">
+    <!-- logo -->
+    <p class="footlogo"><img src="http://www.ykbrand.co.kr/Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+
+    <!-- footMenu -->
+    <ul class="footMenu">
+        <li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+        <li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+    </ul>
+    <img style="float:right; margin-top:30px;" src="/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+    <!-- //footMenu -->
+    <!-- corpInfo -->
+    <div class="corpInfo">
+        주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br />
+        고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+    </div>
+
+    <!-- copy-->
+    <p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+
+    <!-- btnTop -->
+    <a href="#" class="btnTop"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+</div>
+
+<script>
+    function mainTerms(type, width, height) {
+        window.open('/Terms/TermsPop?type=' + type, 'terms', 'width='+width+', height='+height+', menubar=no, status=no, toolbar=no, scrollbars=yes');
+    }
+</script>
+                <!-- //footsec -->
+            </div>
+            <!-- //footerCont -->
+        </footer>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+
+    <input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+    <input type="hidden" name="adb_login_id" id="adb_login_id" value="" />
+
+    
+<script>
+
+
+
+</script>
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html> 

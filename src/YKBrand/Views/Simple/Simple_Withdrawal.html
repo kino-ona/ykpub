@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="유한킴벌리">
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리">
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+<title>휴면계정 해제안내 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="../Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css">
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js"></script>
+<body class="sso">
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+	<!-- headerCont -->
+	<div class="headerCont">
+		<h1>
+		<a href="/"><img src="../../Common/images/common/simple_yk_logo.png" alt="유한킴벌리 통합회원"></a>
+		</h1>
+	</div>
+	<!-- //headerCont -->
+	</header>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- sso 컨텐츠 -->
+		<div class="ssoContent">
+			<!-- 타이틀 영역 -->
+			<div class="titArea">
+				<h2>탈퇴회원 안내</h2>
+				<p class="pageInfo">
+					고객님은 탈퇴 회원으로 등록되어 있어 신규 회원 가입을 안내해 드립니다.
+				</p>
+			</div>
+			<!-- //타이틀 영역 -->
+			<!-- 본인인증 -->
+			<div class="ownCertify_drop">
+				<p class="txt1">
+					탈퇴회원으로 등록되었습니다.
+				</p>
+				<p class="txt2" style="margin-bottom:25px;">
+					<strong>개인정보 보호를 위하여 휴면계정 정책을 실시하고 있습니다.</strong><br>
+					 회원님은 5년 이상 로그인 하지 않아<strong>'탈퇴 회원'</strong>으로 등록되었습니다.<br>
+				</p>
+				<p class="txt2">
+					 회원님의 기존 포인트, 쿠폰 등 개인정보는 삭제되었습니다.<br>
+					<strong>간편가입 회원 또는 일반회원으로</strong> 신규 가입 후 서비스를 이용하실 수 있습니다.<br>
+					 (이전 사용하신 ID는 폐기되어 사용하실 수 없습니다.)
+				</p>
+				<div class="btn_area" style="margin-top:30px; margin-bottom:5px;">
+					<a href="@Url.Action(" join1_start", "ssl", new { returnurl=Request["returnUrl"], sitecode=Request["siteCode"], isssl=Request["isSSL"] })" class="certify">회원가입</a>
+				</div>
+			</div>
+			<!-- //본인인증 -->
+		</div>
+		<!-- //sso 컨텐츠 -->
+		<form name="form_auth">
+			<input type="hidden" name="ordr_idxx" id="ordr_idxx" value="201705171494985678454" placeholder="(필수)주문번호">
+			<input type="hidden" name="req_tx" value="cert" placeholder="요청종류">
+			<input type="hidden" name="cert_method" value="01" placeholder="요청구분">
+			<input type="hidden" name="web_siteid" value="J15092200961" placeholder="웹사이트 아이디">
+			<input type="hidden" name="fix_commid" value="" placeholder="노출 통신사(SKT:SKT, KT:KTF, LGU+:LGT)">
+			<input type="hidden" name="site_cd" value="V6672" placeholder="사이트 코드(test:S6186)">
+			<input type="hidden" name="Ret_URL" id="Ret_URL" value="https://localhost:44301/SSL/Module_KCP_Recive" placeholder="인증결과 리턴 페이지 (가맹점 URL)">
+			<input type="hidden" name="cert_otp_use" value="Y" placeholder="(Y:실명 확인+OTP 점유확인, N:실명 확인Only)">
+			<input type="hidden" name="cert_enc_use" value="Y" placeholder="고정값">
+			<input type="hidden" name="cert_able_yn" value="Y" placeholder="본인확인 input 비활성화">
+			<input type="hidden" name="web_siteid_hashYN" value="" placeholder="website ID 검증">
+			<input type="hidden" name="res_cd" value="" placeholder="">
+			<input type="hidden" name="res_msg" value="" placeholder="">
+			<input type="hidden" name="veri_up_hash" value="" placeholder="up_hash 검증을 위한 필드">
+			<input type="hidden" name="param_opt_1" value="" placeholder="(옵션)인증완료시 리턴">
+			<input type="hidden" name="param_opt_2" value="" placeholder="(옵션)인증완료시 리턴">
+			<input type="hidden" name="param_opt_3" value="" placeholder="(옵션)인증완료시 리턴">
+			<input type="hidden" name="user_name_url_yn" value="Y">
+		</form>
+		<form name="form_auth_result" id="form_auth_result">
+		</form>
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<footer>
+	<!-- footerCont -->
+	<div class="footerCont" style="position: relative; top: auto; left: auto;">
+		<!-- footsec -->
+		<div class="footsec">
+			<!-- logo -->
+			<p class="footlogo">
+				<img src="http://www.ykbrand.co.kr/Common/images/common/footlogo.gif" alt="유한킴벌리">
+			</p>
+			<!-- footMenu -->
+			<ul class="footMenu">
+				<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+				<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보취급방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+			</ul>
+			<img style="float:right; margin-top:30px;" src="http://www.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크">
+			<!-- //footMenu -->
+			<!-- corpInfo -->
+			<div class="corpInfo">
+				 주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br>
+				 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+			</div>
+			<!-- copy-->
+			<p class="copy">
+				Copyright@2015 Yuhan-Kimberly.All right Reserved.
+			</p>
+			<!-- btnTop -->
+			<a href="#" class="btnTop"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기"></a>
+		</div>
+		<!-- //footsec -->
+	</div>
+	<!-- //footerCont -->
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

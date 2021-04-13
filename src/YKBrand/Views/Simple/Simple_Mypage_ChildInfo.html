@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="유한킴벌리">
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리">
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+<title>아이정보 추가/수정 | 마이페이지 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="../Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css">
+<link rel="stylesheet" href="../../Common/css/mypage.css">
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js"></script>
+<style type="text/css">
+        .CLONE {
+            display: none;
+        }
+        .haveC .cloneGb {
+            display: none;
+        }
+        .input1, select {
+            background-color: #ffffff;
+        }
+        #mypage .childInfo .cont .inputCont .writeTable .tableCont {
+            padding-bottom: 35px;
+        }
+</style>
+<body class="sso">
+<!-- 마이페이지 (940 * 626) -->
+<div id="mypage">
+	<header>
+	<h1><img src="http://www.ykbrand.co.kr/Common/images/mypage/logo.gif" alt="유한킴벌리 통합회원 마이페이지"></h1>
+	</header>
+	<!-- mypageTab -->
+	<div class="simple_join_tab4">
+		<ul class="clearfix">
+			<li>회원정보수정</li>
+			<li class="on">아이정보 추가/수정</li>
+			<li>약관관리</li>
+			<li>회원탈퇴</li>
+		</ul>
+	</div>
+	<!-- //mypageTab -->
+	<!-- 아이정보 추가,삭제 -->
+	<div class="childInfo">
+		<div class="cont">
+			<p class="tit">
+				아이정보 추가/수정
+			</p>
+			<div class="inputCont">
+				<!-- 기본안내 (아이정보 추가시 기본안내 hide) -->
+				<div class="defaultInfo">
+					아기정보를 추가하여 주십시오.
+				</div>
+				<!-- writeTable -->
+				<div class="simple_info mar_t20">
+					<table>
+					<colgroup>
+					<col style="width:280px;"/>
+					<col/>
+					</colgroup>
+					<tr>
+						<th>
+							출산여부
+						</th>
+						<td>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N">
+							<label for="YKMEMBER_Required1_N" style="margin-right:30px;">출산 후</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_Y" name="YKMEMBER_Required1" value="Y" checked="">
+							<label for="YKMEMBER_Required1_Y">출산 전</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							우리아이 이름
+						</th>
+						<td>
+							<input class="phone_num" type="text" placeholder="성"><input class="phone_num mar_l5" type="text" placeholder="이름">
+							<span class="ui_radio mar_l5">
+							<input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N">
+							<label for="YKMEMBER_Required1_N" style="margin-right:30px;">남</label>
+							</span>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_Y" name="YKMEMBER_Required1" value="Y" checked="">
+							<label for="YKMEMBER_Required1_Y">여</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							생년월일
+						</th>
+						<td>
+							<select>
+								<option>년도</option>
+							</select>
+							<select>
+								<option>월</option>
+							</select>
+							<select>
+								<option>일</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							대표아이
+						</th>
+						<td>
+							<span class="ui_radio">
+							<input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N">
+							<label for="YKMEMBER_Required1_N" style="margin-right:30px;">대표아이로 설정</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							아이정보 추가
+						</th>
+						<td class="child_add">
+							<select>
+								<option>아이추가</option>
+							</select>
+							<input type="button" class="phone_btn" value="추가">
+						</td>
+					</tr>
+					</table>
+				</div>
+				<!-- //writeTable -->
+			</div>
+		</div>
+		<!-- 버튼영역 -->
+		<div class="btn_area mar_t40">
+			<a class="next" href="javascript:window.open('', '_self').close();">취소</a>
+			<a class="certify" href="javascript:SaveChildBox();">저장</a>
+		</div>
+		<!-- //버튼영역 -->
+	</div>
+	<!-- //아이정보 추가,삭제 -->
+</div>
+<!-- //마이페이지 -->
+</body>
+</html>

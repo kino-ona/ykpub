@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="title" content="유한킴벌리">
+		<meta name="keywords" content="유한킴벌리">
+		<meta name="description" content="유한킴벌리">
+
+		<title>YK Big Data Analytics Portal</title>
+
+		<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+		<link rel="stylesheet" href="../Common/css/common.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+
+<script type="text/javascript">
+function contentsResize() {
+	var div2 = document.getElementById('conentsInner');
+	div2.style.width = window.innerWidth - 210 + 'px';
+}
+window.onload = function() {
+	contentsResize();
+	// 브라우저 크기가 변할 시 동적으로 사이즈를 조절해야 하는경우
+	window.addEventListener('resize', contentsResize);
+}
+</script>
+
+
+</head>
+<body>
+<div id="wrap">
+	<header>
+		<div class="logo"><a href="http://www.yuhan-kimberly.co.kr" target="_blank">유한킴벌리</a></div>
+		<h1>YK BIG DATA ANALYTICS PORTAL</h1>
+		<span>v26.0</span> <!-- 20200224 //-->
+	</header>
+	<section class="items_menu">
+		<div class="items_lnb">RECENTLY VIEWED ITEMS</div>
+		<ul class="items_cate">
+			<li><a href="" class="graph">SALES REPORT (SHIPMENT)</a></li>
+			<li><a href="" class="cate">CATEGORY SHARE</a></li>
+			<li><a href="" class="price">PRICE TRACKER</a></li>
+		</ul>
+	</section>
+
+	<div class="contents">
+		<div class="lnb">
+			<ul>
+				<li><a href="sale.html" class="menu1">eCommerce <br> Sales Analytics</a></li> <!-- 활성화 class : curr -->
+				<li><a href="sale2.html" class="menu2">Sales Analytics</a></li>
+				<li><a href="analytics.html" class="menu3">360 Consumer<br>Analytics</a></li> <!-- 20200130 -->
+				<li><a href="supply.html" class="menu4 curr">Supply Chain <br> Management </a></li>
+			</ul>
+			<div class="manual"><a href="https://tableau.kcc.com/#/site/AP/views/YKBigDataAnalytics/Document" target="_blank">MANUAL</a></div>
+		</div>
+
+		<div class="contents_inner" id="conentsInner">
+			<ul class="supply">
+				<li>
+					<a href="https://tableau.kcc.com/t/AP/views/TMSMetricsReport/KPISummary" class="bg1" target="_blank">
+						TMS Metrics 리포트
+
+						<div>
+							<dl>
+							<dt>TMS Metrics 리포트</dt>
+
+							<dd>
+								선적 자동화 처리율, <br>선적 개선 절감 비용, 선적<br>무 보정율, 선적 최적화 <br>미 진행율
+							</dd>
+							</dl>
+
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="" class="bg2" target="_blank">
+						물류비 리포트
+						<div>
+							<dl>
+							<dt>물류비 리포트</dt>
+
+							<dd>
+								YK 물류비 분석 리포트<br> (카테고리별/사업부/<br>계정별 분석현황)
+							</dd>
+							</dl>
+
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="" class="bg3" target="_blank">
+						운송비 리포트
+						<div>
+							<dl>
+							<dt>운송비 리포트</dt>
+
+							<dd>
+								물류 운송비 분석 리포트<br> (카테고리/영업채널/<br>제품별 분석현황)
+							</dd>
+							</dl>
+
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

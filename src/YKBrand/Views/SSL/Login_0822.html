@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>로그인 | 유한킴벌리</title>
+
+	<!-- Google Tag Manager -->
+	<script>
+		// (function(w, d, s, l, i) {
+		// 	w[l] = w[l] || [];
+		// 	w[l].push({
+		// 		'gtm.start': new Date().getTime(),
+		// 		event: 'gtm.js'
+		// 	});
+		// 	var f = d.getElementsByTagName(s)[0],
+		// 		j = d.createElement(s),
+		// 		dl = l != 'dataLayer' ? '&l=' + l : '';
+		// 	j.async = true;
+		// 	j.src =
+		// 		'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		// 	f.parentNode.insertBefore(j, f);
+		// })(window, document, 'script', 'dataLayer', 'GTM-W86233');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="../../Common/css/common.css">
+	<link rel="stylesheet" href="https://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+	<script>
+		var userId = "";
+		var ImageServerUrl = "http://www.ykbrand.co.kr";
+		var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+	</script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+	<!--[if lte IE 9]><script src="https://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/common.js?ver=201801191308"></script>
+	<script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId: '135998597127905',
+				version: 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+
+		Kakao.init("8841bbaa64390509a82049e2a82e6038");
+	</script>
+
+	<script>
+		$(function() {
+			$("#userPw").keydown(function(e) {
+				if (e.keyCode == 13) login();
+			});
+
+			$("#btnLogin").click(function(e) {
+				login();
+				e.preventDefault();
+			});
+
+			var rtCode = "";
+			if (rtCode == "idpwd") {
+				window.open('/SSL/Login_Failure', "", "width=580,height=555,toolbar=no,scroll=no");
+			} else if (rtCode == "trans" || rtCode == "duple" || rtCode == "simple") {
+				$('#transMember').show();
+			} else if (rtCode == "momq_pwd") {
+				if (confirm("비밀번호가 일치하지 않습니다. 아이디/비밀번호 찾기를 진행 하시겠습니까?")) {
+					window.open('https://www.momq.co.kr/member/MemberSearchIdPasswdPop.action?searchType=id', 'FindIdPw');
+				}
+			}
+		});
+
+		function login() {
+			var result = true;
+			if (result == true) {
+				if ($.trim($("#userId").val()) == "") {
+					alert("아이디를 입력해 주세요.");
+					$("#userId").focus();
+					result = false;
+				}
+			}
+			if (result == true) {
+				if ($.trim($("#userPw").val()) == "") {
+					alert("비밀번호를 입력해 주세요.");
+					$("#userPw").focus();
+					result = false;
+				}
+			}
+			if (result == true) {
+				$("#loginForm").submit();
+			}
+		}
+
+		function closeLayer() {
+			$(".layerPop").hide();
+		}
+
+		function openTransMember() {
+			location.href = "/SSL/Join?returnUrl=%2F";
+		}
+
+		function join() {
+			location.href = "/SSL/Join?returnUrl=%2F";
+		}
+	</script>
+
+	<script type="text/javascript">
+		function jsFaceBook() {
+			FB.getLoginStatus(function(response) {
+				var snsType = "FB";
+				console.log('[FaceBook] FaceBook Status : ' + response.status);
+
+				FB.login(function(response) {
+					console.log("[FaceBook] Login Data : " + JSON.stringify(response));
+					var accessToken = response.authResponse.accessToken;
+
+					if (accessToken != "") {
+
+						jsUserInformation("FB", accessToken);
+					} else {
+						alert("Error [accessToken]");
+					}
+
+				}, {
+					scope: 'public_profile,email'
+				});
+			});
+		}
+
+		function jsKaKao() {
+
+			Kakao.Auth.login({
+				success: function(authObj) {
+					console.log("[KaKao] Step1 Data : " + JSON.stringify(authObj));
+					//  alert(JSON.stringify(authObj));
+					var accessToken = authObj.access_token;
+					console.log("[KaKao] accessToken Data : " + accessToken);
+
+					jsUserInformation("KKO", accessToken);
+
+					console.log("[KaKao] END");
+				},
+				fail: function(error) {
+					alert(JSON.stringify(error));
+				}
+			});
+		}
+
+		function jsNaver() {
+			var naverLoginWindow = window.open("https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id=UtwMcQfmfaZlzaKGYx01&amp;redirect_uri=https%3a%2f%2fwww.ykbrand.co.kr%2fSSL%2fLoginNaverReturnResult&amp;state=2018032714221353656",
+				"YKnaverLoginWindow", "width=400, height=300,  scrollbars=false, location=false, status=false");
+		}
+
+		function jsNaverResult(userProfile) {
+			jsSNSlogin(userProfile);
+		}
+
+		function jsUserInformation(snsType, accessToken) {
+
+			if (accessToken != "" && snsType != "") {
+				var sendData = {
+					"snsType": snsType,
+					"accessToken": accessToken
+				};
+
+				$.ajax({
+					type: "POST",
+					url: "/SSL/UserSNSinformation",
+					data: sendData,
+					dataType: "json",
+					async: false,
+					success: function(data) {
+						console.log("login result Data : " + JSON.stringify(data));
+
+						if (data.resultCode == "0000") {
+							var resultData = data.resultData;
+
+							var userProfile = new Object();
+
+							userProfile.snsType = resultData.snsType;
+							userProfile.name = encodeURIComponent(resultData.name);
+							userProfile.nickName = encodeURIComponent(resultData.nickName);
+							userProfile.email = resultData.email;
+							userProfile.snsIndexKey = resultData.snsIndexKey;
+
+							jsSNSlogin(userProfile);
+						} else {
+							alert('고객님의 SNS 정보 호출에 실패하였습니다.[Error : ' + data.resultCode + "]");
+						}
+					},
+					error: function() {
+						alert('SNS 로그인 연동에 실패하였습니다.');
+					}
+				});
+			} else {
+				alert("Error [accessToken]");
+			}
+		}
+
+
+		function jsSNSlogin(userProfile) {
+			var frm = document.snsLoginFrm;
+			console.log("[START] login");
+			console.log("userProfile Data : " + JSON.stringify(userProfile));
+
+			if (userProfile.snsType != "" && userProfile.snsIndexKey != "") {
+				var loginData = new Object();
+
+				loginData.snsType = userProfile.snsType;
+				loginData.snsIndexKey = userProfile.snsIndexKey;
+
+				$.ajax({
+					type: "POST",
+					url: "/SSL/SNSlogin",
+					data: loginData,
+					dataType: "json",
+					async: false,
+					success: function(res) {
+						console.log("membercheck result Data : " + JSON.stringify(res));
+
+						if (res.resultCode == "0000") {
+							var returnUri = frm.returnUrl.value;
+							location.replace(returnUri);
+						} else if (res.resultCode == "0002") {
+							alert("탈퇴한 회원이십니다.");
+						} else if (res.resultCode == "0003") {
+							//  휴면
+							frm.snsType.value = userProfile.snsType;
+							frm.name.value = userProfile.name;
+							frm.nickName.value = userProfile.nickName;
+							frm.email.value = userProfile.email;
+							frm.snsIndexKey.value = userProfile.snsIndexKey;
+
+							frm.action = "/SSL/SNS_Inactive_member";
+							frm.submit();
+						} else if (res.resultCode == "0004") {
+							//  휴면 탈퇴
+							alert("휴면 탈퇴 회원이십니다.");
+						} else if (res.resultCode == "0005") {
+							//  No Member
+							if (confirm("회원 가입후 이용이 가능 합니다..\n회원 가입을 진행하시겠습니까?")) {
+								join();
+							}
+						} else {
+							alert("로그인중 오류가 발생하였습니다.[" + res.resultCode + "]");
+						}
+					},
+					error: function() {
+						alert('SNS 로그인 연동에 실패하였습니다.');
+					}
+				});
+			} else {
+				resultData.resultMessage = "회원 확인중 오류가 발생하였습니다.";
+			}
+		}
+	</script>
+
+</head>
+
+<body class="sso">
+
+	<!-- 2018-08-23 top banner -->
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.top_banner .close_btn').click(function(){
+				$('.top_banner').slideUp();
+			});
+		});
+
+	</script>
+	<div class="top_banner">
+		<div class="hid">
+			유한킴벌리 SSO 회원 신규회원 가입 이벤트
+			유한킴벌리 브랜드의 가족이 되어주세요.
+			2018.8.20  ~ 2018.9.21
+
+		</div>
+		<div class="close_btn"><img src="../../Common/images/banner/btn_banner_close.png" alt=""></div>
+	</div>
+	<!-- //2018-08-23 top banner -->
+	<div id="yk_lodings" class="maskWhite" style="display:none;">
+		<div class="lodings"></div>
+	</div>
+
+	<!-- Google Tag Manager (noscript) -->
+	<!-- <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript> -->
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header>
+			<!-- headerCont -->
+			<div class="headerCont">
+				<h1>
+            <a href="/"><img src="../../Common/images/common/yk_simple_logo.png" alt="유한킴벌리 통합회원" /></a>
+        </h1>
+			</div>
+			<!-- //headerCont -->
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+
+			<div class="ssoContent">
+				<!-- 타이틀 영역 -->
+				<div class="titArea st">
+					<h2>로그인</h2>
+				</div>
+				<!-- //타이틀 영역 -->
+				<!-- 로그인 영역 -->
+				<!-- 201801 간편가입 s //-->
+				<div class="loginArea simple">
+					<div class="sec1">
+						<form action="/SSL/Login?returnUrl=%2F" id="loginForm" method="post">
+							<dl>
+								<dt><label for="userId">아이디</label></dt>
+								<dd><input class="input1" id="userId" name="userId" placeholder="아이디를 입력해 주십시오." title="사용자 아이디 입력" type="text" value="" /></dd>
+								<dt class="mgt10"><label for="userPw">비밀번호</label></dt>
+								<dd class="mgt10"><input class="input1" id="userPw" name="userPw" placeholder="비밀번호를 입력해 주십시오." title="사용자 비밀번호 입력" type="password" value="" /></dd>
+							</dl>
+							<ul>
+								<li><input id="isIdSave" name="isIdSave" type="checkbox" value="true" /><input name="isIdSave" type="hidden" value="false" /><label for="isIdSave">아이디 저장</label></li>
+								<li><a href="/SSL/FindIdPwd_Certify?returnUrl=%2F">아이디 찾기</a></li>
+								<li><a href="/SSL/FindIdPwd_Certify?returnUrl=%2F">비밀번호 찾기</a></li>
+							</ul>
+						</form>
+					</div>
+					<div class="sec2">
+						<a href="#none" id="btnLogin">로그인</a>
+					</div>
+					<div class="simple_login_or flt_lft">
+						<!-- 유한킴벌리 로그인 선 //>-->
+					</div>
+					<ul class="flt_lft simple_login_logo">
+						<li><a href="javascript:;" onclick="jsNaver();"><img src="../../Common/images/simple/simple_naver.jpg" alt="네이버 간편 로그인"></a></li>
+						<li><a href="javascript:;" onclick="jsFaceBook();"><img src="../../Common/images/simple/simple_facebook.jpg" alt="페이스북 간편 로그인"></a></li>
+						<li><a href="javascript:;" onclick="jsKaKao();"><img src="../../Common/images/simple/simple_kakao.jpg" alt="카카오 간편 로그인"></a></li>
+					</ul>
+				</div>
+				<!-- 201801 간편가입 e //-->
+				<!-- //로그인 영역 -->
+				<!-- 회원가입 안내 -->
+				<div class="simple_join_guid">
+					<!-- 20180327 s -->
+					<ul class="blue_blet_lst">
+						<li class="red_txt">ID간의 momQ 포인트 및 선물대잔치 점수 이관은 불가합니다.</li> <!-- 20180517 modi //-->
+						<li>유한킴벌리 SSO회원이 되시면 하나의 ID로 momQ, 통합브랜드, 선물대잔치 사이트의 다양한 서비스를 편리하게 이용할 수 있습니다.</li>
+						<li>기존 맘큐 회원은 로그인 후 본인인증 과정을 거쳐 유한킴벌리 SSO회원으로 전환 후 momQ를 이용하실 수 있습니다. </li>
+					</ul>
+					<!--// 20180327 e -->
+					<!-- 20180327 삭제
+					<p class="tilte">
+						유한킴벌리 회원이 되시면
+					</p>
+					<p class="content">
+						하나의 ID로 momQ, 유한킴벌리 브랜드, 선물대잔치 사이트의 다양한 서비스를 편리하게 이용할 수 있습니다.
+					</p> -->
+					<div class="btn_area">
+						<a href="javascript:join();">회원가입</a>
+					</div>
+				</div>
+				<!-- //회원가입 안내 -->
+
+				<!-- 20180327 : 배너 추가 s -->
+				<div class="ac pad_t40">
+					<img src="../../Common/images/common/coupon_momq_banner.jpg" alt="유한킴벌리직영몰 맘큐회가입선물" />
+				</div>
+				<!-- //20180327 : 배너 추가 e -->
+
+			</div>
+
+			<!-- SNS Login -->
+			<form id="snsLoginFrm" name="snsLoginFrm" method="post">
+				<input type="hidden" name="siteCode" id="siteCode" />
+				<input type="hidden" name="returnUrl" id="returnUrl" value="/" />
+				<input type="hidden" name="snsType" id="snsType" value="" />
+				<input type="hidden" name="name" id="name" value="" />
+				<input type="hidden" name="nickName" id="nickName" value="" />
+				<input type="hidden" name="email" id="email" value="" />
+				<input type="hidden" name="snsIndexKey" id="snsIndexKey" value="" />
+			</form>
+			<!-- // SNS Login -->
+
+
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<footer>
+			<!-- footerCont -->
+			<div class="footerCont">
+				<!-- footsec -->
+				<div class="footsec">
+					<!-- logo -->
+					<p class="footlogo"><img src="/Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+
+					<!-- footMenu -->
+					<ul class="footMenu">
+						<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+						<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+					</ul>
+					<img style="float:right; margin-top:30px;" src="/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+					<!-- //footMenu -->
+					<!-- corpInfo -->
+					<div class="corpInfo">
+						주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br /> 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+					</div>
+
+					<!-- copy-->
+					<p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+
+					<!-- btnTop -->
+					<a href="#" class="btnTop"><img src="/Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+				</div>
+
+				<script>
+					function mainTerms(type, width, height) {
+						window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+					}
+				</script>
+				<!-- //footsec -->
+			</div>
+			<!-- //footerCont -->
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+	<input type="hidden" name="adb_login_id" id="adb_login_id" value="" />
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-70997736-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script type="text/javascript">
+		_satellite.pageBottom();
+	</script>
+</body>
+
+</html>

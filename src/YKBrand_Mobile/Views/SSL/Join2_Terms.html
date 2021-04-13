@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="유한킴벌리 통합브랜드">
+    <meta name="description" content="유한킴벌리 통합브랜드">
+    <meta name="keywords" content="유한킴벌리 통합브랜드">
+    <meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+    <title>약관동의 | 회원가입 | 유한킴벌리 통합브랜드</title>
+
+    <link rel="icon" href="https://m.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Common/css/common.css">
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Common/css/main.css"> <!-- main css -->
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Common/css/swiper.css">
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Content/common.css">
+    <script>
+        var userId = "";
+        var ImageServerUrl = "http://www.ykbrand.co.kr";
+        var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+    </script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/swiper.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/front.ui.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.waitforimages.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/common.js"></script>
+    <script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+
+    <script>
+        jQuery.validator.setDefaults({
+            ignore: "",
+            onkeyup: false,
+            onclick: false,
+            onfocusout: false,
+            showErrors: function (errorMap, errorList) {
+                if (this.numberOfInvalids()) {
+                    if (errorList.length > 0) {
+                        if (errorList[0].message)
+                            alert(errorList[0].message);
+                        $(errorList[0].element).focus();
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        $(function () {
+
+            // 필수 사이트 선택해제 불가
+            $(".chkRequired").change(function () {
+                $(this).prop("checked", true);
+            });
+
+
+            // 맘큐 사이트 선택
+            $("#siteMomq").change(function () {
+                if ($(this).is(":checked")) {
+
+                    // 맘큐 회원 재가입 가능 여부 체크
+                    var isPossible = false;
+                    $.ajax({
+                        type: "POST",
+                        url: "/SSL/MomqReJoinCheck?type=",
+                        async: false,
+                        success: function (data) {
+                            if (data.rt_code == "0000") {
+                                isPossible = true;
+                            }
+                            else if (data.rt_code == "0001") {
+                                alert("momQ 약관 동의는 회원 탈퇴 일로부터 90일 이후에 가능합니다.");
+                                isPossible = false;
+                            }
+                            else {
+                               // alert("통신이 원활하지 않아 momQ 약관에 동의 되지 않았습니다. 잠시 후 다시 시도해 주세요.");
+                               // isPossible = false;
+                            }
+                        },
+                        error: function (e) {
+                           // alert("통신이 원활하지 않아 momQ 약관에 동의 되지 않았습니다. 잠시 후 다시 시도해 주세요.");
+                           // isPossible = false;
+                        }
+                    });
+
+                    if (isPossible)
+                    {
+                        $(".MOMQ_RequiredArea").show().find("input").prop("disabled", false);
+                        $(".MOMQ_OptionalArea").show().find("input").prop("disabled", false);
+                    }
+                    else
+                    {
+                        $(".MOMQ_RequiredArea").hide().find("input").prop("disabled", true);
+                        $(".MOMQ_OptionalArea").hide().find("input").prop("disabled", true);
+                        $(this).prop("checked", false);
+                    }
+                } else {
+                    $(".MOMQ_RequiredArea").hide().find("input").prop("disabled", true);
+                    $(".MOMQ_OptionalArea").hide().find("input").prop("disabled", true);
+                }
+                checkedRadio();
+            });
+
+            // 통합브랜드 사이트 선택
+            $("#siteBrand").change(function () {
+                if ($(this).is(":checked")) {
+                    $(".YKBRAND_RequiredArea").show().find("input").prop("disabled", false);
+                    $(".YKBRAND_OptionalArea").show().find("input").prop("disabled", false);
+                } else {
+                    $(".YKBRAND_RequiredArea").hide().find("input").prop("disabled", true);
+                    $(".YKBRAND_OptionalArea").hide().find("input").prop("disabled", true);
+                }
+                checkedRadio();
+            });
+
+            // 선물대잔치 사이트 선택
+            $("#sitePresent").change(function () {
+                if ($(this).is(":checked")) {
+                    $(".PRESENT_RequiredArea").show().find("input").prop("disabled", false);
+                    $(".PRESENT_OptionalArea").show().find("input").prop("disabled", false);
+                } else {
+                    $(".PRESENT_RequiredArea").hide().find("input").prop("disabled", true);
+                    $(".PRESENT_OptionalArea").hide().find("input").prop("disabled", true);
+                }
+                checkedRadio();
+            });
+            // 모든 약관 전체 동의
+            $("#chkAll").change(function () {
+                if ($(this).is(":checked"))
+                {
+                    $("#requiredTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+                    $("#optionalTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+                }
+                else
+                {
+                    $("#requiredTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+                    $("#optionalTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+                }
+                checkedRadio();
+            });
+
+            // 필수 약관 전체 동의
+            $("#chkAllRequired").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#requiredTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+                } else {
+                    $("#requiredTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+                }
+                checkedRadio();
+            });
+
+            // 선택 약관 전체 동의
+            $("#chkAllOptional").change(function () {
+                if ($(this).is(":checked")) {
+                    $("#optionalTermsArea input[type=radio][value=Y]:enabled").prop("checked", true);
+                } else {
+                    $("#optionalTermsArea input[type=radio][value=N]:enabled").prop("checked", true);
+                }
+                checkedRadio();
+            });
+
+            $("#requiredTermsArea input[type=radio]").change(function () {
+                checkedRadio();
+            });
+
+            $("#optionalTermsArea input[type=radio]").change(function () {
+                checkedRadio();
+            });
+
+            $(".btnSubmit").click(function () {
+                var result = true;
+                if ($("#requiredTermsArea input[type=radio][value=N]:enabled:checked").length > 0) {
+                    alert("필수 약관에 동의해 주십시오.");
+                    result = false;
+                }
+
+                if (result == true) {
+                    $("form").submit();
+                }
+            });
+
+
+            $("#siteMomq, #siteBrand, #sitePresent").trigger("change");
+        });
+
+        function checkedRadio() {
+            var requiredNCnt = $("#requiredTermsArea input[type=radio][value=N]:checked:enabled").length;
+            var optionalNCnt = $("#optionalTermsArea input[type=radio][value=N]:checked:enabled").length;
+            if (requiredNCnt > 0) {
+                $("#chkAllRequired").prop("checked", false);
+            }
+            else {
+                $("#chkAllRequired").prop("checked", true);
+            }
+
+            if (optionalNCnt > 0) {
+                $("#chkAllOptional").prop("checked", false);
+            }
+            else {
+                $("#chkAllOptional").prop("checked", true);
+            }
+
+            if (requiredNCnt > 0 || optionalNCnt > 0) {
+                $("#chkAll").prop("checked", false);
+            } else {
+                $("#chkAll").prop("checked", true);
+            }
+        }
+
+        function termsPop(popName, width, height) {
+            window.open("/Terms/TermsPop?type=" + popName, "terms", "width=" + width + ", height=" + height + ", menubar =no, status=no, toolbar=no, scrollbars=yes");
+        }
+    </script>
+
+<script src="./m_join_agree_files/s-code-contents-7d2555a43645a4bba8391f9dae8b3b548986401c.js"></script><script src="./m_join_agree_files/satellite-5772282f64746d12cd003b7b.js"></script></head>
+
+<body>
+
+    <!-- skip_nav -->
+    <a href="https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#contents" class="skip">본문 바로가기</a>
+
+    <!-- wrap -->
+    <div id="wrap" class="sso">
+        <div id="contents">
+
+<!-- header -->
+<header>
+    <h1>회원가입</h1>
+    <a href="javascript:history.back();" class="backBtn"><img src="https://m.ykbrand.co.kr/Common/images/btn/btn_back.png" alt="뒤로가기"></a>
+</header><!-- //header -->
+<hr>
+
+<!-- container -->
+<div id="container">
+    <p class="sso_brand_img clearfix">
+        <a href="http://m.ykbrand.co.kr/"><img style="padding:10px 0px 10px 10px; width:120px;" src="https://m.ykbrand.co.kr/Common/images/common/simple_yk_logo.png" alt="유한킴벌리 통합회원"></a>
+            <a style="float:right;text-align:right;" href="http://m.momq.co.kr/main/initMain.action">
+                <img style="max-width:80px; padding:5px 10px 10px 0px;" src="https://m.ykbrand.co.kr/Common/images/common/sso_momq.jpg" alt="momQ 로고">
+            </a>
+    </p>
+<form action="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action" method="post"><input name="__RequestVerificationToken" type="hidden" value="q_eUk2WYwDx-70O3d4V12CC6-eEhF5BbYMLRSgPvmFf8Ecs9GWWeZxQYzVgoh_e1LlXD0Bvu54BE26uY_vKXlURrif41">        <div class="divider">
+                <div id="joinStep" class="st02">
+                    <ul>
+                        <li><span>1단계</span>본인인증</li>
+                        <li><span>2단계</span>약관동의</li>
+                        <li><span>3단계</span>정보입력</li>
+                        <li><span>4단계</span>가입완료</li>
+                    </ul>
+                </div>
+
+            <div class="cnt">
+                <p class="ft_bold" style="font-size:18px; line-height:20px; margin-bottom:10px;">이용약관 및 정보활용 안내에 동의하여 주십시오.</p>
+                <p>유한킴벌리 통합회원 가입을 위해서 이용약관 및<br>회원정보 수집 및 활용에 대한 안내를 읽고 동의해 주십시오.</p>
+                <p class="ft_bold" style="font-size:18px; line-height:20px; margin-top:30px;">회원으로 가입하고 싶은 브랜드 및 사이트를 선택하여 주세요.</p>
+                <div class="cnt_tbl">
+                    <table>
+                        <colgroup>
+                            <col style="width:20%;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>선택</th>
+                                <th colspan="2">가입채널</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="radioF" style="float:none; display:inline-block;">
+                                        <input type="checkbox" id="siteMember" name="siteMember" value="Y" checked="checked" class="chkRequired">
+                                        <label for="siteMember">&nbsp;</label>
+                                    </span>
+                                </td>
+                                <td colspan="2" class="ft_16"><span class="ft_blue ft_bold">[필수]</span> <span class="ft_bold">통합회원</span></td>
+                            </tr>
+														<!-- 20171219 s -->
+														<tr>
+																<td>
+																		<span class="radioF" style="float:none; display:inline-block;">
+																				<input type="checkbox" id="siteMomq" name="siteMomq" value="Y" checked="checked" class="chkRequired">
+																				<label for="siteMomq">&nbsp;</label>
+																		</span>
+																</td>
+																<td class="ft_16 td_mom">
+																		<div style="float:left;">
+																				<span class="ft_blue ft_bold">[필수]</span><br><span class="ft_bold">momQ</span>
+																		</div>
+																</td>
+																<td class="td_back">
+																		<p class="ft_bold" style="font-size:8px;color:#737373; padding-left:23px;">유한킴벌리 공식몰&nbsp;‘맘큐’&nbsp;가입(약관동의)&nbsp;하면 적립금&nbsp;2천원과 할인쿠폰 지급!</p>
+																</td>
+														</tr>
+														<tr>
+																<td>&nbsp;</td>
+																<td class="ft_16" colspan="2">
+																		<span class="radioF" style="float:left;width:33px;display:inline-block;">
+																				<input type="checkbox" id="siteMonit" name="siteMonit" value="Y" checked="checked" class="chkRequired">
+																				<label for="siteMonit">&nbsp;</label>
+																		</span>
+																		<div style="float:left;">
+																				<span class="ft_blue ft_bold">[필수]</span><span class="ft_bold">모닛</span>
+																		</div>
+																</td>
+														</tr>
+														<!-- 20171219 e -->
+														<tr>
+																<td>
+																		<span class="radioF" style="float:none; display:inline-block;">
+																				<input type="checkbox" id="siteBrand" name="siteBrand" value="Y">
+																				<label for="siteBrand">&nbsp;</label>
+																		</span>
+																</td>
+																<td colspan="2"><span class="ft_bold ft_16">통합브랜드</span><span class="ft_bold"><br>(하기스,굿나이트,화이트,좋은느낌,크리넥스,스카트,마이비데,디펜드,티엔,그린핑거,우리나눔TV,골든프렌즈)</span></td>
+														</tr>
+														<tr>
+																<td>
+																		<span class="radioF" style="float:none; display:inline-block;">
+																				<input type="checkbox" id="sitePresent" name="sitePresent" value="Y">
+																				<label for="sitePresent">&nbsp;</label>
+																		</span>
+																</td>
+																<td colspan="2" class="ft_16"><span class="ft_bold">선물대잔치</span></td>
+														</tr>
+                        </tbody>
+                    </table>
+                    <p class="ft_bold" style="font-size:18px; line-height:20px; margin-top:30px;">약관을 읽어 보시고 동의해 주십시오</p>
+                    <p class="checkF mt20">
+                        <input type="checkbox" id="chkAll">
+                        <label for="chkAll" style="margin-top:5px;">(필수/선택) 약관 모두 동의</label>
+                        <button type="button" class="chk_all_button btnSubmit">다음</button>
+                    </p>
+                </div>
+            </div>
+            <div class="termT">
+                <p class="checkF">
+                    <input type="checkbox" id="chkAllRequired">
+                    <label for="chkAllRequired">모두 동의</label><span class="ft_bold" style="float:right; font-size:14px;margin-top:2px;">[필수약관]</span>
+                </p>
+            </div>
+            <div id="requiredTermsArea">
+<dl class="inT termF YKMEMBER_RequiredArea">
+    <dt>통합회원 이용약관</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Required1_N" name="YKMEMBER_Required1" value="N" checked="">
+            <label for="YKMEMBER_Required1_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Required1_y" name="YKMEMBER_Required1" value="Y">
+            <label for="YKMEMBER_Required1_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKMEMBER_Required1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF YKMEMBER_RequiredArea">
+    <dt>통합회원 필수항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Required2_N" name="YKMEMBER_Required2" value="N" checked="">
+            <label for="YKMEMBER_Required2_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Required2_y" name="YKMEMBER_Required2" value="Y">
+            <label for="YKMEMBER_Required2_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKMEMBER_Required2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MOMQ_RequiredArea">
+    <dt>momQ 이용약관</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Required1_N" name="MOMQ_Required1" value="N" checked="">
+            <label for="MOMQ_Required1_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Required1_y" name="MOMQ_Required1" value="Y">
+            <label for="MOMQ_Required1_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Required1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MOMQ_RequiredArea">
+    <dt>momQ 필수항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Required2_N" name="MOMQ_Required2" value="N" checked="">
+            <label for="MOMQ_Required2_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Required2_y" name="MOMQ_Required2" value="Y">
+            <label for="MOMQ_Required2_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Required2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+
+<!-- 20171219 s -->
+<dl class="inT termF MONIT_RequiredArea">
+    <dt>모닛 이용약관</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Required1_N" name="MONIT_Required1" value="N" checked="">
+            <label for="MONIT_Required1_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Required1_y" name="MONIT_Required1" value="Y">
+            <label for="MONIT_Required1_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Required1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MONIT_RequiredArea">
+    <dt>모닛 필수항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Required2_N" name="MONIT_Required2" value="N" checked="">
+            <label for="MONIT_Required2_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Required2_y" name="MONIT_Required2" value="Y">
+            <label for="MONIT_Required2_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Required2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<!-- 20171219 e -->
+
+<dl class="inT termF YKBRAND_RequiredArea" style="display:none;">
+    <dt>통합브랜드 이용약관</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Required1_N" name="YKBRAND_Required1" value="N" checked="" disabled="">
+            <label for="YKBRAND_Required1_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Required1_y" name="YKBRAND_Required1" value="Y" disabled="">
+            <label for="YKBRAND_Required1_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKBRAND_Required1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF YKBRAND_RequiredArea" style="display:none;">
+    <dt>통합브랜드 필수항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Required2_N" name="YKBRAND_Required2" value="N" checked="" disabled="">
+            <label for="YKBRAND_Required2_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Required2_y" name="YKBRAND_Required2" value="Y" disabled="">
+            <label for="YKBRAND_Required2_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKBRAND_Required2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl><dl class="inT termF PRESENT_RequiredArea" style="display:none;">
+    <dt>선물대잔치 이용약관</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Required1_N" name="PRESENT_Required1" value="N" checked="" disabled="">
+            <label for="PRESENT_Required1_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Required1_y" name="PRESENT_Required1" value="Y" disabled="">
+            <label for="PRESENT_Required1_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=PRESENT_Required1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF PRESENT_RequiredArea" style="display:none;">
+    <dt>선물대잔치 필수항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Required2_N" name="PRESENT_Required2" value="N" checked="" disabled="">
+            <label for="PRESENT_Required2_N">동의안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Required2_y" name="PRESENT_Required2" value="Y" disabled="">
+            <label for="PRESENT_Required2_y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=PRESENT_Required2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>            </div>
+            <div class="termT">
+                <p class="checkF">
+                    <input type="checkbox" id="chkAllOptional">
+                    <label for="chkAllOptional">모두 동의</label><span class="ft_bold" style="float:right; font-size:14px;margin-top:2px;">[선택약관]</span><br>선택약관 미동의시 서비스이용에 제한이 있을 수 있습니다.
+                </p>
+            </div>
+            <div id="optionalTermsArea">
+                <dl class="inT termF YKMEMBER_OptionalArea">
+    <dt>통합회원 선택항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Optional1_N" name="YKMEMBER_Optional1" value="N" checked="">
+            <label for="YKMEMBER_Optional1_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKMEMBER_Optional1_Y" name="YKMEMBER_Optional1" value="Y">
+            <label for="YKMEMBER_Optional1_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKMEMBER_Optional&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MOMQ_OptionalArea">
+    <dt>momQ 선택항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional1_N" name="MOMQ_Optional1" value="N" checked="">
+            <label for="MOMQ_Optional1_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional1_Y" name="MOMQ_Optional1" value="Y">
+            <label for="MOMQ_Optional1_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MOMQ_OptionalArea">
+    <dt>momQ 마케팅 목적 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional2_N" name="MOMQ_Optional2" value="N" checked="">
+            <label for="MOMQ_Optional2_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional2_Y" name="MOMQ_Optional2" value="Y">
+            <label for="MOMQ_Optional2_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MOMQ_OptionalArea">
+    <dt>momQ 개인정보 처리위탁</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional3_N" name="MOMQ_Optional3" value="N" checked="">
+            <label for="MOMQ_Optional3_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MOMQ_Optional3_Y" name="MOMQ_Optional3" value="Y">
+            <label for="MOMQ_Optional3_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional3&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+
+<!-- 20171219 s -->
+<dl class="inT termF MONIT_OptionalArea">
+    <dt>모닛 선택항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional1_N" name="MONIT_Optional1" value="N" checked="">
+            <label for="MONIT_Optional1_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional1_Y" name="MONIT_Optional1" value="Y">
+            <label for="MONIT_Optional1_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MONIT_OptionalArea">
+    <dt>모닛 마케팅 목적 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional2_N" name="MONIT_Optional2" value="N" checked="">
+            <label for="MONIT_Optional2_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional2_Y" name="MONIT_Optional2" value="Y">
+            <label for="MONIT_Optional2_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF MONIT_OptionalArea">
+    <dt>모닛 개인정보 처리위탁</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional3_N" name="MONIT_Optional3" value="N" checked="">
+            <label for="MONIT_Optional3_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="MONIT_Optional3_Y" name="MONIT_Optional3" value="Y">
+            <label for="MONIT_Optional3_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=MOMQ_Optional3&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<!-- 20171219 s -->
+
+
+<dl class="inT termF YKBRAND_OptionalArea" style="display:none;">
+    <dt>통합브랜드 선택항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional1_N" name="YKBRAND_Optional1" value="N" checked="" disabled="">
+            <label for="YKBRAND_Optional1_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional1_Y" name="YKBRAND_Optional1" value="Y" disabled="">
+            <label for="YKBRAND_Optional1_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKBRAND_Optional1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF YKBRAND_OptionalArea" style="display:none;">
+    <dt>통합브랜드 마케팅 목적 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional2_N" name="YKBRAND_Optional2" value="N" checked="" disabled="">
+            <label for="YKBRAND_Optional2_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional2_Y" name="YKBRAND_Optional2" value="Y" disabled="">
+            <label for="YKBRAND_Optional2_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKBRAND_Optional2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF YKBRAND_OptionalArea" style="display:none;">
+    <dt>통합브랜드 개인정보 처리위탁</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional3_N" name="YKBRAND_Optional3" value="N" checked="" disabled="">
+            <label for="YKBRAND_Optional3_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="YKBRAND_Optional3_Y" name="YKBRAND_Optional3" value="Y" disabled="">
+            <label for="YKBRAND_Optional3_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=YKBRAND_Optional3&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl><dl class="inT termF PRESENT_OptionalArea" style="display:none;">
+    <dt>선물대잔치 선택항목 개인정보 수집 및 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional1_N" name="PRESENT_Optional1" value="N" checked="" disabled="">
+            <label for="PRESENT_Optional1_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional1_Y" name="PRESENT_Optional1" value="Y" disabled="">
+            <label for="PRESENT_Optional1_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=PRESENT_Optional1&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF PRESENT_OptionalArea" style="display:none;">
+    <dt>선물대잔치 마케팅 목적 이용</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional2_N" name="PRESENT_Optional2" value="N" checked="" disabled="">
+            <label for="PRESENT_Optional2_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional2_Y" name="PRESENT_Optional2" value="Y" disabled="">
+            <label for="PRESENT_Optional2_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=PRESENT_Optional2&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>
+<dl class="inT termF PRESENT_OptionalArea" style="display:none;">
+    <dt>선물대잔치 개인정보 처리위탁</dt>
+    <dd>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional3_N" name="PRESENT_Optional3" value="N" checked="" disabled="">
+            <label for="PRESENT_Optional3_N">동의 안함</label>
+        </span>
+        <span class="radioF">
+            <input type="radio" id="PRESENT_Optional3_Y" name="PRESENT_Optional3" value="Y" disabled="">
+            <label for="PRESENT_Optional3_Y">동의</label>
+            <button type="button" class="content_btn" onclick="location.href = &#39;/Terms/TermsPop?type=PRESENT_Optional3&#39;">내용보기</button>
+        </span>
+    </dd>
+</dl>            </div>
+        </div>
+        <div class="btnWrap">
+            <a href="https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none" class="btnSubmit">다음</a>
+        </div>
+</form></div>
+
+
+        </div>
+        <hr>
+        <!-- footer -->
+        <footer>
+						<p class="flogo">
+								<img src="https://m.ykbrand.co.kr/Common/images/common/flogo.png" alt="유한킴벌리">
+								<a href="https://m.ykbrand.co.kr/Terms/TermsPop?type=yk3" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+								<a href="https://m.ykbrand.co.kr/Terms/TermsPop?type=yk8" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+						</p>
+						<address>주소 : 서울시 강남구 테헤란로 504 (우) 06178</address>
+						<ul class="info">
+								<li>대표자 : 최규복</li>
+								<li>사업자번호 : 120-81-11436</li>
+								<li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
+						</ul>
+						<a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+						<p class="copy">Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.</p>
+						<img style="margin-top:16px; width:150px;" src="https://m.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크">
+				</footer>
+
+<!-- sns공유하기 팝업 -->
+<div id="selSns" class="popup hide">
+    <h3>공유하기</h3>
+    <div class="popCont ac">
+        <a href="https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none"><img src="./m_join_agree_files/img_popFacebook.gif" alt="Facebook"></a>
+        <a href="https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none"><img src="./m_join_agree_files/img_popKakao.gif" alt="Kakaostory"></a>
+    </div>
+    <a href="https://m.ykbrand.co.kr/SSL/Join2_Terms?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none" class="popClose"><img src="./m_join_agree_files/btn_close.png" alt="팝업닫기"></a>
+</div><!-- //sns공유하기 팝업 -->
+
+<div id="dim"></div>
+
+<a id="moveTop" href="javascript:window.scrollTo(0,0);" class="">문서 상단으로 이동</a>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <input type="hidden" name="adb_declared_id" id="adb_declared_id" value="">
+    <input type="hidden" name="adb_login_id" id="adb_login_id" value=" ">
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70997736-2', 'auto');
+    ga('send', 'pageview');
+
+
+            function getUrlVars() {
+                var vars = {};
+                var parts = decodeURIComponent(window.location.href).replace(/[?&]+([^=&]+)=([^&]*)/gi,
+
+                function (m, key, value) {
+                    vars[key] = value;
+                });
+
+                return vars;
+            } // cid 파라미터 수집
+
+            var cid = getUrlVars()["cid"];
+
+            if (cid != undefined)
+                ga('create', 'UA-77909035-3', 'auto', 'Momq', { 'clientId': cid + "" });
+            else
+                ga('create', 'UA-77909035-3', 'auto', 'Momq');
+
+            ga('Momq.send', 'pageview');
+
+</script>
+
+
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body></html>

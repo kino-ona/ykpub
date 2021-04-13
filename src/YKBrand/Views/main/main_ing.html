@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="유한킴벌리" />
+    <meta name="keywords" content="유한킴벌리">
+    <meta name="description" content="유한킴벌리" />
+    <meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+    <title>유한킴벌리 통합브랜드</title>
+
+    
+
+<!-- Google Tag Manager -->
+<script>
+    
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W86233');</script>
+
+<script>
+
+    var dataLayer2 = [{
+        'CD1': 'N', 		// 로그인 여부 Y or N
+        'CD2': '',	// CID
+        'CD3': '', 	// UID
+        'CD4': 'PC_YKBRAND', 	// Device_type
+        'CD5': 'YKBRAND',		//brand_name
+    }];
+
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer2', 'GTM-NKC6QW3');
+</script>
+<!-- End Google Tag Manager -->
+
+    <link rel="icon" href="/Common/images/favicon/favicon_default.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Common/css_back1016_v2/common_new.css?ver=201805281043">
+    <link rel="stylesheet" href="../../Common/css_back1016_v2/main_new.css?ver=201805281043">
+    
+
+    <script>
+        var userId = "";
+        var ImageServerUrl = "http://www.ykbrand.co.kr";
+        var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+    </script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.new.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bpopup.min.js"></script>
+    <!--[if lte IE 9]><script src="/Common/js/Placeholders.min.js"></script><![endif]-->
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/lazyload.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".lazy").lazyload();
+        });
+        $(function () {
+            // 약관 동의 여부 체크
+            $.post("/Home/BrandTermsCheck", function (data) {
+                if (data.returnCode == 0) {
+                    location.href = "/SSL/TermsPop?returnUrl=%2F";
+                }
+            });
+
+            $(".mask").click(function () {
+                $("header").children(".mask").hide();
+                $("#allBrandlayer").removeAttr("tabindex").hide();
+                $("header .headerCont").children(".allBrand").focus();
+            });
+
+            $('.renewfoo .shortcut img').mouseover(function () {
+                $(this).attr('src', $(this).attr('src').replace('.gif', '_on.gif'));
+            });
+
+            $('.renewfoo .shortcut img').mouseleave(function () {
+                $(this).attr('src', $(this).attr('src').replace('_on.gif', '.gif'));
+            });
+        })
+
+        var termsPop;
+
+        function mainTerms(type, width, height) {
+            if (termsPop != undefined) {
+                termsPop.close();
+            }
+            termsPop = window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+        }
+
+        function goFamilySite(obj) {
+            var goUrl = $(obj).find('option:selected').val();
+            if (goUrl != "") {
+                window.open(goUrl);
+            }
+            $(obj).find('option').removeAttr('selected');
+        }
+
+        function mypage() {
+            window.open('/SSL/Mypage', 'mypage', 'width=960, height=626, toolbar=no, scrollbars=yes, menubar=no');
+        }
+    </script>
+    
+    
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W86233"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKC6QW3"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- End Google Tag Manager (noscript) -->
+    <!-- wrap -->
+    <div id="combiMain">
+        <!-- skipMenu -->
+        <nav class="skip">
+            <a href="#container">컨텐츠로 바로가기</a>
+        </nav>
+        <!-- //skipMenu -->
+        <!-- header -->
+        <header class="rehead">
+            <div>
+                <h1 class="logo">
+                    <a href="#none" class="btn_allbrand allBrand"><span>전체브랜드</span></a>
+                    <a href="/"><img src="http://www.ykbrand.co.kr/Common/images/common/combi_logo.png" alt="유한킴벌리 브랜드"></a>
+                </h1>
+                
+<div class="util">
+        <ul>
+            <li><a href="/SSL/Login?returnUrl=%2F">로그인</a></li>
+            <li><a href="/SSL/Join?returnUrl=%2F">회원가입</a></li>
+            <li><a href="javascript:mypage();">마이페이지</a></li>
+        </ul>
+</div>
+
+            </div>
+
+            <!-- //headerCont -->
+            <!-- mask -->
+            <div class="mask"></div>
+
+            <!-- 전체 브랜드 레이어 -->
+            <div id="allBrandlayer">
+    <!-- layerCont -->
+    <div class="layerCont">
+        <div class="info">
+            <h3>유한킴벌리<br />브랜드</h3>
+            <p>더 나은 생활을 향한<br />믿음을 바탕으로 고객에게<br />가치있는 기업이 되고자<br />노력합니다.</p>
+        </div>
+
+        <!-- brandList -->
+        <ul class="brandList">
+                    <li><a href="/huggies"><img src="http://www.ykbrand.co.kr/data/Real/20180516065850_24d7ed189f8e4ae584da47cdfe71f8c7.png" alt="하기스 브랜드 로고" /></a></li>
+                    <li><a href="/goodnite"><img src="http://www.ykbrand.co.kr/data/Real/20151124074753_f9a1e8cf3cd14b07843b63f664dd5094.gif" alt="굿나이트 브랜드 로고" /></a></li>
+                    <li><a href="/white"><img src="http://www.ykbrand.co.kr/data/Real/20151124080217_3012e12f69d448148a5d6ddacb184dfc.gif" alt="화이트 브랜드 로고" /></a></li>
+                    <li><a href="/goodfeel"><img src="http://www.ykbrand.co.kr/data/Real/20161101074938_ff1d995035444beda75526e56114e119.png" alt="좋은느낌 브랜드 로고" /></a></li>
+                    <li><a href="/kleenex"><img src="http://www.ykbrand.co.kr/data/Real/20170613015035_7eb862b9b0a9437abfc5962ae378acde.png" alt="크리넥스 브랜드 로고" /></a></li>
+                    <li><a href="/scott"><img src="http://www.ykbrand.co.kr/data/Real/20151124075337_8ee8bb3d4b5a4a8f92c2789c5b5b6a59.gif" alt="스카트 브랜드 로고" /></a></li>
+                    <li><a href="/mybidet"><img src="http://www.ykbrand.co.kr/data/Real/20151201083836_12cd04c555924aadac23b733928188c2.png" alt="마이비데 브랜드 로고" /></a></li>
+                    <li><a href="/depend"><img src="http://www.ykbrand.co.kr/data/Real/20151124080729_3ebb53fe976743909a3e8833aa7b67d8.gif" alt="디펜드 브랜드 로고" /></a></li>
+                    <li><a href="/tn"><img src="http://www.ykbrand.co.kr/data/Real/20151124075445_7d274e661302452d868e3258391345dd.gif" alt="티엔 브랜드 이미지" /></a></li>
+                    <li><a href="/greenfinger"><img src="http://www.ykbrand.co.kr/data/Real/20180315011155_3b2f13b3d4ee41f9abafcd3dc697365e.png" alt="그린핑거 브랜드 로고" /></a></li>
+                    <li><a href="/lanature"><img src="http://www.ykbrand.co.kr/data/Real/20180615041504_9319c16c90fd40efab45dc1eb6a14021.png" alt="라네이처" /></a></li>
+            <li><a href="/"><img src="/Common/images/common/barnd13.gif" alt="유한킴벌리 브랜드" /></a></li>
+        </ul>
+        <ul class="brandList2">
+            <li><a href="http://www.yuhan-kimberly.co.kr/" target="_blank"><img src="/Common/images/common/barnd16.gif" alt="유한킴벌리"></a></li>
+            <li><a href="http://www.momq.co.kr/main/initMain.action" target="_blank"><img src="/Common/images/common/barnd14.gif" alt="맘큐" /></a></li>
+            <li><a href="http://www.happybabyshop.co.kr/" target="_blank"><img src="/Common/images/common/barnd15.gif" alt="하기스 선물대잔치" /></a></li>
+            <li><a href="http://www.doubleheart.co.kr" target="_blank"><img src="/Common/images/common/barnd12.gif" alt="더블하트" /></a></li>
+        </ul>
+        <!-- //brandList -->
+        <!-- 레이어닫기 -->
+        <a href="#none" class="close"><img src="/Common/images/btn/btn_layerClose.gif" alt="전체 브랜드 레이어 닫기" /></a>
+    </div>
+    <!-- //layerCont -->
+</div> 
+            <!-- //전체 브랜드 레이어 -->
+        </header>
+        <!--// header -->
+        <!-- container  -->
+        <div id="container">
+              
+
+
+
+
+<div class="remain">
+<!-- visu rolling bnr -->
+<div class="main_visu_rolling">
+    <ul>
+            <li>
+                        <a href="/lanature/Product/ProductList?menu=450&amp;category=454&amp;category2=470">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20181012014354_9de37045742a47fc93b79e8c9f102522.jpg" alt="라네이처신상품" />
+                        </a>
+            </li>
+            <li>
+                        <a href="/depend/Custom/Sample/Create">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180710105200_33c39d10c0104e3b8ba40ff506c89f9c.jpg" alt="다양해진 디펜드 디펜드 제품 샘플을 무료배송해 드립니다. " />
+                        </a>
+            </li>
+            <li>
+                        <a href="Events/Home/Main">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180927080651_1801d805ada847fea2beb9bbed7ed41c.jpg" alt="회원가입 event 당첨자 발표, event에 참여해주신 모든 분들께 감사드립니다. " />
+                        </a>
+            </li>
+            <li>
+                        <a href="/goodfeel/Product/ProductDetail/3371?menu=47&amp;category=133">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180810070425_c7e0efc206fc45a5a4d92e879d0dcfd2.jpg" alt="좋은느낌 유기농 순면커버 네추럴 에어핏 쿠션이 피부를 더욱 편안하게" />
+                        </a>
+            </li>
+            <li>
+                        <a href="/white">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180710105653_151e17ce9b684d399023f2d3b1a91a57.jpg" alt="당신 마음에 더 가까이 더 편안하고 안심되는 그날을 위해 더 가까이 다가가 당신의 목소리에 귀 기울이겠습니다." />
+                        </a>
+            </li>
+            <li>
+                        <a href="/lanature">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180719060409_a99a8ee4d5c242918558a7e9df82c9c1.jpg" alt="친자연 생리대 라네이처 런칭" />
+                        </a>
+            </li>
+            <li>
+                        <a href="/huggies/Event/EventDetail/438?menu=7">
+                            <img src="http://www.ykbrand.co.kr/data/Real/20180710110215_cb6dbd189a31433d8b680124d13f97ba.jpg" alt="하기스가 드리는 깜짝 선물 매주 하기스를 사랑해주시는 부모님들에게 깜짝 선물을 드립니다. " />
+                        </a>
+            </li>
+    </ul>
+</div>
+<!--// visu rolling bnr -->
+
+<div class="inner">
+    <!-- brand news -->
+    <div class="brandnews">
+        <p class="in_title">Brand News</p>
+        <div class="listwrap">
+            <div class="item type01">
+        <div class="img">
+            <a href="/depend/Feed/FeedDetail/3116?menu=34" target="_blank"><img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180711100043_f150cf8c84a9405dbbb17b468f51b13c.jpg" onerror="this.src='/Common/images/common/blank.jpg'" alt="카카오톡" /></a>
+        </div>
+        <div class="desc">
+            <a href="/depend/Feed/FeedDetail/3116?menu=34" class="lnk" target="_blank">
+                <span>디펜드 뉴스</span>
+                <p class="p1">디펜드 플러스 친구가 되어 주세요.</p>
+                <p>
+                    매번 찾아오시느라 고생하셨죠?! 이제 카카오톡으로 디펜드를 더욱 쉽게 만나보세요!
+                </p>
+            </a>
+            <div class="btns">
+                <a href="/depend/Feed/FeedDetail/3116?menu=34" target="_blank">보러가기</a>
+            </div>
+        </div>
+            </div>
+
+            <div class="item type02">
+                <div>
+        <div class="img">
+            <a href="/white/Product/ProductDetail/3441?menu=51&amp;category=126" target="_blank"><img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180810065359_1216ba14448f4201ad44b4be97227144.jpg" onerror="this.src='/Common/images/common/blank.jpg'" alt="화이트 데일리 산뜻라이너 제품 이미지" /></a>
+        </div>
+        <div class="desc">
+            <a href="/white/Product/ProductDetail/3441?menu=51&amp;category=126" class="lnk" target="_blank">
+                <span>화이트 제품소개</span>
+                <p class="p1">화이트 데일리 산뜻 라이너를 소개합니다.</p>
+                <p>
+                    시크린 존의 흡수력으로 매일매일 산뜻하게! 
+                </p>
+            </a>
+            <div class="btns">
+                <a href="/white/Product/ProductDetail/3441?menu=51&amp;category=126" target="_blank">보러가기</a>
+            </div>
+        </div>
+                </div>
+
+            </div>
+
+            <div class="item type03">
+                <div>
+        <div class="img">
+            <a href="lanature/Feed/FeedList?menu=449&amp;category=458" target="_blank"><img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180720084644_453feb01d1114c4b807484ee4949603d.jpg" onerror="this.src='/Common/images/common/blank.jpg'" alt="라네이처 이야기" /></a>
+        </div>
+        <div class="desc">
+            <a href="lanature/Feed/FeedList?menu=449&amp;category=458" class="lnk" target="_blank">
+                <span>라네이처 이야기</span>
+                <p class="p1">스칸디나비아 자연 그대로, 안심할 수 있게 라네이처</p>
+                <p>
+                    당신이 더 안심하고 건강할 수 있도록 라네이처가 함께 할게요.
+                </p>
+            </a>
+            <div class="btns">
+                <a href="lanature/Feed/FeedList?menu=449&amp;category=458" target="_blank">보러가기</a>
+            </div>
+        </div>
+                </div>
+            </div>
+
+<div class="vod_rolling">
+    <span class="bottom"></span>
+    <ul>
+            <li>
+                <a href="/scott/Feed/FeedDetail/2451?menu=38&amp;category=90&amp;category2=">
+                    <div class="head">
+                        <p>스카트 광고<span>스카트 &quot;다용도로 쓰니까&quot; 편</span></p>
+                    </div>
+                    <div class="cont">
+                        <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180810065618_d93b1057d7174e6994d436e53593c78a.jpg" alt="스카트 광고" />
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/goodfeel/Feed/FeedDetail/3148?menu=46&amp;category=83&amp;category2=">
+                    <div class="head">
+                        <p>좋은느낌 광고<span>유기농순면 커버 TV 광고</span></p>
+                    </div>
+                    <div class="cont">
+                        <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180712073005_47ee5d3e71a84223851102dd07610a6c.jpg" alt="좋은느낌" />
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/lanature/Feed/FeedDetail/3182?menu=449&amp;category=461&amp;category2=">
+                    <div class="head">
+                        <p>라네이처 광고<span>친자연 생리대 라네이처(15s)</span></p>
+                    </div>
+                    <div class="cont">
+                        <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180720082303_313a083e954b4013908c856bc16d1c80.jpg" alt="친자연 생리대 라네이처" />
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/depend/Feed/FeedDetail/3081?menu=34&amp;category=377&amp;category2=">
+                    <div class="head">
+                        <p>디펜드 광고<span>디펜드 스타일 패드 / 라이너 제품 동영상 </span></p>
+                    </div>
+                    <div class="cont">
+                        <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180710115102_04b759a3aec84f6f94b58b4db96c4aeb.jpg" alt="디펜드" />
+                    </div>
+                </a>
+            </li>
+    </ul>
+    <div id="bx-pager" class="bx-pager"></div>
+</div>
+        </div>
+        <!--// brand news -->
+    </div>
+</div>
+
+
+<!-- brand -->
+<div class="brand">
+    <p class="in_title">Brand</p>
+    <div class="brand_rolling">
+        <div id="bx-pager" class="bx-pager">
+            <ul>
+                        <li> <a data-slide-index="0" href="">하기스</a></li>
+                        <li> <a data-slide-index="1" href="">굿나이트</a></li>
+                        <li> <a data-slide-index="2" href="">화이트</a></li>
+                        <li> <a data-slide-index="3" href="">좋은느낌</a></li>
+                        <li> <a data-slide-index="4" href="">크리넥스</a></li>
+                        <li> <a data-slide-index="5" href="">스카트</a></li>
+                        <li> <a data-slide-index="6" href="">디펜드</a></li>
+                        <li> <a data-slide-index="7" href="">크리넥스 마이비데</a></li>
+                        <li> <a data-slide-index="8" href="">라네이처</a></li>
+            </ul>
+        </div>
+        <ul>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180710110534_0f18a04831754026abe988a2f8a7b2fa.jpg'); height:580px">
+                        <a href="/huggies"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180710110638_7bf2871ca7454b8ea164b486527db323.jpg'); height:580px">
+                        <a href="/goodnite"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180712070717_8641d17cfd994ea1ae665709143491bd.jpg'); height:580px">
+                        <a href="/white"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180710110920_dd12c3917ba143a186af3c2f1e118386.jpg'); height:580px">
+                        <a href="/goodfeel"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180712070152_eba9bf4b8c494770ae401a1c54ad9c36.jpg'); height:580px">
+                        <a href="/kleenex"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180711100404_c41b4e8c461b45da873404c8ef900942.jpg'); height:580px">
+                        <a href="/scott"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180711095923_5ad586fd963142ea962296ce018fe177.jpg'); height:580px">
+                        <a href="/depend"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180710111217_a7909a280c69419d8ac2556239ecffab.jpg'); height:580px">
+                        <a href="/mybidet"></a>
+                    </li>
+                    <li class="item" style="background-image:url('http://www.ykbrand.co.kr/data/Real/20180719054444_3edcfc93ed434556915f4ed4de274e37.jpg'); height:580px">
+                        <a href="/lanature"></a>
+                    </li>
+        </ul>
+    </div>
+</div>
+<!--// brand -->
+<div class="inner">
+    <div class="community">
+        <p class="in_title">Community</p>
+            <ul class="list">
+                <li class="col2">
+                    <div class="lnk lazy" data-src ="http://www.ykbrand.co.kr/data/Real/20180711031413_500912c87cec46cabb0a1bc369fe2438.jpg">
+                        <div class="desc">
+                            <span>국내 최초의 오픈형 생리 백과사전</span>
+                            <p>우리는 생리하는 중입니다.</p>
+                            <a href="/goodfeel/Board/BoardList?menu=49&amp;category=425" class="btn">바로가기</a>
+                        </div>
+                    </div>
+                </li>
+    <li>
+        <a href="/white/Brand/Trust" class="lnk">
+            <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180712070826_f0c6e4e9aa174860a84a56528732226c.jpg" alt="" />
+            <div class="desc">
+                <span>제품안심철학</span>
+                <p>당신 마음에 더 가까이</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/white/Board/BoardList?menu=53&amp;category=404" class="lnk">
+            <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180810065850_5d0c750ccfe64379ba494f8dc3ec7072.jpg" alt="" />
+            <div class="desc">
+                <span>화이트 커뮤니티</span>
+                <p>탐폰의 모든것 </p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/scott/Feed/FeedList?menu=38&amp;category=408" class="lnk">
+            <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180710121824_969b104057b843baab246c8ebcecd8a8.jpg" alt="" />
+            <div class="desc">
+                <span>살림툰</span>
+                <p>나는 스카트하는 엄마다</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/depend/Board/BoardList?menu=37&amp;category=101&amp;category2=107" class="lnk">
+            <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/20180710121926_26531ca5f74f4c389b057264f03d4124.jpg" alt="" />
+            <div class="desc">
+                <span>건강정보</span>
+                <p>건강한 생활</p>
+            </div>
+        </a>
+    </li>
+                
+            </ul>
+    </div>
+</div><!-- 제품찾기/샘플신청 -->
+<div class="link_banner">
+    <div class="inner">
+
+        <div class="head">
+            <p>샘플킷 신청하기</p>
+            <span>유한킴벌리 통합 브랜드 회원이라면 누구나 신청할 수 있습니다.<br>내게 맞는 제품을 체험해 보세요!</span>
+        </div>
+        <div class="bnr bnr01">
+            <a href="/depend/Custom/Sample/Create">
+                <img class="lazy" data-src="/Common/images/common/samplekit_img01.jpg" alt="디펜드 샘플신청">
+                <p>디펜드 샘플신청</p>
+            </a>
+        </div>
+        <div class="bnr bnr02">
+            <a href="/goodfeel/Custom/GoodFeelMagic/Main">
+                <img class="lazy" data-src="/Common/images/common/samplekit_img02.jpg" alt="좋은느낌 샘플신청">
+                <p>좋은느낌 샘플신청</p>
+            </a>
+        </div>
+        <div class="bnr bnr03">
+            <a href="/white/Custom/WhiteSample/Application?routetype=2">
+                <img class="lazy" data-src="/Common/images/common/samplekit_img03.jpg" alt="화이트 샘플신청">
+                <p>화이트 샘플신청</p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--// 제품찾기/샘플신청 -->        <div class="inner">
+            <div class="social">
+                <p class="in_title">Social</p>
+                    
+<ul class="taglist">
+        <li>
+            <a href="https://www.instagram.com/explore/tags/좋은느낌" target="_blank" class="on">#좋은느낌</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/explore/tags/화이트" target="_blank" class="on">#화이트</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/explore/tags/하기스" target="_blank" class="on">#하기스</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/explore/tags/라네이처" target="_blank" class="on">#라네이처</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/explore/tags/그린핑거" target="_blank" class="on">#그린핑거</a>
+        </li>
+</ul>
+
+                <ul class="soclist">
+        <li>
+            <a href="javascript:show_snsdetail('Bn3hfJ3ncDF')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/41449589_489288164814396_5529893072317582188_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('BnZ-itHnrV1')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/40281496_330127441080536_1910801859028871442_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('Bnm12nIlKfF')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/40320984_266212600689989_5861727955762690541_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('BnFbcxGhnbD')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/39269275_2507147622851090_2067009193667198976_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('Bgf1IP5hCrR')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/28765621_155974951699785_9177795836774449152_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('BhfqMjJj8zo')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/30087039_174811756553731_3771967715321839616_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('Be1osDRgsyD')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/27580742_231943290682871_5756122342694584320_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+        <li>
+            <a href="javascript:show_snsdetail('BlcGmiKDgbi')">
+                    <img class="lazy" data-src="http://www.ykbrand.co.kr/data/Real/36790456_2152330658379592_1448464788429471744_n.jpg" alt="SNS 이미지" />
+            </a>
+        </li>
+</ul>
+
+<div id="snspopup" class="content" style="display:none;"></div>
+
+<script type="text/javascript">
+    var popup = null;
+    function iframeLoaded() {
+        //$('#snspopup').css('left', '500px');
+        $('#snspopup').show();
+    }
+
+    function closeSNSPopup() {
+        popup.close();
+    }
+
+    function show_snsdetail(id){
+        popup = $('#snspopup').bPopup({
+            content: 'iframe', //'ajax', 'iframe' or 'image'
+            contentContainer: '.content',
+            loadUrl: '/Home/InstagramView?id=' + id,
+            position : ['auto','auto']
+        });
+    }
+</script>
+<style type="text/css">
+    #snspopup.content {
+        margin: auto auto;
+        top: 30px;
+    }
+
+    #snspopup iframe {
+        width: 330px;
+        height: 900px;
+    }
+</style>
+            </div>
+        </div>
+
+    <div class="inner">
+    <div class="cust_center">
+        <div class="cent01">
+            <div>
+                <h2>전화상담</h2>
+                <p>080-022-7007</p>
+                <span>평일 09:00 ~ 17:30</span>
+                <span>토·일요일 및 공휴일 휴무 (점심시간 12:00 ~ 13:00)</span>
+            </div>
+        </div>
+        <div class="cent02">
+            <div>
+                <h2>문자상담</h2>
+                <p>1666-7067</p>
+                <span>발신자 부담</span>
+                <span>장문 2,000자 이내, 이미지 첨부(MMS, 4장까지)</span>
+            </div>
+        </div>
+        <div class="cent03">
+            <div>
+                <h2>고객센터</h2>
+                <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank">문의접수 Q&amp;A</a>
+                <a href="http://www.yuhan-kimberly.co.kr/Customer/Faq" target="_blank">자주묻는질문 FAQ</a>
+            </div>
+        </div>
+    </div>
+</div>;
+</div>
+        </div>
+
+        <!-- footer -->
+        <footer class="renewfoo">
+            <!-- footerCont -->
+            <div class="footerCont">
+                <!-- shortcut -->
+                <div class="shortcut">
+                    <ul>
+                        <li><a href="/huggies"><img src="/Common/images/common/gbrand_logo01.gif" alt="하기스 브랜드"></a></li>
+                        <li><a href="/goodnite"><img src="/Common/images/common/gbrand_logo02.gif" alt="굿나이트 브랜드"></a></li>
+                        <li><a href="/white"><img src="/Common/images/common/gbrand_logo03.gif" alt="화이트 브랜드"></a></li>
+                        <li><a href="/goodfeel"><img src="/Common/images/common/gbrand_logo04.gif" alt="좋은느낌 브랜드"></a></li>
+                        <li><a href="/kleenex"><img src="/Common/images/common/gbrand_logo05.gif" alt="크리넥스 브랜드"></a></li>
+                        <li><a href="/scott"><img src="/Common/images/common/gbrand_logo06.gif" alt="스카트 브랜드"></a></li>
+                        <li><a href="/mybidet"><img src="/Common/images/common/gbrand_logo07.gif" alt="마이비데 브랜드"></a></li>
+                        <li><a href="/depend"><img src="/Common/images/common/gbrand_logo08.gif" alt="디펜드 브랜드"></a></li>
+                        <li><a href="/tn"><img src="/Common/images/common/gbrand_logo09.gif" alt="티엔 브랜드"></a></li>
+                        <li><a href="/greenfinger"><img src="/Common/images/common/gbrand_logo010.gif?2" alt="그린핑거 브랜드"></a></li>
+                    </ul>
+                </div>
+                <!-- //shortcut -->
+                <!-- footsec -->
+                <div class="footsec">
+                    <!-- logo -->
+                    <p class="footlogo"><img src="/Common/images/common/newfootlogo.gif" alt="유한킴벌리"></p>
+
+                    <!-- footMenu -->
+                    <ul class="footMenu">
+                        <li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+                        <li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="font-weight:bold;">개인정보처리방침</a></li>
+                    </ul>
+                    <!-- //footMenu -->
+                    <!-- corpInfo -->
+                    <div class="corpInfo">
+                        서울시 강남구 테헤란로 504 (우) 06178<span>최규복</span><br />사업자번호 : 120-81-11436 <span>고객지원센터 : 080-022-7007</span>
+                        <span><a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일 <img src="../../Common/images/common/btn_fooemail.gif" alt="" /></a></span>
+                    </div>
+                    <!-- copy-->
+                    <p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+                    <div class="familysite">
+                        <select onchange="goFamilySite(this);">
+                            <option value="">FAMILY SITE</option>
+                            <option value="http://www.yuhan-kimberly.co.kr/">유한킴벌리</option>
+                            <option value="http://www.momq.co.kr/main/initMain.action">맘큐</option>
+                            <option value="http://www.happybabyshop.co.kr/">선물대잔치</option>
+                        </select>
+                    </div>
+
+                    <!-- btnTop -->
+                    <a href="#" class="btnTop"><img src="http://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기"></a>
+                </div>
+                <!-- //footsec -->
+            </div>
+            <!-- //footerCont -->
+        </footer>
+        <!--// footer -->
+    </div>
+    
+    <input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+    <input type="hidden" name="adb_login_id" id="adb_login_id" value="" />
+
+    
+<script>
+
+
+
+</script>
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>회원정보수정 | 마이페이지 | 유한킴벌리 통합브랜드</title>
+
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://www.ykbrand.co.kr/Common/css/common.css?ver=201805281043">
+	<link rel="stylesheet" href="https://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="../../Common/css/mypage.css">
+	<script>
+		var userId = "";
+		var ImageServerUrl = "http://www.ykbrand.co.kr";
+		var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+	</script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+	<!--[if lte IE 9]><script src="https://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/common.js?ver=201805281043"></script>
+	<script src="https://www.ykbrand.co.kr//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.form.js"></script>
+	<script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//  이름은 한글과 영문만 입력되도록
+			$("#user_name").keyup(function(event) {
+				if (!(event.keyCode >= 37 && event.keyCode <= 40)) {
+					var pattern = /[^(가-힣ㄱ-ㅎㅏ-ㅣa-zA-Z )]/gi;
+					var inputVal = $(this).val();
+					$(this).val(inputVal.replace(pattern, ''));
+				}
+			});
+
+			$('#mobile_no2, #mobile_no3').keyup(function() {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			});
+		});
+	</script>
+	<script>
+		jQuery.validator.setDefaults({
+			ignore: "",
+			onkeyup: false,
+			onclick: false,
+			onfocusout: false,
+			showErrors: function(errorMap, errorList) {
+				if (this.numberOfInvalids()) {
+					if (errorList.length > 0) {
+						if (errorList[0].message)
+							alert(errorList[0].message);
+						$(errorList[0].element).focus();
+					}
+				}
+			}
+		});
+
+		function openFindAddress() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+					// 각 주소의 노출 규칙에 따라 주소를 조합한다.
+					// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+					var fullAddr = ''; // 최종 주소 변수
+					var extraAddr = ''; // 조합형 주소 변수
+
+					// 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+					if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+						fullAddr = data.roadAddress;
+
+					} else { // 사용자가 지번 주소를 선택했을 경우(J)
+						fullAddr = data.jibunAddress;
+					}
+
+					// 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+					if (data.userSelectedType === 'R') {
+						//법정동명이 있을 경우 추가한다.
+						if (data.bname !== '') {
+							extraAddr += data.bname;
+						}
+						// 건물명이 있을 경우 추가한다.
+						if (data.buildingName !== '') {
+							extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+						}
+						// 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+						fullAddr += (extraAddr !== '' ? ' (' + extraAddr + ')' : '');
+					}
+
+					// 우편번호와 주소 정보를 해당 필드에 넣는다.
+
+					document.getElementById('post_gb').value = data.userSelectedType; //고객이 선택한 주소 타입
+					document.getElementById('post_no').value = data.zonecode; //5자리 새우편번호 사용
+					document.getElementById('address1').value = fullAddr;
+
+					// 커서를 상세주소 필드로 이동한다.
+					document.getElementById('address2').focus();
+				}
+			}).open();
+		}
+	</script>
+	<script>
+		$(function() {
+
+			$("#marketing_y").click(function() {
+				//$(".marketing_yn").show().find("input[type=checkbox]").prop("checked", true);
+				$("#marketing_check").show().find("input[type=checkbox]").prop("checked", true);
+				$("#m_yn").show().find("input[type=checkbox]").prop("checked", true);
+			});
+			$("#marketing_n").click(function() {
+				//$(".marketing_yn").hide().find("input[type=checkbox]").prop("checked", false);
+				$("#marketing_check").hide().find("input[type=checkbox]").prop("checked", false);
+				$("#m_yn").hide().find("input[type=checkbox]").prop("checked", false);
+			});
+			$("#marketing_check input[type=checkbox]").change(function() {
+				if ($("#marketing_check input[type=checkbox]:checked").length <= 0) {
+					alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+					$(this).prop("checked", true);
+				}
+			});
+			$("#m_yn input[type=checkbox]").change(function() {
+				if ($("#m_yn input[type=checkbox]:checked").length <= 0) {
+					alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+					$(this).prop("checked", true);
+				}
+			});
+
+			if ($(":input:radio[name=email_yn]:checked").val() == "Y") {
+				$("#selectListEmail").show();
+			} else {
+				$("#selectListEmail").hide();
+			}
+
+			if ($(":input:radio[name=sms_yn]:checked").val() == "Y") {
+				$("#selectListSMS").show();
+			} else {
+				$("#selectListSMS").hide();
+			}
+
+			$("#email_y").click(function() {
+				$("#selectListEmail").show().find("input[type=checkbox]").prop("checked", true);
+			});
+
+			$("#email_n").click(function() {
+				$("#selectListEmail").hide().find("input[type=checkbox]").prop("checked", false);
+			});
+
+			$("#selectListEmail input[type=checkbox]").change(function() {
+				if ($("#selectListEmail input[type=checkbox]:checked").length <= 0) {
+					alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+					$(this).prop("checked", true);
+				}
+			});
+
+			$("#sms_y").click(function() {
+				$("#selectListSMS").show().find("input[type=checkbox]").prop("checked", true);
+			});
+			$("#sms_n").click(function() {
+				$("#selectListSMS").hide().find("input[type=checkbox]").prop("checked", false);
+			});
+
+			$("#selectListSMS input[type=checkbox]").change(function() {
+				if ($("#selectListSMS input[type=checkbox]:checked").length <= 0) {
+					alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+					$(this).prop("checked", true);
+				}
+			});
+
+		});
+
+		$(function() {
+			popupResize(940);
+		});
+
+		function jsClickEmail() {
+			if ($(":input:radio[name=email_yn]:checked").val() == "Y") {
+				$("#selectListEmail").show();
+			} else {
+				$("#selectListEmail").hide();
+			}
+		}
+
+		function jsClickSMS() {
+			if ($(":input:radio[name=sms_yn]:checked").val() == "Y") {
+				$("#selectListSMS").show();
+			} else {
+				$("#selectListSMS").hide();
+			}
+		}
+
+		function jsSaveCheck(obj) {
+
+			if (jsCheckStringLength(obj.user_name.value, " ", "") < 2) {
+				alert("고객님의 정확한 이름을 입력하여 주시기 바랍니다.");
+				obj.user_name.focus();
+				return false;
+			} else {
+				// 이름은 영문 한글만 가능
+				var pattern = /([^가-힣\x20a-zA-Z])/i;
+				var userName = obj.user_name.value;
+
+				if (pattern.test(userName)) {
+					alert("고객님의 정확한 이름을 입력하여 주시기 바랍니다.");
+					obj.user_name.focus();
+					return false;
+				}
+			}
+
+			if (jsCheckStringLength(obj.mobile_no2.value, " ", "") < 3 || jsCheckStringLength(obj.mobile_no2.value, " ", "") > 4) {
+				alert("휴대폰 번흐를 정확하게 입력하여 주시기 바랍니다.");
+				obj.mobile_no2.focus();
+				return false;
+			}
+
+			if (jsCheckStringLength(obj.mobile_no3.value, " ", "") != 4) {
+				alert("휴대폰 번흐를 정확하게 입력하여 주시기 바랍니다.");
+				obj.mobile_no3.focus();
+				return false;
+			}
+
+			if (!isMobileNumber($("#mobile_no1 option:selected").val(), obj.mobile_no2.value, obj.mobile_no3.value)) {
+				alert("휴대폰 번호를 정확하게 입력하여 주시기 바랍니다.");
+				return false;
+			}
+
+			if (jsCheckStringLength(obj.address2.value, " ", "") > 0) {
+				if (jsCheckStringLength(obj.post_no.value, " ", "") == 0 && jsCheckStringLength(obj.address1.value, " ", "") == 0) {
+					alert("우편번호 찾기 버튼을 이용하여 주소를 선택하여 주시기 바랍니다.");
+					return false;
+				}
+			}
+
+			return true;
+		}
+
+		function jsSave() {
+			var frm = document.myFrm;
+
+			if (jsSaveCheck(frm)) {
+
+				var options = {
+					url: "/SSL/SNSMypageBasicInfoSave",
+					dataType: "json",
+					async: false,
+					success: function(response) {
+						//  console.log("DATA : " + JSON.stringify(response));
+						if (response.resultCode == "0000") {
+							alert("정상적으로 수정되었습니다.");
+							location.replace("/SSL/SNSMypage");
+							//location.reload();
+						} else {
+							alert("수정중 오류가 발생하였습니다.잠시후 다시 시도하여 주시기 바랍니다.");
+							location.replace("/SSL/SNSMypage");
+						}
+					},
+					error: function(request, status, error) {
+						alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+					}
+				};
+
+				$("#myFrm").ajaxForm(options);
+				$("#myFrm").submit();
+			}
+		}
+	</script>
+
+</head>
+
+<body class="sso">
+	<div id="yk_lodings" class="maskWhite" style="display:none;">
+		<div class="lodings"></div>
+	</div>
+
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<div id="mypage">
+		<header>
+			<h1><img src="https://www.ykbrand.co.kr/Common/images/mypage/logo.gif" alt="유한킴벌리 통합회원 마이페이지"></h1>
+			<h1><img src="http://www.ykbrand.co.kr/Common/images/mypage/logo.gif" alt="유한킴벌리 통합회원 마이페이지"></h1>
+		</header>
+		<!-- mypageTab -->
+		<div class="simple_join_tab4">
+			<ul class="clearfix">
+				<li class="on"><a href="/SSL/SNSMypage">회원정보 수정</a></li>
+				<li><a href="/SSL/SNS_Mypage_ChildInfo">아이정보 추가&#47;수정</a></li>
+				<li><a href="/SSL/SNS_Mypage_Terms">약관관리</a></li>
+				<li><a href="/SSL/SNS_Mypage_Withdraw">회원탈퇴</a></li>
+			</ul>
+		</div>
+		<!-- //mypageTab -->
+		<!-- 회원정보 수정 -->
+		<div class="infoChange">
+
+			<!-- 20190417 2차인증 -->
+			<div class="passwordCheck">
+				<p class="txt1">고객님의 개인정보를 소중하게 보호하려고 노력하고 있습니다.</p>
+				<p class="txt2">개인정보 확인 및 변경 시 SNS 로그인(인증)이 필요합니다.<br />사용하고 계신 하신 SNS 계정으로 다시 한번 로그인 해주세요.</p>
+
+				<div class="btn_area">
+					<a href="#" class="certify">확인</a>
+				</div>
+			</div>
+			<!--// 20190417 2차인증 -->
+			
+
+			<form name="myFrm" id="myFrm" method="post">
+				<input type="hidden" name="user_id" id="user_id" value="" />
+				<input type="hidden" name="post_gb" id="post_gb" />
+
+				<!-- 기본정보 -->
+				<div class="sec1" style="display:none;">
+					<div class="tit">
+						<h2>기본정보</h2>
+						<p>
+							<span class="vital">필수</span>표시는 필수 입력내용입니다.
+						</p>
+					</div>
+					<div class="simple_info">
+						<table>
+							<colgroup>
+								<col style="width:280px;" />
+								<col />
+							</colgroup>
+							<tr>
+								<th>
+									이름 <span>*</span>
+								</th>
+								<td><input class="phone_num place" type="text" name="user_name" id="user_name" value=""></td>
+							</tr>
+							<tr>
+								<th>
+									이메일 <span>*</span>
+								</th>
+								<td>
+									email@naver.com
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									휴대폰 번호 <span>*</span>
+								</th>
+								<td class="height_60">
+									<select name="mobile_no1" id="mobile_no1">
+                      <option value="010" selected>010</option>
+                      <option value="011" >011</option>
+                      <option value="016" >016</option>
+                      <option value="017" >017</option>
+                      <option value="018" >018</option>
+                      <option value="019" >019</option>
+                  </select> -
+									<input class="phone_num" type="text" name="mobile_no2" id="mobile_no2" maxlength="4" value=""> -
+									<input class="phone_num" type="text" name="mobile_no3" id="mobile_no3" maxlength="4" value="">
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									생년월일
+								</th>
+								<td class="height_60">
+									<select name="birth_dt1" id="birth_dt1">
+                    <option value="">선택</option>
+                    <option value="1900" >1900 년</option>
+                    <option value="1901" >1901 년</option>
+                	</select>
+									<select name="birth_dt2" id="birth_dt2">
+                      <option value="">선택</option>
+                      <option value="01" >1 월</option>
+                      <option value="02" >2 월</option>
+                      <option value="03" >3 월</option>
+                      <option value="04" >4 월</option>
+                      <option value="05" >5 월</option>
+                      <option value="06" >6 월</option>
+                      <option value="07" >7 월</option>
+                      <option value="08" >8 월</option>
+                      <option value="09" >9 월</option>
+                      <option value="10" >10 월</option>
+                      <option value="11" >11 월</option>
+                      <option value="12" >12 월</option>
+                  </select>
+									<script>
+										$('#birth_dt1, #birth_dt2').change(function() {
+											var birth_year = $('#birth_dt1').val();
+											var birth_month = $('#birth_dt2').val();
+											if (birth_year > 0 && birth_month > 0) {
+												$("select[name='birth_dt3'] option").remove();
+												var lastDay = (new Date(birth_year, birth_month, 0)).getDate();
+												for (i = 1; i <= lastDay; i++) {
+													if (i < 10) {
+														$("#birth_dt3").append('<option value="' + "0" + i + '">' + i + "일");
+													} else {
+														$("#birth_dt3").append('<option value="' + i + '">' + i + "일");
+													}
+												}
+											}
+										});
+									</script>
+									<select name="birth_dt3" id="birth_dt3">
+                    <option value="">선택</option>
+                    <option value="01" >1 일</option>
+                    <option value="02" >2 일</option>
+                    <option value="03" >3 일</option>
+                    <option value="04" >4 일</option>
+                    <option value="05" >5 일</option>
+                    <option value="06" >6 일</option>
+                    <option value="07" >7 일</option>
+                    <option value="08" >8 일</option>
+                    <option value="09" >9 일</option>
+                    <option value="10" >10 일</option>
+                    <option value="11" >11 일</option>
+                    <option value="12" >12 일</option>
+                    <option value="13" >13 일</option>
+                    <option value="14" >14 일</option>
+                    <option value="15" >15 일</option>
+                    <option value="16" >16 일</option>
+                    <option value="17" >17 일</option>
+                    <option value="18" >18 일</option>
+                    <option value="19" >19 일</option>
+                    <option value="20" >20 일</option>
+                    <option value="21" >21 일</option>
+                    <option value="22" >22 일</option>
+                    <option value="23" >23 일</option>
+                    <option value="24" >24 일</option>
+                    <option value="25" >25 일</option>
+                    <option value="26" >26 일</option>
+                    <option value="27" >27 일</option>
+                    <option value="28" >28 일</option>
+                    <option value="29" >29 일</option>
+                    <option value="30" >30 일</option>
+                    <option value="31" >31 일</option>
+                  </select>
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									광고성 정보전송 동의<span>*</span>
+								</th>
+								<td class="height_60">
+									<span class="ui_radio">
+                      <input type="radio" id="marketing_n" name="marketing_yn" value="N"   checked >
+                      <label for="marketing_n">동의 안함</label>
+                  </span>
+									<span class="ui_radio">
+
+                      <input type="radio" id="marketing_y" name="marketing_yn" value="Y" >
+                      <label for="marketing_y">동의</label>
+                  </span>
+									<span id="marketing_check" style="display:none;">
+                    <span class="ui_radio ui_check">
+                        <input type="checkbox" id="sms_brand_yn" name="sms_brand_yn" value="Y" >
+                        <label for="sms_brand_yn">통합브랜드</label>
+                    </span>
+									</span>
+
+								</td>
+							</tr>
+							<tr id="m_yn" style="display:none;">
+								<th class="height_60">
+									광고성 정보전송 매체 선택<span>*</span>
+								</th>
+								<td>
+									<span class="ui_radio">
+                      <input type="checkbox" id="email_yn" name="email_yn" value="Y" >
+                      <label for="email_yn">메일</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="checkbox" id="sms_yn" name="sms_yn" value="Y" >
+                      <label for="sms_yn">SMS</label>
+                  </span>
+
+								</td>
+							</tr>
+
+							<tr>
+								<th>
+								</th>
+								<td>
+									<p>
+										* 수신 동의에 체크하시면 할인 혜택 및 상품정보, 이벤트 등 다양한 정보를 안내 받으실 수 있습니다.
+									</p>
+									<p>
+										* 단, 약관안내 및 서비스 내용, 주문/배송, 회사의 주요정책 관련 변경에 따른 메일/SMS은 정보수신 거부와 상관없이 발송될 수 있습니다.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- //기본정보 -->
+				<!-- 부가정보 -->
+				<div class="sec2" style="display:none;">
+					<div class="tit">
+						<h2>부가정보</h2>
+					</div>
+					<!-- writeTable -->
+					<div class="simple_info">
+						<table>
+							<colgroup>
+								<col style="width:280px;" />
+								<col />
+							</colgroup>
+							<tr>
+								<th>
+									주소
+								</th>
+								<td class="clearfix">
+									<input class="phone_num mar_b5" type="text" name="post_no" id="post_no" maxlength="6" readonly><input type="button" class="phone_btn mar_l5" value="우편번호" onclick="openFindAddress();"><br>
+									<input class="phone_num place" type="text" name="address1" id="address1" readonly><input class="phone_num place mar_l5" type="text" name="address2" id="address2">
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									결혼여부
+								</th>
+								<td class="height_60">
+									<span class="ui_radio">
+                      <input type="radio" id="marriage_n" name="marriage_yn" value="N"   checked >
+                      <label for="marriage_n" style="margin-right:30px;">미혼</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="radio" id="marriage_y" name="marriage_yn" value="Y" >
+                      <label for="marriage_y">기혼</label>
+                  </span>
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									임신여부
+								</th>
+								<td class="height_60">
+									<span class="ui_radio">
+                      <input type="radio" id="pregnancy_n" name="pregnancy_yn" value="N"   checked >
+                      <label for="pregnancy_n" style="margin-right:30px;">아니오</label>
+                  </span>
+									<span class="ui_radio">
+                      <input type="radio" id="pregnancy_y" name="pregnancy_yn" value="Y" >
+                      <label for="pregnancy_y">예</label>
+                  </span>
+								</td>
+							</tr>
+							<tr>
+								<th class="height_60">
+									SNS URL
+								</th>
+								<td class="height_60">
+									<input class="sns_url" type="text" name="sns_url" id="sns_url" placeholder="SNS URL을 입력해 주세요.">
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- //writeTable -->
+				</div>
+				<!-- //부가정보 -->
+				<!-- 버튼영역 -->
+				<div class="btn_area mar_t40" style="display:none;">
+					<a class="next" href="javascript:window.open('', '_self').close();">취소</a>
+					<a class="certify" href="javascript:;" onclick="jsSave();">수정</a>
+				</div>
+				<!-- //버튼영역 -->
+			</form>
+		</div>
+		<!-- //회원정보 수정 -->
+	</div>
+	<!-- //마이페이지 -->
+
+
+
+	<input type="hidden" name="adb_declared_id" id="adb_declared_id" value="" />
+	<input type="hidden" name="adb_login_id" id="adb_login_id" value="" />
+
+
+	<script>
+	</script>
+
+	<script type="text/javascript">
+	</script>
+</body>
+
+</html>

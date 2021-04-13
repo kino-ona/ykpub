@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="유한킴벌리">
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리">
+<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+<title>회원탈퇴 | 마이페이지 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="../Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css">
+<link rel="stylesheet" href="../../Common/css/mypage.css">
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js"></script>
+<body class="sso">
+<form action="/SSL/Mypage_Withdraw" method="post">
+	<input name="__RequestVerificationToken" type="hidden" value="-8WrLZJtO7POLD-RnIuvbNhRvea3Ot-zOFolbeIKXyHJ55wN0sfG65heN5UR_sKFECVLftOMEsImRm7hnVXb8jPIuLU1">
+	<!-- 마이페이지 (940 * 626) -->
+	<div id="mypage">
+		<header>
+		<h1><img src="http://www.ykbrand.co.kr/Common/images/mypage/logo.gif" alt="유한킴벌리 통합회원 마이페이지"></h1>
+		</header>
+		<!-- mypageTab -->
+		<div class="simple_join_tab4">
+			<ul class="clearfix">
+				<li>회원정보수정</li>
+				<li>아이정보 추가/수정</li>
+				<li>약관관리</li>
+				<li class="on">회원탈퇴</li>
+			</ul>
+		</div>
+		<!-- //mypageTab -->
+		<!-- 회원탈퇴 -->
+		<div class="withdrawal">
+			<div class="cont">
+				<!-- 회원탈퇴 안내-->
+				<dl class="info">
+					<dt>회원탈퇴 확인사항</dt>
+					<dd>회원탈퇴를 하시면 90일간은 재가입이 불가하며 기존에 사용하던 ID는 재사용할 수 없습니다. </dd><dd>회원 탈퇴를 하실 경우 회원님의 모든 정보가 삭제됩니다. </dd><dd>게시글 및 댓글은 탈퇴 시 자동 삭제되지 않고 그대로 남아 있습니다. 삭제를 원하는 게시글이 있다면 탈퇴 전 삭제하시기 바랍니다. </dd><dd>단, [전자상거래등에서의소비자보호에관한법률], [통신비밀보호법], [정보통신망이용촉진및정보보호에관한법률] 등 법률에 근거하여 거래 관련<br>
+					권리의무관계의 확인 등을 이유로 일정기간 그 정보를 보유하여야 할 필요가 있을 경우 일정기간 동안 그 정보를 보유합니다.</dd>
+				</dl>
+				<!-- //회원탈퇴 안내-->
+				<p class="tit" style="font-size:24px; line-height:24px;color:#2d2d2d;margin-top:50px;height:36px;font-weight:bold;">
+					포인트/쿠폰 현황
+				</p>
+				<div class="Withdraw_tbl">
+					<table>
+					<colgroup>
+					<col style="width:33.3%;">
+					<col style="width:33.3%;">
+					<col style="">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>
+							사이트
+						</th>
+						<th>
+							잔여 포인트
+						</th>
+						<th style="border-right:1px solid #DEDEDE;">
+							쿠폰
+						</th>
+					</tr>
+					<tr>
+						<td>
+							선물대잔치
+						</td>
+						<td class="blue_p">
+							15P
+						</td>
+						<td class="blue_p">
+							-
+						</td>
+					</tr>
+					</tbody>
+					</table>
+					<span style="font-size:12px;">-회원탈퇴 시 보유하고 계신 포인트 및 쿠폰이 모두 삭제 처리 됩니다.</span>
+				</div>
+				<!-- 회원탈퇴 사유입력 -->
+				<div class="inputArea">
+					<p class="tit">
+						탈퇴사유 입력
+					</p>
+					<dl>
+						<dt><label for="withdraw_msg">탈퇴사유</label></dt>
+						<dd>
+						<textarea class="textarea" id="withdraw_msg" name="withdraw_msg" title="탈퇴사유 입력" placeholder="탈퇴사유를 입력하여 주십시오."></textarea>
+						</dd>
+					</dl>
+					<br>
+					<p style="font-size:16px;">
+						※ 진행중인 주문,교환,반품이 있는 경우는 탈퇴가 불가능합니다. 해당 사항의 구매확정 등 최종 완료 후 탈퇴를 하실 수 있습니다.
+					</p>
+					<p class="check">
+						<input type="checkbox" id="ChkAgree" name="ChkAgree" style="-webkit-appearance:checkbox"><label for="ChkAgree">잔여 포인트, 쿠폰의 삭제 내용 및 회원탈퇴 확인사항의 내용을 확인하였습니다.</label>
+					</p>
+				</div>
+				<!-- //회원탈퇴 사유입력 -->
+			</div>
+			<!-- 버튼영역 -->
+			<div class="btn_area mar_t40">
+				<a class="next" href="javascript:window.open('', '_self').close();">취소</a>
+				<a class="certify" href="javascript:sendIt();">회원탈퇴</a>
+			</div>
+			<!-- //버튼영역 -->
+		</div>
+		<!-- //회원탈퇴 -->
+	</div>
+	<!-- //마이페이지 -->
+</form>
+</body>
+</html>

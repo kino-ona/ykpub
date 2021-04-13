@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+
+html, body, div, p, span, em, u, i, table, caption, thead, tbody, tfoot, tr, th, td, form, fieldset, label, legend, textarea, input, select, button, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, img, a {padding:0;margin:0;border:0;outline:0;}
+
+body {position:relative;color:#585858;font-size:12px;line-height:16px;font-family:"dotum","돋움","Apple-Gothic","Arial","Helvetica","sans-serif";font-weight:normal;-webkit-text-size-adjust:none;} /* word-wrap:break-word;word-break:break-all; */
+/*div, p, ul, li, table, th, td, textarea, input, span, form, h1, h2, h3, h4, h5, h6, dt, dl, dd {word-wrap:break-word;word-break:break-all;}*/
+ul, ol, li, dl, dt, dd {list-style-type:none;}
+table {empty-cells:show;border-collapse:collapse;border-spacing:0;}
+select {font-size:12px;vertical-align:middle;}
+legend {display:none;position:absolute;visibility:hidden;}
+caption {visibility:hidden;width:0px;height:0px;overflow:hidden;font-size:0px;line-height:0px;}
+img {vertical-align:top;}
+optgroup {font-style:normal;font-size:0px;height:0px;line-height:0px;}
+input {-webkit-appearance:none;border-radius:0;} /* -webkit-appearance:none; */
+html {
+    /* -webkit-touch-callout:none; /* 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어합니다. none으로 설정하면 아무리 길게 눌러도 아무것도 뜨지 않습니다. */
+	/*-webkit-user-select:none; /* 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어합니다. none으로 설정하면 텍스트나 이미지를 선택할 수 없습니다. */
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3); 
+	/* 링크를 터치했을때 나오는 기본 영역의 색상을 제어합니다.
+	rgba(0, 0, 0, 0)은 색이 없는 투명을 의미하므로 위 색상으로 세팅하면 링크를 터치했을때 아무것도 표시되지 않습니다.
+	transparent를 넣을 수도 있겠지만, 이런 경우에는 iOS에서만 동작하고 Android에선 동작하지 않습니다.}*/
+}
+body {width:100%;}
+hr {display:none;}

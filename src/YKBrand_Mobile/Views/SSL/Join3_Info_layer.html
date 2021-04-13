@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="유한킴벌리 통합브랜드">
+    <meta name="description" content="유한킴벌리 통합브랜드">
+    <meta name="keywords" content="유한킴벌리 통합브랜드">
+    <meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653">
+    <title>회원정보입력 | 회원가입 | 유한킴벌리 통합브랜드</title>
+
+    <link rel="icon" href="https://m.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Common/css/common.css">
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Common/css/main.css"> <!-- main css -->
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Common/css/swiper.css">
+    <link rel="stylesheet" href="https://m.ykbrand.co.kr/Content/common.css">
+    <script>
+        var userId = "";
+        var ImageServerUrl = "http://www.ykbrand.co.kr";
+        var ImageUploadUrl = "http://www.ykbrand.co.kr/data/Real/";
+    </script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/swiper.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Common/js/front.ui.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/jquery.waitforimages.min.js"></script>
+    <script type="text/javascript" src="https://m.ykbrand.co.kr/Scripts/common.js"></script>
+    <script src="//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script>
+
+    <script>
+        jQuery.validator.setDefaults({
+            ignore: "",
+            onkeyup: false,
+            onclick: false,
+            onfocusout: false,
+            showErrors: function (errorMap, errorList) {
+                if (this.numberOfInvalids()) {
+                    if (errorList.length > 0) {
+                        if (errorList[0].message)
+                            alert(errorList[0].message);
+                        $(errorList[0].element).focus();
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var submitFlag = true;
+
+        jQuery.validator.setDefaults({
+            ignore: "",
+            onkeyup: false,
+            onclick: false,
+            onfocusout: false,
+            showErrors: function (errorMap, errorList) {
+                if (this.numberOfInvalids()) {
+                    if (errorList.length > 0) {
+                        if (errorList[0].message)
+                            alert(errorList[0].message);
+                        $(errorList[0].element).focus();
+                    }
+                }
+            }
+        });
+
+
+        $(function () {
+            $("#user_id").change(function () {
+                $("#isIdCheck").val("");
+            });
+
+            $("#btnSelectId").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/SSL/Select_Id_Pop?type=",
+                    datatype: "json",
+                    async: false,
+                    success: function (data) {
+                        if (data == "KCP_FAIL")
+                        {
+                            location.reload();
+                        }
+                        else if (data == "MOMQ_FAIL")
+                        {
+                            alert("momQ 아이디 조회를 실패하였습니다. 다시 시도해 주세요.");
+                        }
+                        else
+                        {
+                            $("#select_id_pop").html(data);
+
+                            if ($("[name=pop_user_code]:checked").data("userId") != undefined) {
+                                $("#pop_selectedId").text($("[name=pop_user_code]:checked").data("userId"));
+                            }
+                            else {
+                                $("#pop_selectedId").text("사용 가능한 아이디가 없습니다.");
+                            }
+
+                            $('.select_id_pop').show();
+                            $('.select_id_pop').center();
+                            wrapWindowByMask();
+                        }
+                    },
+                    error: function (request, status, error) {
+                        if (request.readyState == 0 || request.status == 0)
+                            return
+                        else
+                            alert('에러가 발생하였습니다.');
+                    }
+                });
+            });
+
+            $("#btnUserIdChk").click(function (e) {
+                var result = true;
+                var userId = $("#user_id").val();
+                if ($.trim(userId) == "") {
+                    alert("아이디를 입력해 주십시오.");
+                    $("#user_id").focus();
+                    return;
+                }
+                var reg = /^[A-Za-z0-9]{4,12}$/;
+                if (!reg.test(userId)) {
+                    alert("4자 이상~12자 이하의 영문+숫자의 조합으로 생성하여 주십시오.");
+                    $("#user_id").focus();
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "/SSL/IsUserIdAvailable",
+                    data: { type:"", user_id: userId },
+                    datatype: "json",
+                    async: false,
+                    success: function (data) {
+                        if (data == "S") {
+                            alert("사용 가능한 아이디 입니다.");
+                            $("#isIdCheck").val("Y");
+                        } else if (data == "F") {
+                            alert("중복된 아이디 입니다.");
+                            $("#user_id").focus();
+                            $("#isIdCheck").val("");
+                        } else if (data == "A") {
+                            alert("인증시간이 만료되었습니다. 본인인증을 다시 시도해 주세요.");
+                            location.href = "/SSL/Join1_Start?siteCode=MOMQ&returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action";
+                        }
+                    },
+                    error: function (request, status, error) {
+                                    if (request.readyState == 0 || request.status == 0)
+                                        return
+                                    else
+                                        alert('에러가 발생하였습니다.');
+                                }
+                            });
+
+                e.preventDefault();
+            });
+
+            $("#email_domain_list").change(function () {
+                if ($(this).val() != "") {
+                    $("#email_domain").val($(this).val());
+                }
+            });
+
+            $("#email_y").click(function () {
+                $(".email_yn").show().find("input[type=checkbox]").prop("checked", true);
+            });
+            $("#email_n").click(function () {
+                $(".email_yn").hide().find("input[type=checkbox]").prop("checked", false);
+            });
+
+            $(".email_yn input[type=checkbox]").change(function () {
+                if ($(".email_yn input[type=checkbox]:checked").length <= 0) {
+                    alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+                    $(this).prop("checked", true);
+                }
+            });
+
+            $("#sms_y").click(function () {
+                $(".sms_yn").show().find("input[type=checkbox]").prop("checked", true);
+            });
+            $("#sms_n").click(function () {
+                $(".sms_yn").hide().find("input[type=checkbox]").prop("checked", false);
+            });
+
+            $(".sms_yn input[type=checkbox]").change(function () {
+                if ($(".sms_yn input[type=checkbox]:checked").length <= 0) {
+                    alert("최소 1개 이상의 사이트를 동의해 주셔야 합니다.");
+                    $(this).prop("checked", true);
+                }
+            });
+
+            $("#children_n").click(function () {
+                alert("아이 없음을 선택하셨습니다.\r아이 없음으로 회원정보를 저장하시는 경우 momQ/선물대잔치에서 기존에 등록하셨던 아이정보가 삭제 됩니다.");
+            });
+
+            $("#btnSubmit").click(function (e) {
+                e.preventDefault();
+
+                $('#email').val($('#email_id').val() + '@' + $('#email_domain').val());
+
+                if ($("form").valid()) {
+                    if (submitFlag) {
+                        submitFlag = false;
+                        $("form").submit();
+                    }
+                } else {
+                    submitFlag = true;
+                }
+            });
+
+            // 아이디선택 레이어 팝업 함수
+
+            $(document).on("click", "[name=pop_user_code]", function () {
+                $("#pop_selectedId").text($(this).data("userId"));
+            });
+
+            // 신규아이디 생성 체크
+            $(document).on("click", "#pop_btnNewId", function () {
+                if ($(this).is(":checked"))
+                {
+                    $("#pop_selectedId").hide();
+                    $("#pop_newId").show();
+                }
+                else
+                {
+                    $("#pop_newId").hide();
+                    $("#pop_selectedId").show();
+                }
+            });
+
+            // 신규 아이디 중복 체크
+            $(document).on("change", "#user_id", function () {
+                $("#isIdCheck").val("");
+            });
+
+            $(document).on("click", "#pop_btnIdCheck", function (e) {
+                e.preventDefault();
+
+                var userId = $("#pop_user_id").val();
+                if ($.trim(userId) == "") {
+                    alert("아이디를 입력해 주십시오.");
+                    $("#pop_user_id").focus();
+                    return;
+                }
+
+                var reg = /^[A-Za-z0-9]{4,12}$/;
+                if (!reg.test(userId)) {
+                    alert("4자 이상~12자 이하의 영문+숫자의 조합으로 생성하여 주십시오.");
+                    $("#pop_user_id").focus();
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "/SSL/IsUserIdAvailable",
+                    data: { type:"", user_id: userId },
+                    datatype: "json",
+                    async: false,
+                    success: function (data) {
+                        if (data == "S") {
+                            alert("사용 가능한 아이디 입니다.");
+                            $("#pop_isIdCheck").val("Y");
+                        } else if (data == "F") {
+                            alert("중복된 아이디 입니다.");
+                            $("#pop_isIdCheck").val("");
+                            $("#pop_user_id").focus();
+                        } else if (data == "A") {
+                            alert("인증시간이 만료되었습니다. 본인인증을 다시 시도해 주세요.");
+                            window.open('', '_self').close();
+                        }
+                    },
+                    error: function (request, status, error) {
+                        if (request.readyState == 0 || request.status == 0)
+                            return
+                        else
+                            alert('에러가 발생하였습니다.');
+                    }
+                });
+            });
+
+            // 아이디 선택 완료
+            $(document).on("click", "#pop_btnIdSelect", function () {
+                if ($("#pop_btnNewId").is(":checked"))
+                {
+                    // 신규생성일 경우
+                    if ($("#pop_isIdCheck").val() != "Y")
+                    {
+                        alert("아이디 중복 확인을 해주세요.");
+                        return;
+                    }
+
+                    $("#user_id").val($("#pop_user_id").val());
+                    $("#isIdCheck").val("Y");
+                }
+                else
+                {
+                    // 기존아이디 선택일 경우
+                    if ($("input[name=pop_user_code]:checked").length <= 0) {
+                        alert("아이디를 선택해 주세요.");
+                        return;
+                    }
+
+                    $("#user_id").val($("[name=pop_user_code]:checked").data("userId"));
+                    $("#user_code").val($("[name=pop_user_code]:checked").val());
+                    $("#isIdCheck").val("Y");
+                }
+
+                $('.select_id_pop').hide();
+                $('.opacity_bg_pop').hide().empty();
+            });
+        });
+
+        function wrapWindowByMask() {
+            //화면의 높이와 너비를 구한다.
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채운다.
+            $('.opacity_bg_pop').css({ 'width': maskWidth, 'height': maskHeight });
+            //마스크의 투명도 처리
+            $('.opacity_bg_pop').fadeTo("slow", 0.8);
+        }
+
+        function btnexit() {
+            $('.select_id_pop').hide();
+            $('.opacity_bg_pop').hide();
+
+        }
+        jQuery.fn.center = function () {
+            this.css("position", "absolute");
+            this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+            this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+            return this;
+        }
+    </script>
+
+<script src="./m_join_info_files/s-code-contents-7d2555a43645a4bba8391f9dae8b3b548986401c.js.다운로드"></script><script src="./m_join_info_files/satellite-5772282f64746d12cd003b7b.js.다운로드"></script></head>
+
+<body onLoad="layerOpen();">
+
+    <!-- skip_nav -->
+    <a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#contents" class="skip">본문 바로가기</a>
+
+    <!-- wrap -->
+    <div id="wrap" class="sso">
+        <div id="contents">
+
+<!-- header -->
+<header>
+    <h1>통합회원 가입</h1>
+    <a href="javascript:history.back();" class="backBtn"><img src="https://m.ykbrand.co.kr/Common/images/btn/btn_back.png" alt="뒤로가기"></a>
+</header><!-- //header -->
+<hr>
+
+<!-- container -->
+<div id="container">
+<form action="https://m.ykbrand.co.kr/SSL/Join3_Info_End?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="KsnIrfiONWRZuyJvvp4icUYj3mA__sqNHqqWqvcbX3Ry-_zsJooN53FEMIomhdRpYsW-uMJEfoi3ZzRKIrzq1eDpyoI1"><input id="service_cd" name="service_cd" type="hidden" value=""><input id="type" name="type" type="hidden" value=""><input id="user_code" name="user_code" type="hidden" value=""><input id="serviceCd" name="serviceCd" type="hidden" value=""><input id="siteMember" name="siteMember" type="hidden" value="Y"><input id="siteMomq" name="siteMomq" type="hidden" value="Y"><input id="siteBrand" name="siteBrand" type="hidden" value=""><input id="sitePresent" name="sitePresent" type="hidden" value=""><input id="YKMEMBER_Optional1" name="YKMEMBER_Optional1" type="hidden" value="N"><input id="YKBRAND_Optional1" name="YKBRAND_Optional1" type="hidden" value=""><input id="YKBRAND_Optional2" name="YKBRAND_Optional2" type="hidden" value=""><input id="YKBRAND_Optional3" name="YKBRAND_Optional3" type="hidden" value=""><input id="MOMQ_Optional1" name="MOMQ_Optional1" type="hidden" value="N"><input id="MOMQ_Optional2" name="MOMQ_Optional2" type="hidden" value="N"><input id="MOMQ_Optional3" name="MOMQ_Optional3" type="hidden" value="N"><input id="PRESENT_Optional1" name="PRESENT_Optional1" type="hidden" value=""><input id="PRESENT_Optional2" name="PRESENT_Optional2" type="hidden" value=""><input id="PRESENT_Optional3" name="PRESENT_Optional3" type="hidden" value="">        <div class="divider">
+            <p class="sso_brand_img clearfix">
+
+										<a href="http://m.ykbrand.co.kr/"><img style="padding:10px 0px 10px 10px; width:120px;" src="https://m.ykbrand.co.kr/Common/images/common/simple_yk_logo.png" alt="유한킴벌리 통합회원"></a>
+                    <a style="float:right;text-align:right;" href="http://m.momq.co.kr/main/initMain.action">
+				                <img style="max-width:120px; padding:10px 10px 10px 0px;" src="/yk_pub/YKBrand_MNMobile/Common/images/common/sso_monit.png" alt="monit 로고"> <!-- 20171219 -->
+                    </a>
+            </p>
+                <div id="joinStep" class="st03">
+                    <ul>
+                        <li><span>1단계</span>본인인증</li>
+                        <li><span>2단계</span>약관동의</li>
+                        <li><span>3단계</span>정보입력</li>
+                        <li><span>4단계</span>가입완료</li>
+                    </ul>
+                </div>
+            <div class="cntBox">
+                <p>통합회원 가입을 위해 회원정보를 입력하여 주십시오.</p>
+                <p><span class="com">*</span> 표시는 필수 입력내용입니다.</p>
+            </div>
+
+            <div class="cnt cntX" style="padding-bottom:0px;">
+                <dl class="inT intAdrs">
+                    <dt>아이디 <span class="com">*</span></dt>
+                    <input data-val="true" data-val-required="아이디를 중복 확인하여 주십시오." id="isIdCheck" name="isIdCheck" type="hidden" value="">
+                        <dd>
+                            <span><input data-val="true" data-val-length="아이디는 ‘4자 이상~12자 이하’의 영문+숫자의 조합으로 생성하여 주십시오." data-val-length-max="12" data-val-length-min="4" data-val-regex="4자 이상~12자 이하의 영문+숫자의 조합으로 생성하여 주십시오." data-val-regex-pattern="^[A-Za-z0-9_-]{4,12}$" data-val-required="아이디를 입력하여 주십시오." id="user_id" maxlength="12" name="user_id" title="사용자 아이디 입력" type="text" value=""></span>
+                            <span><a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none" id="btnUserIdChk">중복확인</a></span>
+                        </dd>
+                        <dd class="pT0">
+                            <p class="dotP mt10">ID는 4자 이상~12자 이하의 영문 및 영문과 숫자의 조합으로 생성 가능합니다.</p>
+                        </dd>
+                </dl>
+                <dl class="inT">
+                    <dt>비밀번호 <span class="com">*</span></dt>
+                    <dd>
+                        <input data-val="true" data-val-regex="비밀번호를 8~20자 영문이 포함된 숫자 또는 특수문자의 조합으로 입력하여 주십시오." data-val-regex-pattern="^(?=.*[a-zA-Z])((?=.*\d)|(?=.*\W)).{8,20}$" data-val-required="비밀번호를 입력하여 주십시오." id="user_pwd" maxlength="20" name="user_pwd" title="사용자 비밀번호 입력" type="password">
+                    </dd>
+                </dl>
+                <dl class="inT">
+                    <dt>비밀번호 확인 <span class="com">*</span></dt>
+                    <dd>
+                        <input data-val="true" data-val-equalto="비밀번호와 비밀번호 확인이 일치하지 않습니다." data-val-equalto-other="*.user_pwd" id="confirm_pwd" maxlength="20" name="confirm_pwd" title="사용자 비밀번호 확인용 입력" type="password">
+                        <ul class="dot mt10">
+                            <li>8자 이상~20자 이하의 영문+숫자의 조합 혹은 특수문자의 조합으로 생성하여 주십시오.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="inT intTxt">
+                    <dt>이름 <span class="com">*</span></dt>
+                    <dd>홍길동</dd>
+                </dl>
+                <dl class="inT intTxt">
+                    <dt>생년월일 <span class="com">*</span></dt>
+                    <dd>0000-03-22</dd>
+                </dl>
+                <dl class="inT intTxt">
+                    <dt>휴대폰 <span class="com">*</span></dt>
+                    <dd>000-0000-0000</dd>
+                </dl>
+                <dl class="inT intEmail">
+                    <dt>이메일 <span class="com">*</span></dt>
+                    <dd>
+                        <span><input class="blockKor" data-val="true" data-val-required="이메일을 입력하여 주십시오." id="email_id" maxlength="30" name="email_id" title="이메일 아이디 입력" type="text" value=""><span class="at">@</span> </span>
+                        <span>
+                            <input class="blockKor" data-val="true" data-val-required="이메일을 입력하여 주십시오." id="email_domain" maxlength="30" name="email_domain" title="이메일 도메인 입력" type="text" value="">
+                        </span>
+                    </dd>
+                    <dd class="pT0 mt10">
+                        <span class="selectBox">
+                            <label for="email_domain_list">직접입력</label>
+                            <select id="email_domain_list" name="email_domain_list" title="이메일 도메인 선택"><option value="">직접입력</option>
+														<option value="naver.com">naver.com</option>
+														<option value="hanmail.net">hanmail.net</option>
+														<option value="daum.net">daum.net</option>
+														<option value="nate.com">nate.com</option>
+														<option value="gmail.com">gmail.com</option>
+														<option value="hotmail.com">hotmail.com</option>
+														<option value="chol.com">chol.com</option>
+														<option value="dreamwiz.com">dreamwiz.com</option>
+														</select>
+                            <input data-val="true" data-val-regex="이메일 형식이 잘못 되었습니다." data-val-regex-pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" data-val-required="이메일을 입력하여 주십시오." id="email" name="email" type="hidden" value="">
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="inT">
+                    <dt class="ft_bold">개인정보 마케팅 활용 동의</dt>
+                    <dd>
+                        <span class="radioF">
+                            <input checked="checked" id="marketing_n" name="marketing_yn" type="radio" value="N">
+                            <label for="marketing_n">동의안함</label>
+                        </span>
+                        <span class="radioF">
+                            <input id="marketing_y" name="marketing_yn" type="radio" value="Y">
+                            <label for="marketing_y">동의</label>
+                        </span>
+                    </dd>
+                </dl>
+
+								<!-- 20171219 s -->
+                <dl class="inT">
+                    <dt>메일 수신 여부</dt>
+                    <dd>
+                        <span class="radioF">
+                            <input data-val="true" data-val-required="메일 수신동의를 선택해 주세요." id="email_n" name="email_yn" type="radio" value="N">
+                            <label for="email_n">동의안함</label>
+                        </span>
+                        <span class="radioF">
+                            <input id="email_y" name="email_yn" type="radio" value="Y">
+                            <label for="email_y">동의</label>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="inT">
+                    <dt>SMS 수신 여부</dt>
+                    <dd>
+                        <span class="radioF">
+                            <input data-val="true" data-val-required="SMS 수신동의를 선택해 주세요." id="sms_n" name="sms_yn" type="radio" value="N">
+                            <label for="sms_n">동의안함</label>
+                        </span>
+                        <span class="radioF">
+                            <input id="sms_y" name="sms_yn" type="radio" value="Y">
+                            <label for="sms_y">동의</label>
+                        </span>
+                    </dd>
+                </dl>
+								<!-- 20171219 e -->
+
+
+                <dl class="inT">
+                    <dt>아이정보 입력</dt>
+                    <dd>
+                        <span class="radioF">
+                            <input data-val="true" data-val-required="아이정보 입력을 선택해 주세요." id="children_n" name="children_yn" type="radio" value="N">
+                            <label for="children_n">아이 없음</label>
+                        </span>
+                        <span class="radioF">
+                            <input id="children_y" name="children_yn" type="radio" value="Y">
+                            <label for="children_y">아이 있음 <span class="ts11">(임산부 포함)</span></label>
+                        </span>
+                    </dd>
+                    <dd>
+                        <p class="dotP mt10">다음 버튼을 클릭하시면 통합회원 가입이 완료되고, 아이 있음을 선택하신 경우 바로 아이입력 페이지로 이동합니다. </p>
+                    </dd>
+                </dl>
+                    <dl class="inT">
+                        <dd>
+                            <img style="width:100%;" src="https://m.ykbrand.co.kr/Common/images/common/momq_savemoney.png" alt="momQ 적립금">
+                        </dd>
+                    </dl>
+            </div>
+        </div>
+        <div class="btnWrap">
+            <a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none" id="btnSubmit">다음</a>
+        </div>
+</form></div>
+
+<div class="opacity_bg_pop"></div>
+<div class="select_id_pop" id="select_id_pop"></div>
+
+
+        </div>
+        <hr>
+        <!-- footer -->
+        <footer>
+						<p class="flogo">
+								<img src="https://m.ykbrand.co.kr/Common/images/common/flogo.png" alt="유한킴벌리">
+								<a href="https://m.ykbrand.co.kr/Terms/TermsPop?type=yk3" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+								<a href="https://m.ykbrand.co.kr/Terms/TermsPop?type=yk8" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+						</p>
+						<address>주소 : 서울시 강남구 테헤란로 504 (우) 06178</address>
+						<ul class="info">
+								<li>대표자 : 최규복</li>
+								<li>사업자번호 : 120-81-11436</li>
+								<li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
+						</ul>
+						<a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+						<p class="copy">Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.</p>
+						<img style="margin-top:16px; width:150px;" src="https://m.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크">
+				</footer>
+
+
+<!-- sns공유하기 팝업 -->
+<div id="selSns" class="popup hide">
+    <h3>공유하기</h3>
+    <div class="popCont ac">
+        <a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none"><img src="./m_join_info_files/img_popFacebook.gif" alt="Facebook"></a>
+        <a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none"><img src="./m_join_info_files/img_popKakao.gif" alt="Kakaostory"></a>
+    </div>
+    <a href="https://m.ykbrand.co.kr/SSL/Join3_Info?siteCode=MOMQ&amp;returnUrl=http%3A%2F%2Fwww.momq.co.kr%2Fmain%2FinitMain.action#none" class="popClose"><img src="./m_join_info_files/btn_close.png" alt="팝업닫기"></a>
+</div><!-- //sns공유하기 팝업 -->
+
+<div id="dim"></div>
+
+<a id="moveTop" href="javascript:window.scrollTo(0,0);">문서 상단으로 이동</a>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+
+
+
+	<!-- 2018-07-26 -->
+
+	<div class="popup__recommender--bg" id="popRecommBg">
+	<div id="layerPopup" class="popup__recommender">
+		<h3>추천인ID 검색</h3>
+		
+		<fieldset>
+		<form>
+			<table class="mbr__table--ipt" summary="이름, 휴대폰번호 입력 정보가 있습니다.">
+			<caption>이름, 휴대폰번호 입력 정보</caption>
+			<colgroup><col style="widows: 25%"><col width="*"></colgroup>
+			<tr>
+				<th scope="row"><label for="user_name">이름<sup  class="com">*</sup></label></th>
+				<td><input type="text" class="input1"></td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="ph_no">휴대폰 번호<sup  class="com">*</sup></label></th>
+				<td>
+					<input type="text" class="input1">
+				</td>
+			</tr>
+			</table>
+			<div>
+				<a href="#" class="btn1">검색</a>
+			</div>
+		</form>
+		</fieldset>
+		<ul class="ph_txt">
+			<li>추천인 이름과 휴대폰 번호로 ID를 검색하실 수 있습니다.</li>
+			<li>등록된 추천인은 변경 하실 수 없습니다.</li>
+			<li>휴면 계정의 경우 추천인 ID로 등록 하실 수 없습니다.</li>
+		</ul>
+
+
+		<h3>검색 결과</h3>
+		<table class="mbr__table--data" summary="이름,휴대폰번호,아이디 정보가 있습니다.">
+		<caption>이름,휴대폰번호,아이디 정보</caption>
+
+			<colgroup><col style="width:22%"><col  style="width:*"><col style="width:24%"></colgroup>
+
+		<tbody>
+			<tr>
+				<td>김*명</td>
+				<td>molla119</td>
+				<td>
+					<a href="" class="btn_sel">선택</a><!-- 선택시 활성화 class:on -->
+					<!--a href="" class="btn_sel on">선택</a--><!-- 선택시 활성화 class:on -->
+				</td>
+			</tr>
+		</tbody>
+		</table>
+
+		<div class="btn__area--center">
+			<a href="javascript:layerClose();">닫기</a>
+		</div>
+
+		<div class="btn__close--fix">
+			<a href="javascript:layerClose();">레이어닫기</a>
+		</div>
+	</div>
+	</div>
+	<script>
+		function layerClose() {
+			document.getElementById("popRecommBg").setAttribute("style", "display:none;");
+		}
+
+		function layerOpen() {
+			document.getElementById("popRecommBg").setAttribute("style", "display:block;");
+		}
+	</script>
+	<!-- //2018-07-26 -->
+
+</body></html>

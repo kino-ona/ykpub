@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<meta name="naver-site-verification" content="4547e200721fb33bd96acdbed8f96d9bb19d3653" />
+	<title>회원가입 | 유한킴벌리</title>
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+	<link rel="icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_default.png" type="image/x-icon">
+	<link rel="stylesheet" href="../../Common/css/common.css">
+	<link rel="stylesheet" href="https://www.ykbrand.co.kr/Common/css/jquery.bxslider.css">
+
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+	<!--[if lte IE 9]><script src="https://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+	<script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+	<!-- <script type="text/javascript" src="https://www.ykbrand.co.kr/Scripts/common.js?"></script> -->
+	<!-- <script src="https://www.ykbrand.co.kr//assets.adobedtm.com/e22872c43c9bf6414da13b76674efbd8abc845fa/satelliteLib-052e2e3b785f4de4f12727bb7d5a03b9522cfb90.js"></script> -->
+
+	<!-- <script type="text/javascript">
+		function jsFaceBook() {
+			FB.getLoginStatus(function(response) {
+				FB.login(function(response) {
+					var accessToken = response.authResponse.accessToken;
+					if (accessToken != "") {
+						jsUserInformation("FB", accessToken);
+					} else {
+						alert("Error [accessToken]");
+					}
+				}, {
+					scope: 'public_profile,email'
+				});
+			});
+		}
+		function jsKaKao() {
+			Kakao.Auth.login({
+				success: function(authObj) {
+					var accessToken = authObj.access_token;
+					jsUserInformation("KKO", accessToken);
+				},
+				fail: function(error) {
+					alert(JSON.stringify(error));
+				}
+			});
+		}
+		function jsNaver() {
+			var naverLoginWindow = window.open("https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id=UtwMcQfmfaZlzaKGYx01&amp;redirect_uri=https%3a%2f%2fwww.ykbrand.co.kr%2fSSL%2fLoginNaverReturnResult&amp;state=2018032713081536927",
+				"YKnaverLoginWindow", "width=400, height=300,  scrollbars=false, location=false, status=false");
+		}
+		function jsNaverResult(userProfile) {
+			jsCheckJoin(userProfile);
+		}
+		function jsUserInformation(snsType, accessToken) {
+			if (accessToken != "" && snsType != "") {
+				var sendData = {
+					"snsType": snsType,
+					"accessToken": accessToken
+				};
+				$.ajax({
+					type: "POST",
+					url: "/SSL/UserSNSinformation",
+					data: sendData,
+					dataType: "json",
+					async: false,
+					success: function(data) {
+						console.log("login result Data : " + JSON.stringify(data));
+						if (data.resultCode == "0000") {
+							var resultData = data.resultData;
+							var userProfile = new Object();
+							userProfile.snsType = resultData.snsType;
+							userProfile.name = resultData.name;
+							userProfile.nickName = resultData.nickName;
+							userProfile.email = resultData.email;
+							userProfile.snsIndexKey = resultData.snsIndexKey;
+							jsCheckJoin(userProfile);
+						} else {
+							alert('고객님의 SNS 정보 호출에 실패하였습니다.[Error : ' + data.resultCode + "]");
+						}
+					},
+					error: function() {
+						alert('SNS 로그인 연동에 실패하였습니다.');
+					}
+				});
+			} else {
+				alert("Error [accessToken]");
+			}
+		}
+		function jsCheckJoin(userProfile) {
+			var frm = document.snsJoinFrm;
+			if (userProfile.snsType != "" && userProfile.snsIndexKey != "") {
+				var loginData = new Object();
+				loginData.snsType = userProfile.snsType;
+				loginData.snsIndexKey = userProfile.snsIndexKey;
+				$.ajax({
+					type: "POST",
+					url: "/SSL/SNS_Account_Check",
+					data: loginData,
+					dataType: "json",
+					async: false,
+					success: function(res) {
+						console.log("membercheck result Data : " + JSON.stringify(res));
+						if (res.resultCode == "0000") {
+							//  정상
+							jsJoin(userProfile);
+						} else if (res.resultCode == "0001") {
+							//  가입된 계정
+							$.ajax({
+								type: "POST",
+								url: "/SSL/SNSlogin",
+								data: loginData,
+								dataType: "json",
+								async: false,
+								success: function(res) {
+									console.log("membercheck result Data : " + JSON.stringify(res));
+									if (res.resultCode == "0000") {
+										var returnUri = frm.returnUrl.value;
+										alert("해당 SNS 계정은 이미 가입한 계정입니다.  로그인 되었습니다.");
+										location.replace(returnUri);
+									} else {
+										alert('로그인 진행중 오류가 발생하였습니다.');
+									}
+								},
+								error: function() {
+									alert('SNS 로그인 연동에 실패하였습니다.');
+								}
+							});
+						} else if (res.resultCode == "0002") {
+							//  탈퇴한 계정
+							if (res.reJoinState == "Y") {
+								if (confirm("탈퇴한 계정입니다.재가입 하시겠습니까?")) {
+									jsJoin(userProfile);
+								}
+							} else {
+								alert("탈퇴한 계정입니다.");
+							}
+						} else if (res.resultCode == "0003") {
+							//  휴면 계정
+							jsRestore(userProfile);
+						} else if (res.resultCode == "0004") {
+							//  휴면 탈퇴 계정
+							if (res.reJoinState == "Y") {
+								if (confirm("휴면 탈퇴 계정입니다.재가입 하시겠습니까?")) {
+									jsJoin(userProfile);
+								}
+							} else {
+								alert("휴면 탈퇴된 계정입니다.");
+							}
+						} else {
+							//  Error
+							alert("서버 오류가 발생하였습니다.");
+						}
+					},
+					error: function() {
+						alert('SNS 로그인 연동에 실패하였습니다.');
+					}
+				});
+			} else {
+				resultData.resultMessage = "회원 확인중 오류가 발생하였습니다.";
+			}
+		}
+		function jsJoin(userProfile) {
+			var frm = document.snsJoinFrm;
+			frm.snsType.value = userProfile.snsType;
+			frm.name.value = userProfile.name;
+			frm.nickName.value = userProfile.nickName;
+			frm.email.value = userProfile.email;
+			frm.snsIndexKey.value = userProfile.snsIndexKey;
+			frm.action = "/SSL/SNS_Join_UserInformation";
+			frm.submit();
+		}
+		function jsRestore(userProfile) {
+			var frm = document.snsJoinFrm;
+			frm.snsType.value = userProfile.snsType;
+			frm.name.value = userProfile.name;
+			frm.nickName.value = userProfile.nickName;
+			frm.email.value = userProfile.email;
+			frm.snsIndexKey.value = userProfile.snsIndexKey;
+			frm.action = "/SSL/SNS_Inactive_member";
+			frm.submit();
+		}
+	</script> -->
+</head>
+<body class="sso">
+	<div id="yk_lodings" class="maskWhite" style="display:none;">
+		<div class="lodings"></div>
+	</div>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header>
+			<!-- headerCont -->
+			<div class="headerCont">
+				<h1>
+            <a href="/"><img src="https://www.ykbrand.co.kr/Common/images/common/yk_simple_logo.png" alt="유한킴벌리 통합회원" /></a>
+        </h1>
+			</div>
+			<!--//headerCont -->
+		</header>
+		<!--//header -->
+		<!-- container -->
+		<div id="container">
+			<!-- sso 컨텐츠 -->
+			<div class="ssoContent">
+				<!-- 타이틀 영역 -->
+				<div class="titArea st">
+					<h2>회원가입</h2>
+				</div>
+				<!--//타이틀 영역 -->
+				<!-- 로그인 영역 -->
+				<div class="simple_join">
+
+					<!-- 20180327 : 마크업 및 텍스트 수정 s -->
+					<p class="title ac">  <!-- 20180327 : 클래스 추가 //-->
+						유한킴벌리 회원가입을 환영합니다.
+					</p>
+					<!-- 20180327 삭제
+					<p class="content">
+						회원가입을 통해 하나의 ID로 momQ, 선물대잔치, 브랜드 사이트의 다양한 서비스를 편리하게 이용하실 수 있습니다.
+					</p> -->
+
+					<div class="social_img mar_t30">
+						<div class="simple_line">
+							<span>통합 회원</span>
+							<p class="content">통합 회원이 되시면 하나의 ID와 비밀번호로  momQ, 선물대잔치, 브랜드 사이트의 다양한 서비스를 이용하실 수 있습니다.</p>
+						</div>
+						<div class="btn_area mar_b50">
+							<a href="/SSL/Join1_Start?returnUrl=%2Fwhite">회원가입</a>
+						</div>
+
+						<div class="simple_line">
+							<span>간편 가입 회원</span>
+							<p class="content">간편 가입 회원이 되시면 SNS 로그인을 통해 본인인증 없이 당사 서비스 홈페이지를 이용할 수 있습니다.</p>
+						</div>
+						<ul class="social_img_ul clearfix">
+							<li><a href="javascript:;" onclick="jsNaver();"><img src="../../Common/images/simple/simple_naver_join.jpg" alt="네이버 인증 가입"></a></li>
+							<li><a href="javascript:;" onclick="jsFaceBook();"><img src="../../Common/images/simple/simple_facebook_join.jpg" alt="페이스북 인증 가입"></a></li>
+							<li><a href="javascript:;" onclick="jsKaKao();"><img src="../../Common/images/simple/simple_kakao_join.jpg" alt="카카오 인증 가입"></a></li>
+						</ul>
+					</div>
+					<!--// 20180327 : 마크업 및 텍스트 수정 e -->
+
+				</div>
+				<!--//회원가입 안내 -->
+
+				<!-- 2018-11-02 modify -->
+				<div class="mar_t30">
+					<p class="red_txt">※ ID간의 momQ 포인트 및 선물대잔치 점수 이관은 불가합니다.</p>
+					<p class="txt mar_t10">※ 만 14세 미만의 아동은 회원가입이 불가합니다.</p>
+				</div>
+				<!--// 2018-11-02 modify -->
+
+				<!-- 2018-11-02 : 배너 수정 s -->
+				<div class="ac pad_t40">
+					<img src="../../Common/images/common/coupon_momq_banne_1102.jpg" alt="유한킴벌리직영몰 맘큐회가입선물" />
+				</div>
+				<!--//2018-11-02 : 배너 수정 e -->
+
+			</div>
+			<!--//sso 컨텐츠 -->
+			<!-- SNS Login -->
+			<form id="snsJoinFrm" name="snsJoinFrm" method="post">
+				<input type="hidden" name="siteCode" id="siteCode" value="YKBRAND" />
+				<input type="hidden" name="returnUrl" id="returnUrl" value="/white" />
+				<input type="hidden" name="resultUrl" id="resultUrl" />
+				<input type="hidden" name="snsType" id="snsType" value="" />
+				<input type="hidden" name="name" id="name" value="" />
+				<input type="hidden" name="nickName" id="nickName" value="" />
+				<input type="hidden" name="email" id="email" value="" />
+				<input type="hidden" name="snsIndexKey" id="snsIndexKey" value="" />
+			</form>
+			<!--// SNS Login -->
+		</div>
+		<!--//container -->
+		<!-- footer -->
+		<footer>
+			<!-- footerCont -->
+			<div class="footerCont">
+				<!-- footsec -->
+				<div class="footsec">
+					<!-- logo -->
+					<p class="footlogo"><img src="https://www.ykbrand.co.kr/Common/images/common/footlogo.gif" alt="유한킴벌리" /></p>
+					<!-- footMenu -->
+					<ul class="footMenu">
+						<li><a href="javascript:mainTerms('yk3', 960, 520)" title="사이트이용약관 새창보기">사이트이용약관</a></li>
+						<li><a href="javascript:mainTerms('yk8', 960, 520)" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a></li>
+					</ul>
+					<img style="float:right; margin-top:30px;" src="https://www.ykbrand.co.kr/Common/images/common/Web_img.png" alt="웹접근성 마크" />
+					<!--//footMenu -->
+					<!-- corpInfo -->
+					<div class="corpInfo">
+						주소 : 서울시 강남구 테헤란로 504 (우) 06178<span>대표자 : 최규복</span><span>사업자번호 : 120-81-11436</span><br /> 고객지원센터 : 080-022-7007 <a href="https://www.yuhan-kimberly.co.kr/Customer/Company" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+					</div>
+					<!-- copy-->
+					<p class="copy">Copyright@2015 Yuhan-Kimberly.All right Reserved.</p>
+					<!-- btnTop -->
+					<a href="#" class="btnTop"><img src="https://www.ykbrand.co.kr/Common/images/btn/btn_top.gif" alt="상단 바로가기" /></a>
+				</div>
+				<script>
+					function mainTerms(type, width, height) {
+						window.open('/Terms/TermsPop?type=' + type, 'terms', 'width=' + width + ', height=' + height + ', menubar=no, status=no, toolbar=no, scrollbars=yes');
+					}
+				</script>
+				<!--//footsec -->
+			</div>
+			<!--//footerCont -->
+		</footer>
+		<!--//footer -->
+	</div>
+	<!--//wrap -->
+</body>
+</html>

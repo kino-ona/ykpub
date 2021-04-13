@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="유한킴벌리">
+<meta name="keywords" content="유한킴벌리">
+<meta name="description" content="유한킴벌리">
+<title>로그인 팝업 | 유한킴벌리 통합브랜드</title>
+<link rel="icon" href="../Common/images/favicon/favicon_default.png" type="image/x-icon">
+<link rel="stylesheet" href="../../Common/css/common.css">
+<link rel="stylesheet" href="../../Common/css/jquery.bxslider.css">
+
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/front.ui.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Common/js/jquery.bxslider.js"></script>
+<!--[if lte IE 9]><script src="http://www.ykbrand.co.kr/Common/js/Placeholders.min.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/jQuery.FileUpload/jquery.iframe-transport.js"></script>
+<!-- <script type="text/javascript" src="http://www.ykbrand.co.kr/Scripts/common.js"></script> -->
+</head>
+<body class="sso">
+<!-- 로그인 팝업 (580 * 722) -->
+<div class="loginPop">
+	<h1><img src="../../Common/images/common/simple_yk_logo.png" alt="유한킴벌리 통합회원"></h1>
+	<a href="#"><img class="simple_pop_close" src="../../Common/images/Simple/simple_pop_close.png" alt="닫기"></a>
+	<div class="simple_login_layout">
+	</div>
+	<p class="simple_login_label">
+		로그인
+	</p>
+	<!-- 로그인 영역 -->
+	<div class="loginArea simple"> <!-- 201801 간편가입 s : 클래스 추가 //-->
+		<form action="" method="post">
+			<div class="sec1">
+				<dl>
+					<dt><label for="userId">아이디</label></dt>
+					<dd><input class="input1" id="userId" name="userId" placeholder="아이디를 입력해 주십시오." title="사용자 아이디 입력" type="text" value=""></dd>
+					<dt class="mgt10"><label for="userPw">비밀번호</label></dt>
+					<dd class="mgt10"><input class="input1" id="userPw" name="userPw" placeholder="비밀번호를 입력해 주십시오." title="사용자 비밀번호 입력" type="password" value=""></dd>
+				</dl>
+				<ul>
+					<li><input id="isIdSave" name="isIdSave" type="checkbox" value="true"><input name="isIdSave" type="hidden" value="false"><label for="isIdSave">아이디 저장</label></li>
+					<li><a href="javascript:btnFindId();">아이디 찾기</a></li>
+					<li><a href="javascript:btnFindPwd();">비밀번호 찾기</a></li>
+				</ul>
+			</div>
+			<div class="sec2">
+				<a href="#none" id="btnLogin">로그인</a>
+			</div>
+			<div class="simple_pop_or">
+				<img src="../../Common/images/Simple/simple_pop_or.jpg" alt="유한킴벌리 로그인 선">
+			</div>
+			<ul class="simple_login_small clearfix">
+				<li><a href="#"><img src="../../Common/images/Simple/simple_naver_small.jpg" alt="네이버 간편 로그인"></a></li>
+				<li><a href="#"><img src="../../Common/images/Simple/simple_facebook_small.jpg" alt="페이스북 간편 로그인"></a></li>
+				<li><a href="#"><img src="../../Common/images/Simple/simple_kakao_small.jpg" alt="카카오 간편로그인"></a></li>
+			</ul>
+		</form>
+	</div>
+	<!-- //로그인 영역 -->
+	<!-- 회원가입 안내 -->
+	<div class="simple_join_guid_pop">
+		<p class="tilte">
+			유한킴벌리 회원이 되시면
+		</p>
+		<p class="content"><!-- 201801 간편가입 s //-->
+			하나의 ID로 momQ, MONIT, 유한킴벌리 브랜드, 선물대잔치 사이트의<br>
+			다양한 서비스를 편리하게 이용할 수 있습니다.
+		</p><!-- 201801 간편가입 e //-->
+		<div class="btn_area">
+			<a href="#">회원가입</a>
+		</div>
+	</div>
+	<!-- //회원가입 안내 -->
+</div>
+<!-- //로그인 에러 팝업 -->
+<!-- 로그인실패 레이어 -->
+<div class="loginErrorLayer" style="display:none">
+	<div class="layerCont">
+		<p class="txt1">
+			아이디 또는 비밀번호를 다시 확인하십시오.
+		</p>
+		<p class="txt2">
+			<strong>통합회원에 아직 가입하지 않으셨거나</strong>아이디 또는 비밀번호를 잘못 입력하셨습니다.
+		</p>
+		<div class="btn">
+			<a href="javascript:closeLayer();">확인</a>
+		</div>
+		<!-- 회원가입 안내 -->
+		<div class="joinInfo" style="padding-right:30px;">
+			<dl>
+				<dt><span>유한킴벌리 통합회원 ID란?</span><br>
+				브랜드 사이트, momQ, 선물대잔치에 공통 적용되는 통합 ID입니다.</dt>
+				<dd>- (하기스, 하기스 아기물티슈, 굿나이트, 화이트, 좋은느낌, 크리넥스, 스카트, 마이비데, 디펜드, 티엔, 그린핑거, 우리나눔TV, 골든프렌즈) 브랜드 사이트와 momQ, 선물대잔치의 기존 회원님께서는 아래 통합회원 가입을 통해서 전환을 진행해 주세요.</dd>
+			</dl>
+			<p class="btnJoin">
+				<a href="javascript:btnJoin();">통합회원 가입</a>
+			</p>
+		</div>
+		<!-- //회원가입 안내 -->
+	</div>
+</div>
+<!-- //로그인실패 레이어 -->
+</body>
+</html>

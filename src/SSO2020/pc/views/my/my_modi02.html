@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="../../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../../Scripts/jquery-ui-1.11.4.min.js"></script>
+	<link rel="stylesheet" href="../../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span><span class="txt">개인정보관리</span></a></h1>
+				<p class="childlogo"><a href="#"><span class="a11y_sr-only">momQ</span></a></p>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="my_wrap">
+					<div class="tabwrap">
+						<ul class="tablist">
+							<li><a href="my_modi01.html">회원정보 수정</a>
+							<li class="seleted"><a href="my_modi02.html">약관 관리</a>
+						</ul>
+					</div>
+
+					<h2 class="h2_ti">약관동의</h2>
+					<div class="terms_target">
+						<p><span>이용서비스<br>선택</span></p>
+						<div>
+							<p><input type="checkbox" id="allchk"><label for="allchk"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 </label></p>
+							<p>
+								<input type="checkbox" id="chk01"><label for="chk01">통합브랜드</label>
+								<input type="checkbox" id="chk01"><label for="chk01">맘큐</label>
+								<input type="checkbox" id="chk01"><label for="chk01">모닛</label>
+							</p>
+						</div>
+					</div>
+
+					<div class="join_form">
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk">유한킴벌리 SSO회원 약관 전체 동의</label></p>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 이용약관</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk03"><label for="chk03"><span class="sel">(선택)</span> 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+						</ul>
+
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk">통합브랜드 약관 전체 동의</label></p>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk01_1"><label for="chk01_1"><span class="esse">(필수)</span> 통합브랜드 이용약관</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk01_2"><label for="chk01_2"><span class="esse">(필수)</span> 통합브랜드 필수항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- <li>
+								<p><input type="checkbox" id="chk01_3"><label for="chk01_3"><span class="sel">(선택)</span> 통합브랜드 선택항목 개인정보 수집 및 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<li>
+								<p><input type="checkbox" id="chk01_4"><label for="chk01_4"><span class="sel">(선택)</span> 통합브랜드 마케팅 목적 이용</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- <li>
+								<p><input type="checkbox" id="chk01_5"><label for="chk01_5"><span class="sel">(선택)</span> 통합브랜드 개인정보 처리위탁</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li> -->
+						</ul>
+
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk">맘큐 약관 전체 동의</label></p>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk02_1"><label for="chk02_1"><span class="esse">(필수)</span> 맘큐 이용약관</label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+							<li>
+								<p><input type="checkbox" id="chk02_2"><label for="chk02_2"><span class="esse">(필수)</span> 맘큐 필수항목 개인정보 수집 및 이용</label></p>
+								<a href="#" class="btn_vw">보기</a>
+							</li>
+							<!-- <li>
+								<p><input type="checkbox" id="chk02_3"><label for="chk02_3"><span class="sel">(선택)</span> 맘큐 선택항목 개인정보 수집 및 이용</label></p>
+								<a href="#" class="btn_vw">보기</a>
+							</li> -->
+							<li>
+								<p><input type="checkbox" id="chk02_4"><label for="chk02_4"><span class="sel">(선택)</span> 맘큐 마케팅 목적 이용</label></p>
+								<a href="#" class="btn_vw">보기</a>
+							</li>
+							<!-- <li>
+								<p><input type="checkbox" id="chk02_5"><label for="chk02_5"><span class="sel">(선택)</span> 맘큐 개인정보 처리위탁</label></p>
+								<a href="#" class="btn_vw">보기</a>
+							</li> -->
+						</ul>
+
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk"><strong>광고성 정보 수신 동의</strong></label></p> <!-- 20200904 //-->
+							</li>
+							<li>
+								<div class="select_chk">
+									<p class="tit">통합브랜드</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
+									</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk02" name=""><label for="rchk02">SMS 수신</label>
+									</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
+									</p>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="btnwrap btn_foo">
+						<a href="#" class="btnDefault btnfull">확인</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- 추천인 ID 검색 레이어  -->
+	<div class="layerbody" id="pwdChangeLayer">
+		<div class="layerwrap pwdchangelayer">
+			<a class="btn_close" onclick="layerClose('pwdChangeLayer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>비밀번호 변경</p>
+			</div>
+			<div class="layconts">
+				<div>
+					<ul class="input_frm">
+						<li>
+							<p class="ti">현재 비밀번호</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value="" placeholder="현재 비밀번호를 입력해주세요." >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">현재 비밀번호가 일치하지 않습니다.</span>
+						</li>
+						<li>
+							<p class="ti">신규 비밀번호</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value=""  placeholder="8~20자, 영문/숫자/특수문자 조합" >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">8~20자의 영문/숫자/특수문자 조합으로 입력해주세요.</span>
+						</li>
+						<li>
+							<p class="ti">비밀번호 확인</p>
+							<!-- 20210315 비밀번호 마스킹 수정 -->
+							<p class="put masking">
+								<input type="password" value="" placeholder="비밀번호를 다시 입력해주세요." >
+								<button class="btn_masking"><i class="ic_show"></i></button>
+							</p>
+							<!--// 20210315 비밀번호 마스킹 수정 -->
+							<span class="errtx">비밀번호와 비밀번호 확인이 일치하지 않습니다.</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btnwrap">
+					<a href="#" class="btn btn_blue btnfull">변경</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--// 추천인 ID 검색 레이어  -->
+</body>
+<script>
+// 레이어팝업 열기
+function layerOpen(set) {
+  $('#' + set).addClass('show');
+  $('body, html').addClass('noscroll');
+}
+// 레이어팝업 닫기
+function layerClose(set) {
+  $('#' + set).removeClass('show');
+  $('body, html').removeClass('noscroll');
+}
+</script>
+<script>
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+</script>
+</html>

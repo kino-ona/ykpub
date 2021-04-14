@@ -203,6 +203,8 @@ p.help:before {
 .sso_wrap .logo_list .logos_green:hover {background-image:url(../images/sso/logos_green_on.jpg);}
 .sso_wrap .logo_list .logos_monit {background-image:url(../images/sso/logos_monit.jpg);}
 .sso_wrap .logo_list .logos_monit:hover{background-image:url(../images/sso/logos_monit_on.jpg);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal_on.jpg);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.jpg);}
 .join_form {margin-top:25px;}
 .errtx {clear:both;display: block;left:0;padding-top:5px;color:#e63c4f;font-size: 13px;}
 .input_frm {margin-bottom:70px;}
@@ -559,3 +561,174 @@ p, span, li, a{word-break: keep-all;}
 .masking .ic_hide {	background-image: url(../images/sso/icon_hide.png);}
 .masking .ic_show {  background-image: url(../images/sso/icon_show.png);}
 /* 20210315 e */
+
+/* 20210414 s */
+.sso_intro {
+	min-width: 1400px;
+	background-color: #efefef;
+	padding-bottom: 100px;
+	.logo {
+		top: 30px;
+		left: 40px;
+	}
+	.toparea {
+		height: 820px;
+		background-image: none;
+		background-color: #048cfe;
+		margin-bottom: 0;
+		.row {
+			padding: 155px 0 0;
+			min-width: 1400px;
+			.fig {
+				width: 797px;
+				right: 0;
+				background: url(../images/sso/ssointr_img_210414.png) no-repeat top right;
+				background-size: 797px;
+			}
+			.desc {
+				padding-left: 200px;
+				span {
+					background-color: #0039a2;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 16px;
+					line-height: 1.0;
+					padding: 10px 18px;
+					margin-left: -10px;
+				}
+				.slogan {
+					font-size: 50px;
+					line-height: 70px;
+					margin: 18px 0 0;
+					strong {
+						font-size: inherit;
+						line-height: inherit;
+					}
+				}
+				.detail {
+					margin-top: 20px;
+					font-size: 16px;
+					line-height: 30px;
+					font-weight: 350;
+					em {
+						font-weight: 500;
+						font-style: normal;
+					}
+				}
+			}
+		}
+	}
+	.content_wrap {
+		width: 1200px;
+		margin-top: -100px;
+		background-color: #fff;
+		padding: 95px 95px 70px;
+		box-sizing: border-box;
+	}
+	section {
+		margin-bottom: 95px;
+		&:last-of-type {margin-bottom: 0;}
+		display: flex;
+		justify-content: space-between;
+		.ititle {
+			width: 100%;
+			max-width: 270px;
+			display: block;
+			text-align: left;
+			margin-right: 70px;
+			dt {
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			dd {
+				font-size: 14px;
+				line-height: 26px;
+				font-weight: 350;
+				position: relative;
+				left: 8px;
+				&:before {
+					content: "· ";
+					position: absolute;
+					left: -8px;
+				}
+			}
+		}
+		.logo_list {
+			width: 100%;
+			li {
+				width: 155px;
+				margin-right: 15px;
+    		margin-bottom: 15px;
+				&:nth-child(3n) {margin-right: 15px;}
+				&:nth-child(4n) {margin-right: 0;}
+			}
+		}
+		.benefs {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			li {
+				flex: 0 0 auto;
+				&:last-of-type {margin-top: 60px;}
+			}
+		}
+		.history {
+			background-color: #f8f8f8;
+			width: 100%;
+			li {
+				&:nth-of-type(2n) {background-color: #fff;}
+				padding: 25px 0;
+				display: flex;
+				justify-content: space-between;
+				.date {
+					padding: 0 40px;
+					font-size: 18px;
+					font-weight: 700;
+					text-align: center;
+				}
+				.desc {
+					width: 100%;
+					padding: 0 17px;
+					font-size: 14px;
+					.tit {
+						font-weight: 500;
+						line-height: 26px;
+					}
+					.exp {
+						margin-top: 3px;
+						line-height: 26px;
+						font-weight: 350;
+						color: #888;
+					}
+				}
+			}
+		}
+		a {display: inline-block;}
+		i {font-weight: 350;color: #888;font-style: normal;}
+	}
+}
+footer.renewfoo {
+	width: 100%;
+	min-width: 1400px;
+	background-color: #3c3c3c;
+	.familysite {
+		select {
+			background-color: #3c3c3c;
+		}
+	}
+	.footerCont {
+		.btnFloat {
+			position: fixed;
+			right: 25px;
+			height: 130px;
+			border-radius: 50%;
+			overflow: hidden;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+			&.cta01 {bottom: 250px;}
+			&.cta02 {bottom: 100px;}
+		}
+	}
+}
+/* 20210414 e */

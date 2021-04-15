@@ -587,7 +587,6 @@ p, span, li, a{word-break: keep-all;}
 				background-size: 797px;
 			}
 			.desc {
-				// padding-left: 200px;
 				padding-left: 0;
 				position: absolute;
 				left: 46.667%;
@@ -651,12 +650,18 @@ p, span, li, a{word-break: keep-all;}
 				font-size: 14px;
 				line-height: 26px;
 				font-weight: 350;
-				position: relative;
-				left: 8px;
-				&:before {
-					content: "· ";
-					position: absolute;
-					left: -8px;
+			}
+		}
+		&:first-of-type {
+			.ititle {
+				dd {
+					position: relative;
+					left: 8px;
+					&:before {
+						content: "· ";
+						position: absolute;
+						left: -8px;
+					}
 				}
 			}
 		}

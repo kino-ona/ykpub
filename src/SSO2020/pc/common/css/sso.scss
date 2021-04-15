@@ -578,6 +578,7 @@ p, span, li, a{word-break: keep-all;}
 		margin-bottom: 0;
 		.row {
 			padding: 155px 0 0;
+			width: 100%;
 			min-width: 1400px;
 			.fig {
 				width: 797px;
@@ -586,7 +587,11 @@ p, span, li, a{word-break: keep-all;}
 				background-size: 797px;
 			}
 			.desc {
-				padding-left: 200px;
+				// padding-left: 200px;
+				padding-left: 0;
+				position: absolute;
+				left: 46.667%;
+				transform: translateX(-100%);
 				span {
 					background-color: #0039a2;
 					display: inline-block;

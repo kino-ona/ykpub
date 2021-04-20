@@ -728,6 +728,7 @@ p, span, li, a{word-break: keep-all;}
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 		&.cta01 {bottom: 250px;}
 		&.cta02 {bottom: 100px;}
+		z-index: 1;
 	}
 }
 footer.renewfoo {

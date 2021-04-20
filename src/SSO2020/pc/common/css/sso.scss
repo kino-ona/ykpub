@@ -718,6 +718,17 @@ p, span, li, a{word-break: keep-all;}
 		a {display: inline-block;}
 		i {font-weight: 350;color: #888;font-style: normal;}
 	}
+
+	.btnFloat {
+		position: fixed;
+		right: 25px;
+		height: 130px;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+		&.cta01 {bottom: 250px;}
+		&.cta02 {bottom: 100px;}
+	}
 }
 footer.renewfoo {
 	width: 100%;
@@ -726,18 +737,6 @@ footer.renewfoo {
 	.familysite {
 		select {
 			background-color: #3c3c3c;
-		}
-	}
-	.footerCont {
-		.btnFloat {
-			position: fixed;
-			right: 25px;
-			height: 130px;
-			border-radius: 50%;
-			overflow: hidden;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-			&.cta01 {bottom: 250px;}
-			&.cta02 {bottom: 100px;}
 		}
 	}
 }

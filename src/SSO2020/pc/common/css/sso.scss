@@ -755,6 +755,7 @@ footer.renewfoo {
 			transform: translateY(2.5px);
 			width: 16px;
 			height: 16px;
+			cursor: pointer;
 			background: {
 				image: url(../images/sso/tooltip.jpg);
 				size: 16px;
@@ -776,7 +777,7 @@ footer.renewfoo {
 		width: max-content;
 		background-color: #009fe3;
 		padding: 15px;
-		border-radius: 5px;
+		border-radius: 10px;
 		color: #fff;
 		font-style: normal;
 		font-size: 10px;
@@ -803,6 +804,7 @@ footer.renewfoo {
 			right: 10px;
 			width: 12px;
 			height: 12px;
+			cursor: pointer;
 			background: {
 				image: url(../images/sso/btn_tooltip_close.png);
 				size: 12px;

@@ -446,9 +446,10 @@ p, span, li{word-break: keep-all;}
 
 /* 210701 s */
 .sso_wrap .join_wrap .select_chk .rchk {
-	label {
+	label.tooltip {
+		width: auto;
 		position: relative;
-		i {
+		& + i {
 			display: inline-block;
 			max-width: 100%;
 			margin-left: 2.5px;
@@ -463,7 +464,7 @@ p, span, li{word-break: keep-all;}
 			}
 		}
 	}
-	.tooltip {
+	span.tooltip {
 		&.show {
 			display: block;
 		}

@@ -443,3 +443,73 @@ p, span, li{word-break: keep-all;}
 .masking .ic_hide {	background-image: url(../images/sso/icon_hide.png);}
 .masking .ic_show {  background-image: url(../images/sso/icon_show.png);}
 /* 20210315 e */
+
+/* 210701 s */
+.sso_wrap .join_wrap .select_chk .rchk {
+	i {
+		display: inline-block;
+		position: relative;
+		max-width: 100%;
+		margin-left: 2.5px;
+		transform: translateY(2.5px);
+		width: 14px;
+		height: 14px;
+		background: {
+			image: url(../images/sso/tooltip.jpg);
+			size: 14px;
+			repeat: no-repeat;
+			position: center center;
+		}
+		.tooltip {
+			&.show {
+				display: block;
+			}
+			display: none;
+			z-index: 99;
+			position: absolute;
+			top: -10px;
+			left: calc(100% + 10px);
+			max-width: 180px;
+			min-width: 140px;
+			width: max-content;
+			background-color: #009fe3;
+			border-radius: 5px;
+			padding: 12px 10px;
+			color: #fff;
+			font-style: normal;
+			font-size: 10px;
+			font-weight: 350;
+			em {
+				font-style: normal;
+				font-size: 12px;
+				font-weight: inherit;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 5px 5px 0;
+				border-color: transparent #009fe3 transparent transparent;
+				right: 100%;
+				top: 12px;
+			}
+			.btn_close {
+				display: inline-block;
+				position: absolute;
+				top: 8px;
+				right: 8px;
+				width: 10px;
+				height: 10px;
+				background: {
+					image: url(../images/sso/btn_tooltip_close.png);
+					size: 10px;
+					repeat: no-repeat;
+					position: center center;
+				}
+			}
+		}
+	}
+}
+/* 210701 e */

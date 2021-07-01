@@ -742,3 +742,71 @@ footer.renewfoo {
 	}
 }
 /* 20210414 e */
+
+/* 210701 s */
+.sso_wrap .join_wrap .select_chk .rchk {
+	i {
+		display: inline-block;
+		position: relative;
+		max-width: 100%;
+		margin-left: 2.5px;
+		transform: translateY(2.5px);
+		width: 16px;
+		height: 16px;
+		background: {
+			image: url(../images/sso/tooltip.jpg);
+			size: 16px;
+			repeat: no-repeat;
+			position: center center;
+		}
+		.tooltip {
+			&.show {
+				display: block;
+			}
+			display: none;
+			z-index: 99;
+			position: absolute;
+			top: calc(100% + 10px);
+			left: -20px;
+			min-width: 145px;
+			width: max-content;
+			background-color: #009fe3;
+			padding: 15px;
+			border-radius: 5px;
+			color: #fff;
+			font-style: normal;
+			font-size: 10px;
+			font-weight: 350;
+			em {
+				font-style: normal;
+				font-size: 12px;
+				font-weight: inherit;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 5px 5px 5px;
+				border-color: transparent transparent #009fe3 transparent;
+				left: 23px;
+				bottom: 100%;
+			}
+			.btn_close {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				width: 12px;
+				height: 12px;
+				background: {
+					image: url(../images/sso/btn_tooltip_close.png);
+					size: 12px;
+					repeat: no-repeat;
+					position: center center;
+				}
+			}
+		}
+	}
+}
+/* 210701 e */

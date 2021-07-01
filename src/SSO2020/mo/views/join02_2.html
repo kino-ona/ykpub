@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="join_wrap ">
 					<h1><span>회원정보 입력 및 이용약관에</span>동의해주세요.</h1>
-<!-- 필수 정보 입력 -->
+					<!-- 필수 정보 입력 -->
 					<div class="join_form">
 						<h2 class="h2_ti">필수 정보 입력</h2>
 						<p class="desc">모든 항목이 필수 입력 사항입니다.</p>
@@ -99,7 +99,7 @@
 								<span class="errtx">이메일 형식이 잘못되었습니다.</span>
 							</li>
 						</ul>
-<!-- 약관 동의 -->
+						<!-- 약관 동의 -->
 						<h2 class="h2_ti">약관 동의</h2>
 						<p class="desc">이용약관 및 정보활용 안내를 읽고 동의해주세요. </p>
 						<ul class="terms_chk">
@@ -154,9 +154,14 @@
 									<p class="rchk">
 										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
 									</p>
+									<!-- 20210701 툴팁추가 -->
 									<p class="rchk">
-										<input type="checkbox" id="rchk02" name=""><label for="rchk02">SMS 수신</label>
+										<input type="checkbox" id="rchk02" name="">
+										<label for="rchk02">SMS 수신 <i>
+											<span class="tooltip show"><em>SMS 수신동의 하시면, 베베쿡<br>첫주문 5천원 할인 쿠폰을 드립니다.</em><br>(가입 다음날 지급)<span class="btn_close"></span></span>
+										</i></label>
 									</p>
+									<!--// 20210701 툴팁추가 -->
 									<p class="rchk">
 										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
 									</p>
@@ -164,9 +169,7 @@
 								</div>
 							</li>
 						</ul>
-
 					</div>
-
 
 					<div class="btnwrap btn_foo">
 						<a href="#" class="btn btn_next">다음</a>
@@ -410,20 +413,22 @@ function childAddSel(set){
 function childElDel(set){
 	$(set).parents('.childadd').remove();
 }
+// 20210315 비밀번호 마스킹	
+$('.masking .btn_masking').on('click', function() {
+	if ($(this).parent('.masking').hasClass('_not')) {
+			$(this).parent('.masking').removeClass('_not');
+			$(this).parent('.masking').find('input').attr('type', 'password');
+			$(this).children('i').attr('class','ic_show');
+	} else {
+			$(this).parent('.masking').addClass('_not');
+			$(this).parent('.masking').find('input').attr('type', 'text');
+			$(this).children('i').attr('class','ic_hide');
+	}
+});
 
-</script>
-<script>
-	// 20210315 비밀번호 마스킹	
-	$('.masking .btn_masking').on('click', function() {
-		if ($(this).parent('.masking').hasClass('_not')) {
-				$(this).parent('.masking').removeClass('_not');
-				$(this).parent('.masking').find('input').attr('type', 'password');
-				$(this).children('i').attr('class','ic_show');
-		} else {
-				$(this).parent('.masking').addClass('_not');
-				$(this).parent('.masking').find('input').attr('type', 'text');
-				$(this).children('i').attr('class','ic_hide');
-		}
-	});
+// 툴팁 닫기
+$('.sso_wrap .rchk .tooltip').on("click", function() {
+	$(".sso_wrap .rchk .tooltip").toggleClass('show');
+});
 </script>
 </html>

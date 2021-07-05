@@ -444,26 +444,26 @@ p, span, li{word-break: keep-all;}
 .masking .ic_show {  background-image: url(../images/sso/icon_show.png);}
 /* 20210315 e */
 
-/* 210701 s */
-.sso_wrap .join_wrap .select_chk .rchk {
-	label.tooltip {
-		width: auto;
-		position: relative;
-		& + i {
-			display: inline-block;
-			max-width: 100%;
-			margin-left: 2.5px;
-			transform: translateY(2.5px);
-			width: 14px;
-			height: 14px;
-			background: {
-				image: url(../images/sso/tooltip.jpg);
-				size: 14px;
-				repeat: no-repeat;
-				position: center center;
-			}
-		}
-	}
+/* 210705 s */
+.sso_wrap .join_wrap {
+	// label.tooltip {
+	// 	width: auto;
+	// 	position: relative;
+	// 	& + i {
+	// 		display: inline-block;
+	// 		max-width: 100%;
+	// 		margin-left: 2.5px;
+	// 		transform: translateY(2.5px);
+	// 		width: 14px;
+	// 		height: 14px;
+	// 		background: {
+	// 			image: url(../images/sso/tooltip.jpg);
+	// 			size: 14px;
+	// 			repeat: no-repeat;
+	// 			position: center center;
+	// 		}
+	// 	}
+	// }
 	span.tooltip {
 		&.show {
 			display: block;
@@ -471,21 +471,21 @@ p, span, li{word-break: keep-all;}
 		display: none;
 		z-index: 99;
 		position: absolute;
-		top: 68px;
-		left: 136px;
-		max-width: 180px;
+		top: 65px;
+		left: 128px;
+		max-width: 185px;
 		min-width: 140px;
 		width: max-content;
 		background-color: #009fe3;
 		border-radius: 10px;
-		padding: 12px 10px;
+		padding: 10px;
 		color: #fff;
 		font-style: normal;
 		font-size: 10px;
 		font-weight: 350;
 		em {
 			font-style: normal;
-			font-size: 12px;
+			font-size: 11px;
 			font-weight: inherit;
 		}
 		&::before {
@@ -499,20 +499,20 @@ p, span, li{word-break: keep-all;}
 			right: 100%;
 			top: 12px;
 		}
-		.btn_close {
-			display: inline-block;
-			position: absolute;
-			top: 8px;
-			right: 8px;
-			width: 10px;
-			height: 10px;
-			background: {
-				image: url(../images/sso/btn_tooltip_close.png);
-				size: 10px;
-				repeat: no-repeat;
-				position: center center;
-			}
-		}
+		// .btn_close {
+		// 	display: inline-block;
+		// 	position: absolute;
+		// 	top: 8px;
+		// 	right: 8px;
+		// 	width: 10px;
+		// 	height: 10px;
+		// 	background: {
+		// 		image: url(../images/sso/btn_tooltip_close.png);
+		// 		size: 10px;
+		// 		repeat: no-repeat;
+		// 		position: center center;
+		// 	}
+		// }
 	}
 }
-/* 210701 e */
+/* 210705 e */

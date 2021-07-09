@@ -34,14 +34,54 @@ window.onload = function() {
 	<header>
 		<div class="logo"><a href="http://www.yuhan-kimberly.co.kr" target="_blank">유한킴벌리</a></div>
 		<h1>YK BIG DATA ANALYTICS PORTAL</h1>
-		<span>v26.0</span> <!-- 20200224 //-->
+		<span>v35.0</span> <!-- 20210708 //-->
 	</header>
 	<section class="items_menu">
 		<div class="items_lnb">RECENTLY VIEWED ITEMS</div>
 		<ul class="items_cate">
-			<li><a href="" class="graph">SALES REPORT (SHIPMENT)</a></li>
+			<!-- <li><a href="" class="graph">SALES REPORT (SHIPMENT)</a></li>
 			<li><a href="" class="cate">CATEGORY SHARE</a></li>
-			<li><a href="" class="price">PRICE TRACKER</a></li>
+			<li><a href="" class="price">PRICE TRACKER</a></li> -->
+			
+			<!-- 20210708 개편 s -->
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-1.gif">
+				<span>momQ MKT</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-2.gif">
+				<span>momQ Sales</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-3.gif">
+				<span>D2MP</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-4.gif">
+				<span>Vendor</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-5.gif">
+				<span>POS Omni</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-6.gif">
+				<span>RGM Finance</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-7.gif">
+				<span>Sales Report (Shipment)</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-8.gif">
+				<span>B2C Sales Monthly KPI</span>
+			</li>
+			<li class="icon">
+				<img src="../Common/images/icon/viewed/2-9.gif">
+				<span>B2B Sales report</span>
+			</li>
+			<!--// 20210708 개편 e -->
+
 		</ul>
 	</section>
 
@@ -52,152 +92,141 @@ window.onload = function() {
 				<li><a href="sale.html" class="menu1">eCommerce <br> Sales Analytics</a></li> <!-- 활성화 class : curr -->
 				<li><a href="sale2.html" class="menu2 curr">Sales Analytics</a></li>
 				<li><a href="analytics.html" class="menu3">360 Consumer<br>Analytics</a></li> <!-- 20200130 -->
-				<li><a href="supply.html" class="menu4">Supply Chain <br> Management </a></li>
+				<li><a href="market.html" class="menu4">eCommerce <br> Market Share</a></li> <!-- 20210708 페이지 추가 -->
+				<li><a href="supply.html" class="menu5">Supply Chain <br> Management </a></li>
 			</ul>
 			<!--// 20190410 메뉴축가 및 클래스 -->
 			<div class="manual"><a href="https://tableau.kcc.com/#/site/AP/views/YKBigDataAnalytics/Document" target="_blank">MANUAL</a></div>
 		</div>
 
 		<div class="contents_inner" id="conentsInner">
+			<!-- 20210708 개편 s -->
 			<ul class="sale">
 				<li>
-					<a href="https://tableau.kcc.com/#/site/AP-Ad-hoc/views/B2CSalesMonthlyKPIReport/Growth" class="bg01" target="_blank">
-						B2C Sales Report
-
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/2aa95fb1-a8ae-41f1-ab71-f7701599a95d?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg10" onclick="TodayCookie('3-2','momQ MKT', '')">
+						<span class="sti">sell-out</span>
+						momQ MKT
 						<div>
 							<dl>
-							<dt>B2C Sales Report</dt>
-
-							<dd>
-								invoice sales, net sales, profit 등 목표 대비 실적 현황
-							</dd>
+								<dt>momQ MKT</dt>
+								<dd>
+									맘큐 채널의<br>카테고리/채널별 NSV<br>및 회원 활동성 지표 현황
+								</dd>
 							</dl>
-
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/6036e88b-58eb-4dab-b4a9-273d6acd4140?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg2" onclick="TodayCookie('3-10','momQ Sales', '')">
+						<span class="sti">sell-out</span>
+						momQ Sales
+						<div>
+							<dl>
+								<dt>momQ Sales</dt>
+								<dd>
+									맘큐 채널의<br>Product, Price, Customer,<br>Promotion Analysis 리포트
+								</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/ed0aa6d2-6210-44d3-aede-89f74d93bda3?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg05" target="_blank">
+						<span class="sti">sell-out</span>
+						D2MP
+						<div>
+							<dl>
+								<dt>D2MP</dt>
+								<dd>
+									D2MP 채널별/기간별<br>매출 및 고객지표 추세
+								</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/668c3ed5-0e70-4475-a04d-0408e040aa5f?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg12" target="_blank">
+						<span class="sti">sell-out</span>
+						Vendor
+						<div>
+							<dl>
+								<dt>Vendor</dt>
+								<dd>
+									유통사/CTG별 sell-in 대비<br>sell-out 현황 및 성장율
+								</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/7cff7d1d-6b00-42a7-8b61-bbb03e1e42c6?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg09" target="_blank">
+						<span class="sti">sell-out</span>
+						POS Omni
+						<div>
+							<dl>
+								<dt>POS Report</dt>
+								<dd>
+									카테고리/채널별<br>weekly point of sales 분석
+								</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://app.powerbi.com/groups/21a9229a-fdb0-4283-88c2-f2aa41636413/reports/acd4331d-8e68-4202-bdfc-17724ebc6a56?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare" class="bg07" target="_blank">
+						<span class="sti">sell-out</span>
+						RGM Finance
+						<div>
+							<dl>
+								<dt>RGM Finance</dt>
+								<dd>
+									sell-in과 sell-out 추이를<br>통한 성과 모니터링 및<br>주요 customer별 실적 관리
+								</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://tableau.kcc.com/#/site/AP-Ad-hoc/views/Shipment_COPA/Portal" class="bg08" target="_blank">
+						Sales Report (Shipment)
+						<div>
+							<dl>
+								<dt>Sales Report (Shipment)</dt>
+								<dd>
+									Invoice sales, net sales, profit 등<br>목표 대비 실적 현황
+								</dd>
+							</dl>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="https://tableau.kcc.com/#/site/AP-Ad-hoc/views/B2CSalesMonthlyKPIReport/Growth" class="bg02" target="_blank">
-						B2C Sales Monthly report
+						B2C Sales Monthly KPI
 						<div>
 							<dl>
-							<dt>B2C Sales Monthly report</dt>
-
-							<dd>
-								이커머스 채널에서의<br> 유한킴벌리 및 경쟁사 제품<br>가격(낱개가/단위가) 트렌드
-							</dd>
+								<dt>B2C Sales Monthly report</dt>
+								<dd>
+									B2C Sales Monthly KPI<br>Growth & Optimization
+								</dd>
 							</dl>
-
 						</div>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:alert('준비 중입니다.')" class="bg03" target="_blank">
-						B2C 매출 성과 요약
+					<a href="https://tableau.kcc.com/#/site/AP-Ad-hoc/views/2019B2BDashboard/Summary" class="bg01" target="_blank">
+						B2B Sales Report
 						<div>
 							<dl>
-							<dt>B2C 매출 성과 요약</dt>
-
-							<dd>
-								고객별 제품별 <br>Point of Sales 매출
-							</dd>
+								<dt>B2B Sales Report</dt>
+								<dd>
+									B2B 목표/전년동월 실적 대비<br>월별 판매, 이익, RIR, MIX
+								</dd>
 							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('준비 중입니다.')" class="bg04" target="_blank">
-						B2C 매출 성과 상세
-						<div>
-							<dl>
-							<dt>B2C 매출 성과 상세</dt>
-
-							<dd>
-								이커머스 채널에서의<br> 유한킴벌리 및 경쟁사<br> 카테고리 점유율
-							</dd>
-							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('준비 중입니다.')" class="bg05" target="_blank">
-						B2C 유통 현황
-						<div>
-							<dl>
-							<dt>B2C 유통 현황</dt>
-
-							<dd>
-								이커머스 채널의 <br>유한킴벌리 제품 가격(낱개가)<br> dynamic pricing 분석
-							</dd>
-							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('준비 중입니다.')" class="bg06" target="_blank">
-						B2C 자재 관리
-						<div>
-							<dl>
-							<dt>B2C 자재 관리</dt>
-
-							<dd>
-								이커머스 채널에서의 <br>유한킴벌리 및 경쟁사 <br>키워드 점유율
-							</dd>
-							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('준비 중입니다.')" class="bg07" target="_blank">
-						B2C 가격 비교
-						<div>
-							<dl>
-							<dt>B2C 가격 비교</dt>
-
-							<dd>
-								Distribution, Pricing, <br>Shelving, Merchandising<br> 에 대한 월간 리포트
-							</dd>
-							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="https://tableau.kcc.com/#/site/AP/views/Shipment_COPA/Portal" class="bg08" target="_blank">
-						Sales Report (Shipment)
-
-						<div>
-							<dl>
-							<dt>Sales Report (Shipment)</dt>
-
-							<dd>
-								invoice sales, net sales, profit 등 목표 대비 실적 현황
-							</dd>
-							</dl>
-
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="https://tableau.kcc.com/t/AP/views/POSSalesTrend/Last12MTrend" class="bg09" target="_blank">
-						POS Report
-						<div>
-							<dl>
-							<dt>POS Report</dt>
-
-							<dd>
-								고객별 제품별 <br>Point of Sales 매출
-							</dd>
-							</dl>
-
 						</div>
 					</a>
 				</li>
 			</ul>
+			<!--// 20210708 개편 e -->
 		</div>
 
 	</div>

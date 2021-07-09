@@ -29,152 +29,144 @@ window.onload = function() {
 
 
 </head>
+
 <body>
-<div id="wrap">
-	<header>
-		<div class="logo"><a href="http://www.yuhan-kimberly.co.kr" target="_blank">유한킴벌리</a></div>
-		<h1>YK BIG DATA ANALYTICS PORTAL</h1>
-		<span>v26.0</span> <!-- 20200224 //-->
-	</header>
-	<section class="items_menu">
-		<div class="items_lnb">RECENTLY VIEWED ITEMS</div>
-		<ul class="items_cate">
-			<li><a href="" class="graph">SALES REPORT (SHIPMENT)</a></li>
-			<li><a href="" class="cate">CATEGORY SHARE</a></li>
-			<li><a href="" class="price">PRICE TRACKER</a></li>
-			<li><a href="" class="price">Innovation Health Diagnosis </a></li>
-			<li><a href="" class="position">Positioning Map by 구매후기</a></li>
-		</ul>
-	</section>
+	<div id="wrap">
+		<header>
+			<div class="logo"><a href="http://www.yuhan-kimberly.co.kr" target="_blank">유한킴벌리</a></div>
+			<h1>YK BIG DATA ANALYTICS PORTAL</h1>
+			<span>v35.0</span> <!-- 20210708 //-->
+		</header>
+		<section class="items_menu">
+			<div class="items_lnb">RECENTLY VIEWED ITEMS</div>
+			<ul class="items_cate">
+				<!-- <li><a href="" class="graph">SALES REPORT (SHIPMENT)</a></li>
+				<li><a href="" class="cate">CATEGORY SHARE</a></li>
+				<li><a href="" class="price">PRICE TRACKER</a></li>
+				<li><a href="" class="price">Innovation Health Diagnosis </a></li>
+				<li><a href="" class="position">Positioning Map by 구매후기</a></li> -->
 
-	<div class="contents">
-		<div class="lnb">
-			<ul>
-				<li><a href="sale.html" class="menu1">eCommerce <br> Sales Analytics</a></li> <!-- 활성화 class : curr -->
-				<li><a href="sale2.html" class="menu2">Sales Analytics</a></li>
-				<li><a href="analytics.html" class="menu3 curr">360 Consumer<br>Analytics</a></li> <!-- 20200130 -->
-				<li><a href="supply.html" class="menu4">Supply Chain <br> Management </a></li>
+				<!-- 20210708 개편 s -->
+				<li class="icon">
+					<img src="../Common/images/icon/viewed/3-1.jpg">
+					<span>Product Health Check</span>
+				</li>
+				<li class="icon">
+					<img src="../Common/images/icon/viewed/3-2.jpg">
+					<span>Consumer Quality Analytics</span>
+				</li>
+				<li class="icon">
+					<img src="../Common/images/icon/viewed/3-3.jpg">
+					<span>Positioning Map by 구매후기</span>
+				</li>
+				<!--// 20210708 개편 e -->
+
 			</ul>
-			<div class="manual"><a href="https://tableau.kcc.com/#/site/AP/views/YKBigDataAnalytics/Document" target="_blank">MANUAL</a></div>
-		</div>
+		</section>
 
-		<div class="contents_inner" id="conentsInner">
-			<ul class="analytics">
-			    <li>
-			        <a href="https://tableau.kcc.com/t/AP/views/YKOnlineMembership/SSO" target="_blank" class="bg1" onclick="TodayCookie('3-1','YK ONLINE MEMBERSHIP', 'https://tableau.kcc.com/t/AP/views/YKOnlineMembership/SSO')">
-			            YK online membership
-			            <div>
-			                <dl>
-			                    <dt>YK online membership</dt>
+		<div class="contents">
+			<div class="lnb">
+				<ul>
+					<li><a href="sale.html" class="menu1">eCommerce <br> Sales Analytics</a></li> <!-- 활성화 class : curr -->
+					<li><a href="sale2.html" class="menu2">Sales Analytics</a></li>
+					<li><a href="analytics.html" class="menu3 curr">360 Consumer<br>Analytics</a></li> <!-- 20200130 -->
+					<li><a href="market.html" class="menu4">eCommerce <br> Market Share</a></li> <!-- 20210708 페이지 추가 -->
+					<li><a href="supply.html" class="menu5">Supply Chain <br> Management </a></li>
+				</ul>
+				<div class="manual"><a href="https://tableau.kcc.com/#/site/AP/views/YKBigDataAnalytics/Document"
+						target="_blank">MANUAL</a></div>
+			</div>
 
-			                    <dd>
-			                        유한킴벌리 통합 SSO 회원<br> 현황
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-			    <li>
-			        <a href="javascript:alert('준비중입니다.');" class="bg2" onclick="TodayCookie('3-2','MOMQ 매출 분석', '')">
-			            momQ 매출 분석
-			            <div>
-			                <dl>
-			                    <dt>momQ 매출 분석</dt>
-			                    <dd>
-			                        맘큐 카테고리/브랜드 별<br>매출 현황 및 쿠폰 사용 현황
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-			    <li>
-			        <a href="javascript:alert('준비중입니다.');" class="bg10" onclick="TodayCookie('3-10','MOMQ 기획전 분석', '')">
-			            momQ 기획전 분석
-			            <div>
-			                <dl>
-			                    <dt>momQ 기획전 분석</dt>
-			                    <dd>
-			                        맘큐 기획전 매출 현황
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-
-			    <li>
-			        <a href="https://tableau.kcc.com/t/AP/views/BCCCRMDashboard/CRMSummary" target="_blank" class="bg3" onclick="TodayCookie('3-3','BCC CRM REPORT', 'https://tableau.kcc.com/t/AP/views/BCCCRMDashboard/CRMSummary')">
-			            BCC CRM report
-			            <div>
-			                <dl>
-			                    <dt>BCC CRM report</dt>
-
-			                    <dd>
-			                        BCC 캠페인 <br>segment 별 결과 현황
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-
-			    <li>
-			        <a href="https://tableau.kcc.com/#/site/AP/views/SalesPredictionDashboard/SalesPrediction?:iid=1" target="_blank" class="bg4" onclick="TodayCookie('3-4','MARKET SHARE PREDICITION', 'https://tableau.kcc.com/#/site/AP/views/SalesPredictionDashboard/SalesPrediction?:iid=1')">
-			            Market Share Prediction
-			            <div>
-			                <dl>
-			                    <dt>Market Share Prediction </dt>
-
-			                    <dd>
-			                        온/오프라인<br> 판매실적 및 프로모션 금액<br>기반 월별 M/S 예측
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-					<!-- 20200506 s -->
-			    <li>
-			        <a href="https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario" target="_blank" class="bg5" onclick="TodayCookie('3-5','INNOVATION HEALTH DIAGNOSIS', 'https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario')">
+			<div class="contents_inner" id="conentsInner">
+				<!-- 20210708 개편 s -->
+				<ul class="analytics">
+ 					<!-- 20200506 s -->
+					<!-- <li>
+						<a href="https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario" target="_blank" class="bg5" onclick="TodayCookie('3-5','INNOVATION HEALTH DIAGNOSIS', 'https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario')">
+								<span class="sti">Innovation Health Diagnosis</span>
+								Product Health Check
+								<div>
+										<dl>
+												<dt>Product Health Check</dt>
+												<dd>
+													[DnP] 이커머스 구매평 기준,<br>Product Segmentation에 따른<br>제품 개선의 소비자 반응 진단
+												</dd>
+										</dl>
+								</div>
+						</a>
+					</li>
+					<li>
+							<a href="https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport" target="_blank" class="bg6" onclick="TodayCookie('3-6','CONSUMER QUALITY ANALYTIC', 'https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport')">
 									<span class="sti">Innovation Health Diagnosis</span>
-			            Product Health Check
-			            <div>
-			                <dl>
-			                    <dt>Product Health Check</dt>
-			                    <dd>
-														[DnP] 이커머스 구매평 기준,<br>Product Segmentation에 따른<br>제품 개선의 소비자 반응 진단
-			                    </dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-			    <li>
-			        <a href="https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport" target="_blank" class="bg6" onclick="TodayCookie('3-6','CONSUMER QUALITY ANALYTIC', 'https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport')">
-									<span class="sti">Innovation Health Diagnosis</span>
-			            Consumer Quality Analytics
-			            <div>
-			                <dl>
-			                    <dt>Consumer Quality<br>Analytics</dt>
+									Consumer Quality Analytics
+									<div>
+											<dl>
+													<dt>Consumer Quality<br>Analytics</dt>
 													<dd>[DnP,BW] Buzz(카페, 이커머스,<br>커뮤니티) 기준, 소비자 제품 평가<br>추적 및 Bad Signal Sensing</dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-			    <li>
-			        <a href="https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap" target="_blank" class="bg9" onclick="TodayCookie('3-9','Positioning Map by 구매후기', 'https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap')">
+											</dl>
+									</div>
+							</a>
+					</li>
+					<li>
+							<a href="https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap" target="_blank" class="bg9" onclick="TodayCookie('3-9','Positioning Map by 구매후기', 'https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap')">
 									<span class="sti">Innovation Health Diagnosis</span>
-			            Positioning Map by 구매후기
-			            <div>
-			                <dl>
-			                    <dt>Positioning Map<br> by 구매후기</dt>
-			                    <dd>[DnP] 이커머스 Buzz 데이터 기준<br>마켓 포지션</dd>
-			                </dl>
-			            </div>
-			        </a>
-			    </li>
-					<!--// 20200506 e -->
-			</ul>
+									Positioning Map by 구매후기
+									<div>
+											<dl>
+													<dt>Positioning Map<br> by 구매후기</dt>
+													<dd>[DnP] 이커머스 Buzz 데이터 기준<br>마켓 포지션</dd>
+											</dl>
+									</div>
+							</a>
+					</li> -->
+					<!--// 20200506 e -->					
+					<li>
+						<a href="https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario"
+							target="_blank" class="bg5"
+							onclick="TodayCookie('3-5','INNOVATION HEALTH DIAGNOSIS', 'https://tableau.kcc.com/#/site/AP/views/MonthlySocialReport/DnPProductHealthCheckbyScenario')">
+							<span class="sti">Innovation Health Diagnosis</span>
+							Product Health Check
+							<div>
+								<dl>
+									<dt>Product Health Check</dt>
+									<dd>
+										[DnP] 이커머스 구매평 기준,<br>Product Segmentation에 따른<br>제품 개선의 소비자 반응 진단
+									</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport" target="_blank" class="bg6"
+							onclick="TodayCookie('3-6','CONSUMER QUALITY ANALYTIC', 'https://tableau.kcc.com/#/site/AP/views/QAReport/QAReport')">
+							<span class="sti">Innovation Health Diagnosis</span>
+							Consumer Quality Analytics
+							<div>
+								<dl>
+									<dt>Consumer Quality<br>Analytics</dt>
+									<dd>[DnP,BW] Buzz(카페, 이커머스,<br>커뮤니티) 기준, 소비자 제품 평가<br>추적 및 Bad Signal Sensing</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap" target="_blank" class="bg9"
+							onclick="TodayCookie('3-9','Positioning Map by 구매후기', 'https://tableau.kcc.com/#/site/AP/views/PositioningMap/PositioningMap')">
+							<span class="sti">Innovation Health Diagnosis</span>
+							Positioning Map by 구매후기
+							<div>
+								<dl>
+									<dt>Positioning Map<br> by 구매후기</dt>
+									<dd>[DnP] 이커머스 Buzz 데이터 기준<br>마켓 포지션</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!--// 20210708 개편 e -->
+			</div>
 
 		</div>
-
 	</div>
-</div>
 </body>
 </html>

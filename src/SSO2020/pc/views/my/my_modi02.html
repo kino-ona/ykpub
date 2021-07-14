@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" href="../../common/images/common/favicon_default.png" type="image/x-icon">
+	<link rel="icon" href="../../common/images/common/favicon_default.png" type="image/x-icon">
 	<meta name="title" content="유한킴벌리" />
 	<meta name="keywords" content="유한킴벌리">
 	<meta name="description" content="유한킴벌리" />
@@ -35,106 +35,295 @@
 					<div class="terms_target">
 						<p><span>이용서비스<br>선택</span></p>
 						<div>
-							<p><input type="checkbox" id="allchk"><label for="allchk"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 </label></p>
+						 	<p>
+								<input type="checkbox" id="allchk" class="required" checked="" readonly="">
+								<label for="allchk"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 </label>
+							</p>
 							<p>
-								<input type="checkbox" id="chk01"><label for="chk01">통합브랜드</label>
-								<input type="checkbox" id="chk01"><label for="chk01">맘큐</label>
-								<input type="checkbox" id="chk01"><label for="chk01">모닛</label>
+								<input type="checkbox" name="ykbrand_terms" id="use_ykbrand"  checked ><label for="use_ykbrand">통합브랜드</label>
+								<input type="checkbox" name="momq_terms" id="use_momq"  checked ><label for="use_momq">맘큐</label>
+								<input type="checkbox" name="monit_terms" id="use_monit" ><label for="use_monit">모닛</label>
+								<input type="checkbox" name="mygf_terms" id="use_mygf"  checked ><label for="use_mygf">달다방</label>
 							</p>
 						</div>
 					</div>
 
 					<div class="join_form">
-						<ul class="terms_chk">
+						<ul class="terms_chk" id="sso_terms">
 							<li class="first">
-								<p><input type="checkbox" id="allchk"><label for="allchk">유한킴벌리 SSO회원 약관 전체 동의</label></p>
+								<p><input type="checkbox" id="sso_all" class="all_check"><label for="sso_all">유한킴벌리 SSO회원 약관 전체 동의</label></p>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 이용약관</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+								<p>
+									<input type="checkbox" name="sso_terms_agree" id="termsNo1" data-id="1" class=" required " checked readonly>
+									<label for="termsNo1">
+										<span class="in">
+											<span class=" esse ">
+					
+												(필수)
+					
+											</span>
+											유한킴벌리 SSO회원 이용약관
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#sso_terms_agree_layer">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li>
-							<li>
-								<p><input type="checkbox" id="chk03"><label for="chk03"><span class="sel">(선택)</span> 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+								<p>
+									<input type="checkbox" name="sso_privacy_agree" id="termsNo2" data-id="2" class=" required " checked readonly>
+									<label for="termsNo2">
+										<span class="in">
+											<span class=" esse ">
+					
+												(필수)
+					
+											</span>
+											유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#sso_privacy_agree_layer">보기</a>
 							</li>
 						</ul>
-
-						<ul class="terms_chk">
+					
+						<ul class="terms_chk" id="ykbrand_terms">
 							<li class="first">
-								<p><input type="checkbox" id="allchk"><label for="allchk">통합브랜드 약관 전체 동의</label></p>
+								<p><input type="checkbox" id="ykbrand_all" class="all_check"><label for="ykbrand_all">통합브랜드 약관 전체 동의</label></p>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="ykbrand_terms_agree" id="termsNo11" data-id="11" checked readonly>
+									<label for="termsNo11">
+										<span class="in">
+											<span class=" esse ">
+					
+												(필수)
+					
+											</span>
+											통합브랜드 이용약관
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_terms_agree_layer">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk01_1"><label for="chk01_1"><span class="esse">(필수)</span> 통합브랜드 이용약관</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+								<p>
+									<input type="checkbox" name="ykbrand_privacy_agree" id="termsNo12" data-id="12" checked readonly>
+									<label for="termsNo12">
+										<span class="in">
+											<span class=" esse ">
+					
+												(필수)
+					
+											</span>
+											통합브랜드 필수항목 개인정보 수집 및 이용
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_privacy_agree_layer">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk01_2"><label for="chk01_2"><span class="esse">(필수)</span> 통합브랜드 필수항목 개인정보 수집 및 이용</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li>
-							<!-- <li>
-								<p><input type="checkbox" id="chk01_3"><label for="chk01_3"><span class="sel">(선택)</span> 통합브랜드 선택항목 개인정보 수집 및 이용</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li> -->
-							<li>
-								<p><input type="checkbox" id="chk01_4"><label for="chk01_4"><span class="sel">(선택)</span> 통합브랜드 마케팅 목적 이용</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li>
-							<!-- <li>
-								<p><input type="checkbox" id="chk01_5"><label for="chk01_5"><span class="sel">(선택)</span> 통합브랜드 개인정보 처리위탁</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li> -->
-						</ul>
-
-						<ul class="terms_chk">
-							<li class="first">
-								<p><input type="checkbox" id="allchk"><label for="allchk">맘큐 약관 전체 동의</label></p>
+								<p>
+									<input type="checkbox" name="ykbrand_marketing_agree" id="termsNo14" data-id="14">
+									<label for="termsNo14">
+										<span class="in">
+											<span class=" sel ">
+					
+												(선택)
+					
+											</span>
+											통합브랜드 마케팅 목적 이용
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_marketing_agree_layer">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk02_1"><label for="chk02_1"><span class="esse">(필수)</span> 맘큐 이용약관</label></p>
-								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
-							</li>
-							<li>
-								<p><input type="checkbox" id="chk02_2"><label for="chk02_2"><span class="esse">(필수)</span> 맘큐 필수항목 개인정보 수집 및 이용</label></p>
-								<a href="#" class="btn_vw">보기</a>
-							</li>
-							<!-- <li>
-								<p><input type="checkbox" id="chk02_3"><label for="chk02_3"><span class="sel">(선택)</span> 맘큐 선택항목 개인정보 수집 및 이용</label></p>
-								<a href="#" class="btn_vw">보기</a>
-							</li> -->
-							<li>
-								<p><input type="checkbox" id="chk02_4"><label for="chk02_4"><span class="sel">(선택)</span> 맘큐 마케팅 목적 이용</label></p>
-								<a href="#" class="btn_vw">보기</a>
-							</li>
-							<!-- <li>
-								<p><input type="checkbox" id="chk02_5"><label for="chk02_5"><span class="sel">(선택)</span> 맘큐 개인정보 처리위탁</label></p>
-								<a href="#" class="btn_vw">보기</a>
-							</li> -->
-						</ul>
-
-						<ul class="terms_chk">
-							<li class="first">
-								<p><input type="checkbox" id="allchk"><label for="allchk"><strong>광고성 정보 수신 동의</strong></label></p> <!-- 20200904 //-->
-							</li>
-							<li>
-								<div class="select_chk">
-									<p class="tit">통합브랜드</p>
+								<p>
+									<input type="checkbox" name="ykbrand_ad_receive_agree" id="termsNo16" data-id="16" checked>
+									<label for="termsNo16">
+										<span class="in">
+											<span class=" sel ">
+					
+												(선택)
+					
+											</span>
+											<strong>광고성 정보 수신 전체 동의</strong>
+										</span>
+									</label>
+								</p>
+								<div class="select_chk YKBRAND">
+					
 									<p class="rchk">
-										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
+										<input type="checkbox" name="ykbrand_adinfo_receive_SMS" id="rchk_SMS_YKBRAND" checked>
+										<label for="rchk_SMS_YKBRAND">
+											SMS
+											수신
+										</label>
 									</p>
+					
 									<p class="rchk">
-										<input type="checkbox" id="rchk02" name=""><label for="rchk02">SMS 수신</label>
-									</p>
-									<p class="rchk">
-										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
+										<input type="checkbox" name="ykbrand_adinfo_receive_EMAIL" id="rchk_EMAIL_YKBRAND" checked>
+										<label for="rchk_EMAIL_YKBRAND">
+											이메일
+											수신
+										</label>
 									</p>
 								</div>
 							</li>
+							<!--<span>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span>-->
 						</ul>
-
+					
+						<ul class="terms_chk" id="momq_terms">
+							<li class="first">
+								<p><input type="checkbox" id="momq_all" class="all_check"><label for="momq_all">맘큐 약관 전체 동의</label></p>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="momq_terms_agree" id="termsNo4" data-id="4" checked readonly>
+									<label for="termsNo4">
+										<span class="in">
+											<span class=" esse ">(필수)</span>
+											맘큐 이용약관
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_terms_agree_layer">보기</a>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="momq_privacy_agree" id="termsNo5" data-id="5" checked readonly>
+									<label for="termsNo5">
+										<span class="in">
+											<span class="sel">(선택)</span>
+											맘큐 필수항목 개인정보 수집 및 이용
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_privacy_agree_layer">보기</a>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="monit_privacy_consent_offer_agree" id="termsNo6" data-id="6">
+									<label for="termsNo6">
+										<span class="in">
+											<span class=" esse ">(필수)</span>
+											개인정보 제3자 제공동의
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#monit_privacy_consent_offer_agree_layer">보기</a>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="momq_marketing_agree" id="termsNo8" data-id="8">
+									<label for="termsNo8">
+										<span class="in">
+											<span class=" sel ">
+					
+												(선택)
+					
+											</span>
+											맘큐 마케팅 목적 이용
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_marketing_agree_layer">보기</a>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="momq_ad_receive_agree" id="termsNo10" data-id="10">
+									<label for="termsNo10">
+										<span class="in">
+											<span class="sel">(선택)</span>
+											<strong>광고성 정보 수신 전체 동의</strong>
+										</span>
+									</label>
+								</p>
+								<div class="select_chk MOMQ">
+					
+									<p class="rchk">
+										<input type="checkbox" name="momq_adinfo_receive_SMS" id="rchk_SMS_MOMQ">
+										<label for="rchk_SMS_MOMQ">SMS 수신</label>
+									</p>
+					
+									<p class="rchk">
+										<input type="checkbox" name="momq_adinfo_receive_EMAIL" id="rchk_EMAIL_MOMQ">
+										<label for="rchk_EMAIL_MOMQ">이메일 수신</label>
+									</p>
+									<!--<span>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span>-->
+								</div>
+							</li>
+					
+						</ul>
+					
+						<ul class="terms_chk" id="mygf_terms">
+							<li class="first">
+								<p><input type="checkbox" id="mygf_all" class="all_check"><label for="mygf_all">달다방 약관 전체 동의</label></p>
+							</li>
+					
+							<li>
+								<p>
+									<input type="checkbox" name="mygf_terms_agree" id="termsNo18" data-id="18" checked readonly>
+									<label for="termsNo18">
+										<span class="in">
+											<span class="sel">(선택)</span>
+											달다방 이용약관
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#mygf_terms_agree_layer">보기</a>
+							</li>
+							<li>
+								<p>
+									<input type="checkbox" name="mygf_marketing_agree" id="termsNo19" data-id="19" checked>
+									<label for="termsNo19">
+										<span class="in">
+											<span class="sel">(선택)</span>
+											달다방 마케팅 목적 이용
+										</span>
+									</label>
+								</p>
+					
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#mygf_marketing_agree_layer">보기</a>
+							</li>
+							<li>
+								<p>
+									<input type="checkbox" name="mygf_ad_receive_agree" id="termsNo20" data-id="20">
+									<label for="termsNo20">
+										<span class="in">
+											<span class="sel">(선택)</span>
+											<strong>광고성 정보 수신 전체 동의</strong>
+										</span>
+									</label>
+								</p>
+								<div class="select_chk MYGF">
+									<p class="rchk">
+										<input type="checkbox" name="mygf_adinfo_receive_SMS" id="rchk_SMS_MYGF">
+										<label for="rchk_SMS_MYGF">SMS 수신</label>
+									</p>
+					
+									<p class="rchk">
+										<input type="checkbox" name="mygf_adinfo_receive_EMAIL" id="rchk_EMAIL_MYGF">
+										<label for="rchk_EMAIL_MYGF">이메일 수신</label>
+									</p>
+								</div>
+							</li>
+							<!--<span>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span>-->
+						</ul>
 					</div>
 
 					<div class="btnwrap btn_foo">
@@ -201,13 +390,13 @@
 <script>
 // 레이어팝업 열기
 function layerOpen(set) {
-  $('#' + set).addClass('show');
-  $('body, html').addClass('noscroll');
+	$('#' + set).addClass('show');
+	$('body, html').addClass('noscroll');
 }
 // 레이어팝업 닫기
 function layerClose(set) {
-  $('#' + set).removeClass('show');
-  $('body, html').removeClass('noscroll');
+	$('#' + set).removeClass('show');
+	$('body, html').removeClass('noscroll');
 }
 </script>
 <script>

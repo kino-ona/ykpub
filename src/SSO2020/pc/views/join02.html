@@ -149,8 +149,16 @@
 									</p>
 									<p class="rchk">
 										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
-									</p>
-									<span>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span>
+									</p>									
+									<!-- 20210715 툴팁 -->
+									<div class="tooltip"><em>SMS 수신동의를 하시면, 첫 구매 축하쿠폰(20%)과 <br>베베쿡 첫 주문 할인쿠폰(5천원)을 드립니다.</em></div>
+									<!--// 20210715 툴팁 -->
+									<!-- 20210715 안내문구 마크업 수정 및 추가 -->
+									<dl>
+										<dd><span> 회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</span></dd>
+										<dd><span> 첫 구매 축하쿠폰은 정보 수신 동의 다음날 지급되며, 첫 주문 할인쿠폰은 베베쿡 가입 시 맘큐에서 발급한 추천 아이디를 입력하면 지급됩니다.</span></dd>
+									</dl>
+									<!--// 20210715 안내문구 마크업 수정 및 추가 -->
 								</div>
 							</li>
 						</ul>
@@ -541,6 +549,11 @@ function childElDel(set){
 				$(this).parent('.masking').find('input').attr('type', 'text');
 				$(this).children('i').attr('class','ic_hide');
 		}
+	});
+
+	// 20210715 툴팁
+	$('.sso_wrap .terms_chk >li label[for="chk03"]').on("click", function() {
+		$(".sso_wrap .tooltip").toggleClass('show');
 	});
 </script>
 </html>

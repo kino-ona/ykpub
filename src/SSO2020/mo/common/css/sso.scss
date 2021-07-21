@@ -516,3 +516,36 @@ p, span, li{word-break: keep-all;}
 	}
 }
 /* 210705 e */
+
+/* 20210715 s */
+.sso_wrap {
+	.join_wrap {
+		span.tooltip {
+			top: 40px;
+			left: 130px;
+			max-width: 165px;
+			min-width: 140px;
+			&::before {
+				top: 39px;
+			}
+		}
+	}
+	dl {
+		dd {
+			position: relative;
+			padding-left: 5px;
+			padding-bottom: 3px;
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 3px;
+				height: 3px;
+				background-color: #666666;
+				position: absolute;
+				left: -10px;
+				top: 8px;
+			}
+		}
+	}
+}
+/* 20210715 e */

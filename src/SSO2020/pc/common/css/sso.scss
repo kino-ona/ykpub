@@ -785,3 +785,32 @@ footer.renewfoo {
 	}
 }
 /* 210705 e */
+
+/* 20210715 s */
+.sso_wrap {
+	.join_wrap {
+		div.tooltip {
+			margin-left: 120px;
+			min-width: 145px;
+			max-width: 290px;
+		}
+	}
+	dl {
+		dd {
+			position: relative;
+			padding-left: 5px;
+			padding-bottom: 3px;
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 3px;
+				height: 3px;
+				background-color: #666666;
+				position: absolute;
+				left: -10px;
+				top: 8px;
+			}
+		}
+	}
+}
+/* 20210715 e */

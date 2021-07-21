@@ -743,7 +743,7 @@ footer.renewfoo {
 }
 /* 20210414 e */
 
-/* 210705 s */
+/* 210721 s */
 .join_form .terms_chk {
 	margin-bottom:50px;
 }
@@ -783,5 +783,10 @@ footer.renewfoo {
 			bottom: 100%;
 		}
 	}
+	.select_chk.MOMQ {
+		.helpwrap {
+			li {margin-bottom:3px;}
+		}
+	}
 }
-/* 210705 e */
+/* 210721 e */

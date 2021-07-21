@@ -444,7 +444,7 @@ p, span, li{word-break: keep-all;}
 .masking .ic_show {  background-image: url(../images/sso/icon_show.png);}
 /* 20210315 e */
 
-/* 210705 s */
+/* 210721 s */
 .sso_wrap .join_wrap {
 	// label.tooltip {
 	// 	width: auto;
@@ -514,5 +514,10 @@ p, span, li{word-break: keep-all;}
 		// 	}
 		// }
 	}
+	.select_chk.MOMQ {
+		.helpwrap {
+			li {margin-bottom:3px;}
+		}
+	}
 }
-/* 210705 e */
+/* 210721 e */

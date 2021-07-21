@@ -579,4 +579,8 @@ body {	background:rgb(245,246,250) url(../../Common/images/common/body_bg.gif) 0
 #wrap .items_menu .items_cate li.icon img {margin: 22px 10px 22px 22px; max-width: 16px; vertical-align: middle;}
 /* #wrap .items_menu .items_cate li.icon:first-of-type img {margin-left: 20px;} */
 #wrap .items_menu .items_cate li.icon span {text-transform: uppercase;}
-/* 20210708 e */ 
+/* 20210708 e */
+
+/* 20210714 s */
+#wrap .items_menu .items_cate li.icon img[src*="1-0"] {max-width: 24px; margin-bottom: 25px;}
+/* 20210714 e */

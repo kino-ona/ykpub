@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/reset_pc.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/pc.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/pome.css" type="text/css" media="all">
+	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
+	<script>
+		// window.dataLayer = [{
+		//   "site_code": "",
+		//   "dimension4": ""
+		// }];
+	</script>
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.popupoverlay.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<p class="childlogo"><a href="https://momq.co.kr/"><span class="a11y_sr-only">momQ</span></a></p>
+			</div>
+		</header>
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="login_wrap">
+					<h2 class="title">로그인</h2>
+
+					<div class="login_frm">
+						<form name="loginFrm" method="POST" action="/login">
+							<input type="hidden" name="_token" value=""> 
+							<input type="hidden" name="recaptcha_token" value="">
+							<div class="line">
+								<p class="ti">아이디</p>
+								<p class="frm">
+									<input type="text" name="userid" value="" maxlength="" placeholder=" 아이디를 입력해주세요. ">
+								</p>
+							</div>
+							<div class="line">
+								<p class="ti">비밀번호</p>
+								<p class="frm masking">
+									<input type="password" name="password" maxlength="" placeholder="비밀번호를 입력해주세요.">
+									<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
+								</p>
+							</div>
+
+							<div class="chk">
+								<input type="checkbox" name="id_saved" id="idsave"><label for="idsave">아이디 저장</label>
+							</div>
+						</form>
+					</div>
+
+					<div class="btnwrap">
+						<a href="javascript:;" onclick="$('form[name=loginFrm]').submit();" class="btn btn_blue">로그인</a>
+					</div>
+					<div class="util">
+						<a href="/find/id">아이디 찾기</a>
+						<a href="/find/password">비밀번호 찾기</a>
+						<a href="/account/join">회원가입</a>
+					</div>
+
+					<div class="sns_login">
+						<p class="heading"><span>쉽고 간편하게 로그인할 수 있는</span></p>
+						<p class="_full">
+							<a href="#" data-type="kakao" class="bt_kakao js-btn-sns-login"><i></i>카카오로 로그인하기</a>
+						</p>
+						<p>
+							<a href="#" data-type="naver" class="bt_naver js-btn-sns-login"><i></i>네이버</a>
+						</p>
+						<p>
+							<a href="#" data-type="facebook" class="bt_facebook js-btn-sns-login"><i></i>페이스북</a>
+						</p>
+					</div>
+					<p class="help">간편회원 가입은 불가하며, 기존 간편회원의 로그인만 가능합니다.</p>
+					
+				</div>
+
+				<div class="banner wide">
+					<a href="https://www.momq.co.kr/shop/mypage.html?mypage_type=myfamily" target="_blank"><img src="/images/pc/banner.jpg" alt="banner"></a>
+					<div class="helpwrap">
+						<ul>
+							<li>맘큐&gt;마이페이지&gt;<strong>아이(태아) 정보 추가/수정</strong>에서 등록 하실 수 있습니다.</li>
+							<li>쇼핑지원금은 아이정보 등록 또는 수정 시 최초 1회에 한해 즉시 지급되며,<br>마이페이지&gt;쿠폰/쇼핑지원금에서 확인 하실 수 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				// var errorMessage = '';
+				// var otherTermsMessage = '';
+				// var exitCompleteMessage = '';
+				// var dormancyComleteMessage = '';
+				// var pomeError = '';
+				// var isSubmited = false;
+				// $(document).ready(function () {
+				//   $('form[name="loginFrm"]').submit(function () {
+				//     if (!isSubmited) {
+				//       isSubmited = true;
+				//       return true;
+				//     }
+				//     alert('로그인 처리 중 입니다. 잠시만 기다려 주세요.');
+				//     return false;
+				//   });
+				//   if (errorMessage != '') {
+				//     alert(errorMessage);
+				//   }
+
+				//   $(document).on('keypress', 'input[name="password"]', function (e) {
+				//     if (e.keyCode == 13) {
+				//       $('form[name="loginFrm"]').submit();
+				//     }
+				//   });
+
+				//   // sns Login
+				//   $('.js-btn-sns-login').on('click', function (e) {
+				//     e.preventDefault();
+				//     var type = $(this).data('type');
+				//     snsLogin(type, 'login');
+				//   });
+				// });
+
+				// var snsLoginPopup;
+
+				// function snsLogin(type, rp_type) {
+				//   var _w = 480;
+				//   var _h = 600;
+				//   if (type == 'facebook') {
+				//     _w = 1015;
+				//   }
+				//   snsLoginPopup = window.open('/login/' + type + '?rp_type=' + rp_type, 'snsLogin', 'width=' + _w + ',height=' +
+				//     _h + ',scrollbars=yes');
+				//   return false;
+				// }
+
+				// function snsCallback(success, msg, url) {
+				//   if (success == false) {
+				//     if (msg) {
+				//       alert(msg);
+				//     }
+				//     if (typeof url == 'undefined') {
+				//       window.location.reload();
+				//     } else {
+				//       window.location.href = url;
+				//     }
+				//     return;
+				//   }
+				//   self.focus();
+				//   window.location.href = url;
+				// }
+
+				$('.btn_masking').on('mousedown touchstart', function () {
+					event.preventDefault();
+					$('.btn_masking i').toggleClass('ic_hide');
+					$('.btn_masking i').toggleClass('ic_show');
+					if ($('input[name=password]').attr('type') == 'password') {
+						$('input[name=password], input[name=password_confirmation]').attr('type', 'text');
+					} else {
+						$('input[name=password], input[name=password_confirmation]').attr('type', 'password');
+					}
+				});
+			</script>
+
+		</div>
+	</div>
+</body>
+</html>

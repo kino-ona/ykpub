@@ -8648,3 +8648,52 @@ footer.foocn .copy {color:#999999;}
 .pome_mlayer .btnwrap .btn_login {float:left;background-color: #78777b;}
 .pome_mlayer .btnwrap .btn_join {float:right;background-color: #139fdf;}
 /* 20200218 pome event e */
+
+
+/* 20201221 디펜드 정기배송상품 수정 s */
+.titW.tW_t1 { margin-bottom: 30px; }
+.tableT2 td span { display:block;margin-top:3px;font-size:11px;color: #008256; }
+/* 20201221 디펜드 정기배송상품 수정 */
+
+/* 20210813 s */
+.titW.desample.sample019 h2 {font-family: 'Spoqa Han Sans';line-height:1.5;font-weight: 700;}
+.titW.desample.sample019 span {font-family: 'Spoqa Han Sans';}
+.divider.desample.sample019 .lead .tit {margin-bottom: 20px;}
+.divider.desample.sample019 .lead .tit span.com {line-height:1.2;font-weight: 300;}
+.divider.desample.sample019 .lead .tit:after {margin: 16px 0 16px;}
+#container {padding-bottom: 30px;}
+.de .divider.renew .btnWrap a {font-weight: 700;}
+.divider.desample.sample019 {
+  background: #ededef url(../images/de_new/bg_de_sample2021.jpg) no-repeat 0 0;
+  background-size: 100% auto;
+}
+.memcheck_pop {height: auto;min-height: 275px;}
+.memcheck_pop .layerCont {padding-left: 25px;padding-right: 25px;padding-bottom: 10px;}
+.memcheck_pop .p1 {font-weight: 700;}
+.de .divider.recomm.sample019 .btn .type_co, .de .divider.renew.sample019 .ptit {font-weight: 700;}
+.de .divider.recomm.sample019 .sampleInfo ul li.btm p>span {padding-left: 5px;line-height: 1.5;}
+.de .divider.renew.sample019 .inT .wF3 {width: 33.3%;}
+.de .divider.renew.sample019 .inT:first-of-type dd > div:nth-of-type(2) {display: inline-block;width: 80px;white-space: nowrap;transform: translateY(8px);}
+.de .divider.renew.sample019 .inT:first-of-type dd > div:nth-of-type(3) {position: absolute; bottom: 0;right: 0; display: inline-block;width:100%;max-width: calc(100% - 64px);}
+.de .divider.renew.sample019 .selectBox {background-size: 18px 18px;background-position: right 10px center;}
+.de .divider.renew.sample019 .intCol3 dd span {width: 33.3%;}
+.de .divider.renew.sample019 .inT {margin-bottom: 20px;}
+.de .divider.renew.sample019 .inT dd {position: relative;}
+.de .divider.recomm.sample019 .sampleInfo .spec:before {font-weight: 700;transform: translateY(2px);}
+.de .divider.renew.sample019 .intAdrs > dd:nth-of-type(1) span:first-of-type {width: 60%;}
+.de .divider.renew.sample019 .intAdrs > dd:nth-of-type(1) span:last-of-type {width: 40%;}
+.de .divider.renew.sample019 .intAdrs > dt {width: 80px;position: relative;padding-bottom: 130px;}
+.de .divider.renew.sample019 .intAdrs > dd:first-of-type {position: absolute;right: 0;top: 0;width: 100%;max-width: calc(100% - 83px);}
+.de .divider.renew.sample019 .intAdrs > dd:nth-of-type(2) {position: absolute;right: 0;top: 38px;width: calc(100% - 83px);}
+.de .divider.renew.sample019 .intAdrs > dd:nth-of-type(3) {position: absolute;right: 0;top: 86px;width: calc(100% - 83px);}
+.de .divider.renew.sample019 .inT:last-of-type dt {letter-spacing: -0.025em;padding-right: 25%;}
+.de .divider.renew.sample019 .inT:last-of-type > dd:nth-of-type(1) .lnk {transform: translateY(-27px);padding-left: 9px;padding-right: 9px;}
+.de .divider.renew.sample019 .inT:last-of-type dd:nth-of-type(2) {padding-top: 10px;}
+.de .divider.renew.sample019 .btnWrap {display: flex;}
+.de .divider.renew.sample019 .btnWrap > span {margin-top: 20px;flex: 1;}
+.de .divider.renew.sample019 .btnWrap > span a {width: 100%;max-width: 100%;padding-left: 0;padding-right: 0;line-height: 45px;height: 45px;}
+.de .divider.after.sample019 .goReview {padding: 20px;}
+/* 20210813 e */
+/* 20210812 s */
+.de .divider.recomm.sample019 .sampleInfo ul li .tit {line-height: 1.6;}
+/* 20210812 e */

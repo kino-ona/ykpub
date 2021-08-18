@@ -12663,3 +12663,25 @@ footer .footerCont .footsec .btnTop {
 }
 .momq_login .momq_loginpop_btn_area button.btn {background:#233e6b;color:#fff;border:0;font-size: 16px;}
 /* 20190803, 20190821 맘큐로그인 수정 */
+
+/* 20201216 디펜드 정기배송상품 전체수정 */
+.de .delivery .sec3 table td { padding: 12px 10px 10px 10px; }
+.de .delivery .sec3 table td span { color:red; }
+.de .delivery .sec3 .cont { margin-top: 60px; }
+/* 20201216 디펜드 정기배송상품 전체수정 */
+
+/* 20201221 디펜드 정기배송상품 수정 */
+.de .delivery .sec3 table td span { font-size: 16px; color: #008256; }
+/* 20201221 디펜드 정기배송상품 수정 */
+
+/* 20210813 s */
+.memcheck_pop .p1 {font-weight: 700;}
+.de .sample.sample19 .requestInfo .cont {background: url(../images/de_new/img_de_sample2021.jpg) no-repeat right top #fff;}
+.de .sample.sample19 .sampleInfo.recommSample .title {font-weight: 700;}
+.de .sample.sample19 .writeTable .tableCont.userInfo .pad_l30 {font-weight: 700;}
+.de .sample .writeTable .tableCont.userInfo .recipient li {margin-bottom: 15px;}
+.de .sample .writeTable .tableCont.userInfo table tr:first-of-type th {padding-bottom: 67px;}
+/* 20210813 e */
+/* 20210812 s */
+.de .sample.sample19 .sampleInfo.recommSample .infoCont .inCont .right .p0 {line-height: 1.6;}
+/* 20210812 e */

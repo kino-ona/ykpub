@@ -853,14 +853,14 @@ footer.renewfoo {
 		background-color: #00c73c;
 		color:#fff;
 		> i {
-			background-image: url(/images/bt-naver.jpg);
+			background-image: url(../../../images/bt-naver.jpg);
 		}
 	}
 	.bt_facebook {
 		background-color: #3c5a9b;
 		color:#fff;
 		> i {
-			background-image: url(/images/bt-facebook.jpg);
+			background-image: url(../../../images/bt-facebook.jpg);
 		}
 	}
 }
@@ -879,7 +879,7 @@ footer.renewfoo {
 				margin-right:0;
 				background-color: #fff311;
 				background: {
-					image: url(/images/bt-kakao.jpg);
+					image: url(../../../images/bt-kakao.jpg);
 					position: left 25px center;
 					repeat: no-repeat;
 				}

@@ -930,3 +930,91 @@ footer.renewfoo {
 	}
 }
 /** 2021 SSO Kakao thinkq e **/
+/** 2021 SSO 가입화면 s **/
+.sso_wrap {
+	.join_wrap.pophtml {
+		max-width: 410px;
+		.tit {
+			font-weight: 350;
+			&._bold {
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+		.inner {
+			margin: 20px 0 15px;
+			&._shadowed {
+				padding: 20px 35px;
+				background-color: #f4f6f8;
+				text-align: center;
+			}
+			&._complete {
+				p {
+					font-weight: 350;
+				}
+				margin-bottom: 45px;
+			}
+			p {
+				font-weight: 500;
+			}
+			em {
+				display: inline-block;
+				padding: 15px 0;
+				color: #009fe3;
+				font-style: normal;
+				font-size: 24px;
+				font-weight: inherit;
+			}
+			.btnwrap {
+				margin: 0 auto;
+				max-width: 250px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.btn {
+				margin: 0 auto;
+				display: inline-block;
+				width: auto;
+				height: auto;
+				padding: 10px 20px;
+				background-color: #fff;
+				border-color: #ddd;
+				font-size: 14px;
+				line-height: 1;
+				font-weight: 500;
+			}
+		}
+		.login_frm {
+			text-align: left;
+			font-weight: 300;
+			margin-bottom: 30px;
+			.line {
+				.ti {
+					font-weight: 300;
+				}
+				input {
+					width: 80%;
+				}
+			}
+			.chk {
+				text-align: inherit;
+			}
+		}
+		.btnwrap, .btn_nrmal {
+			width: 100%;
+		}
+		.btn_nrmal {
+			font-weight: 500;
+		}
+		.snoti {
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 300;
+			&.warn {
+				color: #e63c4f;
+			}
+		}
+	}
+}
+/** 2021 SSO 가입화면 e **/

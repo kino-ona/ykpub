@@ -713,6 +713,10 @@ p, span, li{word-break: keep-all;}
 				font-size: 14px;
 				line-height: 1;
 				font-weight: 500;
+				white-space: nowrap;
+				&:not(:first-of-type) {
+					margin-left: 5px;
+				}
 			}
 		}
 		.login_frm {

@@ -938,8 +938,6 @@ footer.renewfoo .familysite select { background-color: #3c3c3c; }
 
 .join_form p.h3_ti { padding-bottom: 15px; font-weight: 500; font-size: 16px; }
 
-/** 2021 SSO Kakao thinkq e **/
-/** 2021 SSO 가입화면 s **/
 .sso_wrap .join_wrap.pophtml { max-width: 410px; }
 
 .sso_wrap .join_wrap.pophtml .tit { font-weight: 350; }
@@ -978,4 +976,4 @@ footer.renewfoo .familysite select { background-color: #3c3c3c; }
 
 .sso_wrap .join_wrap.pophtml .snoti.warn { color: #e63c4f; }
 
-/** 2021 SSO 가입화면 e **/
+/** 2021 SSO Kakao thinkq e **/

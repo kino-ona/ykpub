@@ -43,7 +43,7 @@
 .pwdchangelayer .btnwrap {margin-bottom:30px;}
 /* layer */
 
-p.help {position:relative;padding-left:8px;color:#888888;font-size: 14px;text-align: left;}
+p.help {position:relative;padding-left:8px;color:#888888;font-size: 12px;text-align: left;}
 p.help:before {
 	display:block;position: absolute;left:0;top:8px;
 	width:2px;height:2px;background-color: #888;
@@ -104,19 +104,18 @@ p.help:before {
 .login_frm .line:after {content: '';display: block;clear:both;}
 .login_frm .line {padding:5px 0;border-bottom:1px solid #dddddd;}
 .login_frm .line > p {float:left;font-weight: 500;font-size: 13px; color:#a3a3a3;}
-.login_frm .line .ti { width:60px;height:40px;line-height: 43px; }
+.login_frm .line .ti { width:60px;height:40px;line-height: 43px;font-weight: inherit; }
 .login_frm .line .frm { width:calc(100% - 60px); }
 .login_frm .line input { border:0;width:60%;padding:0; }
 .login_frm .chk {padding:20px 0;text-align: right;}
-.login_wrap .btnwrap {margin-bottom:25px;}
+.login_wrap .btnwrap {margin-bottom:20px;}
+.login_wrap .btnwrap .btn {height: 45px;line-height: 43px;}
 .login_wrap .btnwrap p.help {margin-top:13px;}
 .sns_login:after {content: '';display: block;clear:both;}
-.sns_login {margin-bottom:25px;}
-.sns_login > p {float:left;width:calc((100% / 3) - 4px);height:40px;margin-right:5px;}
+.sns_login > p {float:left;width:calc((100% / 3) - 4px);margin-right:5px;}
 .sns_login > p:last-child{margin-right:0;}
-.sns_login > p a {display: inline-block;}
 .sns_login > p a {
-	display: inline-block;width:100%;height:40px;line-height: 38px;
+	display: inline-block;width:100%;height: 45px;line-height: 43px;
 	background-color: #f1f3f4;text-align: center;color:#888888;font-size: 12px;
 }
 .sns_login a > i {
@@ -126,27 +125,11 @@ p.help:before {
 	background-repeat:no-repeat;
 	vertical-align: middle;
 }
-.sns_login .bt_naver > i {
-	background-image: url(../images/sso/ico_naver.png);
-	background-size:15px;
-}
-.sns_login .bt_facebook > i {
-	width:15px;
-	background-image: url(../images/sso/ico_facebook.png);
-	background-size:8px;
-}
-.sns_login .bt_kakao > i {
-	background-image: url(../images/sso/ico_kakao.png);
-	background-size:20px;
-}
-.login_wrap .util {margin-bottom:25px;text-align: center;}
+.login_wrap .util {margin-bottom:40px;text-align: center;}
 .login_wrap .util a{ display: inline-block;font-size: 12px;}
-.login_wrap .util a:after {
-	content: '';display: inline-block;margin:0 20px;width:1px; height:10px;background-color: #000;
-}
+.login_wrap .util a:after {content: '';display: inline-block;margin:0 20px;width:1px; height:10px;background-color: #000;}
 .login_wrap .util a:last-child:after { display: none; }
 
-.sso_wrap .btn_foo {margin-top:40px;}
 .sso_wrap .btn_next {width:100%;background-color: #009fe3;color:#fff;border:1px solid #009fe3;text-align: center;}
 .sso_wrap .join_wrap{max-width:800px;width:100%;margin:0 auto;padding:30px 0 60px;}
 .sso_wrap .join_wrap > h1 {padding-bottom:15px;font-size: 25px;font-weight: 300;}
@@ -210,7 +193,6 @@ p.help:before {
 .sso_wrap .logo_list .logos_monit {background-image:url(../images/sso/logos_monit.jpg);}
 .sso_wrap .logo_list .logos_monit:hover{background-image:url(../images/sso/logos_monit_on.jpg);}
 .errtx {display: block;left:0;color:#e63c4f;font-size: 11px;}
-.join_form {margin-top:25px;}
 .input_frm {margin-bottom:35px;}
 .input_frm li{width:100%;margin-bottom:10px;}
 .input_frm li:after {content: '';display: block;clear:both;}
@@ -238,7 +220,7 @@ p.help:before {
 .input_frm select {vertical-align: middle;}
 .input_frm .birth {width:77%;}
 .input_frm .email {width:100%;}
-.join_form .terms_chk {margin-top:10px;margin-bottom:60px;}
+.join_form .terms_chk {margin-bottom:20px;}
 .join_form .terms_chk li {position: relative;margin-bottom:15px;}
 .join_form .terms_chk li label {width:90%;font-weight: 400;}
 .join_form .terms_chk li label .in {display: inline-block;width:85%;}
@@ -528,7 +510,7 @@ p, span, li{word-break: keep-all;}
 	.heading {	
 		position:relative;
 		width:100%;
-		margin:0;
+		margin-bottom: 20px;
 		text-align: center;
 		span {
 			position:relative;
@@ -536,7 +518,7 @@ p, span, li{word-break: keep-all;}
 			padding-left:8px;
 			padding-right:8px;
 			background-color: #fff;
-			font-size:16px;
+			font-size: 13px;
 			color:#a3a3a3;
 		}
 		&:before {
@@ -559,10 +541,10 @@ p, span, li{word-break: keep-all;}
 		}
 		a {
 			width:100%;
-			font-size:18px;
+			font-size:15px;
 			i {
-				width:30px !important;
-				background-size:30px 30px !important;
+				width: 24px !important;
+				background-size: 24px 24px !important;
 				margin-top:-3px;
 			}
 		}
@@ -596,73 +578,66 @@ p, span, li{word-break: keep-all;}
 		}
 	}
 }
-.sso_wrap {
-	.join_wrap {
-		.btn_nrmal {
-			margin-right:10px;
-			font-size:16px;
-			&.auth_popup {
-				width:calc(50% - 10px);
-				background-color: #009fe3;
-				color:#fff;
-			}
-			&._kakao {
-				padding-left:40px;
-				margin-right:0;
-				background-color: #fff311;
-				background: {
-					image: url(../../../../images/bt-kakao.jpg);
-					position: left 25px center;
-					repeat: no-repeat;
-				}
-				border-color:#fff311;
-				color:#381e1f;
-			}
-		}
-	}
-	.btnwrap {
-		&.btn_foo {
-			.btn {
-				margin-bottom:10px;
-			}
-		}
-		&._sevaral {
-			display: flex;
-			.btn {
-				flex:1;
-				width:auto;
-				margin-left:10px;
-				&:first-child {
-					margin-left:0;
-				}
-			}
-		}
-	}
-}
 .join_form {
 	.terms_chk {
-		.txt {
-			font-weight: 350;
-			margin-top:10px;
-		}
 		li.first {
 			label {
 				font-weight: 500;
 			}
 		}
+		input[type="checkbox"] + label {
+			position: relative;
+			padding-left: 28px;
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		.txt {
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 350;
+			margin-top: 10px;
+		}
 		.btn_vw {
-			top:inherit;
-			bottom:3px;
+			top: 3px;
 		}
 	}
 	p.h3_ti {
-		padding-bottom:15px;
+		padding-left: 28px;
+		font-size: 15px;
 		font-weight: 500;
-		font-size:16px;
 	}
 }
-.sso_wrap {
-	.join_wrap.pophtml {
+.sso_wrap .join_wrap {
+	.btn_nrmal {
+		height: 45px;
+		line-height: 43px;
+		margin-right:10px;
+		font-size:16px;
+		&.auth_popup {
+			font-size: 15px;
+			font-weight: 500;
+		}
+		&._kakao {
+			padding-left:40px;
+			margin-right:0;
+			background-color: #fff311;
+			background: {
+				image: url(../../../../images/bt-kakao.jpg);
+				position: left 25px center;
+				repeat: no-repeat;
+			}
+			border-color:#fff311;
+			color:#381e1f;
+		}
+		&._yk {
+			color: #fff;
+			background-color: #009fe3;
+		}
+	}
+	&.pophtml {
 		max-width: 410px;
 		.tit {
 			font-weight: 350;
@@ -748,9 +723,8 @@ p, span, li{word-break: keep-all;}
 			}
 		}
 		.btn_nrmal {
-			width: 100%;
-			font-size: 15px;
-			font-weight: 500;
+			height: 55px;
+			line-height: 53px;
 		}
 		.snoti {
 			margin-top: 15px;
@@ -761,7 +735,41 @@ p, span, li{word-break: keep-all;}
 			&.warn {
 				color: #e63c4f;
 			}
+		}	
+	}
+}
+.sso_wrap {
+	.btnwrap {
+		&.btn_foo {
+			.btn {
+				margin-bottom:10px;
+			}
+		}
+		&._several {
+			display: flex;
+			.btn {
+				flex:1;
+				width:auto;
+				height: 45px;
+				line-height: 43px;
+				margin-left:10px;
+				&:first-child {
+					margin-left:0;
+				}
+			}
+		}
+	}	
+	.banner {
+		clear: both;
+		position: relative;
+		max-width: 800px;
+		width: 100%;
+		margin: 35px auto 0;
+		text-align: center;
+		&.wide {
+			position: absolute;
+			left: 0;
+			right: 0;
 		}
 	}
 }
-/** 2021 SSO Kakao thinkq e **/

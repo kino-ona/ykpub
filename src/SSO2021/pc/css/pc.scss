@@ -1023,4 +1023,42 @@ footer.renewfoo {
 		}
 	}
 }
+.layerwrap .btn_close {
+	cursor: pointer;
+}
+.layerbody {
+	.terms_layer-wrap {
+		padding-bottom:55px;
+		> h1 {
+			font-size:32px;
+			font-weight: 300;
+			color:#000;
+			> span {
+				display: block;
+				font-size:inherit;
+				font-weight: inherit;
+				color:#009fe3;
+			}
+		}
+		.btnwrap._sevaral {
+			display: flex;
+			.btn {
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				width: auto;
+				margin-left: 10px;
+				text-align: center;
+			}
+			.btn_next {
+				width: 100%;
+				background-color: #009fe3;
+				color: #fff;
+				border: 1px solid #009fe3;
+				text-align: center;
+			}
+		}
+
+	}
+}
 /** 2021 SSO Kakao thinkq e **/

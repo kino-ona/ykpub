@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/reset_mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/pome.css" type="text/css" media="all">
+	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
+</head>
+<body>
+<div style="width:100%;padding-top:100px;text-align: center;">
+  <a href="javascript:pophtmlOpen('./account/join-pop01.html');">가입 팝업 - 통합회원 아이디가 있는 경우</a>
+  <br><br>
+
+  <a href="javascript:pophtmlOpen('./account/join-pop02.html');">가입 팝업 - 기존 카카오 계정이 있는 경우</a>
+  <br><br>
+
+  <a href="javascript:pophtmlOpen('./account/join-pop03.html');">가입 팝업 - SSO 통합회원과 카카오 간편로그인 모두 이용중인 경우</a>
+  <br><br>
+
+  <a href="javascript:pophtmlOpen('./account/join-pop04.html');">가입 팝업 - SSO 카카오 회원 전환 완료 안내 팝업</a>
+  <br><br>
+
+  <a href="javascript:pophtmlOpen('./account/join-pop05.html');">가입 팝업 - 회원정보 통합 신청 완료 팝업</a>
+  <br><br>
+</div>
+
+<script>
+  function pophtmlOpen(targetHtml) {
+    popwidth = $(window).width();
+    popheight = $(window).height();
+
+    var openOption = 'width=' + popwidth +', height=' + popheight +', top=0';
+    open(targetHtml, 'YK SSO 통합회원 유한킴벌리', openOption);
+  }
+</script>
+</body>
+</html>

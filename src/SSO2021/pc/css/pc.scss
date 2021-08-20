@@ -791,6 +791,14 @@ footer.renewfoo {
 /* 210721 e */
 
 /** 2021 SSO Kakao thinkq s **/
+.popup_wrap {
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:10px;
+	.row {
+		width:auto;
+	}
+}
 .sns_login {
 	margin-bottom:10px;
 	.heading {	

@@ -821,4 +821,55 @@ p, span, li{word-break: keep-all;}
 		}
 	}
 }
+.terms_agree_layer {
+	.termslay.layerwrap {
+		height:80%;
+		padding:0;
+		.layconts {
+			height:100%;
+			overflow-y: auto;
+			padding:30px 25px;
+		}
+	}
+	.terms_layer-wrap {
+		> h1 {
+			font-size:25px;
+			font-weight: 300;
+			> span {
+				display: block;
+				color:#009fe3;
+			}
+		}
+		input[type="checkbox"] + label {
+			font-size:14px;
+		}
+		.h3_ti {
+			padding-bottom:10px;
+		}
+	}
+	.btnwrap {
+		&._sevaral {
+			display: flex;
+			margin-top:20px;
+			.btn {
+				flex:1;
+				margin-left:10px;
+				height:45px;
+				line-height: 43px;
+				&:first-child {
+					margin-left:0;
+				}
+			}
+		}
+	}
+}
+input[type="checkbox"] + label:before {
+	background: url(/images/mobile/ico_check_off.png) no-repeat 0 0;
+	background-size:20px;
+}
+input[type="checkbox"]:checked + label:before {
+	background: url(/images/mobile/ico_check_on.png) no-repeat 0 0;
+	background-size:20px;
+}
+
 /** 2021 SSO Kakao thinkq e **/

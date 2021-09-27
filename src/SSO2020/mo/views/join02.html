@@ -11,6 +11,8 @@
 	<title>유한킴벌리</title>
 	<script type="text/javascript" src="../../Scripts/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery.popupoverlay.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/common.js"></script>
 	<link rel="stylesheet" href="../common/css/sso.css" type="text/css" media="all">
 </head>
 <body>
@@ -120,7 +122,7 @@
 								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용</span></label></p>
+								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 개인정보 수집 및 이용</span></label></p> <!-- 20210927 '필수항목' 문구 삭제 -->
 								<a href="#" onclick="layerOpen('termslayer02');return false;" class="btn_vw">보기</a>
 							</li>
 							<li>
@@ -128,7 +130,7 @@
 								<a href="#" onclick="layerOpen('termslayer03');return false;" class="btn_vw">보기</a>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="in"><span class="esse">(필수)</span> 맘큐 필수항목 개인정보 수집 및 이용</span></label></p>
+								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="in"><span class="esse">(필수)</span> 맘큐 개인정보 수집 및 이용</span></label></p> <!-- 20210927 '필수항목' 문구 삭제 -->
 								<a href="#" onclick="layerOpen('termslayer04');return false;" class="btn_vw">보기</a>
 							</li>
 							<li>
@@ -139,10 +141,10 @@
 								<p><input type="checkbox" id="chk06"><label for="chk06"><span class="in"><span class="sel">(선택)</span> 맘큐 선택항목 개인정보 수집 및 이용</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer06');return false;" class="btn_vw">보기</a>
 							</li> -->
-							<li>
+							<!-- 20210927 마케팅 목적 이용 약관 전체 삭제 <li>
 								<p><input type="checkbox" id="chk07"><label for="chk07"><span class="in"><span class="sel">(선택)</span> 맘큐 마케팅 목적 이용</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer07');return false;" class="btn_vw">보기</a>
-							</li>
+							</li> -->
 							<!-- 20200831 삭제 <li>
 								<p><input type="checkbox" id="chk08"><label for="chk08"><span class="in"><span class="sel">(선택)</span> 맘큐 개인정보 처리위탁</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer08');return false;" class="btn_vw">보기</a>
@@ -151,8 +153,9 @@
 								<p><input type="checkbox" id="chk09">
 									<label for="chk09"><span class="in"><span class="sel">(선택)</span> <strong>광고성 정보 수신 동의</strong></label> <!-- 20200904 //-->
 								</p>
-								<a href="#" class="btn_vw">보기</a>
+								<!-- 20210927 삭제 <a href="#" class="btn_vw">보기</a> -->
 								<div class="select_chk MOMQ">
+									<span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
 									<p class="rchk">
 										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
 									</p>
@@ -162,9 +165,9 @@
 										<span class="tooltip"><em>SMS 수신동의를 하시면, <br>첫 구매 축하쿠폰(20%)과 베베쿡 첫 주문 할인쿠폰(5천원)을 드립니다.</em></span>
 										<!--// 20210721 툴팁 -->
 									</p>
-									<p class="rchk">
+									<!-- 20210927 삭제 <p class="rchk">
 										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
-									</p>
+									</p> -->
 									<!-- 20210721 안내문구 영역 수정 -->
 									<div class="helpwrap">
 										<ul>
@@ -385,12 +388,12 @@
 		</div>
 	</div>
 	<!--// 약관 레이어  -->
-	<!-- 약관 레이어 : 유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용[필수] -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 개인정보 수집 및 이용[필수] -->
 	<div class="layerbody" id="termslayer02">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer02')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>유한킴벌리 SSO회원 필수항목 개인정보 수집 및 이용[필수]</p>
+				<p>유한킴벌리 SSO회원 개인정보 수집 및 이용[필수]</p> <!-- 20210927 '필수항목' 문구 삭제 -->
 			</div>
 			<div class="layconts">
 				<div class="inscroll">
@@ -415,12 +418,12 @@
 		</div>
 	</div>
 	<!--// 약관 레이어  -->
-	<!-- 약관 레이어 : 맘큐 필수항목 개인정보 수집 및 이용[필수] -->
+	<!-- 약관 레이어 : 맘큐 개인정보 수집 및 이용[필수] -->
 	<div class="layerbody" id="termslayer04">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer04')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>맘큐 필수항목 개인정보 수집 및 이용[필수]</p>
+				<p>맘큐 개인정보 수집 및 이용[필수]</p> <!-- 20210927 '필수항목' 문구 삭제 -->
 			</div>
 			<div class="layconts">
 				<div class="inscroll">
@@ -460,8 +463,8 @@
 		</div>
 	</div>
 	<!--// 약관 레이어  -->
-	<!-- 약관 레이어 : 맘큐 마케팅 목적 이용[선택] -->
-	<div class="layerbody" id="termslayer07">
+	<!-- 약관 레이어 : 20210927 마케팅 목적 이용 약관 전체 삭제 -- 맘큐 마케팅 목적 이용[선택] -->
+	<!-- <div class="layerbody" id="termslayer07">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer07')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -473,8 +476,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--// 약관 레이어  -->
+	</div> -->
+	<!--// 약관 레이어 : 20210927 마케팅 목적 이용 약관 전체 삭제 -->
 	<!-- 약관 레이어 : 맘큐 개인정보 처리위탁[선택] -->
 	<div class="layerbody" id="termslayer08">
 		<div class="layerwrap termslay">

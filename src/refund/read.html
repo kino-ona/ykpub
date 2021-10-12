@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>크리넥스 마이비데 - 환불 안내</title>
+<link rel="shortcut icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_my.png" type="image/x-icon" />
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://www.ykbrand.co.kr/Common/css/new.css">
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
+	function goodsSearch() {
+			form = new $Form('bsForm');
+			form.submit();
+	}
+	// 에이젼트 체크
+	var isMobile = false;
+	var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+
+	setTimeout(function () {
+	for (var word in mobileKeyWords) {
+		if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
+			isMobile = true;
+			break;
+		}
+	}
+	var href = location.href;
+	if (isMobile) {	// 웹에서 모바일로
+		// location.href = 'http://' + href.split('/')[2] + '/mobile';
+		$('#wrap').css('min-width', '100%')
+	}
+	}, 100);
+</script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">현재 사용하고 계신 브라우저는 <strong>공식지원</strong>이 끊긴 브라우저입니다. 다음 페이지에서 <a href="http://browsehappy.com/">브라우저 업그레이드</a>를 진행해 주세요.</p>
+	<![endif]-->
+	<!-- Content 영역 -->
+	<div id="wrap">
+
+		<div id="container">
+
+			<link rel="stylesheet" type="text/css" href="refund.css">
+			<div class="refund">
+				<div class="head">
+					<h1 class="logo"><a href="/default.aspx"><img src="./images/mybidet_logo.jpg" alt="마이비데"></a></h1>
+				</div>
+
+				<div class="information_wrap">
+					<div class="refund_header">
+						<p class="ti">크리넥스 마이비데<br>환불 접수 내역</p>
+					</div>
+					<p class="pointx">입력하신 내용을 확인 하시고, <strong>‘확인 후 접수’ 버튼 클릭해 주세요.</strong></p>
+					<div class="refund_tbl _normal">
+						<table>
+							<tr>
+								<th class="col1">이름</th>
+								<td class="col2">홍길동</td>
+							</tr>
+							<tr>
+								<th>휴대폰</th>
+								<td>010 - 0000 - 0000</td>
+							</tr>
+							<tr>
+								<th>주소</th>
+								<td>서울시 송파구 잠실 1동 롯데월드 타워 1층 (000-000)	</td>
+							</tr>
+							<tr>
+								<th>계좌번호</th>
+								<td>하나은행 310574891732910 홍길동</td>
+							</tr>
+							<tr>
+								<th>환불 대상 제품</th>
+								<td>
+									<div class="inline">
+										크리넥스 마이비데 30 5개
+										<p><span class="tsum">환불금액 : <strong class="ft_blue">9,900 원</strong></span></p>
+									</div>
+									<div class="inline">
+										크리넥스 마이비데 30 5개
+										<p><span class="tsum">환불금액 : <strong class="ft_blue">7,900 원</strong></span></p>
+									</div>
+								</td>
+							</tr>
+							<tr class="tr_total">
+								<th>환불 예상 금액</th>
+								<td><strong class="ft_blue">00,000 원</strong></td>
+							</tr>
+							<tr>
+								<th>환불 접수 시간</th>
+								<td>2021년 10월 08일 19:00</td>
+							</tr>
+							<tr class="tr_total">
+								<th>환불 접수 수정<br>/ 취소 가능한 시간</th>
+								<td><strong class="ft_blue">2021년 10월 08일 20:30 <br>/ 2021년 10월 08일 22:00</strong></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="refund_notice">
+						<p>
+							<span>환불 접수는 휴대폰 번호당 1회만 가능합니다.</span> <br>
+						</p>
+						<p>
+							환불 접수/취소 가능 시간이 (접수 후 90분 이내) 경과된 후에는 <span>품고객센터 지원센터(문자상담 <a href="tel:1666-7067">1666-7067</a>, 발신자부담/수신자부담전화 <a href="tel:080-010-3200">080-010-3200</a></span> 로 연락 부탁 드립니다.
+						</p>
+					</div>
+					
+					<div class="btnArea">
+						<a href="#" class="btn btn02">접수내역 수정</a>
+						<a href="#" class="btn btn01">확인 후 접수</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!--// Content 영역 -->
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>크리넥스 마이비데 - 환불 안내</title>
+<link rel="shortcut icon" href="https://www.ykbrand.co.kr/Common/images/favicon/favicon_my.png" type="image/x-icon" />
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://www.ykbrand.co.kr/Common/css/new.css">
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
+	function goodsSearch() {
+			form = new $Form('bsForm');
+			form.submit();
+	}
+	// 에이젼트 체크
+	var isMobile = false;
+	var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+
+	setTimeout(function () {
+	for (var word in mobileKeyWords) {
+		if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
+			isMobile = true;
+			break;
+		}
+	}
+	var href = location.href;
+	if (isMobile) {	// 웹에서 모바일로
+		// location.href = 'http://' + href.split('/')[2] + '/mobile';
+		$('#wrap').css('min-width', '100%')
+	}
+	}, 100);
+</script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">현재 사용하고 계신 브라우저는 <strong>공식지원</strong>이 끊긴 브라우저입니다. 다음 페이지에서 <a href="http://browsehappy.com/">브라우저 업그레이드</a>를 진행해 주세요.</p>
+	<![endif]-->
+	<!-- Content 영역 -->
+	<div id="wrap">
+
+		<div id="container"> 
+
+			
+			<link rel="stylesheet" type="text/css" href="refund.css">
+			<div class="refund">
+				<div class="head">
+					<h1 class="logo"><a href="/default.aspx"><img src="./images/mybidet_logo.jpg" alt="마이비데"></a></h1>
+				</div>
+				<div class="information_wrap">
+					<div class="refund_header">
+						크리넥스 마이비데 사용 고객님께 안내드립니다.
+						<p class="ti">“고객님들께 불편을 드린 점 <br>진심으로 사과드리며 <br>일부 제품을 자진 회수합니다.”</p>
+					</div>
+					<div class="information_content">
+						<p>
+							당사가 판매한 크리넥스 마이비데 일부 제품의 자진 회수를 시행합니다. 해당 제품은 제조협력사와 당사의 품질검사 결과 정상 제품으로 확인되어 출고됐으나 보관/사용과정에서 수개월이 지나면서 특정 미생물에 대한 방어력 저하로 미생물 발생 가능성이 확인되었습니다. 보다 철저히 관리하지 못하여 고객님들께 심려와 불편을 끼쳐 드린점 진심으로 사과 드립니다.<br><br>
+						</p>
+						<p>
+							발생 가능성이 제기된 미생물은 식품발효원료로도 사용되며 인체 위해가능성은 없으나 물티슈 기준에 부합하지 않으므로 보관하거나 사용 중인 모든 제품의 회수에 협조를 부탁드립니다.<br><br>
+						</p>
+					</div>
+					<div class="refund_tbl">
+						<table>
+							<tr>
+								<th class="col1"><span>대상 제품</span></th>
+								<td class="col2"><strong>크리넥스 마이비데</strong><br>2019년 10월 1일부터 2020년 7월 21일 제조 제품 중 30매, 42매, 46매, 50매, 56매, 60매<br>(그 외 매수 제품은 해당 없음)</td>
+							</tr>
+							<tr>
+								<th class="col1"><span>대상 제품</span></th>
+								<td class="col2"><strong>크리넥스 마이비데 키즈</strong><br>2020년 4월 27일 제조 제품 중 42매
+									<span class="moretxt">* 크리넥스 마이비데 제품은 해당 기간 중 일부 로트만이 회수 대상이지만, 혼선을 최소화하고자 동일 매수의 모든 제품으로 회수 대상을 확대하였습니다.</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="information_content">
+						<p>고객의 안전을 회사의 최우선 정책으로 삼고 있는 당사는 제품안전과 품질 관리에 부족함이 없어야 함에도 불구하고 철저히 관리하지 못하여 우려와 불편을 드린 점 다시 한번 사과 드립니다</p>
+					</div>
+					<div class="btnArea">
+						<a href="write.html" class="btn btn01">환불 신청 바로가기</a>
+						<a href="#" class="btn btn02">나의 환불 접수 내역 확인</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+	<!--// Content 영역 -->
+
+</body>
+
+</html>

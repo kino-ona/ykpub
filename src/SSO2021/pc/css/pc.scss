@@ -1062,3 +1062,66 @@ footer.renewfoo {
 	}
 }
 /** 2021 SSO Kakao thinkq e **/
+
+/** 20210928 카카오싱크 제작물 관련 수정 s **/
+.join_form.SSOkakao {
+	.terms_chk {
+		.btn_vw {
+			bottom: unset;
+			top: 3px;
+		}
+	}
+}
+.join_form {
+	.terms_chk {
+		li {
+			&.last {
+				padding-bottom: 25px;
+				background: url(../images/sso/dot.png) repeat-x center bottom;
+			}
+			&.li-onedepth {
+				padding-left: 40px;
+				p.label {
+					display: inline-block;
+					font-size: 16px;
+					font-weight: 400;
+					cursor: pointer;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+/** 20210928 카카오싱크 제작물 관련 수정 e **/
+
+/** 20211013 s **/
+.a11y {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.png);}
+.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.png);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.jpg);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.png);}
+.join_wrap .com_alink {margin-top: 45px;}
+.join_wrap .com_alink .alink {display: inline-block;font-size: 14px;line-height: 1;font-weight: 500;border: 1px solid #f1f1f1;padding: 8px 16px;}
+.ykpluslogo {
+	position: absolute;
+	right: 0;
+	top: 32px;
+	width: 100px;
+	height: 32px;
+	background-size: 100px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../images/sso/ykplus-logo.png);
+}
+.sso_wrap .join_wrap > h2.h2_ti {margin-bottom: 40px;}
+
+/** 20211013 e **/

@@ -92,6 +92,43 @@
 						<a href="#" class="btn btn_small">바로가기</a>
 					</div>
 					
+					<!-- 20211013 SSO 오늘 플러스 -->
+					<h2 class="h2_ti">시설회원 정보</h2>
+					<ul class="input_frm">
+            <li>
+              <p class="ti">기관명</p>
+              <p class="put">
+                <input type="text" name="name" value="" readonly>
+                <button type="button" class="btn btn_small openLayer" data-hash="#facilityaddrLayer">검색</button>
+              </p>
+            </li>
+            <li>
+              <p class="ti">주소<span class="a11y_sr-only">(택배 받을 주소)</span></p>
+              <p class="put put_id">
+                <input type="text" name="shippingaddr1" value="" placeholder="">
+                <button type="button" class="btn btn_small openLayer" data-hash="#shippingaddrLayer">주소검색</button>
+              </p>
+              <span class="errtx js-idIsInvalid" style="display:none;"></span>
+            </li>
+            <li>
+              <p class="ti">상세 주소</p>
+              <p class="put">
+                <input type="text" name="shippingaddr2" value="">
+              </p>
+            </li>
+            <li>
+              <p class="ti">추가 연락처<span class="a11y_sr-only">(요양병원 또는 요양원 전화번호)</span></p>
+              <p class="put">
+                <input type="text" name="shippingaddr2" value="">
+              </p>
+            </li>
+					</ul>
+
+					<div class="btnwrap btn_foo">
+						<a href="#" class="btnDefault btnfull">확인</a>
+					</div>
+					<!--// 20211013 SSO 오늘 플러스 -->
+
 					<div>
 						<h2 class="h2_ti">회원탈퇴</h2>
 						<p class="desc">더 이상 이용을 원치 않으시면 회원탈퇴를 진행해주세요.

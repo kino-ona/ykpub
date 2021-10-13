@@ -29,7 +29,9 @@
     <header class="sso_head">
       <div class="row">
         <h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
-        <p class="childlogo"><a href="https://momq.co.kr"><span class="a11y_sr-only">momQ</span></a></p>
+        <!-- 20211013 SSO 오늘플러스 -->
+        <p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p>
+        <!--// 20211013 SSO 오늘플러스 -->
       </div>
     </header>
     <div id="container" class="contents">
@@ -172,29 +174,33 @@
                 </li>
                 <li>
                   <p>
-                    <input type="hidden" name="momq_terms_agree" value=" N ">
-                    <input type="checkbox" name="chk_momq_terms_agree" class=" required " id="termsNo4" data-id="4">
+                    <!-- 20211013 SSO 오늘플러스 -->
+                    <input type="hidden" name="ykplus_terms_agree" value=" N ">
+                    <input type="checkbox" name="chk_ykplus_terms_agree" class=" required " id="termsNo4" data-id="4">
                     <label for="termsNo4">
                       <span class="in">
                         <span class=" esse ">(필수)</span>
-                        맘큐 이용약관
+                        오늘 플러스 이용약관
                       </span>
                     </label>
                   </p>
-                  <a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_terms_agree_layer">보기</a>
+                  <a href="javascript:;" class="btn_vw openLayer" data-hash="#ykplus_terms_agree_layer">보기</a>
+                  <!--// 20211013 SSO 오늘플러스 -->
                 </li>
                 <li>
                   <p>
-                    <input type="hidden" name="momq_privacy_agree" value=" N ">
-                    <input type="checkbox" name="chk_momq_privacy_agree" class=" required " id="termsNo5" data-id="5">
+                    <!-- 20211013 SSO 오늘플러스 -->
+                    <input type="hidden" name="ykplus_privacy_agree" value=" N ">
+                    <input type="checkbox" name="chk_ykplus_privacy_agree" class=" required " id="termsNo5" data-id="5">
                     <label for="termsNo5">
                       <span class="in">
                         <span class=" esse ">(필수)</span>
-                        맘큐 개인정보 수집 및 이용
+                        오늘 플러스 개인정보 수집 및 이용
                       </span> <!-- 20210927 '필수항목' 문구 삭제 -->
                     </label>
                   </p>
-                  <a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_privacy_agree_layer">보기</a>
+                  <a href="javascript:;" class="btn_vw openLayer" data-hash="#ykplus_privacy_agree_layer">보기</a>
+                  <!--// 20211013 SSO 오늘플러스 -->
                 </li>
                 <!-- 20210927 마케팅 목적 이용 약관 전체 삭제 -->
                 <!-- <li>
@@ -225,21 +231,30 @@
                   <div class="select_chk MOMQ">
                     <span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
 
-                    <p class="rchk">
-                      <input type="hidden" name="MOMQ_adinfo_receive_SMS" value=" N ">
-                      <input type="checkbox" name="chk_MOMQ_adinfo_receive_SMS" id="rchk_SMS_MOMQ">
-                      <label for="rchk_SMS_MOMQ">
-                        SMS 수신
-                      </label>
-                    </p>
-
+                    <!-- 20211013 SSO 오늘플러스 -->
                     <p class="rchk">
                       <input type="hidden" name="MOMQ_adinfo_receive_EMAIL" value=" N ">
                       <input type="checkbox" name="chk_MOMQ_adinfo_receive_EMAIL" id="rchk_EMAIL_MOMQ">
                       <label for="rchk_EMAIL_MOMQ">
-                        이메일 수신
+                        <span class="in">
+                          <span class=" sel ">(선택)</span>
+                          이메일 수신
+                        </span>
                       </label>
                     </p>
+
+                    <p class="rchk">
+                      <input type="hidden" name="MOMQ_adinfo_receive_SMS" value=" N ">
+                      <input type="checkbox" name="chk_MOMQ_adinfo_receive_SMS" id="rchk_SMS_MOMQ">
+                      <label for="rchk_SMS_MOMQ">
+                        <span class="in">
+                          <span class=" sel ">(선택)</span>
+                          SMS 수신
+                        </span>
+                      </label>
+                    </p>
+                    <!--// 20211013 SSO 오늘플러스 -->
+
                     <!-- 20210721 툴팁 -->
                     <div class="tooltip"><em>SMS 수신동의를 하시면, 첫 구매 축하쿠폰(20%)과 <br>베베쿡 첫 주문 할인쿠폰(5천원)을 드립니다.</em></div>
                     <!--// 20210721 툴팁 -->
@@ -751,20 +766,19 @@
         </div>
       </div>
       <!--// 약관 레이어  -->
-      <!-- 약관 레이어  -->
-      <div class="layerbody" id="momq_terms_agree_layer">
+      <!-- 약관 레이어 : 20211013 오늘 플러스 이용약관  -->
+      <div class="layerbody" id="ykplus_terms_agree_layer">
         <div class="layerwrap termslay">
-          <a class="btn_close momq_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+          <a class="btn_close ykplus_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
           <div class="layhead">
-            <p>맘큐 이용약관</p>
+            <p>오늘 플러스 이용약관</p>
           </div>
           <div class="layconts">
             <div class="inscroll termsarea">
               <p>[제1장 총칙]<br>
                 <br>
                 제1조(목적)<br>
-                이 약관은 유한킴벌리 주식회사("회사" 또는 "유한킴벌리"라 한다)가 운영하는 맘큐 사이버몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에
-                있어 몰과 이용자의 의무권리·의무 및 책임사항을 규정함을 목적으로 합니다.<br>
+                이 약관은 유한킴벌리 주식회사("회사" 또는 "유한킴벌리"라 한다)가 운영하는 오늘 플러스 사이버몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 몰과 이용자의 의무권리·의무 및 책임사항을 규정함을 목적으로 합니다.<br>
                 ※「PC통신, 무선, 모바일 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」<br>
                 <br>
                 제2조(정의)<br>
@@ -831,8 +845,6 @@
                 <br>
                 제6조(회원가입)<br>
                 ① 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입하여 “유한킴벌리 통합회원”으로 가입한 후 이 약관에 동의한다는 의사표시를 함으로써 회원가입을 신청합니다.<br>
-                <!-- * 2016년 12월 19일부로 유한킴벌리 통합 회원제가 운영됨에 따라 기존 “몰” 회원께서도 유한킴벌리 통합회원 약관에 대한 동의를 거쳐 유한킴벌리 통합회원으로 전환하셔야 합니다.
-        <br /> -->
                 ② "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록합니다.<br>
                 1. 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조 제3항에 의한 회원자격 상실 후 3년이 경과한 자로서 "몰"의 회원재가입 승낙을
                 얻은 경우에는 예외로 한다.<br>
@@ -1034,94 +1046,6 @@
                 "몰"의 개인정보처리방침이 적용됩니다. 다만, "몰"의 공식 사이트 이외의 링크된 사이트에서는 "몰"의 개인정보처리방침이 적용되지 않습니다.<br>
                 ※ 개인정보와 관련된 보다 자세한 사항은 개인정보처리방침을 참조하시기 바랍니다.<br>
                 <br>
-                [제8장 하기스 선물대잔치 점수, 포인트 및 쿠폰]<br>
-                <br>
-                제25조(하기스 선물대잔치 행사의 운영)<br>
-                ① “하기스 선물대잔치”라 함은 하기스 제품 구매 고객 중 선물대잔치 행사 참여 대상자께서 행사 제품 패키지에 부여되어 있는 “I♥HUGGIES 점수”를 적립, 이용하여 소정의 혜택을
-                받으실 수 있는 행사를 말합니다.<br>
-                ② “I♥HUGGIES 점수”라 함은 하기스 선물대잔치 행사 시 응모하실 수 있는 점수로서, 적용 대상 제품 패키지에 인쇄되어 있습니다. 회사는 하기스 제품 중 선물대잔치 행사 제품
-                패키지에 I♥HUGGIES 점수를 부여합니다. 하기스 선물대잔치 I♥HUGGIES 점수 적용 대상 행사 제품은 하기스 기저귀 및 아기물티슈 제품 중 I♥HUGGIES 점수가 인쇄되어 있는
-                제품입니다. 사용 유효기간이 지난 특별 행사 점수는 사용하실 수 없습니다.<br>
-                ③ 하기스 선물대잔치 행사는 아기를 양육하는 실제 구매 고객분만을 대상으로 합니다. 실제 아기를 양육하시는 하기스 구매 고객 분들께 혜택을 드리고자 하는 행사 취지에 따라 실제 구매
-                여부에 대한 확인 검증이 필요할 경우, 하기스 선물대잔치 신청자께서는 유한킴벌리에서 확인할 수 있는 소명 자료 요청 시 적극적인 협조를 해주셔야 합니다. 하기스 선물대잔치에 참여 가능한
-                고객에 해당되지 않는 고객은 다음과 같습니다. <br>
-                1) 아기를 일시적으로 보호하는 위탁시설 관계자(보육원, 산후조리원, 병의원 등)<br>
-                단, 비영리 영유아 보호시설은 확인 후 예외 적용
-                2) 중간상인(마트, 슈퍼, 도매상, 소매상 상인 등)<br>
-                3) 중간 사은품 배송인(배송관련 물류 업체 직원 등)<br>
-                4) 일반 소비자 중 행사제품을 구매하지 않고 점수를 획득한 고객<br>
-                5) 타인의 점수를 합산하여 행사에 참여한 고객<br>
-                <br>
-
-                제26조(하기스 선물대잔치 행사 참여 방법)<br>
-                ① I♥HUGGIES 점수 획득 및 적립<br>
-                - 유한킴벌리 통합 회원 및 맘큐 약관 동의한 회원 중 하기스 선물대잔치 참여자께서 하기스 행사 제품을 구입한 후 제품 패키지에 부여된 I♥HUGGIES 점수를 오려서 점수모음판에 필수
-                기재사항(유한킴벌리 통합 회원 성명, 회원 아이디, 휴대폰 번호, 신청 점수)을 기입하여 지정된 배송처에 우편으로 보냅니다. 하기스 선물대잔치 담당자 측에 보내신 우편물이 도착하면 확인
-                작업 후에 I♥HUGGIES 점수가 적립됩니다. 선물대잔치는 연중무휴로 운영되므로 기간에 관계없이 I♥HUGGIES 점수 적립 및 사용이 가능합니다.<br>
-                * 필수 기재사항 4가지 항목 중 한 개라도 누락되거나 오류가 있는 경우 점수가 적립되지 않습니다.<br>
-                * 선물대잔치 참여신청 및 약관 동의 중 한 가지 이상 누락된 경우에는 SMS 문자 서비스로 오류 내용을 발송해 드리며, 고객이 직접 고객지원센터를 통해 누락된 내용을 확인 할 수
-                있습니다.<br>
-                * ID 간의 하기스 선물대잔치 점수 합산은 불가합니다.<br>
-                * 그 외에 별도의 오류 내용도 발생할 수 있으며, 발생 시 아래의 내용에 따라 처리됩니다.<br>
-                1) 점수모음판에 고객의 휴대폰 번호가 기재되어 있을 경우, SMS를 발송하여 고객에게 응모 처리가 되지 않았다는 내용과 재 응모 방법 고지(단, 2회 고지 후 고객의 반응 없을 시에는
-                응모 자료 별도 보관)<br>
-                2) 점수모음판에 고객의 휴대폰 번호가 기재되어 있지 않을 경우, 고객확인 시까지 응모 자료 별도 보관<br>
-                (고객지원센터 상담원 통화하여 확인 후 처리 진행)<br>
-                * 하기스 선물대잔치는 참여자께서 발송하신 우편물의 분실 발생에 책임지지 않으며 분실 사고 방지를 위해 등기우편 이용을 권장합니다. <br>
-                * 접수된 우편물 및 I♥HUGGIES 점수는 재사용 방지를 위하여 펀칭, 마킹 처리되어 반환되지 않습니다.<br>
-                ② I♥HUGGIES 점수 적립의 제한 <br>
-                1) 등록된 아기 1인당 1,000점을 적립하실 수 있습니다. (단, 아기가 만 0세 이상부터 만 10세 미만인 경우만 가능)<br>
-                2) 하나의 아이디로 최대 3,000점까지 신청하실 수 있습니다.<br>
-                3) 아기가 등록되어 있지 않거나 등록되어 있는 아기가 모두 만 10세 이상인 경우 적립이 불가능합니다.<br>
-                4) 아기 1인당 적립 가능한 점수인 1,000점에서 신생아용 기저귀로 적립가능 한 점수는 100점으로 제한합니다.<br>
-                5) 최대 적립 가능한 점수를 초과한 점수는 반환되지 않으며, 자동 소멸됩니다.<br>
-                6) 첫 아기부터 세번째 아이까지 모두 등록하시고 I♥HUGGIES점수를 3,000점까지 모두 사용하신 고객에게는 고객지원센터를 통해 소정의 축하 선물을 드립니다.<br>
-                ③ I♥HUGGIES 점수 적립 조회<br>
-                우편물의 우체국 소인 기준으로 발송 후 통상 3주 이내 “몰”의 선물대잔치 페이지를 통해 참여자 별 계정에 적립된 점수를 확인할 수 있습니다. 접수 완료 시 SMS 문자 서비스 발송을
-                통해 점수 적립 내용을 알려드립니다(단, 우편물의 접수 상황 또는 분실 여부에 따라 접수가 지연될 수 있습니다).<br>
-                ④ I♥HUGGIES 점수 정정<br>
-                참여자께서 우편 응모 시 기재해 주신 점수와 실제 계산된 I♥HUGGIES 점수에 차이가 있는 경우 참여자께서는 오류 발생 확인 시점 (SMS 문자 수신일 및 홈페이지 적립일을 오류 발생
-                확인시점으로 간주)으로부터15일 이내에 정정 신청을 하여야 정상적인 수정이 가능하며 15일 경과 후에도 오류정정신청은 가능하나 정상적으로 처리되지 않을 수 있습니다.<br>
-                단, 오류를 증명할 수 있는 자료를 제시하여야 하며, 오류사항의 수정완료 후에 점수 사용이 가능합니다.<br>
-                ⑤ I♥HUGGIES 점수 유효기간<br>
-                - I♥HUGGIES 점수는 점수별로 적립된 날짜를 기준으로 2년간 유효하며, 선입 선출 방식(먼저 적립된 점수가 유효기간이 지나면 먼저 소진되는 방식)으로 사용 소진됩니다. 유효기간이
-                경과된 점수는 자동 소멸되며 복원되지 않으니 유효기간 내 사용을 권장합니다.<br>
-                ⑥ I♥HUGGIES 점수 사용 <br>
-                - I♥HUGGIES 점수는 “몰”의 선물대잔치 페이지에서 맘큐 포인트(원)로 전환 후 사용 가능합니다.<br>
-                - I♥HUGGIES 점수 100점부터 맘큐 포인트(원)로 전환 가능합니다.<br>
-                - I♥HUGGIES 점수 1점은 맘큐 포인트 100(원) 전환 됩니다. 단 2019년 1월 31일까지 적립된 I♥HUGGIES 점수 (우체국 소인 기준)는 1점 당 맘큐 포인트
-                150(원)으로 전환됩니다.<br>
-                - 전환된 맘큐 포인트는 I♥HUGGIES 점수로 다시 복원되지 않습니다.<br>
-                - 전환된 맘큐 포인트(원)는 “몰”의 재화 등 구매 시 사용 가능합니다.<br>
-                - I♥HUGGIES 점수에서 전환된 맘큐 포인트(원)의 유효기간은 전환일 기준으로 30일입니다.<br>
-                - 적립된 I♥HUGGIES 점수는 맘큐 포인트로 전환 시 자동 소멸되며, 잔여 I♥HUGGIES 점수는 회원 계정에 해당 점수의 유효기간(2년)동안 보관됩니다.<br>
-                <br>
-                제27조(하기스 선물대잔치 행사 관련 준수사항)<br>
-                ① I♥HUGGIES 점수는 행사 제품을 실제로 구매한 고객에게 부여되는 것으로 독립적으로 양도되거나 매매될 수 없고, 그 양도와 매매는 점수의 부정 취득으로 간주되어 점수 반환 및
-                적립이 되지 않습니다.<br>
-                ② 하기스 선물대잔치 참여 시 단 하나의 아이디만을 사용할 수 있으며, 서로 다른 아이디에 적립된 점수는 병합 누적될 수 없습니다(선물대잔치의 점수는 자녀 수 기준으로 적립 가능하며,
-                부부/가족의 이름으로 중복 등록은 불가합니다).<br>
-                ③ I♥HUGGIES 점수는 참여자 스스로 책임지고 관리하셔야 합니다. 타인에 의해 도용되지 않도록 점수적립 및 관리를 위해 자신의 아이디와 비밀번호의 보안을 유지해 주십시오. 만일
-                참여자의 부주의로 인한 타인의 도용 시, 그에 대한 책임은 참여자 본인에게 있습니다.<br>
-                ④ 참여자께서는 아기정보를 포함한 개인정보를 정확한 최신 정보로 업데이트할 의무가 있으며, 정보의 누락 또는 부정확한 기재로 인해 선물대잔치 행사 참여에 불이익이 발생한 경우, 그 책임은
-                참여자에게 있습니다.<br>
-                ⑤ I♥HUGGIES 점수의 부정 적립이나 부정 사용은 허용되지 않으며, 부정 적립 또는 부정 사용 시 적립된 점수는 무효 처리되며 선물대잔치 참여 자격이 상실될 수 있습니다. “몰”은
-                필요할 경우 고객에게 소명자료를 요청하는 등 I♥HUGGIES 점수를 검증할 수 있습니다.<br>
-                1) 부정 적립이란 참여자께서 실제로 상품을 구매하지 않았음에도 불구하고I♥HUGGIES 점수가 적립된 경우 또는 실제 구매액 이상으로 I♥HUGGIES 점수가 적립된 경우를
-                의미합니다.<br>
-                2) 부정 사용이란 참여자께서 타인의 I♥HUGGIES 점수를 임의로 사용한 경우를 의미합니다.<br>
-                3) 아래에 해당되는 경우 부정 적립 또는 부정 사용으로 간주합니다.<br>
-                A) 선물대잔치 참여 신청 시 허위 내용을 등록한 경우<br>
-                - 허위 자녀 등록의 경우<br>
-                - 타인의 주소와 연락처를 등록한 경우<br>
-                - 동일 주소와 연락처로 여러 개의 아이디를 생성한 경우<br>
-                B) 제25조 제3항에서 정하는 참여 대상에 해당하지 않는 고객이 참여자로 응모한 경우<br>
-                C) I♥HUGGIES 점수를 상품 구매 없이 취득, 매매, 양도한 경우<br>
-                D) 홈페이지를 이용하여 다른 회원의 정보를 도용한 경우<br>
-                E) 기타 회원 서비스를 부정한 방법 또는 목적으로 이용한 경우<br>
-                4) 본 조항에 명기된 사항에 해당됨이 의심되는 참여자가 발생할 경우 소명기간과 심사기간을 거쳐 최종적으로 부정 참여 여부를 결정하며 부정 참여자로 결정이 될 시에는 선물대잔치 참여
-                자격이 상실 됩니다. 소명기간은 부정 참여 의심사례 확인일로부터 15일간이며 심사기간은 사안에 따라 달라지지만 최대 30일을 넘기지 않습니다.<br>
-                <br>
                 제28조(포인트 제도의 운영)<br>
                 ① "몰"은 재화 등을 구입하거나 특정 결제 수단으로 구입하는 이용자에게 경품, 사은품 등의 목적으로 포인트를 부여할 수 있으며, 포인트의 부여 및 사용 등과 관련한 사항은 이 약관 또는
                 "몰"의 운영정책이 정한 바에 따릅니다.<br>
@@ -1179,7 +1103,7 @@
                 명시한 경우에는 그 거래에 대한 보증책임을 지지 않습니다.<br>
                 <br>
                 제34조(저작권의 귀속 및 이용제한)<br>
-                ① 회사에 등록된 저작물에 대한 저작권 기타 지적재산권은 게시자에게 귀속합니다.<br>
+                ① 이용자가 몰에 등록, 게시한 저작물에 대한 저작권 기타 지적재산권은 게시자에게 귀속합니다.<br>
                 ② 회사가 작성한 저작물에 대한 저작권 기타 지적재산권은 회사에 귀속합니다.<br>
                 ③ 이용자는 회사를 이용함으로써 얻은 정보 중 회사에 지식재산권이 귀속된 정보를 회사의 사전 승낙 없이 복제·송신·출판·배포·방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게
                 이용하게 하여서는 안됩니다.<br>
@@ -1223,25 +1147,25 @@
                 <br>
                 부칙<br>
                 <br>
-                약관은 2021년 2월 22일부터 적용됩니다.<br>
+                약관은 2021년 00월 00일부터 적용됩니다.<br>
                 <br></p>
 
             </div>
           </div>
         </div>
       </div>
-      <!--// 약관 레이어  -->
-      <!-- 약관 레이어  -->
-      <div class="layerbody" id="momq_privacy_agree_layer">
+      <!--// 약관 레이어 : 20211013 오늘 플러스 이용약관  -->
+      <!-- 약관 레이어 : 20211013 오늘 플러스 개인정보 수집 및 이용  -->
+      <div class="layerbody" id="ykplus_privacy_agree_layer">
         <div class="layerwrap termslay">
-          <a class="btn_close momq_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+          <a class="btn_close ykplus_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
           <div class="layhead">
-            <p>맘큐 개인정보 수집 및 이용</p> <!-- 20210927 '필수항목' 문구 삭제 -->
+            <p>오늘 플러스 개인정보 수집 및 이용</p> <!-- 20210927 '필수항목' 문구 삭제 -->
           </div>
           <div class="layconts">
             <div class="inscroll termsarea">
               <table class="termstable">
-                <caption>맘큐 개인정보 수집 및 이용</caption> <!-- 20210927 '필수항목' 문구 삭제 -->
+                <caption>오늘 플러스 개인정보 수집 및 이용</caption>
                 <colgroup>
                   <col style="width:30%">
                   <col style="width:40%">
@@ -1256,15 +1180,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>회원관리 및 본인확인, 민원처리, 계약의 이행</td>
+                    <td>회원관리 및 본인확인, 민원처리</td>
                     <td>아이디, 비밀번호, 이름, 생년월일, 성별, 휴대폰번호, 이메일, 본인인증정보: 이용자 확인 값(CI), 중복가입확인정보(DI)</td>
                     <td rowspan="3" style="font-weight:bold;">
                       회원 탈퇴 혹은 이용 동의 철회 시까지 (관계 법령의 규정에 의해 보존의 필요가 있는 경우는 해당 기간까지)
                     </td>
                   </tr>
                   <tr>
-                    <td>부정이용 방지, 통계 및 분석, 상품 추천 및 맞춤 서비스 제공</td>
-                    <td>서비스 이용기록, 접속로그, 쿠키, 접속IP정보, 결제기록, 단말기 정보(고유식별번호, OS종류 및 버전)</td>
+                    <td>부정이용 방지, 통계 및 분석</td>
+                    <td>서비스 이용기록, 접속로그, 쿠키, 접속IP정보, 단말기 정보(고유식별번호, OS종류 및 버전)</td>
                   </tr>
                 </tbody>
               </table>
@@ -1273,7 +1197,7 @@
           </div>
         </div>
       </div>
-      <!--// 약관 레이어  -->
+      <!--// 약관 레이어 : 20211013 오늘 플러스 개인정보 수집 및 이용  -->
       <!-- 약관 레이어 : 20210927 삭제 -->
       <!-- <div class="layerbody" id="monit_privacy_consent_offer_agree_layer">
         <div class="layerwrap termslay">

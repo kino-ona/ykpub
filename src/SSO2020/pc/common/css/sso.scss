@@ -791,7 +791,81 @@ footer.renewfoo {
 }
 /* 210721 e */
 
-
 /** 20210927 s **/
 .select_chk span {padding-bottom: 20px;}
 /** 20210927 e **/
+
+/** 20211013 s **/
+.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.png);}
+.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.png);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.jpg);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.png);}
+.join_form .input_frm .put.email {display: flex;}
+.join_form .input_frm .put.email > * {flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
+.sso_wrap .my_wrap .input_frm .put.email {display: flex;}
+.sso_wrap .my_wrap .input_frm .put.email > * {flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
+.join_form .terms_chk li label {display: flex;color: #000;}
+.join_form .select_chk.MOMQ label .in {display: flex;color: #000;padding-bottom: 0;}
+.join_form .select_chk.MOMQ label .in .sel {padding-right: 6px; padding-bottom: 0;}
+.ykpluslogo {
+	position: absolute;
+	right: 0;
+	top: 32px;
+	width: 100px;
+	height: 32px;
+	background-size: 100px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../images/sso/ykplus-logo.png);
+}
+.sso_wrap .desc_list {
+	margin-bottom: 40px;
+	.desc {
+		position: relative;
+		margin-left: 6px;
+		padding-bottom: 8px;
+		&::before {
+			content: '·';
+			position: absolute;
+			left: -6px;
+		}
+	}
+}
+.sso_wrap .join_form .h2_ti + .input_frm {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.sso_wrap .join_wrap .input_frm {
+	.put .btn_small {
+		cursor: pointer;
+		background-color: #fff;
+	}
+}
+.sso_wrap .my_wrap {
+	.terms_target {
+		display: flex;
+		justify-content: space-between;
+		> p {
+			width: auto;
+			margin-right: 20px;
+		}
+		div > p {
+			padding-bottom: 0;
+			label {
+				min-width: 30%;
+				display: inline-block;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.input_frm {
+		.put .btn_small {
+			cursor: pointer;
+			background-color: #fff;
+		}
+		& + .btn_foo {
+			margin-bottom: 55px;
+		}
+	}
+}
+/** 20211013 e **/

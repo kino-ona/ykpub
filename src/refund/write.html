@@ -107,7 +107,7 @@
 								</td>
 							</tr>
 							<tr class="line">
-								<th>환불 제품 선택*<br><em onclick="layerOpen('refundpoplayer01');">제조 년/월 확인방법 <i class="i-tooltip"></i></em></th>
+								<th>환불 제품 선택* <em onclick="layerOpen('refundpoplayer01');">제조 년/월 확인방법 <i class="i-tooltip"></i></em></th>
 								<td class="non">
 									<ul class="dot">
 										<li>환불 대상 품목은 크리넥스 마이비데, 마이비데 키즈이며 리스트를 참고해 주세요</li>
@@ -478,13 +478,20 @@
 	<script>
 	// 레이어팝업 열기
 	function layerOpen(set) {
-		$('#' + set).addClass('show');
+		tpos = $(window).scrollTop();
 		$('body, html').addClass('noscroll');
+		$('.refund').css('top',-tpos);
+		$('.refund').css({'position':'fixed','overflow':'hidden'});
+		$('#' + set).addClass('show');
 	}
 	// 레이어팝업 닫기
 	function layerClose(set) {
-		$('#' + set).removeClass('show');
+		tpos = -(parseInt($('.refund').css('top')));
 		$('body, html').removeClass('noscroll');
+		$('.refund').css('top', 0);
+		$('.refund').css({'position':'relative','overflow':'inherit'});
+		$(window).scrollTop(tpos);
+		$('#' + set).removeClass('show')
 	}
 	</script>
 </body>

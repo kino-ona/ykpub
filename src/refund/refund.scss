@@ -111,7 +111,7 @@ td, th {
   padding: 0;
 }
 
- html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
+html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .refund select {border:0;border-bottom:1px solid #ddd;outline: none;background-color: #fff;}
 .refund i {font-style: normal;}
 .refund {width:100%;max-width:768px;margin:0 auto;background-color:#fff;color:#222222;font-family:'Noto Sans KR', 'Nanum Gothic', 'Nanum Barun Gothic', 'Malgun Gothic', 'Arial','AppleGothic','sans-serif';}
@@ -223,6 +223,7 @@ td, th {
   }
 }
 .i-tooltip {
+  margin-left:5px;
   margin-top: 3px;
   width: 16px;height: 16px;display: inline-block;
   background: {

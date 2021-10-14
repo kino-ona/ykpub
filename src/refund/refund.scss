@@ -238,3 +238,75 @@ td, th {
   .refund .refund_tbl table .line td {border-top:0 !important;}
   .refund .refund_tbl._type td {padding-bottom:10px;}
 }
+.i-tooltip {
+  margin-top: 3px;
+  width: 16px;height: 16px;display: inline-block;
+  background: {
+    image: url(./images/i-tooltip.gif);
+    size: 16px;
+    position: center center;
+    repeat: no-repeat;
+  }
+  cursor: pointer;
+}
+.refund_tbl .inline._product {
+  label {
+    position: relative;
+  }
+  .i-tooltip {
+    position: absolute;
+    left: 165px;
+    top: 11px;
+  }
+  &:last-of-type {
+    .i-tooltip {
+      left: 195px;
+    }
+  }
+}
+.refund_tbl table th em {
+  margin-top: 2px;
+  display: block;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.layerbody {
+  .layerwrap {
+    // border-top: 5px solid #005cbc;
+    width: 360px;
+    padding: 20px 0 20px;
+  }
+  .layhead {
+    padding: 0 20px 20px 20px!important;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;    
+  }
+  .layconts {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    p:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+    .tit {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+/* layer */
+.noscroll { height: 100%; overflow: hidden; }
+.layerbody { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+.layerbody.show { display: block; }
+.layerwrap { position: absolute; z-index: 100; top: 50%; left: 50%; width: 430px; padding: 40px 40px 0; background-color: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.layerwrap .btn_close { cursor: pointer; position: absolute; right: -20px; top: -20px; width: 42px; height: 42px; background: url(./images/btn_layclose.png) no-repeat 0 0; }
+.layerwrap .layhead { position: relative; padding-bottom: 10px; font-size: 20px; }
+.layerwrap .btnwrap { margin-top: 40px;}
+.layerwrap .btnwrap .btnfull { width: 100%; background-color: #009fe3; border: 0; text-align: center; font-size: 20px; color: #fff; }

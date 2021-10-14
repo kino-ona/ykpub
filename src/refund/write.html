@@ -107,7 +107,7 @@
 								</td>
 							</tr>
 							<tr class="line">
-								<th>환불 제품 선택*</th>
+								<th>환불 제품 선택*<br><em onclick="layerOpen('refundpoplayer01');">제조 년/월 확인방법 <i class="i-tooltip"></i></em></th>
 								<td class="non">
 									<ul class="dot">
 										<li>환불 대상 품목은 크리넥스 마이비데, 마이비데 키즈이며 리스트를 참고해 주세요</li>
@@ -119,7 +119,7 @@
 										※ 품목당 20개까지 접수 가능하며, 중복신청 등 방지를 위해 핸드폰 번호 기준 1회만 신청 가능합니다. 그 이상의 수량은 고객지원센터(문자 1666-7067, 발신자부담/수신자부담전화 080-010-3200)로 연락 부탁 드립니다.
 									</span>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 30</label>
+										<label><input type="checkbox">크리넥스 마이비데 30 </label><i class="i-tooltip" onclick="layerOpen('refundprd01');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -137,7 +137,7 @@
 										<span class="tsum">환불금액 : <strong class="ft_blue">16,000 원</strong></span> 
 									</div>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 42</label>
+										<label><input type="checkbox">크리넥스 마이비데 42 </label><i class="i-tooltip" onclick="layerOpen('refundprd02');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -156,7 +156,7 @@
 										<span class="tsum">환불금액 : <strong class="ft_blue">4,600 원</strong></span> 
 									</div>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 46</label>
+										<label><input type="checkbox">크리넥스 마이비데 46 </label><i class="i-tooltip" onclick="layerOpen('refundprd03');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -175,7 +175,7 @@
 										<span class="tsum">환불금액 : <strong class="ft_blue">5,000 원</strong></span> 
 									</div>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 50</label>
+										<label><input type="checkbox">크리넥스 마이비데 50 </label><i class="i-tooltip" onclick="layerOpen('refundprd04');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -194,7 +194,7 @@
 										<span class="tsum">환불금액 : <strong class="ft_blue">5,000 원</strong></span> 
 									</div>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 56</label>
+										<label><input type="checkbox">크리넥스 마이비데 56 </label><i class="i-tooltip" onclick="layerOpen('refundprd05');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -213,7 +213,7 @@
 										<span class="tsum">환불금액 : <strong class="ft_blue">30,000 원</strong></span> 
 									</div>
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 60</label>
+										<label><input type="checkbox">크리넥스 마이비데 60 </label><i class="i-tooltip" onclick="layerOpen('refundprd06');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -233,7 +233,7 @@
 									</div>
 
 									<div class="inline _product">
-										<label><input type="checkbox">크리넥스 마이비데 키즈 42</label>
+										<label><input type="checkbox">크리넥스 마이비데 키즈 42 </label><i class="i-tooltip" onclick="layerOpen('refundprd07');"></i>
 										<p style="font-size:12px;">(* 제조년월이 가장 빠른 상품으로 선택해 주세요.)</p>
 										<select>
 											<option>환불 수량 선택</option>
@@ -343,8 +343,126 @@
 			</div>
 
 		</div>
-
 	</div>
+
+	<div class="layerbody" id="refundpoplayer01">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundpoplayer01')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제조 년/월 확인방법</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundimg1.png"/></p>
+				<p class="img"><img src="./images/refundimg2.png"/></p>
+			</div>
+		</div>
+	</div>
+		
+	<div class="layerbody" id="refundprd01">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd01')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 30</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+		
+	<div class="layerbody" id="refundprd02">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd02')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 42</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="layerbody" id="refundprd03">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd03')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 46</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+		
+	<div class="layerbody" id="refundprd04">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd04')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 50</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="layerbody" id="refundprd05">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd05')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 56</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="layerbody" id="refundprd06">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd06')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-1.png"/></p>
+				<p class="tit">크리넥스 마이비데 60</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="layerbody" id="refundprd07">
+		<div class="layerwrap">
+			<a class="btn_close" onclick="layerClose('refundprd07')"><span class="a11y">close</span></a>
+			<div class="layhead">
+				<p>제품 확인</p>
+			</div>
+			<div class="layconts">
+				<p class="img"><img src="./images/refundproduct-2.png"/></p>
+				<p class="tit">크리넥스 마이비데 키즈 42</p>
+				<span>2019년 10월 1일~2020년 7월 21일 <br>
+					대상 제품</span>
+			</div>
+		</div>
+	</div>
+
 	<!--// Content 영역 -->
 	<script>
 	$(document).on("click",".refund_agree > p",function(){
@@ -356,6 +474,18 @@
 			$(this).find("i").text("[열기]");
 		}
 	});
+	</script>
+	<script>
+	// 레이어팝업 열기
+	function layerOpen(set) {
+		$('#' + set).addClass('show');
+		$('body, html').addClass('noscroll');
+	}
+	// 레이어팝업 닫기
+	function layerClose(set) {
+		$('#' + set).removeClass('show');
+		$('body, html').removeClass('noscroll');
+	}
 	</script>
 </body>
 

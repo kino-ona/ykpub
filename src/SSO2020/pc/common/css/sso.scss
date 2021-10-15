@@ -203,8 +203,8 @@ p.help:before {
 .sso_wrap .logo_list .logos_green:hover {background-image:url(../images/sso/logos_green_on.jpg);}
 .sso_wrap .logo_list .logos_monit {background-image:url(../images/sso/logos_monit.jpg);}
 .sso_wrap .logo_list .logos_monit:hover{background-image:url(../images/sso/logos_monit_on.jpg);}
-.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal_on.jpg);}
-.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.jpg);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal_on.gif);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.gif);}
 .join_form {margin-top:25px;}
 .errtx {clear:both;display: block;left:0;padding-top:5px;color:#e63c4f;font-size: 13px;}
 .input_frm {margin-bottom:70px;}
@@ -795,11 +795,11 @@ footer.renewfoo {
 .select_chk span {padding-bottom: 20px;}
 /** 20210927 e **/
 
-/** 20211013 s **/
-.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.png);}
-.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.png);}
-.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.jpg);}
-.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.png);}
+/** 20211015 s **/
+.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.gif);}
+.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.gif);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.gif);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.gif);}
 .join_form .input_frm .put.email {display: flex;}
 .join_form .input_frm .put.email > * {flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
 .sso_wrap .my_wrap .input_frm .put.email {display: flex;}
@@ -818,21 +818,31 @@ footer.renewfoo {
 	background-repeat: no-repeat;
 	background-image: url(../images/sso/ykplus-logo.png);
 }
+.a11y {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
 .sso_wrap .desc_list {
 	margin-bottom: 40px;
 	.desc {
 		position: relative;
-		margin-left: 6px;
+		margin-left: 14px;
 		padding-bottom: 8px;
 		&::before {
 			content: '·';
 			position: absolute;
-			left: -6px;
+			left: -14px;
 		}
 	}
 }
 .sso_wrap .join_form .h2_ti + .input_frm {
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 .sso_wrap .join_wrap .input_frm {
@@ -868,4 +878,133 @@ footer.renewfoo {
 		}
 	}
 }
-/** 20211013 e **/
+
+.facility_addr_layer .input_frm .mix .put {display: flex;width: 100%;border: 0;}
+.facility_addr_layer .input_frm .mix .put > * {color: #a3a3a3;flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
+.facility_addr_layer .input_frm .mix .put > *:not(:last-of-type) {margin-right: 8px;}
+.facility_addr_layer .input_frm .mix .put * {color: inherit;}
+.facility_addr_layer .input_frm .put.full {width: 100%;}
+.facility_addr_layer {
+	.input_frm {
+		margin-bottom: 20px;
+	}
+	.select_chk {
+		margin-left: 0;
+	}
+	.btn_small {
+		margin: 0 auto;
+		font-size: 13px;
+		color: #222;
+		border: 1px solid #dddddd;
+		position: absolute;
+		right: 0;
+		top: 10px;
+		height: 30px;
+		line-height: 28px;
+		cursor: pointer;
+		background-color: #fff;
+	}
+	.addr_table {
+		width: 100%;
+		.tit {
+			display: flex;
+			justify-content: space-between;
+			background-color: #f4f6f8;
+			margin-bottom: 5px;
+			> * {
+				padding: 18px 22px;
+				color: #888;
+				font-size: 14px;
+			}
+			.facil-list {
+				flex: 2;
+				text-align: left;
+				padding-left: 0;
+			}
+		}
+		.num {
+			color: #888;
+			text-align: center;
+		}
+		ul {
+			li {
+				display: flex;
+				justify-content: start;
+				background-color: #f4f6f8;
+				margin-bottom: 5px;
+				> * {
+					color: #888;
+					font-size: 14px;
+				}
+				.num {
+					padding: 32px 28px 0 28px;
+				}
+				.rchk {
+					position: relative;
+					width: 100%;
+					padding: 16px 0;
+				}
+				label {
+					&::before {
+						position: absolute;
+						right: 20px;
+						top: 50%;
+						transform: translateY(-50%);
+						margin: 0;
+					}
+				}
+				.facil-tit {
+					display: block;
+					color: #000;
+					font-size: 14px;
+					font-weight: 400;
+					margin-right: 55px;
+					em {
+						display: block;
+						color: #009fe3;
+						font-style: normal;
+						font-size: inherit;
+						font-weight: inherit;
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+		.pagination {
+			margin-top: 35px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			padding-bottom: 80px;
+			a {
+				width: 21px;
+				height: 24px;
+				color: #999;
+				font-size: 18px;
+				line-height: 24px;
+				text-align:center;
+				vertical-align: middle;
+				margin-right: 16px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+			.now {
+				color:#000;
+			}
+			.btn {
+				border: 0;
+			}
+		}
+	}
+}
+.sso_intro .content_wrap .logo_list {
+	.logos_dal {
+    background-image: url(../images/sso/logos_dal_on.gif);
+	}
+	.logos_ykplus {
+    background-image: url(../images/sso/logos_ykplus_on.gif);
+	}
+}
+
+/** 20211015 e **/

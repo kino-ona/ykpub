@@ -7,6 +7,9 @@
   <meta name="title" content="유한킴벌리" />
   <meta name="keywords" content="유한킴벌리">
   <meta name="description" content="유한킴벌리" />
+  <!-- 20211015 SSO 오늘플러스 -->
+	<title>유한킴벌리</title>
+  <!--// 20211015 SSO 오늘플러스 -->
   <link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
   <link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_pc.css" type="text/css" media="all">
   <link rel="stylesheet" href="https://www.yksso.co.kr/css/pc.css?v=0.1.3" type="text/css" media="all">
@@ -29,9 +32,9 @@
     <header class="sso_head">
       <div class="row">
         <h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
-        <!-- 20211013 SSO 오늘플러스 -->
-        <p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p>
-        <!--// 20211013 SSO 오늘플러스 -->
+				<!-- 20211015 SSO 오늘플러스 -->
+				<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p>
+				<!--// 20211015 SSO 오늘플러스 -->
       </div>
     </header>
     <div id="container" class="contents">
@@ -102,12 +105,12 @@
                   </p>
                 </li>
                 <!-- 20210810 성별 추가 -->
-                <li>
+                <!-- <li>
                   <p class="ti">성별</p>
                   <p class="put">
                     <input type="text" name="sex" value="남자" readonly>
                   </p>
-                </li>
+                </li> -->
                 <!--// 20210810 성별 추가 -->
                 <li>
                   <p class="ti">휴대폰 번호</p>
@@ -174,7 +177,7 @@
                 </li>
                 <li>
                   <p>
-                    <!-- 20211013 SSO 오늘플러스 -->
+                    <!-- 20211015 SSO 오늘플러스 -->
                     <input type="hidden" name="ykplus_terms_agree" value=" N ">
                     <input type="checkbox" name="chk_ykplus_terms_agree" class=" required " id="termsNo4" data-id="4">
                     <label for="termsNo4">
@@ -185,11 +188,11 @@
                     </label>
                   </p>
                   <a href="javascript:;" class="btn_vw openLayer" data-hash="#ykplus_terms_agree_layer">보기</a>
-                  <!--// 20211013 SSO 오늘플러스 -->
+                  <!--// 20211015 SSO 오늘플러스 -->
                 </li>
                 <li>
                   <p>
-                    <!-- 20211013 SSO 오늘플러스 -->
+                    <!-- 20211015 SSO 오늘플러스 -->
                     <input type="hidden" name="ykplus_privacy_agree" value=" N ">
                     <input type="checkbox" name="chk_ykplus_privacy_agree" class=" required " id="termsNo5" data-id="5">
                     <label for="termsNo5">
@@ -200,7 +203,7 @@
                     </label>
                   </p>
                   <a href="javascript:;" class="btn_vw openLayer" data-hash="#ykplus_privacy_agree_layer">보기</a>
-                  <!--// 20211013 SSO 오늘플러스 -->
+                  <!--// 20211015 SSO 오늘플러스 -->
                 </li>
                 <!-- 20210927 마케팅 목적 이용 약관 전체 삭제 -->
                 <!-- <li>
@@ -222,16 +225,18 @@
                     <input type="hidden" name="momq_ad_receive_agree" value=" N ">
                     <input type="checkbox" name="chk_momq_ad_receive_agree" class="" id="termsNo10" data-id="10">
                     <label for="termsNo10">
+                      <!-- 20211015 SSO 오늘플러스 -->
                       <span class="in">
                         <span class=" sel ">(선택)</span>
-                        <strong>광고성 정보 수신 전체 동의</strong>
+                        광고성 정보 수신 전체 동의
                       </span>
+                      <!--// 20211015 SSO 오늘플러스 -->
                     </label>
                   </p>
                   <div class="select_chk MOMQ">
                     <span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
 
-                    <!-- 20211013 SSO 오늘플러스 -->
+                    <!-- 20211015 SSO 오늘플러스 -->
                     <p class="rchk">
                       <input type="hidden" name="MOMQ_adinfo_receive_EMAIL" value=" N ">
                       <input type="checkbox" name="chk_MOMQ_adinfo_receive_EMAIL" id="rchk_EMAIL_MOMQ">
@@ -253,7 +258,7 @@
                         </span>
                       </label>
                     </p>
-                    <!--// 20211013 SSO 오늘플러스 -->
+                    <!--// 20211015 SSO 오늘플러스 -->
 
                     <!-- 20210721 툴팁 -->
                     <div class="tooltip"><em>SMS 수신동의를 하시면, 첫 구매 축하쿠폰(20%)과 <br>베베쿡 첫 주문 할인쿠폰(5천원)을 드립니다.</em></div>
@@ -281,7 +286,8 @@
 
                 <!-- 맘큐, POME, 모닛 유입시 -->
 
-                <h3 class="h3_ti">아이정보 입력</h3>
+                <!-- 20211015 SSO 오늘플러스 
+                  <h3 class="h3_ti">아이정보 입력</h3>
                 <div class="select_chk child_input">
                   <span class="esse">
                     <i class="tag">혜택안내</i>
@@ -295,7 +301,7 @@
                     <input type="radio" name="childYN" id="child02" value="N" checked>
                     <label for="child02">아이 없음</label>
                   </p>
-                </div>
+                </div> -->
                 <!-- 맘큐, POME, 모닛 유입시 -->
               </div>
 
@@ -766,7 +772,7 @@
         </div>
       </div>
       <!--// 약관 레이어  -->
-      <!-- 약관 레이어 : 20211013 오늘 플러스 이용약관  -->
+      <!-- 약관 레이어 : 20211015 오늘 플러스 이용약관  -->
       <div class="layerbody" id="ykplus_terms_agree_layer">
         <div class="layerwrap termslay">
           <a class="btn_close ykplus_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
@@ -1154,8 +1160,8 @@
           </div>
         </div>
       </div>
-      <!--// 약관 레이어 : 20211013 오늘 플러스 이용약관  -->
-      <!-- 약관 레이어 : 20211013 오늘 플러스 개인정보 수집 및 이용  -->
+      <!--// 약관 레이어 : 20211015 오늘 플러스 이용약관  -->
+      <!-- 약관 레이어 : 20211015 오늘 플러스 개인정보 수집 및 이용  -->
       <div class="layerbody" id="ykplus_privacy_agree_layer">
         <div class="layerwrap termslay">
           <a class="btn_close ykplus_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
@@ -1197,7 +1203,7 @@
           </div>
         </div>
       </div>
-      <!--// 약관 레이어 : 20211013 오늘 플러스 개인정보 수집 및 이용  -->
+      <!--// 약관 레이어 : 20211015 오늘 플러스 개인정보 수집 및 이용  -->
       <!-- 약관 레이어 : 20210927 삭제 -->
       <!-- <div class="layerbody" id="monit_privacy_consent_offer_agree_layer">
         <div class="layerwrap termslay">

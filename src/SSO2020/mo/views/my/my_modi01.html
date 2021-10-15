@@ -17,8 +17,10 @@
 	<div class="sso_wrap">
 		<header class="sso_head">
 			<div class="row">
-				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span><span class="txt">개인정보관리</span></a></h1>
-				<p class="childlogo"><a href="#"><span class="a11y_sr-only">momQ</span></a></p>
+				<!-- 20211015 SSO 오늘플러스 -->
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p>
+				<!--// 20211015 SSO 오늘플러스 -->
 			</div>
 		</header>
 
@@ -27,7 +29,10 @@
 				<div class="my_wrap">
 					<div class="tabwrap">
 						<ul class="tablist">
-							<li class="seleted"><a href="my_modi01.html">회원정보 수정</a>
+							<!-- <li class="seleted"><a href="my_modi01.html">회원정보 수정</a> -->
+							<!-- 20211015 SSO 오늘플러스 -->
+							<li class="seleted"><a href="my_modi01.html">시설회원 정보 입력</a>
+							<!--// 20211015 SSO 오늘플러스 -->
 							<li><a href="my_modi02.html">약관 관리</a>
 						</ul>
 					</div>
@@ -51,7 +56,8 @@
 							<p class="ti">비밀번호</p>
 							<p class="put">
 								<input type="password" value="" readonly>
-								<a href="#" onclick="layerOpen('pwdChangeLayer');return false;" class="btn btn_small">비밀번호 변경</a>
+								<!-- 20211015 SSO 오늘플러스 
+									<a href="#" onclick="layerOpen('pwdChangeLayer');return false;" class="btn btn_small">비밀번호 변경</a> -->
 							</p>
 						</li>
 						<li>
@@ -71,36 +77,82 @@
 						<li>
 							<p class="ti">휴대폰 번호</p>
 							<p class="put">
-								<input type="text" value="000-0000-0000" readonly>
+								<input type="text" value="" readonly>
 								<a href="#" class="btn btn_small">변경</a>
 							</p>
 						</li>
 						<li class="email">
-							<p class="ti">이메일</p>
-							<p class="put">
-								<input type="text" value=""> @ <input type="text" value="">
-							</p>
-							<p class="put full">
-								<select class="email">
-									<option>직접입력</option>
-									<option>naver.com</option>
-								</select>
-							</p>
+							<!-- 20211015 SSO 오늘플러스 email input 마크업 -->
+							<div>
+								<p class="ti">이메일</p>
+								<p class="put full">
+									<input type="text" value=""> @ <input type="text" value=""> 
+									<select class="email">
+										<option>직접입력</option>
+										<option>naver.com</option>
+									</select>
+								</p>
+							</div>
 							<span class="errtx">이메일 형식이 잘못되었습니다.</span>
+							<!--// 20211015 SSO 오늘플러스 email input 마크업 -->
 						</li>
 					</ul>
-					<div class="help_desc">
+					<!-- 20211015 SSO 오늘플러스 
+						<div class="help_desc">
 						<p class="help">아이정보는 맘큐 > 마이페이지 > 아이정보에서 추가 / 수정 하실 수 있습니다.
 							<span><a href="#" class="btn btn_small">바로가기</a></span>
 						</p>
+					</div> -->
+					
+					<!-- 20211015 SSO 오늘 플러스 -->
+					<h2 class="h2_ti">시설회원 정보</h2>
+					<ul class="input_frm">
+            <li>
+              <p class="ti">기관명</p>
+              <p class="put">
+                <input type="text" name="name" value="" readonly>
+                <button type="button" class="btn btn_small openLayer" data-hash="#facilityaddrLayer">검색</button>
+              </p>
+            </li>
+            <li>
+              <p class="ti">사업자 등록 번호</p>
+              <p class="put">
+                <input type="text" name="name" value="" readonly>
+                <button type="button" class="btn btn_small openLayer" data-hash="#mymodiLayer">변경</button>
+              </p>
+            </li>
+            <li>
+              <p class="ti">주소<span class="a11y_sr-only">(택배 받을 주소)</span></p>
+              <p class="put put_id">
+                <input type="text" name="shippingaddr1" value="" placeholder="">
+                <button type="button" class="btn btn_small openLayer" data-hash="#shippingaddrLayer">주소검색</button>
+              </p>
+              <span class="errtx js-idIsInvalid" style="display:none;"></span>
+            </li>
+            <li>
+              <p class="ti">상세 주소</p>
+              <p class="put">
+                <input type="text" name="shippingaddr2" value="">
+              </p>
+            </li>
+            <li>
+              <p class="ti">추가 연락처<span class="a11y_sr-only">(요양병원 또는 요양원 전화번호)</span></p>
+              <p class="put">
+                <input type="text" name="shippingaddr2" value="">
+              </p>
+            </li>
+					</ul>
 
+					<div class="btnwrap btn_foo">
+						<a href="#" class="btnDefault btnfull">확인</a>
 					</div>
+					<!--// 20211015 SSO 오늘 플러스 -->
 
 					<div>
 						<h2 class="h2_ti">회원탈퇴</h2>
 						<p class="desc">
 							더 이상 이용을 원치 않으시면 회원탈퇴를 진행해주세요.
-							<span><a href="#" class="btn btn_small">회원탈퇴</a></span>
+							<span><a href="#" class="alink btn btn_small">회원탈퇴</a></span>
 						</p>
 					</div>
 

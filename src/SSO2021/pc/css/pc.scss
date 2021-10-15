@@ -203,8 +203,8 @@ p.help:before {
 .sso_wrap .logo_list .logos_green:hover {background-image:url(../images/sso/logos_green_on.jpg);}
 .sso_wrap .logo_list .logos_monit {background-image:url(../images/sso/logos_monit.jpg);}
 .sso_wrap .logo_list .logos_monit:hover{background-image:url(../images/sso/logos_monit_on.jpg);}
-.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal_on.jpg);}
-.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.jpg);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal_on.gif);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.gif);}
 .join_form {margin-top:25px;}
 .errtx {clear:both;display: block;left:0;padding-top:5px;color:#e63c4f;font-size: 13px;}
 .input_frm {margin-bottom:70px;}
@@ -1094,7 +1094,7 @@ footer.renewfoo {
 }
 /** 20210928 카카오싱크 제작물 관련 수정 e **/
 
-/** 20211013 s **/
+/** 20211015 s **/
 .a11y {
 	position: absolute;
 	width: 1px;
@@ -1105,10 +1105,10 @@ footer.renewfoo {
 	clip: rect(0, 0, 0, 0);
 	border: 0;
 }
-.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.png);}
-.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.png);}
-.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.jpg);}
-.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.png);}
+.sso_wrap .logo_list .logos_ykplus {background-image:url(../images/sso/logos_ykplus.gif);}
+.sso_wrap .logo_list .logos_ykplus:hover {background-image:url(../images/sso/logos_ykplus_on.gif);}
+.sso_wrap .logo_list .logos_dal {background-image:url(../images/sso/logos_dal.gif);}
+.sso_wrap .logo_list .logos_dal:hover{background-image:url(../images/sso/logos_dal_on.gif);}
 .join_wrap .com_alink {margin-top: 45px;}
 .join_wrap .com_alink .alink {display: inline-block;font-size: 14px;line-height: 1;font-weight: 500;border: 1px solid #f1f1f1;padding: 8px 16px;}
 .ykpluslogo {
@@ -1123,5 +1123,4 @@ footer.renewfoo {
 	background-image: url(../images/sso/ykplus-logo.png);
 }
 .sso_wrap .join_wrap > h2.h2_ti {margin-bottom: 40px;}
-
-/** 20211013 e **/
+/** 20211015 e **/

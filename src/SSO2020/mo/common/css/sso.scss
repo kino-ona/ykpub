@@ -868,3 +868,48 @@ p, span, li{word-break: keep-all;}
 }
 .sso_wrap .my_wrap .alink { margin-top: 25px; display: block;font-size: 15px;line-height: 50px;height: 50px;font-weight: 500;border: 1px solid #3a96e1;color:#3a96e1; text-align: center;}
 /** 20211015 e **/
+
+/** 20211018 s **/
+.my_wrap .tabwrap {
+	margin-bottom: 35px;
+	& + h2.h2_ti {
+		padding-bottom: 25px;
+	}
+	& + .h2_ti + .input_frm li {
+		flex-wrap: wrap;
+		.errtx {
+			margin-top: 5px;
+			width: 100%;
+			flex: none;
+		}
+	}
+}
+.sso_wrap .join_wrap .join_form .input_frm {
+	li {
+		&.email {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			> .ti {
+				flex: 1;
+			}
+			> .put {
+				width: auto;
+				flex: 3.667;
+			}
+			> .put.full {
+				width: auto;
+				flex: 1.667;
+				select {
+					width: 100%;
+				}
+			}
+			.errtx {
+				margin-top: 5px;
+				width: 100%;
+				flex: none;
+			}
+		}
+	}
+}
+/** 20211018 e **/

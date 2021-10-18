@@ -870,18 +870,23 @@ p, span, li{word-break: keep-all;}
 /** 20211015 e **/
 
 /** 20211018 s **/
-.my_wrap .tabwrap {
-	margin-bottom: 35px;
-	& + h2.h2_ti {
-		padding-bottom: 25px;
-	}
-	& + .h2_ti + .input_frm li {
-		flex-wrap: wrap;
-		.errtx {
-			margin-top: 5px;
-			width: 100%;
-			flex: none;
+.my_wrap {
+	.tabwrap {
+		margin-bottom: 35px;
+		& + h2.h2_ti {
+			padding-bottom: 25px;
 		}
+		& + .h2_ti + .input_frm li {
+			flex-wrap: wrap;
+			.errtx {
+				margin-top: 5px;
+				width: 100%;
+				flex: none;
+			}
+		}
+	}
+	.input_frm + h2.h2_ti {
+		padding-bottom: 25px;
 	}
 }
 .sso_wrap .join_wrap .join_form .input_frm {

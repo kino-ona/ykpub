@@ -942,10 +942,6 @@ footer.renewfoo {
 		max-width: 410px;
 		.tit {
 			font-weight: 350;
-			&._bold {
-				font-size: 20px;
-				font-weight: 500;
-			}
 		}
 		.inner {
 			margin: 20px 0 15px;
@@ -1124,3 +1120,141 @@ footer.renewfoo {
 }
 .sso_wrap .join_wrap > h2.h2_ti {margin-bottom: 40px;}
 /** 20211015 e **/
+
+/** 20211021 s **/
+.sso_wrap .join_wrap .btnwrap {
+	margin-top: 20px;
+	._titletip {
+		position: relative;
+		&::before {
+			content: '';
+			width: 170px;
+			height: 30px;
+			position: absolute;
+			bottom: 110%;
+			right: 0;
+			background: {
+				size: 100%;
+				repeat: no-repeat;
+				position: 0 0;
+				image: url(../images/sso/join01-titletip.gif);
+			}
+		}
+	}
+}
+.join_wrap._kakao {
+	.btn_foo {
+		margin-top: 25px;
+		.dotted {
+			border-top: 0;
+			height: 1px;
+			background: {
+				image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.8) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+				size: 8px;
+				position: 0 center;
+				repeat: repeat-x;
+			}
+			margin-bottom: 30px;
+		}
+		.tit {
+			font-size: 16px;
+			font-weight: 500;
+			text-align: left;
+		}
+		.logo_list {
+			margin-top: 25px;
+		}
+		.btn.btn_next {
+			margin-top: 70px;
+		}
+	}
+	.recom {
+		margin-top: 50px;
+		.tit {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+		.desc {
+			font-size: 16px;
+			line-height: 1.6;
+			em {
+				font-style: normal;
+				color: #3a96e1;
+			}
+		}
+		.btn_small {
+			font-size: 13px;
+			color: #222;
+			border: 1px solid #dddddd;
+			height: 30px;
+			line-height: 28px;
+		}
+	}
+	.recom {border-bottom:1px solid #dddddd;}
+	.recom .ti {display: inline-block;margin-right:25px;font-size: 16px;color: #888888;vertical-align: middle;}
+	.recom input[type=text]{width:90%;border:0;}
+}
+.sso_wrap .join_wrap.pophtml {
+	> h2.h2_ti {
+		color: #009fe3;
+		font-size: 16px;
+		font-weight: 300;
+		padding-bottom: 0;
+		margin-bottom: 16px;
+	}
+	.tit {
+		&._bold {
+			font-size: 20px;
+			font-weight: 350;
+			span {
+				font-weight: 500;
+			}
+		}
+	}
+	.snoti.warn {
+		position: relative;
+		margin-left: 20px;
+		&::before {
+			content: '※';
+			position: absolute;
+			left: -20px;
+			top: 0;
+		}
+	}
+}
+.layerwrap .btn_close {
+	background: url(../images/sso/btn_layclose.png) no-repeat 0 0;
+}
+#terms_agree_layer {
+	.layerwrap {
+		padding-right: 20px;
+		padding-left: 20px;
+	} 
+	.layconts {	
+		height: 80vh;
+		padding-right: 20px;
+		padding-left: 20px;
+		overflow-y: scroll;
+	}
+}
+/** 20211021 e **/
+
+/** 20211022 s **/
+.sns_login > p a._gray {
+	color: #888;
+	background-color: #f1f3f4;
+	&.bt_naver {
+		i {
+			background-size: 23px!important;
+			background-image: url(../images/sso/ico_naver.png);
+		}
+	}
+	&.bt_facebook {
+		i {
+			background-size: 11px!important;
+			background-image: url(../images/sso/ico_facebook.png);
+		}
+	}
+}
+/** 20211022 e **/

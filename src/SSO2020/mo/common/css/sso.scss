@@ -876,7 +876,12 @@ p, span, li{word-break: keep-all;}
 		& + h2.h2_ti {
 			padding-bottom: 25px;
 		}
-		& + .h2_ti + .input_frm li {
+	}
+	.input_frm + h2.h2_ti {
+		padding-bottom: 25px;
+	}
+	.tabwrap + .h2_ti + .input_frm {
+		li {
 			flex-wrap: wrap;
 			.errtx {
 				margin-top: 5px;
@@ -885,8 +890,8 @@ p, span, li{word-break: keep-all;}
 			}
 		}
 	}
-	.input_frm + h2.h2_ti {
-		padding-bottom: 25px;
+	.btn_foo {
+		margin-top: 30px;
 	}
 }
 .sso_wrap .join_wrap .join_form .input_frm {
@@ -916,5 +921,8 @@ p, span, li{word-break: keep-all;}
 			}
 		}
 	}
+}
+.sso_wrap .my_wrap .join_form .terms_chk:last-of-type {
+	border-bottom: 0;
 }
 /** 20211018 e **/

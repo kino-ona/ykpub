@@ -38,27 +38,127 @@
 		<header class="sso_head">
 			<div class="row">
 				<h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
-				<!-- 20211015 SSO 오늘플러스 -->
-				<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p>
-				<!--// 20211015 SSO 오늘플러스 -->
+				<!-- 20211022 
+				<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p> -->
+				<p class="childlogo"><a href="https://momq.co.kr/"><span class="a11y_sr-only">momQ</span></a></p>
+				<!--// 20211022 -->
 			</div>
 		</header>
 		<div id="container" class="contents">
 			<div class="row">
-				<div class="join_wrap">
+				<div class="join_wrap _kakao">  <!-- 20211021 SSO 카카오싱크 ._kakao //-->
 					<h1><span>유한킴벌리 SSO 카카오</span>회원가입을 환영합니다.</h1>
           <p class="desc">유한킴벌리 SSO회원 계정 하나로 맘큐 및 유한킴벌리<br>브랜드의 다양한 서비스를 이용할 수 있습니다.</p>
+					
+					<!-- 20211021 SSO 카카오싱크 적용 수정 -->
+					<div class="recom">
+						<p class="tit">(선택) 추천인 ID 입력</p>
+						<p class="desc">추천인 ID 입력하고, 포인트 2,000점 받으세요.<br>
+							<em>추천인 포인트는 입력 후 일주일 이내에 지급됩니다.</em>
+						</p>
+						<p class="inp_wrap">
+							<input type="text" name="recommender_code" value="" placeholder="추천인 ID 입력" class="openLayer" data-hash="#recommidLayer" readonly>
+							<button type="button" class="btn btn_small openLayer" data-hash="#recommidLayer">검색</button>
+						</p>
+					</div>
+					<!--// 20211021 SSO 카카오싱크 적용 수정 -->
+
 					<!-- 20211013 SSO 오늘플러스 -->
 					<div class="btnwrap">
 						<!--// 20211013 SSO 오늘플러스 -->
 						<!-- 20211013 SSO 오늘 플러스
 							<a href="#" class="btn btn_blue">아이정보 입력하고 맘큐 혜택 받기</a> -->
-						<a href="#" class="btn btn_next">로그인</a>
+						<!-- 20211021 SSO 카카오싱크 적용 수정 -->
+						<a href="#" class="btn btn_next">다음</a>
+						<!--// 20211021 SSO 카카오싱크 적용 수정 -->
 					</div>
         </div>
 			</div>
 
 		</div>
 	</div>
+		
+
+	<!-- 20211021 : 추천인 ID 검색 레이어 추가 -->
+	<div class="layerbody" id="recommidLayer">
+		<div class="layerwrap recommidlay">
+			<a class="btn_close" onclick="layerClose('recommidLayer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>추천인 ID 검색</p>
+			</div>
+			<div class="layconts">
+				<div class="select_chk">
+					<p class="rchk"><input type="radio" id="sch01" name="type" checked><label for="sch01">아이디로 검색</label></p>
+					<p class="rchk"><input type="radio" id="sch02" name="type"><label for="sch02">회원 정보로 검색</label></p>
+				</div>
+				<ul class="putfrm idsch">
+					<li>
+						<p class="name"><span class="esse">*</span>아이디</p>
+						<p class="put"><input type="text" placeholder="추천인 아이디를 입력해주세요."></p>
+					</li>
+				</ul>
+				<ul class="putfrm usersch hid">
+					<li>
+						<p class="name"><span class="esse">*</span>이름</p>
+						<p class="put"><input type="text" placeholder="추천인 이름을 입력해주세요."></p>
+					</li>
+					<li>
+						<p class="name"><span class="esse">*</span>휴대폰 번호</p>
+						<p class="put"><input type="text" placeholder="-를 제외한 숫자만 입력해주세요."></p>
+					</li>
+				</ul>
+				<p class="inf">휴면 계정은 추천인 ID로 등록하실 수 없습니다.</p>
+				<div class="btnwrap">
+					<a href="#" class="btn btnfull">검색</a>
+				</div>
+				<div class="result">
+					<ul class="putfrm">
+						<li>
+							<p class="name">아이디</p>
+							<p class="put">
+								yuhan
+								<span><a href="#" class="btn btnsmal">선택</a></span>
+							</p>
+						</li>
+						<li>
+							<p class="name">아이디</p>
+							<p class="put">일치하는 정보가 없습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 20211021 : 추천인 ID 검색 레이어 추가 -->
 </body>
+<!-- 20211021 추가 -->
+<script>
+	// 레이어팝업 열기
+	function layerOpen(set) {
+		$('#' + set).addClass('show');
+		$('body, html').addClass('noscroll');
+	}
+	// 레이어팝업 닫기
+	function layerClose(set) {
+		$('#' + set).removeClass('show');
+		$('body, html').removeClass('noscroll');
+	}
+	$(document).ready(function() {
+		if($('.recommidlay').length > 0) {
+			$('.recommidlay').find('#sch02').click(function() {
+				if($(this).is(":checked")) {
+					$('.recommidlay').find('.idsch').addClass('hid');
+					$('.recommidlay').find('.usersch').removeClass('hid');
+				}
+			});
+			$('.recommidlay').find('#sch01').click(function() {
+				if($(this).is(":checked")) {
+					$('.recommidlay').find('.idsch').removeClass('hid');
+					$('.recommidlay').find('.usersch').addClass('hid');
+				}
+			});
+		}
+	});
+	</script>
+	<!--// 20211021 추가 -->
 </html>

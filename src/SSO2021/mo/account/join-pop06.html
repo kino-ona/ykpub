@@ -31,7 +31,7 @@
 	<script type="text/javascript" src="../js/common.js"></script>
 </head>
 <body>
-	<div class="sso_wrap">
+	<div class="sso_wrap popup_wrap">
 		<header class="sso_head">
 			<div class="row">
 				<h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
@@ -42,16 +42,18 @@
 			<div class="row">
 				<div class="join_wrap pophtml">
 					<h2 class="h2_ti">유한킴벌리 SSO 회원</h2> <!-- 20211022 //-->
-					<p class="tit _complete">회원정보 통합 신청 완료</p>
-          <div class="inner _complete">
-            <p>회원정보 통합의 경우 일주일 내 처리 완료되며, 완료 시 고객님께 안내 문자가 발송됩니다.</p>
 					<!-- 20211021 SSO 카카오싱크 적용 수정 -->
-					</div>
-					<div class="btnwrap _complete">
-						<a href="#" class="btn btn_next">통합회원 아이디로 로그인</a>
-					</div>
+					<p class="tit _bold"><span>카카오 계정</span>으로 회원 가입되어 있습니다.</p>
 					<!--// 20211021 SSO 카카오싱크 적용 수정 -->
-					<p class="snoti warn">회원정보 통합이 완료되면 기존에 사용하시던 카카오 간편계정(ID)은 사용하실 수 없으며, 카카오 간편로그인만 이용 가능합니다.</p>  <!-- 20211025 변경 //-->
+          <div class="inner _complete">
+            <p>회원님은 이미 카카오 계정을 통해<br>유한킴벌리 통합회원으로 가입하셨습니다.<br><br>가입한 계정으로 로그인해주세요.</p>
+          </div>
+          
+					<div class="sns_login">
+						<p class="_full">
+							<a href="#" data-type="kakao" class="bt_kakao js-btn-sns-login"><i></i>카카오로 로그인하기</a>
+						</p>
+          </div>
 				</div>
 			</div>
 		</div>

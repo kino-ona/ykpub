@@ -926,3 +926,51 @@ p, span, li{word-break: keep-all;}
 	border-bottom: 0;
 }
 /** 20211018 e **/
+/*20211110 s*/
+.my_wrap {
+	.input_frm li > .dot_list {
+		width: 100%;
+		li {
+			color: #888;
+			font-size: 12px;
+			margin-bottom: 0;
+			&:first-of-type {
+				padding-top: 10px;
+				&::before {
+					top: 20px;
+				}
+			}
+		}
+	}
+	.help_desc {
+		display: flex;
+		justify-content: space-between;
+		p.help {
+			width: 100%;
+			padding-right: 65px;
+			&::before {
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 10px;
+				color: #888888;
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				margin-top: -2px;
+				width: 3px;
+				height: 3px;
+				background-color: #888;
+			}
+			> span {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 0;
+				background-color: #fff;
+			}
+		}
+	}
+}
+/*20211110 e*/

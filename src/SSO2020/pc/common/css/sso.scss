@@ -1008,3 +1008,23 @@ footer.renewfoo {
 }
 
 /** 20211015 e **/
+/*20211110 s*/
+.my_wrap {
+	.input_frm li > .dot_list {
+		li {
+			color: #888;
+			font-size: 14px;
+			margin-bottom: 0;
+			&:first-of-type {
+				padding-top: 16px;
+				&::before {
+					top: 26px;
+				}
+			}
+		}
+	}
+	.help_desc p.help:before {
+		top: 12px;
+	}
+}
+/*20211110 e*/

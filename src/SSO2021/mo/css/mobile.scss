@@ -1290,3 +1290,21 @@ input[type="checkbox"]:checked + label:before {
 	}
 }
 /** 20211022 e **/
+
+/** 20211028 s **/
+.sso_wrap .join_wrap._kakao {
+	.recom .tit {
+		font-size: 18px;
+	}
+	.inp_wrap {
+		input {
+			width: 100%;
+		}
+	}
+	.btnwrap {	
+		& + .noti {
+			margin-top: 20px;
+		}
+	}
+}
+/** 20211028 e **/

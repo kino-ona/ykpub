@@ -1258,3 +1258,37 @@ footer.renewfoo {
 	}
 }
 /** 20211022 e **/
+
+/** 20211028 s **/
+.sso_wrap .join_wrap._kakao {
+	.recom {
+		.tit {
+			font-size: 18px;
+		}
+	}
+	.btn_foo {		
+		.btn.btn_next {
+			margin-top: 0;
+		}
+		& + .noti {
+			margin-top: 20px;
+			font-size: 16px;
+		}
+	}
+}
+/** 20211028 e **/
+
+/** 20211109 s **/
+.sso_wrap .join_wrap {
+	.btnwrap {
+		margin-top: 10px;
+	}
+	.btn.btn_nrmal {
+		font-weight: 500;
+		&._kakao {
+			font-size: 14px;
+			background-position: left 22px center;
+		}
+	}
+}
+/** 20211109 e **/

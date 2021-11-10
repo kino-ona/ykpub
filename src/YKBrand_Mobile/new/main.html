@@ -34,7 +34,7 @@
     <div class="visual">
       <ul id="visualslide" class="bxslider">
         <li style="background-image:url('../Common/images/dummy/@visual01.png')">
-          <a href="#"><span class="a11y">슬라이드타이틀</span></a>
+          <a href="http://ykbrand.co.kr"><span class="a11y">슬라이드타이틀</span></a>
         </li>
         <li style="background-image:url('../Common/images/dummy/@visual02.png')">
           <a href="#"><span class="a11y">슬라이드타이틀</span></a>
@@ -48,7 +48,7 @@
       <div class="card banner">
         <ul id="rollslide" class="bxslider">
           <li><a href="#" onclick="alert('bnr1');"><img src="../Common/images/dummy/@bnr01.png"></a></li>
-          <!-- <li><a href="#" onclick="alert('bnr2');"><img src="../Common/images/dummy/@bnr02.png"></a></li> -->
+          <li><a href="#" onclick="alert('bnr2');"><img src="../Common/images/dummy/@bnr02.png"></a></li>
         </ul>
       </div>
       <!--// banner type -->
@@ -279,7 +279,7 @@
   <div id="dim" class=""></div>
 
   <!-- 20201006 공지팝업01 -->
-	<div id="notipop01" class="layer_pop">
+	<!-- <div id="notipop01" class="layer_pop">
 		<div class="layer_conts">
 			<p><img src="../Common/images/m_notipop.png" alt=""></p>
 			<div class="foo">
@@ -287,49 +287,58 @@
 				<a href="#" onclick="layerclose('notipop01');return false;" class="btn_close">닫기</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
   <!--// 20201006 공지팝업01 -->
 
 </body>
 <script type="text/javascript" src="../Common/js/new_ui.js"></script>
+
+<!-- 20211109 slider -->
 <script>
 var visualSlide = $('#visualslide').bxSlider({
-  auto: false,
+  auto: true,
   autoControls: true,
-  touchEnabled: true,
+  // touchEnabled: true,
+  preventDefaultSwipeX: false,
+  preventDefaultSwipeY: true,
+  touchEnabled: false,
   adaptiveHeight:true,
 });
 var rollSlide = $('#rollslide').bxSlider({
   auto: true,
   autoControls: true,
-  touchEnabled: true,
+  // touchEnabled: true,
+  preventDefaultSwipeX: false,
+  preventDefaultSwipeY: true,
+  touchEnabled: false,
   adaptiveHeight:true,
 });
 </script>
+<!--// 20211109 slider -->
 
 
 <!-- 20201006 공지팝업 -->
 <script type = "text/javascript">
-	function setCookie( name, value, expirehours ) {
-		var todayDate = new Date();
-		todayDate.setHours( todayDate.getHours() + expirehours );
-		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-	}
-	function todayclose(id,checkbox) {
-		if ( checkbox.checked ){
-			setCookie( id, "done" , 1 );
-		}
-		document.getElementById(id).style.display = "none";
-	}
-	cookiedata = document.cookie; 
-	if ( cookiedata.indexOf("notipop01=done") < 0 ){   
-		document.getElementById('notipop01').style.display = "block";
-	} else {
-		document.getElementById('notipop01').style.display = "none";
-	}
-	function layerclose(setid) { 
-		$('#' + setid).css('display', 'none')
-	}
+	// function setCookie( name, value, expirehours ) {
+	// 	var todayDate = new Date();
+	// 	todayDate.setHours( todayDate.getHours() + expirehours );
+	// 	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+	// }
+	// function todayclose(id,checkbox) {
+	// 	if ( checkbox.checked ){
+	// 		setCookie( id, "done" , 1 );
+	// 	}
+	// 	document.getElementById(id).style.display = "none";
+	// }
+	// cookiedata = document.cookie; 
+	// if ( cookiedata.indexOf("notipop01=done") < 0 ){   
+	// 	document.getElementById('notipop01').style.display = "block";
+	// } else {
+	// 	document.getElementById('notipop01').style.display = "none";
+	// }
+	// function layerclose(setid) { 
+	// 	$('#' + setid).css('display', 'none')
+	// }
 </script>
   <!--// 20201006 공지팝업 -->
 

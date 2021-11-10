@@ -55,10 +55,10 @@
 					
 					<!-- 20211021 SSO 카카오싱크 적용 수정 -->
 					<div class="recom">
-						<p class="tit">(선택) 추천인 ID 입력</p>
-						<p class="desc">추천인 ID 입력하고, 포인트 2,000점 받으세요.<br>
+						<p class="tit">(선택) 추천인 ID 또는 회원번호 입력</p> <!-- 20211105 텍스트 수정 //-->
+						<p class="desc">추천인 ID/회원번호 입력하고, 포인트 5,000점 받으세요.<br> <!-- 20211105 텍스트 수정 //-->
 							<em>추천인 포인트는 입력 후 일주일 이내에 지급됩니다.</em></p>
-						<input type="text" name="recommender_code" value="" placeholder="추천인 ID 입력" class="openLayer" data-hash="#recommidLayer" readonly>
+						<input type="text" name="recommender_code" value="" placeholder="추천인 ID 또는 회원번호 입력" class="openLayer" data-hash="#recommidLayer" readonly> <!-- 20211105 placeholer 텍스트 수정 //-->
 						<!-- 20211026 삭제
 							<button type="button" class="btn btn_small openLayer" data-hash="#recommidLayer">검색</button> -->
 					</div>
@@ -68,10 +68,17 @@
 						<!-- 20211015 SSO 오늘 플러스
 							<a href="#" class="btn btn_blue">아이정보 입력하고 맘큐 혜택 받기</a> -->
 						<!-- 20211021 SSO 카카오싱크 적용 수정 -->
-						<a href="#" class="btn btn_next">다음</a>
+						<a href="#" class="btnDefault btnfull">다음</a> <!-- 20211105 btnDefault btnfull 버튼 클래스 수정 -->
 						<!--// 20211021 SSO 카카오싱크 적용 수정 -->
 					</div>
-					<p class="noti">추천인 ID는 가입완료 후 1시간 이내로만 입력이 가능합니다.</p> <!-- 20211028 문구 추가 //-->
+					<!-- 20211105 문구 추가 -->
+					<div class="helpwrap pd-top-20">
+            <ul>
+              <li>추천인이 SSO 카카오 회원인 경우 회원번호를 입력해주세요.</li>
+              <li>회원번호는 SSO 카카오 회원만 확인이 가능하며, 마이페이지 또는 회원정보수정에서 확인할 수 있습니다.</li>
+            </ul>
+          </div>
+					<!--// 20211105 문구 추가 -->
         </div>
 
 				<div class="banner wide">

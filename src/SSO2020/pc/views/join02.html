@@ -274,20 +274,12 @@
                   </div>
                 </li>
               </ul>
-              <!-- 선택 정보 입력 -->
+
+              <!-- 20211203 선택 정보 입력 -->
               <h2 class="h2_ti">선택 정보 입력</h2>
               <div class="etc_frm">
-                <p class="recom">
-                  <span class="ti">추천인 ID</span>
-                  <input type="text" name="recommender_code" value="" placeholder=" 추천인 ID 입력 시 포인트 2천원을 드립니다. "
-                    class="openLayer" data-hash="#recommidLayer" readonly>
-                  <button type="button" class="btn btn_small openLayer" data-hash="#recommidLayer">검색</button>
-                </p>
-
                 <!-- 맘큐, POME, 모닛 유입시 -->
-
-                <!-- 20211015 SSO 오늘플러스 
-                  <h3 class="h3_ti">아이정보 입력</h3>
+                <h3 class="h3_ti">아이정보 입력</h3>
                 <div class="select_chk child_input">
                   <span class="esse">
                     <i class="tag">혜택안내</i>
@@ -301,12 +293,10 @@
                     <input type="radio" name="childYN" id="child02" value="N" checked>
                     <label for="child02">아이 없음</label>
                   </p>
-                </div> -->
-                <!-- 맘큐, POME, 모닛 유입시 -->
+                </div>
               </div>
 
               <!-- 맘큐, POME, 모닛 유입시 -->
-
               <!-- 아이추가 영역 -->
               <div class="childadd" style="display:none;">
                 <div class="addbtnwrap">
@@ -320,6 +310,7 @@
                 </div>
               </div>
               <!--// 아이추가 영역 -->
+
               <!-- 20201005 아이정보 수집 동의 -->
               <ul class="terms_chk _child" style="display:none;">
                 <li>
@@ -332,9 +323,21 @@
                 </li>
               </ul>
               <!--// 20201005 -->
-              <!--// 아이추가 영역 -->
+              <!--// 아이정보 수집 동의 -->
+
               <!-- 맘큐, POME, 모닛 유입시 -->
               <input type="hidden" name="child_info" value="" />
+              
+              <!-- 맘큐, POME, 모닛 유입시 -->
+              <p class="recom">
+                <span class="ti">추천인 ID</span>
+                <input type="text" name="recommender_code" value="" placeholder=" 추천인 ID 입력 시 포인트 2천원을 드립니다. "
+                  class="openLayer" data-hash="#recommidLayer" readonly>
+                <button type="button" class="btn btn_small openLayer" data-hash="#recommidLayer">검색</button>
+              </p>
+              
+              <!--// 20211203 선택 정보 입력 -->
+
             </div> <!-- join_form -->
           </form>
 
@@ -362,7 +365,6 @@
       </div>
 
       <!-- 맘큐, POME, 모닛 유입시 -->
-
       <template id="user_child_input">
         <ul class="input_frm child_input_frm">
           <li>
@@ -441,7 +443,7 @@
       <!-- 맘큐, POME, 모닛 유입시 -->
 
       <!-- 회원 가입시 필요한 Layer-->
-      <!-- 추천인 ID 검색 레이어  -->
+      <!-- 20211203 추천인 ID 검색 레이어  -->
       <div class="layerbody" id="recommidLayer">
         <div class="layerwrap recommidlay">
           <a class="btn_close recommidLayer_close"><span class="a11y_sr-only">close</span></a>
@@ -449,17 +451,27 @@
             <p>추천인 ID 검색</p>
           </div>
           <div class="layconts">
+            <span class="noti">
+              추천인의 <b>ID를 알고 계시면 추천인 ID로 검색</b>, 추천인이 <b>카카오로 가입하신 회원이라면 회원번호로 검색</b>, <b>ID또는 회원번호를 알 수 없으면 회원정보로 검색 버튼</b>을 눌러주세요.
+              <br>(카카오로 가입 하신 경우 회원정보변경에서 회원번호를 확인하실 수 있습니다.)
+            </span>
             <div class="select_chk">
-              <p class="rchk"><input type="radio" id="sch01" name="type" value="id" checked><label for="sch01">아이디로
-                  검색</label></p>
-              <p class="rchk"><input type="radio" id="sch02" name="type" value="info"><label for="sch02">회원 정보로
-                  검색</label></p>
+              <p class="rchk"><input type="radio" id="sch01" name="type" value="id" checked><label for="sch01">아이디로 검색</label></p>
+              <p class="rchk"><input type="radio" id="sch03" name="type" value="info"><label for="sch03">회원 번호로 검색</label></p>
+              <p class="rchk"><input type="radio" id="sch02" name="type" value="info"><label for="sch02">회원 정보로 검색</label></p>
             </div>
             <ul class="putfrm idsch">
               <li>
                 <p class="name"><span class="esse">*</span>아이디</p>
                 <p class="put"><input type="text" name="userid" placeholder="추천인 아이디를 입력해주세요."></p>
               </li>
+            </ul>
+            <ul class="putfrm numsch hid">
+              <li>
+                <p class="name"><span class="esse">*</span>회원번호</p>
+                <p class="put"><input type="text" name="usernum" placeholder=""></p>
+              </li>
+              <li class="noti">- 회원번호는 SSO 카카오 회원만 확인이 가능하며, 마이페이지 또는 회원정보수정에서 확인할 수 있습니다.</span></li>
             </ul>
             <ul class="putfrm usersch hid">
               <li>
@@ -470,20 +482,48 @@
                 <p class="name"><span class="esse">*</span>휴대폰 번호</p>
                 <p class="put"><input type="text" name="mobile" placeholder="-를 제외한 숫자만 입력해주세요."></p>
               </li>
+              <li class="noti">- 추천인이 SSO 카카오 회원인 경우 ID가 아닌 회원번호로 안내되니 참고 부탁드립니다.</span></li>
+              <li class="noti">- 추천인이 SSO 카카오 회원인 경우 회원번호로 검색하면 더 쉽고 빠르게 찾을 수 있습니다.</span></li>
             </ul>
             <div class="btnwrap">
               <a href="javascript:;" class="btn btnfull recommender_search">검색</a>
             </div>
-            <div class="result" style="display:none">
+
+            <div class="result idsch" style="display:none">
               <ul class="putfrm">
                 <li>
                   <p class="name">아이디</p>
                   <p class="put none">일치하는 정보가 없습니다.</p>
-                  <p class="put recommender-error" style="color:#e63c4f; font-size:14px;"></p>
+                  <p class="put recommender-error" style="display:none" style="color:#e63c4f; font-size:14px;"></p>
                   <p class="put search" style="display:none">
                     <span class="recommender_userid"></span>
-                    <span><a href="javascript:;" class="btn btnmedium recommender_choice"
-                        style="float:right">선택</a></span>
+                    <span><a href="javascript:;" class="btn btnmedium recommender_choice" style="float:right">선택</a></span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="result numsch" style="display:none">
+              <ul class="putfrm">
+                <li>
+                  <p class="name">회원번호</p>
+                  <p class="put none">일치하는 정보가 없습니다.</p>
+                  <p class="put recommender-error" style="display:none" style="color:#e63c4f; font-size:14px;"></p>
+                  <p class="put search" style="display:none">
+                    <span class="recommender_usernum"></span>
+                    <span><a href="javascript:;" class="btn btnmedium recommender_choice" style="float:right">선택</a></span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="result usersch" style="display:none">
+              <ul class="putfrm">
+                <li>
+                  <p class="name">추천인</p>
+                  <p class="put none">일치하는 정보가 없습니다.</p>
+                  <p class="put recommender-error" style="display:none" style="color:#e63c4f; font-size:14px;"></p>
+                  <p class="put search" style="display:none">
+                    <span class="recommender_userinfo"></span>
+                    <span><a href="javascript:;" class="btn btnmedium recommender_choice" style="float:right">선택</a></span>
                   </p>
                 </li>
               </ul>
@@ -491,7 +531,7 @@
           </div>
         </div>
       </div>
-      <!--// 추천인 ID 검색 레이어  -->
+      <!--// 20211203 추천인 ID 검색 레이어  -->
       
       <!-- 약관 레이어  -->
       <div class="layerbody" id="sso_terms_agree_layer">
@@ -1947,7 +1987,6 @@
           if (errorMessage != '') {
             alert(errorMessage);
           }
-        
 
           $(document).on('click', '.openLayer', function () {
             var hash = $(this).data('hash');
@@ -1963,9 +2002,18 @@
             });
           });
 
+          // 20211203 추천인 검색 방법
           if ($('.recommidlay').length > 0) {
+            $('.recommidlay').find('#sch03').click(function () {
+              if ($(this).is(":checked")) {
+                $('.recommidlay').find('.usersch').addClass('hid');
+                $('.recommidlay').find('.numsch').removeClass('hid');
+                $('.recommidlay').find('.idsch').addClass('hid');
+              }
+            });
             $('.recommidlay').find('#sch02').click(function () {
               if ($(this).is(":checked")) {
+                $('.recommidlay').find('.numsch').addClass('hid');
                 $('.recommidlay').find('.idsch').addClass('hid');
                 $('.recommidlay').find('.usersch').removeClass('hid');
               }
@@ -1974,6 +2022,7 @@
               if ($(this).is(":checked")) {
                 $('.recommidlay').find('.idsch').removeClass('hid');
                 $('.recommidlay').find('.usersch').addClass('hid');
+                $('.recommidlay').find('.numsch').addClass('hid');
               }
             });
           }

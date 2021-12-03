@@ -928,16 +928,23 @@ p, span, li{word-break: keep-all;}
 /** 20211018 e **/
 /*20211110 s*/
 .my_wrap {
-	.input_frm li > .dot_list {
-		width: 100%;
-		li {
-			color: #888;
-			font-size: 12px;
-			margin-bottom: 0;
-			&:first-of-type {
-				padding-top: 10px;
-				&::before {
-					top: 20px;
+	.input_frm {
+		.put {
+			input {
+				max-width: 75%;
+			}
+		}
+		li > .dot_list {
+			width: 100%;
+			li {
+				color: #888;
+				font-size: 12px;
+				margin-bottom: 0;
+				&:first-of-type {
+					padding-top: 10px;
+					&::before {
+						top: 20px;
+					}
 				}
 			}
 		}
@@ -974,3 +981,101 @@ p, span, li{word-break: keep-all;}
 	}
 }
 /*20211110 e*/
+
+//** 20211203 s **//
+.sso_wrap .join_form {
+	h3.h3_ti {
+		margin-top: 20px;
+	}
+	.recom {
+		margin-top: 60px;
+		& + .errtx {
+			margin-top: 5px;
+		}
+	}
+}
+.childadd .input_frm {
+  margin-bottom: 10px;
+}
+.recommidlay {
+	.layconts {
+		.noti {
+			display: block;
+			position: relative;
+			color: #888888;
+			font-size: 13px;
+			margin-bottom: 20px;
+			b {
+				font-weight: 500;
+			}
+		}
+		.rchk {
+			width: 40%;
+			margin-bottom: 20px;
+		}
+	}
+	.putfrm {
+		min-height: unset;
+		li.noti {
+			color: #888888;
+			border-bottom: 0;
+			margin-bottom: 5px;
+		}
+	}
+}
+.etc_frm {
+	p._kakao {
+		margin-top: 20px;
+		position: relative;
+		padding-right: 50px;
+		color: #888;
+		font-size: 12px;
+		margin-bottom: 20px;
+		span {
+			color: #000;
+			font-size: 12px;
+			font-weight: 400;
+			margin-right: 5px;
+		}
+		.ico {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 24px;
+			height: 24px;
+			padding-right: 30px;
+			background: {
+				image: url(../images/sso/logos_kakao.gif);
+				position: center;
+				repeat: no-repeat;
+				size: 24px;
+			}
+		}
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: #fff;
+		}
+		&.Y {
+			padding-left: 35px;
+		}
+		&.N {
+			.btn_small {
+				height: auto;
+				padding: 2px 20px 2px 48px;
+			}
+			.ico {
+				left: 12px;
+			}
+		}
+	}
+}
+.my_wrap {
+	.btnwrap.btn_foo {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+//** 20211203 e **//

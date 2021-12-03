@@ -1028,3 +1028,103 @@ footer.renewfoo {
 	}
 }
 /*20211110 e*/
+
+//** 20211203 s **//
+.sso_wrap {
+	.join_wrap {
+		.h2_ti {
+			margin-bottom: 20px;
+		}
+		.h3_ti {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.btnwrap.btn_foo .btn {
+			margin-top: 55px;
+		}
+		.recom {
+			margin-top: 50px;
+		}
+	}
+}
+.childadd .input_frm {
+  margin-bottom: 10px;
+}
+.recommidlay  {
+	.layconts {
+		.noti {
+			display: block;
+			position: relative;
+			color: #888888;
+			font-size: 14px;
+			margin-bottom: 25px;
+			b {
+				font-weight: 500;
+			}
+		}
+	}
+	.putfrm {
+		min-height: unset;
+		li.noti {
+			color: #888888;
+			border-bottom: 0;
+			margin-bottom: 5px;
+		}
+	}
+}
+.my_wrap {
+	.etc_frm {
+		.h3_ti {
+			margin-top: 0;
+		}
+	}
+}
+.etc_frm {
+	p._kakao {
+		margin-top: 20px;
+		position: relative;
+		padding-right: 50px;
+		color: #888;
+		font-size: 16px;
+		margin-bottom: 20px;
+		span {
+			color: #000;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.ico {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 24px;
+			height: 24px;
+			padding-right: 30px;
+			background: {
+				image: url(../images/sso/logos_kakao.gif);
+				position: center;
+				repeat: no-repeat;
+				size: 24px;
+			}
+		}
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: #fff;
+		}
+		&.Y {
+			padding-left: 35px;
+		}
+		&.N {
+			.btn_small {
+				height: auto;
+				padding: 2px 20px 2px 48px;
+			}
+			.ico {
+				left: 12px;
+			}
+		}
+	}
+}
+//** 20211203 e **//

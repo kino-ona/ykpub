@@ -1113,10 +1113,16 @@ footer.renewfoo {
 			top: 0;
 			background-color: #fff;
 		}
+//** 20211206 s **//
 		&.Y {
 			padding-left: 35px;
+			margin-bottom: 60px;
+			span {
+				margin-right: 20px;
+			}
 		}
 		&.N {
+			margin-bottom: 60px;
 			.btn_small {
 				height: auto;
 				padding: 2px 20px 2px 48px;
@@ -1127,4 +1133,10 @@ footer.renewfoo {
 		}
 	}
 }
+.my_wrap {
+	> .btnwrap.btn_foo {
+		margin-top: 65px;
+	}
+}
 //** 20211203 e **//
+//** 20211206 e **//

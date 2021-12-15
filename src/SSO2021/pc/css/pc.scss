@@ -1355,7 +1355,6 @@ footer.renewfoo {
 		.noti {
 			display: block;
 			position: relative;
-			color: #888888;
 			font-size: 14px;
 			margin-bottom: 25px;
 			b {
@@ -1366,10 +1365,25 @@ footer.renewfoo {
 	.putfrm {
 		min-height: unset;
 		li.noti {
-			color: #888888;
 			border-bottom: 0;
 			margin-bottom: 5px;
 		}
 	}
 }
 //** 20211203 e **//
+//** 20211206 s **//
+.recom {
+	.esse {
+		display: block;
+		color: inherit !important;
+		margin-bottom: 20px;
+	}
+}
+.recommidlay {
+	.layconts {
+		.noti {
+			color: #000;
+		}
+	}
+}
+//** 20211206 e **//

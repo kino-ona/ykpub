@@ -1433,3 +1433,28 @@ input[type="checkbox"]:checked + label:before {
 	}
 }
 //** 20211203 e **//
+//** 20211206 s **//
+.recom {
+	.esse {
+		display: block;
+		color: inherit !important;
+		margin-bottom: 20px;
+	}
+}
+.recommidlay {
+	.layconts {
+		.noti {
+			color: #000;
+		}
+	}
+	.rchk label {
+		position: relative;
+		padding-left: 28px;
+		&::before {
+			position: absolute;
+			top: 4px;
+			left: 0;
+		}
+	}
+}
+//** 20211206 e **//

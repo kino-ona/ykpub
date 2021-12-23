@@ -1387,3 +1387,15 @@ footer.renewfoo {
 	}
 }
 //** 20211206 e **//
+//** 20211222 s **//
+.join_wrap .login_wrap {
+	padding-top: 0;
+	width: auto;
+	.util {
+		a {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+}
+//** 20211222 e **//

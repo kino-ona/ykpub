@@ -1473,3 +1473,38 @@ input[type="checkbox"]:checked + label:before {
 	}
 }
 //** 20211222 e **//
+
+// 20210124 s
+.sso_head .row {
+	.brandlogo {
+		background-image: url(../images/sso/yksso_logo.gif);
+	}
+	.child-logo-tdplus {
+		width: 124px;
+		height: 32px;
+		background-image: url(../images/sso/ykplus-logo.png);
+		background-size: 110px;
+		background-position-x: right;
+		top: 15px;
+		right: 20px;
+	}
+}
+.sso_wrap {
+	.login_wrap {
+		.btn_blue {
+			line-height: 1;
+			padding: 12.5px 10px;
+		}
+		.sns_login a {
+			line-height: 1;
+			padding: 12.5px 10px;
+		}
+	}
+	.join_wrap {
+		.btnwrap a {
+			line-height: 1;
+			padding: 12.5px 10px;
+		}
+	}
+}
+// 20210124 e

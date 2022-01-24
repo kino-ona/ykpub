@@ -388,3 +388,19 @@ html, body { width: 100%; height: 100%; line-height: normal; font-family: 'NotoS
 	}
 }
 /** 20201006 e **/
+
+// 20210124 s
+#allbrand_layer ul:last-of-type  {
+	li {
+		a {
+			padding-top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				max-width: 110px;
+			}
+		}
+	}
+}
+// 20210124 e

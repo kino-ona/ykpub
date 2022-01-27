@@ -1414,22 +1414,34 @@ footer.renewfoo {
 		right: 20px;
 	}
 }
-.sso_wrap {
-	.login_wrap {
-		.btn_blue {
-			line-height: 1;
-			padding: 12.5px 10px;
-		}
-		.sns_login a {
-			line-height: 1;
-			padding: 12.5px 10px;
-		}
-	}
-	.join_wrap {
-		.btnwrap a {
-			line-height: 1;
-			padding: 12.5px 10px;
+
+// 20210127 s
+
+	// .sso_wrap {
+	// 	.login_wrap {
+	// 		.btn_blue {
+	// 			line-height: 1;
+	// 			padding: 12.5px 10px;
+	// 		}
+	// 		.sns_login a {
+	// 			line-height: 1;
+	// 			padding: 12.5px 10px;
+	// 		}
+	// 	}
+	// 	.join_wrap {
+	// 		.btnwrap a {
+	// 			line-height: 1;
+	// 			padding: 12.5px 10px;
+	// 		}
+	// 	}
+	// }
+	// 20210124 e
+
+.com_guide {
+	.dot_list {
+		strong {
+			font-weight: 500;
 		}
 	}
 }
-// 20210124 e
+// 20210127 e

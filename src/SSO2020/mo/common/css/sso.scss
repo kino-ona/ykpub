@@ -1079,3 +1079,81 @@ p, span, li{word-break: keep-all;}
 	}
 }
 //** 20211203 e **//
+
+/* 20220211 s */
+.join_wrap {
+	.login_wrap { 
+		padding-top: 0; width: auto;
+		.btnwrap { margin-top: 25px; }
+		.util a { cursor: pointer; text-decoration: underline; }
+	}
+}
+.sso_head {
+	.row {
+		.brandlogo { background-image: url(../images/sso/yksso_logo.gif); }
+		.child-logo-tdplus { 
+			width: 124px; height: 32px; 
+			background-image: url(../images/sso/ykplus-logo.png); 
+			background-size: 110px; 
+			background-position-x: right; 
+			top: 15px; 
+			right: 20px; 
+		}
+	}
+}
+.sso_wrap {
+	.login_wrap {
+		.btn_blue { line-height: 1; padding: 12.5px 10px; }
+		.sns_login a { line-height: 1; padding: 12.5px 10px; }
+		.btnwrap a { line-height: 1; padding: 12.5px 10px; }
+	}
+}
+.com_guide {
+	.dot_list {
+		strong { font-weight: 500; }
+	}
+}
+.childadd {
+	.btnwrap {
+		.btn_del {
+			padding:0 !important;
+		}
+	}
+}
+.input_frm {
+  .ti {
+    width: 100px;
+  }
+  .put {
+    width: calc(100% - 100px);
+    &.col3 {
+      width: calc((100% / 3) - 44px);
+    }
+  }
+}
+.join_form {
+  .terms_chk {
+    .txt {
+      line-height:19px;
+    } 
+  }
+}
+.sso_wrap {
+	.my_wrap {
+		.terms_target {
+			display: block;
+			border: 0;
+			padding: 0;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			border-bottom: 1px dotted #e2e3e5;
+			div {
+				> p label {
+					padding-bottom:0;
+				}
+			}
+		}
+	}
+}
+
+/* 20220211 e */

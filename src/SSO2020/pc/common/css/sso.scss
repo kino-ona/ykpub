@@ -1140,3 +1140,59 @@ footer.renewfoo {
 }
 //** 20211203 e **//
 //** 20211206 e **//
+
+//** 20220211 s **//
+.join_wrap {
+  .login_wrap { 
+    padding-top: 0; width: auto; 
+    .util a { cursor: pointer; text-decoration: underline; }
+  }
+}
+.sso_head {
+  .row {
+    .brandlogo { background-image: url(../images/sso/yksso_logo.gif); }
+    .child-logo-tdplus { 
+      width: 124px; height: 32px;
+      background-image: url(../images/sso/ykplus-logo.png); 
+      background-size: 110px; 
+      background-position-x: right; 
+      right: 20px; 
+    }
+  }
+}
+.com_guide {
+  .dot_list {
+    strong { font-weight: 500; }
+  }
+}
+.join_form {
+	.input_frm {
+		.put.email {
+			display: flex;
+			> * {flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
+		}
+	}
+	.put.col3 > span:first-of-type {width:65%;}
+	.terms_chk {
+		.btn_vw {
+			bottom: inherit;
+		}
+	}
+}
+.sso_wrap {
+	.my_wrap {
+		.input_frm {
+			.put.email {
+				display: flex;
+				> * {flex: 1;height: 55px;margin-right: 0;border: 0;border-bottom: 1px solid #eeeeee;}
+			}
+		}
+		.terms_target {
+			> p {
+				width: auto;
+				margin-right: 20px;
+			}
+		}
+	}
+}
+//** 20220211 e **//

@@ -33,16 +33,16 @@
 					<!-- 필수 정보 입력 -->
 					<div class="join_form">
 						<h2 class="h2_ti">필수 정보 입력</h2>
-						<p class="desc">모든 항목이 필수 입력 사항입니다.</p>
+						<p class="desc">(*)는 필수 입력 사항입니다.</p><!-- 20220211 SSO ISMS 수정 // -->
 						<ul class="input_frm">
 							<li>
-								<p class="ti">이름</p>
+								<p class="ti">이름*</p><!-- 20220211 SSO ISMS 수정 // -->
 								<p class="put">
 									<input type="text" value="홍길동" readonly>
 								</p>
 							</li>
 							<li>
-								<p class="ti">아이디</p>
+								<p class="ti">아이디*</p><!-- 20220211 SSO ISMS 수정 // -->
 								<p class="put put_id">
 									<input type="text" value="" maxlength="" placeholder="4~12자, 영문 및 숫자">
 									<a href="#" class="btn btn_small btn_idchk">중복확인</a>
@@ -50,7 +50,7 @@
 								<span class="errtx">아이디 중복확인을 해주세요.</span>
 							</li>
 							<li>
-								<p class="ti">비밀번호</p>
+								<p class="ti">비밀번호*</p><!-- 20220211 SSO ISMS 수정 // -->
 								<!-- 20210315 비밀번호 마스킹 수정 -->
 								<p class="put masking">
 									<input type="password" value="" maxlength="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
@@ -60,7 +60,7 @@
 								<span class="errtx">비밀번호는 8~20자의 영문/숫자/특수문자 조합으로 입력해주세요.</span>
 							</li>
 							<li>
-								<p class="ti">비밀번호 확인</p>
+								<p class="ti">비밀번호 확인*</p><!-- 20220211 SSO ISMS 수정 // -->
 								<!-- 20210315 비밀번호 마스킹 수정 -->
 								<p class="put masking">
 									<input type="password" value="" maxlength="" placeholder="비밀번호를 다시 입력해주세요." >
@@ -93,7 +93,7 @@
 							</li>
 							<!--// 20210810 성별 추가 -->
 							<li>
-								<p class="ti">휴대폰 번호</p>
+								<p class="ti">휴대폰 번호*</p><!-- 20220211 SSO ISMS 수정 // -->
 								<p class="put">
 									<input type="text" value="000-0000-0000" readonly>
 								</p>
@@ -121,23 +121,43 @@
 								<p class="txt">전체동의는 필수 뿐 아니라 선택항목도 포함됩니다. 선택항목 미동의 시 회원가입은 가능하나 서비스 이용에 제한이 있을 수 있습니다.</p>
 							</li>
 							<li>
-								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 이용약관</span></label></p>
+								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="in"><span class="esse">(필수) </span> 유한킴벌리 SSO회원 이용약관</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
 							</li>
-							<li>
-								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 개인정보 수집 및 이용</span></label></p> <!-- 20210927 '필수항목' 문구 삭제 -->
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
+								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 개인정보 수집 및 이용</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer02');return false;" class="btn_vw">보기</a>
-							</li>
+							</li> -->
 							<!-- 20211015 SSO 오늘플러스 -->
 							<li>
-								<p><input type="checkbox" id="termsNo4"><label for="termsNo4"><span class="in"><span class="esse">(필수)</span> 오늘 플러스 이용약관</span></label></p>
+								<p><input type="checkbox" id="termsNo4"><label for="termsNo4"><span class="in"><span class="esse">(필수) </span> 오늘 플러스 이용약관</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer10');return false;" class="btn_vw">보기</a>
 							</li>
-							<li>
-								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="in"><span class="esse">(필수)</span> 오늘 플러스 개인정보 수집 및 이용</span></label></p> <!-- 20210927 '필수항목' 문구 삭제 -->
+							<!-- 20220211 SSO ISMS 수정
+								<li>
+								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="in"><span class="esse">(필수) </span> 오늘 플러스 개인정보 수집 및 이용</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer11');return false;" class="btn_vw">보기</a>
-							</li>
+							</li> -->
 							<!--// 20211015 SSO 오늘플러스 -->
+
+							<!-- 20220211 SSO ISMS 수정 -->
+							<li>
+								<p><input type="checkbox" id="chk03" name="momq_terms_agree"><label for="chk03"><span class="in"><span class="esse">(필수) </span> 맘큐 이용약관</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer03');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<li>
+								<p><input type="checkbox" id="chk11" name="privacy_terms_agree"><label for="chk11"><span class="in"><span class="esse">(필수) </span> 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('privacy_terms_agree_layer');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<li>
+								<p><input type="checkbox" id="chk12" name="privacy_customized_service_terms_agree"><label for="chk12"><span class="in"><span class="sel">(선택) </span> 맞춤 서비스 제공을 위한 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('privacy_customized_service_terms_agree_layer');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- // 20220211 SSO ISMS 수정 -->
+
 							<!-- 20200831 삭제 <li>
 								<p><input type="checkbox" id="chk05"><label for="chk05"><span class="in"><span class="sel">(선택)</span> 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용</span></label></p>
 								<a href="#" onclick="layerOpen('termslayer05');return false;" class="btn_vw">보기</a>
@@ -156,7 +176,7 @@
 							</li> -->
 							<li>
 								<p><input type="checkbox" id="chk09">
-									<label for="chk09"><span class="in"><span class="sel">(선택)</span> <strong>광고성 정보 수신 동의</strong></label> <!-- 20200904 //-->
+									<label for="chk09"><span class="in"><span class="sel">(선택) </span> <strong>광고성 정보 수신 동의</strong></label> <!-- 20200904 //-->
 								</p>
 								<!-- 20210927 삭제 <a href="#" class="btn_vw">보기</a> -->
 								<div class="select_chk MOMQ">
@@ -308,7 +328,6 @@
 						</div>
 
 						<!--// 20211203 선택 정보 입력 -->
-
 					</div> <!-- join_form -->
 
 					<div class="btnwrap btn_foo">
@@ -329,8 +348,8 @@
 				</div>
 			</div>
 			<!--// 20200909 -->
-		</div>
 
+		</div>
 	</div>
 
 	<!-- 20211203 추천인 ID 검색 레이어  -->
@@ -423,6 +442,40 @@
 	</div>
 	<!--// 20211203 추천인 ID 검색 레이어  -->
 
+ <!-- 20220211 SSO ISMS 수정 -->
+	<!-- 약관 레이어: 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_terms_agree_layer_close" onclick="layerClose('privacy_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/privacy_terms_agree_layer.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 개인정보 수집 및 이용  -->
+
+	<!-- 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_customized_service_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_customized_service_terms_agree_layer_close" onclick="layerClose('privacy_customized_service_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맞춤 서비스 제공을 위한 개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/privacy_customized_service_terms_agree_layer.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+ <!--// 20220211 SSO ISMS 수정 -->
+
 	<!-- 약관 레이어 : 유한킴벌리 SSO회원 이용약관[필수] -->
 	<div class="layerbody" id="termslayer01">
 		<div class="layerwrap termslay">
@@ -439,11 +492,12 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 유한킴벌리 SSO회원 개인정보 수집 및 이용[필수] -->
-	<div class="layerbody" id="termslayer02">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer02">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer02')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>유한킴벌리 SSO회원 개인정보 수집 및 이용[필수]</p> <!-- 20210927 '필수항목' 문구 삭제 -->
+				<p>유한킴벌리 SSO회원 개인정보 수집 및 이용[필수]</p>
 			</div>
 			<div class="layconts">
 				<div class="inscroll">
@@ -451,7 +505,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 맘큐 이용약관[필수] -->
 	<div class="layerbody" id="termslayer03">
@@ -469,11 +523,12 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 맘큐 개인정보 수집 및 이용[필수] -->
-	<div class="layerbody" id="termslayer04">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer04">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer04')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>맘큐 개인정보 수집 및 이용[필수]</p> <!-- 20210927 '필수항목' 문구 삭제 -->
+				<p>맘큐 개인정보 수집 및 이용[필수]</p>
 			</div>
 			<div class="layconts">
 				<div class="inscroll">
@@ -481,10 +536,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택] -->
-	<div class="layerbody" id="termslayer05">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer05">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer05')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -496,10 +552,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 맘큐 선택항목 개인정보 수집 및 이용[선택] -->
-	<div class="layerbody" id="termslayer06">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer06">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer06')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -511,7 +568,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 20210927 마케팅 목적 이용 약관 전체 삭제 -- 맘큐 마케팅 목적 이용[선택] -->
 	<!-- <div class="layerbody" id="termslayer07">
@@ -559,7 +616,8 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어 : 20211015 SSO 오늘 플러스 개인정보 수집 및 이용 -->
-	<div class="layerbody" id="termslayer11">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer11">
 		<div class="layerwrap termslay">
 			<a class="btn_close" onclick="layerClose('termslayer11')"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -571,7 +629,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	
 	<!-- 20201005 약관 레이어 : 아이정보입력 수집동의[필수] -->
@@ -589,7 +647,6 @@
 		</div>
 	</div>
 	<!--// 20201005 약관 레이어  -->
-
 </body>
 <script>
 // 레이어팝업 열기

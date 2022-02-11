@@ -45,7 +45,7 @@
 						<div>
 						 	<p>
 								<input type="checkbox" id="allchk" class="required" checked="" readonly="">
-								<label for="allchk"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 </label>
+								<label for="allchk"><span class="esse">(필수) </span> 유한킴벌리 SSO회원 </label>
 							</p>
 							<p>
 								<input type="checkbox" name="ykbrand_terms" id="use_ykbrand"  checked ><label for="use_ykbrand">통합브랜드</label>
@@ -60,7 +60,49 @@
 					</div>
 
 					<div class="join_form">
+
+						<!-- 20220211 SSO ISMS 수정 -->
+						<ul class="terms_chk" id="sso_privacy_term">
+							<li class="first">
+								<p><input type="checkbox" id="sso_privacy_all" class="all_check"><label for="sso_privacy_all">개인정보 수집 및 이용 전체 동의</label></p>
+							</li>
+							<li>
+								<p>
+									<input type="checkbox" name="privacy_terms_agree" id="privacyTermsNo1" data-id="1" class=" required " checked readonly>
+									<label for="privacyTermsNo1">
+										<span class="in">
+											<span class=" esse ">(필수) </span>개인정보 수집 및 이용
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#privacy_terms_agree_layer">보기</a>
+							</li>
+							<li>
+								<p>
+									<input type="checkbox" name="privacy_third_parties_terms_agree" id="privacyTermsNo2" data-id="2" class=" required " checked readonly>
+									<label for="privacyTermsNo2">
+										<span class="in">
+											<span class=" esse ">(필수) </span>개인정보 제3자 제공동의
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#privacy_third_parties_terms_agree_layer">보기</a>
+							</li>
+							<li>
+								<p>
+									<input type="checkbox" name="privacy_customized_service_terms_agree" id="privacyTermsNo3" data-id="3" class=" required " checked readonly>
+									<label for="privacyTermsNo3">
+										<span class="in">
+											<span class=" sel ">(선택) </span>맞춤 서비스 제공을 위한 개인정보 수집 및 이용
+										</span>
+									</label>
+								</p>
+								<a href="javascript:;" class="btn_vw openLayer" data-hash="#privacy_customized_service_terms_agree_layer">보기</a>
+							</li>
+						</ul>
+
 						<ul class="terms_chk" id="sso_terms">
+						<!--// 20220211 SSO ISMS 수정 -->
 							<li class="first">
 								<p><input type="checkbox" id="sso_all" class="all_check"><label for="sso_all">유한킴벌리 SSO회원 약관 전체 동의</label></p>
 							</li>
@@ -69,33 +111,24 @@
 									<input type="checkbox" name="sso_terms_agree" id="termsNo1" data-id="1" class=" required " checked readonly>
 									<label for="termsNo1">
 										<span class="in">
-											<span class=" esse ">
-					
-												(필수)
-					
-											</span>
-											유한킴벌리 SSO회원 이용약관
+											<span class=" esse ">(필수) </span>유한킴벌리 SSO회원 이용약관
 										</span>
 									</label>
 								</p>
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#sso_terms_agree_layer">보기</a>
 							</li>
-							<li>
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
 								<p>
 									<input type="checkbox" name="sso_privacy_agree" id="termsNo2" data-id="2" class=" required " checked readonly>
 									<label for="termsNo2">
 										<span class="in">
-											<span class=" esse ">
-					
-												(필수)
-					
-											</span>
-											유한킴벌리 SSO회원 개인정보 수집 및 이용
-										</span> <!-- 20210927 '필수항목' 문구 삭제 -->
+											<span class=" esse ">(필수) </span>유한킴벌리 SSO회원 개인정보 수집 및 이용
+										</span>
 									</label>
 								</p>
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#sso_privacy_agree_layer">보기</a>
-							</li>
+							</li> -->
 						</ul>
 					
 						<!-- 20211018 SSO 오늘 플러스 -->
@@ -108,13 +141,10 @@
 									<input type="checkbox" name="ykplus_terms_agree" id="termsNo3" data-id="3" checked readonly>
 									<label for="termsNo3">
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											오늘 플러스 이용약관
+											<span class=" esse ">(필수) </span>오늘 플러스 이용약관
 										</span>
 									</label>
-								</p>					
+								</p>
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykplus_terms_agree_layer">보기</a>
 							</li>
 							<li>
@@ -122,10 +152,7 @@
 									<input type="checkbox" name="ykplus_facility_agree" id="termsNo4" data-id="4" checked readonly>
 									<label for="termsNo4">
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											오늘 플러스 시설회원 약관
+											<span class=" esse ">(필수) </span>오늘 플러스 시설회원 약관
 										</span>
 									</label>
 								</p>					
@@ -136,10 +163,7 @@
 									<input type="checkbox" name="ykplus_privacy_agree" id="termsNo5" data-id="5" checked readonly>
 									<label for="termsNo5">
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											오늘 플러스 개인정보 수집 및 이용
+											<span class=" esse ">(필수) </span>오늘 플러스 개인정보 수집 및 이용
 										</span>
 									</label>
 								</p>					
@@ -150,10 +174,7 @@
 									<input type="checkbox" name="ykplus_ad_receive_agree" id="termsNo6" data-id="6" checked>
 									<label for="termsNo6">
 										<span class="in">
-											<span class=" sel ">					
-												(선택)					
-											</span>
-											광고성 정보 수신 전체 동의
+											<span class=" sel ">(선택) </span>광고성 정보 수신 전체 동의
 										</span>
 									</label>
 								</p>
@@ -182,41 +203,27 @@
 							<li class="first">
 								<p><input type="checkbox" id="ykbrand_all" class="all_check"><label for="ykbrand_all">통합브랜드 약관 전체 동의</label></p>
 							</li>
-					
 							<li>
 								<p>
 									<input type="checkbox" name="ykbrand_terms_agree" id="termsNo11" data-id="11" checked readonly>
 									<label for="termsNo11">
 										<span class="in">
-											<span class=" esse ">
-					
-												(필수)
-					
-											</span>
-											통합브랜드 이용약관
+											<span class=" esse ">(필수) </span>통합브랜드 이용약관
 										</span>
 									</label>
-								</p>
-					
-								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_terms_agree_layer">보기</a>
+								</p><a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_terms_agree_layer">보기</a>
 							</li>
-							<li>
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
 								<p>
 									<input type="checkbox" name="ykbrand_privacy_agree" id="termsNo12" data-id="12" checked readonly>
 									<label for="termsNo12">
 										<span class="in">
-											<span class=" esse ">
-					
-												(필수)
-					
-											</span>
-											통합브랜드 개인정보 수집 및 이용
-										</span> <!-- 20210927 '필수항목' 문구 삭제 -->
+											<span class=" esse ">(필수) </span>통합브랜드 개인정보 수집 및 이용
+										</span>
 									</label>
-								</p>
-					
-								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_privacy_agree_layer">보기</a>
-							</li>
+								</p><a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_privacy_agree_layer">보기</a>
+							</li> -->
 
 							<!-- 20210927 마케팅 목적 이용 약관 전체 삭제 -->
 							<!-- <li>
@@ -224,17 +231,10 @@
 									<input type="checkbox" name="ykbrand_marketing_agree" id="termsNo14" data-id="14">
 									<label for="termsNo14">
 										<span class="in">
-											<span class=" sel ">
-					
-												(선택)
-					
-											</span>
-											통합브랜드 마케팅 목적 이용
+											<span class=" sel ">(선택) </span>통합브랜드 마케팅 목적 이용
 										</span>
 									</label>
-								</p>
-					
-								<a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_marketing_agree_layer">보기</a>
+								</p><a href="javascript:;" class="btn_vw openLayer" data-hash="#ykbrand_marketing_agree_layer">보기</a>
 							</li> -->
 							<!--// 20210927 마케팅 목적 이용 약관 전체 삭제 -->
 							
@@ -243,20 +243,12 @@
 									<input type="checkbox" name="ykbrand_ad_receive_agree" id="termsNo16" data-id="16" checked>
 									<label for="termsNo16">
 										<span class="in">
-											<span class=" sel ">
-					
-												(선택)
-					
-											</span>
-											<!-- 20211018 SSO 오늘 플러스 -->
-											광고성 정보 수신 전체 동의
-											<!--// 20211018 SSO 오늘 플러스 -->
+											<span class=" sel ">(선택) </span>광고성 정보 수신 전체 동의 <!--// 20211018 SSO 오늘 플러스 -->
 										</span>
 									</label>
 								</p>
 								<div class="select_chk YKBRAND">
 									<span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
-					
 									<p class="rchk">
 										<input type="checkbox" name="ykbrand_adinfo_receive_SMS" id="rchk_SMS_YKBRAND" checked>
 										<label for="rchk_SMS_YKBRAND">
@@ -264,7 +256,6 @@
 											수신
 										</label>
 									</p>
-					
 									<p class="rchk">
 										<input type="checkbox" name="ykbrand_adinfo_receive_EMAIL" id="rchk_EMAIL_YKBRAND" checked>
 										<label for="rchk_EMAIL_YKBRAND">
@@ -280,7 +271,6 @@
 							<li class="first">
 								<p><input type="checkbox" id="momq_all" class="all_check"><label for="momq_all">맘큐 약관 전체 동의</label></p>
 							</li>
-					
 							<li>
 								<p>
 									<!-- 20211018 : id값 수정 -->
@@ -288,31 +278,23 @@
 									<label for="termsNo13">
 										<!--// 20211018 : id값 수정 -->
 										<span class="in">
-											<span class=" esse ">(필수)</span>
-											맘큐 이용약관
+											<span class=" esse ">(필수) </span>맘큐 이용약관
 										</span>
 									</label>
-								</p>
-					
-								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_terms_agree_layer">보기</a>
+								</p><a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_terms_agree_layer">보기</a>
 							</li>
-					
-							<li>
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
 								<p>
-									<!-- 20211018 : id값 수정 -->
 									<input type="checkbox" name="momq_privacy_agree" id="termsNo14" data-id="14" checked readonly>
 									<label for="termsNo14">
-										<!--// 20211018 : id값 수정 -->
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											맘큐 개인정보 수집 및 이용
-										</span> <!-- 20210927 '필수항목' 문구 삭제 -->
+											<span class=" esse ">(필수)	</span>맘큐 개인정보 수집 및 이용
+										</span> 
 									</label>
 								</p>
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_privacy_agree_layer">보기</a>
-							</li>
+							</li> -->
 					
 							<!-- 20210927 약관 삭제 -->
 							<!-- <li>
@@ -320,8 +302,7 @@
 									<input type="checkbox" name="monit_privacy_consent_offer_agree" id="termsNo6" data-id="6">
 									<label for="termsNo6">
 										<span class="in">
-											<span class=" esse ">(필수)</span>
-											개인정보 제3자 제공동의
+											<span class=" esse ">(필수) </span>개인정보 제3자 제공동의
 										</span>
 									</label>
 								</p>
@@ -335,16 +316,10 @@
 									<input type="checkbox" name="momq_marketing_agree" id="termsNo8" data-id="8">
 									<label for="termsNo8">
 										<span class="in">
-											<span class=" sel ">
-					
-												(선택)
-					
-											</span>
-											맘큐 마케팅 목적 이용
+											<span class=" sel ">(선택) </span>맘큐 마케팅 목적 이용
 										</span>
 									</label>
-								</p>
-					
+								</p>					
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_marketing_agree_layer">보기</a>
 							</li> -->
 							<!--// 20210927 마케팅 목적 이용 약관 전체 삭제 -->
@@ -354,66 +329,52 @@
 									<input type="checkbox" name="momq_ad_receive_agree" id="termsNo10" data-id="10">
 									<label for="termsNo10">
 										<span class="in">
-											<span class="sel">(선택)</span>
-											<!-- 20211018 SSO 오늘 플러스 -->
-											광고성 정보 수신 전체 동의
-											<!--// 20211018 SSO 오늘 플러스 -->
+											<span class="sel">(선택) </span>광고성 정보 수신 전체 동의 <!--// 20211018 SSO 오늘 플러스 -->
 										</span>
 									</label>
 								</p>
 								<div class="select_chk MOMQ">
-									<span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
-					
+									<span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->					
 									<p class="rchk">
 										<input type="checkbox" name="momq_adinfo_receive_SMS" id="rchk_SMS_MOMQ">
 										<label for="rchk_SMS_MOMQ">SMS 수신</label>
-									</p>
-					
+									</p>					
 									<p class="rchk">
 										<input type="checkbox" name="momq_adinfo_receive_EMAIL" id="rchk_EMAIL_MOMQ">
 										<label for="rchk_EMAIL_MOMQ">이메일 수신</label>
 									</p>
 								</div>
-							</li>
-					
+							</li>					
 						</ul>
 					
 						<ul class="terms_chk" id="mygf_terms">
 							<li class="first">
 								<p><input type="checkbox" id="mygf_all" class="all_check"><label for="mygf_all">달다방 약관 전체 동의</label></p>
-							</li>
-					
+							</li>					
 							<li>
 								<p>
 									<input type="checkbox" name="mygf_terms_agree" id="termsNo18" data-id="18" checked readonly>
 									<label for="termsNo18">
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											달다방 이용약관
+											<span class=" esse ">(필수)	</span>달다방 이용약관
 										</span>
 									</label>
-								</p>
-					
+								</p>					
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#mygf_terms_agree_layer">보기</a>
 							</li>
-
 							<!-- 20210927 달다방 개인정보 수집 및 이용 추가 -->
-							<li>
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
 								<p>
 									<input type="checkbox" name="mygf_privacy_agree" id="termsNo19" data-id="2" class=" required " checked readonly>
 									<label for="termsNo19">
 										<span class="in">
-											<span class=" esse ">					
-												(필수)					
-											</span>
-											달다방 개인정보 수집 및 이용
+											<span class=" esse "> (필수)</span>달다방 개인정보 수집 및 이용
 										</span>
 									</label>
 								</p>
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#mygf_privacy_agree_layer">보기</a>
-							</li>
+							</li> -->
 							<!--// 20210927 달다방 개인정보 수집 및 이용 추가 -->
 							
 							<!-- 20210927 마케팅 목적 이용 약관 전체 삭제 -->
@@ -422,12 +383,10 @@
 									<input type="checkbox" name="mygf_marketing_agree" id="termsNo19" data-id="19" checked>
 									<label for="termsNo19">
 										<span class="in">
-											<span class="sel">(선택)</span>
-											달다방 마케팅 목적 이용
+											<span class="sel">(선택) </span>달다방 마케팅 목적 이용
 										</span>
 									</label>
-								</p>
-					
+								</p>					
 								<a href="javascript:;" class="btn_vw openLayer" data-hash="#mygf_marketing_agree_layer">보기</a>
 							</li> -->
 							<!--// 20210927 마케팅 목적 이용 약관 전체 삭제 -->
@@ -437,10 +396,7 @@
 									<input type="checkbox" name="mygf_ad_receive_agree" id="termsNo20" data-id="20">
 									<label for="termsNo20">
 										<span class="in">
-											<span class="sel">(선택)</span>
-											<!-- 20211018 SSO 오늘 플러스 -->
-											광고성 정보 수신 전체 동의
-											<!--// 20211018 SSO 오늘 플러스 -->
+											<span class="sel">(선택) </span>광고성 정보 수신 전체 동의 <!--// 20211018 SSO 오늘 플러스 -->
 										</span>
 									</label>
 								</p>
@@ -449,8 +405,7 @@
 									<p class="rchk">
 										<input type="checkbox" name="mygf_adinfo_receive_SMS" id="rchk_SMS_MYGF">
 										<label for="rchk_SMS_MYGF">SMS 수신</label>
-									</p>
-					
+									</p>					
 									<p class="rchk">
 										<input type="checkbox" name="mygf_adinfo_receive_EMAIL" id="rchk_EMAIL_MYGF">
 										<label for="rchk_EMAIL_MYGF">이메일 수신</label>
@@ -459,11 +414,9 @@
 							</li>
 						</ul>
 					</div>
-
 					<div class="btnwrap btn_foo">
 						<a href="#" class="btnDefault btnfull">확인</a>
 					</div>
-
 				</div>
 
 			</div>
@@ -522,6 +475,135 @@
 	<!--// 추천인 ID 검색 레이어  -->
 
 	<!-- 20210927 회원 가입시 필요한 레이어 추가 -->
+ <!-- 20220211 SSO ISMS 수정 -->
+	<!-- 약관 레이어: 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll termsarea">
+					<table class="termstable">
+						<caption>개인정보 수집 및 이용</caption>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:40%">
+							<col style="width:30%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">수집·이용목적</th>
+								<th scope="col">수집·이용항목</th>
+								<th scope="col">보유 및 이용기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>회원관리 및 본인확인, 민원처리</td>
+								<td>아이디*, 비밀번호*, 이름, 생년월일, 성별, 휴대폰번호, 이메일, 본인인증정보: 이용자 확인 값(CI), 중복가입확인정보(DI)</td>
+								<td rowspan="2" style="font-weight:bold;">
+									회원 탈퇴 혹은 이용 동의 철회 시까지 (관계 법령의 규정에 의해 보존의 필요가 있는 경우는 해당 기간까지)<br>단, 재가입으로 인한 부정 이용 및 피해 방지를 위해 회원탈퇴 후 90일간 본인인증정보(CI/DI)를 보관
+								</td>
+							</tr>
+							<tr>
+								<td>부정이용 방지, 통계 및 분석</td>
+								<td>자동수집정보: 서비스 이용기록, 접속로그, 쿠키, 접속IP정보, 단말기 정보(고유식별번호, OS종류 및 버전)</td>
+							</tr>
+							<tr>
+								<td>서비스 관련 이벤트 및 행사정보 안내 (별도 광고성 정보 수신 동의 회원에 한함)</td>
+								<td>휴대폰번호, 이메일</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table><br>
+					<p>* 카카오 회원으로 이용 시에는 아이디, 비밀번호, 중복가입확인정보(DI)를 수집하거나 이용하지 않습니다.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 개인정보 수집 및 이용  -->
+
+	<!-- 약관 레이어: 개인정보 제3자 제공동의  -->
+	<div class="layerbody" id="privacy_third_parties_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_third_parties_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 제3자 제공동의</p>
+			</div>
+			<div class="layconts">
+				<p>아래 개인정보 제3자 제공은 모닛 서비스 이용 시에만 제공되며, 본 동의는 맘큐 회원아이디로 모닛서비스를 이용하기 위해 필요한 동의로서, 동의하지 않으실 경우 맘큐 회원아이디로 모닛서비스를 이용하실 수 없습니다.</p>
+				<div class="inscroll termsarea">
+					<table class="termstable">
+						<caption>개인정보 제3자 제공동의</caption>
+						<colgroup>
+							<col style="width:15%">
+							<col style="width:30%">
+							<col style="width:35%">
+							<col style="width:20%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">제공받는 자</th>
+								<th scope="col">수집·이용목적</th>
+								<th scope="col">수집·이용항목</th>
+								<th scope="col">보유 및 이용기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="font-weight:bold;">주식회사 모닛</td>
+								<td style="font-weight:bold">계정연동 및 모닛 서비스 이용을 위한 이용자식별, 서비스 이용 지원</td>
+								<td>아이디, 핸드폰번호, 이름, 성별, 생일, 간편회원여부</td>
+								<td style="font-weight:bold">모닛 서비스 이용기간</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 개인정보 제3자 제공동의  -->
+
+	<!-- 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_customized_service_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_customized_service_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맞춤 서비스 제공을 위한 개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll termsarea">
+					<table class="termstable">
+						<caption>맞춤 서비스 제공을 위한 개인정보 수집 및 이용</caption>
+						<colgroup>
+							<col style="width:40%">
+							<col style="width:25%">
+							<col style="width:35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">수집·이용목적</th>
+								<th scope="col">수집·이용항목</th>
+								<th scope="col">보유 및 이용기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>본인 확인 및 이용자 식별, 맟춤형 컨텐츠 및 서비스 제공</td>
+								<td>생년월일, 성별</td>
+								<td>회원탈퇴 혹은 이용동의 철회 시까지</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+ <!--// 20220211 SSO ISMS 수정 -->
+
 	<!-- 약관 레이어  -->
 	<div class="layerbody" id="sso_terms_agree_layer">
 		<div class="layerwrap termslay">
@@ -1192,7 +1274,8 @@
 	</div>
 	<!--// 약관 레이어 : 20211018 오늘 플러스 이용약관  -->
 	<!-- 약관 레이어 : 20211018 오늘 플러스 개인정보 수집 및 이용  -->
-	<div class="layerbody" id="ykplus_privacy_agree_layer">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="ykplus_privacy_agree_layer">
 		<div class="layerwrap termslay">
 			<a class="btn_close ykplus_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -1232,7 +1315,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어 : 20211018 오늘 플러스 개인정보 수집 및 이용  -->
 
 	<!-- 약관 레이어  -->
@@ -1432,7 +1515,8 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어  -->
-	<div class="layerbody" id="ykbrand_privacy_agree_layer">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="ykbrand_privacy_agree_layer">
 		<div class="layerwrap termslay">
 			<a class="btn_close ykbrand_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -1472,7 +1556,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 
 	<!-- 약관 레이어  -->
@@ -1956,7 +2040,8 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어  -->
-	<div class="layerbody" id="momq_privacy_agree_layer">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="momq_privacy_agree_layer">
 		<div class="layerwrap termslay">
 			<a class="btn_close momq_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -1996,7 +2081,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 
 	<!-- 약관 레이어  -->
@@ -2227,7 +2312,8 @@
 	</div>
 	<!--// 약관 레이어  -->
 	<!-- 약관 레이어  -->
-	<div class="layerbody" id="mygf_privacy_agree_layer">
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="mygf_privacy_agree_layer">
 		<div class="layerwrap termslay">
 			<a class="btn_close mygf_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
@@ -2266,7 +2352,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 약관 레이어  -->
 	<!--// 20210927 회원 가입시 필요한 레이어 추가 -->
 

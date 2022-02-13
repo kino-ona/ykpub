@@ -1158,4 +1158,6 @@ p, span, li{word-break: keep-all;}
 .ykpluslogo {
 	height: 16px;
 }
+.masking 	[class*='ic_'] {width:100%;height:100%;}
+.terms_target div > span {word-break: break-all;}
 /* 20220211 e */

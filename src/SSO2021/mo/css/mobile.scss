@@ -1518,3 +1518,36 @@ input[type="checkbox"]:checked + label:before {
 	}
 }
 // 20210127 e
+
+/* 20220223 s */
+form[name='frm_recommend'] {
+	margin-top: 10px;
+	.com_guide {
+		border-top: 1px solid #009fe3;
+		padding-top: 40px;
+		text-align: center;
+		margin-bottom: 40px;
+		.ico-img {
+			margin-bottom: 25px;
+		}
+		.desc {
+			strong {
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.dot_list {
+		li {
+			text-align: left;
+		}
+	}
+}
+.sso_head .row {
+	.child-logo-tdplus {
+		width: 72px;
+		background-size: 100%;
+		top: 20px;
+	}
+}
+/* 20220223 e */

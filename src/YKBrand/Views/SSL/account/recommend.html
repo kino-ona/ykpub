@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="title" content="유한킴벌리" />
+  <meta name="keywords" content="유한킴벌리">
+  <meta name="description" content="유한킴벌리" />
+  <link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_pc.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../../../../SSO2021/pc/css/pc.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css" type="text/css" media="all">
+  <link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
+  <script>
+    window.dataLayer = [{
+      "site_code": "MOMQ",
+      "dimension4": "PC_momQ"
+    }];
+  </script>
+  <!-- Google Tag Manager -->
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager -->
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery-ui-1.11.4.min.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery.popupoverlay.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/common.js"></script>
+</head>
+<body>
+  <div class="sso_wrap">
+    <header class="sso_head">
+      <div class="row">
+        <h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+        <!-- 20220223 로고 -->
+        <a class="childlogo child-logo-tdplus" href="#"><span class="a11y_sr-only">오늘플러스</span></a>
+        <!-- // 20220223 로고 -->
+      </div>
+    </header>
+    <div id="container" class="contents">
+      <style>
+        .com_guide {
+          text-align: center;
+          margin-top: 20px;
+          border-top: 1px solid #009fe3;
+        }
+
+        .sso_wrap h2.h2_ti {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        .dot_list {
+          text-align: left;
+        }
+
+        .ico-img {
+          margin-top: 50px;
+        }
+
+        .sso_wrap .dot_list {
+          font-size: 13px;
+        }
+
+        .sso_wrap .dot_list li:before {
+          background-color: #00aeef;
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+        }
+
+        .sso_wrap .dot_list li {
+          padding-left: 12px;
+          padding-bottom: 10px;
+        }
+
+        .sso_wrap .join_wrap .desc {
+          font-size: 16px;
+        }
+      </style>
+      <div class="row">
+        <div class="join_wrap">
+          <h1><span>유한킴벌리 통합회원</span>가입을 환영합니다.</h1>
+          <form name="frm_recommend" action="#" method="post">
+            <input type="hidden" name="_token" value=""> <input type="hidden" name="recommender_type" value="user">
+            <input type="hidden" name="recommender_code" value="">
+            <div class="com_guide">
+              <p class="ico-img">
+                <img src="https://www.yksso.co.kr/images/pc/ico_rcjoin.gif" alt="">
+              </p>
+              <h2 class="h2_ti">박선민 님이</h2>
+              <p class="desc">오늘플러스 가입을 추천합니다.</p><!-- 20220223 텍스트 수정 //-->
+              <p class="desc">지금 회원가입하시면 추천인 ID입력 포인트(5,000원)을 드립니다.</p><!-- 20220223 텍스트 수정 //-->
+              <ul class="dot_list">
+                <li>추천인 ID 입력 포인트는 회원가입 시 자동 지급됩니다.</li>
+                <!-- 20220223 //
+                  <li>통합회원 가입 축하 포인트는 가입 후 ‘맘큐 쿠폰 혜택’에서 다운로드 받아주세요.</li> -->
+              </ul>
+            </div>
+          </form>
+
+          <div class="btnwrap">
+            <a href="#" class="btn btn_nrmal js-btn-join">유한킴벌리 통합회원가입</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          $('.js-btn-join').on('click', function (e) {
+            e.preventDefault();
+            $('form[name="frm_recommend"]').submit();
+          });
+        });
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

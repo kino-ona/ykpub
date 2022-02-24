@@ -13,6 +13,18 @@ img,video {max-width:100%;}
 ul,ol,dl {list-style:none;}
 select {height:20px;font-size:12px;line-height:20px;}
 textarea {font-size:12px;line-height:14px;border:1px solid #c0c0c0;}
+::-webkit-input-placeholder{
+  font-size:12px;
+  color:#999;
+}
+::-moz-placeholder{
+  font-size:12px;
+  color:#999;
+}
+::-ms-placeholder {
+  font-size:12px;
+  color:#999;
+}
 
 /* ==========================================================================
 HTML5 display 정의
@@ -112,15 +124,16 @@ td, th {
 }
 
 html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
+.refund label {cursor: pointer;}
 .refund select {border:0;border-bottom:1px solid #ddd;outline: none;background-color: #fff;}
 .refund i {font-style: normal;}
 .refund {width:100%;max-width:768px;margin:0 auto;background-color:#fff;color:#222222;font-family:'Noto Sans KR', 'Nanum Gothic', 'Nanum Barun Gothic', 'Malgun Gothic', 'Arial','AppleGothic','sans-serif';}
-.refund .head {width:100%;border-bottom:2px solid #005cbc;background-color: #f3f3f3;}
+.refund .head {width:100%;border-bottom:2px solid #2b4e34;background-color: #f3f3f3;}
 .refund .head .logo {max-width:800px;padding:16px 0;margin:0 auto;}
 .refund .head .logo img {max-height:40px;}
 .refund .information_wrap {width:100%;max-width:calc(100% - 70px);margin:0 auto;padding:40px 0;word-break: keep-all;}
 .refund .refund_header {width:100%;padding:0 0;margin-bottom:30px;text-align: left;font-size:18px;font-weight: 400;}
-.refund .refund_header p {padding-top:10px;font-weight:400;line-height: 1.4;font-size:35px;font-weight:700;color:#005cbc;}
+.refund .refund_header p {padding-top:10px;font-weight:400;line-height: 1.4;font-size:35px;font-weight:700;color:#2b4e34;}
 .refund .refund_header span {display:block;font-weight: 700;font-size:20px;}
 .refund .refund_header h2 {font-size:30px;line-height: 1.4;}
 .refund .refund_header h2 span {max-width:60%;font-size:20px;font-weight:normal;margin-top:10px;}
@@ -137,16 +150,16 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .refund .refund_tbl table th span {display: inline-block;min-width:100px;padding:6px 10px 5px;border-radius:20px;background-color: #eeeeee;color:#222222;text-align: center;}
 .refund .refund_tbl .col1 {width:25%;}
 .refund .refund_tbl .col2 {width:75%;}
-.refund .refund_tbl .col2 strong {padding-bottom:5px;color:#005cbc;}
+.refund .refund_tbl .col2 strong {padding-bottom:5px;color:#2b4e34;}
 .refund .refund_tbl .inline {position:relative;width:100%;margin:10px 0;padding-bottom:5px;border-bottom:1px solid #ddd;}
 .refund .refund_tbl .inline:first-child {margin-top:0;}
-.refund .refund_tbl .inline .ncnt {position: absolute;left:10px;top:9px;color:#005cbc;}
+.refund .refund_tbl .inline .ncnt {position: absolute;left:10px;top:9px;color:#2b4e34;}
 .refund .refund_tbl select {min-width:25%;height:40px;margin-right:20px;font-size:15px;font-family:'Noto Sans KR', 'Nanum Gothic', 'Nanum Barun Gothic', 'Malgun Gothic', 'Arial','AppleGothic','sans-serif';}
-.refund .refund_tbl .ft_blue {font-weight: 700;font-size:16px;color:#005cbc;vertical-align: baseline;}
+.refund .refund_tbl .ft_blue {font-weight: 700;font-size:16px;color:#2b4e34;vertical-align: baseline;}
 .refund .refund_tbl .td_bank {padding-bottom:20px !important;overflow:hidden;}
-.refund .refund_tbl .td_bank input{width:23% !important;padding-right:10px;}
-.refund .refund_tbl .td_bank select {margin-right:10px;}
-.refund .refund_tbl td._total{padding:0 !important;color:#005cbc;font-weight: 700;vertical-align: middle;}
+.refund .refund_tbl .td_bank input{width:50% !important;padding-right:10px;}
+.refund .refund_tbl .td_bank select {min-width: 110px;margin-right:10px;}
+.refund .refund_tbl td._total{padding:0 !important;color:#2b4e34;font-weight: 700;vertical-align: middle;}
 .refund .refund_tbl._type {border-bottom:0;}
 // .refund .refund_tbl._type th {padding-top:25px;}
 .refund .refund_tbl._type td {padding:15px 0 0;border-bottom:1px solid #ddd;}
@@ -154,15 +167,16 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .refund .refund_tbl._normal th {background-color: #f3f3f3;}
 .refund .refund_tbl._normal th, .refund .refund_tbl._normal td {padding:20px 15px 15px;border-bottom:1px solid #ddd;vertical-align: middle;}
 .refund .refund_tbl._normal .inline {border-bottom:0;}
-.refund .ertxt {display: block;font-size:12px;padding-top:0px;padding-bottom:15px;color:#005cbc;}
+.refund .ertxt {display: block;font-size:12px;padding-top:0px;padding-bottom:15px;color:#2b4e34;}
 .refund .refund_tbl .code[type=text] {width:53.0%;padding-left:60px;}
 .refund .btnArea {text-align: center;}
 .refund .btnArea .btn {width:45%;min-height: 60px;line-height:62px;font-weight: 600;font-size: 16px;color: #fff; }
 .refund .btn {display: inline-block;text-align: center;vertical-align: middle;}
-.refund .inline .sbtn {position:absolute;right:0;top:0;width:100px;padding:10px 10px; color: #222;font-size:13px;border:1px solid #ddd;background-color: #fff;}
+.refund .inline .sbtn {position:absolute;right:0;top:0;width:100px;padding:9px 10px 10px; color: #222;font-size:13px;border:1px solid #ddd;background-color: #fff;}
 .refund .inline._product {margin-top:13px !important;border-bottom:0;}
 .refund .inline._product p {color:#888888;}
-.refund .inline._product label {display: block;margin-bottom:10px;font-weight: 700;background-color:#eee;padding:10px 5px;border-top:1px solid #b1b1b1;}
+.refund .inline._product label {display: block;margin-bottom:10px;font-weight: 700;background-color:#eee;padding:10px 5px;padding-left: 35px;border-top:1px solid #b1b1b1;}
+.refund .inline._product label input[type=checkbox]{position:absolute;left: 10px;top: 15px;}
 .refund .inline._product select {border-bottom:1px solid #ddd;}
 .refund .inline._product .tsum {
   position:absolute;
@@ -170,11 +184,11 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   bottom:13px;
 }
 .refund .inline select {border-bottom:0;}
-.refund .btn01 {background-color:#005cbc;}
+.refund .btn01 {background-color:#2b4e34;}
 .refund .btn02 { background-color: #666666;}
 .refund .refund_notice {margin:40px 0;padding:20px;background-color:#f2f2f2;border:1px solid #ddd;}
 .refund .refund_notice p {position:relative; display:block;padding-left:10px;margin-bottom:10px;font-size:14px;line-height: 1.6;}
-.refund .refund_notice p > span {color:#005cbc;}
+.refund .refund_notice p > span {color:#2b4e34;}
 .refund .refund_notice p:before {content: '- ';position:absolute;left:0;top:0;display: block;font-size: 14px;}
 .refund_agree {padding-bottom:15px;margin-bottom:15px;font-size:14px;border-bottom:1px solid #ddd;}
 .refund_agree > p {position:relative;padding-bottom:10px;padding-right:40px;line-height: 1.4;cursor: pointer;}
@@ -189,11 +203,22 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .information_content {
   padding-bottom:30px;
   p {
+    margin-bottom:10px;
     font-weight:400;
     font-size:15px;
     line-height:1.6;
     color:#666666
   }
+  .spantxt {
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#000;
+  }
+}
+.strongtxt {
+  display:block;
+  padding-bottom:10px;
 }
 .h3_tle {
   display: block;
@@ -206,7 +231,7 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   border-top:1px solid #000;
 }
 .refund .pointx {padding-bottom:15px;font-size:16px;font-weight:400;line-height:1.5;}
-.refund .pointx strong {text-decoration: underline;font-weight: 700;color:#005cbc;}
+.refund .pointx strong {text-decoration: underline;font-weight: 700;color:#2b4e34;}
 .refund .refund_tbl table .line th,
 .refund .refund_tbl table .line td {border-top:1px solid #222 !important;}
 .refund p.dot {
@@ -225,7 +250,8 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .i-tooltip {
   margin-left:5px;
   margin-top: 3px;
-  width: 16px;height: 16px;display: inline-block;
+  width: 16px;height: 16px;
+  display: inline-block;
   background: {
     image: url(./images/i-tooltip.png);
     size: 16px;
@@ -240,13 +266,8 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   }
   .i-tooltip {
     position: absolute;
-    left: 165px;
+    right: 25px;
     top: 11px;
-  }
-  &:last-of-type {
-    .i-tooltip {
-      left: 195px;
-    }
   }
 }
 .refund_tbl table th em {
@@ -261,7 +282,7 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 
 .layerbody {
   .layerwrap {
-    // border-top: 5px solid #005cbc;
+    // border-top: 5px solid #2b4e34;
     width: 360px;
     padding: 20px 0 20px;
   }
@@ -297,6 +318,22 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .layerwrap .btnwrap .btnfull { width: 100%; background-color: #009fe3; border: 0; text-align: center; font-size: 20px; color: #fff; }
 
 @media screen and (max-width: 1024px) {
+  ::-webkit-input-placeholder{
+    font-size:11px;
+    color:#999;
+    letter-spacing: -1px;
+  }
+  ::-moz-placeholder{
+    font-size:11px;
+    color:#999;
+    letter-spacing: -1px;
+  }
+  ::-ms-placeholder {
+    font-size:11px;
+    color:#999;
+    letter-spacing: -1px;
+  }
+  .mbr {display: block;}
   .refund .head .logo {padding:16px;}
   .refund .information_wrap {width:100%;max-width:calc(100% - 40px);padding:20px 0px;}
   .refund .refund_header {margin-bottom:15px;font-size:14px;}
@@ -307,11 +344,12 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   .refund .refund_tbl table th, .refund .refund_tbl table td {display: block;width:100% !important;padding:13px 0;font-size:13px;line-height:1.5;}
   .refund .btnArea .btn {display: block;width:100%;margin-bottom:5px;font-size:14px;min-height: 50px; line-height: 52px;}
   .refund .refund_tbl._type table th {padding-top:15px;padding-bottom:0;font-weight: 700;}
-  .refund .refund_tbl input[type=text], .refund .refund_tbl select {width:75%;font-size:12px;}
+  .refund .refund_tbl input[type=text], .refund .refund_tbl select {width:70%;font-size:12px;}
   .refund .refund_tbl .inline .ncnt {top:11px;font-size:11px;}
-  .refund .inline .sbtn {font-size:12px;width:85px;padding:7px 6px 7px;}
-  .refund .refund_tbl .td_bank select {width:60%;}
-  .refund .refund_tbl .td_bank input {display: block;padding-left:4px;width:100% !important;border-top:1px solid #ddd;}
+  .refund .inline .sbtn {font-size:11px;width:85px;padding:7px 6px 8px;}
+  .refund .refund_tbl .td_bank .inline {border-bottom:0;}
+  .refund .refund_tbl .td_bank select {width:100%;margin-bottom:7px;border-bottom:1px solid #ddd;}
+  .refund .refund_tbl .td_bank input {display: block;padding-left:4px;width:100% !important;border-bottom:1px solid #ddd;}
   .refund label {margin-right:0;font-size:13px !important;}
   .refund label, .refund .refund_tbl .ft_blue {font-size:14px;}
   .refund_agree table th, .refund_agree table td {padding:13px 5px;font-size:12px;}
@@ -319,6 +357,8 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   .refund .refund_notice p {font-size:12px;}
   .refund .inline._product select {width:calc(50% - 15px);}  
   .refund .inline._product select:last-of-type {margin-right:0;}
+  .refund .inline._product label {padding-right: 30px;}
+  // .refund .inline._product .i-tooltip {position:relative;display: inline-block;}
 
   .refund .inline._product .tsum {position:relative; display:block;margin-top:15px;padding-bottom:10px;border-bottom:1px solid #ddd;bottom:inherit;}
   .refund .ertxt {font-size:11px;}
@@ -328,5 +368,7 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
   .refund .refund_tbl table .line td {border-top:0 !important;}
   .refund .refund_tbl._type td {padding-bottom:10px;}
   .refund_tbl table th em {display: inline-block;margin-top:0;margin-left:10px;font-size:13px;vertical-align: baseline;}
+  .layerbody .layerwrap {width:88%;}
   .layerwrap .layhead { position: relative; padding-bottom: 10px; font-size: 16px; }
+  .layerwrap .btn_close {right: -10px;width: 30px;height: 30px;background-size: 30px;}
 }

@@ -127,9 +127,9 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
 .refund label {cursor: pointer;}
 .refund select {border:0;border-bottom:1px solid #ddd;outline: none;background-color: #fff;}
 .refund i {font-style: normal;}
-.refund {width:100%;max-width:768px;margin:0 auto;background-color:#fff;color:#222222;font-family:'Noto Sans KR', 'Nanum Gothic', 'Nanum Barun Gothic', 'Malgun Gothic', 'Arial','AppleGothic','sans-serif';}
+.refund {width:calc(100% - 120px);margin:40px auto 0;background-color:#fff;color:#222222;font-family:'Noto Sans KR', 'Nanum Gothic', 'Nanum Barun Gothic', 'Malgun Gothic', 'Arial','AppleGothic','sans-serif';}
 .refund .head {width:100%;border-bottom:2px solid #DE040A;background-color: #f3f3f3;}
-.refund .head .logo {max-width:800px;padding:16px 0;margin:0 auto;}
+.refund .head .logo {padding:16px;margin:0 auto;}
 .refund .head .logo img {max-height:40px;}
 .refund .information_wrap {width:100%;max-width:calc(100% - 70px);margin:0 auto;padding:40px 0;word-break: keep-all;}
 .refund .refund_header {width:100%;padding:0 0;margin-bottom:30px;text-align: left;font-size:18px;font-weight: 400;}
@@ -336,10 +336,13 @@ html, body {min-width:100%;background-color: #f3f3f3;font-weight: 400;}
     letter-spacing: -1px;
   }
   .mbr {display: block;}
-  .refund .head .logo {padding:16px;}
+  .refund {width: calc(100% - 30px);}
+  .refund .head {height: 60px;}
+  .refund .head .logo {padding:16px 16px 0;}
+  .refund .head .logo img {max-width: 70px;}
   .refund .information_wrap {width:100%;max-width:calc(100% - 40px);padding:20px 0px;}
   .refund .refund_header {margin-bottom:15px;font-size:14px;}
-  .refund .refund_header .ti, .refund .refund_header h2 {font-size:23px;font-weight: 700;}
+  .refund .refund_header .ti, .refund .refund_header h2 {font-size:20px;font-weight: 700;}
   .refund .refund_header h2 span {max-width:80%;font-size:14px;}
   .refund .information_wrap .information_content p {font-size: 14px;}
   .refund .refund_tbl {margin-bottom:30px;}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+  <!-- 20211013 SSO 오늘플러스 -->
+	<title>유한킴벌리</title>
+  <!--// 20211013 SSO 오늘플러스 -->
+	<link rel="stylesheet" href="../css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/reset_mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/pome.css" type="text/css" media="all">
+	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
+	<script>
+		// window.dataLayer = [{
+		//   "site_code": "",
+		//   "dimension4": ""
+		// }];
+	</script>
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.popupoverlay.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<!-- 20211022 -->
+				<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p> 
+				<!--
+				<p class="childlogo"><a href="https://momq.co.kr/"><span class="a11y_sr-only">momQ</span></a></p>
+				// 20211022 -->
+			</div>
+		</header>
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="join_wrap _kakao">  <!-- 20211021 SSO 카카오싱크 ._kakao //-->
+					<h1><span>유한킴벌리 SSO 카카오</span>회원가입을 환영합니다.</h1>
+          <p class="desc">유한킴벌리 SSO회원 계정 하나로 맘큐 및 유한킴벌리<br>브랜드의 다양한 서비스를 이용할 수 있습니다.</p>
+					
+					<!-- 20211203
+						<div class="recom">
+						<p class="tit">(선택) 추천인 ID 또는 회원번호 입력</p>
+						<p class="desc">추천인 ID/회원번호 입력하고, 포인트 5,000점 받으세요.<br>
+							<em>추천인 포인트는 입력 후 일주일 이내에 지급됩니다.</em>
+						</p>
+						<p class="inp_wrap">
+							<input type="text" name="recommender_code" value="" placeholder="추천인 ID 또는 회원번호 입력" class="openLayer" data-hash="#recommidLayer" readonly>
+						</p>
+					</div>
+
+					<div class="btnwrap">
+						<a href="#" class="btn btn_blue">아이정보 입력하고 맘큐 혜택 받기</a>
+						<a href="#" class="btn btn_next">다음</a>
+					</div>
+
+					<div class="helpwrap">
+            <ul>
+              <li>추천인이 SSO 카카오 회원인 경우 회원번호를 입력해주세요.</li>
+              <li>회원번호는 SSO 카카오 회원만 확인이 가능하며, 마이페이지 또는 회원정보수정에서 확인할 수 있습니다.</li>
+            </ul>
+          </div> -->
+
+					<!-- 20220525 SSO start -->
+					<!-- 20211203 선택 정보 입력 -->
+					<h2 class="h2_ti">선택 정보 입력</h2>
+					
+					<h3 class="h3_ti">(선택) 아이정보 입력</h3>
+					<div class="etc_frm">
+						<div class="select_chk">
+							<span class="esse">
+								<i class="tag">혜택 안내</i>
+								아이정보 입력하고 맘큐 이벤트 참여, 월령별 맞춤 혜택을 받으세요.<!-- 20220525 //-->
+							</span>
+							<p class="rchk"><input type="radio" id="child01" name="childYN"><label for="child01">아이 있음 (임산부 포함)</label></p>
+							<p class="rchk"><input type="radio" id="child02" name="childYN" checked><label for="child02">아이 없음</label></p>
+						</div>
+					</div>
+
+					<!-- 아이추가 영역 -->
+					<div class="childadd">
+						<div class="addbtnwrap">
+							<a href="#" onclick="selOpen(this);return false" class="btn_areadd"><span>아이추가</span></a>
+							<ul class="addlist">
+								<li><a href="#" onclick="childAddSel(this);return false">아이추가</a></li>
+								<li><a href="#" onclick="childAddSel(this);return false">쌍둥이 추가</a></li>
+								<li><a href="#" onclick="childAddSel(this);return false">세쌍둥이 추가</a></li>
+								<li><a href="#" onclick="childAddSel(this);return false">네쌍둥이 추가</a></li>
+							</ul>
+						</div>
+						<ul class="input_frm">
+							<li>
+								<div class="ti">출산여부</div>
+								<div class="put">
+									<div class="select_chk">
+										<p class="rchk"><input type="radio" id="labor01" name="labor"><label for="labor01">출산 전</label></p>
+										<p class="rchk"><input type="radio" id="labor02" name="labor"><label for="labor02">출산 후</label></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ti">아이 태명</div>
+								<div class="put">
+									<input type="text">
+									<select>
+										<option>성별</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="ti">아이 생일</div>
+								<div class="put sel">
+									<select>
+										<option>1991</option>
+									</select>
+									<span class="t">년</span>
+
+									<select>
+										<option>12</option>
+									</select>
+									<span class="t">월</span>
+
+									<select>
+										<option>31</option>
+									</select>
+									<span class="t">일</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="ti">출생예정일</div>
+								<div class="put sel">
+									<select>
+										<option>1991</option>
+									</select>
+									<span class="t">년</span>
+
+									<select>
+										<option>12</option>
+									</select>
+									<span class="t">월</span>
+
+									<select>
+										<option>31</option>
+									</select>
+									<span class="t">일</span>
+								</div>
+							</li>
+							<li>
+								<div class="ti">태아 주수</div>
+								<div class="put sel">
+									<select>
+										<option>10</option>
+									</select>
+									<span class="t">주</span>
+
+									<select>
+										<option>100</option>
+									</select>
+									<span class="t">일</span>
+								</div>
+							</li>
+						</ul>
+						<div class="btnwrap">
+							<a href="#" onclick="childElDel(this);return false" class="btn_del">삭제</a>
+						</div>
+					</div>
+					<!--// 아이추가 영역 -->
+
+					<!-- 아이정보 수집 동의 -->
+					<ul class="terms_chk _child">
+						<li>
+							<p><input type="checkbox" id="childck01"><label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label></p>
+							<a href="#" onclick="layerOpen('childtermslayer01');return false;" class="btn_vw">보기</a>
+						</li>
+					</ul>
+					<!--// 아이정보 수집 동의 -->
+						
+					<!-- 20211206 -->
+					<div class="etc_frm">
+						<div class="recom">
+							<h3 class="h3_ti">(선택) 추천인 입력</h3>
+							<span class="esse">추천인 ID/회원번호 입력하고, 포인트 5,000점 받으세요.</span>
+							<span class="ti">추천인 ID</span>
+							<input type="text" value="" placeholder="추천인 검색">
+							<button onclick="layerOpen('recommidLayer');return false;" class="btn btn_small">검색</button>
+						</div>
+						<span class="errtx">SSO회원이 아니거나 휴면 계정인 경우 추천인 ID로 입력 할 수 없습니다. 다시 확인 후 입력해주세요.</span>
+					</div>
+					<!-- 20211206 //-->
+
+					<!--// 20211203 선택 정보 입력 -->
+
+					<div class="btnwrap">
+						<a href="#" class="btn btn_finish">가입완료</a>
+					</div>
+					<!--// 20220525 SSO end -->
+		
+					<!-- 20220525 추천인 update Start -->
+					<div class="layerbody" id="recommidLayer">
+						<div class="layerwrap recommidlay">
+							<a class="btn_close" onclick="layerClose('recommidLayer')"><span class="a11y_sr-only">close</span></a>
+							<div class="layhead">
+								<p>추천인 ID 검색</p>
+							</div>
+							<div class="layconts">
+								<div class="inscroll">
+									<span class="noti">
+										추천인의 <b>ID를 알고 계시면 추천인 ID로 검색</b>, 추천인이 <b>카카오로 가입하신 회원이라면 회원번호로 검색</b>, <b>ID또는 회원번호를 알 수 없으면 회원정보로 검색 버튼</b>을 눌러주세요.
+										<br>(카카오로 가입 하신 경우 회원정보변경에서 회원번호를 확인하실 수 있습니다.)
+									</span>
+									<div class="select_chk">
+										<p class="rchk"><input type="radio" id="sch01" name="type" value="id" checked><label for="sch01">아이디로 검색</label></p>
+										<p class="rchk"><input type="radio" id="sch03" name="type" value="info"><label for="sch03">회원 번호로 검색</label></p>
+										<p class="rchk"><input type="radio" id="sch02" name="type" value="info"><label for="sch02">회원 정보로 검색</label></p>
+									</div>
+									<ul class="putfrm idsch">
+										<li>
+											<p class="name"><span class="esse">*</span>아이디</p>
+											<p class="put"><input type="text" name="userid" placeholder="추천인 아이디를 입력해주세요."></p>
+										</li>
+									</ul>
+									<ul class="putfrm numsch hid">
+										<li>
+											<p class="name"><span class="esse">*</span>회원번호</p>
+											<p class="put"><input type="text" name="usernum" placeholder=""></p>
+										</li>
+										<li class="noti">- 회원번호는 SSO 카카오 회원만 확인이 가능하며, 마이페이지 또는 회원정보수정에서 확인할 수 있습니다.</span></li>
+									</ul>
+									<ul class="putfrm usersch hid">
+										<li>
+											<p class="name"><span class="esse">*</span>이름</p>
+											<p class="put"><input type="text" name="name" placeholder="추천인 이름을 입력해주세요."></p>
+										</li>
+										<li>
+											<p class="name"><span class="esse">*</span>휴대폰 번호</p>
+											<p class="put"><input type="text" name="mobile" placeholder="-를 제외한 숫자만 입력해주세요."></p>
+										</li>
+										<li class="noti">- 추천인이 SSO 카카오 회원인 경우 ID가 아닌 회원번호로 안내되니 참고 부탁드립니다.</span></li>
+										<li class="noti">- 추천인이 SSO 카카오 회원인 경우 회원번호로 검색하면 더 쉽고 빠르게 찾을 수 있습니다.</span></li>
+									</ul>
+									<div class="btnwrap">
+										<a href="javascript:;" class="btn btnfull recommender_search">검색</a>
+									</div>
+									<ul class="putfrm result">
+										<li>
+											<span class="ti">아이디</span>
+											<input type="text" value="" placeholder="ykbrand">
+											<button class="btn btn_small">선택</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 20220525 추천인 update End -->
+        </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<!-- 20211021 추가 -->
+<script>
+	// 레이어팝업 열기
+	function layerOpen(set) {
+		$('#' + set).addClass('show');
+		$('body, html').addClass('noscroll');
+	}
+	// 레이어팝업 닫기
+	function layerClose(set) {
+		$('#' + set).removeClass('show');
+		$('body, html').removeClass('noscroll');
+	}
+
+	// 20211203 추천인 검색 방법
+	$(document).ready(function() {
+		if ($('.recommidlay').length > 0) {
+			$('.recommidlay').find('#sch03').click(function () {
+				if ($(this).is(":checked")) {
+					$('.recommidlay').find('.usersch').addClass('hid');
+					$('.recommidlay').find('.numsch').removeClass('hid');
+					$('.recommidlay').find('.idsch').addClass('hid');
+				}
+			});
+			$('.recommidlay').find('#sch02').click(function () {
+				if ($(this).is(":checked")) {
+					$('.recommidlay').find('.numsch').addClass('hid');
+					$('.recommidlay').find('.idsch').addClass('hid');
+					$('.recommidlay').find('.usersch').removeClass('hid');
+				}
+			});
+			$('.recommidlay').find('#sch01').click(function () {
+				if ($(this).is(":checked")) {
+					$('.recommidlay').find('.idsch').removeClass('hid');
+					$('.recommidlay').find('.usersch').addClass('hid');
+					$('.recommidlay').find('.numsch').addClass('hid');
+				}
+			});
+		}
+	});
+</script>
+<!--// 20211021 추가 -->
+</html>

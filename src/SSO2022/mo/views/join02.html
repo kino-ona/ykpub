@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="../common/images/common/favicon_default.png" type="image/x-icon">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<title>유한킴벌리</title>
+	<script type="text/javascript" src="../../Scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery.popupoverlay.js"></script>
+  <script type="text/javascript" src="https://www.yksso.co.kr/js/common.js"></script>
+
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/mobile.css?v=0.2.4" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="../common/css/sso.css" type="text/css" media="all"> <!-- 퍼블리싱:for mobile.css //-->
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<!-- 20211015 SSO 오늘플러스 -->
+				<!-- 20220525
+					<p class="ykpluslogo"><a href="#"><span class="a11y_sr-only">오늘 플러스</span></a></p> -->
+				<!--// 20211015 SSO 오늘플러스 -->
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+
+			<div class="row">
+
+				<div class="join_wrap ">
+					<h1><span>회원정보 입력 및 이용약관에</span> 동의해주세요.</h1> <!-- 20220525 //-->
+
+					<!-- 필수 정보 입력 -->
+					<div class="join_form">
+						<h2 class="h2_ti">필수 정보 입력</h2>
+						<p class="desc">(*)는 필수 입력 사항입니다.</p><!-- 20220211 SSO ISMS 수정 // -->
+						<ul class="input_frm">
+							<li>
+								<p class="ti">이름*</p><!-- 20220211 SSO ISMS 수정 // -->
+								<p class="put">
+									<input type="text" value="홍길동" readonly>
+								</p>
+							</li>
+							<li>
+								<p class="ti">아이디*</p><!-- 20220211 SSO ISMS 수정 // -->
+								<p class="put put_id">
+									<input type="text" value="" maxlength="" placeholder="4~12자, 영문 및 숫자">
+									<a href="#" class="btn btn_small btn_idchk">중복확인</a>
+								</p>
+								<span class="errtx">아이디 중복확인을 해주세요.</span>
+							</li>
+							<li>
+								<p class="ti">비밀번호*</p><!-- 20220211 SSO ISMS 수정 // -->
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" maxlength="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+								<span class="errtx">비밀번호는 8~20자의 영문/숫자/특수문자 조합으로 입력해주세요.</span>
+							</li>
+							<li>
+								<p class="ti">비밀번호 확인*</p><!-- 20220211 SSO ISMS 수정 // -->
+								<!-- 20210315 비밀번호 마스킹 수정 -->
+								<p class="put masking">
+									<input type="password" value="" maxlength="" placeholder="비밀번호를 다시 입력해주세요." >
+									<button class="btn_masking"><i class="ic_show"></i></button>
+								</p>
+								<!--// 20210315 비밀번호 마스킹 수정 -->
+								<span class="errtx">비밀번호와 비밀번호 확인이 일치하지 않습니다.</span>
+							</li>
+							<li>
+								<p class="ti">생년월일</p>
+								<p class="put col3">
+									<span>1991</span>
+									<span>년</span>
+								</p>
+								<p class="put col3">
+									<span>12</span>
+									<span>월</span>
+								</p>
+								<p class="put col3">
+									<span>31</span>
+									<span>일</span>
+								</p>
+							</li>
+							<!-- 20210810 성별 추가 -->
+							<li>
+								<p class="ti">성별</p>
+								<p class="put">
+									<input type="text" name="sex" value="남자" readonly>
+								</p>
+							</li>
+							<!--// 20210810 성별 추가 -->
+							<li>
+								<p class="ti">휴대폰 번호*</p><!-- 20220211 SSO ISMS 수정 // -->
+								<p class="put">
+									<input type="text" value="000-0000-0000" readonly>
+								</p>
+							</li>
+							<li class="email">
+								<p class="ti">이메일</p>
+								<p class="put">
+									<input type="text" value=""> @ <input type="text" value="">
+								</p>
+								<p class="put full">
+									<select class="email">
+										<option>직접입력</option>
+										<option>naver.com</option>
+									</select>
+								</p>
+								<span class="errtx">이메일 형식이 잘못되었습니다.</span>
+							</li>
+						</ul>
+						<!-- 약관 동의 -->
+						<h2 class="h2_ti">약관 동의</h2>
+						<p class="desc">이용약관 및 정보활용 안내를 읽고 동의해주세요. </p>
+						<ul class="terms_chk">
+							<li class="first">
+								<p><input type="checkbox" id="allchk"><label for="allchk">모두 동의합니다.</label></p>
+								<p class="txt">전체동의는 필수 뿐 아니라 선택항목도 포함됩니다. 선택항목 미동의 시 회원가입은 가능하나 서비스 이용에 제한이 있을 수 있습니다.</p>
+							</li>
+
+							<!-- 20220525 SSO start -->
+
+							<li>
+								<p><input type="checkbox" id="chk01"><label for="chk01"><span class="in"><span class="esse">(필수) </span> 유한킴벌리 SSO회원 이용약관</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<li>
+								<p><input type="checkbox" id="chk11" name="privacy_terms_agree"><label for="chk11"><span class="in"><span class="esse">(필수) </span> 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('privacy_terms_agree_layer');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<li>
+								<p><input type="checkbox" id="chk03" name="momq_terms_agree"><label for="chk03"><span class="in"><span class="esse">(필수) </span> 맘큐 이용약관</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer03');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<!-- 20220211 SSO ISMS 수정 //
+								<li>
+								<p><input type="checkbox" id="chk02"><label for="chk02"><span class="in"><span class="esse">(필수)</span> 유한킴벌리 SSO회원 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer02');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<!-- 20211015 SSO 오늘플러스 -->
+
+							<li>
+								<p><input type="checkbox" id="termsNo4"><label for="termsNo4"><span class="in"><span class="esse">(필수) </span> 오늘 플러스 이용약관</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer10');return false;" class="btn_vw">보기</a>
+							</li>
+
+							<li>
+								<p>
+									<input type="checkbox" name="ykbrand_terms_agree" id="termsNo11" data-id="11">
+									<label for="termsNo11">
+										<span class="in">
+											<span class="esse">(필수) </span>통합브랜드 이용약관
+										</span>
+									</label>
+								</p><a href="#" onclick="layerOpen('ykbrand_terms_agree_layer');return false;" class="btn_vw openLayer" data-hash="#ykbrand_terms_agree_layer">보기</a>
+							</li>
+
+							<li>
+								<p><input type="checkbox" name="mygf_terms_agree" id="termsNo18" data-id="18"><label for="termsNo18"><span class="in"><span class="esse">(필수) </span>달다방 이용약관</span></label></p>
+								<a href="#" onclick="layerOpen('mygf_terms_agree_layer');return false;" class="btn_vw openLayer" data-hash="#mygf_terms_agree_layer">보기</a>
+							</li>
+
+							<!--// 20220525 SSO end -->
+
+							<!-- 20220211 SSO ISMS 수정
+								<li>
+								<p><input type="checkbox" id="chk04"><label for="chk04"><span class="in"><span class="esse">(필수) </span> 오늘 플러스 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer11');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<!--// 20211015 SSO 오늘플러스 -->
+
+							<!-- 20220211 SSO ISMS 수정 -->
+							<li>
+								<p><input type="checkbox" id="chk12" name="privacy_customized_service_terms_agree"><label for="chk12"><span class="in"><span class="sel">(선택) </span> 맞춤 서비스 제공을 위한 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('privacy_customized_service_terms_agree_layer');return false;" class="btn_vw">보기</a>
+							</li>
+							<!-- // 20220211 SSO ISMS 수정 -->
+
+							<!-- 20200831 삭제 <li>
+								<p><input type="checkbox" id="chk05"><label for="chk05"><span class="in"><span class="sel">(선택)</span> 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer05');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<!-- 20200831 삭제 <li>
+								<p><input type="checkbox" id="chk06"><label for="chk06"><span class="in"><span class="sel">(선택)</span> 맘큐 선택항목 개인정보 수집 및 이용</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer06');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<!-- 20210927 마케팅 목적 이용 약관 전체 삭제 <li>
+								<p><input type="checkbox" id="chk07"><label for="chk07"><span class="in"><span class="sel">(선택)</span> 맘큐 마케팅 목적 이용</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer07');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<!-- 20200831 삭제 <li>
+								<p><input type="checkbox" id="chk08"><label for="chk08"><span class="in"><span class="sel">(선택)</span> 맘큐 개인정보 처리위탁</span></label></p>
+								<a href="#" onclick="layerOpen('termslayer08');return false;" class="btn_vw">보기</a>
+							</li> -->
+							<li>
+								<p><input type="checkbox" id="chk09">
+									<label for="chk09"><span class="in"><span class="sel">(선택) </span> <strong>광고성 정보 수신 동의</strong></label> <!-- 20200904 //-->
+								</p>
+								<!-- 20210927 삭제 <a href="#" class="btn_vw">보기</a> -->
+								<div class="select_chk MOMQ">
+									<span>이벤트/쇼핑혜택/신제품 소식을 받아보세요.</span> <!-- 20210927 '소식을 받아보세요' 문구 추가 -->
+									<p class="rchk">
+										<input type="checkbox" id="rchk01" name=""><label for="rchk01">이메일 수신</label>
+									</p>
+									<p class="rchk">
+										<input type="checkbox" id="rchk02" name=""><label for="rchk02">SMS 수신</label>
+										<!-- 20210721 툴팁 -->
+										<span class="tooltip"><em>SMS 수신동의를 하시면, <br>첫 구매 축하쿠폰(20%)과 베베쿡 첫 주문 할인쿠폰(5천원)을 드립니다.</em></span>
+										<!--// 20210721 툴팁 -->
+									</p>
+									<!-- 20210927 삭제 <p class="rchk">
+										<input type="checkbox" id="rchk03" name=""><label for="rchk03">PUSH 수신</label>
+									</p> -->
+									<!-- 20210721 안내문구 영역 수정 -->
+									<div class="helpwrap">
+										<ul>
+											<li>회원님께 드리는 이벤트/할인혜택/상품 등의 정보 수신에 동의해주세요.</li>
+											<!-- 20220525 삭제
+												<li>첫 구매 축하쿠폰은 정보 수신 동의 다음날 지급되며, 첫 주문 할인쿠폰은 베베쿡 가입 시 맘큐에서 발급한 추천 아이디를 입력하면 지급됩니다.</li> -->
+										</ul>
+									</div>
+									<!--// 20210721 안내문구 영역 수정 -->
+								</div>
+							</li>
+						</ul>
+
+						<!-- 20211203 선택 정보 입력 -->
+						<h2 class="h2_ti">선택 정보 입력</h2>
+
+						<!-- 20220525 SSO 추천인 START -->
+						<div id="recommIdSearch" class="etc_frm">
+							<p class="recom">
+								<span class="ti">추천인 ID</span>
+								<input type="text" value="" placeholder="추천인 ID를 입력해주세요.">
+								<button onclick="layerOpen('recommidLayer');return false;" class="btn btn_small">검색</button>
+							</p>
+							<span class="errtx">SSO회원이 아니거나 휴면 계정인 경우 추천인 ID로 입력 할 수 없습니다. 다시 확인 후 입력해주세요.</span><!-- 20210315 error 메시지 추가 -->
+						</div>
+						<!--// 20220525 SSO 추천인 END -->
+
+						<!-- 20200909 -->
+						<h3 class="h3_ti">아이정보 입력</h3>
+						<div class="etc_frm">
+							<div class="select_chk">
+								<span class="esse"><i class="tag">혜택 안내</i>
+									아이정보 입력하고 맘큐 이벤트 참여, 월령별 맞춤 혜택을 받으세요.<!-- 20220525 //-->
+								</span>
+								<p class="rchk"><input type="radio" id="child01" name="childYN"><label for="child01">아이 있음 (임산부 포함)</label></p>
+								<p class="rchk"><input type="radio" id="child02" name="childYN" checked><label for="child02">아이 없음</label></p>
+							</div>
+						</div>
+						<!--// 20200909 -->
+
+						<!-- 아이추가 영역 -->
+						<div class="childadd">
+							<div class="addbtnwrap">
+								<a href="#" onclick="selOpen(this);return false" class="btn_areadd"><span>아이추가</span></a>
+								<ul class="addlist">
+									<li><a href="#" onclick="childAddSel(this);return false">아이추가</a></li>
+									<li><a href="#" onclick="childAddSel(this);return false">쌍둥이 추가</a></li>
+									<li><a href="#" onclick="childAddSel(this);return false">세쌍둥이 추가</a></li>
+									<li><a href="#" onclick="childAddSel(this);return false">네쌍둥이 추가</a></li>
+								</ul>
+							</div>
+							<ul class="input_frm">
+								<li>
+									<div class="ti">출산여부</div>
+									<div class="put">
+										<div class="select_chk">
+											<p class="rchk"><input type="radio" id="labor01" name="labor"><label for="labor01">출산 전</label></p>
+											<p class="rchk"><input type="radio" id="labor02" name="labor"><label for="labor02">출산 후</label></p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ti">아이 태명</div>
+									<div class="put">
+										<input type="text">
+										<select>
+											<option>성별</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="ti">아이 생일</div>
+									<div class="put sel">
+										<select>
+											<option>1991</option>
+										</select>
+										<span class="t">년</span>
+
+										<select>
+											<option>12</option>
+										</select>
+										<span class="t">월</span>
+
+										<select>
+											<option>31</option>
+										</select>
+										<span class="t">일</span>
+									</div>
+								</li>
+
+								<li>
+									<div class="ti">출생예정일</div>
+									<div class="put sel">
+										<select>
+											<option>1991</option>
+										</select>
+										<span class="t">년</span>
+
+										<select>
+											<option>12</option>
+										</select>
+										<span class="t">월</span>
+
+										<select>
+											<option>31</option>
+										</select>
+										<span class="t">일</span>
+									</div>
+								</li>
+								<li>
+									<div class="ti">태아 주수</div>
+									<div class="put sel">
+										<select>
+											<option>10</option>
+										</select>
+										<span class="t">주</span>
+
+										<select>
+											<option>100</option>
+										</select>
+										<span class="t">일</span>
+									</div>
+								</li>
+							</ul>
+							<div class="btnwrap">
+								<a href="#" onclick="childElDel(this);return false" class="btn_del">삭제</a>
+							</div>
+						</div>
+						<!--// 아이추가 영역 -->
+
+						<!-- 20201005 아이정보 수집 동의 -->
+						<ul class="terms_chk _child">
+							<li>
+								<p><input type="checkbox" id="childck01"><label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label></p>
+								<a href="#" onclick="layerOpen('childtermslayer01');return false;" class="btn_vw">보기</a>
+							</li>
+						</ul>
+						<!--// 20201005 -->
+						<!--// 아이정보 수집 동의 -->
+
+						<!--// 20211203 선택 정보 입력 -->
+
+						<!-- 20220525 마크업 위치 변경 -->
+						<!-- 20220525 추천인 update Start -->
+						<div class="layerbody" id="recommidLayer">
+							<div class="layerwrap recommidlay">
+								<a class="btn_close" onclick="layerClose('recommidLayer')"><span class="a11y_sr-only">close</span></a>
+								<div class="layhead">
+									<p>추천인 ID 검색</p>
+								</div>
+								<div class="layconts">
+									<div class="inscroll">
+										<span class="noti">
+											추천인의 <b>ID를 알고 계시면 추천인 ID로 검색</b>, 추천인이 <b>카카오로 가입하신 회원이라면 회원번호로 검색</b>, <b>ID또는 회원번호를 알 수 없으면 회원정보로 검색 버튼</b>을 눌러주세요.
+											<br>(카카오로 가입 하신 경우 회원정보변경에서 회원번호를 확인하실 수 있습니다.)
+										</span>
+										<div class="select_chk">
+											<p class="rchk"><input type="radio" id="sch01" name="type" value="id" checked><label for="sch01">아이디로 검색</label></p>
+											<p class="rchk"><input type="radio" id="sch03" name="type" value="info"><label for="sch03">회원 번호로 검색</label></p>
+											<p class="rchk"><input type="radio" id="sch02" name="type" value="info"><label for="sch02">회원 정보로 검색</label></p>
+										</div>
+										<ul class="putfrm idsch">
+											<li>
+												<p class="name"><span class="esse">*</span>아이디</p>
+												<p class="put"><input type="text" name="userid" placeholder="추천인 아이디를 입력해주세요."></p>
+											</li>
+										</ul>
+										<ul class="putfrm numsch hid">
+											<li>
+												<p class="name"><span class="esse">*</span>회원번호</p>
+												<p class="put"><input type="text" name="usernum" placeholder=""></p>
+											</li>
+											<li class="noti">- 회원번호는 SSO 카카오 회원만 확인이 가능하며, 마이페이지 또는 회원정보수정에서 확인할 수 있습니다.</span></li>
+										</ul>
+										<ul class="putfrm usersch hid">
+											<li>
+												<p class="name"><span class="esse">*</span>이름</p>
+												<p class="put"><input type="text" name="name" placeholder="추천인 이름을 입력해주세요."></p>
+											</li>
+											<li>
+												<p class="name"><span class="esse">*</span>휴대폰 번호</p>
+												<p class="put"><input type="text" name="mobile" placeholder="-를 제외한 숫자만 입력해주세요."></p>
+											</li>
+											<li class="noti">- 추천인이 SSO 카카오 회원인 경우 ID가 아닌 회원번호로 안내되니 참고 부탁드립니다.</span></li>
+											<li class="noti">- 추천인이 SSO 카카오 회원인 경우 회원번호로 검색하면 더 쉽고 빠르게 찾을 수 있습니다.</span></li>
+										</ul>
+										<div class="btnwrap">
+											<a href="javascript:;" class="btn btnfull recommender_search">검색</a>
+										</div>
+										<ul class="putfrm result">
+											<li>
+												<span class="ti">아이디</span>
+												<input type="text" value="" placeholder="ykbrand">
+												<button class="btn btn_small">선택</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 20220525 추천인 update End -->
+						<!--// 20220525 마크업 위치 변경 -->
+
+
+					</div> <!-- join_form -->
+
+					<div class="btnwrap btn_foo">
+						<a href="#" class="btn btn_next">다음</a>
+					</div>
+
+				</div>
+			</div>
+			
+			<!-- 20200909 20220525 delete
+				<div class="banner">
+				<a href="https://www.yksso.co.kr/login?client_id=2&site_code=MOMQ&state=20200707195711.87472&return_url=https%253A%252F%252Fwww.momq.co.kr%252Fshop%252Fmember.html%253Ftype%253Dmyfamily" target="_blank"><img src="../common/images/benefit_banner.jpg" alt="아이 정보를 등록하시면 유한킴벌리 유아용품 쇼핑지원금 1,000원을 드립니다."></a>
+				<div class="helpwrap">
+					<ul>
+						<li>맘큐&gt;마이페이지&gt;<strong>아이(태아) 정보 추가/수정</strong>에서 등록 하실 수 있습니다.</li>
+						<li>쇼핑지원금은 아이정보 등록 또는 수정 시 최초 1회에 한해 즉시 지급되며, 마이페이지&gt;쿠폰/쇼핑지원금에서 확인 하실 수 있습니다.</li>
+					</ul>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+
+ <!-- 20220211 SSO ISMS 수정 -->
+	<!-- 약관 레이어: 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_terms_agree_layer_close" onclick="layerClose('privacy_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/privacy_terms_agree_layer.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 개인정보 수집 및 이용  -->
+
+	<!-- 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+	<div class="layerbody" id="privacy_customized_service_terms_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close privacy_customized_service_terms_agree_layer_close" onclick="layerClose('privacy_customized_service_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맞춤 서비스 제공을 위한 개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/privacy_customized_service_terms_agree_layer.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어: 맞춤 서비스 제공을 위한 개인정보 수집 및 이용  -->
+ <!--// 20220211 SSO ISMS 수정 -->
+
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 이용약관[필수] -->
+	<div class="layerbody" id="termslayer01">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer01')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 이용약관[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer01.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 개인정보 수집 및 이용[필수] -->
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer02">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer02')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 개인정보 수집 및 이용[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer02.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 맘큐 이용약관[필수] -->
+	<div class="layerbody" id="termslayer03">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer03')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맘큐 이용약관[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/mq_termslayer03.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 맘큐 개인정보 수집 및 이용[필수] -->
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer04">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer04')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맘큐 개인정보 수집 및 이용[필수]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/mq_termslayer04.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택] -->
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer05">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer05')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>유한킴벌리 SSO회원 선택항목 개인정보 수집 및 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer05.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 맘큐 선택항목 개인정보 수집 및 이용[선택] -->
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer06">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer06')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맘큐 선택항목 개인정보 수집 및 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/mq_termslayer06.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 20210927 마케팅 목적 이용 약관 전체 삭제 -- 맘큐 마케팅 목적 이용[선택] -->
+	<!-- <div class="layerbody" id="termslayer07">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer07')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맘큐 마케팅 목적 이용[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/mq_termslayer07.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어 : 20210927 마케팅 목적 이용 약관 전체 삭제 -->
+	<!-- 약관 레이어 : 맘큐 개인정보 처리위탁[선택] -->
+	<div class="layerbody" id="termslayer08">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer08')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>맘큐 개인정보 처리위탁[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/mq_termslayer08.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 20211015 SSO 오늘 플러스 이용약관 -->
+	<div class="layerbody" id="termslayer10">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer10')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>오늘 플러스 이용약관</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer10.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
+	<!-- 약관 레이어 : 20211015 SSO 오늘 플러스 개인정보 수집 및 이용 -->
+	<!-- 20220211 SSO ISMS 수정 //
+		<div class="layerbody" id="termslayer11">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('termslayer11')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>오늘 플러스 개인정보 수집 및 이용</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/termslayer11.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--// 약관 레이어  -->
+	
+	<!-- 20201005 약관 레이어 : 아이정보입력 수집동의[필수] -->
+	<div class="layerbody" id="childtermslayer01">
+		<div class="layerwrap termslay">
+			<a class="btn_close" onclick="layerClose('childtermslayer01')"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 수집이용 동의[선택]</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll">
+					<iframe src="./terms/childtermslayer01.html" class="inframe"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 20201005 약관 레이어  -->
+
+<!-- 20220525 약관 레이어: 통합브랜드 -->
+<div class="layerbody" id="ykbrand_terms_agree_layer">
+	<div class="layerwrap termslay">
+		<a class="btn_close ykbrand_terms_agree_layer_close" onclick="layerClose('ykbrand_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+		<div class="layhead">
+			<p>통합브랜드 이용약관</p>
+		</div>
+		<div class="layconts">
+			<div class="inscroll termsarea">
+				<p>제 1 조 (목적)<br>
+					<br>
+					본 약관은 주식회사 유한킴벌리(이하 "회사"라 합니다)가 제공하는 회사 및 제 상품 관련 소개 (예 : 화이트, 좋은느낌, 크리넥스, 스카트, 마이비데, 디펜드, 티엔, 라네이처)의
+					인터넷 서비스(이하 "서비스"라 합니다)를 이용함에 있어 회사와 회원간의 권리, 의무 및 책임사항, 관련 절차 등을 규정함을 목적으로 합니다.<br>
+					<br>
+					제 2 조 (약관의 효력 및 변경)<br>
+					<br>
+					1. 본 약관은 이 사이트를 통하여 공지함으로써 효력을 발생합니다.<br>
+					2. 회사는 본 약관의 내용을 변경할 수 있으며, 변경된 약관은 제1항과 같은 방법으로 공지 또는 통지함으로써 효력을 발생합니다.<br>
+					3. 회원은 변경된 약관에 대해 동의하지 않을 권리가 있으며, 변경된 약관에 동의하지 않을 경우 이용 계약을 해지 할 수 있습니다. 거부의사를 표시하지 않고 계속 이용할 경우는 개정
+					약관에 동의한 것으로 봅니다. 변경된 약관은 공지와 동시에 그 효력이 발생됩니다.<br>
+					<br>
+					제 3 조 (약관 이외의 준칙)<br>
+					<br>
+					본 약관에 명시되지 않은 사항에 대해서는 관련 법령에 따릅니다.<br>
+					<br>
+					제4조 (용어의 정의)<br>
+					<br>
+					본 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+					1. 회원 : 제1조에서 정한 본 사이트에 접속하여 본 약관에 따라 동의하고 개인정보를 제공하여 회원 등록을 하고 회사가 운영하는 서비스 홈페이지를 이용하는 자<br>
+					2. 아이디 : 회원의 식별과 서비스 이용을 위하여 회원이 정하고 회사가 승인하는 문자와 숫자의 조합(당사는 "유한킴벌리 SSO회원 서비스" 방침에 따라 1인 1 아이디를
+					제공합니다.)<br>
+					3. 비밀번호 : 회원이 부여 받은 아이디와 일치된 회원임을 확인하고, 회원 자신의 비밀을 보호하기 위하여 회원이 정한 문자와 숫자의 조합(간편가입을 통해 가입한 간편회원의 경우 비밀번호
+					없이 이용이 가능합니다.)<br>
+					4. 운영자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 사람<br>
+					5. SSO회원 서비스 : 회사가 운영하는 개별 서비스 홈페이지를 하나의 아이디(ID)로 관리하고 SSO(Single Sing On, 통합 로그인)을 통해 편리하게 이용할 수 있는
+					서비스.<br>
+					<br>
+					제5조 (회원 가입)<br>
+					<br>
+					1. 본 서비스를 이용하고자 하는 자는 회사가 정한 가입신청 양식에 회사가 요구하는 이용자 정보를 기입하고 유한킴벌리 SSO회원 약관에 동의하시어 유한킴벌리 SSO회원으로 가입한 후 이
+					약관에 동의한다는 의사표시를 함으로써 회원가입을 신청합니다.<br>
+					2. 가입신청 양식에 기재하는 모든 이용자 정보는 모두 실제 데이터인 것으로 간주됩니다. 실명이나 실제 정보를 입력하지 않은 이용자는 법적인 보호를 받을 수 없으며 서비스 이용에 제한을
+					받을 수 있습니다.<br>
+					<!-- 3. 만 14세 미만의 아동은 부모 등 법정대리인의 동의가 있어야 회원가입이 가능합니다.<br />
+4. 회사는 기술상 지장이 있는 경우 및 기타 이에 준하는 사유 발생시 회원가입 승낙을 유보할 수 있습니다.<br />
+5. 회사는 다음에 해당하는 경우에는 회원가입 승낙을 아니 합니다.<br />
+가. 모든 가입신청자는 실명이어야 하나, 그러하지 아니한 경우<br />
+나. 등록내용에 허위, 기재누락, 오기가 있는 경우<br />
+다. 만 14세 미만의 아동이 개인정보 제공에 대한 동의를 부모 등 법정대리인으로부터 받지 않은 경우<br />
+라. 사회의 안녕질서 또는 미풍양속을 저해할 목적으로 신청한 경우<br />
+마. 기타 회사 소정의 이용신청요건을 충족하지 못하는 경우<br />
+6. 제4항 또는 제5항에 의하여 회원가입신청의 승낙을 유보하거나 승낙하지 아니하는 경우, 회사는 이를 가입신청자에게 알려야 합니다. 다만, 회사의 귀책 사유 없이 신청자에게 통지할 수 없는 경우는 예외로 합니다.<br /> -->
+					<br>
+					제6조 (회원정보의 변경)<br>
+					<br>
+					회원은 회원가입신청 시 기재한 정보가 변경되었을 경우 회원정보 페이지에서 이를 변경해야 합니다. 미 변경으로 인하여 발생되는 문제에 대해 회사는 책임을 지지 않습니다.<br>
+					<br>
+					제7조 (개인 정보 보호)<br>
+					<br>
+					1. 회사는 이용자의 정보 수집 시 계약 이행에 필요한 범위에서 최소한의 정보를 수집합니다. 이 경우 수집되는 정보와 관련한 구체적인 사항은 개인정보 처리방침에서 확인할 수
+					있습니다.<br>
+					2. 회사는 사전에 회원으로부터 동의를 얻어 회원이 다양한 서비스 이용과 관련한 정보를 수집 저장 할 수 있으며 이를 분석하여 회원에게 보다 나은 서비스를 제공하고 고객 지향적인 마케팅
+					활동을 할 수 있습니다.<br>
+					<!-- - 이름, 성별, 아이디, 생년월일, 비밀번호, 휴대전화번호, 휴대전화통신사, 이메일 주소,<br />
+*만 14세 미만 아동의 개인정보 수집시 법정대리인의 동의 여부를 확인합니다.<br /> -->
+					3. 회사가 이용자의 개인 식별이 가능한 개인정보를 수집하는 때에는 당해 이용자께 그 목적을 고지하고 별도 양식에 동의를 받고 있으며 이용자는 언제든지 이를 철회할 수 있습니다.<br>
+					4. 수집된 개인정보는 법령이 정한 바에 따라 동의를 받은 범위에서 또는 그밖에 법령상 허용된 범위에서 이용되며 당해 이용자의 동의 없이 목적 외의 이용이나 제 3자에게 제공되지
+					않습니다. 다만 법률에 특별한 규정이 있는 경우에는 예외로 합니다. <br>
+					5. 이용자는 언제든지 회사가 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며, 회사는 이에 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의 정정을
+					요구한 경우에는 회사는 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다.<br>
+					6. 회사는 개인정보 보호를 위하여 취급자를 한정하여 그 수를 최소화하며, 이용자의 개인정보의 분실, 도난, 유출, 변조 등으로 인한 이용자의 손해에 대하여 책임을 집니다.<br>
+					7. 회사는 개인 정보의 보유기간을 경과하거나, 처리 목적을 달성한 때에는 당해 개인정보를 지체 없이 파기합니다. 다만, 사전에 동의를 받은 경우 또는 관계법령에 따라 보존할 필요가 있는
+					경우에는 동의를 받은 기간 또는 관계법령에서 정한 일정한 기간 동안 정보의 전부 또는 일부를 보관할 수 있습니다.<br>
+					<br>
+					제8조 (회원의 의무)<br>
+					<br>
+					1. 회원은 서비스 이용 시 다음 각 호의 행위를 하지 않아야 합니다.<br>
+					가. 회원가입신청 또는 회원정보 변경 시 허위내용을 등록하는 행위<br>
+					나. 다른 회원의 아이디를 부정하게 사용하는 행위<br>
+					다. 서비스에서 얻은 정보를 회사의 사전승낙 없이 회원의 이용 이외의 목적으로 복제하거나 이를 변경, 출판 및 방송 등에 사용하거나 타인에게 제공하는 행위<br>
+					라. 회사의 저작권, 타인의 저작권 등 기타 권리를 침해하는 행위<br>
+					마. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 홈페이지에 공개, 게시 또는 타인에게 유포하는 행위<br>
+					바. 회사의 직원이나 운영자를 가장하거나 사칭하여 또는 타인의 명의를 도용하여 글을 게시하거나 메일을 발송하는 행위<br>
+					사. 범죄 또는 기타 불법행위와 결부된다고 객관적으로 판단되는 행위<br>
+					아. 회사의 동의 없이 다른 제품이나 서비스의 판매 또는 홍보를 위한 행위 등 영리를 목적으로 서비스를 이용하는 행위<br>
+					자. 회사의 정상적인 서비스 운영을 방해할 현저한 우려가 있는 행위<br>
+					1. 회사의 서비스 운영과 관련하여 진위가 불분명한 사실 또는 허위의 사실을 적시하거나 유포하여 회사의 명예와 신용을 훼손하는 경우<br>
+					2. 서비스 이용과정에서 직원에게 모욕, 협박 또는 음란한 언행 등으로 서비스의 운영을 방해하는 경우<br>
+					차. 기타 관련 법령, 이 약관 또는 공서양속에 위배되는 행위<br>
+					1. 회원은 관련 법령, 본 약관에서 규정하는 사항, 서비스 이용 안내 및 주의 사항을 준수하여야 합니다.<br>
+					2. 회원은 내용별로 회사가 서비스 공지사항에 게시하거나 별도로 공지한 이용 제한 사항을 준수하여야 합니다.<br>
+					<br>
+					제9조 (회원의 아이디와 비밀번호 관리에 대한 의무)<br>
+					<br>
+					1. 아이디와 비밀번호에 대한 모든 관리의 책임은 각 회원에게 있습니다. 회원에게 부여된 아이디와 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원에게
+					있습니다.<br>
+					2. 회원은 본인의 아이디 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다. 회원 본인의 아이디 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 회사에
+					통보하고 회사의 안내가 있는 경우 그에 따라야 합니다.<br>
+					<br>
+					제10조 (정보의 제공)<br>
+					<br>
+					회사는 회원이 서비스 이용에 필요가 있다고 인정되는 각종 정보에 대해서 전자메일이나 서신우편 등의 방법으로 회원에게 제공할 수 있습니다. 이를 원하지 않는 회원은 가입신청 메뉴와
+					회원정보수정 메뉴에서 정보수신 거부를 할 수 있습니다.<br>
+					<br>
+					제11조 (게시물)<br>
+					<br>
+					회사는 회원이 본 서비스를 통하여 게시한 내용물에 대하여 책임을 지지 않습니다. 회원의 게시물이 다음 각 호에 해당한다고 판단되는 경우에 사전통지 없이 삭제할 수 있으며, 이에 대해
+					회사는 어떠한 책임도 지지 않습니다.<br>
+					1. 외설적, 폭력적, 차별적, 보복적이거나 기타 법령이나 공서양속에 반하는 경우<br>
+					2. 회사 또는 제 3자나 그 제품, 브랜드에 대한 극단적인 악평 등 타인을 비방하거나 명예를 훼손하는 내용의 게시물<br>
+					3. 회사 또는 제3자의 지식재산권 등 기타 권리를 침해하거나 기타 게시자가 게시물에 대한 권리를 보유하지 아니한 경우<br>
+					4. 범죄 등 불법적인 행위와 관련한 내용 또는 기만적이거나 오도하는 게시물<br>
+					5. 타인의 의견을 폄하하는 내용, 의도적으로 타인을 불쾌하게 하거나 타인에게 충격을 주는 게시물<br>
+					6. 다른 제품이나 서비스의 판매 또는 홍보 등 영리를 목적으로 한 게시물로서 회사의 동의를 받지 아니한 것<br>
+					7. 회사가 별도로 규정, 고지한 게시기간이나 용량을 초과한 경우<br>
+					8. 회사가 별도로 규정, 고지한 주제가 있는 경우, 이와 관련 없는 게시물<br>
+					9. 영업비밀에 속하는 정보 또는 개인을 식별할 수 있는 정보를 포함하는 게시물<br>
+					10. 만 14세 미만의 자가 게시한 게시물<br>
+					11. 스팸 또는 피싱을 포함하는 경우<br>
+					12. 기타 이 약관이나 관련 법령에 위배되는 경우<br>
+					<br>
+					제12조 (게시물의 저작권 귀속 및 이용제한)<br>
+					<br>
+					1. 회사가 작성하여 웹사이트 또는 서비스에 게시한 저작물의 저작권 및 기타 지식재산권은 회사에 귀속됩니다.<br>
+					2. 유한킴벌리(Yuhan Kimberly), 유한킴벌리 로고, 기타 회사를 통해 소개되는 제품 및 서비스 이름은 킴벌리클라크와 유한킴벌리의 상표입니다.<br>
+					3. 회원이 게재한 게시물에 대한 모든 권리(저작권 등)와 책임은 회원에게 있으며, 회사는 서비스 내에 이를 게재할 수 있는 권리를 갖습니다. 아울러 회사는 당해 게시물을 게시한 회원의
+					동의 없이 게시물을 다른 목적으로 사용할 수 없습니다. 단, 비영리적인 경우에는 그러하지 아니합니다.<br>
+					4. 회원은 서비스를 이용함으로써 얻은 정보를 유한킴벌리의 사전승낙 없이 복제, 전송 출판, 배포, 방송 또는 기타 방법에 의하여 영리 목적으로 이용하거나 제3자에게 이용하게 하여서는
+					안됩니다<br>
+					<br>
+					제13조 (서비스 이용 책임)<br>
+					<br>
+					회원은 서비스를 이용하여 불법 상품을 판매하는 영업 활동을 할 수 없으며 특히 해킹, 돈 벌기 광고, 음란사이트를 통한 상업행위, 상용 S/W 불법배포 등을 할 수 없습니다. 이를
+					위반하여 발생한 결과 및 손해, 관련기관에 의한 형사처벌 등 법적 조치 등에 관해서는 회사가 책임을 지지 않습니다.<br>
+					<br>
+					제14조 (서비스 이용, 이용 제한 및 중지)<br>
+					<br>
+					1. 서비스는 회사의 업무상 또는 기술상의 장애, 기타 특별한 사유가 없는 한 연중무휴, 1일 24시간 이용할 수 있습니다.<br>
+					2. 회사는 제공하는 서비스 중 전부 또는 일부에 대해 서비스 이용시간을 별도로 정할 수 있으며, 이 경우 그 이용시간을 사전에 회원에게 공지 또는 통지합니다.<br>
+					3. 회사는 다음 각 호에 해당하는 경우 서비스의 전부 또는 일부를 제한하거나 중지할 수 있습니다.<br>
+					가. 서비스를 위한 설비의 점검, 보수 등을 위해 필요한 경우<br>
+					나. 서비스 업그레이드 및 사이트 유지보수 등을 위해 필요한 경우<br>
+					다. 제반 설비의 장애 또는 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 경우<br>
+					라. 전기통신사업법에 의해 기간통신 사업자가 전기통신서비스를 중지하는 경우<br>
+					마. 기타 천재지변, 국가비상사태 등 불가항력적 사유가 있는 경우<br>
+					4. 회사는 서비스의 이용을 제한하거나 정지한 때에는 그 사유 및 제한기간 등을 지체 없이 회원에게 알려야 합니다.<br>
+					<br>
+					제15조 (이용계약의 해지 및 이용제한)<br>
+					<br>
+					1. 회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 회원탈퇴 절차를 통해 가입 해지를 해야 합니다.<br>
+					2. 회사는 회원이 다음 각 호에 해당하는 행위를 하였을 경우 사전통지 없이 이용 계약을 해지하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.<br>
+					가. 타인의 아이디 및 비밀번호를 도용한 경우<br>
+					나. 서비스 운영 또는 다른 회원의 서비스 이용을 고의로 방해한 경우<br>
+					다. 공공질서 및 미풍양속에 저해되는 내용을 고의로 유포시킨 경우<br>
+					라. 회원이 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행하는 경우<br>
+					마. 타인의 명예를 손상시키거나 타인에게 불이익을 주는 행위를 한 경우<br>
+					바. 정보통신설비의 오작동이나 정보 등의 파괴를 유발시키는 컴퓨터 바이러스프로그램 등을 유포하는 경우<br>
+					사. 회사, 다른 회원 또는 타인의 지식재산권을 침해하는 경우<br>
+					아. 회사의 서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복제 또는 유통시키거나 상업적으로 이용하는 경우<br>
+					자. 본 약관을 포함하여 기타 회사가 정한 이용조건 및 관련 법령에 위반한 경우<br>
+					<br>
+					제16조 (손해배상)<br>
+					<br>
+					1. 회원은 본인의 귀책사유로 인하여 회사나 다른 이용자가 입은 손해를 배상할 책임이 있습니다.<br>
+					2. 회원이 서비스를 이용함에 있어 행한 불법행위나 본 약관 위반행위로 인하여 회사가 당해 회원 이외의 제3자로부터 손해배상 청구 또는 소송을 비롯한 각종 이의제기를 받는 경우 당해
+					회원은 자신의 책임과 비용으로 회사를 면책 시켜야 하며, 회사가 면책되지 못한 경우 당해 회원은 그로 인하여 회사에 발생한 모든 손해를 배상하여야 합니다.<br>
+					<br>
+					제17조 (면책조항)<br>
+					<br>
+					1. 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.<br>
+					2. 회사는 기간통신 사업자가 전기통신 서비스를 중지하거나 정상적으로 제공하지 아니하여 손해가 발생한 경우 책임이 면제됩니다.<br>
+					3. 회사는 회원의 귀책사유로 인하여 서비스 이용에 장애가 발생한 경우에는 책임이 면제됩니다.<br>
+					4. 회사는 회원이 회사의 서비스 제공으로부터 기대되는 이익을 얻지 못하였거나 서비스 자료에 대한 취사 선택 또는 이용으로 발생하는 손해 등에 대해서는 책임이 면제됩니다.<br>
+					5. 회사는 회원이 서비스에 게재한 정보, 자료, 사실의 신뢰도 및 정확성 등 그 내용에 관하여는 책임이 면제 됩니다.<br>
+					<br>
+					제18조 (분쟁의 해결)<br>
+					<br>
+					1. 서비스 이용과 관련하여 회사와 회원 사이에 전자거래 분쟁에 관한 소송의 관할법원은 민사소송법상의 관할 법원에 제기합니다.<br>
+					2. 서비스 이용과 관련하여 발생한 분쟁에 대해 소송이 제기되는 경우 대한민국 법을 적용 합니다.<br>
+					<br>
+					[부칙] (시행일)본 약관은 2011년 12월 22일부터 시행합니다.<br>
+					<br>
+					(변경일) 2014년 6월 14일 제1조 목적 등 일부 수정 시행함.<br>
+					<br>
+					(변경일) 2015년 12월 2일 등 일부 수정 시행함.<br>
+					<br>
+					(변경일) 2016년 12월 19일 일부 수정 시행함.<br>
+					<br>
+					(변경일) 2018년 3월 30일 일부 수정 시행함. 단, 제4조는 2018년 3월 14일 일부 수정 시행함.<br>
+					<br></p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 20220525 약관 레이어: 통합브랜드 -->
+<!-- 20220525 약관 레이어: 달다방 -->
+<div class="layerbody" id="mygf_terms_agree_layer">
+	<div class="layerwrap termslay">
+		<a class="btn_close mygf_terms_agree_layer_close" onclick="layerClose('mygf_terms_agree_layer')"><span class="a11y_sr-only">close</span></a>
+		<div class="layhead">
+			<p>달다방 이용약관</p>
+		</div>
+		<div class="layconts">
+			<div class="inscroll termsarea">
+				<p>제1조 목적<br>
+					이 약관은 유한킴벌리 주식회사(이하 “회사”)가 제공하는 모바일 어플리케이션 달다방(이하 “앱”)관련 제반 서비스를 이용함에 있어 회사와 이용자와의 권리, 의무, 책임사항, 관련절차 등을
+					규정함을 목적으로 합니다.<br>
+					<br>
+					제2조 정의<br>
+					① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+					1. “서비스”라 함은 회사가 스마트기기 용으로 제공하는 “앱” 관련 제반 서비스(구체적인 내용은 제12조 참조)를 의미합니다.<br>
+					2. “스마트기기”라 함은 iPhone OS(iOS), Android(AOS) 등의 개방형 플랫폼에서 이용자가 원하는 앱(application)을 설치할 수 있는 기능 및 통신기능을
+					포함하고 있는 휴대형 단말기를 의미합니다.<br>
+					3. “이용자”라 함은 이 약관에 따라 “앱”에서 제공하는 서비스를 이용하는 회원 및 비회원을 의미합니다.<br>
+					4. “회원”이라 함은 이용자 중 유한킴벌리 SSO 회원으로서 “앱”의 회원으로 가입하여 “앱”이 회원을 대상으로 제공하는 서비스를 이용하는 자를 의미합니다.<br>
+					5. “비회원”이라 함은 이용자 중 “앱”의 회원으로 가입하지 않고 “앱”이 비회원을 대상으로 제공하는 서비스를 이용하는 자를 의미합니다.<br>
+					6. “이용자정보”라 함은 이용자의 아이디(ID), 비밀번호, 성명 등 이용자가 회사에 제공한 정보 및 서비스를 이용하는 과정에서 생성되는 정보, 제3자와의 상담 내용 등 부호, 문자,
+					영상 등으로 표현된 모든 종류의 정보를 말합니다.<br>
+					7. “아이디(ID)”라 함은 회원의 식별과 서비스 이용을 위하여 회원이 정하고 회사가 승인하는 문자와 숫자의 조합을 의미합니다. 당사는 "유한킴벌리 SSO회원 서비스" 방침에 따라 1인
+					1 아이디를 제공합니다.<br>
+					8. “비밀번호”라 함은 회원이 부여 받은 아이디와 일치된 회원임을 확인하고, 회원 자신의 비밀을 보호하기 위하여 회원이 정한 문자와 숫자의 조합을 의미합니다. 간편가입을 통해 가입한
+					간편회원의 경우 비밀번호 없이 이용이 가능합니다.<br>
+					9. “운영자”라 함은 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 사람을 의미합니다.<br>
+					10. “SSO회원 서비스”라 함은 회사가 운영하는 개별 서비스 홈페이지를 하나의 아이디(ID)로 관리하고 SSO(Single Sing On, 통합 로그인)을 통해 편리하게 이용할 수
+					있는 서비스를 의미합니다.<br>
+					② 이 약관에서 사용하는 용어 중 본 조에서 정하지 아니한 것은 유한킴벌리 SSO회원 이용약관, 통합브랜드 이용약관, 관계 법령 또는 상관례에서 정하는 바에 따릅니다.<br>
+					<br>
+					제3조 약관의 게시와 개정<br>
+					① 회사는 이 약관의 내용을 이용자가 쉽게 알 수 있도록 “앱” 내에 게시합니다.<br>
+					② 회사는 ‘약관의 규제 등에 관한 법률’, ‘정보통신망 이용촉진 및 정보보호 등에 관한 법률’ 등 관계 법령을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.<br>
+					③ 회사가 약관을 개정할 경우에는 적용일자 및 개정내용, 개정사유를 명시하여 그 적용일자로부터 최소한 7일 이전(이용자에게 불리하거나 중대한 사항의 변경은 30일 이전)부터 일정기간
+					공지하고, 기존 회원에게는 SMS, 전자우편, 로그인 시 동의 창, 초기화면 등의 전자적 수단을 통해 고지합니다.<br>
+					④ 회사가 전 항에 따라 약관을 개정할 경우에는 기존약관과 개정약관을 공지 또는 통지하면서 이용자에게 적용일 전까지 의사표시를 하지 않으면 변경에 동의한 것으로 본다는 뜻을 명확하게 공지
+					또는 통지하였음에도 이용자가 명시적으로 거부의 의사표시를 하지 아니한 경우, 이용자가 개정 약관에 동의한 것으로 봅니다.<br>
+					⑤ 이용자가 개정 약관의 적용에 동의하지 않으면 회사는 해당 이용자에 대해 개정 약관의 내용을 적용할 수 없으며, 이 경우 회사는 해당 이용자에게 개정된 약관에 따른 서비스를 제한할 수
+					있습니다.<br>
+					<br>
+					제4조 약관 외 준칙<br>
+					① 회사는 “서비스” 별로 별도의 이용약관 및 정책(이하 “개별 약관 등”)을 둘 수 있으며, 해당 내용이 이 약관과 상충할 경우에는 개별 약관 등이 우선하여 적용됩니다.<br>
+					② 회사는 개별 약관 등의 내용을 이용자가 쉽게 알 수 있도록 “앱” 내에 게시합니다.<br>
+					③ 이 약관 및 개별 약관 등에 명시되지 않은 사항은 유한킴벌리 SSO회원 이용약관, 통합브랜드 이용약관 및 '전기통신기본법', '전기통신사업법', '정보통신망 이용촉진 및 정보보호 등에
+					관한 법률' 등 관계 법령 또는 상관례에서 정하는 바에의 따릅니다.<br>
+					④ 이 약관 및 개별 약관 등과 관련하여 회사의 정책 변경, 법령의 제/개정 또는 공공기관의 고시나 지침 등에 의하여 회사가 “앱”의 공지사항, 게시판 등을 통해 공지하는 내용 역시
+					서비스 이용과 관련하여 회사 및 이용자에게 적용됩니다..<br>
+					<br>
+					제5조 회원의 가입<br>
+					① 회원 가입 신청자는 유한킴벌리 SSO 회원에 가입하고, 이 약관의 내용에 대하여 동의를 한 다음 회사가 정한 절차에 따라 회원정보를 정확히 입력하여 회원가입을 신청하고 회사가 회원
+					가입을 승낙함으로써 회원 가입이 완료됩니다. 다만, 회사는 이러한 신청에 있어 회원 가입 신청자에게 전자우편 인증 등 본인인증을 요청할 수 있습니다.<br>
+					② 회사는 전 항에 따른 회원 가입 신청에 대하여 승낙을 할 수 있습니다. 다만, 회사는 다음 각 호의 어느 하나에 해당하는 신청에 대하여는 승낙을 하지 않거나 사후에 회원 가입 승인을
+					취소할 수 있습니다.<br>
+					1. 유한킴벌리 SSO 회원이 아닌 자가 신청한 경우<br>
+					2. 전자우편 인증 등 회사가 요청한 인증절차를 완료하지 않은 경우<br>
+					3. 회원 가입 신청자가 이 약관에 의하여 이전에 회원자격을 상실한 적이 있는 경우. 단, 회사의 회원 재가입 승낙을 얻은 경우는 예외로 합니다.<br>
+					4. 회원 가입 신청에 있어서 회원 정보를 허위로 입력한 경우<br>
+					5. 회사가 정한 절차에 따라 회사가 제시하는 내용을 기재하지 않은 경우<br>
+					6. 회원 가입 신청자의 귀책사유로 인해 승인이 불가능하거나 기타 규정한 제반 사항을 위반하여 신청한 경우<br>
+					7. 기타 이 약관에 위반되거나 위법 또는 부당한 가입 신청임이 확인된 경우 또는 회원 가입 승낙이 부적합하다고 합리적으로 판단되는 경우<br>
+					③ 회사는 서비스 관련 설비의 여유가 없거나 기술상 또는 업무상 문제가 있는 경우, 기타 회사가 합리적인 판단에 의하여 필요하다고 인정하는 경우에는 승낙을 유보할 수 있습니다.<br>
+					④ 본 조 제2항과 제3항에 따라 회원 가입 신청의 승낙을 하지 아니하거나 유보한 경우 회사는 원칙적으로 이를 회원 가입 신청자에게 알리도록 합니다.<br>
+					⑤ 회원 가입의 완료시기는 회사의 승낙이 회원 가입 신청자에게 도달한 시점으로 합니다.<br>
+					<br>
+					제6조 미성년자의 회원가입에 관한 특칙<br>
+					① 만 14세 미만의 이용자는 개인정보의 수집 및 이용목적에 대하여 충분히 숙지하고 부모 등 법정대리인의 동의를 얻은 후에 회원가입을 신청하고 본인의 개인정보를 제공하여야 합니다.
+					<br>
+					② 회사는 부모 등 법정대리인의 동의에 대한 확인절차를 거치지 않은 14세 미만 이용자에 대하여는 가입을 취소 또는 불허합니다.<br>
+					③ 만 14세 미만 이용자의 부모 등 법정대리인은 아동에 대한 개인정보의 열람, 정정, 갱신을 요청하거나 회원가입에 대한 동의를 철회할 수 있으며, 이러한 경우에 회사는 지체 없이 필요한
+					조치를 취해야 합니다.<br>
+					<br>
+					제7조 이용자정보의 제공 및 변경<br>
+					① 이용자는 이 약관에 의하여 회사에 정보를 제공하여야 하는 경우에는 진실된 정보를 제공하여야 하며, 허위정보 제공으로 인해 발생한 불이익에 대해서는 보호받지 못합니다.<br>
+					② 회원은 개인정보관리화면을 통하여 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 회사는 향후 이용자의 동의 하에 개인정보를 추가적으로 수집할 수 있습니다.<br>
+					③ 이용자는 회원 가입 신청 등 서비스 이용 시 기재하거나 제공한 사항이 잘못되었거나 변경되었을 경우 온라인으로 수정을 하거나 전자우편 기타 방법으로 즉시 회사에 해당 사항을 알려야
+					합니다.<br>
+					④ 이용자정보가 잘못되었거나 변경되었음에도 해당 사항을 수정하지 않거나 해당 사항을 회사에 알리지 않아 발생한 각종 손해와 잘못된 수정으로 인하여 발생한 손해는 당해 이용자가 부담하여야
+					하며, 회사는 이에 대하여 아무런 책임을 지지 않습니다.<br>
+					<br>
+					제8조 광고의 게재<br>
+					① 회사는 관계 법령에 따라 적법한 절차를 통해 이용자에게 광고를 제공할 수 있습니다.<br>
+					② 회사는 서비스의 운영과 관련하여 서비스 화면에 광고를 게재할 수 있습니다.<br>
+					<br>
+					제9조 개인정보의 보호 및 제공<br>
+					① 회사는 '정보통신망 이용촉진 및 정보보호 등에 관한 법률' 등 관계 법령이 정하는 바에 따라 이용자정보를 포함한 개인정보를 보호하기 위해 노력합니다. 이용자의 개인정보의 보호 및
+					사용에 대해서는 관계 법령 및 회사의 개인정보처리방침이 적용됩니다.<br>
+					② 회사의 서비스 이외의 단순히 링크된 제3자의 사이트에서는 회사의 개인정보처리방침이 적용되지 않습니다. 링크된 제3자의 개인정보처리방침을 확인할 책임은 이용자에게 있으며, 회사는 이에
+					대하여 책임을 부담하지 않습니다.<br>
+					③ 회사는 이용자의 귀책사유로 인하여 노출된 이용자의 계정정보를 포함한 모든 정보에 대해서 일체의 책임을 지지 않습니다<br>
+					④ 회사는 '정보통신망 이용촉진 및 정보보호 등에 관한 법률' 등 관계 법령을 준수하는 범위 내에서 마케팅의 목적으로 이용자의 개인정보 및 기타정보를 활용할 수 있습니다.<br>
+					⑤ 회사는 관계 법령과 이 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다하여 노력합니다.<br>
+					⑥ 회사는 이용자가 안전하게 서비스를 이용할 수 있도록 개인정보(신용정보 포함)보호를 위해 보안시스템을 갖추어야 합니다.<br>
+					⑦ 회사는 서비스 이용과 관련하여 이용자로부터 제기된 의견이나 불만이 정당하다고 인정할 경우에는 이를 처리하여야 합니다. 이용자가 제기한 의견이나 불만사항에 대해서는 전자우편 등을 통하여
+					이용자에게 처리과정 및 결과를 통지합니다.<br>
+					⑧ 전 항의 규정에 따라 회사가 이용자에게 통지하는 경우 7일 이상 회사의 앱 내에 게시하거나 전자우편, SMS, 푸시알림 등의 방법으로 할 수 있습니다.<br>
+					<br>
+					제10조 회원의 아이디(ID) 및 비밀번호의 관리에 대한 의무 <br>
+					① 회원의 아이디(ID)와 비밀번호에 관한 관리책임은 회원에게 있으며, 이를 제3자가 이용하도록 하여서는 안 됩니다.<br>
+					② 회원은 아이디(ID) 및 비밀번호가 도용되거나 제3자에 의해 사용되고 있음을 인지한 경우에는 이를 즉시 회사에 통지하고 회사의 안내에 따라야 합니다.<br>
+					③ 전 항의 경우에 해당 회원이 회사에 그 사실을 통지하지 않거나, 통지한 경우에도 회사의 안내에 따르지 않아 발생한 불이익에 대하여 회사는 책임지지 않습니다.<br>
+					<br>
+					제11조 이용자의 의무<br>
+					① 스마트기기 및 이용자정보에 관한 관리책임은 이용자에게 있습니다. 이용자가 본인의 정보를 소홀히 관리하거나, 제3자에게 이용을 승낙함으로써 발생하는 손해에 대하여는 이용자에게 책임이
+					있습니다.<br>
+					② 이용자는 다음 각호의 행위를 하여서는 안됩니다.<br>
+					1. 허위내용의 등록<br>
+					2. 타인의 정보 도용 또는 타인의 서비스 이용 방해<br>
+					3. 회사의 서비스에 게시된 정보를 회사의 사전 승낙 없이 영리 또는 비영리 목적으로 복제, 출판, 방송 등에 사용하는 행위<br>
+					4. 자동 접속 프로그램 등을 사용하는 등 정상적인 용법과 다른 방법으로 서비스를 이용하여 회사의 서버에 부하를 일으켜 회사의 정상적인 활동을 방해할 현저한 우려가 있는 행위<br>
+					5. 회사가 제공하는 서비스를 이용하여 제3자에게 본인, 다른 제품이나 서비스를 홍보할 기회를 제공하거나 제3자의 홍보를 대행하는 등의 방법으로 금전을 수수하거나 서비스를 이용할 권리를
+					양도하고 이를 대가로 금전을 수수하는 등 영리를 목적으로 서비스를 이용하는 행위<br>
+					6. 회사 기타 제3자에 대한 진위가 불분명한 사실 또는 허위의 사실을 게재하거나, 회사 또는 제3자의 명예를 손상시키거나 업무를 방해하는 행위, 지적재산권을 침해하는 등 회사나 제3자의
+					권리를 침해하는 행위<br>
+					7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 공개 또는 게시하는 행위<br>
+					8. 서비스 이용 과정에서 회사 직원 등에 대한 모욕, 협박 또는 음란한 언행 등으로 서비스의 운영을 방해하는 경우<br>
+					9. 컴퓨터 소프트웨어, 하드웨어, 전기통신 장비의 정상적인 가동을 방해, 파괴할 목적으로 고안된 소프트웨어 바이러스, 기타 다른 컴퓨터 코드, 파일, 프로그램을 포함하고 있는 자료를
+					사용하는 행위<br>
+					10. 회사가 제공하는 소프트웨어 등을 개작하거나 리버스 엔지니어링, 디컴파일, 디스어셈블 하는 행위<br>
+					11. 현행 법령, 회사가 제공하는 서비스에 정한 약관 기타 서비스 이용에 관한 규정을 위반하는 행위<br>
+					12. 회사의 직원이나 운영자를 가장하거나 사칭하여 또는 타인의 명의를 도용하여 글을 게시하거나 메일을 발송하는 행위<br>
+					13. 국익 또는 사회적 공익을 저해할 목적으로 서비스를 이용하는 경우<br>
+					14. 기타 불법적이거나 부당한 행위<br>
+					③ 이용자는 회사가 제공하는 서비스를 이 약관, 운영정책 및 회사가 설정한 규칙에 따라 이용할 수 있습니다. 이용자는 관계 법령, 이 약관의 규정, 이용안내 및 서비스와 관련하여 공지한
+					주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사의 업무에 방해되는 행위를 하여서는 안 됩니다.<br>
+					④ 회사는 이용자의 의무 위반에 대한 모니터링을 실시하고 있으며, 이용자는 회사가 합리적인 범위 내에서 요청하는 필요 최소한의 증빙자료를 제출하는 등 이에 협조할 의무가 있습니다.<br>
+					⑤ 이용자가 제2항의 행위를 하는 경우 회사는 서비스의 이용을 제한하거나 회원의 경우, 회원자격의 제한 또는 정지 등의 조치를 취할 수 있습니다.<br>
+					⑥ 회사가 회원 자격을 제한 또는 정지한 후, 동일한 행위가 반복되거나 30일 내에 그 사유가 시정되지 아니하는 경우 회사는 회원자격을 상실시킬 수 있습니다. 이 경우 회원등록은
+					말소됩니다.<br>
+					<br>
+					제12조 서비스의 제공 및 변경<br>
+					① 회사는 이용자에게 아래와 같은 서비스를 제공합니다.<br>
+					- 가임 여성을 위한 생리주기 기록 서비스 제공<br>
+					- 생리주기 및 기타 여성의 건강과 관련한 일반적인 정보 제공<br>
+					- 기타 회사가 이용자에게 제공하는 일체의 서비스<br>
+					② 회사는 모든 이용자에게 1일 24시간 서비스 제공을 원칙으로 합니다. 단, 관계 법령 및 회사 정책에 따라 이용자 별로 서비스 이용의 범위, 방법, 내용, 제공 시, 횟수 등이 제한될
+					수 있습니다.<br>
+					③ 회사는 서비스 제공에 필요할 경우 정기점검을 실시할 수 있으며, 정기점검시간은 서비스 화면에 공지한 바에 따릅니다.<br>
+					④ 회사는 컴퓨터 등 정보통신설비의 보수점검, 교체 및 고장, 통신두절 또는 운영상 상당한 이유가 있는 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다. 이 경우 회사는 제9조
+					제8항에 정한 방법으로 사전에 이용자에게 통지합니다. 다만, 회사가 사전에 통지할 수 없는 부득이한 사유가 있는 경우에는 사후에 통지할 수 있습니다.<br>
+					⑤ 회사는 운영상, 경영상, 기술상의 필요에 따라 상당한 이유가 있는 경우 제공하고 있는 서비스의 전부 또는 일부 내용을 변경하거나 서비스를 종료할 수 있습니다.<br>
+					⑥ 서비스의 내용, 이용방법 등에 대하여 변경이 있는 경우에는 변경사유, 변경될 서비스의 내용 및 제공일자 등을 변경 7일 전에, 서비스를 종료하는 경우에는 30일 전에 서비스 화면에
+					공지합니다. 다만, 사전에 공지할 수 없는 부득이한 사정이 있는 경우에는 사후에 지체 없이 이를 공지할 수 있습니다.<br>
+					⑦ 회사는 이 약관 및 관계 법령에 특별한 규정이 없는 한 서비스의 중단, 변경 또는 종료가 회사의 고의 또는 중과실로 인한 경우를 제외하고는 그로 인하여 이용자가 입은 손해에 대하여
+					아무런 책임을 지지 않습니다.<br>
+					<br>
+					제13조 정보의 제공<br>
+					회사는 회원이 서비스 이용에 필요가 있다고 인정되는 각종 정보에 대해서 전자메일이나 서신우편 등의 방법으로 회원에게 제공할 수 있습니다. 이를 원하지 않는 회원은 가입신청 메뉴와
+					회원정보수정 메뉴에서 정보수신 거부를 할 수 있습니다.<br>
+					<br>
+					제14조 권리의 귀속<br>
+					① 서비스, 회사에 등록된 저작물, 회사가 작성한 저작물 등에 대한 저작권 및 지적재산권은 회사에 귀속됩니다. 단 제휴계약에 따라 제공된 저작물 등은 제외합니다.<br>
+					② 유한킴벌리(Yuhan Kimberly), 유한킴벌리 로고, 기타 회사를 통해 소개되는 제품 및 서비스 명칭은 킴벌리클라크(Kimberly-Clark corp.)와 회사에 권리가 있는
+					상표입니다.<br>
+					③ 이용자가 게재한 게시물에 대한 모든 권리(저작권 등)와 책임은 이용자에게 있으며, 회사는 서비스 내에 이를 게재할 수 있는 권리를 갖습니다. 아울러 회사는 당해 게시물을 게시한
+					이용자의 동의 없이 게시물을 다른 목적으로 사용할 수 없습니다. 단, 비영리적인 경우에는 그러하지 아니합니다. <br>
+					④ 이용자는 서비스를 이용함으로써 얻은 정보 중 회사에 지적재산권이 귀속된 정보를 회사의 사전 승낙 없이 복제·송신·출판·배포·방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게
+					이용하게 하여서는 안됩니다.<br>
+					⑤ 이용자가 서비스에 등록한 게시물이 타인의 지적재산권을 침해하는 경우 그로 인한 모든 책임은 해당 이용자가 부담합니다.<br>
+					⑥ 이용자의 게시물에 대해 제3자로부터 지적재산권, 명예 기타 권리의 침해로 이의가 제기된 경우 회사는 해당 게시물을 정지 또는 삭제할 수 있습니다.<br>
+					⑦ 회사는 서비스와 관련하여 이용자에게 회사가 정한 이용조건에 따라 서비스를 이용할 수 있는 이용 권한만을 부여하며 이용자는 이를 양도, 판매, 담보제공 등의 처분행위를 할 수
+					없습니다.<br>
+					<br>
+					제15조 게시물의 삭제 <br>
+					① 회사는 이용자가 서비스를 통하여 게시한 게시물의 내용에 대하여 책임을 지지 않습니다. 이용자의 게시물이 다음 각 호에 해당한다고 판단되는 경우에 사전통지 없이 삭제할 수 있으며, 이에
+					대해 회사는 어떠한 책임도 지지 않습니다.<br>
+					1. 외설적, 폭력적, 차별적, 보복적이거나 기타 법령이나 공서양속에 반하는 경우<br>
+					2. 회사 또는 제 3자나 그 제품, 브랜드에 대한 극단적인 악평 등 타인을 비방하거나 명예를 훼손하는 내용의 게시물<br>
+					3. 회사 또는 제3자의 지식재산권 등 기타 권리를 침해하거나 기타 게시자가 게시물에 대한 권리를 보유하지 아니한 경우<br>
+					4. 범죄 등 불법적인 행위와 관련한 내용 또는 기만적이거나 오도하는 게시물<br>
+					5. 타인의 의견을 폄하하는 내용, 의도적으로 타인을 불쾌하게 하거나 타인에게 충격을 주는 게시물<br>
+					6. 다른 제품이나 서비스의 판매 또는 홍보 등 영리를 목적으로 한 게시물로서 회사의 동의를 받지 아니한 것<br>
+					7. 회사가 별도로 규정, 고지한 게시기간이나 용량을 초과한 경우<br>
+					8. 회사가 별도로 규정, 고지한 주제가 있는 경우, 이와 관련 없는 게시물<br>
+					9. 영업비밀에 속하는 정보 또는 개인을 식별할 수 있는 정보를 포함하는 게시물<br>
+					10. 만 14세 미만의 자가 게시한 게시물<br>
+					11. 스팸 또는 피싱을 포함하는 경우<br>
+					12. 기타 이 약관이나 관련 법령에 위배되는 경우<br>
+					② "회사"가 운영하는 게시판 등에 게시된 정보로 인하여 법률상 이익이 침해된 이용자는 "회사"에게 당해 정보의 삭제 또는 반박내용의 게재를 요청할 수 있습니다. 이 경우 "회사"는 지체
+					없이 필요한 조치를 취하고 이를 즉시 신청인에게 통지합니다.<br>
+					<br>
+					제16조 회원 탈퇴 및 이용 제한, 자격 상실<br>
+					① 회원은 언제든지 회사가 정하는 절차에 따라 회원탈퇴 신청을 할 수 있으며, 회사는 관계 법령 등이 정하는 바에 따라 이를 즉시 처리합니다.<br>
+					② 회원이 회원탈퇴를 하는 경우 회사는 회원탈퇴 즉시 그 회원의 이용자 정보를 파기 조치합니다.<br>
+					③ 회원이 제11조(이용자의 의무)의 규정을 위반한 경우 회사는 사전통보 없이 일방적으로 그 회원의 이용을 제한하거나 자격을 상실시킬 수 있고, 이로 인하여 서비스 운영에 손해가 발생한
+					경우 이에 대한 민•형사상 책임도 물을 수 있습니다.<br>
+					<br>
+					제 17조 이용의 제한<br>
+					① 회사는 이용자가 이 약관의 의무를 위반하거나 서비스의 정상적인 운영을 방해한 경우, 경고, 일시정지, 영구이용정지 등으로 서비스 이용을 제한하거나 회원 자격을 상실시킬 수
+					있습니다.<br>
+					② 회사는 전항에도 불구하고, '저작권법' 및 '컴퓨터프로그램보호법'을 위반한 불법프로그램의 제공 및 운영방해, '정보통신망 이용촉진 및 정보보호 등에 관한 법률'을 위반한 불법통신 및
+					해킹, 악성프로그램의 배포, 접속권한 초과행위 등과 같이 관계 법령을 위반한 경우에는 즉시 영구이용정지를 할 수 있습니다.<br>
+					③ 본 조에 따라 서비스 이용을 제한하거나 회원 자격을 상실시키는 경우에 회사는 전자우편이나 SMS등을 통해 이용자에게 통지합니다.<br>
+					④ 이용자는 본 조에 따른 이용제한 등에 대해 회사의 고객센터를 통해 이의신청을 할 수 있습니다. 이 때 이의가 정당하다고 회사가 인정하는 경우 회사는 즉시 서비스의 이용을
+					재개합니다.<br>
+					<br>
+					제18조 손해배상<br>
+					1. 이용자는 본인의 귀책사유로 인하여 회사나 다른 이용자가 입은 손해를 배상할 책임이 있습니다.<br>
+					2. 이용자가 서비스를 이용함에 있어 행한 불법행위나 이 약관 위반행위로 인하여 회사가 당해 이용자 이외의 제3자로부터 손해배상 청구 또는 소송을 비롯한 각종 이의제기를 받는 경우 당해
+					이용자는 자신의 책임과 비용으로 회사를 면책시켜야 하며, 회사가 면책되지 못한 경우 당해 이용자는 그로 인하여 회사에 발생한 모든 손해를 배상하여야 합니다.<br>
+					<br>
+					제19조 면책<br>
+					① 회사는 다음 사유로 서비스를 제공할 수 없는 경우 이로 인해 이용자에게 발생한 손해에 대해서는 책임을 부담하지 않습니다.<br>
+					1. 천재지변 또는 이에 준하는 불가항력의 상태가 있는 경우<br>
+					2. 이용자의 귀책사유로 서비스 이용에 장애가 있는 경우<br>
+					3. 기타 회사의 고의 또는 과실이 없는 사유로 인한 경우<br>
+					② 서비스와 관련한 이용자정보에 대한 관리•보존 책임은 전적으로 이용자에게 있고, 회사는 이용자의 정보를 백업•복원•반환해야 할 의무가 없습니다. 필요한 경우 이용자는 자체적으로 독립적인
+					별도 저장소에 이용자정보를 보관해야 합니다.<br>
+					③ 회사는 이용자 또는 제3자가 서비스에 게재한 게시물의 신뢰도 및 정확성 등 내용에 대해 책임을 지지 않으며, 서비스에 게재된 어떠한 의견이나 정보에 대해 확인이나 대표할 의무가
+					없습니다. 회사는 이용자나 제3자에 의해 표출된 의견을 승인, 반대 또는 수정하지 않습니다.<br>
+					④ 회사는 이용자 상호간 또는 이용자와 제3자 상호간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가 없으며, 이로 인한 손해를 배상할 책임을 지지 않습니다.<br>
+					⑤ 회사는 무료로 제공되는 서비스 이용과 관련하여 관계 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.<br>
+					<br>
+					제20조 준거법 및 관할법원<br>
+					① 이 약관의 해석과 적용에 관하여는 대한민국 법률을 준거법으로 합니다.<br>
+					② 서비스 이용과 관련하여 회사와 이용자 간 발생한 분쟁에 관한 소송의 관할법원은 대한민국 민사소송법상의 관할 법원으로 합니다.<br>
+					<br>
+					<부칙><br>
+						이 약관은 2020년 12월 16일부터 시행됩니다.
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 20220525 약관 레이어: 달다방 -->
+
+<!-- 20220525 알림창: 추천인 관련 알림창 -->
+<div class="layerbody" id="alertlayer01">
+	<div class="layerwrap alertmsg">
+		<div class="layconts">
+			<p class="msgconts">추천인 입력을 원하시면 회원가입 완료 후 회원정보 수정 화면에서 맘큐 또는 오늘 플러스 약관에 동의해주세요.</p>
+			<div class="btnwrap">
+				<a href="javascript:;" class="btn btnfull" onclick="layerClose('alertlayer01')">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="layerbody" id="alertlayer02">
+	<div class="layerwrap alertmsg">
+		<div class="layconts">
+			<!-- 추천인이 맘큐 회원이 아닌 경우 -->
+ 			<p class="msgconts">추천인이 맘큐 회원이 아닙니다. <br/>맘큐 이용약관에 동의한 고객님만 추천인으로 입력 가능합니다.</p>
+			<!-- (모든 약관 동의) 추천인이 맘큐 회원이 아닌 경우
+<p class="msgconts">추천인이 맘큐 회원이 아닙니다. <br/>오늘 플러스 추천인 적립금만 지급됩니다.</p> -->
+			<!-- 추천인이 오늘 플러스 회원이 아닌 경우
+ <p class="msgconts">추천인이 오늘 플러스 회원이 아닙니다. <br/>오늘 플러스 이용약관에 동의한 고객님만 추천인으로 입력 가능합니다.</p> -->
+			<!-- (모든 약관 동의) 추천인이 맘큐 회원이 아닌 경우
+<p class="msgconts">추천인이 오늘 플러스 회원이 아닙니다. <br/>맘큐 추천인 적립금만 지급됩니다.</p> -->
+			<div class="btnwrap">
+				<a href="javascript:;" class="btn btnHalf" onclick="layerClose('alertlayer02')">취소</a>
+				<a href="javascript:;" class="btn btnHalf" onclick="layerClose('alertlayer02')">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 20220525 알림창: 추천인 관련 알림창 -->
+
+</body>
+<script>
+// 레이어팝업 열기
+function layerOpen(set) {
+  $('#' + set).addClass('show');
+  $('body, html').addClass('noscroll');
+}
+// 레이어팝업 닫기
+function layerClose(set) {
+  $('#' + set).removeClass('show');
+  $('body, html').removeClass('noscroll');
+}
+
+// 20211203 추천인 검색 방법
+$(document).ready(function() {
+	if ($('.recommidlay').length > 0) {
+		$('.recommidlay').find('#sch03').click(function () {
+			if ($(this).is(":checked")) {
+				$('.recommidlay').find('.usersch').addClass('hid');
+				$('.recommidlay').find('.numsch').removeClass('hid');
+				$('.recommidlay').find('.idsch').addClass('hid');
+			}
+		});
+		$('.recommidlay').find('#sch02').click(function () {
+			if ($(this).is(":checked")) {
+				$('.recommidlay').find('.numsch').addClass('hid');
+				$('.recommidlay').find('.idsch').addClass('hid');
+				$('.recommidlay').find('.usersch').removeClass('hid');
+			}
+		});
+		$('.recommidlay').find('#sch01').click(function () {
+			if ($(this).is(":checked")) {
+				$('.recommidlay').find('.idsch').removeClass('hid');
+				$('.recommidlay').find('.usersch').addClass('hid');
+				$('.recommidlay').find('.numsch').addClass('hid');
+			}
+		});
+	}
+});
+
+	// 20210315 비밀번호 마스킹	
+	$('.masking .btn_masking').on('click', function() {
+		if ($(this).parent('.masking').hasClass('_not')) {
+				$(this).parent('.masking').removeClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'password');
+				$(this).children('i').attr('class','ic_show');
+		} else {
+				$(this).parent('.masking').addClass('_not');
+				$(this).parent('.masking').find('input').attr('type', 'text');
+				$(this).children('i').attr('class','ic_hide');
+		}
+	});
+
+	// 20210721 툴팁
+	$('.sso_wrap .terms_chk >li label[for="termsNo4"]').on("click", function() {
+		$('.sso_wrap .select_chk.MOMQ .tooltip').toggleClass('show');
+	});
+
+// 아이영역추가
+function selOpen(set){
+	$(set).next('.addlist').show();
+}
+function childAddSel(set){
+	var selval = $(set).text();
+	$('.addbtnwrap .btn_areadd').find('span').html(selval);
+	$(set).parents('.addlist').hide();
+}
+function childElDel(set){
+	$(set).parents('.childadd').remove();
+}
+</script>
+</html>

@@ -1,4 +1,5 @@
 node_modules
 .Ds_Store
 dist/yk_pub/
+dist/___ykpub/
 bigdata_bak

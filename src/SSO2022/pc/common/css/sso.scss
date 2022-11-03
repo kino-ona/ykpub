@@ -351,7 +351,6 @@ display: block;position: absolute;left:0;top:2px;color:#888888;
 .leave .benefit td{width:calc(100% / 3);padding:20px 0;border-bottom:1px solid #dddddd;text-align: center;}
 .leave .benefit thead th{color: #009fe3;}
 .leave .reason select{width:100%;}
-.leave .reason .chk input[type="checkbox"] + label {font-size: 14px;}
 
 /* 20200417 s */
 .sso_intro {position: relative;width:100%;min-width:1000px;margin:0 auto;background-color: #fff;}
@@ -1277,9 +1276,7 @@ footer.renewfoo {
 	}
 }
 .my_wrap {
-
 	.my_inner {
-
 		.h2_ti {
 			padding-bottom: 0;
 		}
@@ -1445,3 +1442,62 @@ footer.renewfoo {
 	}
 }
 /* 20220614 E */
+/*------------*/
+/* 20221109 S */
+.my_wrap.leave {
+    .my_inner {
+        .join_form input[type="checkbox"] + label::before {
+            margin-top: 0;
+        }
+        .terms_chk {
+            padding: 25px 30px;
+            margin-top: 15px;
+            border: 1px solid #dddddd;
+            li:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .sub_first {
+            .h2_subti {
+                color: #888888;
+                font-size: 16px;
+            }
+            .btn_vw {
+                top: 47.5px;
+            }
+        }
+    }
+    select {
+        font-size: 16px;
+        color: #888888;
+        border: 0;
+    }
+    .memberfrm {
+        .h2_ti {
+            margin-top: 60px;
+        }
+    }
+    .benefit {
+        th, 
+        td {
+            width: calc(100% / 4);
+        }
+    }
+    .reason .chk {
+        input[type="checkbox"]+label {
+            font-size: 16px;
+            font-weight: 400;
+            &[for='chagre'] {
+                position: relative;
+                padding-left: 37.5px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+    }
+}
+/* 20221109 E */

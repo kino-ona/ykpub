@@ -1523,3 +1523,104 @@ span.esse, span.sel {
 }
 .my_wrap .my_inner .join_form .accordian__title.beige { border-left: 4px solid #f4a777; }
 /* 20220607 E */
+/*------------*/
+/* 20221109 S */
+.my_wrap.leave {
+    h2.tit {
+        padding-bottom: 35px;
+    }
+    .my_inner {
+        .join_form input[type="checkbox"] + label::before {
+            margin-top: 0;
+        }
+        .terms_chk {
+            padding: 25px 30px;
+            margin-top: 20px;
+            border: 1px solid #dddddd !important;
+            * {
+                font-size: 14px;
+            }
+            li.first {
+                padding-bottom: 20px;
+                margin-bottom: 0;
+                border-bottom: 1px dotted #e2e3e5;
+            }
+            li:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .sub_first {
+            .h2_subti {
+                margin-bottom: 15px;
+                font-size: 12px;
+                color: #888888;
+            }
+        }
+    }
+    select {
+        font-size: 14px;
+        color: #888888;
+        border: 0;
+    }
+    .memberfrm {
+        .h2_ti {
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+        .input_frm .ti, 
+        .input_frm .put {
+            height: 37.5px;
+            line-height: 35px;
+            font-size: 14px;
+            select {
+                height: 32px;
+                font-size: 14px;
+            }
+        }
+        .input_frm .put {
+            flex: 4;
+        }
+        .input_frm li .ti {
+            padding-top: 2px;
+        }
+    }
+    .leave_help {
+        margin-bottom: 40px;
+        li, 
+        li * {
+            font-size: 14px;
+        }
+    }
+    .benefit {
+        border-top-width: 2px;
+        th, 
+        td {
+            width: calc(100% / 4);
+        }
+    }
+    .reason {
+        .input_frm {
+            margin-top: -10px;
+        }
+        .chk {
+            input[type="checkbox"]+label {
+                font-size: 14px;
+                font-weight: 400;
+                &[for='chagre'] {
+                    position: relative;
+                    padding-left: 30px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 7.5px;
+                }
+            }
+        }
+    }
+    .btnwrap.btn_foo {
+        margin: 40px 0 0;
+    }
+}
+/* 20221109 E */

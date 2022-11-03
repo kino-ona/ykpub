@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="../common/images/common/favicon_default.png" type="image/x-icon">
+    <meta name="title" content="유한킴벌리" />
+    <meta name="keywords" content="유한킴벌리">
+    <meta name="description" content="유한킴벌리" />
+    <title>유한킴벌리</title>
+    <script type="text/javascript" src="../../../Scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../../Scripts/jquery-ui-1.11.4.min.js"></script>
+    <link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_mobile.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../common/css/sso.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="#"><span class="a11y_sr-only">유한킴벌리</span><span class="txt">개인정보관리</span></a></h1>
+			</div>
+		</header>
+
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="my_wrap leave">
+					<h2 class="tit">회원 탈퇴</h2>
+                    <div class="my_inner">
+                      <div class="join_form">
+                        <h2 class="h2_ti">서비스 탈퇴</h2>
+                        <ul class="terms_chk">
+                          <li class="first">
+                            <p><input type="checkbox" id="allchk" checked><label for="allchk">모든 서비스 탈퇴</label></p>
+                          </li>
+                          <li class="sub_first">
+                            <p class="h2_subti">일부 서비스 해지</p>
+                            <p><input type="checkbox" id="chk01" checked><label for="chk01"><span class="in">맘큐 서비스 해지</span></label></p>
+                          </li>
+                          <li>
+                            <p><input type="checkbox" id="chk02" checked><label for="chk02"><span class="in">오늘 플러스 서비스 해지</span></label></p>
+                          </li>
+                          <li>
+                            <p><input type="checkbox" id="chk03" checked><label for="chk03"><span class="in">통합 브랜드 서비스 해지</span></label></p>
+                          </li>
+                          <li>
+                            <p><input type="checkbox" id="chk04" checked><label for="chk04"><span class="in">달다방 서비스 해지</span></label></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+					<div class="memberfrm">
+						<h2 class="h2_ti">포인트 / 쿠폰 현황</h2>
+						<p class="desc">보유한 포인트 및 쿠폰이 모두 삭제됩니다.</p>
+						<table class="benefit">
+                            <thead>
+                                <tr>
+                                    <th>사이트</th>
+                                    <th>포인트</th>
+                                    <th>쿠폰</th>
+                                    <th>진행중인 주문</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>맘큐</td>
+                                    <td>1,000P</td>
+                                    <td>3장</td>
+                                    <td>1건</td>
+                                </tr>
+                                <tr>
+                                    <td>오늘 플러스</td>
+                                    <td>0P</td>
+                                    <td>0장</td>
+                                    <td>0건</td>
+                                </tr>
+                            </tbody>
+						</table>
+
+						<h2 class="h2_ti">확인사항</h2>
+						<p class="desc">탈퇴 전 아래 내용을 확인해주세요.</p>
+						<ul class="leave_help">
+							<li><div class="num">1.</div>
+								<span>진행중인 주문,교환,반품이 있는 경우는 탈퇴가 불가능</span>합니다.
+								<p class="st">해당 거래의 구매확정 등 최종 처리 완료 후 탈퇴를 하실 수 있습니다.</p>
+							</li>
+							<li><div class="num">2.</div>
+								<span>탈퇴 후 90일간은 재가입이 불가능</span>합니다.
+								<p class="st">회원탈퇴 후 90일간은 재가입이 불가하며, 탈퇴한 ID는 재사용할 수 없습니다.</p>
+							</li>
+							<li><div class="num">3.</div>
+								탈퇴 시, 회원님의 <span>모든 정보가 삭제</span>됩니다.
+								<p class="st">보유 포인트. 쿠폰을 비롯한 모든 정보가 삭제되며 복구되지 않습니다.</p>
+								<p class="st">게시글 및 댓글은 탈퇴 시 자동 삭제되지 않으므로, 삭제를 원하는  경우 탈퇴 전 삭제하시기 바랍니다.</p>
+								<p class="st">관련 법률에 근거하여 거래 관련 권리의무관계의 확인 등을 이유로 일정기간 그 정보를 보유하여야 할 필요가 있을 경우 일정기간 동안 그 정보를 보유합니다.</p>
+							</li>
+						</ul>
+
+						<h2 class="h2_ti">탈퇴 사유</h2>
+						<p class="desc">탈퇴 사유를 선택해주세요.</p>
+						<div class="reason">
+							<ul class="input_frm">
+								<li>
+									<p class="ti">탈퇴 사유</p>
+									<p class="put">
+										<select>
+											<option>탈퇴 사유를 선택하세요.</option>
+										</select>
+									</p>
+								</li>
+							</ul>
+							<div class="chk">
+								<input type="checkbox" id="chagre"><label for="chagre">잔여 포인트, 쿠폰의 삭제 내용 및 회원탈퇴 확인사항의 내용을 확인하였습니다.</label>
+							</div>
+						</div>
+
+						<div class="btnwrap btn_foo half">
+							<a href="#" class="btn btnline">취소</a>
+							<a href="#" class="btn btn_blue btnfull">회원 탈퇴</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

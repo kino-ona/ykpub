@@ -1500,4 +1500,22 @@ footer.renewfoo {
         }
     }
 }
+.yklogototal {	
+    position: absolute;
+	left: 25px;
+	top: 23px;
+	width: 219px;
+	height: 32px;
+	background-size: 219px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../images/sso/yklogototal.png) !important;
+    span.txt {	
+        display: inline-block;
+        margin: -1px 0 0 230px;
+        font-size: 22px;
+        color: #313131;
+        vertical-align: top;
+    }
+}
 /* 20221109 E */

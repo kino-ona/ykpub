@@ -114,7 +114,7 @@
 
 							<ul class="terms_chk accordian accordian__item accordian__item--active" id="sso_terms">
 								<li class="first">
-									<p class="accordian__title blue"><input type="checkbox" id="sso_all" class="all_check"><label for="sso_all">SSO</label>
+									<p class="accordian__title blue"><input type="checkbox" id="sso_all" class="all_check"><label for="sso_all">유한킴벌리 통합회원</label><!-- 20221109 텍스트 변경//-->
 										<span class="accordian__button"></span>
 									</p>
 								</li>
@@ -125,8 +125,8 @@
 											<input type="checkbox" name="sso_terms_agree" id="termsNo1" data-id="1" class=" required " readonly>
 											<label for="termsNo1">
 												<span class="in">
-													<span class=" esse ">(필수) </span>유한킴벌리 SSO회원 이용약관
-												</span>
+													<span class=" esse ">(필수) </span>유한킴벌리 통합회원 이용약관
+												</span><!-- 20221109 텍스트 변경//-->
 											</label>
 										</p>
 										<a href="javascript:;" class="btn_vw openLayer" data-hash="#sso_terms_agree_layer">보기</a>
@@ -739,7 +739,7 @@
 		<div class="layerwrap termslay">
 			<a class="btn_close sso_terms_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>유한킴벌리 SSO회원 이용약관</p>
+				<p>유한킴벌리 통합회원 이용약관</p><!-- 20221109 텍스트 변경//-->
 			</div>
 			<div class="layconts">
 				<div class="inscroll termsarea">
@@ -976,12 +976,12 @@
 		<div class="layerwrap termslay">
 			<a class="btn_close sso_privacy_agree_layer_close"><span class="a11y_sr-only">close</span></a>
 			<div class="layhead">
-				<p>유한킴벌리 SSO회원 개인정보 수집 및 이용</p>
+				<p>유한킴벌리 통합회원 개인정보 수집 및 이용</p><!-- 20221109 텍스트 변경//-->
 			</div>
 			<div class="layconts">
 				<div class="inscroll termsarea">
 					<table class="termstable">
-						<caption>유한킴벌리 SSO회원 개인정보 수집 및 이용</caption>
+						<caption>유한킴벌리 통합회원 개인정보 수집 및 이용</caption><!-- 20221109 텍스트 변경//-->
 						<colgroup>
 							<col style="width:30%">
 							<col style="width:40%">
@@ -2726,7 +2726,7 @@
 					$('.result .search .recommender_userid', layer).text(res.userid);
 				},
 				error: function (res) {
-					alert('SSO회원이 아니거나 휴면 계정인 경우 추천인 ID로 입력 할 수 없습니다. 다시 확인 후 입력해주세요.');
+					alert('유한킴벌리 통합회원이 아니거나 휴면 계정인 경우 추천인 ID로 입력 할 수 없습니다. 다시 확인 후 입력해주세요.'); //<!-- 20221109 텍스트 변경//-->
 					// var errors = res.responseJSON;
 					// $('.result', layer).show();
 					// if (errors.errorType == 'recommender') {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="title" content="유한킴벌리" />
+	<meta name="keywords" content="유한킴벌리">
+	<meta name="description" content="유한킴벌리" />
+	<link rel="stylesheet" href="../css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/reset_mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/pome.css" type="text/css" media="all">
+	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
+	<script>
+		// window.dataLayer = [{
+		//   "site_code": "",
+		//   "dimension4": ""
+		// }];
+	</script>
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager -->
+	<!-- End Google Tag Manager -->
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.11.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.popupoverlay.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<div class="row">
+				<h1 class="brandlogo"><a href="javascript:void(0);"><span class="a11y_sr-only">유한킴벌리</span></a></h1>
+				<p class="childlogo"><a href="https://momq.co.kr/"><span class="a11y_sr-only">momQ</span></a></p>
+			</div>
+		</header>
+		<div id="container" class="contents">
+			<div class="row">
+				<div class="join_wrap pophtml">
+					<h2 class="h2_ti">유한킴벌리 통합회원</h2>  <!-- 20211025 추가 //--><!-- 20221109 텍스트 변경//-->
+					<p class="tit">고객님은 유한킴벌리 통합회원과 카카오 간편로그인을 모두 이용중입니다.</p><!-- 20221109 텍스트 변경//-->
+                    <p class="tit">회원정보를 통합하여 서비스를 이용해주세요.</p>
+					<div class="inner _shadowed">
+						<p class="innertit">유한킴벌리 통합회원 아이디</p><!-- 20221109 텍스트 변경//-->
+						<p><em>abc****</em></p>
+                        <div class="btnwrap">
+                            <a href="#" class="btn">아이디 찾기</a>
+                            <a href="#" class="btn">비밀번호 찾기</a>
+					    </div>
+					</div>
+          <div class="login_frm">
+            <form name="loginFrm" method="POST" action="/login">
+              <input type="hidden" name="_token" value=""> 
+              <input type="hidden" name="recaptcha_token" value="">
+              <div class="line">
+                <p class="ti">아이디</p>
+                <p class="frm">
+                  <input type="text" name="userid" value="" maxlength="" placeholder="4~12자, 영문 및 숫자">
+                </p>
+              </div>
+              <div class="line">
+                <p class="ti">비밀번호</p>
+                <p class="frm masking">
+                  <input type="password" name="password" maxlength="" placeholder="비밀번호를 입력해주세요.">
+                  <button type="button" class="btn_masking"><i class="ic_hide"></i></button>
+                </p>
+              </div>
+              <div class="chk">
+                <input type="checkbox" name="id_saved" id="idsave"><label for="idsave">회원정보 통합 확인을 위한 개인정보 수집 동의</label>
+              </div>
+            </form>
+          </div>
+          <div class="btnwrap">
+						<!-- 20211021 SSO 카카오싱크 적용 수정 -->
+            <a href="#" class="btn btn_next">확인</a>
+						<!--// 20211021 SSO 카카오싱크 적용 수정 -->
+          </div>
+          
+					<!-- 20211021 SSO 카카오싱크 적용 수정 -->
+          <p class="snoti warn">카카오 간편로그인은 회원정보 통합신청 완료 후 이용 가능합니다.</p><!-- 20211222 문구 수정 //-->
+          <p class="snoti warn">기존에 가입하신 적이 없으시다면 <a href="tel:080-022-7007">고객센터(080-022-7007)</a> 로 문의해주세요.</p>
+					<!--// 20211021 SSO 카카오싱크 적용 수정 -->
+        </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

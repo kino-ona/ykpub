@@ -1515,3 +1515,53 @@ footer.renewfoo {
     }
 }
 /* 20221109 E */
+/* 20221109 s */
+.sso_intro {
+    max-width: 1400px;
+    .logo {
+        background-image: url(../images/sso/index_logo2022.png);
+    }
+    .toparea {
+        max-width: 1400px;
+        .row {
+            .fig {
+                top: 128px;
+                width: 642px;
+                height: 597px;
+                background-image: url(../images/sso/ssointro2022.png);
+                background-size: contain;
+            }
+            .desc .detail {
+                margin-top: 30px;
+            }
+        }
+    }
+    section {
+        &:first-of-type {
+            .ititle {
+                dd {
+                    &:before {
+                        content: "";
+                        top: 12px;
+                    }
+                }
+            }
+        }
+        .history {
+            display: flex;
+            flex-direction: column-reverse;
+            li .desc {
+                padding: 0;
+            }
+        }
+    }
+    .logo_list {
+        .logos_huggies {
+            background-image: url(../images/sso/logo_huggies.png);
+        }
+        .logos_gnight {
+            background-image: url(../images/sso/logo_gnight.png);
+        }
+    }
+}
+/* 20221109 e */

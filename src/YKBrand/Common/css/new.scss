@@ -541,49 +541,7 @@ html, body { width: 100%; height: 100%; min-height: 100vh; min-width: 1280px; li
 }
 // 20210124 e
 
-/*POME*/
-p, span, li{word-break: keep-all;}
-.pd-zero {padding:0px !important;}
-.pd-lr20 {padding:0px 20px !important;}
-
-.pome_mlayer > h3 {position: relative;display: block;padding-left:20px;background-color: #139fdf;color:#fff;text-align: left;font-size: 18px;}
-.pome_mlayer .btn_close {position:absolute;right:0;top:0;width:50px;}
-.pome_mlayer .btn_close img {width:50px;}
-.pome_mlayer .popCont {width:calc(100% - 50px);padding:25px;color:#000;}
-.pome_mlayer p {font-size: 15px;line-height:20px;font-weight: 400;word-break: keep-all;}
-.pome_mlayer .btnwrap {margin-top:20px;text-align: center;overflow: hidden;}
-.pome_mlayer .btnwrap .btn { display: inline-block;width:calc((100% / 2) - 5px);height:45px;line-height:45px; font-size: 15px;color:#fff;text-align: center; }
-.pome_mlayer .btnwrap .btn_login {float:left;background-color: #78777b;}
-.pome_mlayer .btnwrap .btn_join {float:right;background-color: #139fdf;}
-.pome_event-head:after { clear: both; content: ''; display: block }
-.pome_event-head .yk-logo { width: 160px; margin: 15px 0 0 10px }
-.pome_event-head .brand-logo { position:absolute; right:0px; }
-
-.pome_child {margin-top:40px;}
-.pome_child .select_chk {margin:0;}
-.pome_child .btnwrap {text-align: right;}
-.pome_child .btnwrap .btn_del {border:0;color:#888888;font-size: 14px;border-bottom:1px solid #888888}
-.pome_child .input_frm {clear:both;margin-bottom:15px;border-top:2px solid #009fe3;}
-.pome_child .input_frm li{padding:13px 0 10px;margin-bottom:0;}
-.pome_child .input_frm .ti {width: 80px;}
-.pome_child .input_frm .put {width:calc(100% - 80px)}
-.pome_child .input_frm .put select{min-width:60px;vertical-align: middle}
-.pome_child .input_frm .put input[type=text] {width:calc(100% - 130px);margin-bottom:0;vertical-align: middle}
-@media screen and (max-width:600px) {
-    .pome_child .input_frm .put input[type=text] {width:calc(100% - 107px);margin-bottom:0;vertical-align: middle}
-}
-.pome_child .input_frm .sel .t {font-size: 12px;}
-.pome_child .select_chk .rchk {display: inline-block;margin-right:20px;}
-.pome_child .addbtnwrap{display: inline-block;position: relative;width:100%;margin-bottom:20px;}
-.pome_child .addbtnwrap:after {content: '';clear:both;display: block;}
-.pome_child .addbtnwrap .addlist { display: none;position: absolute;top:32px;width:100%;border:1px solid #dddddd;background-color:#fff;z-index: 1; }
-.pome_child .addbtnwrap .addlist li {padding:5px 10px;font-size: 12px;}
-.pome_child .addbtnwrap .addlist li:hover {background-color: #f4f6f8;}
-.pome_child .btn_areadd { position: relative;display: inline-block;width:100%;padding:0 10px 0 30px;height:33px;line-height:31px;color:#222;border:1px solid #dddddd;text-align: right;font-size: 12px; background:url(/images/pc/ico_plus.gif) no-repeat left 15px center;background-color:#fff;z-index: 10; }
-
-#pomeAccountLayer .title { width: 100%; min-width: 10px; display: inline-block; padding: 0 10px; height: 40px; line-height: 36px; background-color: #009fe3; color: #fff;}
-#pomeAccountLayer .btnwrap .bc-blue {background-color: #009fe3; border: 0; text-align: center; color: #fff;}
-#pomeAccountLayer .btnwrap .txt-center {text-align:center !important;}
+#pomeAccountLayer .btnwrap > * {font-size: 18px !important;}
 
 /* footer */
 footer { height: 205px; padding: 20px 0 0 15px; font-size: 11px; color: #c5c5c5; background: #202020; position: relative; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
@@ -682,7 +640,6 @@ span.br {display: block;}
 .bg-color-blue {background-color:#009fe3 !important; border-color:#fff; color:#fff;}
 
 /* layer */
-.recommidlay {padding: 40px 40px !important;}
 .recommidlay .putfrm li{padding:5px 0;margin-bottom:10px;border-bottom:1px solid #dddddd;}
 .recommidlay .putfrm li:after{content: '';display: block;clear:both;}
 .recommidlay .hid {display: none;}

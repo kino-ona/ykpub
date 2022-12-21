@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pc.css?v=0.3.0">
 	<link rel="stylesheet" href="../../Common/css/new.css">
 	<link rel="stylesheet" href="../../Common/css/event.css">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css">
   <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery-ui-1.11.4.min.js"></script>
   <script type="text/javascript" src="https://www.yksso.co.kr/js/jquery.popupoverlay.js"></script>
@@ -29,135 +30,139 @@
 	<!-- skip_nav -->
 	<a href="#contents" class="skip">본문 바로가기</a>
 	<!-- wrap -->
-	<div id="wrap">
-		<div id="contents">
-			<!-- container -->
-			<div class="container" id="container">
-				<form method="post">
+	<div class="sso_wrap">
+		<header class="sso_head">
+			<p class="clearfix pome_event-head">
+				<a href="javascript:;">
+					<img class="yk-logo" style="width:100px;" src='https://www.yksso.co.kr/images/pome/h1_logo.png' alt="유한킴벌리" />
+				</a>
+			</p>
+		</header>
+		<!-- container -->
+		<div class="container" id="container">
+			<form method="post">
 
-					<div class="conts">
-						<div class="pome_event type01">
-							<div class="event_info inT">
-								<h1 class="logo"><img src="../../Common/images/common/logo_huggies_default.png" alt="Huggies" /></h1>
-								<h2><span class="small">산부인과/산후조리원 엄마들을 위한</span> <strong>하기스 선물팩</strong> <strong>신청 이벤트</strong></h2>
-								<p>
-									새 가족을 맞이하신 것을 진심으로 축하드립니다!<br>
-									아기와의 설레는 첫 만남을 하기스와 함께 준비해 보세요!<br>
-									지금 신청하시면, 하기스에서 준비한 선물을 드려요.
-								</p>
-							</div>
-							<div class="visual">
-								<img src="../../Common/images/event/huggies_event_visual.jpg" alt="하기스 네이처메이드 밴드형 2단계 10P" />
-								<span class="desc">하기스 네이처메이드 밴드형 2단계 10P</span>
-							</div>
-							<div class="section">
-								<h3>어떻게 신청하나요?</h3>
-								<ol class="row">
-									<li>
-										<span>01</span>맘큐 회원가입 후 <br>이벤트 신청해 <br>주세요.
-									</li>
-									<li>
-										<span>02</span>입력하신 휴대폰 번호로 <br>이벤트 신청 완료 <br>문자가 발송됩니다.
-									</li>
-									<li>
-										<span>03</span>문자를 담당자에게 <br>보여 주시고 선물과 <br>교환하세요.
-									</li>
-								</ol>
-							</div>
-							<div class="white">
-								<div class="row" style="background-image: url(../../Common/images/event/huggies-info_banner.jpg);">
-									<h3>
-										<div class="title">행복한 우리 아기를 위해, 하기스</div>소중한 우리 아기, 첫 기저귀 시작은 최고여야 하니까 국내 NO.1 기저귀*, 하기스와 시작해 보세요!
-									</h3>
-									<div class="desc">*점유율 연속 1위, 칸타 소비자 패널 서비스, 한국 유통시장의 아기종이기저귀 카테고리, <br>2009년~2022년 (Copyright © 2022,
-										Kantar)</div>
-								</div>
-
-								<div class="giftpack_form">
-									<div class="join_wrap pd-lr20">
-										<!-- 필수 정보 입력 -->
-										<form name="pomeFrm" method="POST" action="/event/pome">
-												<input type="hidden" name="_token" value="MVSdYvRXV8pTlJ8mE9e7XNHcAuPboZeXUcNjJrlw" />            
-												<div class="join_form">
-														<ul class="input_frm">
-																<li>
-																		<p class="ti">이름(신청자) <span> *</span> </p>
-																		<p class="put">
-																				<input type="text" name="name" value="" readonly="readonly"/>
-																		</p>
-																</li>
-																<li>
-																		<p class="ti">휴대폰 번호 <span> *</span> </p>
-																		<p class="put">
-																				<input type="text" name="mobile" value=""  readonly="readonly"/>
-																		</p>
-																		<span class="esse"> 입력하신 휴대폰 번호로 이벤트 신청 완료 문자가 발송됩니다. </span>
-																</li>
-																	
-																<li>
-																			
-																		<p class="ti">산후조리원명 <span> *</span> </p>
-																														<p class="put">
-																				<input type="text" name="maternity_name" value="" />
-																		</p>
-																</li>
-																										<li>
-																		<!-- 아이추가 영역 -->
-																		<div class="pome_child childadd">
-																				<div class="addbtnwrap">
-																						<a href="javascript:;" class="btn_areadd"><span>아이추가</span></a>
-																						<ul class="addlist" style="display:none;">
-																								<li class="action_child_add" data-child="1"><a href="javascript:;">아이추가</a></li>
-																								<li class="action_child_add" data-child="2"><a href="javascript:;">쌍둥이 추가</a></li>
-																								<li class="action_child_add" data-child="3"><a href="javascript:;">세쌍둥이 추가</a></li>
-																								<li class="action_child_add" data-child="4"><a href="javascript:;">네쌍둥이 추가</a></li> 
-																						</ul>
-																				</div>
-																		</div>
-																		<!--// 아이추가 영역 -->
-																</li>
-														</ul>
-												</div> <!-- join_form -->
-						
-												<!-- 맘큐, POME, 모닛 유입시 -->
-												<input type="hidden" name="child_info" value="" />
-						
-												<!-- 20201005 아이정보 수집 동의 -->
-												<div class="join_form">
-														<ul class="terms_chk _child">
-																<li>
-																		<p>
-																				<input type="hidden" name="momq_children_info_agree" value="N">
-																				<input type="checkbox" name="chk_momq_children_info_agree" id="childck01">
-																				<label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label>
-																		</p>
-																		<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_children_info_agree_layer">보기</a>
-																</li>
-														</ul>
-												</div>
-												<!--// 20201005 -->
-										</form>
-									</div>
-									<div class="pome_event btnWrap" style="margin-top: 80px;">
-											<a class="present_regist" href="javascript:;" style="background:#e01a22">선물 신청하기</a>
-									</div>
-									<div class="inT noti_guide">
-											<p class="ti">이벤트 신청 안내</p>
-											<ul class="blue_blet_lst">
-													<li>신청 정보를 모두 입력 하신 후 <span class="com">‘선물 신청하기’</span> 버튼을 클릭해주세요. 이벤트 신청 완료 문자가 입력하신 휴대폰으로 발송됩니다.</li>
-													<li>유한킴벌리 통합회원이 아니신 경우 회원 가입 후 신청 가능하며, 이미 회원이신 경우는 사용하시던 아이디로 로그인해 주세요. </li>
-											</ul>
-									</div>
-								</div>
-							</div>
-
+				<div class="conts">
+					<div class="pome_event">
+						<div class="event_info inT">
+							<h1 class="logo"><img src="../../Common/images/common/logo_huggies_default.png" alt="Huggies" /></h1>
+							<h2><span class="small">산부인과/산후조리원 엄마들을 위한</span> <strong>하기스 선물팩</strong> <strong>신청 이벤트</strong></h2>
+							<p>
+								새 가족을 맞이하신 것을 진심으로 축하드립니다!<br>
+								아기와의 설레는 첫 만남을 하기스와 함께 준비해 보세요!<br>
+								지금 신청하시면, 하기스에서 준비한 선물을 드려요.
+							</p>
 						</div>
+						<div class="visual">
+							<img src="../../Common/images/event/huggies_event_visual.jpg" alt="하기스 네이처메이드 밴드형 2단계 10P" />
+							<span class="desc">하기스 네이처메이드 밴드형 2단계 10P</span>
+						</div>
+						<div class="section">
+							<h3>어떻게 신청하나요?</h3>
+							<ol class="row">
+								<li>
+									<span>01</span>맘큐 회원가입 후 <br>이벤트 신청해 <br>주세요.
+								</li>
+								<li>
+									<span>02</span>입력하신 휴대폰 번호로 <br>이벤트 신청 완료 <br>문자가 발송됩니다.
+								</li>
+								<li>
+									<span>03</span>문자를 담당자에게 <br>보여 주시고 선물과 <br>교환하세요.
+								</li>
+							</ol>
+						</div>
+						<div class="white">
+							<div class="row" style="background-image: url(../../Common/images/event/huggies-info_banner.jpg);">
+								<h3>
+									<div class="title">행복한 우리 아기를 위해, 하기스</div>소중한 우리 아기, 첫 기저귀 시작은 최고여야 하니까 국내 NO.1 기저귀*, 하기스와 시작해 보세요!
+								</h3>
+								<div class="desc">*점유율 연속 1위, 칸타 소비자 패널 서비스, 한국 유통시장의 아기종이기저귀 카테고리, <br>2009년~2022년 (Copyright © 2022,
+									Kantar)</div>
+							</div>
+
+							<div class="giftpack_form">
+								<div class="join_wrap pd-lr20">
+									<!-- 필수 정보 입력 -->
+									<form name="pomeFrm" method="POST" action="/event/pome">
+											<input type="hidden" name="_token" value="MVSdYvRXV8pTlJ8mE9e7XNHcAuPboZeXUcNjJrlw" />            
+											<div class="join_form">
+													<ul class="input_frm">
+															<li>
+																	<p class="ti">이름(신청자) <span> *</span> </p>
+																	<p class="put">
+																			<input type="text" name="name" value="" readonly="readonly"/>
+																	</p>
+															</li>
+															<li>
+																	<p class="ti">휴대폰 번호 <span> *</span> </p>
+																	<p class="put">
+																			<input type="text" name="mobile" value=""  readonly="readonly"/>
+																	</p>
+																	<span class="esse"> 입력하신 휴대폰 번호로 이벤트 신청 완료 문자가 발송됩니다. </span>
+															</li>
+																
+															<li>
+																		
+																	<p class="ti">산후조리원명 <span> *</span> </p>
+																													<p class="put">
+																			<input type="text" name="maternity_name" value="" />
+																	</p>
+															</li>
+																									<li>
+																	<!-- 아이추가 영역 -->
+																	<div class="pome_child childadd">
+																			<div class="addbtnwrap">
+																					<a href="javascript:;" class="btn_areadd"><span>아이추가</span></a>
+																					<ul class="addlist" style="display:none;">
+																							<li class="action_child_add" data-child="1"><a href="javascript:;">아이추가</a></li>
+																							<li class="action_child_add" data-child="2"><a href="javascript:;">쌍둥이 추가</a></li>
+																							<li class="action_child_add" data-child="3"><a href="javascript:;">세쌍둥이 추가</a></li>
+																					</ul>
+																			</div>
+																	</div>
+																	<!--// 아이추가 영역 -->
+															</li>
+													</ul>
+											</div> <!-- join_form -->
+					
+											<!-- 맘큐, POME, 모닛 유입시 -->
+											<input type="hidden" name="child_info" value="" />
+					
+											<!-- 20201005 아이정보 수집 동의 -->
+											<div class="join_form">
+													<ul class="terms_chk _child">
+															<li>
+																	<p>
+																			<input type="hidden" name="momq_children_info_agree" value="N">
+																			<input type="checkbox" name="chk_momq_children_info_agree" id="childck01">
+																			<label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label>
+																	</p>
+																	<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_children_info_agree_layer">보기</a>
+															</li>
+													</ul>
+											</div>
+											<!--// 20201005 -->
+									</form>
+								</div>
+								<div class="btnWrap" style="margin-top: 80px;">
+										<a class="present_regist" href="javascript:;" style="background:#e01a22">선물 신청하기</a>
+								</div>
+								<div class="inT noti_guide">
+										<p class="ti">이벤트 신청 안내</p>
+										<ul class="blue_blet_lst">
+												<li>신청 정보를 모두 입력 하신 후 <span class="com">‘선물 신청하기’</span> 버튼을 클릭해주세요. 이벤트 신청 완료 문자가 입력하신 휴대폰으로 발송됩니다.</li>
+												<li>유한킴벌리 통합회원이 아니신 경우 회원 가입 후 신청 가능하며, 이미 회원이신 경우는 사용하시던 아이디로 로그인해 주세요. </li>
+										</ul>
+								</div>
+							</div>
+						</div>
+
 					</div>
+				</div>
 
-				</form>
-			</div>
-
+			</form>
 		</div>
+
 	</div>
 
 	<!-- 약관 레이어  -->

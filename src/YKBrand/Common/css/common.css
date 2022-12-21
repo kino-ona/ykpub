@@ -656,7 +656,8 @@ header .headerCont .allMenu {
   color: #ffffff;
 }
 #gnb .depth {
-  position: top:50px;
+  position: absolute;
+  top:50px;
   left: 0;
   padding-bottom: 25px;
   border-bottom: 1px solid #dedede;

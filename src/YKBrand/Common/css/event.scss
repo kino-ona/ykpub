@@ -231,36 +231,6 @@ footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-footer .flogo {
-  height: 28px;
-}
-footer .flogo a {
-  color: #c5c5c5;
-  display: inline-block;
-  margin-left: 10px;
-}
-footer .flogo img {
-  width: 67px;
-}
-address {
-  font-style: normal;
-}
-footer .info {
-  overflow: hidden;
-}
-footer .info li {
-  float: left;
-  margin-right: 7px;
-}
-footer .info li:nth-child(3) {
-  clear: both;
-}
-footer .email {
-  display: inline-block;
-  height: 27px;
-  color: #c5c5c5;
-  text-decoration: underline;
-}
 .noScroll {
   overflow: hidden;
   display: block;

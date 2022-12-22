@@ -1,5 +1,8 @@
+.gitignore
 node_modules
 .Ds_Store
+dist/
 dist/yk_pub/
 dist/___ykpub/
 bigdata_bak
+*.min.css

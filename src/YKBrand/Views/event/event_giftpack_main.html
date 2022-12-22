@@ -39,38 +39,40 @@
 			</p>
 		</header>
 		<!-- container -->
-		<div class="container" id="container">
+		<div id="container">
 			<form method="post">
 
-				<div class="conts">
 					<div class="pome_event">
-						<div class="event_info inT">
-							<h1 class="logo"><img src="../../Common/images/common/logo_huggies_default.png" alt="Huggies" /></h1>
-							<h2><span class="small">산부인과/산후조리원 엄마들을 위한</span> <strong>하기스 선물팩</strong> <strong>신청 이벤트</strong></h2>
-							<p>
-								새 가족을 맞이하신 것을 진심으로 축하드립니다!<br>
-								아기와의 설레는 첫 만남을 하기스와 함께 준비해 보세요!<br>
-								지금 신청하시면, 하기스에서 준비한 선물을 드려요.
-							</p>
+						<div class="conts">
+							<div class="event_info inT">
+								<h1 class="logo"><img src="../../Common/images/common/logo_huggies_default.png" alt="Huggies" /></h1>
+								<h2><span class="small">산부인과/산후조리원 엄마들을 위한</span> <strong>하기스 선물팩</strong> <strong>신청 이벤트</strong></h2>
+								<p>
+									새 가족을 맞이하신 것을 진심으로 축하드립니다!<br>
+									아기와의 설레는 첫 만남을 하기스와 함께 준비해 보세요!<br>
+									지금 신청하시면, 하기스에서 준비한 선물을 드려요.
+								</p>
+							</div>
+							<div class="visual">
+								<img src="../../Common/images/event/huggies_event_visual.jpg" alt="하기스 네이처메이드 밴드형 2단계 10P" />
+								<span class="desc">하기스 네이처메이드 밴드형 2단계 10P</span>
+							</div>
+							<div class="section">
+								<h3>어떻게 신청하나요?</h3>
+								<ol class="row">
+									<li>
+										<span>01</span>맘큐 회원가입 후 <br>이벤트 신청해 <br>주세요.
+									</li>
+									<li>
+										<span>02</span>입력하신 휴대폰 번호로 <br>이벤트 신청 완료 <br>문자가 발송됩니다.
+									</li>
+									<li>
+										<span>03</span>문자를 담당자에게 <br>보여 주시고 선물과 <br>교환하세요.
+									</li>
+								</ol>
+							</div>
 						</div>
-						<div class="visual">
-							<img src="../../Common/images/event/huggies_event_visual.jpg" alt="하기스 네이처메이드 밴드형 2단계 10P" />
-							<span class="desc">하기스 네이처메이드 밴드형 2단계 10P</span>
-						</div>
-						<div class="section">
-							<h3>어떻게 신청하나요?</h3>
-							<ol class="row">
-								<li>
-									<span>01</span>맘큐 회원가입 후 <br>이벤트 신청해 <br>주세요.
-								</li>
-								<li>
-									<span>02</span>입력하신 휴대폰 번호로 <br>이벤트 신청 완료 <br>문자가 발송됩니다.
-								</li>
-								<li>
-									<span>03</span>문자를 담당자에게 <br>보여 주시고 선물과 <br>교환하세요.
-								</li>
-							</ol>
-						</div>
+
 						<div class="white">
 							<div class="row" style="background-image: url(../../Common/images/event/huggies-info_banner.jpg);">
 								<h3>
@@ -79,81 +81,146 @@
 								<div class="desc">*점유율 연속 1위, 칸타 소비자 패널 서비스, 한국 유통시장의 아기종이기저귀 카테고리, <br>2009년~2022년 (Copyright © 2022,
 									Kantar)</div>
 							</div>
-
+						</div>
+						<div class="white">
 							<div class="giftpack_form">
 								<div class="join_wrap pd-lr20">
-									<!-- 필수 정보 입력 -->
-									<form name="pomeFrm" method="POST" action="/event/pome">
-											<input type="hidden" name="_token" value="MVSdYvRXV8pTlJ8mE9e7XNHcAuPboZeXUcNjJrlw" />            
-											<div class="join_form">
-													<ul class="input_frm">
-															<li>
-																	<p class="ti">이름(신청자) <span> *</span> </p>
-																	<p class="put">
-																			<input type="text" name="name" value="" readonly="readonly"/>
-																	</p>
-															</li>
-															<li>
-																	<p class="ti">휴대폰 번호 <span> *</span> </p>
-																	<p class="put">
-																			<input type="text" name="mobile" value=""  readonly="readonly"/>
-																	</p>
-																	<span class="esse"> 입력하신 휴대폰 번호로 이벤트 신청 완료 문자가 발송됩니다. </span>
-															</li>
-																
-															<li>
-																		
-																	<p class="ti">산후조리원명 <span> *</span> </p>
-																													<p class="put">
-																			<input type="text" name="maternity_name" value="" />
-																	</p>
-															</li>
-																									<li>
-																	<!-- 아이추가 영역 -->
-																	<div class="pome_child childadd">
-																			<div class="addbtnwrap">
-																					<a href="javascript:;" class="btn_areadd"><span>아이추가</span></a>
-																					<ul class="addlist" style="display:none;">
-																							<li class="action_child_add" data-child="1"><a href="javascript:;">아이추가</a></li>
-																							<li class="action_child_add" data-child="2"><a href="javascript:;">쌍둥이 추가</a></li>
-																							<li class="action_child_add" data-child="3"><a href="javascript:;">세쌍둥이 추가</a></li>
-																					</ul>
-																			</div>
-																	</div>
-																	<!--// 아이추가 영역 -->
-															</li>
-													</ul>
-											</div> <!-- join_form -->
-					
-											<!-- 맘큐, POME, 모닛 유입시 -->
-											<input type="hidden" name="child_info" value="" />
-					
-											<!-- 20201005 아이정보 수집 동의 -->
-											<div class="join_form">
-													<ul class="terms_chk _child">
-															<li>
-																	<p>
-																			<input type="hidden" name="momq_children_info_agree" value="N">
-																			<input type="checkbox" name="chk_momq_children_info_agree" id="childck01">
-																			<label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label>
-																	</p>
-																	<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_children_info_agree_layer">보기</a>
-															</li>
-													</ul>
-											</div>
-											<!--// 20201005 -->
-									</form>
+									<!-- 아이추가 영역 -->
+									<div class="childadd">
+										<ul class="input_frm" style="border-top: 0;">
+											<li>
+												<p class="ti">이름</p>
+												<p class="put">
+													<input type="text" placeholder="김유한">
+												</p>
+											</li>
+											<li>
+												<p class="ti">휴대폰 번호</p>
+												<p class="put">
+													<input type="text" placeholder="000-0000-0000">
+												</p>
+											</li>
+											<li>
+												<p class="ti">산부인과 명</p>
+												<p class="put">
+													<input type="text" name="name" value="" placeholder="산부인과 명을 입력해주세요." readonly>
+													<button type="button" class="btn btn_small">검색</button>
+												</p>
+												<p class="put sel">
+														<select>
+																<option value="산부인과 명">산부인과 명</option>
+														</select>
+												</p>
+											</li>
+										</ul>
+										<div class="addbtnwrap">
+											<a href="javascript:;" onclick="selOpen(this);return false" class="btn_areadd"><span>아이추가</span></a>
+											<ul class="addlist" style="display:none;">
+													<li class="action_child_add" data-child="1"><a href="javascript:;" onclick="childAddSel(this);return false">아이추가</a></li>
+													<li class="action_child_add" data-child="2"><a href="javascript:;" onclick="childAddSel(this);return false">쌍둥이 추가</a></li>
+													<li class="action_child_add" data-child="3"><a href="javascript:;" onclick="childAddSel(this);return false">세쌍둥이 추가</a></li>
+											</ul>
+										</div>
+										<ul class="input_frm">
+											<li>
+												<div class="ti">출산여부</div>
+												<div class="put">
+													<div class="select_chk">
+														<p class="rchk"><input type="radio" id="labor02" name="labor" checked><label for="labor02">출산 후</label></p>
+														<p class="rchk"><input type="radio" id="labor01" name="labor"><label for="labor01">출산 전</label></p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="ti">아이 태명</div>
+												<div class="put">
+													<input type="text">
+													<select>
+														<option>성별</option>
+													</select>
+												</div>
+											</li>
+											<li>
+												<div class="ti">아이 생일</div>
+												<div class="put sel">
+													<select>
+														<option>1991</option>
+													</select>
+													<span class="t">년</span>
+			
+													<select>
+														<option>12</option>
+													</select>
+													<span class="t">월</span>
+			
+													<select>
+														<option>31</option>
+													</select>
+													<span class="t">일</span>
+												</div>
+											</li>
+			
+											<li>
+												<div class="ti">출생예정일</div>
+												<div class="put sel">
+													<select>
+														<option>1991</option>
+													</select>
+													<span class="t">년</span>
+			
+													<select>
+														<option>12</option>
+													</select>
+													<span class="t">월</span>
+			
+													<select>
+														<option>31</option>
+													</select>
+													<span class="t">일</span>
+												</div>
+											</li>
+											<li>
+												<div class="ti">태아 주수</div>
+												<div class="put sel">
+													<select>
+														<option>10</option>
+													</select>
+													<span class="t">주</span>
+			
+													<select>
+														<option>100</option>
+													</select>
+													<span class="t">일</span>
+												</div>
+											</li>
+										</ul>
+										<div class="btnwrap">
+											<a href="#" onclick="childElDel(this);return false" class="btn_del">삭제</a>
+										</div>
+									</div>
+									<!--// 아이추가 영역 -->
+									<ul class="terms_chk _child">
+										<li class="first">
+											<p>
+												<input type="hidden" name="momq_children_info_agree" value="N">
+												<input type="checkbox" name="chk_momq_children_info_agree" id="childck01">
+												<label for="childck01"><span class="sel">(선택)</span> 개인정보 수집이용 동의</label>
+											</p>
+											<a href="javascript:;" class="btn_vw openLayer" data-hash="#momq_children_info_agree_layer">보기</a>
+										</li>
+									</ul>
 								</div>
 								<div class="btnWrap" style="margin-top: 80px;">
-										<a class="present_regist" href="javascript:;" style="background:#e01a22">선물 신청하기</a>
+										<a class="present_regist" href="javascript:;">선물팩 신청하기</a>
 								</div>
-								<div class="inT noti_guide">
-										<p class="ti">이벤트 신청 안내</p>
-										<ul class="blue_blet_lst">
-												<li>신청 정보를 모두 입력 하신 후 <span class="com">‘선물 신청하기’</span> 버튼을 클릭해주세요. 이벤트 신청 완료 문자가 입력하신 휴대폰으로 발송됩니다.</li>
-												<li>유한킴벌리 통합회원이 아니신 경우 회원 가입 후 신청 가능하며, 이미 회원이신 경우는 사용하시던 아이디로 로그인해 주세요. </li>
-										</ul>
-								</div>
+							</div>
+							<div class="inT noti_guide">
+									<p class="ti">선물팩 신청 유의사항</p>
+									<ul class="blue_blet_lst">
+											<li>신청 정보를 모두 입력 하신 후 <span class="com">‘선물팩 신청하기’</span> 버튼을 클릭해주세요, 입력하신 휴대폰 번호로 이벤트 신청 완료 문자가 발송됩니다.</li>
+											<li>유한킴벌리 통합회원이 아니신 경우, 회원가입 후 신청 가능합니다.</li>
+											<li>이미 유한킴벌리 통합회원이신 경우, 사용하시던 아이디로 로그인 후 신청 가능합니다.</li>
+									</ul>
 							</div>
 						</div>
 
@@ -164,43 +231,7 @@
 		</div>
 
 	</div>
-
-	<!-- 약관 레이어  -->
-	<div class="layerbody" id="momq_children_info_agree_layer" >
-		<div class="layerwrap termslay">
-			<a class="btn_close momq_children_info_agree_layer_close"><span class="a11y_sr-only">close</span></a>
-			<div class="layhead">
-				<p>개인정보 수집동의</p>
-			</div>
-			<div class="layconts">
-				<div class="inscroll termsarea">
-									<p>
-	<table class="termstable"><caption>개인정보 수집이용 동의[선택]<br></caption>
-			<colgroup><col style="width:30%"><col style="width:30%"><col style="*"></colgroup>
-			<thead>
-				<tr>
-				<th scope="col">수집·이용목적</th>
-				<th scope="col">수집·이용항목</th>
-				<th scope="col">보유 및 이용기간</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-				<td>깜짝쿠폰, 맞춤할인행사, 무료 샘플/체험단 등 이벤트 참여기회 제공</td>
-				<td style="border-left:1px solid #ddd;">출산여부, 이름, 성별, 생일, 임신주수</td>
-				<td rowspan="3" style="border-left:1px solid #ddd;font-weight: 700;">
-									아이정보 삭제 시까지 혹은 회원 탈퇴 시까지
-				</td>
-				</tr>
-			</tbody>
-		</table><p></p><p>* 고객님께서는 개인정보 수집 및 이용(선택) 동의에 거부하실 수 있습니다. 단, 거부할 경우 선택정보활용에 따른 위 서비스 이용에 제한이 있을 수 있습니다.</p><p></p><p></p></p>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--// 약관 레이어  -->
-
+	
 	<!-- 통합회원 안내 레이어 -->
 	<div id="pomeAccountLayer" class="layerbody">
 		<div class="layerwrap recommidlay">
@@ -210,18 +241,62 @@
 					</div>
 					<div class="layconts">
 							<p>
-									유한킴벌리 통합회원만 신청이 가능합니다.<br>
-									아직 회원이 아니시면 회원 가입,<br>
-									이미 회원이시라면 사용하시는 아이디로 로그인해주세요.
+								유한킴벌리 통합회원만 신청이 가능합니다. <br>
+								로그인 후 신청해주세요.
 							</p>
 							<div class="btnwrap btn_foo half">
-									<a href="#" class="btn btnline txt-center btn_login except_click">로그인</a>
-									<a href="#" class="btn btn_blue bc-blue btn_join except_click">회원가입</a>
+									<a href="https://www.yksso.co.kr/login?site_code=MOMQ" class="btn btnline txt-center btn_login except_click">로그인</a>
+									<a href="https://www.yksso.co.kr/account/join?site_code=MOMQ&sub_site_code=POME" class="btn btn_blue bc-blue btn_join except_click">회원가입</a>
 							</div>
 					</div>
 			</div>
 	</div>
 	<!--// 통합회원 안내 레이어 -->
+	<!-- 약관 레이어  -->
+	<div class="layerbody" id="momq_children_info_agree_layer">
+		<div class="layerwrap termslay">
+			<a class="btn_close momq_children_info_agree_layer_close"><span class="a11y_sr-only">close</span></a>
+			<div class="layhead">
+				<p>개인정보 수집동의</p>
+			</div>
+			<div class="layconts">
+				<div class="inscroll termsarea">
+					<p>
+						<table class="termstable">
+							<caption>개인정보 수집이용 동의[선택]<br></caption>
+							<colgroup>
+								<col style="width:30%">
+								<col style="width:30%">
+								<col style="*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">수집·이용목적</th>
+									<th scope="col">수집·이용항목</th>
+									<th scope="col">보유 및 이용기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>깜짝쿠폰, 맞춤할인행사, 무료 샘플/체험단 등 이벤트 참여기회 제공</td>
+									<td style="border-left:1px solid #ddd;">출산여부, 이름, 성별, 생일, 임신주수</td>
+									<td rowspan="3" style="border-left:1px solid #ddd;font-weight: 700;">
+										아이정보 삭제 시까지 혹은 회원 탈퇴 시까지
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<p>* 고객님께서는 개인정보 수집 및 이용(선택) 동의에 거부하실 수 있습니다. 단, 거부할 경우 선택정보활용에 따른 위 서비스 이용에 제한이 있을 수 있습니다.</p>
+						<p></p>
+						<p></p>
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 약관 레이어  -->
 
 	<template id="user_child_input">
 			<ul class="input_frm child_input_frm">
@@ -262,6 +337,18 @@
 									<span class="t">일</span>
 							</div>
 					</li>
+					<li class="child_name_gender_input">
+							<div class="ti">아이 <span class="chile_name_title">태명</span></div>
+							<div class="put">
+									<input type="text" class="child_name" name="" data-column="name">
+									<select class="pc-fix-w100 child_gender" name="" data-column="gender">
+											<option value="">성별</option>
+											<option value="MAN">남자</option>
+											<option value="WOMAN">여자</option>
+											<option value="UNKNOWN">아직모름</option>
+									</select>
+							</div>
+					</li>
 					<li class="labor_before">
 							<div class="ti">출생예정일</div>
 							<div class="put sel">
@@ -297,7 +384,6 @@
 			</ul>
 	</template>
 
-	<script type="text/javascript" src="https://www.yksso.co.kr/js/childs.js"></script>
 	<script type="text/javascript" >
 	var isLogin =  false ;
 	var submitEvent = false;
@@ -364,24 +450,40 @@
 		submitEvent = true;
 		f.submit();
 	}
-
 	</script>
+	<script>
+        $('select').on('click', function(){
+            $(this).css({'color': '#000'});
+        })
+		function selOpen(set){
+			$(set).next('.addlist').show();
+		}
+		function childAddSel(set){
+			var selval = $(set).text();
+			$('.addbtnwrap .btn_areadd').find('span').html(selval);
+			$(set).parents('.addlist').hide();
+		}
+		function childElDel(set){
+			$(set).parents('.childadd').remove();
+		}
+	</script>
+
 	<!-- footer -->
 	<footer>
-			<p class="flogo">
-					<img src="https://www.yksso.co.kr/images/pome/flogo.png" alt="유한킴벌리" />
-					<a href="https://momq.co.kr/m/contract.html" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
-					<a href="https://momq.co.kr/m/privacy.html" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
-			</p>
-			<address>주소 : 서울시 송파구 올림픽로 300 롯데월드타워 29층 (우)05551</address>
-			<ul class="info">
-					<li>대표자 : 진재승</li>
-					<li>사업자번호 : 120-81-11436</li>
-					<li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
-			</ul>
-			<a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
-			<p class="copy">Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.</p>
-			<img style="margin-top:16px; width:150px;" src="https://www.yksso.co.kr/images/pome/Web_img.png" alt="웹접근성 마크" />
+        <p class="flogo">
+            <img src="https://www.yksso.co.kr/images/pome/flogo.png" alt="유한킴벌리" />
+            <a href="https://momq.co.kr/m/contract.html" target="_blank" title="사이트이용약관 새창보기">사이트이용약관</a>
+            <a href="https://momq.co.kr/m/privacy.html" target="_blank" title="개인정보처리방침 새창보기" style="color: #16c1f3;font-weight:bold;">개인정보처리방침</a>
+        </p>
+        <address>주소 : 서울시 송파구 올림픽로 300 롯데월드타워 29층 (우)05551</address>
+        <ul class="info">
+            <li>대표자 : 진재승</li>
+            <li>사업자번호 : 120-81-11436</li>
+            <li>고객지원센터 : <a href="tel:080-022-7007">080-022-7007</a></li>
+        </ul>
+        <a href="https://www.yuhan-kimberly.co.kr/Mobile/Customer/Company" class="email" target="_blank" title="새창에서 열림">회사대표 이메일</a>
+        <p class="copy">Copyright ⓒ 2015 Yuhan-Kimberly. All right Reserved.</p>
+        <img style="margin-top:16px; width:150px;" src="https://www.yksso.co.kr/images/pome/Web_img.png" alt="웹접근성 마크" />
 	</footer>
 	<!-- //footer -->
 </body>

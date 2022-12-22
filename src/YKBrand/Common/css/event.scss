@@ -910,22 +910,28 @@ body.event_giftpack {
           .event_info {
              max-width: calc(100% - 30px);
              h2 {
-              span.small {
-                margin-bottom: 15px;
-                font-size: 22px;
-               }
-               strong {
-                display: block;
-                margin-bottom: 10px;
-                font-size: 45px;
-               }
-             }
+                & + p {
+                    margin-top: 20px;
+                }
+                span.small {
+                    margin-bottom: 15px;
+                    font-size: 22px;
+                }
+                strong {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 45px;
+                }
+            }
           }
           .visual {
             max-width: calc(100% - 30px);
             .desc {
               font-size: 18px;
             }
+          }
+          .image {
+            border-radius: 0;
           }
 
           a.present_regist {
@@ -935,12 +941,20 @@ body.event_giftpack {
         &.finish_event {
           @media (max-width:768px) {
             h2 {
+                height: 100px;
               span {
                 font-size: 30px;
               }
               strong {
+                display: inline-block;
                 font-size: 40px;
+                &:first-of-type {
+                    margin-right: 4px;
+                }
               }
+            }
+            .blue_blet_lst li:last-of-type {
+                color: #000 !important;
             }
           }
         }
@@ -1272,6 +1286,11 @@ body.event_giftpack {
     @media screen and (max-width:600px) {
             .input_frm .put input[type=text] {width:calc(100% - 107px);margin-bottom:0;vertical-align: middle}
     }
+    .layconts {
+        p:first-child {
+            margin-top: 30px;
+        }
+    }
     .terms_chk {
         margin-top: 40px;
     }
@@ -1281,9 +1300,20 @@ body.event_giftpack {
     .terms_chk .txt {padding-left:35px;font-size: 36px;font-weight: 300;}
     .terms_chk .btn_vw {position: absolute;display: inline-block;border-bottom:1px solid #888;right:0;top:37.5px;color:#888888;}
     .terms_chk label > span {margin-left:5px;}
-}
-.layconts {
-    p:first-child {
-        margin-top: 30px;
+    #pomeAccountLayer {
+        .btnwrap a {
+            font-size: 16px !important;
+        }
+    }
+    .btnWrap {
+        margin-top: 80px;
+    }
+    @media screen and (max-width:480px) {
+        .btnWrap {
+            margin-top: 10px;
+        }
+        .layerwrap {
+            max-width: 80vw;
+        }
     }
 }

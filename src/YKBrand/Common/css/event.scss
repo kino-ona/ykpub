@@ -1270,13 +1270,32 @@ body.event_giftpack {
 						&._hide {
 							display: none;
 						}
-						p, a {
-							display: block;
+						.items {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
 							padding: 10px 0;
-							overflow:hidden;
-							text-overflow:ellipsis;
-							white-space:nowrap;
 							line-height: 1;
+							cursor: default;
+							span {
+								display: inline-block;
+								width: 75%;
+								overflow:hidden;
+								text-overflow:ellipsis;
+								white-space:nowrap;
+								line-height: 1;
+							}
+							.sbt_sel {
+								display: flex;
+								width: 40px;
+								height: 25px;
+								align-items: center;
+								justify-content: center;
+								border: 1px solid #d9d9d9;
+								border-radius: 5px;
+								font-size: 11px;
+								color:#666666;
+							}
 						}
 					}
 					@media (max-width:768px) {
@@ -1358,5 +1377,31 @@ body.event_giftpack {
 			.recommidlay {
 				padding: 30px 25px 25px !important;
 			}
+	}
+}
+// common layer 
+.layerbody {
+	z-index: 12;
+	&.searchNoLayer {
+		.layconts {
+			p {
+				margin-top: 20px;
+				font-size: 18px;
+				text-align: center;
+			}
+			.btnwrap {
+				text-align: center;
+			}
+			.btn {
+				display: flex;
+				width: 100px;
+				margin: 0 auto;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				line-height:normal;
+				font-size: 14px;
+			}
+		}
 	}
 }

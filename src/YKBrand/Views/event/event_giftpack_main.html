@@ -109,11 +109,26 @@
 													<button type="button" class="btn btn_small">검색</button>
 													<div class="input_pulldown">
 													<!-- <div class="input_pulldown _hide"> hidden 인 경우 _hide 클래스 추가 //-->
-														<p>산부인과1</p>
-														<p>2산부인과산부인과산부인과2산부인과2산부인과2산부인과</p>
-														<p>산부인과3</p>
-														<p>산부인과4</p>
-														<p>산부인과5</p>
+														<p class="items">
+															<span>산부인과1</span>
+															<a href="#" class="sbt_sel">선택</a>
+														</p>
+														<p class="items">
+															<span>2산부인과산부인과산부인과2산부인과2산부인과2산부인과</span>
+															<a href="#" class="sbt_sel">선택</a>
+														</p>
+														<p class="items">
+															<span>산부인과3</span>
+															<a href="#" class="sbt_sel">선택</a>
+														</p>
+														<p class="items">
+															<span>산부인과4</span>
+															<a href="#" class="sbt_sel">선택</a>
+														</p>
+														<p class="items">
+															<span>산부인과5</span>
+															<a href="#" class="sbt_sel">선택</a>
+														</p>
 													</div>
 												</div>
 												<p class="put sel">
@@ -241,6 +256,22 @@
 		</div>
 
 	</div>
+
+	<!-- 결과없음 안내 팝업 -->
+	<div id="searchNoLayer" class="layerbody searchNoLayer" style="display:block">
+		<div class="layerwrap recommidlay">
+			<a class="btn_close searchNoLayer_close except_click" onclick="$('#searchNoLayer').hide();"><span class="a11y_sr-only">close</span></a>
+			<div class="layconts">
+				<p>
+					검색 결과가 없습니다.
+				</p>
+				<div class="btnwrap btn_foo">
+						<a href="javascript:$('#searchNoLayer').hide();" class="btn btnline">직접입력</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 결과없음 안내 팝업 -->
 	
 	<!-- 통합회원 안내 레이어 -->
 	<div id="pomeAccountLayer" class="layerbody">

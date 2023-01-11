@@ -904,6 +904,11 @@ body.event_giftpack {
 					line-height: 1.625em;
 					border-radius: 50px;
 					background-color:#e01a22;
+					&._wide {
+						max-width: 100%;
+						padding: 30px 0;
+						border-radius: 25px;
+					}
 			}
 
 			@media (max-width:768px) {

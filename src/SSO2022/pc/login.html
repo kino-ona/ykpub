@@ -10,7 +10,7 @@
 	<title>유한킴벌리</title>
 	<link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_pc.css" type="text/css" media="all">
-	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pc.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/pc.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css" type="text/css" media="all">
 	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
 	<script>
@@ -65,21 +65,20 @@
 
 							<div class="chk">
 								<input type="checkbox" name="id_saved" id="idsave"><label for="idsave">아이디 저장</label>
+								<!-- 20230130 추가 -->
+								<input type="checkbox" name="id_auto" id="idauto" checked><label for="idauto">자동 로그인</label>
+								<!--// 20230130 추가 -->
 							</div>
 						</form>
 					</div>
 
-					<div class="btnwrap">
-						<a href="javascript:;" onclick="$('form[name=loginFrm]').submit();" class="btn btn_blue">로그인</a>
-					</div>
-					<div class="util">
-						<a href="/find/id">아이디 찾기</a>
-						<a href="/find/password">비밀번호 찾기</a>
-						<a href="/account/join">회원가입</a>
-					</div>
-
 					<div class="sns_login">
-						<p class="heading"><span>쉽고 간편하게 로그인할 수 있는</span></p>
+						<!-- 20230130 삭제 <p class="heading"><span>쉽고 간편하게 로그인할 수 있는</span></p> -->
+						<!-- 20230130 로그인버튼 이동 -->
+						<p>
+							<a href="javascript:;" onclick="$('form[name=loginFrm]').submit();" class="btn btn_blue">로그인</a>
+						</p>
+						<!--// 20230130 로그인버튼 이동 -->
 						<p class="_full">
 							<a href="#" data-type="kakao" class="bt_kakao js-btn-sns-login"><i></i>카카오로 로그인하기</a>
 						</p>
@@ -87,13 +86,20 @@
 						<p>
 							<a href="#" data-type="naver" class="bt_naver _gray js-btn-sns-login"><i></i>네이버</a>
 						</p>
-						<p>
+						<!-- 삭제 <p>
 							<a href="#" data-type="facebook" class="bt_facebook _gray js-btn-sns-login"><i></i>페이스북</a>
-						</p>
+						</p> -->
 						<!--// 20211022 sns login 수정-->
 					</div>
-					<p class="help">간편회원 가입은 불가하며, 기존 간편회원의 로그인만 가능합니다.</p>
-					
+					<p class="help">네이버는 기존 간편회원의 로그인만 가능합니다.</p> <!-- 20230130 텍스트 수정 //-->
+
+					<!-- 20230130 클래스 추가 및 위치 이동 -->
+					<div class="util util-member">
+						<a href="/find/id">아이디 찾기</a>
+						<a href="/find/password">비밀번호 찾기</a>
+						<a href="/account/join">회원가입</a>
+					</div>
+					<!--// 20230130 클래스 추가 및 위치 이동 -->
 				</div>
 
 				<div class="banner wide">

@@ -1256,12 +1256,13 @@ body.event_giftpack {
 								width: 100%;
 						}
 					}
+					// 20230407
 					.input_pulldown {
 						position: absolute;
 						left: 0;
 						top: 54px;
 						width: 100%;
-						max-height:150px;
+						max-height:180px;
 						overflow-y: auto;
 						padding:10px;
 						border: 1px solid #eeeeee;
@@ -1271,33 +1272,64 @@ body.event_giftpack {
 							display: none;
 						}
 						.items {
-							display: flex;
-							justify-content: space-between;
+							position: relative;
 							align-items: center;
-							padding: 10px 0;
+							padding: 15px 0;
 							line-height: 1;
 							cursor: default;
+							border-bottom: 1px dashed #DDDDDD;
+							strong {
+								display: block;
+								margin-bottom: 5px;
+								font-size: 16px;
+								font-weight: 400;
+								line-height: 1.4;
+							}
 							span {
-								display: inline-block;
+								display: block;
 								width: 75%;
 								overflow:hidden;
 								text-overflow:ellipsis;
-								white-space:nowrap;
-								line-height: 1;
+								word-break: break-word;
+								display: -webkit-box;
+								-webkit-line-clamp: 2;
+								-webkit-box-orient: vertical;
+								font-size: 14px;
+								font-weight: 400;
+								color: #888888;
+								line-height: 1.4;
 							}
 							.sbt_sel {
+								position: absolute;
+								right: 0;
+								top: 5px;
 								display: flex;
 								width: 40px;
 								height: 25px;
 								align-items: center;
 								justify-content: center;
-								border: 1px solid #d9d9d9;
-								border-radius: 5px;
-								font-size: 11px;
-								color:#666666;
+								font-size: 14px;
+								text-decoration: underline;
+								border: 0;
+								color:#000000;
 							}
 						}
+						@media (max-width:768px) {
+							strong {
+								font-size: 14px;
+								line-height: 1.2;
+							}
+							span {
+								font-size: 12px;
+								line-height: 1.2;
+							}
+							.sbt_sel {
+								font-size: 12px;
+							}
+						}
+
 					}
+
 					@media (max-width:768px) {
 						&+.put {
 							width: calc(100% - 95px);

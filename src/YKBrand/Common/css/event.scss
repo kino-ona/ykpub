@@ -806,12 +806,14 @@ body.event_giftpack {
 
 	@media (max-width:768px) {
 		&::before {
-			background-size: 75%;
+			background-size: 60%;
 			background-position: right top;
 		}
 		&::after {
-			background-size: 75%;
+			top: 380px;
+			background-size: 50%;
 			background-position: left bottom;
+			z-index: -1;
 		}
 	}
 	.conts {
@@ -858,6 +860,12 @@ body.event_giftpack {
 			position: relative;
 			padding-bottom: 0;
 			overflow: hidden;
+			h1.logo {
+				margin-bottom: 0;
+				img {
+					max-width: 120px;
+				}
+			}
 			.event_info {
 					z-index: 9;
 					width: 100%;
@@ -909,9 +917,14 @@ body.event_giftpack {
 			@media (max-width:768px) {
 				.event_info {
 						max-width: calc(100% - 30px);
+						padding-top: 70px;
+						h1.logo {
+							height: 50px;
+						}
 						h2 {
 							& + p {
-									margin-top: 20px;
+									margin-top: 25px;
+									margin-bottom: 10px;
 							}
 							span.small {
 									margin-bottom: 15px;
@@ -927,7 +940,8 @@ body.event_giftpack {
 				.visual {
 					max-width: calc(100% - 30px);
 					.desc {
-						font-size: 18px;
+						margin-top: 6px;
+						font-size: 14px;
 					}
 				}
 				.image {
@@ -940,14 +954,18 @@ body.event_giftpack {
 			}
 			&.finish_event {
 				@media (max-width:768px) {
+					.visual {
+						max-width: calc(100% - 60px);
+
+					}
 					h2 {
-							height: 100px;
+						height: 70px;
 						span {
-							font-size: 30px;
+							font-size: 25px;
 						}
 						strong {
 							display: inline-block;
-							font-size: 40px;
+							font-size: 30px;
 							&:first-of-type {
 									margin-right: 4px;
 							}
@@ -955,6 +973,13 @@ body.event_giftpack {
 					}
 					.blue_blet_lst li:last-of-type {
 							color: #000 !important;
+					}
+
+					.floating_btn {
+						position: fixed;
+						bottom: 20px;
+						width: 100%;
+						z-index: 10;
 					}
 				}
 			}
@@ -1020,7 +1045,7 @@ body.event_giftpack {
 			}
 	}
 	.visual {
-			margin-bottom: 130px;
+			margin-bottom: 30px;
 			position: relative;
 			z-index: 1;
 			img {
@@ -1053,8 +1078,10 @@ body.event_giftpack {
 
 			@media (max-width:768px) {
 				&::after {
-					bottom: -65%;
-					background-size: 75%;
+					bottom: -30vh;
+					right: -30%;
+					background-size: 50%;
+					z-index: -1;
 				}
 			}
 	}
@@ -1140,12 +1167,14 @@ body.event_giftpack {
 
 			@media (max-width:768px) {
 				h3 {
-					font-size: 25px;
+					max-width: 240px;
+					margin: 0 auto 30px;
+					font-size: 22px;
+					line-height:1.2;
 					& + .text {
 						width: 80%;
-						margin-left: auto;
-						margin-right: auto;
-						font-size: 16px;
+						margin: 0 auto 80px;
+						font-size: 14px;
 					}
 				}
 				.row {
@@ -1370,8 +1399,7 @@ body.event_giftpack {
 			margin: 80px auto 0;
 			@media screen and (max-width:768px) {
 				width: calc(100% - 30px);
-				margin-left: 15px;
-				margin-right: 15px;
+				margin: 25px 15px 0;
 			}
 	}
 	@media screen and (max-width:768px) {

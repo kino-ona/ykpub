@@ -8,13 +8,11 @@
 	<meta name="title" content="유한킴벌리" />
 	<meta name="keywords" content="유한킴벌리">
 	<meta name="description" content="유한킴벌리" />
-  <!-- 20211013 SSO 오늘플러스 -->
 	<title>유한킴벌리</title>
-  <!--// 20211013 SSO 오늘플러스 -->
-	<link rel="stylesheet" href="../css/common.css" type="text/css" media="all">
-	<link rel="stylesheet" href="../css/reset_mobile.css" type="text/css" media="all">
-	<link rel="stylesheet" href="../css/mobile.css" type="text/css" media="all">
-	<link rel="stylesheet" href="../css/pome.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/mobile.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css" type="text/css" media="all">
 	<link rel="icon" href="/images/favicon_default.png" type="image/x-icon">
 	<script>
 		// window.dataLayer = [{
@@ -91,7 +89,7 @@
 					</div>
 
 					<!-- 아이추가 영역 -->
-					<div class="childadd">
+					<div class="childadd" style="display: none;">
 						<div class="addbtnwrap">
 							<a href="#" onclick="selOpen(this);return false" class="btn_areadd"><span>아이추가</span></a>
 							<ul class="addlist">
@@ -189,7 +187,6 @@
 					</ul>
 					<!--// 아이정보 수집 동의 -->
 						
-					<!-- 20211206 -->
 					<div class="etc_frm">
 						<div class="recom">
 							<h3 class="h3_ti">(선택) 추천인 입력</h3>
@@ -198,10 +195,11 @@
 							<input type="text" value="" placeholder="추천인 검색">
 							<button onclick="layerOpen('recommidLayer');return false;" class="btn btn_small">검색</button>
 						</div>
-						<span class="errtx">SSO회원이 아니거나 휴면 계정인 경우 추천인 ID로 입력 할 수 없습니다. 다시 확인 후 입력해주세요.</span>
+						<!-- 20230710 -->
+						<span class="errtx mt5">PC 또는 모바일에서 [뒤로가기]를 할 경우 현재 추천인 입력 화면이 사라지는 점 유의하시기 바랍니다.</span>
+						<span class="errtx mt10">카카오를 통해 가입한 회원의 경우 추천인 입력을 하지 못했을 시, [회원정보수정] 화면에서 24시간 이내로 추천인 입력이 가능합니다.</span>
+						<!--// 20230710 -->
 					</div>
-					<!-- 20211206 //-->
-
 					<!--// 20211203 선택 정보 입력 -->
 
 					<div class="btnwrap">

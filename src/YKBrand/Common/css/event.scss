@@ -759,21 +759,21 @@ p.ti {
 	}
 }
 @media (max-width:768px) {
-.pome_event {
-	.event_info {
-		font-size: 23px;
-		>p {
-			font-size: 14px;
+	.pome_event {
+		.event_info {
+			font-size: 23px;
+			>p {
+				font-size: 14px;
+			}
 		}
-	}
-	.noti_guide {
-		.blue_blet_lst {
-			>li {
-				font-size: 11px;
+		.noti_guide {
+			.blue_blet_lst {
+				>li {
+					font-size: 11px;
+				}
 			}
 		}
 	}
-}
 }
 body.event_giftpack {
 	position: relative;

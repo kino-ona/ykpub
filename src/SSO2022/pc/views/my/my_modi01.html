@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://www.yksso.co.kr/css/reset_pc.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://www.yksso.co.kr/css/pc.css?v=0.1.3" type="text/css" media="all">
     <link rel="stylesheet" href="https://www.yksso.co.kr/css/pome.css" type="text/css" media="all">
-    <link rel="stylesheet" href="../../common/css/sso.css" type="text/css" media="all"> <!-- 퍼블리싱:for pc.css //-->
+    <!-- <link rel="stylesheet" href="../../common/css/sso.css" type="text/css" media="all">  -->
+		<!-- 퍼블리싱:for pc.css //-->
     <link rel="icon" href="../images/favicon_default.png" type="image/x-icon">
   <!-- Google Tag Manager -->
   <!-- End Google Tag Manager -->
@@ -47,34 +48,10 @@
 								<li><a href="/user/terms">약관 관리</a>
 						</ul>
 					</div>
-					
-					<!-- 20230710 -->
-					<ul class="input_frm" style="margin-bottom: 15px;">	
-						<li style="margin-bottom: 0px;">
-							<p class="ti">추천인 입력</p>
-							<p class="put">
-								<input type="text" value="홍길동">
-								<a href="javascript:;" class="btn btn_small">검색</a>
-							</p>
-						</li>	
-					</ul>
-					<div class="helpwrap">
-            <ul>
-              <li>추천인 입력은 회원가입 후 24시간동안 입력 가능하며, 해당 시간 내에 입력하지<br>못한 경우는 추천인 혜택을 받으실 수 없습니다.</li>
-            </ul>
-          </div>
-					<!--// 20230710 -->
 	
 					<h2 class="h2_ti">기본정보</h2>
 					<!-- 필수 정보 입력 -->
 					<ul class="input_frm">
-						<li>
-							<p class="ti">이름*</p>
-							<p class="put">
-								<input type="text" value="홍길동" readonly>
-								<a href="javascript:;" class="btn btn_small change_name">변경</a>
-							</p>
-						</li>
 						<li>
 							<p class="ti">아이디*</p>
 							<p class="put put_id">
@@ -100,6 +77,15 @@
 									<input type="text" value="여자" readonly>
 							</p>
 						</li>
+						<!-- 20231009 이름 입력 필드 영역 변경 -->
+						<li>
+							<p class="ti">이름*</p>
+							<p class="put">
+								<input type="text" value="홍길동" readonly>
+								<a href="javascript:;" class="btn btn_small change_name">변경</a>
+							</p>
+						</li>
+						<!--// 20231009 이름 입력 필드 영역 변경 -->
 						<li>
 							<p class="ti">휴대폰 번호*</p>
 							<p class="put">
@@ -110,21 +96,39 @@
 						<li>
 							<p class="ti">이메일*</p>
 							<p class="put email">
-									<input type="text" name="email_id" value="emailID"> @ <input type="text" name="email_host" value="kakao.com">
-									<select name="select_email">
-											<option>직접입력</option>
-											<option value="naver.com">naver.com</option>
-											<option value="hanmail.net">hanmail.net</option>
-											<option value="daum.net">daum.net</option>
-											<option value="nate.com">nate.com</option>
-											<option value="gmail.com">gmail.com</option>
-											<option value="hotmail.com">hotmail.com</option>
-											<option value="chol.com">chol.com</option>
-									</select>
-									<a href="javascript:;" class="btn btn_small change_email">변경</a>
+								<input type="text" name="email_id" value="emailID"> @ <input type="text" name="email_host" value="kakao.com">
+								<select name="select_email">
+										<option>직접입력</option>
+										<option value="naver.com">naver.com</option>
+										<option value="hanmail.net">hanmail.net</option>
+										<option value="daum.net">daum.net</option>
+										<option value="nate.com">nate.com</option>
+										<option value="gmail.com">gmail.com</option>
+										<option value="hotmail.com">hotmail.com</option>
+										<option value="chol.com">chol.com</option>
+								</select>
+								<a href="javascript:;" class="btn btn_small change_email">변경</a>
 							</p>
 						</li>
 					</ul>
+					
+					<!-- 20230710 -->
+					<ul class="input_frm" style="margin-bottom: 10px;">	
+						<li style="margin-bottom: 0px;">
+							<p class="ti">추천인 입력</p>
+							<p class="put">
+								<input type="text" value="홍길동">
+								<a href="javascript:;" class="btn btn_small">검색</a>
+							</p>
+						</li>	
+					</ul>
+					<div class="helpwrap" style="margin-bottom: 25px;">
+            <ul>
+              <li>추천인 입력은 회원가입 후 24시간동안 입력 가능하며, 해당 시간 내에 입력하지<br>못한 경우는 추천인 혜택을 받으실 수 없습니다.</li>
+            </ul>
+          </div>
+					<!--// 20230710 -->
+
 					<div class="help_desc" style="margin-bottom:0px;">
 						<p class="help">아이정보는 맘큐 > 마이페이지 > 아이정보에서 추가 / 수정 하실 수 있습니다.</p>
 						<a href="https://www.momq.co.kr/shop/mypage.html?mypage_type=myfamily" class="btn btn_small" target="_blank">바로가기</a>
@@ -137,8 +141,8 @@
 						<h3 class="h3_ti">카카오 로그인 연결</h3>
 												
 						<p class="N _kakao">
-								<span>카카오 계정으로 연결하세요.</span>
-								<a href="javascript:;" onclick="loginWithKakao()" class="btn btn_small"><span class="ico"></span>카카오 연결하기</a>
+							<span>카카오 계정으로 연결하세요.</span>
+							<a href="javascript:;" onclick="loginWithKakao()" class="btn btn_small"><span class="ico"></span>카카오 연결하기</a>
 						</p>
 					</div>
 					<!-- <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
@@ -153,114 +157,130 @@
 					</div>
 	
 			</div>
+
+			<!-- 20231009 변경 안내 팝업  -->
+			<div class="layerbody" id="changeConfirm" style="display:block">
+				<div class="layerwrap changeConfirm">
+						<a href="javascript:$('#changeConfirm').hide();;" class="btn_close changeConfirm_close"><span class="a11y_sr-only">close</span></a>
+						<div class="layconts">
+							<p style="font-size: 18px;text-align: center;">
+								하단 [확인] 버튼을 눌러야<br>변경하신 정보 변경이 완료됩니다.
+							</p>
+							<div class="btnwrap">
+									<a href="javascript:$('#changeConfirm').hide();" class="btn btn_blue btnfull">확인</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			<!--// 20231009 변경 안내 팝업  -->
+
 			<!-- 비밀번호변경  -->
 			<div class="layerbody" id="pwdChangeLayer">
-					<div class="layerwrap pwdchangelayer">
-							<a href="javascript:;" class="btn_close pwdChangeLayer_close"><span class="a11y_sr-only">close</span></a>
-							<input type="hidden" name="id" value="1806272" />
-							<input type="hidden" name="userid" value="crazy2014" />
-							<div class="layhead">
-									<p>비밀번호 변경</p>
-							</div>
-							<div class="layconts">
-									<div>
-											<ul class="input_frm">
-													<li>
-															<p class="ti">현재 비밀번호</p>
-															<p class="put masking">
-																	<input type="password" name="current_password" value="" placeholder="현재 비밀번호를 입력해주세요." >
-										<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
-															</p>
-															<span class="errtx change current_password"></span>
-													</li>
-													<li>
-															<p class="ti">신규 비밀번호</p>
-															<p class="put masking">
-																	<input type="password" name="new_password" value="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
-										<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
-															</p>
-															<span class="errtx change new_password"></span>
-													</li>
-													<li>
-															<p class="ti">비밀번호 확인</p>
-															<p class="put masking">
-																	<input type="password" name="new_password_confirmation" value="" placeholder="비밀번호를 다시 입력해주세요." >
-										<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
-															</p>
-															<span class="errtx change new_password_confirmation"></span>
-													</li>
-											</ul>
-									</div>
-									<div class="btnwrap">
-											<a href="javascript:;" class="btn btn_blue btnfull passwod_change_action">변경</a>
-									</div>
-			
-							</div>
-					</div>
+				<div class="layerwrap pwdchangelayer">
+						<a href="javascript:;" class="btn_close pwdChangeLayer_close"><span class="a11y_sr-only">close</span></a>
+						<input type="hidden" name="id" value="1806272" />
+						<input type="hidden" name="userid" value="crazy2014" />
+						<div class="layhead">
+								<p>비밀번호 변경</p>
+						</div>
+						<div class="layconts">
+								<div>
+										<ul class="input_frm">
+												<li>
+														<p class="ti">현재 비밀번호</p>
+														<p class="put masking">
+																<input type="password" name="current_password" value="" placeholder="현재 비밀번호를 입력해주세요." >
+									<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
+														</p>
+														<span class="errtx change current_password"></span>
+												</li>
+												<li>
+														<p class="ti">신규 비밀번호</p>
+														<p class="put masking">
+																<input type="password" name="new_password" value="" placeholder="8~20자, 영문/숫자/특수문자 조합" >
+									<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
+														</p>
+														<span class="errtx change new_password"></span>
+												</li>
+												<li>
+														<p class="ti">비밀번호 확인</p>
+														<p class="put masking">
+																<input type="password" name="new_password_confirmation" value="" placeholder="비밀번호를 다시 입력해주세요." >
+									<button type="button" class="btn_masking"><i class="ic_hide"></i></button>
+														</p>
+														<span class="errtx change new_password_confirmation"></span>
+												</li>
+										</ul>
+								</div>
+								<div class="btnwrap">
+										<a href="javascript:;" class="btn btn_blue btnfull passwod_change_action">변경</a>
+								</div>
+		
+						</div>
+				</div>
 			</div>
-	
 			<script>
 			$(document).ready(function() {
 				$(document).on('click', '.passwod_change_action', function() {
-							var id = $('input[name="id"]', '#pwdChangeLayer').val();
-							var userid = $('input[name="userid"]', '#pwdChangeLayer').val();
-							var current_password = $('input[name="current_password"]', '#pwdChangeLayer').val();
-							var new_password = $('input[name="new_password"]', '#pwdChangeLayer').val();
-							var new_password_confirmation = $('input[name="new_password_confirmation"]', '#pwdChangeLayer').val();
-							$('.change.new_password').text('');
-							if (checkPasswordPattern(new_password) == false) {
-									$('.change.new_password').text('비밀번호는 8자리 이상 문자, 숫자, 특수문자로 구성하여야 합니다.');
-									$('[name="new_password"]', '#pwdChangeLayer').val('').focus();
-									return false;
-							}
-							if (checkPasswordPatternComp(new_password, userid) == false) {
-									$('.change.new_password').text('아이디와 3자리 이상 중복값 및 4자리 이상의 연속되는 숫자는 사용이 불가합니다.');
-									$('[name="new_password"]', '#pwdChangeLayer').val('').focus();
-									return false;
-							}
-							$.ajax({
-									url: '/user/passwordChange',
-									type: 'post',
-									dataType: 'json',
-									data: {
-											'_token': 'r4vMtq138vVkGpucqt3h9RkortkvZOsnsLR6x8Hw',
-											'id': id,
-											'userid': userid,
-											'current_password': current_password,
-											'new_password': new_password,
-											'new_password_confirmation': new_password_confirmation,
-									},
-									success: function(res) {
-											alert(res.message);
-											layer.close('#pwdChangeLayer', function(){
-													$('input[name="current_password"]', '#pwdChangeLayer').val('');
-													$('input[name="new_password"]', '#pwdChangeLayer').val('');
-													$('input[name="new_password_confirmation"]', '#pwdChangeLayer').val('');
-											});
-											window.location.reload();
-									}, 
-									error: function(res) {
-											var errors = res.responseJSON;
-											var messages = errors.messages;
-											$('.change.current_password').text('');
-											$('.change.new_password').text('');
-											$('.change.new_password_confirmation').text('');
-											if (messages.current_password != undefined && messages.current_password.length > 0) {
-													$('.change.current_password').text(messages.current_password[0]);
-											}
-											if (messages.new_password != undefined && messages.new_password.length > 0) {
-													$('.change.new_password').text(messages.new_password[0]);
-											}
-											if (messages.new_password_confirmation != undefined && messages.new_password_confirmation.length > 0) {
-													$('.change.new_password_confirmation').text(messages.new_password_confirmation[0]);
-											}
-											if (messages.password_pattern != undefined && messages.password_pattern.length > 0) {
-													$('.change.new_password').text(messages.password_pattern[0]);
-											}
-											return false;
+					var id = $('input[name="id"]', '#pwdChangeLayer').val();
+					var userid = $('input[name="userid"]', '#pwdChangeLayer').val();
+					var current_password = $('input[name="current_password"]', '#pwdChangeLayer').val();
+					var new_password = $('input[name="new_password"]', '#pwdChangeLayer').val();
+					var new_password_confirmation = $('input[name="new_password_confirmation"]', '#pwdChangeLayer').val();
+					$('.change.new_password').text('');
+					if (checkPasswordPattern(new_password) == false) {
+							$('.change.new_password').text('비밀번호는 8자리 이상 문자, 숫자, 특수문자로 구성하여야 합니다.');
+							$('[name="new_password"]', '#pwdChangeLayer').val('').focus();
+							return false;
+					}
+					if (checkPasswordPatternComp(new_password, userid) == false) {
+							$('.change.new_password').text('아이디와 3자리 이상 중복값 및 4자리 이상의 연속되는 숫자는 사용이 불가합니다.');
+							$('[name="new_password"]', '#pwdChangeLayer').val('').focus();
+							return false;
+					}
+					$.ajax({
+							url: '/user/passwordChange',
+							type: 'post',
+							dataType: 'json',
+							data: {
+									'_token': 'r4vMtq138vVkGpucqt3h9RkortkvZOsnsLR6x8Hw',
+									'id': id,
+									'userid': userid,
+									'current_password': current_password,
+									'new_password': new_password,
+									'new_password_confirmation': new_password_confirmation,
+							},
+							success: function(res) {
+									alert(res.message);
+									layer.close('#pwdChangeLayer', function(){
+											$('input[name="current_password"]', '#pwdChangeLayer').val('');
+											$('input[name="new_password"]', '#pwdChangeLayer').val('');
+											$('input[name="new_password_confirmation"]', '#pwdChangeLayer').val('');
+									});
+									window.location.reload();
+							}, 
+							error: function(res) {
+									var errors = res.responseJSON;
+									var messages = errors.messages;
+									$('.change.current_password').text('');
+									$('.change.new_password').text('');
+									$('.change.new_password_confirmation').text('');
+									if (messages.current_password != undefined && messages.current_password.length > 0) {
+											$('.change.current_password').text(messages.current_password[0]);
 									}
-							});
+									if (messages.new_password != undefined && messages.new_password.length > 0) {
+											$('.change.new_password').text(messages.new_password[0]);
+									}
+									if (messages.new_password_confirmation != undefined && messages.new_password_confirmation.length > 0) {
+											$('.change.new_password_confirmation').text(messages.new_password_confirmation[0]);
+									}
+									if (messages.password_pattern != undefined && messages.password_pattern.length > 0) {
+											$('.change.new_password').text(messages.password_pattern[0]);
+									}
+									return false;
+							}
 					});
+				});
 			});
 			
 			
